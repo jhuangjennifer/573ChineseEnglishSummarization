@@ -6,7 +6,7 @@ Team project repository for **LING 573**.
 This project investigates **English-to-Chinese cross-lingual dialogue summarization**.  
 Our goal is to build a system that takes **multi-turn English dialogues** as input and generates **concise Chinese summaries**.
 
-We are currently focusing on **XMediaSum40k**, a dataset for cross-lingual dialogue summarization based on English dialogue inputs and Chinese target summaries.
+We are currently focusing on **XMediaSum40k**, a dataset for cross-lingual dialogue summarization with English dialogue inputs and Chinese target summaries.
 
 ## Task
 Our current task is:
@@ -33,23 +33,39 @@ We are following **Option 1** and using an **existing dataset**.
 
 Our current plan is to:
 1. inspect and preprocess the dataset,
-2. build a baseline system,
+2. build a **pipeline baseline system**,
 3. evaluate the baseline, and
 4. explore an improved model.
 
 ## Baseline Direction
-We are currently considering a **pipeline baseline**, motivated by the dataset structure:
+Our **primary baseline** is a **pipeline approach**:
 
-**English dialogue → English summary → Chinese translation**
+**English dialogue → English summary → Chinese summary**
 
-Based on this, one possible starting point is a **summarize-then-translate** baseline.  
-We may also compare this with a more direct **end-to-end English-to-Chinese summarization model**.
+More specifically, the pipeline baseline consists of two stages:
+1. **Summarizer**
+   - input: **English dialogue**
+   - output: **English summary**
+2. **Translator**
+   - input: **English summary**
+   - output: **Chinese summary**
+
+We chose this as our primary baseline because it is easier to analyze errors at each stage and provides a clear point of comparison for later improvements.
+
+If time allows, we may also implement an **end-to-end comparison system**:
+
+**English dialogue → Chinese summary**
 
 ## Preprocessing
-The current preprocessing goals include:
-- keeping only the **English-source / Chinese-target** data,
+Our current preprocessing goals include:
+- identifying the fields needed for each stage of the pipeline,
 - checking dialogue length, summary length, and speaker-turn formatting,
+- cleaning and standardizing dialogue text where needed, and
 - preparing the data for model-specific tokenization and training.
+
+For the pipeline baseline, the expected training pairs are:
+- **Summarizer**: `dialogue` → `summary`
+- **Translator**: `summary` → `summary_zh`
 
 ## Repository Structure
 - `src/` — source code
