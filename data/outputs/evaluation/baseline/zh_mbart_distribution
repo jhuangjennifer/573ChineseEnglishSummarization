@@ -1,0 +1,20 @@
+── BERTScore F1 distribution (Chinese) mbart ──
+       bs_f1_raw
+count     819.00
+mean       70.09
+std         8.08
+min        52.04
+25%        64.13
+50%        69.78
+75%        74.97
+max        96.63
+
+── rougeL distribution (Chinese) mbart ──
+count    819.00
+mean      33.16
+std       17.34
+min        0.00
+25%       20.83
+50%       30.30
+75%       42.31
+max      100.00
