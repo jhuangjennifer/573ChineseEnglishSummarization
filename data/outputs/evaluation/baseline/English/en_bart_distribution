@@ -1,0 +1,20 @@
+── BERTScore F1 distribution (English) ──
+       bs_f1_raw  bs_f1_rescaled
+count     819.00          819.00
+mean       92.71           56.83
+std         2.64           15.65
+min        84.41            7.65
+25%        90.96           46.41
+50%        92.51           55.61
+75%        94.40           66.84
+max       100.00          100.00
+
+── rougeL distribution (English) ──
+count    819.00
+mean      43.51
+std       18.52
+min        4.88
+25%       30.24
+50%       40.74
+75%       53.33
+max      100.00
