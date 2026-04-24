@@ -1,1 +1,26 @@
-# Add project dependencies here
+# Core deep learning / Transformers
+torch
+transformers
+accelerate
+
+# Hugging Face datasets and evaluation
+datasets
+evaluate
+huggingface-hub
+
+# Tokenization / translation support
+sentencepiece
+protobuf
+sacrebleu
+
+# Evaluation metrics
+rouge-score
+bert-score
+
+# Data processing
+pandas
+numpy
+scikit-learn
+
+# Utilities
+tqdm
