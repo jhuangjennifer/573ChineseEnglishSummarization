@@ -100,7 +100,15 @@ Models:
 Input: English summary  
 Output: Chinese summary
 
-The translation stage uses an English-to-Chinese machine translation model.
+Translation model:
+
+- `Helsinki-NLP/opus-mt-en-zh`
+
+Reference:
+
+- Tiedemann and Thottingal (2020)
+
+The translation stage uses the pretrained OPUS-MT English-to-Chinese model from Helsinki-NLP.
 
 This design helps us:
 
@@ -129,6 +137,15 @@ This design helps us:
 | Source language | `en_XX` |
 | Target language | `en_XX` |
 
+### Translation Model
+
+| Item | Description |
+|---|---|
+| Model | `Helsinki-NLP/opus-mt-en-zh` |
+| Task | English summary → Chinese summary |
+| Reference | Tiedemann and Thottingal (2020) |
+| Fine-tuning | Not fine-tuned; used as a pretrained translation model |
+
 ### PEGASUS
 
 PEGASUS was tested during experimentation, but it is currently secondary because the available run was not a full training run due to GPU limitations.
@@ -142,6 +159,7 @@ Current focus remains on BART and mBART.
 | BART | https://huggingface.co/yunu919/bart-large-dialogue-summarization |
 | mBART | https://huggingface.co/yunu919/mbart-large-dialogue-summarization |
 | PEGASUS | https://huggingface.co/yunu919/pegasus-large-dialogue-summarization |
+| Translation | https://huggingface.co/Helsinki-NLP/opus-mt-en-zh |
 
 PEGASUS is included for reference, but the current pipeline focuses on BART and mBART.
 
@@ -175,7 +193,7 @@ Runs the full pipeline:
 
 **English dialogue → English summary → Chinese summary**
 
-It loads a summarization model, generates English summaries, translates them into Chinese, and saves prediction files.
+It loads a summarization model, generates English summaries, translates them into Chinese using `Helsinki-NLP/opus-mt-en-zh`, and saves prediction files.
 
 ## Source Code Organization
 
@@ -347,25 +365,6 @@ Training on CPU is not recommended.
 | `report/` | Report drafts and course deliverables |
 | `requirements.txt` | Python dependencies |
 | `README.md` | Project documentation |
-
-## Documentation
-
-### `docs/`
-
-| Path | Purpose |
-|---|---|
-| `docs/weekly_standup/` | Weekly stand-up updates |
-| `docs/meeting_notes/` | Meeting notes |
-| `docs/slides/` | Presentation slides |
-| `docs/references/` | Paper notes and reference materials |
-
-### `report/`
-
-| Path | Purpose |
-|---|---|
-| `report/sections/` | Draft sections for the final report |
-| `report/figures/` | Figures, charts, and diagrams |
-| `report/references.bib` | BibTeX references |
 
 ## Notes
 
