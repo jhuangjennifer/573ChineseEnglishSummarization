@@ -3,3 +3,14 @@ __pycache__/
 .DS_Store
 .env
 .venv/
+
+# Raw data files
+data/raw/*.json
+!data/raw/.gitkeep
+
+# Outputs and model checkpoints
+outputs/
+checkpoints/
+*.bin
+*.pt
+*.safetensors
