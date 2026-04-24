@@ -1,0 +1,13 @@
+.DS_Store
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+data/raw/*.json
+!data/raw/.gitkeep
+
+outputs/
+checkpoints/
+*.bin
+*.pt
+*.safetensors
