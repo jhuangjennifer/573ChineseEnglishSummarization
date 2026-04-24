@@ -18,8 +18,6 @@ Our current implementation focuses on a **pipeline baseline**:
 
 This design separates the task into two stages: summarization and translation.
 
----
-
 ## Task
 
 Our main task is:
@@ -36,8 +34,6 @@ We consider two approaches:
    - English dialogue → Chinese summary
 
 At the current stage, our primary focus is the **pipeline approach**, because it allows easier debugging and clearer comparison between components.
-
----
 
 ## Dataset
 
@@ -62,14 +58,11 @@ Raw dataset files are **not included in this repository** because of file size l
 
 Place files locally under:
 
-data/raw/
-├── train.json
-├── val.json
-└── test.json
+- `data/raw/train.json`
+- `data/raw/val.json`
+- `data/raw/test.json`
 
 The raw `.json` files are ignored by Git, while `data/raw/.gitkeep` preserves the folder structure.
-
----
 
 ## Current Project Direction
 
@@ -77,16 +70,14 @@ We are following **Option 1** using an existing dataset.
 
 Current workflow:
 
-1. Inspect dataset structure and token lengths  
-2. Prepare local raw data under `data/raw/`  
-3. Fine-tune summarization models  
-4. Upload trained models to Hugging Face  
-5. Run full pipeline inference  
-6. Generate English and Chinese prediction files  
-7. Evaluate outputs using ROUGE and BERTScore  
+1. Inspect dataset structure and token lengths
+2. Prepare local raw data under `data/raw/`
+3. Fine-tune summarization models
+4. Upload trained models to Hugging Face
+5. Run full pipeline inference
+6. Generate English and Chinese prediction files
+7. Evaluate outputs using ROUGE and BERTScore
 8. Analyze model behavior and error patterns
-
----
 
 ## Baseline System
 
@@ -118,42 +109,25 @@ This design helps us:
 - compare summarization models
 - identify where pipeline errors are introduced
 
----
-
 ## Models
 
 ### BART
 
-Base model:
-
-facebook/bart-large
-
-Fine-tuned model:
-
-yunu919/bart-large-dialogue-summarization
-
-Task:
-
-English dialogue → English summary
+| Item | Description |
+|---|---|
+| Base model | `facebook/bart-large` |
+| Fine-tuned model | `yunu919/bart-large-dialogue-summarization` |
+| Task | English dialogue → English summary |
 
 ### mBART
 
-Base model:
-
-facebook/mbart-large-50-many-to-many-mmt
-
-Fine-tuned model:
-
-yunu919/mbart-large-dialogue-summarization
-
-Task:
-
-English dialogue → English summary
-
-Language setting:
-
-- source language: `en_XX`
-- target language: `en_XX`
+| Item | Description |
+|---|---|
+| Base model | `facebook/mbart-large-50-many-to-many-mmt` |
+| Fine-tuned model | `yunu919/mbart-large-dialogue-summarization` |
+| Task | English dialogue → English summary |
+| Source language | `en_XX` |
+| Target language | `en_XX` |
 
 ### PEGASUS
 
@@ -161,191 +135,173 @@ PEGASUS was tested during experimentation, but it is currently secondary because
 
 Current focus remains on BART and mBART.
 
----
+## Hugging Face Models
+
+| Model | Link |
+|---|---|
+| BART | https://huggingface.co/yunu919/bart-large-dialogue-summarization |
+| mBART | https://huggingface.co/yunu919/mbart-large-dialogue-summarization |
+| PEGASUS | https://huggingface.co/yunu919/pegasus-large-dialogue-summarization |
+
+PEGASUS is included for reference, but the current pipeline focuses on BART and mBART.
 
 ## Implementation
 
 The project was initially developed in Jupyter notebooks and later converted into standalone Python scripts for reproducibility.
 
-Main scripts:
+### Main Scripts
 
-scripts/
-├── train_bart.py
-├── train_mbart.py
-└── run_inference_pipeline.py
+| Path | Purpose |
+|---|---|
+| `scripts/train_bart.py` | Fine-tunes BART for English dialogue summarization |
+| `scripts/train_mbart.py` | Fine-tunes mBART for English dialogue summarization |
+| `scripts/run_inference_pipeline.py` | Runs English summarization followed by Chinese translation |
 
-### train_bart.py
+### `train_bart.py`
 
 Fine-tunes BART for:
 
-English dialogue → English summary
+**English dialogue → English summary**
 
-### train_mbart.py
+### `train_mbart.py`
 
 Fine-tunes mBART for:
 
-English dialogue → English summary
+**English dialogue → English summary**
 
-### run_inference_pipeline.py
+### `run_inference_pipeline.py`
 
 Runs the full pipeline:
 
-English dialogue → English summary → Chinese summary
+**English dialogue → English summary → Chinese summary**
 
 It loads a summarization model, generates English summaries, translates them into Chinese, and saves prediction files.
-
----
 
 ## Source Code Organization
 
 Reusable helper functions are stored under `src/`.
 
-src/
-├── data/
-│   ├── load_data.py
-│   └── preprocess.py
-├── models/
-│   ├── bart_model.py
-│   └── mbart_model.py
-├── pipeline/
-│   └── inference.py
-└── utils/
-    └── io_utils.py
-
-### src/data/
-
-Utilities for:
-
-- loading JSON dataset files
-- creating Hugging Face `DatasetDict`
-- preparing train / validation / test splits
-
-### src/models/
-
-Utilities for:
-
-- loading BART model and tokenizer
-- loading mBART model and tokenizer
-- setting language codes
-
-### src/pipeline/
-
-Reusable inference functions:
-
-- summary generation
-- translation
-- device selection
-
-### src/utils/
-
-General utilities:
-
-- saving files
-- reading files
-- creating output directories
-
----
+| Path | Purpose |
+|---|---|
+| `src/data/load_data.py` | Loads JSON dataset files and creates dataset splits |
+| `src/data/preprocess.py` | Cleans and prepares dialogue/summary data |
+| `src/models/bart_model.py` | Loads BART model and tokenizer |
+| `src/models/mbart_model.py` | Loads mBART model/tokenizer and sets language codes |
+| `src/pipeline/inference.py` | Provides reusable generation, translation, and device-selection functions |
+| `src/utils/io_utils.py` | Handles file reading, saving, and directory creation |
 
 ## Run Instructions
 
 ### 1. Clone Repository
 
-git clone <your-repo-url>  
+```bash
+git clone <your-repo-url>
 cd 573ChineseEnglishSummarization
+```
 
 ### 2. Create Virtual Environment
 
-python -m venv .venv  
+```bash
+python -m venv .venv
 source .venv/bin/activate
+```
 
-Windows:
+For Windows:
 
+```bash
 .venv\Scripts\activate
+```
 
 ### 3. Install Dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
 Manual install if needed:
 
+```bash
 pip install torch transformers accelerate datasets evaluate sentencepiece protobuf sacrebleu rouge-score bert-score pandas numpy scikit-learn tqdm
+```
 
 ### 4. Prepare Dataset
 
 Place files under:
 
-data/raw/
-├── train.json
-├── val.json
-└── test.json
-
----
+- `data/raw/train.json`
+- `data/raw/val.json`
+- `data/raw/test.json`
 
 ## Run Examples
 
 ### Train BART
 
+```bash
 python scripts/train_bart.py \
   --train_path data/raw/train.json \
   --val_path data/raw/val.json \
   --test_path data/raw/test.json \
   --output_dir outputs/bart_model
+```
 
-Saved to:
+The trained model will be saved under:
 
-outputs/bart_model/
+- `outputs/bart_model/`
 
 ### Train mBART
 
+```bash
 python scripts/train_mbart.py \
   --train_path data/raw/train.json \
   --val_path data/raw/val.json \
   --test_path data/raw/test.json \
   --output_dir outputs/mbart_model
+```
 
-Saved to:
+The trained model will be saved under:
 
-outputs/mbart_model/
+- `outputs/mbart_model/`
 
 ### Run Pipeline with BART
 
+```bash
 python scripts/run_inference_pipeline.py \
   --summary_model yunu919/bart-large-dialogue-summarization \
   --model_tag bart \
   --input_path data/raw/test.json \
   --output_dir outputs
+```
 
 Outputs:
 
-outputs/bart_predictions_en.txt  
-outputs/bart_predictions_zh.txt
+- `outputs/bart_predictions_en.txt`
+- `outputs/bart_predictions_zh.txt`
 
 ### Run Pipeline with mBART
 
+```bash
 python scripts/run_inference_pipeline.py \
   --summary_model yunu919/mbart-large-dialogue-summarization \
   --model_tag mbart \
   --input_path data/raw/test.json \
   --output_dir outputs
+```
 
 Outputs:
 
-outputs/mbart_predictions_en.txt  
-outputs/mbart_predictions_zh.txt
-
----
+- `outputs/mbart_predictions_en.txt`
+- `outputs/mbart_predictions_zh.txt`
 
 ## Output Files
 
-outputs/
-├── bart_predictions_en.txt
-├── bart_predictions_zh.txt
-├── mbart_predictions_en.txt
-└── mbart_predictions_zh.txt
+Prediction files are saved under:
+
+- `outputs/bart_predictions_en.txt`
+- `outputs/bart_predictions_zh.txt`
+- `outputs/mbart_predictions_en.txt`
+- `outputs/mbart_predictions_zh.txt`
 
 These files are ignored by Git because they can be regenerated.
-
----
 
 ## Evaluation
 
@@ -365,8 +321,6 @@ We analyze:
 - differences between BART and mBART
 - whether metric scores align with qualitative judgments
 
----
-
 ## Hardware Notes
 
 GPU is recommended for training and inference.
@@ -380,37 +334,38 @@ Recommended options:
 CPU inference is possible but slower.  
 Training on CPU is not recommended.
 
----
-
 ## Repository Structure
 
-project/
-├── scripts/  
-├── src/  
-├── data/  
-│   └── raw/  
-├── docs/  
-├── notebooks/  
-├── report/  
-├── requirements.txt  
-└── README.md
-
----
+| Path | Description |
+|---|---|
+| `scripts/` | Executable training and inference scripts |
+| `src/` | Reusable helper modules |
+| `data/` | Local dataset files and processed outputs |
+| `data/raw/` | Local raw dataset files ignored by Git |
+| `docs/` | Notes, references, slides, and weekly stand-ups |
+| `notebooks/` | Original experimental notebooks |
+| `report/` | Report drafts and course deliverables |
+| `requirements.txt` | Python dependencies |
+| `README.md` | Project documentation |
 
 ## Documentation
 
-docs/
-├── weekly_standup/
-├── meeting_notes/
-├── slides/
-└── references/
+### `docs/`
 
-report/
-├── sections/
-├── figures/
-└── references.bib
+| Path | Purpose |
+|---|---|
+| `docs/weekly_standup/` | Weekly stand-up updates |
+| `docs/meeting_notes/` | Meeting notes |
+| `docs/slides/` | Presentation slides |
+| `docs/references/` | Paper notes and reference materials |
 
----
+### `report/`
+
+| Path | Purpose |
+|---|---|
+| `report/sections/` | Draft sections for the final report |
+| `report/figures/` | Figures, charts, and diagrams |
+| `report/references.bib` | BibTeX references |
 
 ## Notes
 
