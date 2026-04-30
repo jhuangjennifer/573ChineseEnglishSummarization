@@ -13,7 +13,7 @@ Hannah: I'd rather you texted him
 Amanda: Just text him 🙂
 Hannah: Urgh.. Alright
 Hannah: Bye
-Amanda: Bye bye",汉娜在找贝蒂的电话号码，阿曼达建议她找拉里，因为上次在公园时拉里曾给贝蒂打过电话。,Hannah needs Betty's number but Amanda doesn't have it. She needs to contact Larry.,汉娜需要贝蒂的电话号码，但阿曼达没有。她得联系拉里。,yunu919/bart-large-dialogue-summarization,translategemma:12b,qwen3.5:9b,"Hannah is looking for Betty's number. Amanda suggests Hannah to ask Larry, who called Betty last time they were at the park.",汉娜正在寻找贝蒂的电话号码。阿曼达建议汉娜去问拉里，因为上次他们在公园的时候，拉里给贝蒂打电话。,汉娜在找贝蒂的电话号码，阿曼达建议她找拉里，因为上次在公园时拉里曾给贝蒂打过电话。
+Amanda: Bye bye",汉娜正在寻找贝蒂的电话号码。阿曼达建议她去找拉里，因为上次在公园时拉里曾给贝蒂打过电话。,Hannah needs Betty's number but Amanda doesn't have it. She needs to contact Larry.,汉娜需要贝蒂的电话号码，但阿曼达没有。她得联系拉里。,yunu919/bart-large-dialogue-summarization,translategemma:12b,qwen3.5:9b,"Hannah is looking for Betty's number. Amanda suggests Hannah to ask Larry, who called Betty last time they were at the park.",汉娜正在寻找贝蒂的电话号码。阿曼达建议汉娜去问拉里，因为上次他们在公园的时候，拉里给贝蒂打电话。,汉娜正在寻找贝蒂的电话号码。阿曼达建议她去找拉里，因为上次在公园时拉里曾给贝蒂打过电话。
 test_00002,"Eric: MACHINE!
 Rob: That's so gr8!
 Eric: I know! And shows how Americans see Russian ;)
@@ -29,7 +29,7 @@ Rob: Me too!
 Eric: MACHINE!
 Rob: MACHINE!
 Eric: TTYL?
-Rob: Sure :)",埃里克和罗布正在观看一位俄罗斯喜剧演员的脱口秀表演。,Eric and Rob are going to watch a stand-up on youtube.,埃里克和罗伯要在youtube上看一场单口相声。,yunu919/bart-large-dialogue-summarization,translategemma:12b,qwen3.5:9b,Eric and Rob are watching a Russian comedian's stand-up.,埃里克和罗布正在观看一位俄罗斯喜剧演员的脱口秀表演。,埃里克和罗布正在观看一位俄罗斯喜剧演员的脱口秀表演。
+Rob: Sure :)",埃里克和罗布正在观看一位美国喜剧演员的脱口秀表演，因为该演员用俄语表演，展示了美国人眼中的俄罗斯。,Eric and Rob are going to watch a stand-up on youtube.,埃里克和罗伯要在youtube上看一场单口相声。,yunu919/bart-large-dialogue-summarization,translategemma:12b,qwen3.5:9b,Eric and Rob are watching a Russian comedian's stand-up.,埃里克和罗布正在观看一位俄罗斯喜剧演员的脱口秀表演。,埃里克和罗布正在观看一位美国喜剧演员的脱口秀表演，因为该演员用俄语表演，展示了美国人眼中的俄罗斯。
 test_00003,"Lenny: Babe, can you help me with something?
 Bob: Sure, what's up?
 Lenny: Which one should I pick?
@@ -45,7 +45,7 @@ Bob: what matters is what you'll give you the most outfit options
 Lenny: So I guess I'll buy the first or the third pair then
 Bob: Pick the best quality then
 Lenny: ur right, thx
-Bob: no prob :)",莱尼将购买第一件或第三件紫色裤子。,Lenny can't decide which trousers to buy. Bob advised Lenny on that topic. Lenny goes with Bob's advice to pick the trousers that are of best quality.,莱尼无法决定买哪条裤子。鲍勃就此给莱尼提了些建议。莱尼听了他的建议，选了质量最好的裤子。,yunu919/bart-large-dialogue-summarization,translategemma:12b,qwen3.5:9b,Lenny will buy the first or the third pair of purple trousers from Bob.,莱尼会从鲍勃那里购买第一件或第三件紫色的裤子。,莱尼将购买第一件或第三件紫色裤子。
+Bob: no prob :)",莱尼将购买第一件或第三件裤子。,Lenny can't decide which trousers to buy. Bob advised Lenny on that topic. Lenny goes with Bob's advice to pick the trousers that are of best quality.,莱尼无法决定买哪条裤子。鲍勃就此给莱尼提了些建议。莱尼听了他的建议，选了质量最好的裤子。,yunu919/bart-large-dialogue-summarization,translategemma:12b,qwen3.5:9b,Lenny will buy the first or the third pair of purple trousers from Bob.,莱尼会从鲍勃那里购买第一件或第三件紫色的裤子。,莱尼将购买第一件或第三件裤子。
 test_00004,"Will: hey babe, what do you want for dinner tonight?
 Emma:  gah, don't even worry about it tonight
 Will: what do you mean? everything ok?
@@ -79,4 +79,4 @@ Ollie: ok for tea!
 Jane: I'm on my way..
 Ollie: tea is ready, did you bring the pastries?
 Jane: I already ate them all... see you in a minute
-Ollie: ok",简刚从摩洛哥回来。奥利和简将于周五晚上 6 点，在简的课程结束后见面喝茶。,Jane is in Warsaw. Ollie and Jane has a party. Jane lost her calendar. They will get a lunch this week on Friday. Ollie accidentally called Jane and talked about whisky. Jane cancels lunch. They'll meet for a tea at 6 pm.,简在华沙，她和奥利有个聚会。她把重要的日子忘了，本来他们周五会共进午餐。但是奥利无意间给简打了个电话，聊起了威士忌。于是简取消了午餐。下午6点他们见面喝茶。,yunu919/bart-large-dialogue-summarization,translategemma:12b,qwen3.5:9b,Jane is back from Morocco. Ollie and Jane will meet for lunch on Friday at 6 pm after Jane finishes her courses.,简从摩洛哥回到了。奥利和简将于周五晚上6点见面共进午餐，时间是简完成课程之后。,简刚从摩洛哥回来。奥利和简将于周五晚上 6 点，在简的课程结束后见面喝茶。
+Ollie: ok",简刚从摩洛哥回来。奥利和简将于周五晚上 6 点（简上完课后）见面喝茶。,Jane is in Warsaw. Ollie and Jane has a party. Jane lost her calendar. They will get a lunch this week on Friday. Ollie accidentally called Jane and talked about whisky. Jane cancels lunch. They'll meet for a tea at 6 pm.,简在华沙，她和奥利有个聚会。她把重要的日子忘了，本来他们周五会共进午餐。但是奥利无意间给简打了个电话，聊起了威士忌。于是简取消了午餐。下午6点他们见面喝茶。,yunu919/bart-large-dialogue-summarization,translategemma:12b,qwen3.5:9b,Jane is back from Morocco. Ollie and Jane will meet for lunch on Friday at 6 pm after Jane finishes her courses.,简从摩洛哥回到了。奥利和简将于星期五晚上6点见面共进午餐，时间是简上完课程之后。,简刚从摩洛哥回来。奥利和简将于周五晚上 6 点（简上完课后）见面喝茶。
