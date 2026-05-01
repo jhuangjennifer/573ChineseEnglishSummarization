@@ -1,6 +1,6 @@
-# 573ChineseEnglishSummarization
+# Team XLS
 
-Team project repository for **LING 573**.
+Group 4 Team project repository for **LING 573**.
 
 ## Project Overview
 
