@@ -64,160 +64,86 @@ Place files locally under:
 
 The raw `.json` files are ignored by Git, while `data/raw/.gitkeep` preserves the folder structure.
 
-## Current Project Direction
+## Reproducibility Instructions
 
-We are following **Option 1** using an existing dataset.
+This section explains how to source the required materials and reproduce the full project pipeline, including data preparation, model training, inference, and evaluation.
 
-Current workflow:
+---
 
-1. Inspect dataset structure and token lengths
-2. Prepare local raw data under `data/raw/`
-3. Fine-tune summarization models
-4. Upload trained models to Hugging Face
-5. Run full pipeline inference
-6. Generate English and Chinese prediction files
-7. Evaluate outputs using ROUGE and BERTScore
-8. Analyze model behavior and error patterns
+### 1. Source the Required Materials
 
-## Baseline System
+#### 1.1 Dataset
 
-Our primary baseline is:
+This project uses the **XSAMSum** dataset from the **ClidSum** benchmark.
 
-**English dialogue → English summary → Chinese summary**
+Dataset repository:
 
-### Stage 1: Summarizer
+```text
+https://github.com/krystalan/ClidSum
+```
 
-Input: English dialogue  
-Output: English summary
+Download the XSAMSum data from the ClidSum repository and place the files locally under `data/raw/`.
 
-Models:
+Expected file structure:
 
-- BART
-- mBART
+```text
+data/raw/train.json
+data/raw/val.json
+data/raw/test.json
+```
 
-### Stage 2: Translator
+Each file should contain the following fields:
 
-Input: English summary  
-Output: Chinese summary
+```text
+dialogue
+summary
+summary_zh
+```
 
-Translation model:
+Field usage:
 
-- `Helsinki-NLP/opus-mt-en-zh`
-
-Reference:
-
-- Tiedemann and Thottingal (2020)
-
-The translation stage uses the pretrained OPUS-MT English-to-Chinese model from Helsinki-NLP.
-
-This design helps us:
-
-- isolate summarization errors
-- isolate translation errors
-- compare summarization models
-- identify where pipeline errors are introduced
-
-## Models
-
-### BART
-
-| Item | Description |
+| Field | Description |
 |---|---|
-| Base model | `facebook/bart-large` |
-| Fine-tuned model | `yunu919/bart-large-dialogue-summarization` |
-| Task | English dialogue → English summary |
+| `dialogue` | English multi-turn dialogue |
+| `summary` | English reference summary |
+| `summary_zh` | Chinese reference summary |
 
-### mBART
+Raw dataset files are not included in this repository and should not be committed to GitHub.
 
-| Item | Description |
+---
+
+#### 1.2 Models
+
+The project uses two fine-tuned summarization models and one pretrained translation model.
+
+| Component | Model |
 |---|---|
-| Base model | `facebook/mbart-large-50-many-to-many-mmt` |
-| Fine-tuned model | `yunu919/mbart-large-dialogue-summarization` |
-| Task | English dialogue → English summary |
-| Source language | `en_XX` |
-| Target language | `en_XX` |
+| BART summarizer | `yunu919/bart-large-dialogue-summarization` |
+| mBART summarizer | `yunu919/mbart-large-dialogue-summarization` |
+| English-to-Chinese translator | `Helsinki-NLP/opus-mt-en-zh` |
 
-### Translation Model
+The summarization models can either be loaded directly from Hugging Face or trained locally using the scripts in this repository.
 
-| Item | Description |
-|---|---|
-| Model | `Helsinki-NLP/opus-mt-en-zh` |
-| Task | English summary → Chinese summary |
-| Reference | Tiedemann and Thottingal (2020) |
-| Fine-tuning | Not fine-tuned; used as a pretrained translation model |
+Hugging Face links:
 
-### PEGASUS
+```text
+https://huggingface.co/yunu919/bart-large-dialogue-summarization
+https://huggingface.co/yunu919/mbart-large-dialogue-summarization
+https://huggingface.co/Helsinki-NLP/opus-mt-en-zh
+```
 
-PEGASUS was tested during experimentation, but it is currently secondary because the available run was not a full training run due to GPU limitations.
+---
 
-Current focus remains on BART and mBART.
+### 2. Set Up the Environment
 
-## Hugging Face Models
-
-| Model | Link |
-|---|---|
-| BART | https://huggingface.co/yunu919/bart-large-dialogue-summarization |
-| mBART | https://huggingface.co/yunu919/mbart-large-dialogue-summarization |
-| PEGASUS | https://huggingface.co/yunu919/pegasus-large-dialogue-summarization |
-| Translation | https://huggingface.co/Helsinki-NLP/opus-mt-en-zh |
-
-PEGASUS is included for reference, but the current pipeline focuses on BART and mBART.
-
-## Implementation
-
-The project was initially developed in Jupyter notebooks and later converted into standalone Python scripts for reproducibility.
-
-### Main Scripts
-
-| Path | Purpose |
-|---|---|
-| `scripts/train_bart.py` | Fine-tunes BART for English dialogue summarization |
-| `scripts/train_mbart.py` | Fine-tunes mBART for English dialogue summarization |
-| `scripts/run_inference_pipeline.py` | Runs English summarization followed by Chinese translation |
-
-### `train_bart.py`
-
-Fine-tunes BART for:
-
-**English dialogue → English summary**
-
-### `train_mbart.py`
-
-Fine-tunes mBART for:
-
-**English dialogue → English summary**
-
-### `run_inference_pipeline.py`
-
-Runs the full pipeline:
-
-**English dialogue → English summary → Chinese summary**
-
-It loads a summarization model, generates English summaries, translates them into Chinese using `Helsinki-NLP/opus-mt-en-zh`, and saves prediction files.
-
-## Source Code Organization
-
-Reusable helper functions are stored under `src/`.
-
-| Path | Purpose |
-|---|---|
-| `src/data/load_data.py` | Loads JSON dataset files and creates dataset splits |
-| `src/data/preprocess.py` | Cleans and prepares dialogue/summary data |
-| `src/models/bart_model.py` | Loads BART model and tokenizer |
-| `src/models/mbart_model.py` | Loads mBART model/tokenizer and sets language codes |
-| `src/pipeline/inference.py` | Provides reusable generation, translation, and device-selection functions |
-| `src/utils/io_utils.py` | Handles file reading, saving, and directory creation |
-
-## Run Instructions
-
-### 1. Clone Repository
+Clone the repository:
 
 ```bash
 git clone <your-repo-url>
 cd 573ChineseEnglishSummarization
 ```
 
-### 2. Create Virtual Environment
+Create and activate a virtual environment:
 
 ```bash
 python -m venv .venv
@@ -230,29 +156,59 @@ For Windows:
 .venv\Scripts\activate
 ```
 
-### 3. Install Dependencies
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Manual install if needed:
+If `requirements.txt` is unavailable or incomplete, install the main dependencies manually:
 
 ```bash
-pip install torch transformers accelerate datasets evaluate sentencepiece protobuf sacrebleu rouge-score bert-score pandas numpy scikit-learn tqdm
+pip install torch transformers accelerate datasets evaluate
+pip install sentencepiece protobuf sacrebleu rouge-score bert-score
+pip install pandas numpy scikit-learn tqdm jieba nltk
 ```
 
-### 4. Prepare Dataset
+---
 
-Place files under:
+### 3. Prepare the Data
 
-- `data/raw/train.json`
-- `data/raw/val.json`
-- `data/raw/test.json`
+Place the downloaded XSAMSum files under:
 
-## Run Examples
+```text
+data/raw/
+```
 
-### Train BART
+The expected structure is:
+
+```text
+data/raw/train.json
+data/raw/val.json
+data/raw/test.json
+```
+
+No heavy preprocessing is required for the current pipeline. The system uses:
+
+```text
+Input:  dialogue
+Target: summary
+Final reference: summary_zh
+```
+
+The dialogue format is preserved as much as possible because speaker names, turn boundaries, informal language, and emojis may contain useful dialogue information.
+
+---
+
+### 4. Train the Summarization Models
+
+The summarization models are trained for:
+
+```text
+English dialogue → English summary
+```
+
+#### 4.1 Train BART
 
 ```bash
 python scripts/train_bart.py \
@@ -262,11 +218,13 @@ python scripts/train_bart.py \
   --output_dir outputs/bart_model
 ```
 
-The trained model will be saved under:
+The trained BART model will be saved to:
 
-- `outputs/bart_model/`
+```text
+outputs/bart_model/
+```
 
-### Train mBART
+#### 4.2 Train mBART
 
 ```bash
 python scripts/train_mbart.py \
@@ -276,11 +234,39 @@ python scripts/train_mbart.py \
   --output_dir outputs/mbart_model
 ```
 
-The trained model will be saved under:
+The trained mBART model will be saved to:
 
-- `outputs/mbart_model/`
+```text
+outputs/mbart_model/
+```
 
-### Run Pipeline with BART
+For mBART, the source and target language should both be set to English:
+
+```text
+source language = en_XX
+target language = en_XX
+```
+
+This ensures that mBART generates intermediate English summaries rather than summaries in another language.
+
+---
+
+### 5. Run the Full Inference Pipeline
+
+The full pipeline performs:
+
+```text
+English dialogue → English summary → Chinese summary
+```
+
+It first generates intermediate English summaries using a fine-tuned summarization model.  
+Then, it translates those English summaries into Chinese using `Helsinki-NLP/opus-mt-en-zh`.
+
+---
+
+#### 5.1 Run Pipeline with BART
+
+Using the Hugging Face BART checkpoint:
 
 ```bash
 python scripts/run_inference_pipeline.py \
@@ -290,12 +276,18 @@ python scripts/run_inference_pipeline.py \
   --output_dir outputs
 ```
 
-Outputs:
+Expected outputs:
 
-- `outputs/bart_predictions_en.txt`
-- `outputs/bart_predictions_zh.txt`
+```text
+outputs/bart_predictions_en.txt
+outputs/bart_predictions_zh.txt
+```
 
-### Run Pipeline with mBART
+---
+
+#### 5.2 Run Pipeline with mBART
+
+Using the Hugging Face mBART checkpoint:
 
 ```bash
 python scripts/run_inference_pipeline.py \
@@ -305,68 +297,136 @@ python scripts/run_inference_pipeline.py \
   --output_dir outputs
 ```
 
-Outputs:
+Expected outputs:
 
-- `outputs/mbart_predictions_en.txt`
-- `outputs/mbart_predictions_zh.txt`
+```text
+outputs/mbart_predictions_en.txt
+outputs/mbart_predictions_zh.txt
+```
 
-## Output Files
+---
 
-Prediction files are saved under:
+#### 5.3 Run Pipeline with a Locally Trained Model
 
-- `outputs/bart_predictions_en.txt`
-- `outputs/bart_predictions_zh.txt`
-- `outputs/mbart_predictions_en.txt`
-- `outputs/mbart_predictions_zh.txt`
+If the model was trained locally, use the local model directory instead of the Hugging Face model ID.
 
-These files are ignored by Git because they can be regenerated.
+Example:
 
-## Evaluation
+```bash
+python scripts/run_inference_pipeline.py \
+  --summary_model outputs/bart_model \
+  --model_tag bart_local \
+  --input_path data/raw/test.json \
+  --output_dir outputs
+```
 
-We evaluate generated summaries using:
+Expected outputs:
 
-- ROUGE
-- BERTScore
+```text
+outputs/bart_local_predictions_en.txt
+outputs/bart_local_predictions_zh.txt
+```
 
-For Chinese summaries, evaluation compares generated Chinese outputs against Chinese references.
+---
 
-For English intermediate summaries, evaluation helps inspect summarization quality before translation.
+### 6. Evaluate the Outputs
 
-We analyze:
+The system should be evaluated at two stages:
 
-- whether summaries capture important dialogue content
-- whether translation preserves meaning
-- differences between BART and mBART
-- whether metric scores align with qualitative judgments
+| Stage | Prediction File | Reference Field | Purpose |
+|---|---|---|---|
+| English intermediate summary | `*_predictions_en.txt` | `summary` | Evaluate summarization quality before translation |
+| Chinese final summary | `*_predictions_zh.txt` | `summary_zh` | Evaluate final cross-lingual summarization quality |
 
-## Hardware Notes
+The main evaluation metrics are:
 
-GPU is recommended for training and inference.
-
-Recommended options:
-
-- Google Colab GPU runtime
-- Colab Pro with T4 or A100
-- CUDA-enabled local GPU
-
-CPU inference is possible but slower.  
-Training on CPU is not recommended.
-
-## Repository Structure
-
-| Path | Description |
+| Metric | Purpose |
 |---|---|
-| `scripts/` | Executable training and inference scripts |
-| `src/` | Reusable helper modules |
-| `data/` | Local dataset files and processed outputs |
-| `data/raw/` | Local raw dataset files ignored by Git |
-| `docs/` | Notes, references, slides, and weekly stand-ups |
-| `notebooks/` | Original experimental notebooks |
-| `report/` | Report drafts and course deliverables |
-| `requirements.txt` | Python dependencies |
-| `README.md` | Project documentation |
+| ROUGE-1 | Unigram overlap |
+| ROUGE-2 | Bigram overlap |
+| ROUGE-L | Longest common subsequence overlap |
+| BERTScore F1 | Semantic similarity |
 
-## Notes
+For Chinese evaluation, Chinese text should be segmented before ROUGE calculation.  
+This project uses `jieba` for Chinese segmentation.
 
-This README reflects our current implementation and project direction.  
-It may be updated as the project develops.
+---
+
+#### 6.1 Evaluate BART English Predictions
+
+```bash
+python scripts/evaluate_outputs.py \
+  --pred_path outputs/bart_predictions_en.txt \
+  --ref_path data/raw/test.json \
+  --ref_field summary \
+  --lang en \
+  --output_path outputs/bart_eval_en.json
+```
+
+---
+
+#### 6.2 Evaluate BART Chinese Predictions
+
+```bash
+python scripts/evaluate_outputs.py \
+  --pred_path outputs/bart_predictions_zh.txt \
+  --ref_path data/raw/test.json \
+  --ref_field summary_zh \
+  --lang zh \
+  --output_path outputs/bart_eval_zh.json
+```
+
+---
+
+#### 6.3 Evaluate mBART English Predictions
+
+```bash
+python scripts/evaluate_outputs.py \
+  --pred_path outputs/mbart_predictions_en.txt \
+  --ref_path data/raw/test.json \
+  --ref_field summary \
+  --lang en \
+  --output_path outputs/mbart_eval_en.json
+```
+
+---
+
+#### 6.4 Evaluate mBART Chinese Predictions
+
+```bash
+python scripts/evaluate_outputs.py \
+  --pred_path outputs/mbart_predictions_zh.txt \
+  --ref_path data/raw/test.json \
+  --ref_field summary_zh \
+  --lang zh \
+  --output_path outputs/mbart_eval_zh.json
+```
+
+Expected evaluation outputs:
+
+```text
+outputs/bart_eval_en.json
+outputs/bart_eval_zh.json
+outputs/mbart_eval_en.json
+outputs/mbart_eval_zh.json
+```
+
+---
+
+### 7. Expected Reproducible Workflow
+
+To reproduce the full project from scratch, run the following steps in order:
+
+```text
+1. Clone the repository.
+2. Create and activate a Python environment.
+3. Install dependencies.
+4. Download XSAMSum from the ClidSum repository.
+5. Place train.json, val.json, and test.json under data/raw/.
+6. Train BART and/or mBART, or load the uploaded Hugging Face checkpoints.
+7. Run the inference pipeline.
+8. Generate English and Chinese prediction files.
+9. Evaluate English predictions against summary.
+10. Evaluate Chinese predictions against summary_zh.
+11. Save evaluation results under outputs/.
+```
