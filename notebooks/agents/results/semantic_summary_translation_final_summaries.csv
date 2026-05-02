@@ -1,0 +1,373 @@
+﻿id,dialogue,final_summary,reference_english_summary,reference_chinese_summary,agent1_semantic_representation_json,agent2_english_summary,agent3_chinese_summary
+test_00001,"Hannah: Hey, do you have Betty's number?
+Amanda: Lemme check
+Hannah: <file_gif>
+Amanda: Sorry, can't find it.
+Amanda: Ask Larry
+Amanda: He called her last time we were at the park together
+Hannah: I don't know him well
+Hannah: <file_gif>
+Amanda: Don't be shy, he's very nice
+Hannah: If you say so..
+Hannah: I'd rather you texted him
+Amanda: Just text him 🙂
+Hannah: Urgh.. Alright
+Hannah: Bye
+Amanda: Bye bye",汉娜向曼达询问贝蒂的电话号码，但曼达没有找到。曼达建议联系拉里，汉娜对此感到犹豫。最终，汉娜表示希望曼达直接给拉里发短信，曼达同意了。,Hannah needs Betty's number but Amanda doesn't have it. She needs to contact Larry.,汉娜需要贝蒂的电话号码，但阿曼达没有。她得联系拉里。,"{
+  ""participants"": [
+    ""Hannah"",
+    ""Amanda""
+  ],
+  ""key_events"": [
+    {
+      ""actor"": ""Hannah"",
+      ""action"": ""requests Betty's phone number"",
+      ""target_or_object"": ""Betty's phone number"",
+      ""evidence"": ""Hey, do you have Betty's number?""
+    },
+    {
+      ""actor"": ""Amanda"",
+      ""action"": ""searches for Betty's number"",
+      ""target_or_object"": ""Betty's phone number"",
+      ""evidence"": ""Lemme check""
+    },
+    {
+      ""actor"": ""Amanda"",
+      ""action"": ""suggests contacting Larry"",
+      ""target_or_object"": ""Larry"",
+      ""evidence"": ""Ask Larry He called her last time we were at the park together""
+    },
+    {
+      ""actor"": ""Hannah"",
+      ""action"": ""expresses hesitation about contacting Larry"",
+      ""target_or_object"": ""Larry"",
+      ""evidence"": ""I don't know him well""
+    },
+    {
+      ""actor"": ""Amanda"",
+      ""action"": ""encourages Hannah to contact Larry"",
+      ""target_or_object"": ""Larry"",
+      ""evidence"": ""Don't be shy, he's very nice""
+    },
+    {
+      ""actor"": ""Hannah"",
+      ""action"": ""requests Amanda to text Larry instead"",
+      ""target_or_object"": ""Larry"",
+      ""evidence"": ""I'd rather you texted him""
+    },
+    {
+      ""actor"": ""Amanda"",
+      ""action"": ""agrees to text Larry"",
+      ""target_or_object"": ""Larry"",
+      ""evidence"": ""Just text him 🙂""
+    }
+  ],
+  ""requests_or_actions"": [
+    {
+      ""person"": ""Hannah"",
+      ""action"": ""requests Betty's number"",
+      ""evidence"": ""do you have Betty's number?""
+    },
+    {
+      ""person"": ""Amanda"",
+      ""action"": ""suggests asking Larry"",
+      ""evidence"": ""Ask Larry""
+    },
+    {
+      ""person"": ""Hannah"",
+      ""action"": ""requests Amanda to text Larry"",
+      ""evidence"": ""I'd rather you texted him""
+    },
+    {
+      ""person"": ""Amanda"",
+      ""action"": ""agrees to text Larry"",
+      ""evidence"": ""Just text him""
+    }
+  ],
+  ""important_entities"": [
+    ""Betty"",
+    ""Larry"",
+    ""Amanda"",
+    ""Hannah"",
+    ""park""
+  ],
+  ""uncertainties"": []
+}","Hannah asks Amanda for Betty's phone number, but after Amanda cannot find it and suggests contacting Larry, Hannah reluctantly agrees to let Amanda text Larry instead.",汉娜向曼达询问贝蒂的电话号码，但曼达没有找到。曼达建议联系拉里，汉娜对此感到犹豫。最终，汉娜表示希望曼达直接给拉里发短信，曼达同意了。
+test_00002,"Eric: MACHINE!
+Rob: That's so gr8!
+Eric: I know! And shows how Americans see Russian ;)
+Rob: And it's really funny!
+Eric: I know! I especially like the train part!
+Rob: Hahaha! No one talks to the machine like that!
+Eric: Is this his only stand-up?
+Rob: Idk. I'll check.
+Eric: Sure.
+Rob: Turns out no! There are some of his stand-ups on youtube.
+Eric: Gr8! I'll watch them now!
+Rob: Me too!
+Eric: MACHINE!
+Rob: MACHINE!
+Eric: TTYL?
+Rob: Sure :)",Eric和Rob讨论了脱口秀节目“MACHINE”。Eric询问是否只有这一期节目，Rob在YouTube上搜索后发现还有其他节目。两人都决定立即观看这些其他节目，然后道别。,Eric and Rob are going to watch a stand-up on youtube.,埃里克和罗伯要在youtube上看一场单口相声。,"{
+  ""participants"": [
+    ""Eric"",
+    ""Rob""
+  ],
+  ""key_events"": [
+    {
+      ""actor"": ""Rob"",
+      ""action"": ""checks for more stand-ups"",
+      ""target_or_object"": ""YouTube"",
+      ""evidence"": ""I'll check. Turns out no! There are some of his stand-ups on youtube.""
+    },
+    {
+      ""actor"": ""Eric"",
+      ""action"": ""decides to watch stand-ups"",
+      ""target_or_object"": ""stand-ups on YouTube"",
+      ""evidence"": ""Gr8! I'll watch them now!""
+    },
+    {
+      ""actor"": ""Rob"",
+      ""action"": ""agrees to watch stand-ups"",
+      ""target_or_object"": ""stand-ups on YouTube"",
+      ""evidence"": ""Me too!""
+    }
+  ],
+  ""requests_or_actions"": [
+    {
+      ""person"": ""Eric"",
+      ""action"": ""asks if there is only one stand-up"",
+      ""evidence"": ""Is this his only stand-up?""
+    },
+    {
+      ""person"": ""Rob"",
+      ""action"": ""responds to TTYL"",
+      ""evidence"": ""Sure :)""
+    }
+  ],
+  ""important_entities"": [
+    ""MACHINE"",
+    ""Americans"",
+    ""Russians"",
+    ""train"",
+    ""stand-ups"",
+    ""YouTube""
+  ],
+  ""uncertainties"": [
+    ""Whether there are other stand-ups available""
+  ]
+}","Eric and Rob discuss the stand-up show ""MACHINE,"" with Rob discovering additional performances on YouTube after Eric asks if it is his only one. Both agree to watch the other stand-ups immediately before saying goodbye.",Eric和Rob讨论了脱口秀节目“MACHINE”。Eric询问是否只有这一期节目，Rob在YouTube上搜索后发现还有其他节目。两人都决定立即观看这些其他节目，然后道别。
+test_00003,"Lenny: Babe, can you help me with something?
+Bob: Sure, what's up?
+Lenny: Which one should I pick?
+Bob: Send me photos
+Lenny:  <file_photo>
+Lenny:  <file_photo>
+Lenny:  <file_photo>
+Bob: I like the first ones best
+Lenny: But I already have purple trousers. Does it make sense to have two pairs?
+Bob: I have four black pairs :D :D
+Lenny: yeah, but shouldn't I pick a different color?
+Bob: what matters is what you'll give you the most outfit options
+Lenny: So I guess I'll buy the first or the third pair then
+Bob: Pick the best quality then
+Lenny: ur right, thx
+Bob: no prob :)",Lenny 询问 Bob 帮助他选择三条裤子。Bob 推荐了第一条裤子，并解释说购买更多裤子可以增加服装搭配的可能性，尽管 Lenny 已经有紫色裤子。最终，Lenny 决定购买第一条或第三条裤子，并表示会选择质量最好的那条。,Lenny can't decide which trousers to buy. Bob advised Lenny on that topic. Lenny goes with Bob's advice to pick the trousers that are of best quality.,莱尼无法决定买哪条裤子。鲍勃就此给莱尼提了些建议。莱尼听了他的建议，选了质量最好的裤子。,"{
+  ""participants"": [
+    ""Lenny"",
+    ""Bob""
+  ],
+  ""key_events"": [
+    {
+      ""actor"": ""Lenny"",
+      ""action"": ""asks for help choosing trousers"",
+      ""target_or_object"": ""trousers"",
+      ""evidence"": ""Lenny: Which one should I pick?""
+    },
+    {
+      ""actor"": ""Lenny"",
+      ""action"": ""sends photos of trousers"",
+      ""target_or_object"": ""three pairs of trousers"",
+      ""evidence"": ""Lenny: <file_photo> <file_photo> <file_photo>""
+    },
+    {
+      ""actor"": ""Bob"",
+      ""action"": ""expresses preference for first options"",
+      ""target_or_object"": ""first pair of trousers"",
+      ""evidence"": ""Bob: I like the first ones best""
+    },
+    {
+      ""actor"": ""Lenny"",
+      ""action"": ""questions necessity of buying another pair"",
+      ""target_or_object"": ""purple trousers"",
+      ""evidence"": ""Lenny: But I already have purple trousers. Does it make sense to have two pairs?""
+    },
+    {
+      ""actor"": ""Bob"",
+      ""action"": ""states reason for buying more"",
+      ""target_or_object"": ""outfit options"",
+      ""evidence"": ""Bob: what matters is what you'll give you the most outfit options""
+    },
+    {
+      ""actor"": ""Lenny"",
+      ""action"": ""decides on purchase"",
+      ""target_or_object"": ""first or third pair"",
+      ""evidence"": ""Lenny: So I guess I'll buy the first or the third pair then""
+    },
+    {
+      ""actor"": ""Bob"",
+      ""action"": ""advises on selection criteria"",
+      ""target_or_object"": ""quality"",
+      ""evidence"": ""Bob: Pick the best quality then""
+    }
+  ],
+  ""requests_or_actions"": [
+    {
+      ""person"": ""Lenny"",
+      ""action"": ""requests help choosing trousers"",
+      ""evidence"": ""Lenny: Babe, can you help me with something?""
+    },
+    {
+      ""person"": ""Bob"",
+      ""action"": ""requests photos to make a decision"",
+      ""evidence"": ""Bob: Send me photos""
+    },
+    {
+      ""person"": ""Lenny"",
+      ""action"": ""thinks about color variety"",
+      ""evidence"": ""Lenny: yeah, but shouldn't I pick a different color?""
+    },
+    {
+      ""person"": ""Lenny"",
+      ""action"": ""thanks Bob for advice"",
+      ""evidence"": ""Lenny: ur right, thx""
+    }
+  ],
+  ""important_entities"": [
+    ""purple trousers"",
+    ""black trousers"",
+    ""first pair"",
+    ""third pair"",
+    ""outfit options"",
+    ""quality""
+  ],
+  ""uncertainties"": []
+}","Lenny asks Bob for help choosing between three pairs of trousers, and after Bob recommends the first pair and explains that buying more increases outfit options despite Lenny already owning purple trousers, Lenny decides to purchase either the first or third pair based on quality.",Lenny 询问 Bob 帮助他选择三条裤子。Bob 推荐了第一条裤子，并解释说购买更多裤子可以增加服装搭配的可能性，尽管 Lenny 已经有紫色裤子。最终，Lenny 决定购买第一条或第三条裤子，并表示会选择质量最好的那条。
+test_00004,"Will: hey babe, what do you want for dinner tonight?
+Emma:  gah, don't even worry about it tonight
+Will: what do you mean? everything ok?
+Emma: not really, but it's ok, don't worry about cooking though, I'm not hungry
+Will: Well what time will you be home?
+Emma: soon, hopefully
+Will: you sure? Maybe you want me to pick you up?
+Emma: no no it's alright. I'll be home soon, i'll tell you when I get home. 
+Will: Alright, love you. 
+Emma: love you too. ",威廉询问艾玛晚餐的安排以及她回家的时间。艾玛表示今晚不想做饭，也没有食欲，并确认她很快会回家，不需要威廉来接。,Emma will be home soon and she will let Will know.,艾玛很快就会回家，而且她会告诉威尔。,"{
+  ""participants"": [
+    ""Will"",
+    ""Emma""
+  ],
+  ""key_events"": [
+    {
+      ""actor"": ""Will"",
+      ""action"": ""asks about dinner plans"",
+      ""target_or_object"": ""dinner"",
+      ""evidence"": ""what do you want for dinner tonight?""
+    },
+    {
+      ""actor"": ""Emma"",
+      ""action"": ""declines cooking and expresses lack of appetite"",
+      ""target_or_object"": ""dinner/cooking"",
+      ""evidence"": ""don't even worry about it tonight... I'm not hungry""
+    },
+    {
+      ""actor"": ""Will"",
+      ""action"": ""asks about Emma's arrival time"",
+      ""target_or_object"": ""Emma's homecoming"",
+      ""evidence"": ""Well what time will you be home?""
+    },
+    {
+      ""actor"": ""Emma"",
+      ""action"": ""confirms imminent return"",
+      ""target_or_object"": ""home"",
+      ""evidence"": ""soon, hopefully... I'll be home soon""
+    },
+    {
+      ""actor"": ""Will"",
+      ""action"": ""offers to pick up Emma"",
+      ""target_or_object"": ""Emma"",
+      ""evidence"": ""Maybe you want me to pick you up?""
+    },
+    {
+      ""actor"": ""Emma"",
+      ""action"": ""declines pickup offer"",
+      ""target_or_object"": ""pickup"",
+      ""evidence"": ""no no it's alright.""
+    }
+  ],
+  ""requests_or_actions"": [
+    {
+      ""person"": ""Will"",
+      ""action"": ""asks Emma what she wants for dinner"",
+      ""evidence"": ""what do you want for dinner tonight?""
+    },
+    {
+      ""person"": ""Will"",
+      ""action"": ""asks when Emma will be home"",
+      ""evidence"": ""Well what time will you be home?""
+    },
+    {
+      ""person"": ""Will"",
+      ""action"": ""offers to pick up Emma"",
+      ""evidence"": ""Maybe you want me to pick you up?""
+    },
+    {
+      ""person"": ""Emma"",
+      ""action"": ""promises to inform Will upon arrival"",
+      ""evidence"": ""i'll tell you when I get home.""
+    }
+  ],
+  ""important_entities"": [
+    ""Will"",
+    ""Emma"",
+    ""dinner"",
+    ""home""
+  ],
+  ""uncertainties"": [
+    ""Emma's exact arrival time"",
+    ""Emma's emotional state (not really ok but ok)""
+  ]
+}","Will asks Emma about dinner and her return time, but she declines cooking due to a lack of appetite and confirms she will be home soon without needing a pickup.",威廉询问艾玛晚餐的安排以及她回家的时间。艾玛表示今晚不想做饭，也没有食欲，并确认她很快会回家，不需要威廉来接。
+test_00005,"Ollie: Hi , are you in Warsaw
+Jane: yes, just back! Btw are you free for diner the 19th?
+Ollie: nope!
+Jane: and the  18th?
+Ollie: nope, we have this party and you must be there, remember?
+Jane: oh right! i lost my calendar..  thanks for reminding me
+Ollie: we have lunch this week?
+Jane: with pleasure!
+Ollie: friday?
+Jane: ok
+Jane: what do you mean "" we don't have any more whisky!"" lol..
+Ollie: what!!!
+Jane: you just call me and the all thing i heard was that sentence about whisky... what's wrong with you?
+Ollie: oh oh... very strange! i have to be carefull may be there is some spy in my mobile! lol
+Jane: dont' worry, we'll check on friday.
+Ollie: don't forget to bring some sun with you
+Jane: I can't wait to be in Morocco..
+Ollie: enjoy and see you friday
+Jane: sorry Ollie, i'm very busy, i won't have time for lunch  tomorrow, but may be at 6pm after my courses?this trip to Morocco was so nice, but time consuming!
+Ollie: ok for tea!
+Jane: I'm on my way..
+Ollie: tea is ready, did you bring the pastries?
+Jane: I already ate them all... see you in a minute
+Ollie: ok",简 (Jane) 刚刚回到华沙，她与奥利 (Ollie) 讨论了派对、潜在的午餐以及前往摩洛哥的行程。 简还开玩笑地提到了缺少的威士忌，以及奥利手机上可能存在的间谍。 简表示她已经吃完了糕点，并计划在课程结束后下午6点来喝茶，但她表示第二天可能没有时间吃午餐。,Jane is in Warsaw. Ollie and Jane has a party. Jane lost her calendar. They will get a lunch this week on Friday. Ollie accidentally called Jane and talked about whisky. Jane cancels lunch. They'll meet for a tea at 6 pm.,简在华沙，她和奥利有个聚会。她把重要的日子忘了，本来他们周五会共进午餐。但是奥利无意间给简打了个电话，聊起了威士忌。于是简取消了午餐。下午6点他们见面喝茶。,"{
+  ""participants"": [],
+  ""key_events"": [],
+  ""requests_or_actions"": [],
+  ""important_entities"": [],
+  ""uncertainties"": [
+    ""Failed to parse semantic JSON output.""
+  ],
+  ""raw_output"": ""{\n  \""participants\"": [\""Ollie\"", \""Jane\""],\n  \""key_events\"": [\n    {\n      \""actor\"": \""Jane\"",\n      \""action\"": \""arrived in Warsaw\"",\n      \""target_or_object\"": \""Warsaw\"",\n      \""evidence\"": \""yes, just back!\""\n    },\n    {\n      \""actor\"": \""Ollie\"",\n      \""action\"": \""invited Jane to a party\"",\n      \""target_or_object\"": \""party\"",\n      \""evidence\"": \""you must be there, remember?\""\n    },\n    {\n      \""actor\"": \""Jane\"",\n      \""action\"": \""lost her calendar\"",\n      \""target_or_object\"": \""calendar\"",\n      \""evidence\"": \""i lost my calendar..\""\n    },\n    {\n      \""actor\"": \""Jane\"",\n      \""action\"": \""complained about missing whisky\"",\n      \""target_or_object\"": \""whisky\"",\n      \""evidence\"": \""we don't have any more whisky!\""\n    },\n    {\n      \""actor\"": \""Ollie\"",\n      \""action\"": \""suspected a spy\"",\n      \""target_or_object\"": \""mobile phone\"",\n      \""evidence\"": \""there is some spy in my mobile!\""\n    },\n    {\n      \""actor\"": \""Jane\"",\n      \""action\"": \""traveled to Morocco\"",\n      \""target_or_object\"": \""Morocco\"",\n      \""evidence\"": \""I'm on my way..\"", \""I can't wait to be in Morocco..\""\n    },\n    {\n      \""actor\"": \""Jane\"",\n      \""action\"": \""ate pastries\"",\n      \""target_or_object\"": \""pastries\"",\n      \""evidence\"": \""I already ate them all...\""\n    }\n  ],\n  \""requests_or_actions\"": [\n    {\n      \""person\"": \""Jane\"",\n      \""action\"": \""asked if Ollie is free for dinner\"",\n      \""evidence\"": \""are you free for diner the 19th?\""\n    },\n    {\n      \""person\"": \""Jane\"",\n      \""action\"": \""asked about lunch availability\"",\n      \""evidence\"": \""we have lunch this week?\""\n    },\n    {\n      \""person\"": \""Jane\"",\n      \""action\"": \""proposed meeting at 6pm after courses\"",\n      \""evidence\"": \""but may be at 6pm after my courses?\""\n    },\n    {\n      \""person\"": \""Ollie\"",\n      \""action\"": \""asked Jane to bring sun\"",\n      \""evidence\"": \""don't forget to bring some sun with you\""\n    },\n    {\n      \""person\"": \""Ollie\"",\n      \""action\"": \""asked if Jane brought pastries\"",\n      \""evidence\"": \""did you bring the pastries?\""\n    }\n  ],\n  \""important_entities\"": [\""Warsaw\"", \""party\"", \""calendar\"", \""whisky\"", \""mobile phone\"", \""Morocco\"", \""pastries\"", \""tea\"", \""courses\""],\n  \""uncertainties\"": [\n    \""Jane's availability for dinner on the 19th\"",\n    \""Jane's availability for lunch on Friday\"",\n    \""Whether there is a spy in Ollie's mobile\"",\n    \""Jane's ability to attend lunch tomorrow\""\n  ]\n}""
+}","Jane, who has just returned to Warsaw, coordinates with Ollie regarding a party, a potential lunch, and a trip to Morocco, while jokingly discussing a missing whisky and a suspected spy in Ollie's phone. The conversation concludes with Jane arriving for tea after eating the pastries, though she notes she is too busy for lunch the next day.",简 (Jane) 刚刚回到华沙，她与奥利 (Ollie) 讨论了派对、潜在的午餐以及前往摩洛哥的行程。 简还开玩笑地提到了缺少的威士忌，以及奥利手机上可能存在的间谍。 简表示她已经吃完了糕点，并计划在课程结束后下午6点来喝茶，但她表示第二天可能没有时间吃午餐。
