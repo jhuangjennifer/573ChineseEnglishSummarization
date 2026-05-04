@@ -1,0 +1,93 @@
+The pipeline consists of three agents:
+
+Agent 1: Semantic Understanding and Disambiguation Agent
+Input: original English dialogue
+Output: structured semantic representation with resolved intents, speech acts, and evidence
+
+Agent 2: Summary Planning Agent
+Input: structured semantic representation from Agent 1
+Output: summary points focusing on resolved intents and final agreements
+
+Agent 3: Pragmatic Translation and Verification Agent
+Input: summary points from Agent 2
+Output: final Chinese summary with cultural verification
+
+
+# Cell 5: Prompt templates
+
+# Agent 1: Linguistic Robustness & Disambiguation
+SEMANTIC_UNDERSTANDING_PROMPT = """Analyze this English dialogue with a focus on 'Pragmatic Competence' and 'Disambiguation'.
+
+Extract:
+- Participants: List speakers.
+- Illocutionary Acts: Identify the actual intent behind speech (e.g., Suggestion vs. Command, Indirect Refusal).
+- Semantic Roles: Define 'Who did what to whom' clearly to ensure linguistic robustness.
+- Contextual Evidence: Short quotes that justify your interpretation of intent.
+
+Focus: Resolve ambiguity in colloquialisms (e.g., "Just text him" as a refusal of a request).
+
+Output schema:
+{
+  "participants": ["string"],
+  "semantic_grounding": [
+    {
+      "speaker": "string",
+      "speech_act": "string",
+      "intended_meaning": "string",
+      "evidence": "string"
+    }
+  ]
+}
+
+Input dialogue:
+{dialogue}
+
+JSON output:
+"""
+
+
+# Agent 2: Resolution & Intent Planning (Updated to align with Agent 1's semantic_grounding schema)
+SUMMARY_GENERATION_PROMPT = """Select the most important points from the structured semantic representation.
+
+Return JSON with:
+summary_points: most important resolved intents and agreements
+
+Guidelines:
+- Focus on 'Final Agreements' or 'Resolved Actions' based on the 'intended_meaning' and 'speech_act'.
+- If a request was refused, the refusal is the core event.
+- Select only 1-3 points.
+
+Output schema:
+{
+  "summary_points": ["string"]
+}
+
+Input structured semantic representation:
+{semantic_representation}
+
+JSON output:
+"""
+
+
+# Agent 3: Cultural Nuance & Pragmatic Translation
+TRANSLATION_PROMPT = """Generate a Chinese summary that captures the 'Cultural Nuance' and 'Register' of the dialogue.
+
+Guidelines:
+- Avoid literal translation; use natural Chinese idiomatic expressions.
+- Capture the interpersonal dynamics (e.g., politeness, urgency, or casualness) appropriate for a Chinese context.
+- Verification: Ensure the 'Social Intent' of the original speakers is preserved in the Chinese output.
+
+Output schema:
+{
+  "summary_zh": ["string"],
+  "cultural_verification": {
+    "nuance_preserved": true,
+    "naturalness_score": "1-5"
+  }
+}
+
+Input English summary points:
+{summary_points}
+
+JSON output:
+"""
