@@ -85,26 +85,17 @@ REVISION_PROMPT = """Evaluate a draft Chinese summary based on the original Engl
 
 Evaluate the draft on the following criteria:
 
-CONCISENESS
-- Flag redundancy: repeated information, filler phrases, unnecessary hedging
-- Flag verbose constructions where a tighter phrasing exists
-   
-NATURALNESS
-- Flag English syntactic transfer
-- Flag awkward literal translation of English idioms
-- Flag inconsistent register
-
 FAITHFULNESS
 - Flag hallucinated information
-- Flag misinterpreted event or intention
+- Flag misinterpreted event and intention
 
 COVERAGE
-- Flag if the summary does not cover critical events or actions
+- Flag if the summary does not cover critical events, actions, or participants
 
 Output schema:
 {
   "needs_revision": true | false,
-  "issues_identified": {'CONCISENESS' | 'NATURALNESS' | 'FAITHFULNESS' | 'COVERAGE'},
+  "issues_identified": {'FAITHFULNESS' | 'COVERAGE'},
   "events_dropped": ["string"],
   "summary_zh_final": "string"
 }
