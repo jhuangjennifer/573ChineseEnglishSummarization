@@ -1,0 +1,111 @@
+The pipeline consists of three agents:
+
+Agent 1: Semantic Understanding and Disambiguation Agent
+Input: original English dialogue
+Output: structured semantic representation with resolved intents, speech acts, semantic roles, and evidence
+
+Agent 2: Summary Generation Agent
+Input: structured semantic representation from Agent 1
+Output: key events selection and Chinese summary
+
+Agent 3: Verification and Revision Agent
+Input: Chinese summary from Agent 2
+Output: revised final Chinese summary
+
+
+# Cell 5: Prompt templates
+
+# Agent 1: Linguistic Robustness & Disambiguation
+SEMANTIC_UNDERSTANDING_PROMPT = """Analyze this English dialogue with a focus on 'Pragmatic Competence' and 'Disambiguation'.
+
+Extract:
+- Participants: List speakers.
+- Illocutionary Acts: Identify the actual intent behind speech (e.g., Suggestion vs. Command, Indirect Refusal).
+- Semantic Roles: Define 'Who did what to whom' clearly to ensure linguistic robustness.
+- Contextual Evidence: Short quotes that justify your interpretation of intent.
+
+Focus: Resolve ambiguity in context (true intent is resolved in multiple turns).
+
+Output schema:
+{
+  "participants": ["string"],
+  "semantic_grounding": [
+    {
+      "speaker": "string",
+      "speech_act": "string",
+      "intended_meaning": "string",
+      "actor": "string | null",
+      "action": "string",
+      "object": "string | null",
+      "recipient": "string | null",
+      "evidence": "string",
+    }
+  ]
+}
+
+Input dialogue:
+{dialogue}
+
+JSON output:
+"""
+
+
+# Agent 2: Selection and generation.
+SUMMARY_GENERATION_PROMPT = """You will receive a structured representation of an English dialogue. Produce a concise Chinese summary.
+
+Process:
+1. SELECTION: From the semantic_grounding list, select events to include.
+- Prioritize speech_acts that drive the dialogue forward (Commitments, Decisions, Refusals)
+- Prioritize events whose intended_meaning reveals non-literal content
+- Target only 1-3 events.
+
+
+2. CHINESE GENERATION: Write a coherent Chinese summary that
+- Faithfully represents intended_meaning
+- Preserves participant relationships from actor/recipient roles
+- Does not translate English structure
+- Length: 20–50 Chinese characters
+
+Output schema:
+{
+  "selected_events": [{"key_event": "string"}],
+  "summary_zh": "string"
+}
+
+Input structured semantic representation:
+{semantic_representation}
+
+JSON output:
+"""
+
+
+# Agent 3: Conciseness & naturalness
+REVISION_PROMPT = """Evaluate a draft Chinese summary. Generate a revised Chinese summary if one of the criteria is not met. You may drop events if needed for conciseness, but log which ones.
+
+Evaluate the draft on 2 criteria:
+
+1. CONCISENESS
+- Flag redundancy: repeated information, filler phrases, unnecessary hedging
+- Flag verbose constructions where a tighter phrasing exists
+   
+2. NATURALNESS
+- Flag English syntactic transfer
+- Flag awkward literal translation of English idioms
+- Flag inconsistent register
+
+3. FACTUALITY
+- Flag hallucinated information
+
+Output schema:
+{
+  "needs_revision": true | false,
+  "issues_identified": {'CONCISENESS' | 'NATURALNESS' | 'FACTUALITY'},
+  "events_dropped": "string",
+  "summary_zh_final": "string",
+}
+
+Input Chinese summary draft (summary_zh) and selected events it was based on (selected_events)
+{summary_points}
+
+JSON output:
+"""
