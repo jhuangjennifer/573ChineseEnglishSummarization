@@ -1,147 +1,82 @@
 # Team XLS
 
-Group 4 Team project repository for **LING 573**.
+Group 4 team project repository for **LING 573**.
 
 ## Project Overview
 
-This project investigates **English-to-Chinese cross-lingual dialogue summarization**.  
-Our goal is to build a system that takes **multi-turn English dialogues** as input and generates **concise Chinese summaries**.
+This project investigates **English-to-Chinese cross-lingual dialogue summarization**.
 
-The task requires the model to solve two problems at the same time:
+The goal is to build a system that takes **multi-turn English dialogues** as input and generates **concise Chinese summaries**.
 
-- **Dialogue summarization**: understanding speaker turns, context flow, and important information across multiple utterances.
+The task requires the system to handle two challenges:
+
+- **Dialogue summarization**: identifying important information across speaker turns and conversational context.
 - **Cross-lingual generation**: producing the final summary in Chinese while the source dialogue is in English.
 
-Our current implementation focuses on a **pipeline baseline**:
+Our current implementation uses a **pipeline approach**:
 
-**English dialogue → English summary → Chinese summary**
+```text
+English dialogue → English summary → Chinese summary
+```
 
-This design separates the task into two stages: summarization and translation.
+This design separates summarization from translation, making the system easier to debug and allowing us to evaluate each component separately.
+
+---
 
 ## Task
 
-Our main task is:
+The main task is:
 
-**English dialogue → Chinese summary**
+```text
+English dialogue → Chinese summary
+```
 
-We consider two approaches:
+Our pipeline performs this task in two stages:
 
-1. **Pipeline approach**
+1. **Summarization**
    - English dialogue → English summary
+
+2. **Translation**
    - English summary → Chinese summary
 
-2. **End-to-end approach**
-   - English dialogue → Chinese summary
+The intermediate English summary allows us to analyze whether errors come from the summarization stage or the translation stage.
 
-At the current stage, our primary focus is the **pipeline approach**, because it allows easier debugging and clearer comparison between components.
+---
 
 ## Dataset
 
-We use datasets from the **ClidSum** benchmark for cross-lingual dialogue summarization.
+This project uses the **XSAMSum** subset of the **ClidSum** benchmark.
 
-Dataset repository:  
-https://github.com/krystalan/ClidSum?tab=readme-ov-file
+The dataset contains English dialogues, English summaries, and Chinese summaries.
 
-The dataset includes the following fields:
+| Field | Description | Usage in This Project |
+|---|---|---|
+| `dialogue` | English multi-turn dialogue | Source input |
+| `summary` | English reference summary | Target for intermediate English summarization |
+| `summary_zh` | Chinese reference summary | Reference for final Chinese summary |
 
-- `dialogue`
-- `summary`
-- `summary_zh`
+Raw dataset files are **not included in this repository** because of licensing and access restrictions.
 
-For our pipeline baseline:
-
-- `dialogue` = English source dialogue
-- `summary` = English intermediate summary
-- `summary_zh` = Chinese reference summary
-
-Raw dataset files are **not included in this repository** because of file size limits.
-
-Place files locally under:
-
-- `data/raw/train.json`
-- `data/raw/val.json`
-- `data/raw/test.json`
-
-The raw `.json` files are ignored by Git, while `data/raw/.gitkeep` preserves the folder structure.
+---
 
 ## Reproducibility Instructions
 
-This section explains how to source the required materials and reproduce the full project pipeline, including data preparation, model training, inference, and evaluation.
+This section explains how to reproduce the full project pipeline, including data preparation, model loading or training, inference, and evaluation.
 
 ---
 
-### 1. Source the Required Materials
-
-#### 1.1 Dataset
-
-This project uses the **XSAMSum** dataset from the **ClidSum** benchmark.
-
-Dataset repository:
-
-```text
-https://github.com/krystalan/ClidSum
-```
-
-Download the XSAMSum data from the ClidSum repository and place the files locally under `data/raw/`.
-
-Expected file structure:
-
-```text
-data/raw/train.json
-data/raw/val.json
-data/raw/test.json
-```
-
-Each file should contain the following fields:
-
-```text
-dialogue
-summary
-summary_zh
-```
-
-Field usage:
-
-| Field | Description |
-|---|---|
-| `dialogue` | English multi-turn dialogue |
-| `summary` | English reference summary |
-| `summary_zh` | Chinese reference summary |
-
-Raw dataset files are not included in this repository and should not be committed to GitHub.
-
----
-
-#### 1.2 Models
-
-The project uses two fine-tuned summarization models and one pretrained translation model.
-
-| Component | Model |
-|---|---|
-| BART summarizer | `yunu919/bart-large-dialogue-summarization` |
-| mBART summarizer | `yunu919/mbart-large-dialogue-summarization` |
-| English-to-Chinese translator | `Helsinki-NLP/opus-mt-en-zh` |
-
-The summarization models can either be loaded directly from Hugging Face or trained locally using the scripts in this repository.
-
-Hugging Face links:
-
-```text
-https://huggingface.co/yunu919/bart-large-dialogue-summarization
-https://huggingface.co/yunu919/mbart-large-dialogue-summarization
-https://huggingface.co/Helsinki-NLP/opus-mt-en-zh
-```
-
----
-
-### 2. Set Up the Environment
-
-Clone the repository:
+## 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/jhuangjennifer/573ChineseEnglishSummarization.git
 cd 573ChineseEnglishSummarization
 ```
+
+---
+
+## 2. Set Up the Environment
+
+We recommend using Python 3.10 or later.
 
 Create and activate a virtual environment:
 
@@ -162,25 +97,27 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-If `requirements.txt` is unavailable or incomplete, install the main dependencies manually:
-
-```bash
-pip install torch transformers accelerate datasets evaluate
-pip install sentencepiece protobuf sacrebleu rouge-score bert-score
-pip install pandas numpy scikit-learn tqdm jieba nltk
-```
-
 ---
 
-### 3. Prepare the Data
+## 3. Source and Prepare the Data
 
-Place the downloaded XSAMSum files under:
+This project uses **XSAMSum only** from the ClidSum benchmark.
+
+ClidSum repository:
 
 ```text
-data/raw/
+https://github.com/krystalan/ClidSum
 ```
 
-The expected structure is:
+The `train.json`, `val.json`, and `test.json` files are **not directly included** in this repository.
+
+To obtain the data:
+
+1. Go to the ClidSum repository.
+2. Follow the ClidSum README instructions for obtaining **XSAMSum**.
+3. Request access from the dataset authors if required.
+4. After receiving the XSAMSum files, place the train, validation, and test split files under `data/raw/`.
+5. Rename the files if necessary so that the final file structure is:
 
 ```text
 data/raw/train.json
@@ -188,19 +125,51 @@ data/raw/val.json
 data/raw/test.json
 ```
 
-No heavy preprocessing is required for the current pipeline. The system uses:
+Each JSON file should contain the following fields:
 
 ```text
-Input:  dialogue
-Target: summary
-Final reference: summary_zh
+dialogue
+summary
+summary_zh
 ```
 
-The dialogue format is preserved as much as possible because speaker names, turn boundaries, informal language, and emojis may contain useful dialogue information.
+The raw `.json` files should not be committed to GitHub. They are ignored by Git, while `data/raw/.gitkeep` preserves the folder structure.
+
+For the pipeline, the system uses:
+
+```text
+Input:           dialogue
+English target:  summary
+Chinese target:  summary_zh
+```
+
+No heavy preprocessing is required for the current pipeline. We preserve the dialogue format as much as possible because speaker names, turn boundaries, informal language, and emojis may contain useful dialogue information.
 
 ---
 
-### 4. Train the Summarization Models
+## 4. Models
+
+The project uses two fine-tuned summarization models and one pretrained translation model.
+
+| Component | Model |
+|---|---|
+| BART summarizer | `yunu919/bart-large-dialogue-summarization` |
+| mBART summarizer | `yunu919/mbart-large-dialogue-summarization` |
+| English-to-Chinese translator | `Helsinki-NLP/opus-mt-en-zh` |
+
+The summarization models can either be loaded directly from Hugging Face or trained locally using the scripts in this repository.
+
+Hugging Face model links:
+
+```text
+https://huggingface.co/yunu919/bart-large-dialogue-summarization
+https://huggingface.co/yunu919/mbart-large-dialogue-summarization
+https://huggingface.co/Helsinki-NLP/opus-mt-en-zh
+```
+
+---
+
+## 5. Train the Summarization Models
 
 The summarization models are trained for:
 
@@ -208,7 +177,7 @@ The summarization models are trained for:
 English dialogue → English summary
 ```
 
-#### 4.1 Train BART
+### 5.1 Train BART
 
 ```bash
 python scripts/train_bart.py \
@@ -224,7 +193,7 @@ The trained BART model will be saved to:
 outputs/bart_model/
 ```
 
-#### 4.2 Train mBART
+### 5.2 Train mBART
 
 ```bash
 python scripts/train_mbart.py \
@@ -240,31 +209,30 @@ The trained mBART model will be saved to:
 outputs/mbart_model/
 ```
 
-For mBART, the source and target language should both be set to English:
+For mBART, both the source and target language should be set to English:
 
 ```text
 source language = en_XX
 target language = en_XX
 ```
 
-This ensures that mBART generates intermediate English summaries rather than summaries in another language.
+This ensures that mBART generates intermediate English summaries instead of drifting into another language.
 
 ---
 
-### 5. Run the Full Inference Pipeline
+## 6. Run the Inference Pipeline
 
-The full pipeline performs:
+The full inference pipeline performs:
 
 ```text
 English dialogue → English summary → Chinese summary
 ```
 
-It first generates intermediate English summaries using a fine-tuned summarization model.  
-Then, it translates those English summaries into Chinese using `Helsinki-NLP/opus-mt-en-zh`.
+It first generates intermediate English summaries using a fine-tuned summarization model. Then, it translates those English summaries into Chinese using `Helsinki-NLP/opus-mt-en-zh`.
 
 ---
 
-#### 5.1 Run Pipeline with BART
+### 6.1 Run Pipeline with BART
 
 Using the Hugging Face BART checkpoint:
 
@@ -285,7 +253,7 @@ outputs/bart_predictions_zh.txt
 
 ---
 
-#### 5.2 Run Pipeline with mBART
+### 6.2 Run Pipeline with mBART
 
 Using the Hugging Face mBART checkpoint:
 
@@ -306,7 +274,7 @@ outputs/mbart_predictions_zh.txt
 
 ---
 
-#### 5.3 Run Pipeline with a Locally Trained Model
+### 6.3 Run Pipeline with a Locally Trained Model
 
 If the model was trained locally, use the local model directory instead of the Hugging Face model ID.
 
@@ -329,9 +297,9 @@ outputs/bart_local_predictions_zh.txt
 
 ---
 
-### 6. Evaluate the Outputs
+## 7. Evaluate the Outputs
 
-The system should be evaluated at two stages:
+The system is evaluated at two stages:
 
 | Stage | Prediction File | Reference Field | Purpose |
 |---|---|---|---|
@@ -347,12 +315,11 @@ The main evaluation metrics are:
 | ROUGE-L | Longest common subsequence overlap |
 | BERTScore F1 | Semantic similarity |
 
-For Chinese evaluation, Chinese text should be segmented before ROUGE calculation.  
-This project uses `jieba` for Chinese segmentation.
+For Chinese ROUGE evaluation, Chinese text should be segmented before score calculation. This project uses `jieba` for Chinese segmentation.
 
 ---
 
-#### 6.1 Evaluate BART English Predictions
+### 7.1 Evaluate BART English Predictions
 
 ```bash
 python scripts/evaluate_outputs.py \
@@ -365,7 +332,7 @@ python scripts/evaluate_outputs.py \
 
 ---
 
-#### 6.2 Evaluate BART Chinese Predictions
+### 7.2 Evaluate BART Chinese Predictions
 
 ```bash
 python scripts/evaluate_outputs.py \
@@ -378,7 +345,7 @@ python scripts/evaluate_outputs.py \
 
 ---
 
-#### 6.3 Evaluate mBART English Predictions
+### 7.3 Evaluate mBART English Predictions
 
 ```bash
 python scripts/evaluate_outputs.py \
@@ -391,7 +358,7 @@ python scripts/evaluate_outputs.py \
 
 ---
 
-#### 6.4 Evaluate mBART Chinese Predictions
+### 7.4 Evaluate mBART Chinese Predictions
 
 ```bash
 python scripts/evaluate_outputs.py \
@@ -413,20 +380,21 @@ outputs/mbart_eval_zh.json
 
 ---
 
-### 7. Expected Reproducible Workflow
+## 8. Full Reproducible Workflow
 
-To reproduce the full project from scratch, run the following steps in order:
+To reproduce the project from scratch:
 
 ```text
 1. Clone the repository.
 2. Create and activate a Python environment.
 3. Install dependencies.
-4. Download XSAMSum from the ClidSum repository.
-5. Place train.json, val.json, and test.json under data/raw/.
-6. Train BART and/or mBART, or load the uploaded Hugging Face checkpoints.
-7. Run the inference pipeline.
-8. Generate English and Chinese prediction files.
-9. Evaluate English predictions against summary.
-10. Evaluate Chinese predictions against summary_zh.
-11. Save evaluation results under outputs/.
+4. Obtain XSAMSum by following the ClidSum README instructions.
+5. Place the XSAMSum train, validation, and test files under data/raw/.
+6. Rename the files as train.json, val.json, and test.json if necessary.
+7. Train BART and/or mBART, or load the Hugging Face checkpoints.
+8. Run the inference pipeline.
+9. Generate English and Chinese prediction files.
+10. Evaluate English predictions against summary.
+11. Evaluate Chinese predictions against summary_zh.
+12. Save evaluation results under outputs/.
 ```
