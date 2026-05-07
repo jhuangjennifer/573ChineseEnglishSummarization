@@ -1,0 +1,530 @@
+﻿id,dialogue,final_summary,reference_english_summary,reference_chinese_summary,agent1_semantic_representation_json,agent2_summary_generation_json,agent3_revision_json,agent3_final_chinese_summary
+test_00001,"Hannah: Hey, do you have Betty's number?
+Amanda: Lemme check
+Hannah: <file_gif>
+Amanda: Sorry, can't find it.
+Amanda: Ask Larry
+Amanda: He called her last time we were at the park together
+Hannah: I don't know him well
+Hannah: <file_gif>
+Amanda: Don't be shy, he's very nice
+Hannah: If you say so..
+Hannah: I'd rather you texted him
+Amanda: Just text him 🙂
+Hannah: Urgh.. Alright
+Hannah: Bye
+Amanda: Bye bye",Amanda建议Hannah向Larry索要Betty的号码，尽管Hannah起初不愿，最终仍同意给Larry发信息。,Hannah needs Betty's number but Amanda doesn't have it. She needs to contact Larry.,汉娜需要贝蒂的电话号码，但阿曼达没有。她得联系拉里。,"{
+  ""participants"": [
+    ""Hannah"",
+    ""Amanda""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Hannah"",
+      ""speech_act"": ""request"",
+      ""intended_meaning"": ""Hannah wants to obtain Betty's phone number."",
+      ""actor"": ""Amanda"",
+      ""action"": ""search for contact information"",
+      ""object"": ""Betty's phone number"",
+      ""recipient"": ""Hannah"",
+      ""evidence"": [
+        ""Hannah: Hey, do you have Betty's number?"",
+        ""Amanda: Lemme check""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Amanda"",
+      ""speech_act"": ""suggestion"",
+      ""intended_meaning"": ""Amanda suggests Hannah ask Larry for the number."",
+      ""actor"": ""Hannah"",
+      ""action"": ""ask Larry for the number"",
+      ""object"": ""Larry"",
+      ""recipient"": ""Hannah"",
+      ""evidence"": [
+        ""Amanda: Ask Larry"",
+        ""Amanda: He called her last time we were at the park together""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Hannah"",
+      ""speech_act"": ""refusal"",
+      ""intended_meaning"": ""Hannah refuses to ask Larry due to not knowing him well."",
+      ""actor"": ""Hannah"",
+      ""action"": ""refuse to contact Larry"",
+      ""object"": ""asking Larry"",
+      ""recipient"": ""Amanda"",
+      ""evidence"": [
+        ""Hannah: I don't know him well"",
+        ""Hannah: If you say so..""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Amanda"",
+      ""speech_act"": ""directive"",
+      ""intended_meaning"": ""Amanda instructs Hannah to contact Larry directly."",
+      ""actor"": ""Hannah"",
+      ""action"": ""text Larry"",
+      ""object"": ""Larry"",
+      ""recipient"": ""Hannah"",
+      ""evidence"": [
+        ""Amanda: Just text him 🙂""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Hannah"",
+      ""speech_act"": ""acceptance"",
+      ""intended_meaning"": ""Hannah reluctantly agrees to Amanda's instruction to text Larry."",
+      ""actor"": ""Hannah"",
+      ""action"": ""text Larry"",
+      ""object"": ""Larry"",
+      ""recipient"": ""Hannah"",
+      ""evidence"": [
+        ""Hannah: Urgh.. Alright""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Hannah agrees to text Larry to get Betty's number.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 2,
+      ""key_event"": ""Amanda suggests Hannah ask Larry for Betty's number.""
+    },
+    {
+      ""event_id"": 4,
+      ""key_event"": ""Amanda instructs Hannah to text Larry directly.""
+    },
+    {
+      ""event_id"": 5,
+      ""key_event"": ""Hannah reluctantly agrees to text Larry.""
+    }
+  ],
+  ""summary_zh"": ""Amanda建议Hannah向Larry索要Betty的号码，尽管Hannah起初不愿，最终仍同意给Larry发信息。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""Amanda建议Hannah向Larry索要Betty的号码，尽管Hannah起初不愿，最终仍同意给Larry发信息。""
+}",Amanda建议Hannah向Larry索要Betty的号码，尽管Hannah起初不愿，最终仍同意给Larry发信息。
+test_00002,"Eric: MACHINE!
+Rob: That's so gr8!
+Eric: I know! And shows how Americans see Russian ;)
+Rob: And it's really funny!
+Eric: I know! I especially like the train part!
+Rob: Hahaha! No one talks to the machine like that!
+Eric: Is this his only stand-up?
+Rob: Idk. I'll check.
+Eric: Sure.
+Rob: Turns out no! There are some of his stand-ups on youtube.
+Eric: Gr8! I'll watch them now!
+Rob: Me too!
+Eric: MACHINE!
+Rob: MACHINE!
+Eric: TTYL?
+Rob: Sure :)",Rob 确认脱口秀表演在 YouTube 上，Eric 决定立即观看，Rob 也同意一起看。,Eric and Rob are going to watch a stand-up on youtube.,埃里克和罗伯要在youtube上看一场单口相声。,"{
+  ""participants"": [
+    ""Eric"",
+    ""Rob""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Rob"",
+      ""speech_act"": ""commitment"",
+      ""intended_meaning"": ""Rob agrees to investigate the availability of the stand-up performances."",
+      ""actor"": ""Rob"",
+      ""action"": ""check"",
+      ""object"": ""availability of stand-ups"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""Idk. I'll check.""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Rob"",
+      ""speech_act"": ""information_update"",
+      ""intended_meaning"": ""Rob informs Eric that the stand-ups are not available on the specific platform mentioned but are available on YouTube."",
+      ""actor"": ""Rob"",
+      ""action"": ""inform"",
+      ""object"": ""location of stand-ups"",
+      ""recipient"": ""Eric"",
+      ""evidence"": [
+        ""Turns out no! There are some of his stand-ups on youtube.""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Eric"",
+      ""speech_act"": ""commitment"",
+      ""intended_meaning"": ""Eric decides to watch the stand-ups immediately after learning their location."",
+      ""actor"": ""Eric"",
+      ""action"": ""watch"",
+      ""object"": ""stand-ups"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""Gr8! I'll watch them now!""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Rob"",
+      ""speech_act"": ""commitment"",
+      ""intended_meaning"": ""Rob agrees to watch the stand-ups as well."",
+      ""actor"": ""Rob"",
+      ""action"": ""watch"",
+      ""object"": ""stand-ups"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""Me too!""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Both Eric and Rob will watch the stand-up performances on YouTube.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 1,
+      ""key_event"": ""Rob 同意调查脱口秀表演的可用性，并告知 Eric 这些表演在 YouTube 上。""
+    },
+    {
+      ""event_id"": 3,
+      ""key_event"": ""Eric 决定立即观看，Rob 也同意一起观看。""
+    }
+  ],
+  ""summary_zh"": ""Rob 确认脱口秀表演在 YouTube 上，Eric 决定立即观看，Rob 也同意一起看。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""Rob 确认脱口秀表演在 YouTube 上，Eric 决定立即观看，Rob 也同意一起看。""
+}",Rob 确认脱口秀表演在 YouTube 上，Eric 决定立即观看，Rob 也同意一起看。
+test_00003,"Lenny: Babe, can you help me with something?
+Bob: Sure, what's up?
+Lenny: Which one should I pick?
+Bob: Send me photos
+Lenny:  <file_photo>
+Lenny:  <file_photo>
+Lenny:  <file_photo>
+Bob: I like the first ones best
+Lenny: But I already have purple trousers. Does it make sense to have two pairs?
+Bob: I have four black pairs :D :D
+Lenny: yeah, but shouldn't I pick a different color?
+Bob: what matters is what you'll give you the most outfit options
+Lenny: So I guess I'll buy the first or the third pair then
+Bob: Pick the best quality then
+Lenny: ur right, thx
+Bob: no prob :)",Lenny 请 Bob 帮忙挑裤子，虽因已有紫色裤子而犹豫，但在 Bob 建议多色搭配及优先选质量后，决定购买第一或第三双中质量最好的。,Lenny can't decide which trousers to buy. Bob advised Lenny on that topic. Lenny goes with Bob's advice to pick the trousers that are of best quality.,莱尼无法决定买哪条裤子。鲍勃就此给莱尼提了些建议。莱尼听了他的建议，选了质量最好的裤子。,"{
+  ""participants"": [
+    ""Lenny"",
+    ""Bob""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Lenny"",
+      ""speech_act"": ""request"",
+      ""intended_meaning"": ""Lenny asks Bob for assistance in selecting trousers."",
+      ""actor"": ""Lenny"",
+      ""action"": ""pick trousers"",
+      ""object"": ""trousers"",
+      ""recipient"": ""Bob"",
+      ""evidence"": [
+        ""Babe, can you help me with something?"",
+        ""Which one should I pick?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Lenny"",
+      ""speech_act"": ""indirect_refusal"",
+      ""intended_meaning"": ""Lenny expresses a preference against buying a second pair of purple trousers due to redundancy."",
+      ""actor"": ""Lenny"",
+      ""action"": ""buy purple trousers"",
+      ""object"": ""purple trousers"",
+      ""recipient"": ""Bob"",
+      ""evidence"": [
+        ""But I already have purple trousers. Does it make sense to have two pairs?""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Bob"",
+      ""speech_act"": ""counter_argument"",
+      ""intended_meaning"": ""Bob overrides Lenny's preference by explaining the benefit of multiple colors for outfit variety."",
+      ""actor"": ""Lenny"",
+      ""action"": ""buy different colored trousers"",
+      ""object"": ""trousers"",
+      ""recipient"": ""Bob"",
+      ""evidence"": [
+        ""what matters is what you'll give you the most outfit options""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Lenny"",
+      ""speech_act"": ""commitment"",
+      ""intended_meaning"": ""Lenny accepts Bob's advice and decides to purchase a different color."",
+      ""actor"": ""Lenny"",
+      ""action"": ""buy first or third pair"",
+      ""object"": ""first or third pair of trousers"",
+      ""recipient"": ""Bob"",
+      ""evidence"": [
+        ""So I guess I'll buy the first or the third pair then""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Bob"",
+      ""speech_act"": ""refinement"",
+      ""intended_meaning"": ""Bob refines the selection criteria to prioritize quality over specific color choice."",
+      ""actor"": ""Lenny"",
+      ""action"": ""buy best quality trousers"",
+      ""object"": ""best quality trousers"",
+      ""recipient"": ""Bob"",
+      ""evidence"": [
+        ""Pick the best quality then""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Lenny will buy a pair of trousers of the best quality, choosing either the first or third option to ensure color variety.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 1,
+      ""key_event"": ""Lenny 请求 Bob 帮忙挑选裤子，并因已有紫色裤子而犹豫购买第二双。""
+    },
+    {
+      ""event_id"": 4,
+      ""key_event"": ""Bob 建议多色搭配更实用，Lenny 最终同意购买第一或第三双。""
+    },
+    {
+      ""event_id"": 5,
+      ""key_event"": ""Bob 进一步建议优先选择质量最好的裤子。""
+    }
+  ],
+  ""summary_zh"": ""Lenny 请 Bob 帮忙挑裤子，虽因已有紫色裤子而犹豫，但在 Bob 建议多色搭配及优先选质量后，决定购买第一或第三双中质量最好的。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""Lenny 请 Bob 帮忙挑裤子，虽因已有紫色裤子而犹豫，但在 Bob 建议多色搭配及优先选质量后，决定购买第一或第三双中质量最好的。""
+}",Lenny 请 Bob 帮忙挑裤子，虽因已有紫色裤子而犹豫，但在 Bob 建议多色搭配及优先选质量后，决定购买第一或第三双中质量最好的。
+test_00004,"Will: hey babe, what do you want for dinner tonight?
+Emma:  gah, don't even worry about it tonight
+Will: what do you mean? everything ok?
+Emma: not really, but it's ok, don't worry about cooking though, I'm not hungry
+Will: Well what time will you be home?
+Emma: soon, hopefully
+Will: you sure? Maybe you want me to pick you up?
+Emma: no no it's alright. I'll be home soon, i'll tell you when I get home. 
+Will: Alright, love you. 
+Emma: love you too. ",Emma 因心情不好拒绝 Will 做晚餐，并婉拒其接送提议，决定独自回家。,Emma will be home soon and she will let Will know.,艾玛很快就会回家，而且她会告诉威尔。,"{
+  ""participants"": [
+    ""Will"",
+    ""Emma""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Emma"",
+      ""speech_act"": ""indirect refusal"",
+      ""intended_meaning"": ""Declining Will's offer to cook dinner due to lack of appetite and emotional distress."",
+      ""actor"": ""Emma"",
+      ""action"": ""not cooking dinner"",
+      ""object"": ""dinner"",
+      ""recipient"": ""Will"",
+      ""evidence"": [
+        ""gah, don't even worry about it tonight"",
+        ""I'm not hungry""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Will"",
+      ""speech_act"": ""suggestion"",
+      ""intended_meaning"": ""Offering to pick Emma up from her current location."",
+      ""actor"": ""Will"",
+      ""action"": ""pick up Emma"",
+      ""object"": ""Emma"",
+      ""recipient"": ""Emma"",
+      ""evidence"": [
+        ""Maybe you want me to pick you up?""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Emma"",
+      ""speech_act"": ""refusal"",
+      ""intended_meaning"": ""Rejecting Will's offer to pick her up and confirming she will return on her own."",
+      ""actor"": ""Emma"",
+      ""action"": ""return home independently"",
+      ""object"": ""Emma's return"",
+      ""recipient"": ""Will"",
+      ""evidence"": [
+        ""no no it's alright. I'll be home soon""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Emma will return home on her own without Will cooking dinner or picking her up.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 1,
+      ""key_event"": ""Emma 因食欲不振和情绪低落拒绝 Will 做晚餐。""
+    },
+    {
+      ""event_id"": 3,
+      ""key_event"": ""Emma 婉拒 Will 的接送提议，表示将独自回家。""
+    }
+  ],
+  ""summary_zh"": ""Emma 因心情不好拒绝 Will 做晚餐，并婉拒其接送提议，决定独自回家。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""Emma 因心情不好拒绝 Will 做晚餐，并婉拒其接送提议，决定独自回家。""
+}",Emma 因心情不好拒绝 Will 做晚餐，并婉拒其接送提议，决定独自回家。
+test_00005,"Ollie: Hi , are you in Warsaw
+Jane: yes, just back! Btw are you free for diner the 19th?
+Ollie: nope!
+Jane: and the  18th?
+Ollie: nope, we have this party and you must be there, remember?
+Jane: oh right! i lost my calendar..  thanks for reminding me
+Ollie: we have lunch this week?
+Jane: with pleasure!
+Ollie: friday?
+Jane: ok
+Jane: what do you mean "" we don't have any more whisky!"" lol..
+Ollie: what!!!
+Jane: you just call me and the all thing i heard was that sentence about whisky... what's wrong with you?
+Ollie: oh oh... very strange! i have to be carefull may be there is some spy in my mobile! lol
+Jane: dont' worry, we'll check on friday.
+Ollie: don't forget to bring some sun with you
+Jane: I can't wait to be in Morocco..
+Ollie: enjoy and see you friday
+Jane: sorry Ollie, i'm very busy, i won't have time for lunch  tomorrow, but may be at 6pm after my courses?this trip to Morocco was so nice, but time consuming!
+Ollie: ok for tea!
+Jane: I'm on my way..
+Ollie: tea is ready, did you bring the pastries?
+Jane: I already ate them all... see you in a minute
+Ollie: ok",Ollie 因派对拒绝了晚餐邀请，Jane 随后提议将午餐改为周五课后喝茶，双方达成一致。,Jane is in Warsaw. Ollie and Jane has a party. Jane lost her calendar. They will get a lunch this week on Friday. Ollie accidentally called Jane and talked about whisky. Jane cancels lunch. They'll meet for a tea at 6 pm.,简在华沙，她和奥利有个聚会。她把重要的日子忘了，本来他们周五会共进午餐。但是奥利无意间给简打了个电话，聊起了威士忌。于是简取消了午餐。下午6点他们见面喝茶。,"{
+  ""participants"": [
+    ""Ollie"",
+    ""Jane""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Jane"",
+      ""speech_act"": ""suggestion"",
+      ""intended_meaning"": ""Jane proposes meeting for dinner on the 19th or 18th."",
+      ""actor"": ""Jane"",
+      ""action"": ""meet for dinner"",
+      ""object"": ""dinner"",
+      ""recipient"": ""Ollie"",
+      ""evidence"": [
+        ""are you free for diner the 19th?"",
+        ""and the 18th?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Ollie"",
+      ""speech_act"": ""refusal"",
+      ""intended_meaning"": ""Ollie refuses the dinner invitation due to a prior commitment."",
+      ""actor"": ""Ollie"",
+      ""action"": ""attend party"",
+      ""object"": ""party"",
+      ""recipient"": ""Jane"",
+      ""evidence"": [
+        ""nope!"",
+        ""nope, we have this party and you must be there, remember?""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Ollie"",
+      ""speech_act"": ""suggestion"",
+      ""intended_meaning"": ""Ollie proposes having lunch during the week."",
+      ""actor"": ""Ollie"",
+      ""action"": ""have lunch"",
+      ""object"": ""lunch"",
+      ""recipient"": ""Jane"",
+      ""evidence"": [
+        ""we have lunch this week?""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Jane"",
+      ""speech_act"": ""acceptance"",
+      ""intended_meaning"": ""Jane accepts the lunch proposal and agrees to Friday."",
+      ""actor"": ""Jane"",
+      ""action"": ""have lunch"",
+      ""object"": ""lunch"",
+      ""recipient"": ""Ollie"",
+      ""evidence"": [
+        ""with pleasure!"",
+        ""ok""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Jane"",
+      ""speech_act"": ""cancellation"",
+      ""intended_meaning"": ""Jane cancels the planned lunch for tomorrow due to being busy with courses."",
+      ""actor"": ""Jane"",
+      ""action"": ""have lunch"",
+      ""object"": ""lunch"",
+      ""recipient"": ""Ollie"",
+      ""evidence"": [
+        ""sorry Ollie, i'm very busy, i won't have time for lunch tomorrow""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Ollie"",
+      ""speech_act"": ""modification"",
+      ""intended_meaning"": ""Ollie modifies the plan to tea instead of lunch."",
+      ""actor"": ""Ollie"",
+      ""action"": ""have tea"",
+      ""object"": ""tea"",
+      ""recipient"": ""Jane"",
+      ""evidence"": [
+        ""ok for tea!""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Jane and Ollie will meet for tea, not lunch, on Friday after Jane's courses.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 2,
+      ""key_event"": ""Ollie 因参加派对拒绝了晚餐邀请。""
+    },
+    {
+      ""event_id"": 6,
+      ""key_event"": ""Jane 因课程取消午餐，Ollie 提议改为周五喝茶。""
+    }
+  ],
+  ""summary_zh"": ""Ollie 因派对拒绝了晚餐，Jane 随后取消午餐计划，双方最终约定周五课后喝茶。""
+}","{
+  ""needs_revision"": true,
+  ""issues_identified"": [
+    ""FAITHFULNESS: The summary incorrectly states that Jane cancelled the lunch plan. In the dialogue, Jane proposes changing the time to 6pm after her courses, and Ollie agrees to meet for tea. The lunch plan was not cancelled but rescheduled/changed to tea."",
+    ""COVERAGE: The summary misses the final agreed-upon activity (tea) and the specific timing (after courses/6pm), instead implying a cancellation of the lunch plan without noting the new arrangement.""
+  ],
+  ""events_dropped"": [],
+  ""revision_reason"": ""The draft incorrectly claims Jane cancelled lunch, whereas she proposed a time change to 6pm for tea, which Ollie accepted. The summary needs to reflect the final agreement to meet for tea after courses."",
+  ""summary_zh_final"": ""Ollie 因派对拒绝了晚餐邀请，Jane 随后提议将午餐改为周五课后喝茶，双方达成一致。""
+}",Ollie 因派对拒绝了晚餐邀请，Jane 随后提议将午餐改为周五课后喝茶，双方达成一致。
