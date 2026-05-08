@@ -1,0 +1,537 @@
+﻿id,test_index,dialogue,final_summary,reference_english_summary,reference_chinese_summary,agent1_semantic_representation_json,agent2_summary_generation_json,agent3_revision_json,agent3_final_chinese_summary,pipeline,agent1_model,agent2_model,agent3_model,num_model_calls
+gold_00001,59,"Laura: Where are you?
+Paul: Almost there.
+Laura: Which is?
+Paul: Close to the Mac.
+Laura: That's so far away!
+Paul: 15 mins
+Laura: I am not waiting any more, see you some other time.
+Paul: Please, wait!
+Laura: I've waited 30 minutes, 15 minutes ago you wrote you were almost here. This is too much.
+Paul: I am so sorry.
+Laura: I am not. ",Laura 因已等待 30 分钟且 Paul 仍迟到 15 分钟，决定取消会面并拒绝 Paul 的等待请求，最终离开。,Paul is late for a meeting with Laura and she refuses to wait any longer.,保罗和劳拉见面时迟到了，现在劳拉不想再等了。,"{
+  ""participants"": [
+    ""Laura"",
+    ""Paul""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Paul"",
+      ""speech_act"": ""status update"",
+      ""intended_meaning"": ""Paul informs Laura of his current location and estimated arrival time."",
+      ""actor"": ""Paul"",
+      ""action"": ""reporting location and ETA"",
+      ""object"": ""15 minutes away near the Mac"",
+      ""recipient"": ""Laura"",
+      ""evidence"": [
+        ""Close to the Mac."",
+        ""15 mins""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Laura"",
+      ""speech_act"": ""cancellation"",
+      ""intended_meaning"": ""Laura decides to end the meeting due to excessive waiting time."",
+      ""actor"": ""Laura"",
+      ""action"": ""canceling the meeting"",
+      ""object"": ""the planned meeting"",
+      ""recipient"": ""Paul"",
+      ""evidence"": [
+        ""I am not waiting any more, see you some other time.""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Paul"",
+      ""speech_act"": ""plea"",
+      ""intended_meaning"": ""Paul attempts to persuade Laura to wait for him."",
+      ""actor"": ""Laura"",
+      ""action"": ""waiting"",
+      ""object"": ""Paul"",
+      ""recipient"": ""Laura"",
+      ""evidence"": [
+        ""Please, wait!""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Laura"",
+      ""speech_act"": ""refusal"",
+      ""intended_meaning"": ""Laura rejects Paul's plea and confirms the cancellation."",
+      ""actor"": ""Laura"",
+      ""action"": ""refusing to wait"",
+      ""object"": ""Paul's request"",
+      ""recipient"": ""Paul"",
+      ""evidence"": [
+        ""I've waited 30 minutes... This is too much."",
+        ""I am not.""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Laura cancels the meeting and leaves because Paul is 15 minutes late after she had already waited 30 minutes.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 2,
+      ""key_event"": ""Laura cancels the meeting due to excessive waiting time.""
+    },
+    {
+      ""event_id"": 4,
+      ""key_event"": ""Laura refuses Paul's plea to wait and confirms the cancellation.""
+    }
+  ],
+  ""summary_zh"": ""Laura 因已等待 30 分钟且 Paul 仍迟到 15 分钟，决定取消会面并拒绝 Paul 的等待请求，最终离开。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""Laura 因已等待 30 分钟且 Paul 仍迟到 15 分钟，决定取消会面并拒绝 Paul 的等待请求，最终离开。""
+}",Laura 因已等待 30 分钟且 Paul 仍迟到 15 分钟，决定取消会面并拒绝 Paul 的等待请求，最终离开。,semantic_agent,qwen3.5:27b,qwen3.5:27b,qwen3.5:27b,3
+gold_00002,81,"Finn: Hey
+Zadie: Hi there! What's up?
+Finn: All fine. You? 
+Zadie: Not bad, thanks 
+Finn: Look, I was thinking of going to this neighborhood called Elephant and Castle tomorrow, it's apparently full of Latin American stuff. Fancy joining? 
+Zadie: Sure! But what's ""stuff""? 😂
+Finn: lol So apparently it's a place were random people from ""Latin America"" (meaning fuck knows which countries) started running small businesses and restaurant, and a nice little community was formed
+Zadie: Oh cool 
+Finn: Then capitalism came and it's all going to be demolished soon, so it's like the last chance to go
+Zadie: What a shame :( Yeah, I haven't had Latin American 😂 food for ages so I'm totally up for it
+Finn: Can't wait to taste this cuisine of unspecified Latino origin lol
+Zadie: 😂😂😂
+Finn: But we can specify time and place if and only if you wish 
+Zadie: I might be tempted to lol I'd say early evening, 2-ish?
+Finn: Yeah, that's fine by me. So most of the places we want to visit are in this Elephant and Castle shopping centre. Shall I see you at the main entrance, wherever that is 
+Zadie: 2 o'clock at unspecified main entrance then? Sounds good to mw
+Finn: Yer
+Zadie: Cool, see you there! And thanks so much for remembering about me 💜💜💜
+Finn: Thanks for saying yes to such an ill-defined plan lmao 
+Zadie: Ha ha You know I love those
+Finn: See you tomorrow then 
+Zadie: Yep Call me if you get lost
+Finn: I will I will 🤙 byeeee 
+Zadie: Toodles",Finn 邀请 Zadie 明天去 Elephant and Castle 参观，Zadie 欣然接受。两人最终商定于下午 2 点在购物中心主入口见面。,Finn and Zadie are going to Elephant and Castle tomorrow at 2. They will meet at the main entrance.,费恩和查蒂明天2点去象堡，他们会在正门碰头。,"{
+  ""participants"": [
+    ""Finn"",
+    ""Zadie""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Finn"",
+      ""speech_act"": ""invitation"",
+      ""intended_meaning"": ""Finn invites Zadie to visit Elephant and Castle tomorrow to see the Latin American community before it is demolished."",
+      ""actor"": ""Finn"",
+      ""action"": ""invite"",
+      ""object"": ""trip to Elephant and Castle"",
+      ""recipient"": ""Zadie"",
+      ""evidence"": [
+        ""Fancy joining?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Zadie"",
+      ""speech_act"": ""acceptance"",
+      ""intended_meaning"": ""Zadie accepts the invitation and expresses interest in the food."",
+      ""actor"": ""Zadie"",
+      ""action"": ""accept"",
+      ""object"": ""invitation"",
+      ""recipient"": ""Finn"",
+      ""evidence"": [
+        ""Sure!"",
+        ""I'm totally up for it""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Zadie"",
+      ""speech_act"": ""proposal"",
+      ""intended_meaning"": ""Zadie proposes meeting in the early evening around 2 o'clock."",
+      ""actor"": ""Zadie"",
+      ""action"": ""propose time"",
+      ""object"": ""2 o'clock"",
+      ""recipient"": ""Finn"",
+      ""evidence"": [
+        ""I'd say early evening, 2-ish?""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Finn"",
+      ""speech_act"": ""agreement"",
+      ""intended_meaning"": ""Finn agrees to the proposed time and suggests meeting at the main entrance of the shopping centre."",
+      ""actor"": ""Finn"",
+      ""action"": ""confirm time and location"",
+      ""object"": ""2 o'clock at main entrance"",
+      ""recipient"": ""Zadie"",
+      ""evidence"": [
+        ""Yeah, that's fine by me."",
+        ""Shall I see you at the main entrance""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Zadie"",
+      ""speech_act"": ""confirmation"",
+      ""intended_meaning"": ""Zadie confirms the final plan to meet at 2 o'clock at the main entrance."",
+      ""actor"": ""Zadie"",
+      ""action"": ""confirm plan"",
+      ""object"": ""meeting details"",
+      ""recipient"": ""Finn"",
+      ""evidence"": [
+        ""2 o'clock at unspecified main entrance then? Sounds good to mw""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Finn and Zadie agreed to meet tomorrow at 2:00 PM at the main entrance of the Elephant and Castle shopping centre to explore the area.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 2,
+      ""key_event"": ""Zadie accepts Finn's invitation to visit Elephant and Castle.""
+    },
+    {
+      ""event_id"": 4,
+      ""key_event"": ""Finn agrees to meet at 2:00 PM at the main entrance.""
+    },
+    {
+      ""event_id"": 5,
+      ""key_event"": ""Zadie confirms the final meeting plan.""
+    }
+  ],
+  ""summary_zh"": ""Finn 邀请 Zadie 明天去 Elephant and Castle 参观，Zadie 欣然接受。两人最终商定于下午 2 点在购物中心主入口见面。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""Finn 邀请 Zadie 明天去 Elephant and Castle 参观，Zadie 欣然接受。两人最终商定于下午 2 点在购物中心主入口见面。""
+}",Finn 邀请 Zadie 明天去 Elephant and Castle 参观，Zadie 欣然接受。两人最终商定于下午 2 点在购物中心主入口见面。,semantic_agent,qwen3.5:27b,qwen3.5:27b,qwen3.5:27b,3
+gold_00003,85,"Josh: I need to buy an iPad?
+Josh: do u think apple it's a good choice?
+Brian: Nope, u gonna pay to have the sign of apple  on yr fucking iPad.
+Josh: so what would u recommend?
+Brian: u mean brands?
+Brian: Samsung, Xiaomi, Sony
+Brian: depends on yr budget..
+Josh: let's say 2000..
+Brian: what about this ? <file_other>
+Brian: or this <file_other>
+Brian: actually, if u want samsung I can get it cheaper for u
+Josh: oh, good
+Brian: call me after work, ok?
+Josh: ok",Josh 询问购买 iPad 的建议，Brian 推荐三星并提议以更低价格代购。Josh 确认预算后，两人约定下班后通电话以完成交易。,"Josh wants to buy a tablet and doesn't know which brand he should choose. According to Brian, other brands are better than Apple and he can get a Samsung tablet cheaper. Josh will call Brian after work to talk about it.",乔什想买个平板，但不知道该选哪个牌子。按照布莱恩的说法，其他品牌比苹果更好，他能弄来更便宜的三星平板电脑。乔什下班后会给布莱恩打电话谈谈这事。,"{
+  ""participants"": [
+    ""Josh"",
+    ""Brian""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Josh"",
+      ""speech_act"": ""inquiry"",
+      ""intended_meaning"": ""Josh asks for advice on buying an iPad and specifically questions the value of Apple."",
+      ""actor"": ""Josh"",
+      ""action"": ""asks for recommendation"",
+      ""object"": ""iPad brand"",
+      ""recipient"": ""Brian"",
+      ""evidence"": [
+        ""do u think apple it's a good choice?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Brian"",
+      ""speech_act"": ""recommendation"",
+      ""intended_meaning"": ""Brian advises against Apple and suggests Samsung, Xiaomi, or Sony based on budget."",
+      ""actor"": ""Brian"",
+      ""action"": ""recommends brands"",
+      ""object"": ""Samsung, Xiaomi, Sony"",
+      ""recipient"": ""Josh"",
+      ""evidence"": [
+        ""Samsung, Xiaomi, Sony"",
+        ""depends on yr budget..""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Josh"",
+      ""speech_act"": ""statement"",
+      ""intended_meaning"": ""Josh specifies his budget limit for the purchase."",
+      ""actor"": ""Josh"",
+      ""action"": ""states budget"",
+      ""object"": ""2000"",
+      ""recipient"": ""Brian"",
+      ""evidence"": [
+        ""let's say 2000..""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Brian"",
+      ""speech_act"": ""offer"",
+      ""intended_meaning"": ""Brian offers to procure a Samsung device for Josh at a lower price."",
+      ""actor"": ""Brian"",
+      ""action"": ""offers to buy cheaper"",
+      ""object"": ""Samsung"",
+      ""recipient"": ""Josh"",
+      ""evidence"": [
+        ""actually, if u want samsung I can get it cheaper for u""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Brian"",
+      ""speech_act"": ""request"",
+      ""intended_meaning"": ""Brian instructs Josh to contact him after work to finalize the deal."",
+      ""actor"": ""Josh"",
+      ""action"": ""call"",
+      ""object"": ""Brian"",
+      ""recipient"": ""Brian"",
+      ""evidence"": [
+        ""call me after work, ok?""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Josh"",
+      ""speech_act"": ""commitment"",
+      ""intended_meaning"": ""Josh agrees to call Brian after work."",
+      ""actor"": ""Josh"",
+      ""action"": ""agrees to call"",
+      ""object"": null,
+      ""recipient"": ""Brian"",
+      ""evidence"": [
+        ""ok""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Josh agreed to call Brian after work to purchase a Samsung device at a discounted price.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 4,
+      ""key_event"": ""Brian offers to buy a Samsung device for Josh at a lower price.""
+    },
+    {
+      ""event_id"": 5,
+      ""key_event"": ""Brian asks Josh to call after work to finalize the deal.""
+    },
+    {
+      ""event_id"": 6,
+      ""key_event"": ""Josh agrees to call Brian after work.""
+    }
+  ],
+  ""summary_zh"": ""Josh 询问购买 iPad 的建议，Brian 推荐三星并提议以更低价格代购。Josh 确认预算后，两人约定下班后通电话以完成交易。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""Josh 询问购买 iPad 的建议，Brian 推荐三星并提议以更低价格代购。Josh 确认预算后，两人约定下班后通电话以完成交易。""
+}",Josh 询问购买 iPad 的建议，Brian 推荐三星并提议以更低价格代购。Josh 确认预算后，两人约定下班后通电话以完成交易。,semantic_agent,qwen3.5:27b,qwen3.5:27b,qwen3.5:27b,3
+gold_00004,87,"Frank: wat are u doing??
+Andy: watching Arrow B)
+Frank: dont u have a quiz tomorrow :/
+Andy: yeah, so? :3
+Frank: so go study for it 
+Andy: its a small quiz
+Frank: so it doesnot matter??
+Andy: it does, but ..
+Frank: but??
+Andy: i'll study for it tomorrow
+Frank: yea like ur gonna wake up on time for that -_-
+Andy: dude your not my dad
+Frank: -_-",Frank 敦促 Andy 立即为测验复习，但 Andy 拒绝并计划明天再学。面对 Frank 对其能否按时起床的质疑，Andy 反驳称 Frank 并非其父亲，并结束了争论。,Frank tries to encourage Andy to learn for the tomorrow's quiz.,弗兰克试图激励安迪，为明天的测验学习。,"{
+  ""participants"": [
+    ""Frank"",
+    ""Andy""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Frank"",
+      ""speech_act"": ""admonition"",
+      ""intended_meaning"": ""Frank urges Andy to study for his upcoming quiz instead of watching TV."",
+      ""actor"": ""Andy"",
+      ""action"": ""study"",
+      ""object"": ""quiz"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""so go study for it""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Andy"",
+      ""speech_act"": ""refusal"",
+      ""intended_meaning"": ""Andy declines to study now, planning to do it tomorrow instead."",
+      ""actor"": ""Andy"",
+      ""action"": ""study"",
+      ""object"": ""quiz"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""i'll study for it tomorrow""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Frank"",
+      ""speech_act"": ""skepticism"",
+      ""intended_meaning"": ""Frank doubts Andy's ability to wake up on time to study tomorrow."",
+      ""actor"": ""Andy"",
+      ""action"": ""wake up on time"",
+      ""object"": null,
+      ""recipient"": null,
+      ""evidence"": [
+        ""yea like ur gonna wake up on time for that""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Andy"",
+      ""speech_act"": ""rejection"",
+      ""intended_meaning"": ""Andy rejects Frank's authority and ends the argument."",
+      ""actor"": ""Andy"",
+      ""action"": ""reject advice"",
+      ""object"": null,
+      ""recipient"": ""Frank"",
+      ""evidence"": [
+        ""dude your not my dad""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Andy refuses Frank's advice to study immediately and insists on studying tomorrow, dismissing Frank's concerns.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 1,
+      ""key_event"": ""Frank urges Andy to study for the quiz immediately.""
+    },
+    {
+      ""event_id"": 2,
+      ""key_event"": ""Andy refuses and plans to study tomorrow instead.""
+    },
+    {
+      ""event_id"": 4,
+      ""key_event"": ""Andy rejects Frank's authority and ends the argument.""
+    }
+  ],
+  ""summary_zh"": ""Frank 敦促 Andy 立即为测验复习，但 Andy 拒绝并计划明天再学。面对 Frank 对其能否按时起床的质疑，Andy 反驳称 Frank 并非其父亲，并结束了争论。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""Frank 敦促 Andy 立即为测验复习，但 Andy 拒绝并计划明天再学。面对 Frank 对其能否按时起床的质疑，Andy 反驳称 Frank 并非其父亲，并结束了争论。""
+}",Frank 敦促 Andy 立即为测验复习，但 Andy 拒绝并计划明天再学。面对 Frank 对其能否按时起床的质疑，Andy 反驳称 Frank 并非其父亲，并结束了争论。,semantic_agent,qwen3.5:27b,qwen3.5:27b,qwen3.5:27b,3
+gold_00005,123,"Crystal: <file_photo>
+Irene: He's so big!
+Crystal: <file_photo> 
+Crystal: I know right!
+Irene: and so cute!
+Crystal: he got so big he doesn't fit his clothes anymore
+Irene: time to go shopping with my little boy <3
+Crystal: yeah im just gonna go brankrupt
+Irene: Let me take him, I also promise to buy him something
+Crystal: you really wanna do that?
+Irene: why nont? I'm his aunt!
+Crystal: well yeah it's just such a drag
+Irene: you were always a bore when shopping :P just let me take the little man
+Irene: well have fun!
+Crystal: ok ",Crystal 表示儿子衣服穿不下了，Irene 主动提出带他去买新衣服，尽管 Crystal 起初觉得购物麻烦，但最终同意了 Irene 的提议。,Irene will take Crystal's son shopping for clothes.,艾琳会带克里斯特尔的儿子去买衣服。,"{
+  ""participants"": [
+    ""Crystal"",
+    ""Irene""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Crystal"",
+      ""speech_act"": ""statement"",
+      ""intended_meaning"": ""Crystal explains that her son has outgrown his clothes."",
+      ""actor"": ""Crystal"",
+      ""action"": ""states"",
+      ""object"": ""son's clothes no longer fit"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""he got so big he doesn't fit his clothes anymore""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Irene"",
+      ""speech_act"": ""offer"",
+      ""intended_meaning"": ""Irene offers to take the boy shopping and buy him something."",
+      ""actor"": ""Irene"",
+      ""action"": ""offers to take and buy"",
+      ""object"": ""shopping trip"",
+      ""recipient"": ""Crystal's son"",
+      ""evidence"": [
+        ""Let me take him, I also promise to buy him something""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Crystal"",
+      ""speech_act"": ""hesitation"",
+      ""intended_meaning"": ""Crystal expresses reluctance because shopping is a burden."",
+      ""actor"": ""Crystal"",
+      ""action"": ""expresses reluctance"",
+      ""object"": ""shopping"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""well yeah it's just such a drag""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Irene"",
+      ""speech_act"": ""persuasion"",
+      ""intended_meaning"": ""Irene insists on taking the boy, calling Crystal a bore at shopping."",
+      ""actor"": ""Irene"",
+      ""action"": ""insists"",
+      ""object"": ""taking the boy"",
+      ""recipient"": ""Crystal"",
+      ""evidence"": [
+        ""you were always a bore when shopping :P just let me take the little man""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Crystal"",
+      ""speech_act"": ""acceptance"",
+      ""intended_meaning"": ""Crystal agrees to let Irene take the boy."",
+      ""actor"": ""Crystal"",
+      ""action"": ""agrees"",
+      ""object"": ""Irene's offer"",
+      ""recipient"": ""Irene"",
+      ""evidence"": [
+        ""ok""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Crystal agrees to let Irene take her son shopping and buy him new clothes.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 2,
+      ""key_event"": ""Irene offers to take Crystal's son shopping and buy him clothes.""
+    },
+    {
+      ""event_id"": 5,
+      ""key_event"": ""Crystal agrees to let Irene take her son shopping.""
+    }
+  ],
+  ""summary_zh"": ""Crystal 表示儿子衣服穿不下了，Irene 主动提出带他去买新衣服，尽管 Crystal 起初觉得购物麻烦，但最终同意了 Irene 的提议。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""Crystal 表示儿子衣服穿不下了，Irene 主动提出带他去买新衣服，尽管 Crystal 起初觉得购物麻烦，但最终同意了 Irene 的提议。""
+}",Crystal 表示儿子衣服穿不下了，Irene 主动提出带他去买新衣服，尽管 Crystal 起初觉得购物麻烦，但最终同意了 Irene 的提议。,semantic_agent,qwen3.5:27b,qwen3.5:27b,qwen3.5:27b,3
