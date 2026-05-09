@@ -15,6 +15,10 @@ Requirements:
 - Do not explain your reasoning.
 - Output only the English summary.
 
+Conciseness: 
+- For simple dialogues, write one short English sentence.
+- For complex dialogues, write at most two short English sentences.
+
 English dialogue:
 {dialogue}
 
@@ -34,6 +38,7 @@ Requirements:
 - Do not remove important information.
 - Do not explain your reasoning.
 - Output only the final Chinese summary.
+- Use Chinese transliterations for English personal names.
 
 English summary:
 {english_summary}

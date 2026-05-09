@@ -59,9 +59,10 @@ Rules:
 - If an earlier plan is later changed, summarize the final updated state.
 - Do not invent details from placeholders.
 - Use natural Chinese.
-- Match the style of a short factual dataset summary.
-- For simple dialogues, keep the summary short.
-- For complex dialogues, include only necessary details.
+
+Conciseness:
+- For simple dialogues, prefer 20-50 Chinese characters.
+- For complex dialogues, allow up to 80 Chinese characters.
 
 Output valid JSON only.
 
@@ -105,6 +106,10 @@ Rules:
 - Use short issue tags only.
 - revision_reason must be under 12 words.
 - Output valid JSON only.
+
+Conciseness:
+- For simple dialogues, prefer 20-50 Chinese characters.
+- For complex dialogues, allow up to 80 Chinese characters.
 
 Allowed issue tags:
 "hallucination", "wrong_actor", "wrong_action", "wrong_recipient",

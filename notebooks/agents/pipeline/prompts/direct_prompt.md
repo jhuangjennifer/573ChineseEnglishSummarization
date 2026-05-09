@@ -11,6 +11,11 @@ Requirements:
 - Do not add information that is not stated or clearly implied.
 - Do not explain your reasoning.
 - Output only the final Chinese summary.
+- Translate all English proper nouns, including speaker names, into standard Chinese transliteration
+
+Conciseness: 
+- For simple dialogues, prefer 20-50 Chinese characters. 
+- For complex dialogues, allow up to 80 Chinese characters.
 
 English dialogue:
 {dialogue}
