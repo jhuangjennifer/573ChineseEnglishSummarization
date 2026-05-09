@@ -60,6 +60,10 @@ Rules:
 - Do not invent details from placeholders.
 - Use natural Chinese.
 
+STRICT TRANSLATION RULE:
+- You MUST translate ALL English proper nouns and speaker names into standard Chinese characters (e.g., Paul -> 保罗, Laura -> 劳拉).
+- ABSOLUTELY NO English letters or names should appear in the final Chinese summary.
+
 Conciseness:
 - For simple dialogues, prefer 20-50 Chinese characters.
 - For complex dialogues, allow up to 80 Chinese characters.
@@ -97,6 +101,7 @@ Check for:
 - unsupported visual detail
 - awkward Chinese
 - unnecessary verbosity
+- untranslated English names or proper nouns
 
 Rules:
 - Trust the original dialogue if it conflicts with selected_events.
@@ -107,6 +112,10 @@ Rules:
 - revision_reason must be under 12 words.
 - Output valid JSON only.
 
+STRICT TRANSLATION RULE:
+- You MUST translate ALL English proper nouns and speaker names into standard Chinese characters (e.g., Paul -> 保罗, Laura -> 劳拉).
+- ABSOLUTELY NO English letters or names should appear in the final Chinese summary.
+
 Conciseness:
 - For simple dialogues, prefer 20-50 Chinese characters.
 - For complex dialogues, allow up to 80 Chinese characters.
@@ -114,7 +123,7 @@ Conciseness:
 Allowed issue tags:
 "hallucination", "wrong_actor", "wrong_action", "wrong_recipient",
 "missing_final_outcome", "missing_key_event", "outdated_plan",
-"too_verbose", "awkward_chinese", "unsupported_visual_detail"
+"too_verbose", "awkward_chinese", "unsupported_visual_detail", "untranslated_names"
 
 Schema:
 {
