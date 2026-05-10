@@ -113,7 +113,7 @@ Rules:
 - Output valid JSON only.
 
 STRICT TRANSLATION RULE:
-- You MUST translate ALL English proper nouns and speaker names into standard Chinese characters (e.g., Paul -> 保罗, Laura -> 劳拉).
+- You MUST translate ALL English proper nouns and speaker names into standard Chinese characters.
 - ABSOLUTELY NO English letters or names should appear in the final Chinese summary.
 
 Conciseness:
