@@ -101,7 +101,7 @@ Check for:
 - unsupported visual detail
 - awkward Chinese
 - unnecessary verbosity
-- untranslated English names or proper nouns
+- untranslated English names or proper nouns in the draft Chinese summary
 
 Rules:
 - Trust the original dialogue if it conflicts with selected_events.
