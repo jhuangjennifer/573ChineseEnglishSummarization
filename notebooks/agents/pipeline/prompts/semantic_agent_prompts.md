@@ -112,10 +112,6 @@ Rules:
 - revision_reason must be under 12 words.
 - Output valid JSON only.
 
-STRICT TRANSLATION RULE:
-- You MUST translate ALL English proper nouns and speaker names into standard Chinese characters.
-- ABSOLUTELY NO English letters or names should appear in the final Chinese summary.
-
 Conciseness:
 - For simple dialogues, prefer 20-50 Chinese characters.
 - For complex dialogues, allow up to 80 Chinese characters.
