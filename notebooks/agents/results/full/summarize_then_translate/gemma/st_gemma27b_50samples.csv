@@ -1,0 +1,507 @@
+﻿id,test_index,dialogue,english_summary,final_summary,reference_english_summary,reference_chinese_summary,pipeline,summarization_model,translation_model,num_model_calls
+gold_00001,23,"Anne: You were right, he was lying to me :/
+Irene: Oh no, what happened?
+Jane: who? that Mark guy?
+Anne: yeah, he told me he's 30, today I saw his passport - he's 40
+Irene: You sure it's so important?
+Anne: he lied to me Irene","Anne discovered Mark lied about his age, telling her he was 30 when his passport revealed he is 40, which upset her. Irene acknowledged Anne's disappointment with the deception.",安妮发现马克对自己的年龄说了谎，他告诉她自己30岁，但他的护照显示他实际年龄是40岁，这让她感到难过。艾琳承认安妮对这次欺骗感到失望。,Mark lied to Anne about his age. Mark is 40.,马克向安妮隐瞒了自己的年龄。他40岁了。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00002,30,"Mary: hey, im kinda broke, lend me a few box
+Carter: okay, give me an hour, im at the train station
+Mary: cool, thanks","Mary asked Carter for some money, and Carter said he could lend it to her in an hour as he is currently at the train station.",玛丽向卡特请求了一些钱，卡特说他可以在一个小时后借给她，因为他现在在火车站。,Mary ran out of money. Carter is going to lend her some in an hour.,玛丽的钱用完了，卡特打算一小时后借给她一点。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00003,39,"Tina: I'll tell you something, this Emirate staff looks amazing, as movie stars
+Ala: Oh yes, I know, that's for purpose 
+Ala: It's how it's suppose to be
+Ala: They pay a lot of attention to the image
+Tina: Looks nice, pleasure to observe
+Tina: And I sucked at the airport, they've kept us one hour in the plane and finally I'll catch the evening flight back home
+Tina: Could You imagine?
+Tina: And you know, this way we had such a talkative pilot :-)
+Ala: Oh, poor you
+Ala: Pfff
+Ala: And I'm on my way to a meeting
+Tina: THE meeting?
+Ala: Yes, keep your finger crossed
+Tina: Sure, let me know how did it go
+Ala: Ok darling, in touch","Tina was delayed at the airport and had a talkative pilot on her flight home, while Ala is going to an important meeting and asked Tina to wish her luck. Tina agreed to hear how the meeting went.",蒂娜在机场延误，并且在回家的航班上遇到了一位健谈的飞行员。艾拉将要参加一个重要的会议，并请蒂娜为她祝好运。蒂娜同意听她讲述会议的情况。,Tina will catch the evening flight back home. Ala is on her way to the meeting. She will let Tina know how it went.,蒂娜将乘晚间航班回家。阿拉正在去开会的路上。她会让蒂娜知道事情的进展。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00004,65,"Ana: You sleeping?
+Catherine: Not yet.
+Ana: Wanna go visit grandma tomorrow? I miss her.
+Catherine: Yeah that would be nice :) I'll call you when I wake up
+Ana: Oki :) sleep well, good night.
+Catherine:  Good night, u too.","Ana and Catherine plan to visit their grandma tomorrow, and Catherine will call Ana when she wakes up. They then said good night to each other.",安娜和凯瑟琳计划明天去看望她们的奶奶，凯瑟琳会在她醒来后给安娜打电话。然后她们互相道了晚安。,Ana wants to visit grandma tomorrow. Catherine will go with her. She will call Anna when she wakes up.,安娜明天想去看望奶奶。凯瑟琳会和她一起去。她起床后会给安娜打电话。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00005,66,"Joyce: Check this out!
+Joyce: <link>
+Michael: That's cheap!
+Edson: No way! I'm booking my ticket now!! ","Joyce shared a link for a cheap ticket, prompting Michael to acknowledge the price and Edson to immediately book a ticket.",乔伊斯分享了一个廉价机票的链接，促使迈克尔承认价格，而埃德森立即预订了一张机票。,Edson is booking his ticket now.,埃德森正在订票。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00006,67,"Jane: google maps says it is at least 3h <file_other>
+Steven: I used to make it in 2, trust me :D
+Jane: but it's almost 300km..
+Steven: the road is new , we will make it ^^
+Jane: I don't want  to stress out , let's meet at 4:30 instead of 5, ok?
+Steven: ok, if u reaaly want, we can meet at 4:30
+Jane: thx! 
+Jane: I will wait at the main entrance or where?
+Steven: main entrance is good for me;-) 
+Steven: cu","Jane and Steven are planning to meet, and Jane wants to meet at 4:30 PM instead of 5:00 PM due to the long drive, which Steven agrees to; they will meet at the main entrance.",简和史蒂文计划见面，简希望因为路途遥远而将见面时间提前到下午4点30分，而不是5点，史蒂文同意了；他们将在主入口见面。,Jane wants to leave at 4.30 instead of 5 because Google Maps suggests the 300 km drive should take them at least 3 hours and she doesn't want to be late. She will wait for Steven at the main entrance.,简想4点半就走，而不是等到5点，因为谷歌地图提示300公里的车程至少需要3小时，她不想迟到。她会在正门处等史蒂文。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00007,78,"Fiona: Are you free?
+Tina: Yes, what's up?
+Fiona: I'm trying to prepare a nice dinner for Chris and I thought that maybe I could prepare this tart of yours :)
+Tina: I'm flattered!
+Fiona: Well, it IS delicious :) Could help me do it?
+Tina: Sure! It's not difficult. Do you have anything ready?
+Fiona: I must admit I bought the crust...
+Tina: Oh, ok :P Pity, but well, it's too late now.
+Fiona: I tried making the filling once, but I finished with lemony scrambled eggs...
+Tina: It happens, don't worry. The thing is that once you start adding eggs you can't stop mixing it, otherwise you'll end up with scrambled eggs.","Fiona wants to make Tina’s tart for dinner with Chris and asks for Tina’s help, admitting she bought the crust and previously failed at making the filling due to overmixing the eggs. Tina agrees to help and explains the key to avoiding scrambled eggs is continuous mixing once eggs are added.",菲奥娜想为克里斯做晚餐，想做蒂娜的馅饼，于是向蒂娜寻求帮助，并承认她买好了派皮，之前因为过度搅拌鸡蛋而导致馅料失败。蒂娜同意帮忙，并解释了避免鸡蛋凝固的关键在于鸡蛋加入后要持续搅拌。,Fiona wants to prepare dinner for Chris. She is thinking of Tina's tart. She will help her make it.,菲奥娜想为克里斯准备晚餐。她想起了蒂娜做的馅饼。蒂娜会帮她做的。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00008,86,"Olafur: are we doing anything for New Year's Eve?
+Nathalie: I was thinking about something classy, like opera or sth like that
+Zoe: how much does it cost?
+Olafur: opera is not for me
+Nathalie: so what do you propose?
+Nathalie: it's 100$ 
+Olafur: I was thinking about partying somewhere
+Nathalie: partying sounds fun, as long as it will be classy
+Zoe: <file_link>
+Zoe: Breakfast at Tiffany's party sounds classy
+Olafur: <file_link> 
+Olafur: is it classy enough?
+Nathalie: :O
+Nathalie: this club is AMAZING
+Zoe: whoa
+Nathalie: we'll going to Soho then
+Olafur: we just need to hurry up and buy some tickets soon
+Zoe: sure","The group is planning to go to a classy New Year's Eve party at a club in Soho, potentially ""Breakfast at Tiffany's,"" and they need to buy tickets soon. The opera was considered but rejected by Olafur.",该团队计划前往苏荷区的一家俱乐部参加一场高档的新年晚会，可能是在“蒂芙尼的早餐”俱乐部，他们需要尽快购买门票。奥拉夫考虑过观看歌剧，但最终放弃了。,"Nathalie, Olafur and Zoe are planning the New Year's Eve. Nathalie wants something classy. Olafur doesn't like opera. They want to go to the Breakfast at Tiffany's party in Soho.",娜塔莉、奥拉维尔和佐伊正在做新年前夜的计划。娜塔莉想要有格调的。但奥拉维尔不喜欢歌剧。他们想去苏豪区蒂芙尼的聚会上吃早餐。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00009,120,"John: wanna go see ""A Star is Born"" on Wed?
+Joan: sorry can't
+Joan: super busy 
+Joan: don't have time for anything :( 
+John: that's a shame
+Joan: I'm free on Thursday
+John: I could do Thursday
+Joan: ok! so around 8pm?
+John: sure sounds great
+John: I'll see where it's palying and send you the details
+Joan: ok great!","John and Joan agreed to see ""A Star is Born"" on Thursday around 8pm, after Joan said she was busy on Wednesday. John will send Joan the movie details and location.",约翰和琼同意在周四晚上8点左右观看电影《一个明星的诞生》，此前琼表示周三她很忙。约翰会把电影详情和地点发给琼。,"Joan and John are going to watch ""A Star is Born"" on Thursday around 8 p.m.",琼和约翰星期四晚上8点左右去看《一个明星的诞生》。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00010,137,"Peyton: I have been asking you to bring that video game for me
+Cameron: Honey, I am not having enough time to come home
+Peyton: When would you come home?
+Cameron: I will have to stay out of town for another week i guess
+Peyton: Cant you just deliver that game through the courier? :P
+Cameron: Dont be mean :/
+Peyton: Get the job done and come to home then. ASAP :P","Cameron is unable to bring Peyton a video game because he has to stay out of town for another week, prompting Peyton to suggest sending it via courier. Peyton then asks Cameron to hurry home and complete the task.",卡梅隆无法给佩顿送游戏机，因为他需要出城另待一周，这促使佩顿建议通过快递寄送。佩顿随后要求卡梅隆尽快回家完成任务。,Peyton is expecting Cameron to bring the video game. Cameron will probably be out for another week.,佩顿希望卡梅隆能带游戏机过来，但是卡梅隆可能还要再缺席一周。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00011,139,"Paul: I just came back home
+Paul: What a busy day
+Paul: I forgot about my physiotherapy 
+Emma: Oh no
+Paul: It's ok, I'll schedule a new appointment
+Emma: I'll be home after midnight
+Paul: Do you want me to prepare some food for you?
+Emma: That would be lovely","Paul returned home after a busy day and realized he missed his physiotherapy appointment, but he will reschedule it. Emma will be home late and Paul offered to prepare food for her, which she accepted.",保罗忙碌了一天后回到家，意识到他错过了物理治疗预约，但他会重新安排。艾玛会晚点回家，保罗提出为她准备食物，她接受了。,"Paul forgot about his physiotherapy and he will schedule a new appointment. Emma will be home after midnight, so Paul will prepare some food for her.",保罗忘记去做理疗了，得重新预约。艾玛午夜后回家，所以保罗会给她准备一些吃的。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00012,192,"Harris: How are U?
+Lena: Fine, U?
+Harris: Been better.
+Lena: ?
+Harris: My friend Aoki died yesterday.
+Lena: O No!
+Harris: Yeah.
+Lena: What happened?
+Harris: Not sure yet. Thinking the worst...
+Lena: O how awful!
+Harris: Yes.
+Lena: You just never know.
+Harris: True.
+Lena: Had you seen her lately?
+Harris: Not for a few months. She lives in Michigan.
+Lena: Oh, that's far.
+Harris: Not too far but far enough.
+Lena: Right.
+Harris: Got to go, mom's calling.
+Lena: K bi. Feel better!
+Harris: K will do","Harris informed Lena that his friend Aoki passed away yesterday, and he is upset about it. He last saw Aoki a few months ago, as she lived in Michigan, and he had to end the conversation due to his mother calling.",哈里斯告知莉娜，他的朋友青木昨天去世了，他对此感到难过。他几个月前见过青木一次，因为她住在密歇根州，而且他的母亲打电话了，所以他不得不结束对话。,"Harris' friend, Aoki, who lives in Michigan, died yesterday. Harris hasn't seen her for a few months.",哈里斯的朋友青木住在密歇根州，昨天去世了。哈里斯有几个月没见她了。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00013,210,"Yaz: Going to slimming club tonight?
+Mary: Well, I don't want to, but I really should. I've been so bad, though!
+Yaz: Me too, choccies, wine, cake, you name it!
+Mary: Well, we should bite the bullet. She'll tell us off, I expect. Feels like being back at school!
+Yaz: Well, she IS our old cookery teacher! See you at 6ish, pick you up!?
+Mary: Yep! See you then!","Yaz and Mary both admit to overindulging but agree to attend their slimming club meeting tonight, anticipating a scolding from their former cookery teacher. Yaz will pick Mary up around 6 PM.",雅兹和玛丽都承认自己暴饮暴食，但同意今晚参加她们的减肥俱乐部会议，预计会受到她们以前的烹饪老师的训斥。雅兹将在下午6点左右接玛丽。,Yaz and Mary are meeting tonight around 6 and going for the slimming club together. They expect to be scolded for eating too much. ,亚兹和玛丽今晚6点左右见面，一起去减肥俱乐部。他们估计吃得太多会被骂。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00014,211,"Ellie: hey, are you at the university?
+Aaliyah: yep
+Camille: I'm sick :/
+Ellie: shiet....that's bad
+Ellie: Aali, where are we having our classes now?
+Aaliyah: 342 on the second floor","Camille is sick, and Ellie and Aaliyah are at the university, where their class will be held in room 342 on the second floor.",卡米尔生病了，埃莉和阿利亚在大学，她们的课程将在二楼342教室举行。,Ellie's class is in 342 on the second floor.,艾莉的班级在二楼342教室。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00015,212,"Nathan: <file_video>
+Aaron: OMG!!! 
+Aaron: 😂😂😂😂
+Aaron: looool
+Aaron: do you know her mate? 🤣🤣
+Aaron: my cat's face looks like that when he's taking a dump..🤣🤣🤣
+Aaron: <file_gif>
+Aaron: the angels must be weeping 🤭🤭🤭 
+Aaron: <file_gif>
+Aaron: <file_gif>
+Nathan: Hahahaha
+Nathan: She's having a spiritual moment 😉
+Nathan: No clue mate, Dan sent it over
+Nathan: A tragedy to say the least 😂😂
+Aaron: <file_gif>
+Aaron: looking for Jesus
+Nathan: 😂😂😂
+Aaron: hilarious..hahahaha","Nathan and Aaron found a funny video of a woman making a strange face, with Aaron comparing it to his cat and joking about a spiritual or tragic moment. They both laughed and shared several GIFs reacting to the video.",内森和亚伦发现了一个关于一位女士做出奇怪表情的搞笑视频，亚伦将其比作他的猫，并开玩笑说这可能是一个精神或悲剧时刻。他们都笑了，并分享了几个GIF动图来表达对该视频的反应。,Nathan and Aaron are discussing a video which Nathan sent. ,内森和亚伦正在讨论内森发来的视频。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00016,215,"Freddie: What are you watching on Netflix? I've just finished Mad Men.
+Kelly: I've just finished The Crown. 
+Freddie: There should be new episodes coming soon.
+Kelly: OMG! i can't wait! :)
+Freddie: Try Outlander or The Tudors in the meantime.
+Jim: i'm watching I, Zombie.
+Bob: try Grimm or Sabrina. They're both great!
+Kelly: they are all horrible and disgusting! 
+Bob: i think they are funny. They're just TV shows don't take them too seriously. x 
+Greg: I'm watching House of Cards though must admit the new series is boring.
+Mike: i agree. not the same without Kevin Spacey! You should try The West Wing if you enjoy political dramas.
+Greg: Netflix original Bodyguard is supposed to be good from what I've heard.
+Mary: I'm a bit ashamed to confess i enjoy stuff like Pretty Little Liars or Gossip Girl ;)
+Nancy: don't be ashamed i enjoy them too! and my favourite one is Desperate Housewives!!!
+Mary: I know! I watched it twice!
+Alan: I'm catching up with Friends.
+Nancy: OMG! i used to love Friends!","Several people discussed what they are watching on Netflix, including shows like Mad Men, The Crown, Outlander, I, Zombie, and House of Cards, with recommendations ranging from political dramas to lighter series like Friends and Pretty Little Liars. Some disagreed on the quality of certain shows, while others shared their enjoyment of guilty pleasures like Desperate Housewives.",几个人讨论了他们在观看的奈飞剧集，包括《广告狂人》、《王冠》、《异星出lander》、《僵尸肖恩》、《纸牌屋》等，推荐涵盖了政治剧到《老友记》、《美少女谎言》等轻松剧集。有些人对某些剧集的质量存在分歧，而另一些人则分享了他们对《绝望主妇》等“罪恶快感”的喜爱。,"Freddie, Kelly, Jim, Greg, Bob, Mike, Mary, Alan and Nancy are watching different shows on Netflix.",弗雷迪、凯利、吉姆、格雷格、鲍勃、迈克、玛丽、艾伦和南希正在netflix上观看不同的节目。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00017,244,"Jones: Hey.
+Angelina: Hey.
+Angelina: Long time. How are you doing?
+Jones: I'm fine
+Jones: You?
+Angelina: I'm cool too.
+Jones: You think we can meet today later in the afternoon in town?
+Angelina: Definitely.
+Jones: Okay. I will call you to confirm where we will meet.
+Angelina: Cool","Jones and Angelina reconnected and agreed to meet in town later that afternoon, with Jones promising to confirm the exact location.",琼斯和安吉丽娜重逢并同意当天下午在镇上见面，琼斯承诺确认具体地点。,Jones and Angelina will meet in town in the afternoon.,琼斯和安吉丽娜下午会在城里见面。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00018,285,"Casey: <file_photo>
+Amelia: these are so nice!!! did you do them yourself?
+Kristen: wooow amazing
+Amelia: i want my nails done like that too!
+Casey: yeah i did it myself :D got a new nail polish but damn it took me nearly 4 hours lol
+Amelia: can you do it for us too?
+Kristen: pretty please!
+Casey: sorry you guys... it was a nightmare :( seriously 4 hours for nails is too much","Casey did her own nails, which Amelia and Kristen loved and asked her to replicate, but Casey declined as it took her four hours and was too difficult.",凯西自己做了美甲，阿米莉亚和克里斯汀非常喜欢，并要求她复制，但凯西拒绝了，因为这花费了她四个小时，而且太困难了。,"Casey got a new nail polish and did her nails herself. It took her nearly 4 hours, so she won't do her friends' nails, as it takes too long.",凯西买了新指甲油，自己做了指甲。她花了近4个小时，所以她不会帮朋友做指甲，因为耗时太长了。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00019,319,"Sue: Call me when you get this.
+Sue: it's important
+Steve: OK, I'm calling","Sue asked Steve to call her upon receiving the message because it was important, and Steve confirmed he was calling.",苏请史蒂夫收到消息后给她打电话，因为这很重要，史蒂夫确认他正在打电话。,Steve is calling Sue at her request.,史蒂夫正按照苏的要求给她打电话。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00020,346,"Timmy: Who do u wanna invite?
+Gemma: Well, there's u and ur date :)
+Timmy: Not sure about the date, but I'll be there :) who else?
+Gemma: I was thinking about Lona and Michelle.
+Timmy: Still thinking ur getting invites to their weddings?
+Gemma: It's not like that.
+Timmy: Sure it is ;) just don't wanna admit it ;)
+Gemma: Fine! I want to come to their wedding receptions!
+Timmy: There we go :) was it so hard?
+Gemma: Yes.
+Timmy: And u think u can change their minds?
+Gemma: Dunno.","Gemma is inviting Timmy and potentially his date, along with Lona and Michelle, to a gathering, and she admits she hopes to be invited to Lona and Michelle’s wedding receptions. Timmy playfully teases Gemma about wanting to attend their weddings, and she acknowledges she’s unsure if she can convince them to invite her.",杰玛正在邀请蒂米和他的潜在约会对象，以及洛娜和米歇尔参加聚会，她承认她希望被邀请参加洛娜和米歇尔的婚礼招待会。蒂米调侃杰玛想参加他们的婚礼，她承认她不确定是否能说服她们邀请她。,"Gemma will invite Timmy and his Date, as well as Lona and Michelle to her wedding.",杰玛将邀请蒂米和他的约会对象，以及罗娜和米歇尔参加她的婚礼。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00021,355,"Ann: Congratulations!!
+Ann: You did great, both of you!
+Sue: Thanks, Ann
+Julie: I'm glad it's over!
+Julie: That's co cute of you, girl!
+Ann: Let's have a little celebration tonight! 
+Sue: I'm in
+Julie: me too!!! aww","Ann congratulated Sue and Julie on a job well done, and they all agreed to celebrate that night.",安妮祝贺苏和朱莉工作完成得很好，她们都同意那天晚上庆祝。,"Ann, Sue and Julie did a great job and they will have a little celebration tonight.",安、苏和朱莉做得很好，今晚他们会举行一个小小的庆祝活动。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00022,367,"Steve: hiya the dishwasher has turned up
+Mum: good did they install it for you
+Steve: yes they did a good job
+Steve: <file_photo>
+Mum: looks really nice
+Steve: yes it does its nice and quiet
+Mum: is it a 12 place setting one?
+Steve: I think so, not that I ever have 12 for dinner lol
+Mum: not but you dont have to put it on every day
+Steve: no every other
+Mum: yes I'm glad you are pleased with it xx
+Steve: I am thanks mum xxx","Steve informed his mum that the dishwasher was installed and working well, noting it was quiet and likely a 12-place setting. His mum expressed her happiness that he was pleased with it.",史蒂夫告知他的母亲洗碗机已经安装完毕，并且运行良好，他指出洗碗机运行安静，而且可能是12套餐具的容量。他的母亲表达了她很高兴他对此感到满意。,Steve is happy that he got a new dishwasher installed.,史蒂夫很高兴他装了一台新的洗碗机。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00023,393,"Marika: Are you coming today?
+Lara: Yes!
+Marika: Great!",Lara confirmed to Marika that she is coming today.,拉拉向玛丽卡确认她今天会来。,Marika is coming today.,玛丽卡今天会来。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00024,417,"Miranda: Hi S, could we cancel tomorrow's meeting?
+Stephanie: again? what happened?
+Miranda: I have to work :(
+Stephanie: you work 20 hours a day!
+Miranda: that's what young doctors do
+Stephanie: they kill themselves working
+Miranda: no they come close to death but survive and it makes them immortal
+Stephanie: as long as you have an explanation :D","Miranda requested to cancel their meeting due to work, explaining that it's common for young doctors to work long hours, which Stephanie jokingly countered with concerns about burnout. Miranda then playfully responded with a hyperbolic statement about doctors nearing death but becoming immortal.",米兰达因工作原因请求取消他们的会议，解释说年轻医生长时间工作是很常见的现象，对此斯蒂芬妮开玩笑地表示担心职业倦怠。米兰达随后以一种夸张的方式回应说医生们接近死亡却能变得不朽。,Miranda can't make her meeting with Stephanie as she has to work. ,米兰达不能去见斯蒂芬妮，因为她要工作。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00025,432,"Javier: Hey do you know any tattoo parlors over here with English speaking employees?
+Judie: Oh there's Warsaw ink
+Javier: the name sounds neat... have you had a tattoo done there?
+Judie: nope but my gf has
+Javier: got a pic?
+Judie: <file_photo>
+Javier: wow that looks amazing
+Javier: how much did she pay?
+Judie: it was a 1000
+Javier: fuck
+Javier: let me just get a tatttoo back in colombia then, thx","Javier asked Judie for English-speaking tattoo parlors, and Judie recommended Warsaw Ink where her girlfriend got a tattoo for 1000. Javier decided it was too expensive and will get a tattoo in Colombia instead.",哈维尔向朱迪询问会说英语的纹身店，朱迪推荐了华沙印克，她的女朋友在那里花了一千元做了纹身。哈维尔觉得太贵了，决定改在哥伦比亚做纹身。,Javier was initially eager to have a tatoo done at Warsaw Ink but the price turned out to be too high. Javier decided to have a tatoo done in Colombia.,哈维尔最初很想在warsaw ink纹身，但价格太高了。他决定去哥伦比亚做纹身。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00026,433,"Sam: You own a really nice hotel, guys 😊
+Jessica: Thanks Sam 😊
+Michael: Thanks, mate 
+Sam: How is our hotel room set for next month? Hope that the manager will arrange the very best for us 😉
+Michael: you’re damn right, Sam
+Michael: are you coming on the 15th of August?
+Sam: Yep! We’ll be at the hotel around 2 p.m.
+Jessica: I’m soooo happy to see you again!
+Sam: Me, too 😊","Sam complimented Jessica and Michael on their hotel and confirmed his arrival on August 15th around 2 p.m., expressing excitement to see them again. Jessica and Michael acknowledged Sam’s compliment and confirmed they would arrange a good room for him.",萨姆赞美了杰西卡和迈克尔的酒店，并确认他将于8月15日下午2点左右到达，表达了再次见到他们的喜悦。杰西卡和迈克尔感谢了萨姆的赞美，并确认他们会为他安排一间好房间。,Sam appreciates the hotel owned by Jessica and Michael. Sam is going there on the 15th August at around 2pm.,山姆很喜欢杰西卡和迈克尔的酒店。他会在8月15日下午2点左右去那里。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00027,442,"Terence: What the hell, Danny. You took my money, didn't you? :/
+Daniel: What, your money?? Why would I
+Terence: Don't play dumb
+Daniel: Are you calling me a liar, Terry??
+Terence: I'm not stupid, Danny
+Daniel: And I'm not a thief?? That's not cool, man :/
+Terence: ... Oh shit, I'm sorry, I've just found it. Forgot I'd placed it elsewhere last month
+Daniel: Good for you then
+Terence: Are you upset
+Daniel: What do you think?? Yeah, oh-fucking-course I am","Terence accused Daniel of stealing his money, but later apologized after finding it himself. Daniel expressed his anger at the false accusation.",特伦斯指责丹尼尔偷了他的钱，但后来在找到钱后道歉。丹尼尔表达了他对这虚假指控的愤怒。,Terence accused Daniel of taking his money. Terence finds the money later and apologizes to Daniel. Daniel is still upset.,特伦斯指控丹尼尔偷了他的钱。后来他找到了钱，就向丹尼尔道歉。但是丹尼尔还在生气。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00028,499,"Natacha: hi, i can come and pick you up at the RER.
+Charles: so  nice. I just landed. I think i'll arrive about 5:30pm. I'll give you a call
+Natacha: ok ,call  me when  you'll be at the station Vesinet. 
+Charles: thanks . see you","Natacha offered to pick Charles up at the RER station, and he will arrive around 5:30pm and call her when he’s at the Vesinet station.",娜塔莎提出要从火车站接查尔斯，他大约在下午5点30分到达，并在韦西内站时给她打电话。,Charles has just landed and he will be at RER about 5.30 PM. Natacha will pick him up from there.,查尔斯刚刚落地，他会在下午五点半到达rer，娜塔夏会在那里接他。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00029,528,"Meg: still at school?
+Ann: i have extra math classes
+Meg: so when can i meet you?
+Ann: i will be home at 7","Ann is at school for extra math classes and will be home at 7 PM, allowing Meg to meet her then.",安妮在学校上额外的数学课，晚上7点会回家，梅格那时可以和她见面。,Ann is still at school. She will be home at 7 so she can meet Meg then.,安还在学校，她7点会回家，这样她就可以和麦格见面了。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00030,532,"Pete: What flavour yogurt did you want again? My brain is like a sieve today.
+Jen: Pear but only if they've got it. Otherwise don't worry about it.
+Pete: I'll have a look around. If they don't have pear can I get a different flavour?
+Jen: I don't like any other flavour. If they don't have pear just don't get anything at all then.
+Pete: OK.","Pete is going to check if the store has pear yogurt for Jen, and if not, he shouldn't get any yogurt at all, as Jen doesn't like other flavors.",皮特将去查看商店是否有梨味酸奶给珍，如果没有，他就不要购买任何酸奶，因为珍不喜欢其他口味。,Pete will get a pear yogurt for Jen if they have it.,如果商店里有梨味酸奶， 皮特会给珍买的。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00031,536,"Christie: how are you after the party?
+Katie: really tired... and you?
+Christie: same
+Christie: the party was great!
+Katie: Yeah, we had fun! :)",Christie and Katie both feel tired after attending a great party that they both enjoyed.,克里斯蒂和凯蒂在参加了一个她们都很喜欢的精彩派对后，都感到疲惫。,Christie and Katie are tired after the party. They both had fun.,克里斯蒂和凯蒂在聚会后累了。他们都玩得很开心。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00032,537,"Sam: Are you working tomorrow?
+Carla: No, it's my day off
+Sam: I'm free in the afternoon, do you fancy meeting up?
+Carla: Yeah, sure
+Sam: Ok, great! Shall we go to Meanwood?
+Carla: Ok, there's that cafe there that does the yummy cakes. Meet you at 2?
+Sam: Yes - looking forward to it!
+Carla: See you tom! xx","Sam and Carla arranged to meet at a cafe in Meanwood at 2 PM tomorrow, as it is Carla’s day off. They both expressed excitement about the meetup.",萨姆和卡拉约定明天下午两点在米恩伍德的一家咖啡馆见面，因为那天是卡拉的休息日。他们都表达了对这次见面的兴奋之情。,Carla has a day off tomorrow. She will meet Sam in Meanwood in a cafe at 2 pm.,卡拉明天有一天假。她将在下午两点在meanwood的一个咖啡馆和山姆见面。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00033,544,"Joana: wana play some games?
+Sandy: what games?
+Joana: maybe dixit?
+Joana: or carcassonne?
+Sandy: why not?
+Joana: ok, I'll bring them 2 u
+Sandy: great :)","Joana and Sandy decided to play either Dixit or Carcassonne, and Joana will bring the games to Sandy.",约阿娜和桑迪决定玩《迪克西特》或《卡卡颂》，约阿娜会把游戏带给桑迪。,Joana will bring Sandy some games like dixit and carcassonne.,琼娜将为桑迪带来一些像迪克西特和卡尔卡松这样的游戏。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00034,548,"Steve: Bought the new Dream Theater album 5 minutes ago. I hope it's good.
+Rob: I have it here on my desk, ready for the first listening.
+Steve: Ok, I'll tell you later what I think about it.
+Rob: Same here. See you later!",Steve and Rob both recently acquired Dream Theater’s new album and plan to share their opinions on it later. They will discuss the album after both have had a chance to listen.,史蒂夫和罗伯最近都获得了梦剧场的新专辑，并计划稍后分享他们对它的看法。他们将在两人都听过专辑后讨论它。,"Steve and Rob will talk about new Dream Theater album, after they finish listening.",史蒂夫和罗伯将在听完后谈论新的梦剧场专辑。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00035,551,"Peter: Can you send me the link of your beauty shop?
+Joy: Definitely
+Joy: It is https:// *********
+Joy: Hope you will like it and feel free to ask any questions.
+Peter: Okay. Let me look at it.",Joy sent Peter the link to her beauty shop and invited him to ask any questions. Peter acknowledged receiving the link and said he would check it out.,乔伊将她的美容店链接发送给彼得，并邀请他提出任何问题。彼得确认已收到链接，并表示他会查看。,Joy sent Peter the link to her beauty shop.,乔伊把她美容店的链接发给了彼得。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00036,590,"Ethan: who's going to see solstafir?
+Noah: solstafir! when?
+Noah: i had no idea they were playing
+Archie: I'm not :D.
+Leo: i'm going ofc!
+Ethan: 21.11
+Noah: that's a wednesday... ehh...
+Noah: i'll have to see, might have to stay late at work...
+Leo: nooo you have to come
+Ethan: yeah you have to!
+Archie: There are better concerts :P.
+Noah: i know, i would really like to see them, but yeah
+Leo: archie... :P
+Ethan: don't mind him :P
+Noah: i'll see and let you know, it would really suck to miss them
+Leo: yup!
+Ethan: yup! x2","Ethan, Leo, and Noah are discussing the Solstafir concert on November 21st, with Leo and Ethan encouraging Noah to attend despite a potential work conflict, while Archie expressed a lack of interest. Noah will check his work schedule and let them know if he can go.",伊森、里奥和诺亚正在讨论索尔斯塔菲尔乐队11月21日的演唱会，里奥和伊森鼓励诺亚参加，尽管可能与他的工作时间冲突，而阿奇则表示不感兴趣。诺亚会查看他的工作安排，并告知他们是否能去。,"Ethan and Leo are going to see Sólstafir on 21.11. Noah would like to go too, but he might have to stay late at work.",伊森和里奥要在21点11分去见索斯塔弗。诺亚也想去，但他可能得工作到很晚。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00037,598,"Bradley: haha look a cat invaded the pitch at Goodison <file_other>
+Jill: hahahaha
+Julia: what a sweet little black ball of fur
+Jill: here's the video :D <file_other>
+Julia: haha
+Bradley: and the commentary :D
+Bradley: that's the best entertainment Everton fans have had all season :D","A cat ran onto the pitch at Goodison Park during a game, amusing fans including Bradley, Jill, and Julia. Bradley joked it was the best entertainment Everton fans have had all season, and they shared a video and commentary of the event.",在一场比赛中，一只猫跑进了古迪逊公园球场，引得包括布拉德利、吉尔和茱莉亚在内的球迷们感到有趣。布拉德利开玩笑说，这是埃弗顿球迷本赛季见过的最好的娱乐节目，他们分享了一段关于该事件的视频和评论。,A sweet little black cat got into the pitch during the Everton's football match.,在埃弗顿的足球比赛中，一只可爱的小黑猫钻进了球场。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00038,605,"Barbara: I'm home already, you can come over
+Sean: May I bring the dog?
+Zac: I'm on my way
+Barbara: sure you can, Sean
+Barbara: do you want to stay overnight?
+Sean: great!
+Sean: I thought about it
+Barbara: nice!",Sean is coming over to Barbara's place with his dog and plans to stay overnight. Zac is also on his way.,肖恩将带着他的狗去芭芭拉家，并且计划过夜。扎克也在路上。,"Barbara, Sean and Zac are meeting at Barbara's place tonight. Sean will bring the dog. Sean and Zac will stay overnight.",芭芭拉、肖恩和扎克今晚在芭芭拉家见面。肖恩会把狗带来的，肖恩和扎克会在这里过夜。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00039,616,"Jake: dude, I just pulled a TOTW
+Jake: my first this year!
+Tom: grats!
+Tom: gonna sell it?
+Jake: yeah
+Jake: I'll try him in one or two matches
+Jake: he's not a good fit for my squads
+Tom: you'll have plenty of coins to buy someone that fits
+Jake: that's the plan
+Jake: I got lucky with this one
+Tom: my pull luck sucks this year
+Tom: not a single great player 
+Jake: you're good at the game
+Jake: you don't need help :P
+Tom: I like shiny things :P","Jake received a Team of the Week player card and plans to sell it because it doesn’t fit his team, while Tom has had no luck with player pulls this year despite being skilled at the game.",杰克获得了一张本周最佳球员卡，并计划出售因为它不适合他的球队，而汤姆今年尽管游戏技术精湛，但一直没有抽到好球员。,Jake has got his first TOTW this year. Tom doesn't have a great team. ,杰克今年拿到了第一个totw ，汤姆的团队并不出色。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00040,621,"Phil: Good evening Deana! Many thanks for this nice card from you. Constantine was very happy!
+Phil: Are these sunglasses also from you?
+Deana: I thought they belonged your Cathreen!
+Phil: Nope. She says they aren't hers.
+Deana: Mine either. Look, maybe you feel like keeping them?
+Deana: I seem to have so many sunglasses...
+Deana: 8‑D
+Phil: Where did you find them, possible that they belong to Adrian?
+Deana: In this empty place above the radio. In the very back.
+Deana: If Adrian wants it, no pro!
+Deana: :)
+Phil: :))
+Deana: Exactly!
+Phil: Ok, they don't belong to any of us, and nobody else drove your car. But we can look after these sunglasses.
+Deana: Glad to hear it!","Phil and Deana are trying to figure out who the sunglasses found in Deana’s car belong to, but neither of them recognize them and Adrian doesn’t want them, so they’ve decided to keep them.",菲尔和迪安娜正在试图弄清楚在迪安娜的车里发现的太阳镜属于谁，但他们俩都不认识这副太阳镜，艾德里安也不想要，所以他们决定留下这副太阳镜。,"Phil received a card from Deana. Constantine was happy. Phil has sunglasses, that Deana found in the back above the radio. Deana and Phil don't know who they belong too. Phil will keep the sunglasses.",菲尔收到了迪安娜的一张卡片，康斯坦丁很开心。菲尔有副墨镜。蒂娜在后面收音机上面找到的。迪安娜和菲尔也不知道他们属于谁。菲尔会留着这副墨镜的。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00041,635,"Mell: Hi there! How are you doing?
+Gloria: Hi Mell! We are fine, just the daily grind ;) And yourselves?
+Mell: Not much happening either. An odd phone call with the kids. Or Tad's sister:(( Not much otherwise.
+Gloria: Yeah... Life has become so quite since the kids are out of the house. We had more to get used to it. But it must hard for you. Especially you I mean.
+Mell: I don't know. Sometimes I even forget that I should be missing them. In a way I do like this peace and quiet now.
+Gloria: Small wonder. You had a hell of a time with them just before they went to college. I'd say you need to recover now.
+Mell: I guess you're right. But maybe I should feel guilty or something?
+Gloria: Don't be silly! You are a fantastic mom.
+Mell: Thanks Gloria.
+Gloria: Anyway I'm happy to hear from you again. We should really have a nice do again.
+Mell: YES! Splendid!
+Gloria: The weather is just brilliant, perfect for a BBQ. What do you think?
+Mell: I'm all for it. At my place? I'd love it.
+Gloria: Can't be better. I love your garden.
+Mell: We're thinking about extending the terrace. I must show you my drawings, just a few ideas. It would be great to hear your opinion.
+Gloria: I'd love to. But you know how little I know about garden design, or however you call it.
+Mell: We'll have a look at them. Now the BBQ. At the weekend I suppose?
+Gloria: Let me check the calendar. Here's our family planner. A horrible name, isn't it? So this weekend suits us fine. At the next one, on Saturday, Mark has penciled something in but I can't read it. So what about this Saturday?
+Mell: Perfect. At least we know the weather holds. Shall I do the food and you the drinks?
+Gloria: And I'll get us some dessert as well. 
+Mell: Very good indeed. It's always so easy going with you.
+Gloria: Ta! You were thinking about Tad's sister?
+Mell: I'm afraid so. I'm so happy she moved up to Scotland and I don't have to put up with her trying to run my household. Tad feels relieved too.
+Gloria: Good riddance! I could really never warm up to her.
+Mell: Nobody can! Anyway she's gone and we're going to have a fantastic barbecue. Without her.
+Gloria: Yes, we are. Oh I'm so happy you've phoned!
+Mell: Looking forward to our BBQ on Saturday!
+Gloria: So long!","Mell and Gloria agreed to have a BBQ at Mell’s place this Saturday, and they both expressed relief that Tad’s sister moved to Scotland. Mell admitted to feeling relieved about her departure and enjoying the peace and quiet since her children left home.",梅尔和格洛丽亚同意本周六在梅尔家举行烧烤，她们都表示对塔德的姐姐搬到苏格兰感到欣慰。梅尔承认她对对方的离开感到轻松，并且自从孩子们离开家后，她一直享受着平静和安宁。,"Gloria and Mell plan to have a barbeque at Mell's place on Saturday. They are happy, because Tad's sister moved to Scotland. Mell needs Gloria's advice on garden design.",格洛丽亚和梅尔计划星期六在梅尔家吃烧烤。他们很高兴，因为泰德的姐姐搬到了苏格兰。梅尔需要格洛丽亚对花园设计的建议。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00042,649,"Callan: Something's wrong with my Samsung S8.
+Wade: What, exactly?
+Callan: All I get is a black screen.
+Wade: Did you drop it or something?
+Callan: I think I know, this has happened before.
+Wade:  It did? What happened before?
+Callan: It overheats and then it takes a while for it to restart again..
+Wade: That sucks.. Be carefull with the battery, it can be dangerous.
+Callan: It sure can, but I'm going to the store and let them see it. It's still under warranty.
+Wade: Will you lose all your stuff?
+Callan: No, I always back up my files.","Callan’s Samsung S8 has a black screen and is overheating, a problem that has occurred before, but he is going to the store for repair under warranty since he regularly backs up his files. Wade warned him about the dangers of the battery.",卡兰的三星S8屏幕变黑并过热，之前也出现过类似问题，但他将前往商店进行保修维修，因为他会定期备份文件。韦德警告他电池存在危险。,"Callan's Samsung S8 overheats, so he's going to the store to get it repaired.",卡伦的三星s8过热了，所以他要去店里修理。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00043,676,"Anna: Mum, I have a awful stomachache.
+Joanna: Oh, dear, when did you get it?
+Anna: At night, and it won’t stop:-(
+Joanna: Is it something you ate?
+Anna: Maybe. I'm not sure.
+Joanna: What did you have for breakfast?
+Anna: The usual, cereal with milk and a banana.
+Joanna: Maybe the milk was bad.
+Anna: It didn't smell bad.
+Joanna: Maybe the banana was bad.
+Anna: No, the banana was delicious.
+Joanna: Maybe you just need to go to the bathroom.
+Anna: No, that's not the problem.
+Joanna: Maybe it will go away in a little while.
+Anna: I wish it would :-(
+Anna: Hopefully. If not, maybe we should go and see a doctor.
+Joanna: Yeah, I think so...
+Anna: I’ll get you a hot tea with some fresh mint leaves. Hope it will help. 
+Joanna: Please do, I’m in my room...
+Anna: Will be in ten minutes:-)","Anna has a stomachache and isn't sure what caused it, but her mum suggests it might be something she ate. They agree to see a doctor if it doesn't improve, and Anna is making her mum some mint tea.",安娜感到胃痛，她不确定是什么原因引起的，但她的妈妈建议可能是她吃的东西。如果情况没有好转，她们同意去看医生，安娜正在为她的妈妈泡薄荷茶。,Anna got an awful stomachache at night but she doesn't know its cause. Her mom Joanna will make her hot tea with some fresh mint leaves.,安娜夜里胃疼得厉害，但她不知道其中的原因。她的妈妈乔安娜会用新鲜的薄荷叶为她做热茶。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00044,678,"Sam: Where are you?
+Kate: downstairs
+Sam: already?
+Kate: sure, come down
+Jeff: We're in the little room next to the reception
+Kate: have you noticed the woman making a cake?
+Sam: yes
+Kate: did you see the cake?
+Sam: I didn't pay attention, why?
+Kate: there was a huge penis on it
+Kate: made of marzipan or sth
+Sam: hahah, really?
+Kate: when I noticed it, I started laughing
+Kate: so she laughed too
+Sam: nice
+Kate: I asked her what's she doing
+Kate: Somebody ordered a cake with a huge penis with balls and chocolate hair
+Sam: hahah, I must see it!
+Kate: she is working in the small room under the stairs
+Sam: right, there is a kitchen",Kate and Sam are downstairs near reception and discovered a cake with a large penis made of marzipan being decorated by a woman; Sam wants to see it as well. The cake was specifically ordered with those details by someone.,凯特和萨姆在接待区楼下发现一个蛋糕正在被一位女士装饰，蛋糕上有一个用杏仁糖制作的大型男性生殖器；萨姆也想看看。这个蛋糕是有人专门定制了这些细节的。,Kate and Jeff are downstairs in a room next to the reception. Some lady is making a marzipan cake. ,凯特和杰夫在楼下接待处旁边的一个房间里。有位女士正在做杏仁蛋糕。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00045,690,"Mia: God, he keeps talking about the stupid wall
+Jennifer: I think he's just senile
+Karine: unfortunately it's much more
+Karine: this populist strategy to scare people with a minority
+Karine: and then present himself as the only savior
+Peter: Karine is right, I think he's not as senile and stupid as we would like to believe
+Mia: so it's even worse - he's pure evil
+Peter: possibly yes
+Karine: I really think so, because it's not only about politics anymore
+Karine: he is destroying the Earth
+Karine: trying to shake the world's order
+Jennifer: but he's also quite stupid
+Jennifer: and the dangerous thing is his self confidence
+Jennifer: he's persistence 
+Jennifer: and ignorance
+Karine: but we have a chance to change it
+Karine: maybe Trump will be over soon?
+Mia: we will see
+Mia: but we should do anything to win the next elections
+Karine: everything!","The group discusses a politician—likely Trump—and agrees he's not simply senile, but intentionally using fear to gain power and is potentially evil. They express concern about his destructive actions towards the Earth and global order, while acknowledging his dangerous combination of confidence, persistence, and ignorance, and emphasize the importance of winning the next election.",该群体讨论了一位政客——很可能是 特朗普 —并一致认为他并非仅仅是老年痴呆，而是故意利用恐惧来获取权力，并且可能邪恶。他们对他的破坏性行为，尤其对地球和全球秩序的破坏表示担忧，同时承认他自信、坚持和无知的危险结合，并强调赢得下一次选举的重要性。,"Mia, Jennifer, Karine and Peter do not like Trump.",米亚、珍妮弗、卡琳和彼得不喜欢特朗普。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00046,711,"Pedro: batman or superman??
+Alex: honestly..  neither
+Pedro: WHAT??
+Alex: i honestly like the flash
+Pedro: whats so good about the flash :P
+Alex: duuude, he can do almost anything
+Pedro: not anything
+Alex: yea im sure batman can run as fast -_-
+Pedro: superhuman speed? thats your pitch?
+Alex: that speed opens up the whole multiverse for him.. you seriously dont get how powerful he can be
+Pedro: yeah i get your point","Alex prefers The Flash over Batman and Superman, citing his superhuman speed and ability to traverse the multiverse as reasons for his power. Pedro initially questioned Alex’s preference but ultimately acknowledged his point.",艾力克斯更喜欢闪电侠，而不是蝙蝠侠和超人，他认为闪电侠拥有超人的速度以及穿梭多元宇宙的能力，这使他更强大。佩德罗最初质疑艾力克斯的偏好，但最终承认了他的观点。,Alex prefers the Flash to Barman and Superman thanks to his speed.,阿莱克斯更喜欢闪电侠，因为他的速度。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00047,737,"Damian: are you downtown?
+Ethan: yes
+Ethan: why?
+Damian: can you buy me a kebab?
+Damian: i'm starving
+Ethan: why won't you cook something for both of us, huh?
+Damian: man, give me a break, i had a rough day
+Ethan: ok ok
+Ethan: but i really wish you weren't such a parasite
+Damian: i'll change, scout's honour","Damian asked Ethan, who is downtown, to buy him a kebab because he is starving and had a rough day. Ethan reluctantly agreed but expressed his frustration with Damian’s reliance on him, to which Damian promised to change.",达米安请求身处市中心的伊森帮他买烤肉串，因为他非常饥饿并且今天过得很糟糕。伊森勉强同意，但表达了他对达米安依赖他的不满，对此达米安承诺会改变。,Ethan will buy Damian a kebab. Damian had a bad day.,伊森会请达米安吃烤肉串，达米安今天过得很糟糕。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00048,767,"Barry: I'm gonna go march in Women's strike, anyone interested?
+Jake: I am, already made plans with some friends, wanna join?
+Dave: I am down too, Kelly is coming with me
+Barry: Let's just meet around the campus at noon","Barry, Jake, and Dave are planning to attend the Women's strike and will meet around campus at noon. Kelly will be joining Dave.",巴里、杰克和戴夫计划参加妇女罢工活动，并将于中午在校园附近集合。凯莉将与戴夫一同前往。,"Barry, Dave, Kelly, and Jake will meet around the campus at 12 to join Women's strike.",巴里、戴夫、凯利和杰克将于12点在校园附近集合，参加妇女罢工。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00049,799,"Martha: Hey, can I ask you a question?
+Ophelia: Do we know each other?
+Martha: We don't, but do you mind if I ask you about the lenses from your profile picture? they are awesome and I would like to buy the similar ones
+Ophelia: it's from Crazy Lenses. They have quite reasonable prices and very fast shipping.
+Martha: Thanks!!! I'll check them :)
+Ophelia: No problem :)","Martha asked Ophelia about the lenses she was wearing in her profile picture, and Ophelia recommended “Crazy Lenses” for their reasonable prices and fast shipping. Martha thanked Ophelia and said she would check them out.",玛莎询问奥菲莉亚个人资料照片中佩戴的隐形眼镜，奥菲莉亚推荐了“疯狂眼镜”品牌，因为它价格合理且发货速度快。玛莎感谢奥菲莉亚并表示她会去了解一下。,Martha likes Ophelia's lenses and wants to buy similar ones. Ophelia got them from Crazy Lenses.,玛莎喜欢奥菲莉娅的眼镜，想买类似的，奥菲莉娅是从crazy lens上买的。,summarize_then_translate,gemma3:27b,gemma3:27b,2
+gold_00050,800,"Linda: Hi Dad, I want to buy flowers for mum! But I don't remember which one she likes :(
+Michael: Well, she likes all the flowers I believe
+Linda: That doesn't help! I'm on a flower market right now!
+Michael: Send me some pics then
+Linda: <file_photo> 
+Michael: Tulips are nice, roses too
+Linda:  What about carnations?
+Michael: No, carnations are boring :D
+Linda: Thanks Dad, srsly…
+Michael:  What about freesias? She likes them a lot, are there any there?
+Linda: <file_photo> 
+Michael: Take those!","Linda wants to buy flowers for her mum and asks her dad, Michael, for advice. Michael suggests tulips, roses, and especially freesias, after Linda sends him photos of the available options.",琳达想为她的妈妈买花，并向她的爸爸迈克尔寻求建议。在琳达发送了可选花卉的照片后，迈克尔建议郁金香、玫瑰，尤其是香雪球。,Linda wants to buy flowers for her mother and asks Michael which flowers does she like. Michael suggests Linda to buy freesias.,琳达想给她妈妈买花，问迈克尔她喜欢哪种花。迈克尔建议琳达买小苍兰。,summarize_then_translate,gemma3:27b,gemma3:27b,2

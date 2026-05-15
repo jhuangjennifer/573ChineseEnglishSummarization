@@ -1,0 +1,5063 @@
+﻿id,test_index,dialogue,final_summary,reference_english_summary,reference_chinese_summary,agent1_semantic_representation_json,agent2_summary_generation_json,agent3_revision_json,agent3_final_chinese_summary,pipeline,agent1_model,agent2_model,agent3_model,num_model_calls
+gold_00001,23,"Anne: You were right, he was lying to me :/
+Irene: Oh no, what happened?
+Jane: who? that Mark guy?
+Anne: yeah, he told me he's 30, today I saw his passport - he's 40
+Irene: You sure it's so important?
+Anne: he lied to me Irene",安妮发现马克隐瞒了真实年龄，并告知了艾琳和简。艾琳对这个谎言的严重性提出质疑。,Mark lied to Anne about his age. Mark is 40.,马克向安妮隐瞒了自己的年龄。他40岁了。,"{
+  ""participants"": [
+    ""Anne"",
+    ""Irene"",
+    ""Jane""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Anne"",
+      ""speech_act"": ""realization"",
+      ""intended_meaning"": ""Mark lied about his age."",
+      ""actor"": null,
+      ""action"": ""lying"",
+      ""object"": ""age"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""You were right, he was lying to me :/""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Irene"",
+      ""speech_act"": ""inquiry"",
+      ""intended_meaning"": ""Seeking more information about the situation."",
+      ""actor"": null,
+      ""action"": ""asking"",
+      ""object"": ""details of the lie"",
+      ""recipient"": ""Anne"",
+      ""evidence"": [
+        ""Oh no, what happened?""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Jane"",
+      ""speech_act"": ""identification"",
+      ""intended_meaning"": ""Identifying the person in question."",
+      ""actor"": null,
+      ""action"": ""identifying"",
+      ""object"": ""Mark"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""who? that Mark guy?""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Anne"",
+      ""speech_act"": ""confirmation"",
+      ""intended_meaning"": ""Confirming the identity and the lie."",
+      ""actor"": null,
+      ""action"": ""confirming"",
+      ""object"": ""Mark's lie about his age"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""yeah, he told me he's 30, today I saw his passport - he's 40""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Irene"",
+      ""speech_act"": ""questioning importance"",
+      ""intended_meaning"": ""Questioning the significance of the lie."",
+      ""actor"": null,
+      ""action"": ""questioning"",
+      ""object"": ""importance of the lie"",
+      ""recipient"": ""Anne"",
+      ""evidence"": [
+        ""You sure it's so important?""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Anne realized that Mark lied about his age and discussed her feelings with Irene and Jane.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 4,
+      ""key_event"": ""安妮确认马克关于他年龄的谎言。""
+    },
+    {
+      ""event_id"": 5,
+      ""key_event"": ""艾琳质疑这个谎言的重要性。""
+    }
+  ],
+  ""summary_zh"": ""安妮发现马克撒了关于年龄的谎，并和艾琳及简讨论了此事。艾琳对谎言的重要性表示怀疑。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""安妮发现马克隐瞒了真实年龄，并告知了艾琳和简。艾琳对这个谎言的严重性提出质疑。""
+}",安妮发现马克隐瞒了真实年龄，并告知了艾琳和简。艾琳对这个谎言的严重性提出质疑。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00002,30,"Mary: hey, im kinda broke, lend me a few box
+Carter: okay, give me an hour, im at the train station
+Mary: cool, thanks",玛丽请求卡特借钱，卡特同意一小时后借给她一些钱。,Mary ran out of money. Carter is going to lend her some in an hour.,玛丽的钱用完了，卡特打算一小时后借给她一点。,"{
+  ""participants"": [
+    ""Mary"",
+    ""Carter""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Mary"",
+      ""speech_act"": ""request"",
+      ""intended_meaning"": ""Mary asks Carter for money."",
+      ""actor"": ""Mary"",
+      ""action"": ""lend"",
+      ""object"": ""a few box"",
+      ""recipient"": ""Carter"",
+      ""evidence"": [
+        ""lend me a few box""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Carter"",
+      ""speech_act"": ""agreement"",
+      ""intended_meaning"": ""Carter agrees to lend Mary money."",
+      ""actor"": ""Carter"",
+      ""action"": ""lend"",
+      ""object"": ""a few box"",
+      ""recipient"": ""Mary"",
+      ""evidence"": [
+        ""okay""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Carter"",
+      ""speech_act"": ""condition"",
+      ""intended_meaning"": ""Carter will lend Mary money after an hour."",
+      ""actor"": ""Carter"",
+      ""action"": ""give"",
+      ""object"": ""an hour"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""give me an hour""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Carter agrees to lend Mary some money after an hour.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 3,
+      ""key_event"": ""卡特同意在一小时后借给玛丽一些钱。""
+    }
+  ],
+  ""summary_zh"": ""玛丽请求卡特借钱，卡特同意在一小时后借给她几盒钱。""
+}","{
+  ""needs_revision"": true,
+  ""issues_identified"": [
+    ""wrong_action""
+  ],
+  ""events_dropped"": [],
+  ""revision_reason"": ""错误的金额单位"",
+  ""summary_zh_final"": ""玛丽请求卡特借钱，卡特同意一小时后借给她一些钱。""
+}",玛丽请求卡特借钱，卡特同意一小时后借给她一些钱。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00003,39,"Tina: I'll tell you something, this Emirate staff looks amazing, as movie stars
+Ala: Oh yes, I know, that's for purpose 
+Ala: It's how it's suppose to be
+Ala: They pay a lot of attention to the image
+Tina: Looks nice, pleasure to observe
+Tina: And I sucked at the airport, they've kept us one hour in the plane and finally I'll catch the evening flight back home
+Tina: Could You imagine?
+Tina: And you know, this way we had such a talkative pilot :-)
+Ala: Oh, poor you
+Ala: Pfff
+Ala: And I'm on my way to a meeting
+Tina: THE meeting?
+Ala: Yes, keep your finger crossed
+Tina: Sure, let me know how did it go
+Ala: Ok darling, in touch",蒂娜赞扬阿联酋航空工作人员的外表，但抱怨在机场被耽误，错过了航班。阿拉同情她，并提到自己要去开会。蒂娜要求告知会议结果。,Tina will catch the evening flight back home. Ala is on her way to the meeting. She will let Tina know how it went.,蒂娜将乘晚间航班回家。阿拉正在去开会的路上。她会让蒂娜知道事情的进展。,"{
+  ""participants"": [
+    ""Tina"",
+    ""Ala""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Tina"",
+      ""speech_act"": ""compliment"",
+      ""intended_meaning"": ""Emirates staff look impressive."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""Emirates staff"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""I'll tell you something, this Emirate staff looks amazing, as movie stars""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Ala"",
+      ""speech_act"": ""agreement"",
+      ""intended_meaning"": ""Agreeing with Tina's observation."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": null,
+      ""evidence"": [
+        ""Oh yes, I know, that's for purpose""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Tina"",
+      ""speech_act"": ""complaint"",
+      ""intended_meaning"": ""Expressing frustration about her travel experience."",
+      ""actor"": ""Tina"",
+      ""action"": ""kept us"",
+      ""object"": ""Emirates staff"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""And I sucked at the airport, they've kept us one hour in the plane and finally I'll catch the evening flight back home""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Ala"",
+      ""speech_act"": ""sympathy"",
+      ""intended_meaning"": ""Expressing empathy for Tina's situation."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Tina"",
+      ""evidence"": [
+        ""Oh, poor you""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Ala"",
+      ""speech_act"": ""statement"",
+      ""intended_meaning"": ""Mentioning an upcoming meeting."",
+      ""actor"": ""Ala"",
+      ""action"": ""going to a meeting"",
+      ""object"": null,
+      ""recipient"": null,
+      ""evidence"": [
+        ""And I'm on my way to a meeting""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Tina"",
+      ""speech_act"": ""request"",
+      ""intended_meaning"": ""Asking Ala to inform her about the meeting's outcome."",
+      ""actor"": ""Ala"",
+      ""action"": ""let me know"",
+      ""object"": ""how the meeting went"",
+      ""recipient"": ""Tina"",
+      ""evidence"": [
+        ""Sure, let me know how did it go""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Tina expresses frustration about her travel experience, while Ala sympathizes and mentions an upcoming meeting, with Tina requesting to be informed about the outcome.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 3,
+      ""key_event"": ""蒂娜抱怨在机场被阿联酋航空公司工作人员耽误了一个小时，错过了回家的晚航班。""
+    },
+    {
+      ""event_id"": 4,
+      ""key_event"": ""阿拉表达了对蒂娜处境的同情。""
+    },
+    {
+      ""event_id"": 5,
+      ""key_event"": ""阿拉提到她要去开会，蒂娜请求她告知会议结果。""
+    }
+  ],
+  ""summary_zh"": ""蒂娜抱怨旅行遭遇，阿拉同情并提及即将举行的会议，蒂娜要求告知会议结果。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""蒂娜赞扬阿联酋航空工作人员的外表，但抱怨在机场被耽误，错过了航班。阿拉同情她，并提到自己要去开会。蒂娜要求告知会议结果。""
+}",蒂娜赞扬阿联酋航空工作人员的外表，但抱怨在机场被耽误，错过了航班。阿拉同情她，并提到自己要去开会。蒂娜要求告知会议结果。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00004,65,"Ana: You sleeping?
+Catherine: Not yet.
+Ana: Wanna go visit grandma tomorrow? I miss her.
+Catherine: Yeah that would be nice :) I'll call you when I wake up
+Ana: Oki :) sleep well, good night.
+Catherine:  Good night, u too.",安娜和凯瑟琳计划次日拜访祖母，凯瑟琳醒后会给安娜打电话。,Ana wants to visit grandma tomorrow. Catherine will go with her. She will call Anna when she wakes up.,安娜明天想去看望奶奶。凯瑟琳会和她一起去。她起床后会给安娜打电话。,"{
+  ""participants"": [
+    ""Ana"",
+    ""Catherine""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Ana"",
+      ""speech_act"": ""check availability"",
+      ""intended_meaning"": ""Inquire if Catherine is available to make plans."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Catherine"",
+      ""evidence"": [
+        ""You sleeping?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Catherine"",
+      ""speech_act"": ""respond availability"",
+      ""intended_meaning"": ""Inform Ana that she is not yet asleep and available."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Ana"",
+      ""evidence"": [
+        ""Not yet.""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Ana"",
+      ""speech_act"": ""make suggestion"",
+      ""intended_meaning"": ""Propose a visit to their grandmother the next day."",
+      ""actor"": null,
+      ""action"": ""visit"",
+      ""object"": ""grandma"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""Wanna go visit grandma tomorrow? I miss her.""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Catherine"",
+      ""speech_act"": ""accept suggestion"",
+      ""intended_meaning"": ""Agree to Ana's proposal and plan to call her when she wakes up."",
+      ""actor"": ""Catherine"",
+      ""action"": ""call"",
+      ""object"": ""Ana"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""Yeah that would be nice :) I'll call you when I wake up""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Ana and Catherine plan to visit their grandmother the next day, with Catherine calling Ana when she wakes up.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 4,
+      ""key_event"": ""安娜和凯瑟琳计划次日拜访祖母，凯瑟琳醒后会给安娜打电话。""
+    }
+  ],
+  ""summary_zh"": ""安娜和凯瑟琳计划次日拜访祖母，凯瑟琳醒后会给安娜打电话。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""安娜和凯瑟琳计划次日拜访祖母，凯瑟琳醒后会给安娜打电话。""
+}",安娜和凯瑟琳计划次日拜访祖母，凯瑟琳醒后会给安娜打电话。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00005,66,"Joyce: Check this out!
+Joyce: <link>
+Michael: That's cheap!
+Edson: No way! I'm booking my ticket now!! ",乔伊斯分享了廉价机票的链接，迈克尔表示惊讶，艾德森立即预订了机票。,Edson is booking his ticket now.,埃德森正在订票。,"{
+  ""participants"": [
+    ""Joyce"",
+    ""Michael"",
+    ""Edson""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Joyce"",
+      ""speech_act"": ""sharing information"",
+      ""intended_meaning"": ""presenting a link to a cheap ticket"",
+      ""actor"": null,
+      ""action"": ""sharing"",
+      ""object"": ""<link>"",
+      ""recipient"": ""Michael, Edson"",
+      ""evidence"": [
+        ""Check this out!"",
+        ""<link>""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Michael"",
+      ""speech_act"": ""expression of surprise"",
+      ""intended_meaning"": ""expressing that the ticket is inexpensive"",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": null,
+      ""evidence"": [
+        ""That's cheap!""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Edson"",
+      ""speech_act"": ""decision"",
+      ""intended_meaning"": ""deciding to book the ticket immediately"",
+      ""actor"": ""Edson"",
+      ""action"": ""booking a ticket"",
+      ""object"": null,
+      ""recipient"": null,
+      ""evidence"": [
+        ""No way! I'm booking my ticket now!!""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Edson decides to book the cheap ticket after Joyce shares the link and Michael expresses surprise at its low price.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 3,
+      ""key_event"": ""艾德森决定立即预订机票""
+    }
+  ],
+  ""summary_zh"": ""乔伊斯分享了廉价机票的链接，迈克尔表达了惊讶，艾德森决定立即预订机票。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""乔伊斯分享了廉价机票的链接，迈克尔表示惊讶，艾德森立即预订了机票。""
+}",乔伊斯分享了廉价机票的链接，迈克尔表示惊讶，艾德森立即预订了机票。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00006,67,"Jane: google maps says it is at least 3h <file_other>
+Steven: I used to make it in 2, trust me :D
+Jane: but it's almost 300km..
+Steven: the road is new , we will make it ^^
+Jane: I don't want  to stress out , let's meet at 4:30 instead of 5, ok?
+Steven: ok, if u reaaly want, we can meet at 4:30
+Jane: thx! 
+Jane: I will wait at the main entrance or where?
+Steven: main entrance is good for me;-) 
+Steven: cu",简和史蒂文最终决定提前至下午4点30分在入口处见面，以避免长途旅行的压力。简最初分享了至少3小时的行程估计，但史蒂文自信可更快到达。在简表达担忧后，史蒂文解释道路为新建，并同意提前见面。,Jane wants to leave at 4.30 instead of 5 because Google Maps suggests the 300 km drive should take them at least 3 hours and she doesn't want to be late. She will wait for Steven at the main entrance.,简想4点半就走，而不是等到5点，因为谷歌地图提示300公里的车程至少需要3小时，她不想迟到。她会在正门处等史蒂文。,"{
+  ""participants"": [
+    ""Jane"",
+    ""Steven""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Jane"",
+      ""speech_act"": ""information sharing"",
+      ""intended_meaning"": ""The estimated travel time is at least 3 hours."",
+      ""actor"": null,
+      ""action"": ""sharing travel time estimate"",
+      ""object"": ""travel time of 3 hours or more"",
+      ""recipient"": ""Steven"",
+      ""evidence"": [
+        ""google maps says it is at least 3h""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Steven"",
+      ""speech_act"": ""assurance"",
+      ""intended_meaning"": ""I can make the trip in 2 hours."",
+      ""actor"": null,
+      ""action"": ""assuring shorter travel time"",
+      ""object"": ""travel time of 2 hours"",
+      ""recipient"": ""Jane"",
+      ""evidence"": [
+        ""I used to make it in 2, trust me :D""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Jane"",
+      ""speech_act"": ""concern expression"",
+      ""intended_meaning"": ""The distance is almost 300km, which might be stressful."",
+      ""actor"": null,
+      ""action"": ""expressing concern"",
+      ""object"": ""the long distance"",
+      ""recipient"": ""Steven"",
+      ""evidence"": [
+        ""but it's almost 300km..""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Steven"",
+      ""speech_act"": ""reassurance"",
+      ""intended_meaning"": ""The road is new, so we should be able to make it on time."",
+      ""actor"": null,
+      ""action"": ""reassuring about the trip"",
+      ""object"": ""the new road condition"",
+      ""recipient"": ""Jane"",
+      ""evidence"": [
+        ""the road is new , we will make it ^^""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Jane"",
+      ""speech_act"": ""proposal"",
+      ""intended_meaning"": ""Let's meet at 4:30 instead of 5 to avoid stress."",
+      ""actor"": ""Jane"",
+      ""action"": ""proposing changed meeting time"",
+      ""object"": ""new meeting time: 4:30"",
+      ""recipient"": ""Steven"",
+      ""evidence"": [
+        ""let's meet at 4:30 instead of 5, ok?""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Steven"",
+      ""speech_act"": ""agreement"",
+      ""intended_meaning"": ""Agreed to meet at 4:30."",
+      ""actor"": ""Steven"",
+      ""action"": ""agreeing to the new meeting time"",
+      ""object"": ""meeting time changed to 4:30"",
+      ""recipient"": ""Jane"",
+      ""evidence"": [
+        ""ok, if u reaaly want, we can meet at 4:30""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Jane and Steven agreed to meet at the main entrance at 4:30 instead of 5.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 6,
+      ""key_event"": ""简（Jane）和史蒂文（Steven）同意在下午4点30分在入口处见面，而不是原定的下午5点。""
+    }
+  ],
+  ""summary_zh"": ""简和史蒂文最终决定提前到下午4点30分在入口处见面，以避免长途旅行带来的压力。简最初分享了至少3小时的旅行时间估计，但史蒂文保证他可以更快地完成旅程。在简表达了对长途旅行的担忧后，史蒂文解释说道路是新的，他们应该能准时到达。简于是提议提前见面，得到了史蒂文的同意。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""简和史蒂文最终决定提前至下午4点30分在入口处见面，以避免长途旅行的压力。简最初分享了至少3小时的行程估计，但史蒂文自信可更快到达。在简表达担忧后，史蒂文解释道路为新建，并同意提前见面。""
+}",简和史蒂文最终决定提前至下午4点30分在入口处见面，以避免长途旅行的压力。简最初分享了至少3小时的行程估计，但史蒂文自信可更快到达。在简表达担忧后，史蒂文解释道路为新建，并同意提前见面。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00007,78,"Fiona: Are you free?
+Tina: Yes, what's up?
+Fiona: I'm trying to prepare a nice dinner for Chris and I thought that maybe I could prepare this tart of yours :)
+Tina: I'm flattered!
+Fiona: Well, it IS delicious :) Could help me do it?
+Tina: Sure! It's not difficult. Do you have anything ready?
+Fiona: I must admit I bought the crust...
+Tina: Oh, ok :P Pity, but well, it's too late now.
+Fiona: I tried making the filling once, but I finished with lemony scrambled eggs...
+Tina: It happens, don't worry. The thing is that once you start adding eggs you can't stop mixing it, otherwise you'll end up with scrambled eggs.",菲奥娜请求蒂娜帮助制作馅饼，蒂娜同意并提供制作建议，以避免做成炒鸡蛋。,Fiona wants to prepare dinner for Chris. She is thinking of Tina's tart. She will help her make it.,菲奥娜想为克里斯准备晚餐。她想起了蒂娜做的馅饼。蒂娜会帮她做的。,"{
+  ""participants"": [
+    ""Fiona"",
+    ""Tina""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Fiona"",
+      ""speech_act"": ""requesting availability"",
+      ""intended_meaning"": ""Fiona wants to know if Tina is available for help."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Tina"",
+      ""evidence"": [
+        ""Are you free?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Tina"",
+      ""speech_act"": ""confirming availability"",
+      ""intended_meaning"": ""Tina confirms she is available."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Fiona"",
+      ""evidence"": [
+        ""Yes, what's up?""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Fiona"",
+      ""speech_act"": ""requesting assistance"",
+      ""intended_meaning"": ""Fiona asks Tina for help in preparing a tart."",
+      ""actor"": null,
+      ""action"": ""help prepare a tart"",
+      ""object"": ""tart"",
+      ""recipient"": ""Tina"",
+      ""evidence"": [
+        ""Could help me do it?""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Tina"",
+      ""speech_act"": ""agreeing to assist"",
+      ""intended_meaning"": ""Tina agrees to help Fiona with the tart."",
+      ""actor"": ""Tina"",
+      ""action"": ""help"",
+      ""object"": ""Fiona with the tart preparation"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""Sure! It's not difficult.""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Fiona"",
+      ""speech_act"": ""disclosing preparation status"",
+      ""intended_meaning"": ""Fiona informs Tina that she has bought the crust but hasn't started the filling."",
+      ""actor"": ""Fiona"",
+      ""action"": ""bought the crust"",
+      ""object"": ""tart crust"",
+      ""recipient"": ""Tina"",
+      ""evidence"": [
+        ""I must admit I bought the crust...""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Tina"",
+      ""speech_act"": ""providing advice"",
+      ""intended_meaning"": ""Tina advises Fiona on how to avoid scrambled eggs while making the filling."",
+      ""actor"": ""Tina"",
+      ""action"": ""provide advice"",
+      ""object"": ""tart filling preparation technique"",
+      ""recipient"": ""Fiona"",
+      ""evidence"": [
+        ""The thing is that once you start adding eggs you can't stop mixing it, otherwise you'll end up with scrambled eggs.""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Tina agrees to help Fiona prepare a tart, providing advice on how to avoid making scrambled eggs while preparing the filling.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 4,
+      ""key_event"": ""蒂娜同意帮助菲奥娜制作馅饼。""
+    },
+    {
+      ""event_id"": 6,
+      ""key_event"": ""蒂娜向菲奥娜提供避免做成炒鸡蛋的建议，指导如何制作馅料。""
+    }
+  ],
+  ""summary_zh"": ""菲奥娜请求蒂娜帮助制作馅饼，蒂娜同意并提供了避免炒鸡蛋的技巧，指导馅料制作。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""菲奥娜请求蒂娜帮助制作馅饼，蒂娜同意并提供制作建议，以避免做成炒鸡蛋。""
+}",菲奥娜请求蒂娜帮助制作馅饼，蒂娜同意并提供制作建议，以避免做成炒鸡蛋。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00008,86,"Olafur: are we doing anything for New Year's Eve?
+Nathalie: I was thinking about something classy, like opera or sth like that
+Zoe: how much does it cost?
+Olafur: opera is not for me
+Nathalie: so what do you propose?
+Nathalie: it's 100$ 
+Olafur: I was thinking about partying somewhere
+Nathalie: partying sounds fun, as long as it will be classy
+Zoe: <file_link>
+Zoe: Breakfast at Tiffany's party sounds classy
+Olafur: <file_link> 
+Olafur: is it classy enough?
+Nathalie: :O
+Nathalie: this club is AMAZING
+Zoe: whoa
+Nathalie: we'll going to Soho then
+Olafur: we just need to hurry up and buy some tickets soon
+Zoe: sure",纳塔莉、奥拉夫尔和佐伊讨论新年夜的活动。他们最终决定参加佐伊建议的索霍区“早餐在蒂芙尼”主题派对。,"Nathalie, Olafur and Zoe are planning the New Year's Eve. Nathalie wants something classy. Olafur doesn't like opera. They want to go to the Breakfast at Tiffany's party in Soho.",娜塔莉、奥拉维尔和佐伊正在做新年前夜的计划。娜塔莉想要有格调的。但奥拉维尔不喜欢歌剧。他们想去苏豪区蒂芙尼的聚会上吃早餐。,"{
+  ""participants"": [
+    ""Olafur"",
+    ""Nathalie"",
+    ""Zoe""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Olafur"",
+      ""speech_act"": ""question"",
+      ""intended_meaning"": ""Inquire about New Year's Eve plans."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": null,
+      ""evidence"": [
+        ""are we doing anything for New Year's Eve?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Nathalie"",
+      ""speech_act"": ""proposal"",
+      ""intended_meaning"": ""Suggest a classy event like opera."",
+      ""actor"": null,
+      ""action"": ""thinking about something classy"",
+      ""object"": ""opera"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""I was thinking about something classy, like opera or sth like that""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Zoe"",
+      ""speech_act"": ""question"",
+      ""intended_meaning"": ""Ask about the cost of the proposed event."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": null,
+      ""evidence"": [
+        ""how much does it cost?""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Olafur"",
+      ""speech_act"": ""rejection"",
+      ""intended_meaning"": ""Reject the idea of going to the opera."",
+      ""actor"": ""Olafur"",
+      ""action"": ""thinking"",
+      ""object"": ""opera"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""opera is not for me""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Zoe"",
+      ""speech_act"": ""proposal"",
+      ""intended_meaning"": ""Suggest a Breakfast at Tiffany's party as an alternative."",
+      ""actor"": null,
+      ""action"": ""suggesting"",
+      ""object"": ""Breakfast at Tiffany's party"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""Breakfast at Tiffany's party sounds classy""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Nathalie"",
+      ""speech_act"": ""agreement"",
+      ""intended_meaning"": ""Agree to the proposed plan and confirm the location."",
+      ""actor"": ""Nathalie"",
+      ""action"": ""going"",
+      ""object"": ""Soho"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""we'll going to Soho then""
+      ]
+    }
+  ],
+  ""final_outcome"": ""The group decides to attend a Breakfast at Tiffany's party in Soho for New Year's Eve.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 6,
+      ""key_event"": ""纳塔莉同意了佐伊提出的在索霍区举办早餐在蒂芙尼的主题派对的建议，确定了新年夜的活动计划。""
+    }
+  ],
+  ""summary_zh"": ""纳塔莉、奥拉夫尔和佐伊讨论新年夜的活动计划。经过商议，他们决定参加在索霍区举办的早餐在蒂芙尼主题派对。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""纳塔莉、奥拉夫尔和佐伊讨论新年夜的活动。他们最终决定参加佐伊建议的索霍区“早餐在蒂芙尼”主题派对。""
+}",纳塔莉、奥拉夫尔和佐伊讨论新年夜的活动。他们最终决定参加佐伊建议的索霍区“早餐在蒂芙尼”主题派对。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00009,120,"John: wanna go see ""A Star is Born"" on Wed?
+Joan: sorry can't
+Joan: super busy 
+Joan: don't have time for anything :( 
+John: that's a shame
+Joan: I'm free on Thursday
+John: I could do Thursday
+Joan: ok! so around 8pm?
+John: sure sounds great
+John: I'll see where it's palying and send you the details
+Joan: ok great!",约翰和乔安计划周四晚8点一起看电影《一个明星的诞生》，约翰将发送放映细节。,"Joan and John are going to watch ""A Star is Born"" on Thursday around 8 p.m.",琼和约翰星期四晚上8点左右去看《一个明星的诞生》。,"{
+  ""participants"": [
+    ""John"",
+    ""Joan""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""John"",
+      ""speech_act"": ""invitation"",
+      ""intended_meaning"": ""Proposing a movie date."",
+      ""actor"": ""John"",
+      ""action"": ""going to the movies"",
+      ""object"": ""\""A Star is Born\"""",
+      ""recipient"": ""Joan"",
+      ""evidence"": [
+        ""wanna go see \""A Star is Born\"" on Wed?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Joan"",
+      ""speech_act"": ""refusal"",
+      ""intended_meaning"": ""Declining the invitation due to prior engagements."",
+      ""actor"": ""Joan"",
+      ""action"": ""not going"",
+      ""object"": ""\""A Star is Born\"""",
+      ""recipient"": ""John"",
+      ""evidence"": [
+        ""sorry can't"",
+        ""super busy""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Joan"",
+      ""speech_act"": ""counter-proposal"",
+      ""intended_meaning"": ""Suggesting an alternative day when she is available."",
+      ""actor"": ""Joan"",
+      ""action"": ""being free"",
+      ""object"": ""Thursday"",
+      ""recipient"": ""John"",
+      ""evidence"": [
+        ""I'm free on Thursday""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""John"",
+      ""speech_act"": ""acceptance"",
+      ""intended_meaning"": ""Agreeing to the counter-proposed day."",
+      ""actor"": ""John"",
+      ""action"": ""accepting"",
+      ""object"": ""Thursday"",
+      ""recipient"": ""Joan"",
+      ""evidence"": [
+        ""I could do Thursday""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Joan"",
+      ""speech_act"": ""confirmation"",
+      ""intended_meaning"": ""Confirming the movie date and suggesting a time."",
+      ""actor"": ""Joan"",
+      ""action"": ""confirming"",
+      ""object"": ""movie date on Thursday around 8pm"",
+      ""recipient"": ""John"",
+      ""evidence"": [
+        ""ok! so around 8pm?""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""John"",
+      ""speech_act"": ""commitment"",
+      ""intended_meaning"": ""Promising to send details about the movie showing."",
+      ""actor"": ""John"",
+      ""action"": ""sending details"",
+      ""object"": ""movie showing details"",
+      ""recipient"": ""Joan"",
+      ""evidence"": [
+        ""I'll see where it's playing and send you the details""
+      ]
+    }
+  ],
+  ""final_outcome"": ""John and Joan agreed to watch 'A Star is Born' together on Thursday around 8 pm, with John committing to send Joan the movie showing details.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 6,
+      ""key_event"": ""约翰承诺发送电影放映细节""
+    },
+    {
+      ""event_id"": 5,
+      ""key_event"": ""乔安确认周四晚8点看电影""
+    },
+    {
+      ""event_id"": 4,
+      ""key_event"": ""约翰接受周四的提议""
+    }
+  ],
+  ""summary_zh"": ""约翰和乔安同意一起在周四晚8点观看《一个明星的诞生》，约翰承诺发送电影放映细节。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""约翰和乔安计划周四晚8点一起看电影《一个明星的诞生》，约翰将发送放映细节。""
+}",约翰和乔安计划周四晚8点一起看电影《一个明星的诞生》，约翰将发送放映细节。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00010,137,"Peyton: I have been asking you to bring that video game for me
+Cameron: Honey, I am not having enough time to come home
+Peyton: When would you come home?
+Cameron: I will have to stay out of town for another week i guess
+Peyton: Cant you just deliver that game through the courier? :P
+Cameron: Dont be mean :/
+Peyton: Get the job done and come to home then. ASAP :P",佩顿要求卡梅伦带回视频游戏，但卡梅伦因出差无法立即回家。佩顿建议快递游戏，并催促卡梅伦尽快返家。,Peyton is expecting Cameron to bring the video game. Cameron will probably be out for another week.,佩顿希望卡梅隆能带游戏机过来，但是卡梅隆可能还要再缺席一周。,"{
+  ""participants"": [
+    ""Peyton"",
+    ""Cameron""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Peyton"",
+      ""speech_act"": ""request"",
+      ""intended_meaning"": ""Ask Cameron to bring a video game."",
+      ""actor"": ""Cameron"",
+      ""action"": ""bring"",
+      ""object"": ""video game"",
+      ""recipient"": ""Peyton"",
+      ""evidence"": [
+        ""I have been asking you to bring that video game for me""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Cameron"",
+      ""speech_act"": ""refusal"",
+      ""intended_meaning"": ""Explains why they can't fulfill the request."",
+      ""actor"": ""Cameron"",
+      ""action"": ""not having enough time"",
+      ""object"": null,
+      ""recipient"": ""Peyton"",
+      ""evidence"": [
+        ""Honey, I am not having enough time to come home""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Peyton"",
+      ""speech_act"": ""question"",
+      ""intended_meaning"": ""Inquires about Cameron's return."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Cameron"",
+      ""evidence"": [
+        ""When would you come home?""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Cameron"",
+      ""speech_act"": ""answer"",
+      ""intended_meaning"": ""Informs Peyton of their extended absence."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""staying out of town for another week"",
+      ""recipient"": ""Peyton"",
+      ""evidence"": [
+        ""I will have to stay out of town for another week i guess""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Peyton"",
+      ""speech_act"": ""suggestion"",
+      ""intended_meaning"": ""Proposes an alternative way to deliver the game."",
+      ""actor"": ""Cameron"",
+      ""action"": ""deliver through courier"",
+      ""object"": ""video game"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""Cant you just deliver that game through the courier? :P""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Peyton"",
+      ""speech_act"": ""command"",
+      ""intended_meaning"": ""Insists on Cameron returning home immediately."",
+      ""actor"": ""Cameron"",
+      ""action"": ""come home"",
+      ""object"": null,
+      ""recipient"": ""Cameron"",
+      ""evidence"": [
+        ""Get the job done and come to home then. ASAP :P""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Peyton insists that Cameron return home immediately to bring the video game.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 6,
+      ""key_event"": ""Peyton坚持Cameron立即回家，并带来视频游戏。""
+    }
+  ],
+  ""summary_zh"": ""佩顿要求卡梅伦带一个视频游戏。卡梅伦拒绝，解释说没有足够的时间。佩顿询问何时能回家，卡梅伦回答将出差另一周。佩顿建议通过快递送游戏，并坚持卡梅伦立即回家。""
+}","{
+  ""needs_revision"": true,
+  ""issues_identified"": [
+    ""too_verbose""
+  ],
+  ""events_dropped"": [],
+  ""revision_reason"": ""简洁总结，避免冗长"",
+  ""summary_zh_final"": ""佩顿要求卡梅伦带回视频游戏，但卡梅伦因出差无法立即回家。佩顿建议快递游戏，并催促卡梅伦尽快返家。""
+}",佩顿要求卡梅伦带回视频游戏，但卡梅伦因出差无法立即回家。佩顿建议快递游戏，并催促卡梅伦尽快返家。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00011,139,"Paul: I just came back home
+Paul: What a busy day
+Paul: I forgot about my physiotherapy 
+Emma: Oh no
+Paul: It's ok, I'll schedule a new appointment
+Emma: I'll be home after midnight
+Paul: Do you want me to prepare some food for you?
+Emma: That would be lovely",保罗回家后发现忘记了理疗预约，决定重新安排。他提议为深夜回家的艾玛准备食物，得到对方同意。,"Paul forgot about his physiotherapy and he will schedule a new appointment. Emma will be home after midnight, so Paul will prepare some food for her.",保罗忘记去做理疗了，得重新预约。艾玛午夜后回家，所以保罗会给她准备一些吃的。,"{
+  ""participants"": [
+    ""Paul"",
+    ""Emma""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Paul"",
+      ""speech_act"": ""statement"",
+      ""intended_meaning"": ""Paul informs Emma that he has returned home."",
+      ""actor"": ""Paul"",
+      ""action"": ""coming back home"",
+      ""object"": null,
+      ""recipient"": ""Emma"",
+      ""evidence"": [
+        ""I just came back home""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Paul"",
+      ""speech_act"": ""statement"",
+      ""intended_meaning"": ""Paul expresses his busy schedule for the day."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": null,
+      ""evidence"": [
+        ""What a busy day""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Paul"",
+      ""speech_act"": ""statement"",
+      ""intended_meaning"": ""Paul informs Emma that he missed his physiotherapy appointment."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""physiotherapy appointment"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""I forgot about my physiotherapy""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Emma"",
+      ""speech_act"": ""response"",
+      ""intended_meaning"": ""Emma expresses concern about Paul missing his appointment."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": null,
+      ""evidence"": [
+        ""Oh no""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Paul"",
+      ""speech_act"": ""commitment"",
+      ""intended_meaning"": ""Paul decides to schedule a new physiotherapy appointment."",
+      ""actor"": ""Paul"",
+      ""action"": ""scheduling"",
+      ""object"": ""new physiotherapy appointment"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""It's ok, I'll schedule a new appointment""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Emma"",
+      ""speech_act"": ""request"",
+      ""intended_meaning"": ""Emma asks Paul to prepare food for her."",
+      ""actor"": ""Paul"",
+      ""action"": ""preparing food"",
+      ""object"": null,
+      ""recipient"": ""Emma"",
+      ""evidence"": [
+        ""Do you want me to prepare some food for you?""
+      ]
+    },
+    {
+      ""event_id"": 7,
+      ""speaker"": ""Emma"",
+      ""speech_act"": ""acceptance"",
+      ""intended_meaning"": ""Emma accepts Paul's offer to prepare food."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""food preparation"",
+      ""recipient"": ""Paul"",
+      ""evidence"": [
+        ""That would be lovely""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Paul will schedule a new physiotherapy appointment and prepare food for Emma, who will be home after midnight.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 5,
+      ""key_event"": ""保罗决定重新安排理疗预约。""
+    },
+    {
+      ""event_id"": 6,
+      ""key_event"": ""艾玛要求保罗为她准备食物。""
+    },
+    {
+      ""event_id"": 7,
+      ""key_event"": ""艾玛接受了保罗准备食物的提议。""
+    }
+  ],
+  ""summary_zh"": ""保罗将重新安排理疗预约并为一整天忙碌后回家后的艾玛准备食物。""
+}","{
+  ""needs_revision"": true,
+  ""issues_identified"": [
+    ""wrong_action"",
+    ""too_verbose""
+  ],
+  ""events_dropped"": [],
+  ""revision_reason"": ""动作描述不准确，摘要过长"",
+  ""summary_zh_final"": ""保罗回家后发现忘记了理疗预约，决定重新安排。他提议为深夜回家的艾玛准备食物，得到对方同意。""
+}",保罗回家后发现忘记了理疗预约，决定重新安排。他提议为深夜回家的艾玛准备食物，得到对方同意。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00012,192,"Harris: How are U?
+Lena: Fine, U?
+Harris: Been better.
+Lena: ?
+Harris: My friend Aoki died yesterday.
+Lena: O No!
+Harris: Yeah.
+Lena: What happened?
+Harris: Not sure yet. Thinking the worst...
+Lena: O how awful!
+Harris: Yes.
+Lena: You just never know.
+Harris: True.
+Lena: Had you seen her lately?
+Harris: Not for a few months. She lives in Michigan.
+Lena: Oh, that's far.
+Harris: Not too far but far enough.
+Lena: Right.
+Harris: Got to go, mom's calling.
+Lena: K bi. Feel better!
+Harris: K will do",哈里斯向莱娜透露了朋友青木的死讯，莱娜给予安慰并认同生命的不可预测性。哈里斯最终结束了对话，称母亲在叫他。,"Harris' friend, Aoki, who lives in Michigan, died yesterday. Harris hasn't seen her for a few months.",哈里斯的朋友青木住在密歇根州，昨天去世了。哈里斯有几个月没见她了。,"{
+  ""participants"": [
+    ""Harris"",
+    ""Lena""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Harris"",
+      ""speech_act"": ""sharing bad news"",
+      ""intended_meaning"": ""Informing Lena about the death of his friend Aoki."",
+      ""actor"": ""null"",
+      ""action"": ""informing"",
+      ""object"": ""Aoki's death"",
+      ""recipient"": ""Lena"",
+      ""evidence"": [
+        ""My friend Aoki died yesterday.""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Lena"",
+      ""speech_act"": ""expressing concern"",
+      ""intended_meaning"": ""Showing empathy and asking for more details."",
+      ""actor"": ""null"",
+      ""action"": ""asking"",
+      ""object"": ""what happened to Aoki"",
+      ""recipient"": ""Harris"",
+      ""evidence"": [
+        ""What happened?""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Harris"",
+      ""speech_act"": ""speculating"",
+      ""intended_meaning"": ""Expressing his fear about the cause of death."",
+      ""actor"": ""null"",
+      ""action"": ""speculating"",
+      ""object"": ""the worst"",
+      ""recipient"": ""Lena"",
+      ""evidence"": [
+        ""Not sure yet. Thinking the worst...""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Lena"",
+      ""speech_act"": ""comforting"",
+      ""intended_meaning"": ""Offering support and acknowledging the unpredictability of life."",
+      ""actor"": ""null"",
+      ""action"": ""comforting"",
+      ""object"": ""Harris"",
+      ""recipient"": ""Harris"",
+      ""evidence"": [
+        ""You just never know.""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Harris"",
+      ""speech_act"": ""acknowledging"",
+      ""intended_meaning"": ""Agreeing with Lena and providing more context."",
+      ""actor"": ""null"",
+      ""action"": ""agreeing"",
+      ""object"": ""the unpredictability of life"",
+      ""recipient"": ""Lena"",
+      ""evidence"": [
+        ""True.""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Harris"",
+      ""speech_act"": ""closing the conversation"",
+      ""intended_meaning"": ""Informing Lena that he needs to go and thanking her for her support."",
+      ""actor"": ""Harris"",
+      ""action"": ""ending the conversation"",
+      ""object"": ""null"",
+      ""recipient"": ""Lena"",
+      ""evidence"": [
+        ""Got to go, mom's calling. K will do""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Harris informs Lena about his friend Aoki's death and receives comfort and support from her before ending the conversation.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 1,
+      ""key_event"": ""哈里斯告知莱娜他的朋友青木去世了。""
+    },
+    {
+      ""event_id"": 4,
+      ""key_event"": ""莱娜安慰哈里斯，表达了对生命不可预测性的理解。""
+    },
+    {
+      ""event_id"": 6,
+      ""key_event"": ""哈里斯结束对话，感谢莱娜的支持。""
+    }
+  ],
+  ""summary_zh"": ""哈里斯向莱娜透露了朋友青木的死讯，莱娜给予安慰并认同生命的不可预测性。哈里斯最终结束了对话，称母亲在叫他。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""哈里斯向莱娜透露了朋友青木的死讯，莱娜给予安慰并认同生命的不可预测性。哈里斯最终结束了对话，称母亲在叫他。""
+}",哈里斯向莱娜透露了朋友青木的死讯，莱娜给予安慰并认同生命的不可预测性。哈里斯最终结束了对话，称母亲在叫他。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00013,210,"Yaz: Going to slimming club tonight?
+Mary: Well, I don't want to, but I really should. I've been so bad, though!
+Yaz: Me too, choccies, wine, cake, you name it!
+Mary: Well, we should bite the bullet. She'll tell us off, I expect. Feels like being back at school!
+Yaz: Well, she IS our old cookery teacher! See you at 6ish, pick you up!?
+Mary: Yep! See you then!",玛丽和亚兹决定一起去减肥俱乐部，亚兹将在一天六点左右接送玛丽。,Yaz and Mary are meeting tonight around 6 and going for the slimming club together. They expect to be scolded for eating too much. ,亚兹和玛丽今晚6点左右见面，一起去减肥俱乐部。他们估计吃得太多会被骂。,"{
+  ""participants"": [
+    ""Yaz"",
+    ""Mary""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Yaz"",
+      ""speech_act"": ""invitation"",
+      ""intended_meaning"": ""Asking Mary if she is going to the slimming club."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""slimming club"",
+      ""recipient"": ""Mary"",
+      ""evidence"": [
+        ""Going to slimming club tonight?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Mary"",
+      ""speech_act"": ""refusal"",
+      ""intended_meaning"": ""Expressing reluctance but acknowledging the need to go."",
+      ""actor"": ""Mary"",
+      ""action"": ""going to the slimming club"",
+      ""object"": null,
+      ""recipient"": null,
+      ""evidence"": [
+        ""Well, I don't want to, but I really should. I've been so bad, though!""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Yaz"",
+      ""speech_act"": ""agreement"",
+      ""intended_meaning"": ""Agreeing that they both have indulged."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""indulgence in food and drink"",
+      ""recipient"": ""Mary"",
+      ""evidence"": [
+        ""Me too, choccies, wine, cake, you name it!""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Mary"",
+      ""speech_act"": ""acceptance"",
+      ""intended_meaning"": ""Accepting the situation and deciding to go."",
+      ""actor"": ""Mary"",
+      ""action"": ""biting the bullet and going"",
+      ""object"": null,
+      ""recipient"": null,
+      ""evidence"": [
+        ""Well, we should bite the bullet. She'll tell us off, I expect. Feels like being back at school!""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Yaz"",
+      ""speech_act"": ""confirmation"",
+      ""intended_meaning"": ""Confirming the plan and offering a ride."",
+      ""actor"": ""Yaz"",
+      ""action"": ""picking up Mary"",
+      ""object"": null,
+      ""recipient"": ""Mary"",
+      ""evidence"": [
+        ""Well, she IS our old cookery teacher! See you at 6ish, pick you up!?""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Mary"",
+      ""speech_act"": ""acknowledgement"",
+      ""intended_meaning"": ""Confirming the arrangement."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""meeting at 6ish"",
+      ""recipient"": ""Yaz"",
+      ""evidence"": [
+        ""Yep! See you then!""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Mary and Yaz decide to attend the slimming club together, with Yaz offering to pick Mary up around 6 o'clock.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 4,
+      ""key_event"": ""玛丽决定去减肥俱乐部。""
+    },
+    {
+      ""event_id"": 5,
+      ""key_event"": ""亚兹提供接送，计划在下午六点左右见面。""
+    }
+  ],
+  ""summary_zh"": ""玛丽和亚兹决定一起去减肥俱乐部，亚兹将在一天六点左右接送玛丽。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""玛丽和亚兹决定一起去减肥俱乐部，亚兹将在一天六点左右接送玛丽。""
+}",玛丽和亚兹决定一起去减肥俱乐部，亚兹将在一天六点左右接送玛丽。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00014,211,"Ellie: hey, are you at the university?
+Aaliyah: yep
+Camille: I'm sick :/
+Ellie: shiet....that's bad
+Ellie: Aali, where are we having our classes now?
+Aaliyah: 342 on the second floor",尽管卡米尔生病缺席，艾利莎告诉埃莉她们的课在大学二楼342室。,Ellie's class is in 342 on the second floor.,艾莉的班级在二楼342教室。,"{
+  ""participants"": [
+    ""Ellie"",
+    ""Aaliyah"",
+    ""Camille""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Ellie"",
+      ""speech_act"": ""check location"",
+      ""intended_meaning"": ""Inquire about the current location of Aaliyah."",
+      ""actor"": null,
+      ""action"": ""ask"",
+      ""object"": ""Aaliyah's location"",
+      ""recipient"": ""Aaliyah"",
+      ""evidence"": [
+        ""hey, are you at the university?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Aaliyah"",
+      ""speech_act"": ""confirm presence"",
+      ""intended_meaning"": ""Confirm that she is at the university."",
+      ""actor"": null,
+      ""action"": ""confirm"",
+      ""object"": ""her presence at the university"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""yep""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Camille"",
+      ""speech_act"": ""inform illness"",
+      ""intended_meaning"": ""Inform the group that she is sick."",
+      ""actor"": null,
+      ""action"": ""inform"",
+      ""object"": ""her illness"",
+      ""recipient"": ""Ellie and Aaliyah"",
+      ""evidence"": [
+        ""I'm sick :/""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Ellie"",
+      ""speech_act"": ""express concern"",
+      ""intended_meaning"": ""Express concern about Camille's illness."",
+      ""actor"": null,
+      ""action"": ""express"",
+      ""object"": ""concern"",
+      ""recipient"": ""Camille"",
+      ""evidence"": [
+        ""shiet....that's bad""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Ellie"",
+      ""speech_act"": ""request class location"",
+      ""intended_meaning"": ""Ask Aaliyah for the location of their classes."",
+      ""actor"": null,
+      ""action"": ""ask"",
+      ""object"": ""class location"",
+      ""recipient"": ""Aaliyah"",
+      ""evidence"": [
+        ""Aali, where are we having our classes now?""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Aaliyah"",
+      ""speech_act"": ""provide information"",
+      ""intended_meaning"": ""Inform Ellie that their classes are in room 342 on the second floor."",
+      ""actor"": null,
+      ""action"": ""inform"",
+      ""object"": ""class location details"",
+      ""recipient"": ""Ellie"",
+      ""evidence"": [
+        ""342 on the second floor""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Aaliyah informs Ellie that their classes are taking place in room 342 on the second floor of the university, despite Camille's absence due to illness.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 6,
+      ""key_event"": ""艾利莎向埃莉提供上课地点信息，即大学二楼342室。""
+    }
+  ],
+  ""summary_zh"": ""尽管卡米尔因生病缺席，艾利莎仍向埃莉告知了她们的课程在大学二楼342室进行。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""尽管卡米尔生病缺席，艾利莎告诉埃莉她们的课在大学二楼342室。""
+}",尽管卡米尔生病缺席，艾利莎告诉埃莉她们的课在大学二楼342室。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00015,212,"Nathan: <file_video>
+Aaron: OMG!!! 
+Aaron: 😂😂😂😂
+Aaron: looool
+Aaron: do you know her mate? 🤣🤣
+Aaron: my cat's face looks like that when he's taking a dump..🤣🤣🤣
+Aaron: <file_gif>
+Aaron: the angels must be weeping 🤭🤭🤭 
+Aaron: <file_gif>
+Aaron: <file_gif>
+Nathan: Hahahaha
+Nathan: She's having a spiritual moment 😉
+Nathan: No clue mate, Dan sent it over
+Nathan: A tragedy to say the least 😂😂
+Aaron: <file_gif>
+Aaron: looking for Jesus
+Nathan: 😂😂😂
+Aaron: hilarious..hahahaha",艾伦和纳森分享了一个有趣的视频，引发了幽默对话。艾伦惊讶于人物表情，将其与猫咪比较。纳森开玩笑称其为灵性时刻，并解释不认识视频中的人，是丹发送的。,Nathan and Aaron are discussing a video which Nathan sent. ,内森和亚伦正在讨论内森发来的视频。,"{
+  ""participants"": [
+    ""Nathan"",
+    ""Aaron""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Aaron"",
+      ""speech_act"": ""expression of surprise and amusement"",
+      ""intended_meaning"": ""Aaron is shocked and finds the video funny."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": null,
+      ""evidence"": [
+        ""OMG!!!"",
+        ""😂😂😂😂"",
+        ""looool""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Aaron"",
+      ""speech_act"": ""question"",
+      ""intended_meaning"": ""Inquiry about Nathan's knowledge of the person in the video."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""the person in the video"",
+      ""recipient"": ""Nathan"",
+      ""evidence"": [
+        ""do you know her mate?""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Aaron"",
+      ""speech_act"": ""comparison"",
+      ""intended_meaning"": ""Aaron compares the expression of the person in the video to his cat's face during a specific action."",
+      ""actor"": null,
+      ""action"": ""taking a dump"",
+      ""object"": ""my cat's face"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""my cat's face looks like that when he's taking a dump..🤣🤣🤣""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Nathan"",
+      ""speech_act"": ""response and joke"",
+      ""intended_meaning"": ""Nathan finds the video humorous and suggests the person is experiencing a spiritual moment."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""the person in the video"",
+      ""recipient"": ""Aaron"",
+      ""evidence"": [
+        ""Hahahaha"",
+        ""She's having a spiritual moment 😉""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Nathan"",
+      ""speech_act"": ""explanation"",
+      ""intended_meaning"": ""Nathan clarifies that he doesn't know the person and received the video from Dan."",
+      ""actor"": null,
+      ""action"": ""sending the video"",
+      ""object"": ""the video"",
+      ""recipient"": ""Aaron"",
+      ""evidence"": [
+        ""No clue mate, Dan sent it over""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Aaron and Nathan share a humorous exchange over a funny video, with Aaron expressing surprise and making comparisons, while Nathan jokes about the person's expression and clarifies how he received the video.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 5,
+      ""key_event"": ""纳森（Nathan）解释他不认识视频中的人，并说明是丹（Dan）发给他的。""
+    },
+    {
+      ""event_id"": 1,
+      ""key_event"": ""艾伦（Aaron）对视频表达了惊讶和幽默感，并将其与自己猫咪的表情进行了比较。""
+    }
+  ],
+  ""summary_zh"": ""艾伦和纳森分享了一个有趣的视频，引发了一段幽默的对话。艾伦对视频中的人物表情感到惊讶，并将其与自己猫咪的表情进行了比较。纳森则开玩笑说那是灵性时刻，并解释他不认识视频中的人，是丹发给他的。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""艾伦和纳森分享了一个有趣的视频，引发了幽默对话。艾伦惊讶于人物表情，将其与猫咪比较。纳森开玩笑称其为灵性时刻，并解释不认识视频中的人，是丹发送的。""
+}",艾伦和纳森分享了一个有趣的视频，引发了幽默对话。艾伦惊讶于人物表情，将其与猫咪比较。纳森开玩笑称其为灵性时刻，并解释不认识视频中的人，是丹发送的。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00016,215,"Freddie: What are you watching on Netflix? I've just finished Mad Men.
+Kelly: I've just finished The Crown. 
+Freddie: There should be new episodes coming soon.
+Kelly: OMG! i can't wait! :)
+Freddie: Try Outlander or The Tudors in the meantime.
+Jim: i'm watching I, Zombie.
+Bob: try Grimm or Sabrina. They're both great!
+Kelly: they are all horrible and disgusting! 
+Bob: i think they are funny. They're just TV shows don't take them too seriously. x 
+Greg: I'm watching House of Cards though must admit the new series is boring.
+Mike: i agree. not the same without Kevin Spacey! You should try The West Wing if you enjoy political dramas.
+Greg: Netflix original Bodyguard is supposed to be good from what I've heard.
+Mary: I'm a bit ashamed to confess i enjoy stuff like Pretty Little Liars or Gossip Girl ;)
+Nancy: don't be ashamed i enjoy them too! and my favourite one is Desperate Housewives!!!
+Mary: I know! I watched it twice!
+Alan: I'm catching up with Friends.
+Nancy: OMG! i used to love Friends!",凯莉告诉弗雷迪她刚看完《王冠》，弗雷迪告知新剧集即将播出，并推荐了《异乡人》和《都铎王朝》作为替代节目。,"Freddie, Kelly, Jim, Greg, Bob, Mike, Mary, Alan and Nancy are watching different shows on Netflix.",弗雷迪、凯利、吉姆、格雷格、鲍勃、迈克、玛丽、艾伦和南希正在netflix上观看不同的节目。,"{
+  ""participants"": [
+    ""Freddie"",
+    ""Kelly"",
+    ""Jim"",
+    ""Bob"",
+    ""Greg"",
+    ""Mike"",
+    ""Mary"",
+    ""Nancy"",
+    ""Alan""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Freddie"",
+      ""speech_act"": ""question"",
+      ""intended_meaning"": ""Inquire about Kelly's Netflix viewing preferences."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Kelly"",
+      ""evidence"": [
+        ""What are you watching on Netflix?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Kelly"",
+      ""speech_act"": ""answer"",
+      ""intended_meaning"": ""Share that she has finished watching The Crown."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""The Crown"",
+      ""recipient"": ""Freddie"",
+      ""evidence"": [
+        ""I've just finished The Crown.""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Freddie"",
+      ""speech_act"": ""inform"",
+      ""intended_meaning"": ""Inform Kelly about the upcoming new episodes of The Crown."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""new episodes of The Crown"",
+      ""recipient"": ""Kelly"",
+      ""evidence"": [
+        ""There should be new episodes coming soon.""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Freddie"",
+      ""speech_act"": ""suggest"",
+      ""intended_meaning"": ""Recommend alternative shows to Kelly while waiting for new episodes."",
+      ""actor"": ""Kelly"",
+      ""action"": ""watching"",
+      ""object"": [
+        ""Outlander"",
+        ""The Tudors""
+      ],
+      ""recipient"": null,
+      ""evidence"": [
+        ""Try Outlander or The Tudors in the meantime.""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Mike"",
+      ""speech_act"": ""agree"",
+      ""intended_meaning"": ""Agree that the new series of House of Cards is boring."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""the new series of House of Cards"",
+      ""recipient"": ""Greg"",
+      ""evidence"": [
+        ""I agree. Not the same without Kevin Spacey!""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Mike"",
+      ""speech_act"": ""suggest"",
+      ""intended_meaning"": ""Recommend The West Wing to Greg."",
+      ""actor"": ""Greg"",
+      ""action"": ""watching"",
+      ""object"": ""The West Wing"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""You should try The West Wing if you enjoy political dramas.""
+      ]
+    }
+  ],
+  ""final_outcome"": ""The group shared their Netflix viewing preferences and recommended shows to each other.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 2,
+      ""key_event"": ""凯莉告诉弗雷迪她刚看完《王冠》。""
+    },
+    {
+      ""event_id"": 3,
+      ""key_event"": ""弗雷迪告知凯莉《王冠》将有新剧集播出。""
+    },
+    {
+      ""event_id"": 4,
+      ""key_event"": ""弗雷迪向凯莉推荐了《异乡人》和《都铎王朝》作为等待期间的替代节目。""
+    }
+  ],
+  ""summary_zh"": ""凯莉向弗雷迪分享了她看完《王冠》的消息，弗雷迪告知她将有新剧集播出，并推荐了《异乡人》和《都铎王朝》作为等待期间的替代节目。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""凯莉告诉弗雷迪她刚看完《王冠》，弗雷迪告知新剧集即将播出，并推荐了《异乡人》和《都铎王朝》作为替代节目。""
+}",凯莉告诉弗雷迪她刚看完《王冠》，弗雷迪告知新剧集即将播出，并推荐了《异乡人》和《都铎王朝》作为替代节目。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00017,244,"Jones: Hey.
+Angelina: Hey.
+Angelina: Long time. How are you doing?
+Jones: I'm fine
+Jones: You?
+Angelina: I'm cool too.
+Jones: You think we can meet today later in the afternoon in town?
+Angelina: Definitely.
+Jones: Okay. I will call you to confirm where we will meet.
+Angelina: Cool",琼斯和安吉丽娜计划在镇上的下午见面，具体地点由琼斯电话确认。,Jones and Angelina will meet in town in the afternoon.,琼斯和安吉丽娜下午会在城里见面。,"{
+  ""participants"": [
+    ""Jones"",
+    ""Angelina""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Jones"",
+      ""speech_act"": ""Greeting"",
+      ""intended_meaning"": ""Initiating the conversation"",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Angelina"",
+      ""evidence"": [
+        ""Hey.""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Angelina"",
+      ""speech_act"": ""Greeting and Inquiry"",
+      ""intended_meaning"": ""Reciprocating the greeting and asking about Jones' well-being"",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Jones"",
+      ""evidence"": [
+        ""Hey."",
+        ""Long time. How are you doing?""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Jones"",
+      ""speech_act"": ""Response and Inquiry"",
+      ""intended_meaning"": ""Indicating they are fine and asking about Angelina's well-being"",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Angelina"",
+      ""evidence"": [
+        ""I'm fine"",
+        ""You?""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Angelina"",
+      ""speech_act"": ""Response"",
+      ""intended_meaning"": ""Confirming they are doing well"",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Jones"",
+      ""evidence"": [
+        ""I'm cool too.""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Jones"",
+      ""speech_act"": ""Invitation"",
+      ""intended_meaning"": ""Proposing a meeting later in the afternoon in town"",
+      ""actor"": ""Jones"",
+      ""action"": ""meeting"",
+      ""object"": ""afternoon in town"",
+      ""recipient"": ""Angelina"",
+      ""evidence"": [
+        ""You think we can meet today later in the afternoon in town?""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Angelina"",
+      ""speech_act"": ""Acceptance and Confirmation"",
+      ""intended_meaning"": ""Confirming the meeting proposal"",
+      ""actor"": ""Angelina"",
+      ""action"": ""meeting"",
+      ""object"": ""afternoon in town"",
+      ""recipient"": ""Jones"",
+      ""evidence"": [
+        ""Definitely."",
+        ""Cool""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Jones and Angelina agreed to meet later in the afternoon in town, with Jones planning to call Angelina to confirm the exact location.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 5,
+      ""key_event"": ""琼斯提议下午在镇上见面。""
+    },
+    {
+      ""event_id"": 6,
+      ""key_event"": ""安吉丽娜同意并确认了见面时间和地点。""
+    }
+  ],
+  ""summary_zh"": ""琼斯和安吉丽娜计划在镇上的下午见面，具体地点由琼斯电话确认。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""琼斯和安吉丽娜计划在镇上的下午见面，具体地点由琼斯电话确认。""
+}",琼斯和安吉丽娜计划在镇上的下午见面，具体地点由琼斯电话确认。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00018,285,"Casey: <file_photo>
+Amelia: these are so nice!!! did you do them yourself?
+Kristen: wooow amazing
+Amelia: i want my nails done like that too!
+Casey: yeah i did it myself :D got a new nail polish but damn it took me nearly 4 hours lol
+Amelia: can you do it for us too?
+Kristen: pretty please!
+Casey: sorry you guys... it was a nightmare :( seriously 4 hours for nails is too much",凯西分享了她的指甲艺术照片，并确认是自己亲手完成的。艾米莉亚和克里斯汀赞赏之余，请求她也为她们做指甲。然而，凯西拒绝了，表示做指甲花了四个小时，太费时间了。,"Casey got a new nail polish and did her nails herself. It took her nearly 4 hours, so she won't do her friends' nails, as it takes too long.",凯西买了新指甲油，自己做了指甲。她花了近4个小时，所以她不会帮朋友做指甲，因为耗时太长了。,"{
+  ""participants"": [
+    ""Casey"",
+    ""Amelia"",
+    ""Kristen""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Casey"",
+      ""speech_act"": ""showing"",
+      ""intended_meaning"": ""Sharing a photo of her nail art."",
+      ""action"": ""sharing"",
+      ""object"": ""<file_photo>"",
+      ""recipient"": ""Amelia, Kristen"",
+      ""evidence"": [
+        ""Casey: <file_photo>""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Amelia"",
+      ""speech_act"": ""praise"",
+      ""intended_meaning"": ""Expressing admiration for the nail art."",
+      ""action"": ""admiring"",
+      ""object"": ""Casey's nails"",
+      ""recipient"": ""Casey"",
+      ""evidence"": [
+        ""Amelia: these are so nice!!!""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Casey"",
+      ""speech_act"": ""confirmation"",
+      ""intended_meaning"": ""Confirming she did her nails herself."",
+      ""action"": ""confirming"",
+      ""object"": ""doing her nails"",
+      ""recipient"": ""Amelia"",
+      ""evidence"": [
+        ""Casey: yeah i did it myself""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Amelia"",
+      ""speech_act"": ""request"",
+      ""intended_meaning"": ""Asking Casey to do their nails too."",
+      ""action"": ""requesting"",
+      ""object"": ""nail art service"",
+      ""recipient"": ""Casey"",
+      ""evidence"": [
+        ""Amelia: can you do it for us too?""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Kristen"",
+      ""speech_act"": ""support"",
+      ""intended_meaning"": ""Supporting Amelia's request."",
+      ""action"": ""supporting"",
+      ""object"": ""Amelia's request"",
+      ""recipient"": ""Casey"",
+      ""evidence"": [
+        ""Kristen: pretty please!""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Casey"",
+      ""speech_act"": ""refusal"",
+      ""intended_meaning"": ""Declining to do their nails due to the time-consuming process."",
+      ""action"": ""refusing"",
+      ""object"": ""doing Amelia and Kristen's nails"",
+      ""recipient"": ""Amelia, Kristen"",
+      ""evidence"": [
+        ""Casey: sorry you guys... it was a nightmare... seriously 4 hours for nails is too much""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Casey declines Amelia and Kristen's request to do their nails, citing the lengthy process.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 6,
+      ""key_event"": ""凯西（Casey）以过程耗时过长为理由，拒绝了艾米莉亚（Amelia）和克里斯汀（Kristen）的做指甲请求。""
+    }
+  ],
+  ""summary_zh"": ""凯西分享了她的指甲艺术照片，并确认是自己亲手完成的。艾米莉亚和克里斯汀赞赏之余，请求她也为她们做指甲。然而，凯西拒绝了，表示做指甲花了四个小时，时间太长了。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""凯西分享了她的指甲艺术照片，并确认是自己亲手完成的。艾米莉亚和克里斯汀赞赏之余，请求她也为她们做指甲。然而，凯西拒绝了，表示做指甲花了四个小时，太费时间了。""
+}",凯西分享了她的指甲艺术照片，并确认是自己亲手完成的。艾米莉亚和克里斯汀赞赏之余，请求她也为她们做指甲。然而，凯西拒绝了，表示做指甲花了四个小时，太费时间了。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00019,319,"Sue: Call me when you get this.
+Sue: it's important
+Steve: OK, I'm calling",苏要求史蒂夫收到信息后立即联系她，并强调此事重要。史蒂夫确认会马上打电话给苏。,Steve is calling Sue at her request.,史蒂夫正按照苏的要求给她打电话。,"{
+  ""participants"": [
+    ""Sue"",
+    ""Steve""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Sue"",
+      ""speech_act"": ""request"",
+      ""intended_meaning"": ""Sue wants Steve to contact her immediately."",
+      ""actor"": ""Steve"",
+      ""action"": ""call"",
+      ""object"": ""null"",
+      ""recipient"": ""Sue"",
+      ""evidence"": [
+        ""Call me when you get this.""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Sue"",
+      ""speech_act"": ""emphasis"",
+      ""intended_meaning"": ""Stressing the urgency of the matter."",
+      ""actor"": ""null"",
+      ""action"": ""null"",
+      ""object"": ""null"",
+      ""recipient"": ""Steve"",
+      ""evidence"": [
+        ""it's important""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Steve"",
+      ""speech_act"": ""acknowledgement"",
+      ""intended_meaning"": ""Steve confirms he will call Sue."",
+      ""actor"": ""Steve"",
+      ""action"": ""call"",
+      ""object"": ""null"",
+      ""recipient"": ""Sue"",
+      ""evidence"": [
+        ""OK, I'm calling""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Steve agrees to call Sue immediately after receiving her message.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 3,
+      ""key_event"": ""史蒂夫同意在收到信息后立即给苏打电话。""
+    }
+  ],
+  ""summary_zh"": ""苏要求史蒂夫立即联系她，并强调此事的重要性。史蒂夫确认会立即给苏打电话。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""苏要求史蒂夫收到信息后立即联系她，并强调此事重要。史蒂夫确认会马上打电话给苏。""
+}",苏要求史蒂夫收到信息后立即联系她，并强调此事重要。史蒂夫确认会马上打电话给苏。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00020,346,"Timmy: Who do u wanna invite?
+Gemma: Well, there's u and ur date :)
+Timmy: Not sure about the date, but I'll be there :) who else?
+Gemma: I was thinking about Lona and Michelle.
+Timmy: Still thinking ur getting invites to their weddings?
+Gemma: It's not like that.
+Timmy: Sure it is ;) just don't wanna admit it ;)
+Gemma: Fine! I want to come to their wedding receptions!
+Timmy: There we go :) was it so hard?
+Gemma: Yes.
+Timmy: And u think u can change their minds?
+Gemma: Dunno.",杰玛邀请蒂米和他的约会对象参加活动，蒂米不确定是否带约会对象但会出席。杰玛提议邀请洛娜和米歇尔，被蒂米调侃。最终，杰玛承认想参加两人婚礼接待。,"Gemma will invite Timmy and his Date, as well as Lona and Michelle to her wedding.",杰玛将邀请蒂米和他的约会对象，以及罗娜和米歇尔参加她的婚礼。,"{
+  ""participants"": [
+    ""Timmy"",
+    ""Gemma""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Gemma"",
+      ""speech_act"": ""invitation"",
+      ""intended_meaning"": ""inviting Timmy and his date to an event"",
+      ""actor"": ""Timmy, Gemma"",
+      ""action"": ""attending"",
+      ""object"": ""the event"",
+      ""recipient"": ""null"",
+      ""evidence"": [
+        ""Well, there's u and ur date :)""
+      ],
+      ""},{       "": "",1} {      ""
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Timmy"",
+      ""speech_act"": ""uncertainty"",
+      ""intended_meaning"": ""expressing doubt about bringing a date"",
+      ""actor"": ""Timmy"",
+      ""action"": ""bringing a date"",
+      ""object"": ""null"",
+      ""recipient"": ""Gemma"",
+      ""evidence"": [
+        ""Not sure about the date, but I'll be there :)""
+      ],
+      ""}, {      "": "",2} {      ""
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Gemma"",
+      ""speech_act"": ""suggestion"",
+      ""intended_meaning"": ""suggesting inviting Lona and Michelle"",
+      ""actor"": ""Gemma"",
+      ""action"": ""inviting"",
+      ""object"": ""Lona and Michelle"",
+      ""recipient"": ""Timmy"",
+      ""evidence"": [
+        ""I was thinking about Lona and Michelle.""
+      ],
+      ""}, {      "": "",3} {      ""
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Timmy"",
+      ""speech_act"": ""teasing"",
+      ""intended_meaning"": ""teasing Gemma about inviting Lona and Michelle to their weddings"",
+      ""actor"": ""Timmy"",
+      ""action"": ""inviting"",
+      ""object"": ""Lona and Michelle"",
+      ""recipient"": ""Gemma"",
+      ""evidence"": [
+        ""Still thinking ur getting invites to their weddings?""
+      ],
+      ""}, {      "": "",4} {      ""
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Gemma"",
+      ""speech_act"": ""admission"",
+      ""intended_meaning"": ""admitting she wants to attend Lona and Michelle's wedding receptions"",
+      ""actor"": ""Gemma"",
+      ""action"": ""attending"",
+      ""object"": ""wedding receptions"",
+      ""recipient"": ""Timmy"",
+      ""evidence"": [
+        ""Fine! I want to come to their wedding receptions!""
+      ],
+      ""}, {      "": "",5} {      ""
+    }
+  ],
+  ""final_outcome"": ""Gemma admitted she wants to attend Lona and Michelle's wedding receptions.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 5,
+      ""key_event"": ""杰玛承认她想参加洛娜和米歇尔的婚礼接待。""
+    }
+  ],
+  ""summary_zh"": ""杰玛邀请蒂米和他的约会对象参加活动，蒂米表示不确定是否会带约会对象，但会出席。杰玛建议邀请洛娜和米歇尔，蒂米调侃杰玛想参加他们的婚礼。最终，杰玛承认她想参加洛娜和米歇尔的婚礼接待。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""杰玛邀请蒂米和他的约会对象参加活动，蒂米不确定是否带约会对象但会出席。杰玛提议邀请洛娜和米歇尔，被蒂米调侃。最终，杰玛承认想参加两人婚礼接待。""
+}",杰玛邀请蒂米和他的约会对象参加活动，蒂米不确定是否带约会对象但会出席。杰玛提议邀请洛娜和米歇尔，被蒂米调侃。最终，杰玛承认想参加两人婚礼接待。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00021,355,"Ann: Congratulations!!
+Ann: You did great, both of you!
+Sue: Thanks, Ann
+Julie: I'm glad it's over!
+Julie: That's co cute of you, girl!
+Ann: Let's have a little celebration tonight! 
+Sue: I'm in
+Julie: me too!!! aww",安恩赞扬苏和朱莉完成任务的表现，两人表示感谢并同意当晚一起庆祝。,"Ann, Sue and Julie did a great job and they will have a little celebration tonight.",安、苏和朱莉做得很好，今晚他们会举行一个小小的庆祝活动。,"{
+  ""participants"": [
+    ""Ann"",
+    ""Sue"",
+    ""Julie""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Ann"",
+      ""speech_act"": ""praise"",
+      ""intended_meaning"": ""Acknowledging Sue and Julie's achievement."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Sue, Julie"",
+      ""evidence"": [
+        ""Congratulations!!"",
+        ""You did great, both of you!""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Sue"",
+      ""speech_act"": ""acknowledgement"",
+      ""intended_meaning"": ""Expressing gratitude for Ann's praise."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Ann"",
+      ""evidence"": [
+        ""Thanks, Ann""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Julie"",
+      ""speech_act"": ""relief"",
+      ""intended_meaning"": ""Relieved the task is completed."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": null,
+      ""evidence"": [
+        ""I'm glad it's over!""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Julie"",
+      ""speech_act"": ""appreciation"",
+      ""intended_meaning"": ""Appreciating Ann's kind words."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Ann"",
+      ""evidence"": [
+        ""That's co cute of you, girl!""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Ann"",
+      ""speech_act"": ""suggestion"",
+      ""intended_meaning"": ""Proposing a celebration."",
+      ""actor"": null,
+      ""action"": ""have a little celebration"",
+      ""object"": ""tonight"",
+      ""recipient"": ""Sue, Julie"",
+      ""evidence"": [
+        ""Let's have a little celebration tonight!""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Sue, Julie"",
+      ""speech_act"": ""acceptance"",
+      ""intended_meaning"": ""Agreeing to the celebration."",
+      ""actor"": ""Sue, Julie"",
+      ""action"": ""be in"",
+      ""object"": null,
+      ""recipient"": ""Ann"",
+      ""evidence"": [
+        ""I'm in"",
+        ""me too!!! aww""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Sue and Julie accept Ann's suggestion to celebrate their achievement that evening.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 1,
+      ""key_event"": ""安恩赞扬苏和朱莉的成就。""
+    },
+    {
+      ""event_id"": 6,
+      ""key_event"": ""苏和朱莉接受安恩的庆祝建议，当晚一起庆祝。""
+    }
+  ],
+  ""summary_zh"": ""安恩赞扬苏和朱莉完成任务的表现。两人表示感谢并同意安恩的建议，当晚一起庆祝。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""安恩赞扬苏和朱莉完成任务的表现，两人表示感谢并同意当晚一起庆祝。""
+}",安恩赞扬苏和朱莉完成任务的表现，两人表示感谢并同意当晚一起庆祝。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00022,367,"Steve: hiya the dishwasher has turned up
+Mum: good did they install it for you
+Steve: yes they did a good job
+Steve: <file_photo>
+Mum: looks really nice
+Steve: yes it does its nice and quiet
+Mum: is it a 12 place setting one?
+Steve: I think so, not that I ever have 12 for dinner lol
+Mum: not but you dont have to put it on every day
+Steve: no every other
+Mum: yes I'm glad you are pleased with it xx
+Steve: I am thanks mum xxx",史蒂夫告知母亲洗碗机已送达并成功安装。母亲询问容量，并对外观和噪音表示满意。,Steve is happy that he got a new dishwasher installed.,史蒂夫很高兴他装了一台新的洗碗机。,"{
+  ""participants"": [
+    ""Steve"",
+    ""Mum""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Steve"",
+      ""speech_act"": ""Inform"",
+      ""intended_meaning"": ""Inform Mum that the dishwasher has arrived and been installed."",
+      ""actor"": ""Steve"",
+      ""action"": ""installed"",
+      ""object"": ""dishwasher"",
+      ""recipient"": ""Mum"",
+      ""evidence"": [
+        ""hiya the dishwasher has turned up""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Mum"",
+      ""speech_act"": ""Inquire"",
+      ""intended_meaning"": ""Ask if the installation was successful."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Steve"",
+      ""evidence"": [
+        ""good did they install it for you""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Steve"",
+      ""speech_act"": ""Confirm"",
+      ""intended_meaning"": ""Confirm that the dishwasher was successfully installed."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Mum"",
+      ""evidence"": [
+        ""yes they did a good job""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Mum"",
+      ""speech_act"": ""Praise"",
+      ""intended_meaning"": ""Express satisfaction with the appearance and noise level of the dishwasher."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""dishwasher"",
+      ""recipient"": ""Steve"",
+      ""evidence"": [
+        ""looks really nice"",
+        ""yes it does its nice and quiet""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Mum"",
+      ""speech_act"": ""Inquire"",
+      ""intended_meaning"": ""Ask about the capacity of the dishwasher."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Steve"",
+      ""evidence"": [
+        ""is it a 12 place setting one?""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Steve"",
+      ""speech_act"": ""Reply"",
+      ""intended_meaning"": ""Confirm the capacity and express satisfaction with the purchase."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Mum"",
+      ""evidence"": [
+        ""I think so, not that I ever have 12 for dinner lol"",
+        ""no every other"",
+        ""I'm glad you are pleased with it xx""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Steve informs Mum that the new dishwasher has been successfully installed and expresses satisfaction with its performance and appearance.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 1,
+      ""key_event"": ""史蒂夫告知母亲洗碗机已送达并安装。""
+    },
+    {
+      ""event_id"": 3,
+      ""key_event"": ""确认洗碗机安装成功。""
+    },
+    {
+      ""event_id"": 4,
+      ""key_event"": ""母亲对洗碗机的外观和噪音水平表示满意。""
+    }
+  ],
+  ""summary_zh"": ""史蒂夫告知母亲洗碗机已送达并成功安装。母亲询问安装情况并表达了对洗碗机外观和噪音水平的满意。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""史蒂夫告知母亲洗碗机已送达并成功安装。母亲询问容量，并对外观和噪音表示满意。""
+}",史蒂夫告知母亲洗碗机已送达并成功安装。母亲询问容量，并对外观和噪音表示满意。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00023,393,"Marika: Are you coming today?
+Lara: Yes!
+Marika: Great!",玛丽卡问劳拉今天是否来，劳拉确认会出席，玛丽卡很高兴。,Marika is coming today.,玛丽卡今天会来。,"{
+  ""participants"": [
+    ""Marika"",
+    ""Lara""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Marika"",
+      ""speech_act"": ""question"",
+      ""intended_meaning"": ""Inquire about Lara's attendance today."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Lara"",
+      ""evidence"": [
+        ""Are you coming today?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Lara"",
+      ""speech_act"": ""affirmation"",
+      ""intended_meaning"": ""Confirm her attendance."",
+      ""actor"": ""Lara"",
+      ""action"": ""coming"",
+      ""object"": ""today"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""Yes!""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Marika"",
+      ""speech_act"": ""expression of joy"",
+      ""intended_meaning"": ""Express happiness about Lara's confirmation."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Lara"",
+      ""evidence"": [
+        ""Great!""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Lara confirms she will be attending today.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 2,
+      ""key_event"": ""劳拉确认她今天会参加。""
+    }
+  ],
+  ""summary_zh"": ""玛丽卡问劳拉今天是否来，劳拉确认她会出席，玛丽卡表示高兴。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""玛丽卡问劳拉今天是否来，劳拉确认会出席，玛丽卡很高兴。""
+}",玛丽卡问劳拉今天是否来，劳拉确认会出席，玛丽卡很高兴。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00024,417,"Miranda: Hi S, could we cancel tomorrow's meeting?
+Stephanie: again? what happened?
+Miranda: I have to work :(
+Stephanie: you work 20 hours a day!
+Miranda: that's what young doctors do
+Stephanie: they kill themselves working
+Miranda: no they come close to death but survive and it makes them immortal
+Stephanie: as long as you have an explanation :D",米兰达因工作原因请求取消与斯蒂芬妮的明天会议，斯蒂芬妮询问了取消的原因并表达了担忧。,Miranda can't make her meeting with Stephanie as she has to work. ,米兰达不能去见斯蒂芬妮，因为她要工作。,"{
+  ""participants"": [
+    ""Miranda"",
+    ""Stephanie""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Miranda"",
+      ""speech_act"": ""request"",
+      ""intended_meaning"": ""Cancel tomorrow's meeting."",
+      ""actor"": ""Miranda"",
+      ""action"": ""cancel"",
+      ""object"": ""tomorrow's meeting"",
+      ""recipient"": ""Stephanie"",
+      ""evidence"": [
+        ""could we cancel tomorrow's meeting?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Stephanie"",
+      ""speech_act"": ""question"",
+      ""intended_meaning"": ""Inquire about the reason for cancellation."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Miranda"",
+      ""evidence"": [
+        ""again? what happened?""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Miranda"",
+      ""speech_act"": ""explanation"",
+      ""intended_meaning"": ""Provide reason for needing to cancel."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Stephanie"",
+      ""evidence"": [
+        ""I have to work :(""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Miranda requests to cancel tomorrow's meeting with Stephanie due to work commitments.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 3,
+      ""key_event"": ""米兰达因工作原因请求取消与斯蒂芬妮的明天会议。""
+    }
+  ],
+  ""summary_zh"": ""米兰达因工作原因请求取消与斯蒂芬妮的明天会议，斯蒂芬妮询问了取消的原因。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""米兰达因工作原因请求取消与斯蒂芬妮的明天会议，斯蒂芬妮询问了取消的原因并表达了担忧。""
+}",米兰达因工作原因请求取消与斯蒂芬妮的明天会议，斯蒂芬妮询问了取消的原因并表达了担忧。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00025,432,"Javier: Hey do you know any tattoo parlors over here with English speaking employees?
+Judie: Oh there's Warsaw ink
+Javier: the name sounds neat... have you had a tattoo done there?
+Judie: nope but my gf has
+Javier: got a pic?
+Judie: <file_photo>
+Javier: wow that looks amazing
+Javier: how much did she pay?
+Judie: it was a 1000
+Javier: fuck
+Javier: let me just get a tatttoo back in colombia then, thx",贾维尔向朱迪询问了英语纹身店，她推荐了华沙墨水店。但当得知纹身价格后，贾维尔决定在哥伦比亚纹身。,Javier was initially eager to have a tatoo done at Warsaw Ink but the price turned out to be too high. Javier decided to have a tatoo done in Colombia.,哈维尔最初很想在warsaw ink纹身，但价格太高了。他决定去哥伦比亚做纹身。,"{
+  ""participants"": [
+    ""Javier"",
+    ""Judie""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Javier"",
+      ""speech_act"": ""request-information"",
+      ""intended_meaning"": ""Inquire about tattoo parlors with English-speaking staff."",
+      ""action"": ""asking for recommendation"",
+      ""recipient"": ""Judie"",
+      ""evidence"": [
+        ""Hey do you know any tattoo parlors over here with English speaking employees?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Judie"",
+      ""speech_act"": ""provide-information"",
+      ""intended_meaning"": ""Suggest a tattoo parlor named Warsaw Ink."",
+      ""action"": ""giving recommendation"",
+      ""object"": ""Warsaw Ink"",
+      ""recipient"": ""Javier"",
+      ""evidence"": [
+        ""Oh there's Warsaw ink""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Javier"",
+      ""speech_act"": ""request-further-details"",
+      ""intended_meaning"": ""Ask for more information about the recommended tattoo parlor."",
+      ""action"": ""inquiring"",
+      ""recipient"": ""Judie"",
+      ""evidence"": [
+        ""the name sounds neat... have you had a tattoo done there?""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Judie"",
+      ""speech_act"": ""negative-answer"",
+      ""intended_meaning"": ""Indicate that she hasn't gotten a tattoo there but her girlfriend has."",
+      ""action"": ""denying personal experience"",
+      ""recipient"": ""Javier"",
+      ""evidence"": [
+        ""nope but my gf has""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Javier"",
+      ""speech_act"": ""request-visual-evidence"",
+      ""intended_meaning"": ""Ask for a picture of the tattoo done at Warsaw Ink."",
+      ""action"": ""requesting photo"",
+      ""recipient"": ""Judie"",
+      ""evidence"": [
+        ""got a pic?""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Javier"",
+      ""speech_act"": ""decision"",
+      ""intended_meaning"": ""Decide to get a tattoo in Colombia instead due to the cost."",
+      ""action"": ""making decision"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""let me just get a tatttoo back in colombia then, thx""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Javier decides to get a tattoo in Colombia after learning about the cost at Warsaw Ink.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 6,
+      ""key_event"": ""贾维耶决定在哥伦比亚纹身，而不是去华沙墨水店，因为成本问题。""
+    }
+  ],
+  ""summary_zh"": ""贾维耶向朱迪询问了说英语的纹身店，朱迪推荐了华沙墨水店。经过进一步了解后，贾维耶决定在哥伦比亚纹身，因为成本更低。""
+}","{
+  ""needs_revision"": true,
+  ""issues_identified"": [
+    ""cost_misinterpretation""
+  ],
+  ""events_dropped"": [],
+  ""revision_reason"": ""误解了纹身价格，需要修正"",
+  ""summary_zh_final"": ""贾维尔向朱迪询问了英语纹身店，她推荐了华沙墨水店。但当得知纹身价格后，贾维尔决定在哥伦比亚纹身。""
+}",贾维尔向朱迪询问了英语纹身店，她推荐了华沙墨水店。但当得知纹身价格后，贾维尔决定在哥伦比亚纹身。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00026,433,"Sam: You own a really nice hotel, guys 😊
+Jessica: Thanks Sam 😊
+Michael: Thanks, mate 
+Sam: How is our hotel room set for next month? Hope that the manager will arrange the very best for us 😉
+Michael: you’re damn right, Sam
+Michael: are you coming on the 15th of August?
+Sam: Yep! We’ll be at the hotel around 2 p.m.
+Jessica: I’m soooo happy to see you again!
+Sam: Me, too 😊",萨姆确认他们将于8月15日下午2点入住迈克尔和杰西卡的酒店。,Sam appreciates the hotel owned by Jessica and Michael. Sam is going there on the 15th August at around 2pm.,山姆很喜欢杰西卡和迈克尔的酒店。他会在8月15日下午2点左右去那里。,"{
+  ""participants"": [
+    ""Sam"",
+    ""Jessica"",
+    ""Michael""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Sam"",
+      ""speech_act"": ""compliment"",
+      ""intended_meaning"": ""expressing admiration for their hotel"",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""hotel"",
+      ""recipient"": ""Jessica, Michael"",
+      ""evidence"": [
+        ""You own a really nice hotel, guys 😊""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Sam"",
+      ""speech_act"": ""inquiry"",
+      ""intended_meaning"": ""asking about the status of their hotel room reservation for next month"",
+      ""actor"": null,
+      ""action"": ""checking"",
+      ""object"": ""hotel room"",
+      ""recipient"": ""Michael (implied)"",
+      ""evidence"": [
+        ""How is our hotel room set for next month?""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Michael"",
+      ""speech_act"": ""confirmation"",
+      ""intended_meaning"": ""confirming that they expect the best arrangement from the manager"",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""hotel room arrangement"",
+      ""recipient"": ""Sam"",
+      ""evidence"": [
+        ""you’re damn right, Sam""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Michael"",
+      ""speech_act"": ""question"",
+      ""intended_meaning"": ""asking about Sam's arrival date and time"",
+      ""actor"": null,
+      ""action"": ""inquiring"",
+      ""object"": ""arrival details"",
+      ""recipient"": ""Sam"",
+      ""evidence"": [
+        ""are you coming on the 15th of August?""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Sam"",
+      ""speech_act"": ""confirmation"",
+      ""intended_meaning"": ""confirming their arrival time at the hotel"",
+      ""actor"": ""Sam"",
+      ""action"": ""arriving"",
+      ""object"": ""hotel"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""Yep! We’ll be at the hotel around 2 p.m.""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Sam confirmed their stay at Michael and Jessica's hotel on August 15th, arriving at 2 p.m.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 5,
+      ""key_event"": ""萨姆确认他们将于8月15日下午2点入住迈克尔和杰西卡的酒店。""
+    }
+  ],
+  ""summary_zh"": ""萨姆确认他们将于8月15日下午2点入住迈克尔和杰西卡的酒店。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""萨姆确认他们将于8月15日下午2点入住迈克尔和杰西卡的酒店。""
+}",萨姆确认他们将于8月15日下午2点入住迈克尔和杰西卡的酒店。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00027,442,"Terence: What the hell, Danny. You took my money, didn't you? :/
+Daniel: What, your money?? Why would I
+Terence: Don't play dumb
+Daniel: Are you calling me a liar, Terry??
+Terence: I'm not stupid, Danny
+Daniel: And I'm not a thief?? That's not cool, man :/
+Terence: ... Oh shit, I'm sorry, I've just found it. Forgot I'd placed it elsewhere last month
+Daniel: Good for you then
+Terence: Are you upset
+Daniel: What do you think?? Yeah, oh-fucking-course I am",特伦斯向丹尼尔道歉，承认自己错误地指责他拿了自己的钱，但丹尼尔依然感到愤怒。,Terence accused Daniel of taking his money. Terence finds the money later and apologizes to Daniel. Daniel is still upset.,特伦斯指控丹尼尔偷了他的钱。后来他找到了钱，就向丹尼尔道歉。但是丹尼尔还在生气。,"{
+  ""participants"": [
+    ""Terence"",
+    ""Daniel""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Terence"",
+      ""speech_act"": ""accusation"",
+      ""intended_meaning"": ""Terence accuses Daniel of taking his money."",
+      ""actor"": ""Terence"",
+      ""action"": ""accusing"",
+      ""object"": ""Daniel"",
+      ""recipient"": ""Daniel"",
+      ""evidence"": [
+        ""What the hell, Danny. You took my money, didn't you?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Daniel"",
+      ""speech_act"": ""denial"",
+      ""intended_meaning"": ""Daniel denies taking Terence's money."",
+      ""actor"": ""Daniel"",
+      ""action"": ""denying"",
+      ""object"": ""taking the money"",
+      ""recipient"": ""Terence"",
+      ""evidence"": [
+        ""What, your money?? Why would I""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Terence"",
+      ""speech_act"": ""insistence"",
+      ""intended_meaning"": ""Terence insists that Daniel took his money."",
+      ""actor"": ""Terence"",
+      ""action"": ""insisting"",
+      ""object"": ""Daniel took the money"",
+      ""recipient"": ""Daniel"",
+      ""evidence"": [
+        ""Don't play dumb""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Daniel"",
+      ""speech_act"": ""anger expression"",
+      ""intended_meaning"": ""Daniel expresses anger at being accused."",
+      ""actor"": ""Daniel"",
+      ""action"": ""expressing anger"",
+      ""object"": null,
+      ""recipient"": ""Terence"",
+      ""evidence"": [
+        ""Are you calling me a liar, Terry??""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Terence"",
+      ""speech_act"": ""apology"",
+      ""intended_meaning"": ""Terence apologizes and admits he was wrong."",
+      ""actor"": ""Terence"",
+      ""action"": ""apologizing"",
+      ""object"": ""accusing Daniel"",
+      ""recipient"": ""Daniel"",
+      ""evidence"": [
+        ""Oh shit, I'm sorry, I've just found it. Forgot I'd placed it elsewhere last month""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Daniel"",
+      ""speech_act"": ""expression of upset"",
+      ""intended_meaning"": ""Daniel expresses that he is upset."",
+      ""actor"": ""Daniel"",
+      ""action"": ""expressing upset"",
+      ""object"": null,
+      ""recipient"": ""Terence"",
+      ""evidence"": [
+        ""Are you upset\nDaniel: What do you think?? Yeah, oh-fucking-course I am""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Terence apologizes for falsely accusing Daniel of taking his money, but Daniel remains upset.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 5,
+      ""key_event"": ""特伦斯道歉并承认自己错误地指责丹尼尔拿了他的钱。""
+    },
+    {
+      ""event_id"": 6,
+      ""key_event"": ""丹尼尔表达了他仍然很生气。""
+    }
+  ],
+  ""summary_zh"": ""特伦斯向丹尼尔道歉，承认自己错误地指责他拿了自己的钱，但丹尼尔依然感到愤怒。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""特伦斯向丹尼尔道歉，承认自己错误地指责他拿了自己的钱，但丹尼尔依然感到愤怒。""
+}",特伦斯向丹尼尔道歉，承认自己错误地指责他拿了自己的钱，但丹尼尔依然感到愤怒。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00028,499,"Natacha: hi, i can come and pick you up at the RER.
+Charles: so  nice. I just landed. I think i'll arrive about 5:30pm. I'll give you a call
+Natacha: ok ,call  me when  you'll be at the station Vesinet. 
+Charles: thanks . see you",纳塔莎将前往维西内特车站接查尔斯，大约在下午5点30分，在他到达并打电话给她之后。,Charles has just landed and he will be at RER about 5.30 PM. Natacha will pick him up from there.,查尔斯刚刚落地，他会在下午五点半到达rer，娜塔夏会在那里接他。,"{
+  ""participants"": [
+    ""Natacha"",
+    ""Charles""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Natacha"",
+      ""speech_act"": ""offer"",
+      ""intended_meaning"": ""Natacha offers to pick up Charles at the RER station."",
+      ""actor"": ""Natacha"",
+      ""action"": ""pick up"",
+      ""object"": ""Charles"",
+      ""recipient"": ""Charles"",
+      ""evidence"": [
+        ""hi, i can come and pick you up at the RER.""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Charles"",
+      ""speech_act"": ""acceptance"",
+      ""intended_meaning"": ""Charles accepts Natacha's offer and informs her of his estimated arrival time."",
+      ""actor"": ""Charles"",
+      ""action"": ""arrive"",
+      ""object"": ""5:30pm"",
+      ""recipient"": ""Natacha"",
+      ""evidence"": [
+        ""so nice. I just landed. I think i'll arrive about 5:30pm.""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Natacha"",
+      ""speech_act"": ""request"",
+      ""intended_meaning"": ""Natacha requests Charles to call her when he reaches Vesinet station."",
+      ""actor"": ""Charles"",
+      ""action"": ""call"",
+      ""object"": null,
+      ""recipient"": ""Natacha"",
+      ""evidence"": [
+        ""ok, call me when you'll be at the station Vesinet.""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Charles"",
+      ""speech_act"": ""acknowledgement"",
+      ""intended_meaning"": ""Charles acknowledges Natacha's request and thanks her."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Natacha"",
+      ""evidence"": [
+        ""thanks. see you""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Natacha will pick up Charles at the Vesinet station around 5:30 PM after he calls her upon arrival.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 4,
+      ""key_event"": ""纳塔莎（Natacha）将前往维西内特（Vesinet）车站接查尔斯（Charles），大约在下午5点30分，在他到达并打电话给她之后。""
+    }
+  ],
+  ""summary_zh"": ""纳塔莎将前往维西内特车站接查尔斯，大约在下午5点30分，在他到达并打电话给她之后。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""纳塔莎将前往维西内特车站接查尔斯，大约在下午5点30分，在他到达并打电话给她之后。""
+}",纳塔莎将前往维西内特车站接查尔斯，大约在下午5点30分，在他到达并打电话给她之后。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00029,528,"Meg: still at school?
+Ann: i have extra math classes
+Meg: so when can i meet you?
+Ann: i will be home at 7",安告知梅她晚上七点到家，可见面。,Ann is still at school. She will be home at 7 so she can meet Meg then.,安还在学校，她7点会回家，这样她就可以和麦格见面了。,"{
+  ""participants"": [
+    ""Meg"",
+    ""Ann""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Meg"",
+      ""speech_act"": ""asking for information"",
+      ""intended_meaning"": ""Inquire about Ann's availability to meet."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Ann"",
+      ""evidence"": [
+        ""still at school?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Ann"",
+      ""speech_act"": ""providing information"",
+      ""intended_meaning"": ""Explain why she is unavailable and when she will be free."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Meg"",
+      ""evidence"": [
+        ""i have extra math classes""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Meg"",
+      ""speech_act"": ""asking for a specific time"",
+      ""intended_meaning"": ""Request a meeting time."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Ann"",
+      ""evidence"": [
+        ""so when can i meet you?""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Ann"",
+      ""speech_act"": ""stating availability"",
+      ""intended_meaning"": ""Inform Meg of her expected arrival time at home."",
+      ""actor"": null,
+      ""action"": ""being home"",
+      ""object"": null,
+      ""recipient"": ""Meg"",
+      ""evidence"": [
+        ""i will be home at 7""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Ann informs Meg that she will be available to meet at 7 pm.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 4,
+      ""key_event"": ""安告知梅她将于晚上七点到家，可以见面。""
+    }
+  ],
+  ""summary_zh"": ""安告知梅她将于晚上七点到家，可以见面。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""安告知梅她晚上七点到家，可见面。""
+}",安告知梅她晚上七点到家，可见面。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00030,532,"Pete: What flavour yogurt did you want again? My brain is like a sieve today.
+Jen: Pear but only if they've got it. Otherwise don't worry about it.
+Pete: I'll have a look around. If they don't have pear can I get a different flavour?
+Jen: I don't like any other flavour. If they don't have pear just don't get anything at all then.
+Pete: OK.",Jen坚持要梨味酸奶，Pete同意如果没有梨味就不买任何酸奶。,Pete will get a pear yogurt for Jen if they have it.,如果商店里有梨味酸奶， 皮特会给珍买的。,"{
+  ""participants"": [
+    ""Pete"",
+    ""Jen""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Pete"",
+      ""speech_act"": ""requesting information"",
+      ""intended_meaning"": ""asking for the preferred yogurt flavour"",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""yogurt flavour"",
+      ""recipient"": ""Jen"",
+      ""evidence"": [
+        ""What flavour yogurt did you want again?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Jen"",
+      ""speech_act"": ""providing preference"",
+      ""intended_meaning"": ""specifying a preference for pear yogurt, with an alternative of no yogurt if pear is unavailable"",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""pear yogurt"",
+      ""recipient"": ""Pete"",
+      ""evidence"": [
+        ""Pear but only if they've got it. Otherwise don't worry about it.""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Pete"",
+      ""speech_act"": ""seeking confirmation"",
+      ""intended_meaning"": ""asking for permission to choose a different flavour if pear is not available"",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""different yogurt flavour"",
+      ""recipient"": ""Jen"",
+      ""evidence"": [
+        ""I'll have a look around. If they don't have pear can I get a different flavour?""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Jen"",
+      ""speech_act"": ""refusal"",
+      ""intended_meaning"": ""rejecting the idea of any other yogurt flavour and suggesting no yogurt at all if pear is not available"",
+      ""actor"": null,
+      ""action"": ""not getting yogurt"",
+      ""object"": ""any yogurt other than pear"",
+      ""recipient"": ""Pete"",
+      ""evidence"": [
+        ""I don't like any other flavour. If they don't have pear just don't get anything at all then.""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Pete"",
+      ""speech_act"": ""acknowledgement"",
+      ""intended_meaning"": ""agreeing to Jen's request"",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Jen"",
+      ""evidence"": [
+        ""OK.""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Pete will not buy any yogurt other than pear for Jen and will not get anything at all if pear is not available.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 4,
+      ""key_event"": ""Jen拒绝了除了梨味以外的任何酸奶，并建议如果没有梨味就不买酸奶。""
+    },
+    {
+      ""event_id"": 5,
+      ""key_event"": ""Pete同意了Jen的要求。""
+    }
+  ],
+  ""summary_zh"": ""Jen坚持要梨味酸奶，Pete同意如果没有梨味就不买任何酸奶。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""Jen坚持要梨味酸奶，Pete同意如果没有梨味就不买任何酸奶。""
+}",Jen坚持要梨味酸奶，Pete同意如果没有梨味就不买任何酸奶。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00031,536,"Christie: how are you after the party?
+Katie: really tired... and you?
+Christie: same
+Christie: the party was great!
+Katie: Yeah, we had fun! :)",克里斯蒂和凯蒂都觉得派对后很累，但一致认为派对很有趣。,Christie and Katie are tired after the party. They both had fun.,克里斯蒂和凯蒂在聚会后累了。他们都玩得很开心。,"{
+  ""participants"": [
+    ""Christie"",
+    ""Katie""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Christie"",
+      ""speech_act"": ""Inquiry"",
+      ""intended_meaning"": ""Asking about Katie's well-being after the party."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Katie"",
+      ""evidence"": [
+        ""how are you after the party?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Katie"",
+      ""speech_act"": ""Response"",
+      ""intended_meaning"": ""Expressing fatigue and acknowledging the enjoyment at the party."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": null,
+      ""evidence"": [
+        ""really tired... and you?""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Christie"",
+      ""speech_act"": ""Agreement"",
+      ""intended_meaning"": ""Agreeing with Katie's sentiment."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": null,
+      ""evidence"": [
+        ""same""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Christie"",
+      ""speech_act"": ""Statement"",
+      ""intended_meaning"": ""Expressing satisfaction with the party."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""the party"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""the party was great!""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Katie"",
+      ""speech_act"": ""Agreement"",
+      ""intended_meaning"": ""Concurring that they had a good time at the party."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": null,
+      ""evidence"": [
+        ""Yeah, we had fun! :)""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Christie and Katie both felt tired after the party, which they agreed was enjoyable.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 5,
+      ""key_event"": ""克里斯蒂和凯蒂都觉得派对后很累，但一致认为派对很有趣。""
+    }
+  ],
+  ""summary_zh"": ""克里斯蒂向凯蒂询问派对后的情况，凯蒂回应感到疲惫，并提到派对很开心。克里斯蒂表示同意，也对派对表示满意。最后，两人都认同派对愉快，但同时感到疲劳。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""克里斯蒂和凯蒂都觉得派对后很累，但一致认为派对很有趣。""
+}",克里斯蒂和凯蒂都觉得派对后很累，但一致认为派对很有趣。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00032,537,"Sam: Are you working tomorrow?
+Carla: No, it's my day off
+Sam: I'm free in the afternoon, do you fancy meeting up?
+Carla: Yeah, sure
+Sam: Ok, great! Shall we go to Meanwood?
+Carla: Ok, there's that cafe there that does the yummy cakes. Meet you at 2?
+Sam: Yes - looking forward to it!
+Carla: See you tom! xx",萨姆和卡拉约定明天下午两点在米德伍德的一家咖啡馆见面。,Carla has a day off tomorrow. She will meet Sam in Meanwood in a cafe at 2 pm.,卡拉明天有一天假。她将在下午两点在meanwood的一个咖啡馆和山姆见面。,"{
+  ""participants"": [
+    ""Sam"",
+    ""Carla""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Sam"",
+      ""speech_act"": ""ask"",
+      ""intended_meaning"": ""Inquire about Carla's availability tomorrow."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Carla"",
+      ""evidence"": [
+        ""Are you working tomorrow?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Carla"",
+      ""speech_act"": ""answer"",
+      ""intended_meaning"": ""Inform Sam that she is free tomorrow."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Sam"",
+      ""evidence"": [
+        ""No, it's my day off""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Sam"",
+      ""speech_act"": ""suggest"",
+      ""intended_meaning"": ""Propose a meeting in the afternoon."",
+      ""actor"": null,
+      ""action"": ""meeting"",
+      ""object"": ""afternoon"",
+      ""recipient"": ""Carla"",
+      ""evidence"": [
+        ""I'm free in the afternoon, do you fancy meeting up?""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Carla"",
+      ""speech_act"": ""agree"",
+      ""intended_meaning"": ""Accept the suggestion to meet up."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Sam"",
+      ""evidence"": [
+        ""Yeah, sure""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Sam"",
+      ""speech_act"": ""propose"",
+      ""intended_meaning"": ""Suggest a location for the meeting."",
+      ""actor"": null,
+      ""action"": ""meeting"",
+      ""object"": ""Meanwood"",
+      ""recipient"": ""Carla"",
+      ""evidence"": [
+        ""Shall we go to Meanwood?""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Carla"",
+      ""speech_act"": ""confirm"",
+      ""intended_meaning"": ""Confirm the meeting location and time."",
+      ""actor"": null,
+      ""action"": ""meeting"",
+      ""object"": ""cafe in Meanwood at 2pm"",
+      ""recipient"": ""Sam"",
+      ""evidence"": [
+        ""Ok, there's that cafe there that does the yummy cakes. Meet you at 2?""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Sam and Carla agreed to meet at a cafe in Meanwood at 2 pm tomorrow.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 6,
+      ""key_event"": ""萨姆和卡拉约定明天下午两点在米德伍德的一家咖啡馆见面。""
+    }
+  ],
+  ""summary_zh"": ""萨姆和卡拉约定明天下午两点在米德伍德的一家咖啡馆见面。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""萨姆和卡拉约定明天下午两点在米德伍德的一家咖啡馆见面。""
+}",萨姆和卡拉约定明天下午两点在米德伍德的一家咖啡馆见面。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00033,544,"Joana: wana play some games?
+Sandy: what games?
+Joana: maybe dixit?
+Joana: or carcassonne?
+Sandy: why not?
+Joana: ok, I'll bring them 2 u
+Sandy: great :)",乔安娜将带来《迪西特》和《卡卡颂》与桑迪一起玩。,Joana will bring Sandy some games like dixit and carcassonne.,琼娜将为桑迪带来一些像迪克西特和卡尔卡松这样的游戏。,"{
+  ""participants"": [
+    ""Joana"",
+    ""Sandy""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Joana"",
+      ""speech_act"": ""invitation"",
+      ""intended_meaning"": ""Proposing a gaming session."",
+      ""actor"": ""Joana"",
+      ""action"": ""playing games"",
+      ""object"": null,
+      ""recipient"": ""Sandy"",
+      ""evidence"": [
+        ""wana play some games?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Sandy"",
+      ""speech_act"": ""request for clarification"",
+      ""intended_meaning"": ""Asking for specifics about the games."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Joana"",
+      ""evidence"": [
+        ""what games?""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Joana"",
+      ""speech_act"": ""suggestion"",
+      ""intended_meaning"": ""Proposing two specific board games."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": [
+        ""Dixit"",
+        ""Carcassonne""
+      ],
+      ""recipient"": null,
+      ""evidence"": [
+        ""maybe dixit?"",
+        ""or carcassonne?""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Sandy"",
+      ""speech_act"": ""agreement"",
+      ""intended_meaning"": ""Accepting the game proposal."",
+      ""actor"": ""Sandy"",
+      ""action"": ""playing games"",
+      ""object"": [
+        ""Dixit"",
+        ""Carcassonne""
+      ],
+      ""recipient"": null,
+      ""evidence"": [
+        ""why not?""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Joana"",
+      ""speech_act"": ""commitment"",
+      ""intended_meaning"": ""Promising to bring the games."",
+      ""actor"": ""Joana"",
+      ""action"": ""bringing games"",
+      ""object"": [
+        ""Dixit"",
+        ""Carcassonne""
+      ],
+      ""recipient"": ""Sandy"",
+      ""evidence"": [
+        ""ok, I'll bring them 2 u""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Joana will bring Dixit and Carcassonne to play with Sandy.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 5,
+      ""key_event"": ""乔安娜承诺带来《迪西特》和《卡卡颂》与桑迪一起玩。""
+    }
+  ],
+  ""summary_zh"": ""乔安娜将带来《迪西特》和《卡卡颂》与桑迪一起玩。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""乔安娜将带来《迪西特》和《卡卡颂》与桑迪一起玩。""
+}",乔安娜将带来《迪西特》和《卡卡颂》与桑迪一起玩。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00034,548,"Steve: Bought the new Dream Theater album 5 minutes ago. I hope it's good.
+Rob: I have it here on my desk, ready for the first listening.
+Steve: Ok, I'll tell you later what I think about it.
+Rob: Same here. See you later!",史蒂夫和罗布计划稍后互相分享他们对新梦剧院专辑的意见。,"Steve and Rob will talk about new Dream Theater album, after they finish listening.",史蒂夫和罗伯将在听完后谈论新的梦剧场专辑。,"{
+  ""participants"": [
+    ""Steve"",
+    ""Rob""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Steve"",
+      ""speech_act"": ""statement"",
+      ""intended_meaning"": ""Steve has recently purchased the new Dream Theater album."",
+      ""actor"": ""Steve"",
+      ""action"": ""bought"",
+      ""object"": ""new Dream Theater album"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""Bought the new Dream Theater album 5 minutes ago.""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Rob"",
+      ""speech_act"": ""statement"",
+      ""intended_meaning"": ""Rob has the new album ready for his first listen."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""new Dream Theater album"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""I have it here on my desk, ready for the first listening.""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Steve"",
+      ""speech_act"": ""promise"",
+      ""intended_meaning"": ""Steve will share his opinion on the album with Rob later."",
+      ""actor"": ""Steve"",
+      ""action"": ""tell"",
+      ""object"": ""opinion on the album"",
+      ""recipient"": ""Rob"",
+      ""evidence"": [
+        ""Ok, I'll tell you later what I think about it.""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Rob"",
+      ""speech_act"": ""promise"",
+      ""intended_meaning"": ""Rob will also share his thoughts on the album with Steve later."",
+      ""actor"": ""Rob"",
+      ""action"": ""tell"",
+      ""object"": ""thoughts on the album"",
+      ""recipient"": ""Steve"",
+      ""evidence"": [
+        ""Same here.""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Steve and Rob plan to share their opinions on the new Dream Theater album with each other at a later time.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 3,
+      ""key_event"": ""史蒂夫承诺稍后会与罗布分享他对新专辑的意见。""
+    },
+    {
+      ""event_id"": 4,
+      ""key_event"": ""罗布也承诺会与史蒂夫分享他的想法。""
+    }
+  ],
+  ""summary_zh"": ""史蒂夫和罗布计划稍后互相分享他们对新梦剧院专辑的意见。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""史蒂夫和罗布计划稍后互相分享他们对新梦剧院专辑的意见。""
+}",史蒂夫和罗布计划稍后互相分享他们对新梦剧院专辑的意见。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00035,551,"Peter: Can you send me the link of your beauty shop?
+Joy: Definitely
+Joy: It is https:// *********
+Joy: Hope you will like it and feel free to ask any questions.
+Peter: Okay. Let me look at it.",乔伊（Joy）应彼得（Peter）请求，提供了她美发店的链接。,Joy sent Peter the link to her beauty shop.,乔伊把她美容店的链接发给了彼得。,"{
+  ""participants"": [
+    ""Peter"",
+    ""Joy""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Peter"",
+      ""speech_act"": ""request"",
+      ""intended_meaning"": ""Peter asks for the link to Joy's beauty shop."",
+      ""actor"": null,
+      ""action"": ""send"",
+      ""object"": ""link of your beauty shop"",
+      ""recipient"": ""Joy"",
+      ""evidence"": [
+        ""Can you send me the link of your beauty shop?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Joy"",
+      ""speech_act"": ""agreement"",
+      ""intended_meaning"": ""Joy agrees to provide the link."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": null,
+      ""evidence"": [
+        ""Definitely""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Joy"",
+      ""speech_act"": ""provision"",
+      ""intended_meaning"": ""Joy provides the link to her beauty shop."",
+      ""actor"": null,
+      ""action"": ""is"",
+      ""object"": ""https:// *********"",
+      ""recipient"": ""Peter"",
+      ""evidence"": [
+        ""It is https:// ********""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Joy provided Peter with the link to her beauty shop.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 3,
+      ""key_event"": ""乔伊向彼得提供了她的美发店链接。""
+    }
+  ],
+  ""summary_zh"": ""乔伊（Joy）应彼得（Peter）请求，提供了她美发店的链接。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""乔伊（Joy）应彼得（Peter）请求，提供了她美发店的链接。""
+}",乔伊（Joy）应彼得（Peter）请求，提供了她美发店的链接。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00036,590,"Ethan: who's going to see solstafir?
+Noah: solstafir! when?
+Noah: i had no idea they were playing
+Archie: I'm not :D.
+Leo: i'm going ofc!
+Ethan: 21.11
+Noah: that's a wednesday... ehh...
+Noah: i'll have to see, might have to stay late at work...
+Leo: nooo you have to come
+Ethan: yeah you have to!
+Archie: There are better concerts :P.
+Noah: i know, i would really like to see them, but yeah
+Leo: archie... :P
+Ethan: don't mind him :P
+Noah: i'll see and let you know, it would really suck to miss them
+Leo: yup!
+Ethan: yup! x2",诺亚将决定是否能因潜在的工作承诺而参加11月21日的索斯塔菲尔音乐会，并告知小组。,"Ethan and Leo are going to see Sólstafir on 21.11. Noah would like to go too, but he might have to stay late at work.",伊森和里奥要在21点11分去见索斯塔弗。诺亚也想去，但他可能得工作到很晚。,"{
+  ""participants"": [
+    ""Ethan"",
+    ""Noah"",
+    ""Archie"",
+    ""Leo""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Ethan"",
+      ""speech_act"": ""announcement"",
+      ""intended_meaning"": ""Informing the group about an upcoming Solstafir concert."",
+      ""actor"": null,
+      ""action"": ""announcing"",
+      ""object"": ""Solstafir concert"",
+      ""recipient"": ""group"",
+      ""evidence"": [
+        ""Ethan: who's going to see solstafir?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Noah"",
+      ""speech_act"": ""expression of interest"",
+      ""intended_meaning"": ""Expressing surprise and interest in the concert."",
+      ""actor"": null,
+      ""action"": ""expressing interest"",
+      ""object"": ""Solstafir concert"",
+      ""recipient"": ""Ethan"",
+      ""evidence"": [
+        ""Noah: solstafir! when?""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Archie"",
+      ""speech_act"": ""declination"",
+      ""intended_meaning"": ""Stating that he is not going to the concert."",
+      ""actor"": ""Archie"",
+      ""action"": ""declining"",
+      ""object"": ""Solstafir concert"",
+      ""recipient"": ""group"",
+      ""evidence"": [
+        ""Archie: I'm not :D.""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Leo"",
+      ""speech_act"": ""confirmation"",
+      ""intended_meaning"": ""Confirming his attendance at the concert."",
+      ""actor"": ""Leo"",
+      ""action"": ""confirming"",
+      ""object"": ""Solstafir concert"",
+      ""recipient"": ""group"",
+      ""evidence"": [
+        ""Leo: i'm going ofc!""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Noah"",
+      ""speech_act"": ""tentative refusal"",
+      ""intended_meaning"": ""Expressing uncertainty about attending due to work commitments."",
+      ""actor"": ""Noah"",
+      ""action"": ""considering not going"",
+      ""object"": ""Solstafir concert"",
+      ""recipient"": ""group"",
+      ""evidence"": [
+        ""Noah: that's a wednesday... ehh..."",
+        ""Noah: i'll have to see, might have to stay late at work...""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Noah"",
+      ""speech_act"": ""commitment"",
+      ""intended_meaning"": ""Committing to letting the group know if he can attend."",
+      ""actor"": ""Noah"",
+      ""action"": ""promising to inform"",
+      ""object"": ""his attendance decision"",
+      ""recipient"": ""group"",
+      ""evidence"": [
+        ""Noah: i'll see and let you know, it would really suck to miss them""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Noah will decide if he can attend the Solstafir concert on November 21st due to potential work commitments and inform the group.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 6,
+      ""key_event"": ""诺亚承诺会告知小组他是否能参加索斯塔菲尔的音乐会。""
+    }
+  ],
+  ""summary_zh"": ""诺亚将决定是否能因潜在的工作承诺而参加11月21日的索斯塔菲尔音乐会，并告知小组。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""诺亚将决定是否能因潜在的工作承诺而参加11月21日的索斯塔菲尔音乐会，并告知小组。""
+}",诺亚将决定是否能因潜在的工作承诺而参加11月21日的索斯塔菲尔音乐会，并告知小组。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00037,598,"Bradley: haha look a cat invaded the pitch at Goodison <file_other>
+Jill: hahahaha
+Julia: what a sweet little black ball of fur
+Jill: here's the video :D <file_other>
+Julia: haha
+Bradley: and the commentary :D
+Bradley: that's the best entertainment Everton fans have had all season :D",布拉德利分享了一段猫入侵古迪逊球场的视频，吉尔和朱莉娅表示喜爱。布拉德利打趣道这是埃弗顿球迷本赛季最娱乐的时刻。,A sweet little black cat got into the pitch during the Everton's football match.,在埃弗顿的足球比赛中，一只可爱的小黑猫钻进了球场。,"{
+  ""participants"": [
+    ""Bradley"",
+    ""Jill"",
+    ""Julia""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Bradley"",
+      ""speech_act"": ""sharing"",
+      ""intended_meaning"": ""showing a funny incident involving a cat on the pitch"",
+      ""actor"": null,
+      ""action"": ""sharing a file"",
+      ""object"": ""cat invasion video"",
+      ""recipient"": ""Jill, Julia"",
+      ""evidence"": [
+        ""haha look a cat invaded the pitch at Goodison <file_other>""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Jill"",
+      ""speech_act"": ""acknowledgement"",
+      ""intended_meaning"": ""finding the video amusing"",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": null,
+      ""evidence"": [
+        ""hahahaha""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Julia"",
+      ""speech_act"": ""description"",
+      ""intended_meaning"": ""describing the cat as sweet and funny-looking"",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""the cat"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""what a sweet little black ball of fur""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Jill"",
+      ""speech_act"": ""sharing"",
+      ""intended_meaning"": ""providing more content related to the incident"",
+      ""actor"": null,
+      ""action"": ""sharing a video"",
+      ""object"": ""cat invasion video"",
+      ""recipient"": ""Bradley, Julia"",
+      ""evidence"": [
+        ""here's the video :D <file_other>""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Bradley"",
+      ""speech_act"": ""commentary"",
+      ""intended_meaning"": ""highlighting the entertainment value of the incident for Everton fans"",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""the commentary"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""that's the best entertainment Everton fans have had all season :D""
+      ]
+    }
+  ],
+  ""final_outcome"": ""The group shared and enjoyed a video of a cat invading the pitch at Goodison, finding it amusing and entertaining.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 5,
+      ""key_event"": ""布拉德利分享了一段关于猫入侵古迪逊球场的视频，并评论道这是埃弗顿球迷本赛季最娱乐的时刻。""
+    },
+    {
+      ""event_id"": 2,
+      ""key_event"": ""吉尔和朱莉娅对视频中的猫表示了喜爱和赞美。""
+    }
+  ],
+  ""summary_zh"": ""布拉德利分享了一段关于猫入侵古迪逊球场的视频，并评论道这是埃弗顿球迷本赛季最娱乐的时刻。吉尔和朱莉娅对视频中的猫表示了喜爱和赞美。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""布拉德利分享了一段猫入侵古迪逊球场的视频，吉尔和朱莉娅表示喜爱。布拉德利打趣道这是埃弗顿球迷本赛季最娱乐的时刻。""
+}",布拉德利分享了一段猫入侵古迪逊球场的视频，吉尔和朱莉娅表示喜爱。布拉德利打趣道这是埃弗顿球迷本赛季最娱乐的时刻。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00038,605,"Barbara: I'm home already, you can come over
+Sean: May I bring the dog?
+Zac: I'm on my way
+Barbara: sure you can, Sean
+Barbara: do you want to stay overnight?
+Sean: great!
+Sean: I thought about it
+Barbara: nice!",肖恩和扎克将到芭芭拉家，肖恩会带狗来并留宿一夜。,"Barbara, Sean and Zac are meeting at Barbara's place tonight. Sean will bring the dog. Sean and Zac will stay overnight.",芭芭拉、肖恩和扎克今晚在芭芭拉家见面。肖恩会把狗带来的，肖恩和扎克会在这里过夜。,"{
+  ""participants"": [
+    ""Barbara"",
+    ""Sean"",
+    ""Zac""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Barbara"",
+      ""speech_act"": ""invitation"",
+      ""intended_meaning"": ""Inviting Sean and Zac over to her place."",
+      ""actor"": null,
+      ""action"": ""coming over"",
+      ""object"": ""Barbara's home"",
+      ""recipient"": [
+        ""Sean"",
+        ""Zac""
+      ],
+      ""evidence"": [
+        ""I'm home already, you can come over""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Sean"",
+      ""speech_act"": ""request"",
+      ""intended_meaning"": ""Asking for permission to bring his dog."",
+      ""actor"": null,
+      ""action"": ""bringing"",
+      ""object"": ""the dog"",
+      ""recipient"": ""Barbara"",
+      ""evidence"": [
+        ""May I bring the dog?""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Zac"",
+      ""speech_act"": ""confirmation"",
+      ""intended_meaning"": ""Confirming that he is on his way to Barbara's."",
+      ""actor"": ""Zac"",
+      ""action"": ""being on the way"",
+      ""object"": null,
+      ""recipient"": ""Barbara"",
+      ""evidence"": [
+        ""I'm on my way""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Barbara"",
+      ""speech_act"": ""permission"",
+      ""intended_meaning"": ""Granting Sean permission to bring his dog."",
+      ""actor"": null,
+      ""action"": ""bringing the dog"",
+      ""object"": ""the dog"",
+      ""recipient"": ""Sean"",
+      ""evidence"": [
+        ""sure you can""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Barbara"",
+      ""speech_act"": ""offer"",
+      ""intended_meaning"": ""Offering Sean to stay overnight."",
+      ""actor"": null,
+      ""action"": ""staying overnight"",
+      ""object"": ""at Barbara's"",
+      ""recipient"": ""Sean"",
+      ""evidence"": [
+        ""do you want to stay overnight?""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Sean"",
+      ""speech_act"": ""acceptance"",
+      ""intended_meaning"": ""Accepting the offer to stay overnight."",
+      ""actor"": ""Sean"",
+      ""action"": ""staying overnight"",
+      ""object"": ""at Barbara's"",
+      ""recipient"": ""Barbara"",
+      ""evidence"": [
+        ""great!"",
+        ""I thought about it""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Sean and Zac are coming over to Barbara's, with Sean bringing his dog and staying overnight.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 1,
+      ""key_event"": ""芭芭拉邀请肖恩和扎克到她家。""
+    },
+    {
+      ""event_id"": 4,
+      ""key_event"": ""芭芭拉允许肖恩带狗来。""
+    },
+    {
+      ""event_id"": 6,
+      ""key_event"": ""肖恩接受芭芭拉的邀请，决定在她家过夜。""
+    }
+  ],
+  ""summary_zh"": ""肖恩和扎克将到芭芭拉家，肖恩会带狗来，并留宿一夜。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""肖恩和扎克将到芭芭拉家，肖恩会带狗来并留宿一夜。""
+}",肖恩和扎克将到芭芭拉家，肖恩会带狗来并留宿一夜。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00039,616,"Jake: dude, I just pulled a TOTW
+Jake: my first this year!
+Tom: grats!
+Tom: gonna sell it?
+Jake: yeah
+Jake: I'll try him in one or two matches
+Jake: he's not a good fit for my squads
+Tom: you'll have plenty of coins to buy someone that fits
+Jake: that's the plan
+Jake: I got lucky with this one
+Tom: my pull luck sucks this year
+Tom: not a single great player 
+Jake: you're good at the game
+Jake: you don't need help :P
+Tom: I like shiny things :P",杰克首次抽中今年TOTW卡，但计划在试用一两场比赛后出售，因为不适合他的队伍。汤姆祝贺他，并指出他有足够的硬币购买更合适的球员。汤姆抱怨自己今年的抽签运气不佳，没有获得优秀球员。,Jake has got his first TOTW this year. Tom doesn't have a great team. ,杰克今年拿到了第一个totw ，汤姆的团队并不出色。,"{
+  ""participants"": [
+    ""Jake"",
+    ""Tom""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Jake"",
+      ""speech_act"": ""announcement"",
+      ""intended_meaning"": ""Jake pulled a TOTW card for the first time this year."",
+      ""actor"": ""Jake"",
+      ""action"": ""pulling a TOTW card"",
+      ""object"": null,
+      ""recipient"": null,
+      ""evidence"": [
+        ""dude, I just pulled a TOTW""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Tom"",
+      ""speech_act"": ""congratulation"",
+      ""intended_meaning"": ""Tom congratulates Jake on his pull."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Jake"",
+      ""evidence"": [
+        ""grats!""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Jake"",
+      ""speech_act"": ""confirmation"",
+      ""intended_meaning"": ""Jake confirms he will sell the card after trying it in a few matches."",
+      ""actor"": ""Jake"",
+      ""action"": ""selling the card"",
+      ""object"": ""TOTW card"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""yeah"",
+        ""I'll try him in one or two matches"",
+        ""he's not a good fit for my squads""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Tom"",
+      ""speech_act"": ""assurance"",
+      ""intended_meaning"": ""Tom assures Jake he will have enough coins to buy a better-fitting player."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Jake"",
+      ""evidence"": [
+        ""you'll have plenty of coins to buy someone that fits""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Jake"",
+      ""speech_act"": ""agreement"",
+      ""intended_meaning"": ""Jake agrees with Tom's assurance and expresses luck."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": null,
+      ""evidence"": [
+        ""that's the plan"",
+        ""I got lucky with this one""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Tom"",
+      ""speech_act"": ""complaint"",
+      ""intended_meaning"": ""Tom complains about his lack of luck in pulling great players."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": null,
+      ""evidence"": [
+        ""my pull luck sucks this year"",
+        ""not a single great player""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Jake plans to sell his newly pulled TOTW card after trying it in a few matches, as it doesn't fit his squads.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 3,
+      ""key_event"": ""杰克计划在尝试几场比赛后出售他的TOTW卡，因为它不适合他的队伍。""
+    }
+  ],
+  ""summary_zh"": ""杰克首次抽到今年TOTW卡，但在尝试一两场比赛后，因不适合队伍而打算出售。汤姆肯定他有足够的硬币购买更合适的球员，并祝贺杰克的好运。汤姆抱怨自己今年抽签运气不佳，没有抽到优秀球员。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""杰克首次抽中今年TOTW卡，但计划在试用一两场比赛后出售，因为不适合他的队伍。汤姆祝贺他，并指出他有足够的硬币购买更合适的球员。汤姆抱怨自己今年的抽签运气不佳，没有获得优秀球员。""
+}",杰克首次抽中今年TOTW卡，但计划在试用一两场比赛后出售，因为不适合他的队伍。汤姆祝贺他，并指出他有足够的硬币购买更合适的球员。汤姆抱怨自己今年的抽签运气不佳，没有获得优秀球员。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00040,621,"Phil: Good evening Deana! Many thanks for this nice card from you. Constantine was very happy!
+Phil: Are these sunglasses also from you?
+Deana: I thought they belonged your Cathreen!
+Phil: Nope. She says they aren't hers.
+Deana: Mine either. Look, maybe you feel like keeping them?
+Deana: I seem to have so many sunglasses...
+Deana: 8‑D
+Phil: Where did you find them, possible that they belong to Adrian?
+Deana: In this empty place above the radio. In the very back.
+Deana: If Adrian wants it, no pro!
+Deana: :)
+Phil: :))
+Deana: Exactly!
+Phil: Ok, they don't belong to any of us, and nobody else drove your car. But we can look after these sunglasses.
+Deana: Glad to hear it!",菲尔向德娜感谢礼物，并询问太阳镜归属。德娜否认所有权，建议他保留。最终，菲尔同意照看无人认领的太阳镜。,"Phil received a card from Deana. Constantine was happy. Phil has sunglasses, that Deana found in the back above the radio. Deana and Phil don't know who they belong too. Phil will keep the sunglasses.",菲尔收到了迪安娜的一张卡片，康斯坦丁很开心。菲尔有副墨镜。蒂娜在后面收音机上面找到的。迪安娜和菲尔也不知道他们属于谁。菲尔会留着这副墨镜的。,"{
+  ""participants"": [
+    ""Phil"",
+    ""Deana""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Phil"",
+      ""speech_act"": ""greeting and thanks"",
+      ""intended_meaning"": ""Expressing gratitude for a gift."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""nice card"",
+      ""recipient"": ""Deana"",
+      ""evidence"": [
+        ""Good evening Deana! Many thanks for this nice card from you. Constantine was very happy!""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Phil"",
+      ""speech_act"": ""question"",
+      ""intended_meaning"": ""Inquiring about the ownership of sunglasses."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""sunglasses"",
+      ""recipient"": ""Deana"",
+      ""evidence"": [
+        ""Are these sunglasses also from you?""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Deana"",
+      ""speech_act"": ""denial"",
+      ""intended_meaning"": ""Denying ownership of the sunglasses."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""sunglasses"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""Mine either. Look, maybe you feel like keeping them?""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Deana"",
+      ""speech_act"": ""suggestion"",
+      ""intended_meaning"": ""Suggesting Phil keeps the sunglasses."",
+      ""actor"": ""Phil"",
+      ""action"": ""keeping"",
+      ""object"": ""sunglasses"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""Look, maybe you feel like keeping them?""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Deana"",
+      ""speech_act"": ""statement"",
+      ""intended_meaning"": ""Identifying the location where she found the sunglasses."",
+      ""actor"": null,
+      ""action"": ""finding"",
+      ""object"": ""sunglasses"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""In this empty place above the radio. In the very back.""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Phil"",
+      ""speech_act"": ""agreement"",
+      ""intended_meaning"": ""Agreeing to look after the sunglasses as no one claims ownership."",
+      ""actor"": ""Phil"",
+      ""action"": ""looking after"",
+      ""object"": ""sunglasses"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""Ok, they don't belong to any of us, and nobody else drove your car. But we can look after these sunglasses.""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Phil agrees to look after the sunglasses found by Deana as no one claims ownership.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 6,
+      ""key_event"": ""菲尔同意照看德娜找到的太阳镜，因为没有人认领。""
+    }
+  ],
+  ""summary_zh"": ""菲尔向德娜表达了对礼物的感谢。随后，他询问太阳镜的所有权，但德娜否认所有权并建议他保留太阳镜。最终，菲尔同意照看这些太阳镜，因为没有人认领。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""菲尔向德娜感谢礼物，并询问太阳镜归属。德娜否认所有权，建议他保留。最终，菲尔同意照看无人认领的太阳镜。""
+}",菲尔向德娜感谢礼物，并询问太阳镜归属。德娜否认所有权，建议他保留。最终，菲尔同意照看无人认领的太阳镜。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00041,635,"Mell: Hi there! How are you doing?
+Gloria: Hi Mell! We are fine, just the daily grind ;) And yourselves?
+Mell: Not much happening either. An odd phone call with the kids. Or Tad's sister:(( Not much otherwise.
+Gloria: Yeah... Life has become so quite since the kids are out of the house. We had more to get used to it. But it must hard for you. Especially you I mean.
+Mell: I don't know. Sometimes I even forget that I should be missing them. In a way I do like this peace and quiet now.
+Gloria: Small wonder. You had a hell of a time with them just before they went to college. I'd say you need to recover now.
+Mell: I guess you're right. But maybe I should feel guilty or something?
+Gloria: Don't be silly! You are a fantastic mom.
+Mell: Thanks Gloria.
+Gloria: Anyway I'm happy to hear from you again. We should really have a nice do again.
+Mell: YES! Splendid!
+Gloria: The weather is just brilliant, perfect for a BBQ. What do you think?
+Mell: I'm all for it. At my place? I'd love it.
+Gloria: Can't be better. I love your garden.
+Mell: We're thinking about extending the terrace. I must show you my drawings, just a few ideas. It would be great to hear your opinion.
+Gloria: I'd love to. But you know how little I know about garden design, or however you call it.
+Mell: We'll have a look at them. Now the BBQ. At the weekend I suppose?
+Gloria: Let me check the calendar. Here's our family planner. A horrible name, isn't it? So this weekend suits us fine. At the next one, on Saturday, Mark has penciled something in but I can't read it. So what about this Saturday?
+Mell: Perfect. At least we know the weather holds. Shall I do the food and you the drinks?
+Gloria: And I'll get us some dessert as well. 
+Mell: Very good indeed. It's always so easy going with you.
+Gloria: Ta! You were thinking about Tad's sister?
+Mell: I'm afraid so. I'm so happy she moved up to Scotland and I don't have to put up with her trying to run my household. Tad feels relieved too.
+Gloria: Good riddance! I could really never warm up to her.
+Mell: Nobody can! Anyway she's gone and we're going to have a fantastic barbecue. Without her.
+Gloria: Yes, we are. Oh I'm so happy you've phoned!
+Mell: Looking forward to our BBQ on Saturday!
+Gloria: So long!",Mell和Gloria聊天，讨论了孩子们搬出去后的生活变化。Mell坦言有时会忘记想念他们，但享受现在的平静。Gloria安慰她，并邀请她家里开烧烤派对。Mell欣然接受，建议在周末举行。Gloria确认日期为本周六。,"Gloria and Mell plan to have a barbeque at Mell's place on Saturday. They are happy, because Tad's sister moved to Scotland. Mell needs Gloria's advice on garden design.",格洛丽亚和梅尔计划星期六在梅尔家吃烧烤。他们很高兴，因为泰德的姐姐搬到了苏格兰。梅尔需要格洛丽亚对花园设计的建议。,"{
+  ""raw_output"": ""{\n  \""participants\"": [\""Mell\"", \""Gloria\""],\n  \""semantic_grounding\"": [\n    {\n      \""event_id\"": 1,\n      \""speaker\"": \""Mell\"",\n      \""speech_act\"": \""greeting\"",\n      \""intended_meaning\"": \""Initiating a friendly conversation\"",\n      \""actor\"": null,\n      \""action\"": null,\n      \""object\"": null,\n      \""recipient\"": \""Gloria\"",\n      \""evidence\"": [\""Hi there! How are you doing?\""]\n    },\n    {\n      \""event_id\"": 2,\n      \""speaker\"": \""Gloria\"",\n      \""speech_act\"": \""response\"",\n      \""intended_meaning\"": \""Reciprocating the greeting and sharing a common experience\"",\n      \""actor\"": null,\n      \""action\"": null,\n      \""object\"": null,\n      \""recipient\"": \""Mell\"",\n      \""evidence\"": [\""Hi Mell! We are fine, just the daily grind ;) And yourselves?\""]\n    },\n    {\n      \""event_id\"": 3,\n      \""speaker\"": \""Mell\"",\n      \""speech_act\"": \""sharing\"",\n      \""intended_meaning\"": \""Discussing personal experiences and feelings about life changes\"",\n      \""actor\"": null,\n      \""action\"": \""discussing\"",\n      \""object\"": \""life changes\"",\n      \""recipient\"": \""Gloria\"",\n      \""evidence\"": [\""Not much happening either. An odd phone call with the kids. Or Tad's sister:(( Not much otherwise.\""]\n    },\n    {\n      \""event_id\"": 4,\n      \""speaker\"": \""Gloria\"",\n      \""speech_act\"": \""empathizing\"",\n      \""intended_meaning\"": \""Offering support and understanding regarding Mell's situation\"",\n      \""actor\"": null,\n      \""action\"": \""offering support\"",\n      \""object\"": \""Mell's situation\"",\n      \""recipient\"": \""Mell\"",\n      \""evidence\"": [\""Yeah... Life has become so quite since the kids are out of the house. We had more to get used to it. But it must hard for you. Especially you I mean.\""]\n    },\n    {\n      \""event_id\"": 5,\n      \""speaker\"": \""Mell\"",\n      \""speech_act\"": \""confession\"",\n      \""intended_meaning\"": \""Admitting feelings of relief and guilt about the kids moving out\"",\n      \""actor\"": \""Mell\"",\n      \""action\"": \""admitting\"",\n      \""object\"": \""feelings\"",\n      \""recipient\"": \""Gloria\"",\n      \""evidence\"": [\""I don't know. Sometimes I even forget that I should be missing them. In a way I do like this peace and quiet now.\"", \""But maybe I should feel guilty or something?\""]\n    },\n    {\n      \""event_id\"": 6,\n      \""speaker\"": \""Gloria\"",\n      \""speech_act\"": \""reassurance\"",\n      \""intended_meaning\"": \""Reassuring Mell about her parenting skills\"",\n      \""actor\"": \""Gloria\"",\n      \""action\"": \""reassuring\"",\n      \""object\"": \""Mell's parenting skills\"",\n      \""recipient\"": \""Mell\"",\n      \""evidence\"": [\""Don't be silly! You are a fantastic mom.\""]\n    },\n    {\n      \""event_id\"": 7,\n      \""speaker\"": \""Gloria\"",\n      \""speech_act\"": \""invitation\"",\n      \""intended_meaning\"": \""Proposing a BBQ at Mell's place\"",\n      \""actor\"": \""Gloria\"",\n      \""action\"": \""proposing\"",\n      \""object\"": \""BBQ\"",\n      \""recipient\"": \""Mell\"",\n      \""evidence\"": [\""Anyway I'm happy to hear from you again. We should really have a nice do again.\"", \""The weather is just brilliant, perfect for a BBQ. What do you think?\"", \""I'm all for it. At my place? I'd love it.\""]\n    },\n    {\n      \""event_id\"": 8,\n      \""speaker\"": \""Mell\"",\n      \""speech_act\"": \""acceptance\"",\n      \""intended_meaning\"": \""Accepting the invitation and suggesting a date\"",\n      \""actor\"": \""Mell\"",\n      \""action\"": \""accepting\"",\n      \""object\"": \""BBQ invitation\"",\n      \""recipient\"": \""Gloria\"",\n      \""evidence\"": [\""YES! Splendid!\"", \""Now the BBQ. At the weekend I suppose?\""]\n    },\n    {\n      \""event_id\"": 9,\n      \""speaker\"": \""Gloria\"",\n      \""speech_act\"": \""date_confirmation\"",\n      \""intended_meaning\"": \""Confirming the date for the BBQ\"",\n      \""actor\"": \""Gloria\"",\n      \""action\"": \""confirming\"",\n      \""object\"": \""BBQ date\"",\n      \""recipient\"": \""Mell\"",\n      \""evidence\"": [\""Let me check the calendar. Here's our family planner. A horrible name, isn't it? So this weekend suits us fine. At the next one, on Saturday, Mark has penciled something in but I can't read it. So what about this Saturday?\""]\n    },\n    {\n      \""event_id\"":"",
+  ""parse_error"": true
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 8,
+      ""key_event"": ""Mell接受Gloria的烧烤邀请，并建议在周末举行。""
+    },
+    {
+      ""event_id"": 9,
+      ""key_event"": ""Gloria确认烧烤日期为下周六。""
+    }
+  ],
+  ""summary_zh"": ""Mell和Gloria聊天，讨论了孩子们搬出去后的生活变化。Mell坦白自己有时会忘记想念孩子们，但喜欢现在的平静。Gloria安慰她，并邀请她家里开烧烤派对。Mell欣然接受，并建议在周末举行。Gloria确认日期为下周六。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""Mell和Gloria聊天，讨论了孩子们搬出去后的生活变化。Mell坦言有时会忘记想念他们，但享受现在的平静。Gloria安慰她，并邀请她家里开烧烤派对。Mell欣然接受，建议在周末举行。Gloria确认日期为本周六。""
+}",Mell和Gloria聊天，讨论了孩子们搬出去后的生活变化。Mell坦言有时会忘记想念他们，但享受现在的平静。Gloria安慰她，并邀请她家里开烧烤派对。Mell欣然接受，建议在周末举行。Gloria确认日期为本周六。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00042,649,"Callan: Something's wrong with my Samsung S8.
+Wade: What, exactly?
+Callan: All I get is a black screen.
+Wade: Did you drop it or something?
+Callan: I think I know, this has happened before.
+Wade:  It did? What happened before?
+Callan: It overheats and then it takes a while for it to restart again..
+Wade: That sucks.. Be carefull with the battery, it can be dangerous.
+Callan: It sure can, but I'm going to the store and let them see it. It's still under warranty.
+Wade: Will you lose all your stuff?
+Callan: No, I always back up my files.",卡兰决定将三星S8送去商店维修，以解决黑屏和过热问题。韦德担心数据丢失，但卡兰确认他们已经备份了所有文件。,"Callan's Samsung S8 overheats, so he's going to the store to get it repaired.",卡伦的三星s8过热了，所以他要去店里修理。,"{
+  ""participants"": [
+    ""Callan"",
+    ""Wade""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Callan"",
+      ""speech_act"": ""reporting a problem"",
+      ""intended_meaning"": ""Callan's Samsung S8 is malfunctioning."",
+      ""action"": ""reporting an issue"",
+      ""object"": ""Samsung S8"",
+      ""recipient"": ""Wade"",
+      ""evidence"": [
+        ""Something's wrong with my Samsung S8.""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Wade"",
+      ""speech_act"": ""requesting details"",
+      ""intended_meaning"": ""Wade asks for more information about the problem."",
+      ""action"": ""asking"",
+      ""object"": ""details about the problem"",
+      ""recipient"": ""Callan"",
+      ""evidence"": [
+        ""What, exactly?""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Callan"",
+      ""speech_act"": ""explaining the issue"",
+      ""intended_meaning"": ""The phone displays a black screen and might be overheating."",
+      ""action"": ""explaining"",
+      ""object"": ""the problem"",
+      ""recipient"": ""Wade"",
+      ""evidence"": [
+        ""All I get is a black screen."",
+        ""It overheats and then it takes a while for it to restart again.""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Callan"",
+      ""speech_act"": ""stating a plan"",
+      ""intended_meaning"": ""Callan decides to take the phone to the store for repair."",
+      ""action"": ""taking the phone to the store"",
+      ""object"": ""Samsung S8"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""I'm going to the store and let them see it. It's still under warranty.""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Wade"",
+      ""speech_act"": ""expressing concern"",
+      ""intended_meaning"": ""Wade asks about potential data loss during the repair process."",
+      ""action"": ""asking about data backup"",
+      ""object"": ""data on the phone"",
+      ""recipient"": ""Callan"",
+      ""evidence"": [
+        ""Will you lose all your stuff?""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Callan"",
+      ""speech_act"": ""reassuring"",
+      ""intended_meaning"": ""Callan confirms that their files are backed up."",
+      ""action"": ""reassuring"",
+      ""object"": ""data backup"",
+      ""recipient"": ""Wade"",
+      ""evidence"": [
+        ""No, I always back up my files.""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Callan decides to take their Samsung S8 to the store for repair due to overheating and black screen issues, reassuring Wade that their data is backed up.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 4,
+      ""key_event"": ""卡兰决定将三星S8送去商店维修，因为手机出现黑屏和过热问题。""
+    },
+    {
+      ""event_id"": 6,
+      ""key_event"": ""卡兰向韦德保证，他们的数据已经备份。""
+    }
+  ],
+  ""summary_zh"": ""卡兰决定将三星S8送去商店维修，以解决黑屏和过热问题。韦德担心数据丢失，但卡兰确认他们已经备份了所有文件。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""卡兰决定将三星S8送去商店维修，以解决黑屏和过热问题。韦德担心数据丢失，但卡兰确认他们已经备份了所有文件。""
+}",卡兰决定将三星S8送去商店维修，以解决黑屏和过热问题。韦德担心数据丢失，但卡兰确认他们已经备份了所有文件。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00043,676,"Anna: Mum, I have a awful stomachache.
+Joanna: Oh, dear, when did you get it?
+Anna: At night, and it won’t stop:-(
+Joanna: Is it something you ate?
+Anna: Maybe. I'm not sure.
+Joanna: What did you have for breakfast?
+Anna: The usual, cereal with milk and a banana.
+Joanna: Maybe the milk was bad.
+Anna: It didn't smell bad.
+Joanna: Maybe the banana was bad.
+Anna: No, the banana was delicious.
+Joanna: Maybe you just need to go to the bathroom.
+Anna: No, that's not the problem.
+Joanna: Maybe it will go away in a little while.
+Anna: I wish it would :-(
+Anna: Hopefully. If not, maybe we should go and see a doctor.
+Joanna: Yeah, I think so...
+Anna: I’ll get you a hot tea with some fresh mint leaves. Hope it will help. 
+Joanna: Please do, I’m in my room...
+Anna: Will be in ten minutes:-)",安娜向乔安娜抱怨夜间开始的严重胃痛，经过一番询问后，两人同意如果胃痛持续，将去看医生。安娜主动提出为乔安娜泡热茶。,Anna got an awful stomachache at night but she doesn't know its cause. Her mom Joanna will make her hot tea with some fresh mint leaves.,安娜夜里胃疼得厉害，但她不知道其中的原因。她的妈妈乔安娜会用新鲜的薄荷叶为她做热茶。,"{
+  ""participants"": [
+    ""Anna"",
+    ""Joanna""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Anna"",
+      ""speech_act"": ""complaint"",
+      ""intended_meaning"": ""Anna has a severe stomachache that started at night and hasn't stopped."",
+      ""actor"": ""Anna"",
+      ""action"": ""experiencing a stomachache"",
+      ""object"": null,
+      ""recipient"": ""Joanna"",
+      ""evidence"": [
+        ""Mum, I have a awful stomachache.""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Joanna"",
+      ""speech_act"": ""inquiry"",
+      ""intended_meaning"": ""Trying to identify the cause of Anna's stomachache."",
+      ""actor"": null,
+      ""action"": ""asking questions"",
+      ""object"": ""possible causes of the stomachache"",
+      ""recipient"": ""Anna"",
+      ""evidence"": [
+        ""Is it something you ate?""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Anna"",
+      ""speech_act"": ""uncertainty"",
+      ""intended_meaning"": ""Anna is unsure if her meal was the cause."",
+      ""actor"": null,
+      ""action"": ""expressing uncertainty"",
+      ""object"": ""the cause of her stomachache"",
+      ""recipient"": ""Joanna"",
+      ""evidence"": [
+        ""Maybe. I'm not sure.""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Joanna"",
+      ""speech_act"": ""suggestion"",
+      ""intended_meaning"": ""Suggesting possible causes for Anna's stomachache."",
+      ""actor"": null,
+      ""action"": ""suggesting"",
+      ""object"": ""bad milk or banana as potential causes"",
+      ""recipient"": ""Anna"",
+      ""evidence"": [
+        ""Maybe the milk was bad."",
+        ""Maybe the banana was bad.""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Anna"",
+      ""speech_act"": ""rejection"",
+      ""intended_meaning"": ""Dismissing Joanna's suggestions as unlikely causes."",
+      ""actor"": ""Anna"",
+      ""action"": ""rejecting suggestions"",
+      ""object"": ""bad milk and banana"",
+      ""recipient"": ""Joanna"",
+      ""evidence"": [
+        ""It didn't smell bad."",
+        ""No, the banana was delicious.""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Anna"",
+      ""speech_act"": ""proposal"",
+      ""intended_meaning"": ""Proposing a visit to the doctor if the stomachache persists."",
+      ""actor"": ""Anna"",
+      ""action"": ""proposing"",
+      ""object"": ""seeing a doctor"",
+      ""recipient"": ""Joanna"",
+      ""evidence"": [
+        ""If not, maybe we should go and see a doctor.""
+      ]
+    },
+    {
+      ""event_id"": 7,
+      ""speaker"": ""Joanna"",
+      ""speech_act"": ""agreement"",
+      ""intended_meaning"": ""Agreeing with Anna's proposal to see a doctor."",
+      ""actor"": null,
+      ""action"": ""agreeing"",
+      ""object"": ""seeing a doctor"",
+      ""recipient"": ""Anna"",
+      ""evidence"": [
+        ""Yeah, I think so...""
+      ]
+    },
+    {
+      ""event_id"": 8,
+      ""speaker"": ""Anna"",
+      ""speech_act"": ""offer"",
+      ""intended_meaning"": ""Offering to make tea with fresh mint leaves for Joanna."",
+      ""actor"": ""Anna"",
+      ""action"": ""offering"",
+      ""object"": ""hot tea with fresh mint leaves"",
+      ""recipient"": ""Joanna"",
+      ""evidence"": [
+        ""I’ll get you a hot tea with some fresh mint leaves. Hope it will help.""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Anna and Joanna agree to see a doctor if Anna's stomachache persists, and Anna offers to make tea for Joanna.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 6,
+      ""key_event"": ""安娜提出如果胃痛持续，应该去看医生。""
+    },
+    {
+      ""event_id"": 7,
+      ""key_event"": ""乔安娜同意去看医生的建议。""
+    },
+    {
+      ""event_id"": 8,
+      ""key_event"": ""安娜主动提出为乔安娜泡一杯热茶，希望能够缓解她的不适。""
+    }
+  ],
+  ""summary_zh"": ""安娜向乔安娜抱怨夜间开始的严重胃痛，经过一番询问和推断后，两人同意如果胃痛持续，将去看医生。安娜还主动提出为乔安娜泡一杯热茶。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""安娜向乔安娜抱怨夜间开始的严重胃痛，经过一番询问后，两人同意如果胃痛持续，将去看医生。安娜主动提出为乔安娜泡热茶。""
+}",安娜向乔安娜抱怨夜间开始的严重胃痛，经过一番询问后，两人同意如果胃痛持续，将去看医生。安娜主动提出为乔安娜泡热茶。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00044,678,"Sam: Where are you?
+Kate: downstairs
+Sam: already?
+Kate: sure, come down
+Jeff: We're in the little room next to the reception
+Kate: have you noticed the woman making a cake?
+Sam: yes
+Kate: did you see the cake?
+Sam: I didn't pay attention, why?
+Kate: there was a huge penis on it
+Kate: made of marzipan or sth
+Sam: hahah, really?
+Kate: when I noticed it, I started laughing
+Kate: so she laughed too
+Sam: nice
+Kate: I asked her what's she doing
+Kate: Somebody ordered a cake with a huge penis with balls and chocolate hair
+Sam: hahah, I must see it!
+Kate: she is working in the small room under the stairs
+Sam: right, there is a kitchen",萨姆询问凯特位置，凯特在楼下，邀请他下来。提到一蛋糕上有巨大阴茎，引得两人笑场。萨姆想看这蛋糕。,Kate and Jeff are downstairs in a room next to the reception. Some lady is making a marzipan cake. ,凯特和杰夫在楼下接待处旁边的一个房间里。有位女士正在做杏仁蛋糕。,"{
+  ""participants"": [
+    ""Sam"",
+    ""Kate"",
+    ""Jeff""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Sam"",
+      ""speech_act"": ""location inquiry"",
+      ""intended_meaning"": ""Ask for Kate's location"",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Kate"",
+      ""evidence"": [
+        ""Where are you?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Kate"",
+      ""speech_act"": ""location response"",
+      ""intended_meaning"": ""Inform Sam of her location"",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Sam"",
+      ""evidence"": [
+        ""downstairs""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Kate"",
+      ""speech_act"": ""invitation"",
+      ""intended_meaning"": ""Invite Sam to come downstairs"",
+      ""actor"": ""Sam"",
+      ""action"": ""come down"",
+      ""object"": null,
+      ""recipient"": null,
+      ""evidence"": [
+        ""sure, come down""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Kate"",
+      ""speech_act"": ""observation sharing"",
+      ""intended_meaning"": ""Share an observation about a cake with a penis on it"",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""cake with a huge penis"",
+      ""recipient"": ""Sam"",
+      ""evidence"": [
+        ""there was a huge penis on it"",
+        ""made of marzipan or sth""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Kate"",
+      ""speech_act"": ""information sharing"",
+      ""intended_meaning"": ""Share information about the cake being ordered with specific details"",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""cake order details"",
+      ""recipient"": ""Sam"",
+      ""evidence"": [
+        ""Somebody ordered a cake with a huge penis with balls and chocolate hair""
+      ]
+    },
+    {
+      ""event_id"": 6,
+      ""speaker"": ""Sam"",
+      ""speech_act"": ""expression of interest"",
+      ""intended_meaning"": ""Express desire to see the cake"",
+      ""actor"": ""Sam"",
+      ""action"": ""see the cake"",
+      ""object"": ""cake with a huge penis"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""I must see it!""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Sam expresses interest in seeing the cake with a huge penis after Kate shares its details.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 6,
+      ""key_event"": ""萨姆表达了想看带有巨大阴茎的蛋糕的愿望，这是凯特分享的细节。""
+    }
+  ],
+  ""summary_zh"": ""萨姆询问凯特的位置，凯特邀请他下来并分享了一个带有巨大阴茎的蛋糕的观察结果。萨姆对这个蛋糕表现出浓厚的兴趣，渴望一睹其风采。""
+}","{
+  ""needs_revision"": true,
+  ""issues_identified"": [
+    ""untranslated_names"",
+    ""too_verbose""
+  ],
+  ""events_dropped"": [],
+  ""revision_reason"": ""包含未翻译的名字，过多细节"",
+  ""summary_zh_final"": ""萨姆询问凯特位置，凯特在楼下，邀请他下来。提到一蛋糕上有巨大阴茎，引得两人笑场。萨姆想看这蛋糕。""
+}",萨姆询问凯特位置，凯特在楼下，邀请他下来。提到一蛋糕上有巨大阴茎，引得两人笑场。萨姆想看这蛋糕。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00045,690,"Mia: God, he keeps talking about the stupid wall
+Jennifer: I think he's just senile
+Karine: unfortunately it's much more
+Karine: this populist strategy to scare people with a minority
+Karine: and then present himself as the only savior
+Peter: Karine is right, I think he's not as senile and stupid as we would like to believe
+Mia: so it's even worse - he's pure evil
+Peter: possibly yes
+Karine: I really think so, because it's not only about politics anymore
+Karine: he is destroying the Earth
+Karine: trying to shake the world's order
+Jennifer: but he's also quite stupid
+Jennifer: and the dangerous thing is his self confidence
+Jennifer: he's persistence 
+Jennifer: and ignorance
+Karine: but we have a chance to change it
+Karine: maybe Trump will be over soon?
+Mia: we will see
+Mia: but we should do anything to win the next elections
+Karine: everything!",讨论认为特朗普策略危险，非纯愚蠢。卡琳、皮特认同其有意识破坏地球秩序。众人称将努力改变现状，尤其针对下次选举。,"Mia, Jennifer, Karine and Peter do not like Trump.",米亚、珍妮弗、卡琳和彼得不喜欢特朗普。,"{
+  ""participants"": [
+    ""Mia"",
+    ""Jennifer"",
+    ""Karine"",
+    ""Peter""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Karine"",
+      ""speech_act"": ""assertion"",
+      ""intended_meaning"": ""Trump's actions are deliberate and dangerous."",
+      ""actor"": ""null"",
+      ""action"": ""destroying the Earth, shaking world order"",
+      ""object"": ""null"",
+      ""recipient"": ""group (implied)"",
+      ""evidence"": [
+        ""unfortunately it's much more"",
+        ""he is destroying the Earth"",
+        ""trying to shake the world's order""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Karine"",
+      ""speech_act"": ""opinion"",
+      ""intended_meaning"": ""Trump is not senile, but strategically using populism."",
+      ""actor"": ""null"",
+      ""action"": ""using populist strategy"",
+      ""object"": ""Trump"",
+      ""recipient"": ""group (implied)"",
+      ""evidence"": [
+        ""this populist strategy to scare people""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Karine"",
+      ""speech_act"": ""proposal"",
+      ""intended_meaning"": ""The group should work towards changing the current situation."",
+      ""actor"": ""group (implied)"",
+      ""action"": ""change it"",
+      ""object"": ""null"",
+      ""recipient"": ""null"",
+      ""evidence"": [
+        ""but we have a chance to change it""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Mia"",
+      ""speech_act"": ""agreement"",
+      ""intended_meaning"": ""Agreement with Karine's proposal to take action."",
+      ""actor"": ""group (implied)"",
+      ""action"": ""do anything to win elections"",
+      ""object"": ""next elections"",
+      ""recipient"": ""null"",
+      ""evidence"": [
+        ""we should do anything to win the next elections""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Karine"",
+      ""speech_act"": ""commitment"",
+      ""intended_meaning"": ""Karine commits to doing everything to bring about change."",
+      ""actor"": ""Karine"",
+      ""action"": ""everything"",
+      ""object"": ""changing the situation"",
+      ""recipient"": ""group (implied)"",
+      ""evidence"": [
+        ""everything!""
+      ]
+    }
+  ],
+  ""final_outcome"": ""The group agrees that Trump's actions are deliberate and dangerous, and they commit to doing everything possible to bring about change, specifically aiming to win the next elections.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 5,
+      ""key_event"": ""卡琳承诺尽一切努力带来改变，特别是赢得下一次选举。""
+    }
+  ],
+  ""summary_zh"": ""小组一致认为特朗普的行为是故意且危险的，他们承诺尽一切可能带来改变，具体目标是赢得下一次选举。""
+}","{
+  ""needs_revision"": true,
+  ""issues_identified"": [
+    ""too_verbose"",
+    ""untranslated_names""
+  ],
+  ""events_dropped"": [],
+  ""revision_reason"": ""过长，未翻译名字"",
+  ""summary_zh_final"": ""讨论认为特朗普策略危险，非纯愚蠢。卡琳、皮特认同其有意识破坏地球秩序。众人称将努力改变现状，尤其针对下次选举。""
+}",讨论认为特朗普策略危险，非纯愚蠢。卡琳、皮特认同其有意识破坏地球秩序。众人称将努力改变现状，尤其针对下次选举。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00046,711,"Pedro: batman or superman??
+Alex: honestly..  neither
+Pedro: WHAT??
+Alex: i honestly like the flash
+Pedro: whats so good about the flash :P
+Alex: duuude, he can do almost anything
+Pedro: not anything
+Alex: yea im sure batman can run as fast -_-
+Pedro: superhuman speed? thats your pitch?
+Alex: that speed opens up the whole multiverse for him.. you seriously dont get how powerful he can be
+Pedro: yeah i get your point",Pedro询问Alex对蝙蝠侠和超人的偏好，但Alex更喜欢闪电侠，并解释其能力。Pedro承认了Alex的观点。,Alex prefers the Flash to Barman and Superman thanks to his speed.,阿莱克斯更喜欢闪电侠，因为他的速度。,"{
+  ""participants"": [
+    ""Pedro"",
+    ""Alex""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Pedro"",
+      ""speech_act"": ""preference inquiry"",
+      ""intended_meaning"": ""Asking for Alex's preference between Batman and Superman."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Alex"",
+      ""evidence"": [
+        ""batman or superman??""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Alex"",
+      ""speech_act"": ""preference declaration"",
+      ""intended_meaning"": ""Stating that he likes the Flash instead of Batman or Superman."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""the Flash"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""honestly.. neither"",
+        ""i honestly like the flash""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Pedro"",
+      ""speech_act"": ""surprise expression"",
+      ""intended_meaning"": ""Expressing surprise at Alex's preference."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Alex"",
+      ""evidence"": [
+        ""WHAT??""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Alex"",
+      ""speech_act"": ""explanation"",
+      ""intended_meaning"": ""Explaining why he likes the Flash."",
+      ""actor"": null,
+      ""action"": ""explaining"",
+      ""object"": ""the Flash's abilities"",
+      ""recipient"": ""Pedro"",
+      ""evidence"": [
+        ""duuude, he can do almost anything"",
+        ""that speed opens up the whole multiverse for him.. you seriously dont get how powerful he can be""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Pedro"",
+      ""speech_act"": ""acknowledgement"",
+      ""intended_meaning"": ""Acknowledging Alex's point."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Alex"",
+      ""evidence"": [
+        ""yeah i get your point""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Pedro acknowledges Alex's preference for the Flash and his explanation of the character's abilities.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 2,
+      ""key_event"": ""Alex表示他更喜欢闪电侠，而不是蝙蝠侠或超人。""
+    },
+    {
+      ""event_id"": 4,
+      ""key_event"": ""Alex向Pedro解释了闪电侠的能力为什么强大。""
+    },
+    {
+      ""event_id"": 5,
+      ""key_event"": ""Pedro承认了Alex的观点。""
+    }
+  ],
+  ""summary_zh"": ""Pedro询问Alex对蝙蝠侠和超人的偏好，但Alex表示更喜欢闪电侠，并解释了闪电侠的能力。Pedro最终承认了Alex的观点。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""Pedro询问Alex对蝙蝠侠和超人的偏好，但Alex更喜欢闪电侠，并解释其能力。Pedro承认了Alex的观点。""
+}",Pedro询问Alex对蝙蝠侠和超人的偏好，但Alex更喜欢闪电侠，并解释其能力。Pedro承认了Alex的观点。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00047,737,"Damian: are you downtown?
+Ethan: yes
+Ethan: why?
+Damian: can you buy me a kebab?
+Damian: i'm starving
+Ethan: why won't you cook something for both of us, huh?
+Damian: man, give me a break, i had a rough day
+Ethan: ok ok
+Ethan: but i really wish you weren't such a parasite
+Damian: i'll change, scout's honour",达米安要求伊森买烤肉卷，伊森同意但抱怨达米安依赖他。达米安承诺改变。,Ethan will buy Damian a kebab. Damian had a bad day.,伊森会请达米安吃烤肉串，达米安今天过得很糟糕。,"{
+  ""participants"": [
+    ""Damian"",
+    ""Ethan""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Damian"",
+      ""speech_act"": ""request"",
+      ""intended_meaning"": ""Ask Ethan to buy a kebab for him."",
+      ""actor"": ""Ethan"",
+      ""action"": ""buy"",
+      ""object"": ""kebab"",
+      ""recipient"": ""Damian"",
+      ""evidence"": [
+        ""can you buy me a kebab?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Ethan"",
+      ""speech_act"": ""complaint"",
+      ""intended_meaning"": ""Expresses dissatisfaction with Damian's reliance on him."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Damian"",
+      ""evidence"": [
+        ""why won't you cook something for both of us, huh?"",
+        ""i really wish you weren't such a parasite""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Damian"",
+      ""speech_act"": ""promise"",
+      ""intended_meaning"": ""Promises to change his behavior."",
+      ""actor"": ""Damian"",
+      ""action"": ""change"",
+      ""object"": ""behavior"",
+      ""recipient"": null,
+      ""evidence"": [
+        ""i'll change, scout's honour""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Ethan agrees to buy Damian a kebab, but expresses his wish for Damian to be less reliant on him, to which Damian promises to change.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 3,
+      ""key_event"": ""达米安（Damian）承诺改变行为""
+    }
+  ],
+  ""summary_zh"": ""伊森（Ethan）同意为达米安买一个烤肉卷，但表达了希望达米安减少对他的依赖。达米安承诺改变行为。""
+}","{
+  ""needs_revision"": true,
+  ""issues_identified"": [
+    ""wrong_action""
+  ],
+  ""events_dropped"": [],
+  ""revision_reason"": ""更正行动归属"",
+  ""summary_zh_final"": ""达米安要求伊森买烤肉卷，伊森同意但抱怨达米安依赖他。达米安承诺改变。""
+}",达米安要求伊森买烤肉卷，伊森同意但抱怨达米安依赖他。达米安承诺改变。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00048,767,"Barry: I'm gonna go march in Women's strike, anyone interested?
+Jake: I am, already made plans with some friends, wanna join?
+Dave: I am down too, Kelly is coming with me
+Barry: Let's just meet around the campus at noon",巴里、杰克和戴夫同意在正午左右在校园附近见面，一起参加妇女罢工游行。,"Barry, Dave, Kelly, and Jake will meet around the campus at 12 to join Women's strike.",巴里、戴夫、凯利和杰克将于12点在校园附近集合，参加妇女罢工。,"{
+  ""participants"": [
+    ""Barry"",
+    ""Jake"",
+    ""Dave""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Barry"",
+      ""speech_act"": ""invitation"",
+      ""intended_meaning"": ""inviting others to join him at the Women's strike march"",
+      ""actor"": ""Barry"",
+      ""action"": ""marching in the Women's strike"",
+      ""recipient"": ""all participants"",
+      ""evidence"": [
+        ""I'm gonna go march in Women's strike, anyone interested?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Jake"",
+      ""speech_act"": ""acceptance with alternative plan"",
+      ""intended_meaning"": ""accepts the invitation but suggests joining his friends instead"",
+      ""actor"": ""Jake"",
+      ""action"": ""joining friends at the march"",
+      ""recipient"": ""Barry"",
+      ""evidence"": [
+        ""I am, already made plans with some friends, wanna join?""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Dave"",
+      ""speech_act"": ""acceptance"",
+      ""intended_meaning"": ""accepts the invitation and mentions bringing Kelly"",
+      ""actor"": ""Dave"",
+      ""action"": ""marching in the Women's strike"",
+      ""object"": ""Kelly"",
+      ""recipient"": ""Barry"",
+      ""evidence"": [
+        ""I am down too, Kelly is coming with me""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Barry"",
+      ""speech_act"": ""suggestion"",
+      ""intended_meaning"": ""suggests a meeting point and time for the group"",
+      ""actor"": ""all participants"",
+      ""action"": ""meeting"",
+      ""object"": ""campus"",
+      ""recipient"": ""all participants"",
+      ""evidence"": [
+        ""Let's just meet around the campus at noon""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Barry, Jake, and Dave agreed to meet around the campus at noon to march in the Women's strike together.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 4,
+      ""key_event"": ""巴里、杰克和戴夫同意在正午左右在校园附近见面，一起参加妇女罢工游行。""
+    }
+  ],
+  ""summary_zh"": ""巴里邀请大家参加妇女罢工游行，杰克建议加入他的朋友们，戴夫则表示会带凯利一起参加。最终，三人决定在正午左右于校园附近见面，共同参与游行。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [
+    ""too_verbose""
+  ],
+  ""events_dropped"": [],
+  ""revision_reason"": ""简化为关键事件"",
+  ""summary_zh_final"": ""巴里、杰克和戴夫同意在正午左右在校园附近见面，一起参加妇女罢工游行。""
+}",巴里、杰克和戴夫同意在正午左右在校园附近见面，一起参加妇女罢工游行。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00049,799,"Martha: Hey, can I ask you a question?
+Ophelia: Do we know each other?
+Martha: We don't, but do you mind if I ask you about the lenses from your profile picture? they are awesome and I would like to buy the similar ones
+Ophelia: it's from Crazy Lenses. They have quite reasonable prices and very fast shipping.
+Martha: Thanks!!! I'll check them :)
+Ophelia: No problem :)",玛尔塔向奥菲利亚询问了她个人资料照片中镜头的来源。奥菲利亚推荐了Crazy Lenses，玛尔塔决定查看该网站的类似镜片。,Martha likes Ophelia's lenses and wants to buy similar ones. Ophelia got them from Crazy Lenses.,玛莎喜欢奥菲莉娅的眼镜，想买类似的，奥菲莉娅是从crazy lens上买的。,"{
+  ""participants"": [
+    ""Martha"",
+    ""Ophelia""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Martha"",
+      ""speech_act"": ""request for information"",
+      ""intended_meaning"": ""Inquire about the source of Ophelia's lenses."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""lenses from Ophelia's profile picture"",
+      ""recipient"": ""Ophelia"",
+      ""evidence"": [
+        ""We don't, but do you mind if I ask you about the lenses from your profile picture?""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Ophelia"",
+      ""speech_act"": ""provision of information"",
+      ""intended_meaning"": ""Provide details about the lenses."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": ""Crazy Lenses"",
+      ""recipient"": ""Martha"",
+      ""evidence"": [
+        ""it's from Crazy Lenses. They have quite reasonable prices and very fast shipping.""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Martha"",
+      ""speech_act"": ""expression of gratitude"",
+      ""intended_meaning"": ""Thank Ophelia for the information."",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Ophelia"",
+      ""evidence"": [
+        ""Thanks!!! I'll check them :)""
+      ],
+      ""}final_outcome"": ""Martha decides to check out Crazy Lenses for similar lenses.""
+    }
+  ]
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 3,
+      ""key_event"": ""玛尔塔（Martha）决定查看Crazy Lenses的类似镜片。""
+    }
+  ],
+  ""summary_zh"": ""玛尔塔向奥菲利亚（Ophelia）询问了她个人资料照片中镜头的来源。奥菲利亚提供了信息，并推荐了Crazy Lenses。玛尔塔表示感谢，并决定查看Crazy Lenses的类似镜片。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""玛尔塔向奥菲利亚询问了她个人资料照片中镜头的来源。奥菲利亚推荐了Crazy Lenses，玛尔塔决定查看该网站的类似镜片。""
+}",玛尔塔向奥菲利亚询问了她个人资料照片中镜头的来源。奥菲利亚推荐了Crazy Lenses，玛尔塔决定查看该网站的类似镜片。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
+gold_00050,800,"Linda: Hi Dad, I want to buy flowers for mum! But I don't remember which one she likes :(
+Michael: Well, she likes all the flowers I believe
+Linda: That doesn't help! I'm on a flower market right now!
+Michael: Send me some pics then
+Linda: <file_photo> 
+Michael: Tulips are nice, roses too
+Linda:  What about carnations?
+Michael: No, carnations are boring :D
+Linda: Thanks Dad, srsly…
+Michael:  What about freesias? She likes them a lot, are there any there?
+Linda: <file_photo> 
+Michael: Take those!",迈克尔在查看了琳达从花市发送的照片后，建议她为母亲购买风信子。,Linda wants to buy flowers for her mother and asks Michael which flowers does she like. Michael suggests Linda to buy freesias.,琳达想给她妈妈买花，问迈克尔她喜欢哪种花。迈克尔建议琳达买小苍兰。,"{
+  ""participants"": [
+    ""Linda"",
+    ""Michael""
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Linda"",
+      ""speech_act"": ""request for information"",
+      ""intended_meaning"": ""Seeking advice on what flowers to buy for her mother."",
+      ""actor"": ""null"",
+      ""action"": ""asking about flower preferences"",
+      ""object"": ""mother's flower likes"",
+      ""recipient"": ""Michael"",
+      ""evidence"": [
+        ""Hi Dad, I want to buy flowers for mum! But I don't remember which one she likes :(""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Michael"",
+      ""speech_act"": ""information provision"",
+      ""intended_meaning"": ""Informing Linda that her mother likes all flowers."",
+      ""actor"": ""null"",
+      ""action"": ""stating flower preference"",
+      ""object"": ""all flowers"",
+      ""recipient"": ""Linda"",
+      ""evidence"": [
+        ""Well, she likes all the flowers I believe""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speaker"": ""Linda"",
+      ""speech_act"": ""clarification request"",
+      ""intended_meaning"": ""Seeking more specific advice as 'all flowers' is not helpful."",
+      ""actor"": ""null"",
+      ""action"": ""requesting further input"",
+      ""object"": ""more specific flower suggestions"",
+      ""recipient"": ""Michael"",
+      ""evidence"": [
+        ""That doesn't help! I'm on a flower market right now!""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speaker"": ""Michael"",
+      ""speech_act"": ""suggestion"",
+      ""intended_meaning"": ""Suggesting Linda send photos of available flowers for better advice."",
+      ""actor"": ""Linda"",
+      ""action"": ""sending photos"",
+      ""object"": ""<file_photo>"",
+      ""recipient"": ""Michael"",
+      ""evidence"": [
+        ""Send me some pics then""
+      ]
+    },
+    {
+      ""event_id"": 5,
+      ""speaker"": ""Michael"",
+      ""speech_act"": ""evaluation and recommendation"",
+      ""intended_meaning"": ""Evaluating the sent photos and recommending freesias."",
+      ""actor"": ""null"",
+      ""action"": ""approving flowers"",
+      ""object"": ""freesias"",
+      ""recipient"": ""Linda"",
+      ""evidence"": [
+        ""Tulips are nice, roses too... What about freesias? She likes them a lot, are there any there?... Take those!""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Michael recommends Linda buy freesias for her mother after evaluating the photos she sent from the flower market.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 5,
+      ""key_event"": ""迈克尔在查看了琳达从花市发送的照片后，建议她为母亲购买风信子。""
+    }
+  ],
+  ""summary_zh"": ""迈克尔在查看了琳达从花市发送的照片后，建议她为母亲购买风信子。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""迈克尔在查看了琳达从花市发送的照片后，建议她为母亲购买风信子。""
+}",迈克尔在查看了琳达从花市发送的照片后，建议她为母亲购买风信子。,semantic_agent,aya-expanse:32b,aya-expanse:32b,aya-expanse:32b,3
