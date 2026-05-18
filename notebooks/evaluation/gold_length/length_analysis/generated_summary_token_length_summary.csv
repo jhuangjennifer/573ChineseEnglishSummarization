@@ -1,0 +1,16 @@
+﻿Model,Generated summary length,n,std,median,min,max,summary_field,source_file
+mBART,12.6,50,6.02,11.0,4,31,predicted_zh,data/gold_results/mbart/mbart_gold_50_results.json
+BART + Helsinki (ST),11.8,50,4.3,12.0,4,26,predicted_zh,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+Qwen 3.5: 27b (Dir),23.76,50,7.04,23.5,11,42,final_summary,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),27.32,50,11.23,25.0,7,50,final_summary,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),24.2,50,5.99,25.5,12,39,final_summary,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (Sem),17.78,50,4.14,18.0,11,28,final_summary,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Gemma 3: 27b (Dir),23.64,50,6.67,23.0,12,40,final_summary,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),32.5,50,11.81,32.0,9,62,final_summary,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),19.4,50,5.85,19.5,4,33,final_summary,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),15.96,50,4.7,15.0,9,30,final_summary,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Aya-Expanse: 32b (Dir),35.96,50,14.52,35.5,12,81,final_summary,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),28.86,50,10.18,29.0,10,60,final_summary,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),29.12,50,12.44,28.5,12,67,final_summary,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),22.4,50,9.55,20.5,9,49,final_summary,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Golden Length,16.12,50,7.26,16.0,4,38,summary_zh,data/gold_results/gold_set_50_zh_XSAMSum_bart.json

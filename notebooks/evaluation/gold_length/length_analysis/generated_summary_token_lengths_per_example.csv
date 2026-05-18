@@ -1,0 +1,756 @@
+﻿model,row_idx,test_index,summary_field,summary_text,summary_tokens,source_file
+mBART,0,23,predicted_zh,那个30岁的马克骗艾琳。,7,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,1,30,predicted_zh,玛丽把一些盒子借给了卡特。卡特在火车站。,10,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,2,39,predicted_zh,艾拉和蒂娜的埃米里特工作人员看起来像电影明星。蒂娜在飞机上耽误了一个小时。艾拉正在去开会的路上。,24,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,3,65,predicted_zh,安娜明天想去看望她奶奶。凯瑟琳醒来后会给安娜打电话。,13,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,4,66,predicted_zh,乔伊斯给迈克尔和艾德森发了一个链接。,8,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,5,67,predicted_zh,简和史蒂文将在4点30分在主入口处见面。,10,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,6,78,predicted_zh,菲奥娜为克里斯准备了一顿丰盛的晚餐。蒂娜会为她准备一个馅饼。,15,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,7,86,predicted_zh,娜塔莉和佐伊打算在索霍举办除夕派对。,10,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,8,120,predicted_zh,乔安星期三晚上8点会去看《一个明星是出生的》。,12,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,9,137,predicted_zh,"佩顿想让卡梅隆把那部电子游戏给佩顿,但他没有时间回家,所以他会通过快递把游戏送来。",21,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,10,139,predicted_zh,保罗回家了。他忘了进行理疗。艾玛会在午夜后回家。保罗会为她准备一些食物。,19,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,11,192,predicted_zh,"哈里斯的朋友青木昨天去世了。她住在密歇根,最近没见过她。莉娜的妈妈会打电话给她。",22,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,12,210,predicted_zh,玛丽和亚兹今晚6点左右要去健身房。,9,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,13,211,predicted_zh,艾莉和阿莉亚在342号大楼上课。,8,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,14,212,predicted_zh,亚伦的猫在找耶稣。,6,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,15,215,predicted_zh,弗雷迪、凯莉、吉姆、鲍勃、格雷格、南希和凯文·斯派西在netflix上看《疯子》。,15,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,16,244,predicted_zh,安吉莉娜和琼斯今天下午会在城里见面。琼斯会打电话确认他们在哪里见面。,17,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,17,285,predicted_zh,"凯西自己剪了指甲,花了4个小时。",10,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,18,319,predicted_zh,史蒂夫会给苏打电话。,5,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,19,346,predicted_zh,吉玛和她的约会对象是洛娜和米歇尔。吉玛不想被邀请去参加他们的婚礼。,19,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,20,355,predicted_zh,安、苏和朱莉今晚要庆祝。,7,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,21,367,predicted_zh,妈妈给史蒂夫安装了一台洗碗机。,7,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,22,393,predicted_zh,劳拉今天要来。,4,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,23,417,predicted_zh,"米兰达和斯蒂芬妮取消了明天的会议,因为她得工作。",13,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,24,432,predicted_zh,"朱迪的女朋友在那里纹身,她花了1000 美元。",11,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,25,433,predicted_zh,杰西卡、迈克尔和山姆将在8月15日下午两点左右在酒店见面。,16,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,26,442,predicted_zh,丹尼尔抢走了特伦斯的钱。丹尼尔把钱忘在别的地方了。,13,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,27,499,predicted_zh,查尔斯下午五点半左右会来接娜塔莎。娜塔查会给查尔斯打电话。,12,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,28,528,predicted_zh,"安有额外的数学课,所以她7点回家。",9,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,29,532,predicted_zh,"皮特想吃酸奶,但珍觉得酸奶有梨味。",7,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,30,536,predicted_zh,"聚会结束后,克莉丝蒂和凯蒂都很累。",9,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,31,537,predicted_zh,山姆和卡拉明天下午两点在梅恩伍德的咖啡馆见面。,12,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,32,544,predicted_zh,乔安娜会给桑迪带一些游戏。,7,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,33,548,predicted_zh,"史蒂夫五分钟前买了新《梦剧》专辑。罗伯的桌子上有这张专辑, ready for the first listening。",20,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,34,551,predicted_zh,乔伊的美容院是 https:// 。,5,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,35,590,predicted_zh,诺亚和阿尔奇将在21点11分去看索尔斯泰菲尔乐队的音乐会。,16,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,36,598,predicted_zh,布拉德利给吉尔和茱莉娅发了一张猫入侵古迪森球场的视频。,14,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,37,605,predicted_zh,芭芭拉想让肖恩过来过夜。,6,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,38,616,predicted_zh,"杰克想买一个托特,因为托特不适合他的球队。",12,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,39,621,predicted_zh,菲尔和黛安娜收到了菲尔的一张太阳镜卡片。菲尔认为戴安娜的太阳镜是凯瑟琳的。黛安纳发现它们是阿德里安的。,24,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,40,635,predicted_zh,"格洛丽亚和塔德的妹妹一起烧烤了。格洛里亚正在考虑扩建她的花园。梅尔和格洛莉亚计划周六去吃烧烤,格洛里的妹妹搬到了苏格兰。",31,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,41,649,predicted_zh,"卡兰的三星s8坏了。它过热,需要一段时间才能重新启动。卡兰会去商店看看它。它还在保修期内。",22,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,42,676,predicted_zh,安娜肚子疼。乔安娜十分钟后会给安娜带热茶。,10,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,43,678,predicted_zh,凯特在接待处旁边的一个小房间里。山姆没有注意到那个女人在厨房的楼梯下面做了一个蛋糕。,23,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,44,690,predicted_zh,米娅、詹妮弗和卡琳对特朗普的当选感到失望。,10,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,45,711,predicted_zh,佩德罗认为蝙蝠侠跑得更快。,7,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,46,737,predicted_zh,"达米安饿了,所以他会给伊森买个烤肉串。",7,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,47,767,predicted_zh,巴里、杰克、戴夫和凯莉中午会在校园里见面。,11,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,48,799,predicted_zh,玛莎想从奥菲莉亚的个人资料中买类似的眼镜。,11,data/gold_results/mbart/mbart_gold_50_results.json
+mBART,49,800,predicted_zh,琳达想给妈妈买花。她正在花市。迈克尔给琳达发了几张照片。,14,data/gold_results/mbart/mbart_gold_50_results.json
+BART + Helsinki (ST),0,23,predicted_zh,马克对安妮撒谎了 有关他的年龄 安妮今天看到他的护照了,16,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),1,30,predicted_zh,卡特一小时后会借给玛丽几盒,8,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),2,39,predicted_zh,Ala正在去开会的路上 她会让Tina知道情况,12,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),3,65,predicted_zh,凯瑟琳醒来后会打电话给安娜 安娜明天会去看她奶奶,14,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),4,66,predicted_zh,Edson现在正在订票,4,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),5,67,predicted_zh,简和史蒂文四点半见面 而不是五点半,9,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),6,78,predicted_zh,菲奥娜会为克里斯准备一个妓女 蒂娜会帮她,11,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),7,86,predicted_zh,娜塔莉和奥拉弗尔 将去索霍新年之夜,9,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),8,120,predicted_zh,周四晚上八点左右 John和Joan会去看《星诞生》,12,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),9,137,predicted_zh,卡梅伦得再出城一周 佩顿要他带游戏给他,11,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),10,139,predicted_zh,艾玛午夜后会回家 保罗会给她准备一些食物,12,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),11,192,predicted_zh,Harris的朋友Aoki昨天去世了 Harris住在密歇根 几个月没见Aoki了,16,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),12,210,predicted_zh,亚兹和玛丽今晚要去瘦身俱乐部 亚兹6点去接玛丽,12,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),13,211,predicted_zh,"Aaliyah和Camille在二楼342号上课,Camille生病了",11,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),14,212,predicted_zh,Nathan给Dan发了一张他的猫在拉屎的视频,12,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),15,215,predicted_zh,弗雷迪、凯利、鲍勃、麦克、玛丽、艾伦和格雷格正在讨论他们在Netflix上看到什么。,16,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),16,244,predicted_zh,琼斯和安吉丽娜今天下午晚些时候在镇上碰头,8,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),17,285,predicted_zh,凯西自己做了指甲 她换了一个新的指甲油,12,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),18,319,predicted_zh,史蒂夫收到这个后会打电话给苏,8,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),19,346,predicted_zh,Gemma想邀请Timmy和他的约会对象 参加Lona和Michelle的婚礼,15,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),20,355,predicted_zh,苏和朱莉做的很好 安和朱莉今晚要庆祝一下,14,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),21,367,predicted_zh,史蒂夫的新洗碗机已经安装好了 这是12个设置一个的地方,15,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),22,393,predicted_zh,Lara今天要来,4,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),23,417,predicted_zh,米兰达每天工作20小时 她想取消明天和斯蒂芬妮的会面,14,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),24,432,predicted_zh,朱迪的女朋友在华沙墨水里纹了一千欧元的纹身,13,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),25,433,predicted_zh,Sam Jessica和Sam Jessica将于8月15日下午2点左右 来到旅馆,17,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),26,442,predicted_zh,丹尼尔拿走了泰伦斯的钱 泰伦斯找到了,9,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),27,499,predicted_zh,娜塔莎下午五点半在维辛尼特接查尔斯,8,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),28,528,predicted_zh,安有额外的数学课 她七点回家,7,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),29,532,predicted_zh,皮特想买梨酸奶 珍只要他们有它,9,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),30,536,predicted_zh,凯蒂和克里斯蒂在派对后累了,7,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),31,537,predicted_zh,Sam Carla和Sam Carla明天下午2点在黑木咖啡馆见面,13,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),32,544,predicted_zh,琼安娜和桑迪会玩脱衣舞或裸体舞 琼安娜会带他们去桑迪,15,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),33,548,predicted_zh,史蒂夫5分钟前买了新的《梦剧院》专辑 Rob把专辑放在桌子上,17,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),34,551,predicted_zh,乔伊给彼得寄了一条链接 与她的美容店。,10,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),35,590,predicted_zh,"伊森,利奥和阿奇周三21点11分会去看索尔斯塔菲尔 诺亚可能得晚点上班",19,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),36,598,predicted_zh,一只猫侵入了古迪森的球场,7,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),37,605,predicted_zh,扎克正要去拜访芭芭拉 肖恩会过来过夜,9,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),38,616,predicted_zh,Jake刚拉了个TOTW 他一两场比赛就会试他,11,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),39,621,predicted_zh,君士坦丁很开心 迪安娜在收音机上方的空位 发现一副墨镜,13,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),40,635,predicted_zh,Gloria和Tad的孩子都出门了 他们周六要在Mell家吃BBQ,16,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),41,649,predicted_zh,"Callan's Samsung S 8 过热, 然后它需要一段时间才能重新开始。 它仍然处于保修状态。 Callan要去商店让他们看到它。",26,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),42,676,predicted_zh,安娜胃痛 她吃麦片牛奶和香蕉做早餐 乔安娜会给她拿热茶,17,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),43,678,predicted_zh,杰夫和凯特在接待处旁边的小房间里 凯特注意到一个女人做了蛋糕,17,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),44,690,predicted_zh,米娅 彼得和卡琳担心唐纳德·特朗普,7,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),45,711,predicted_zh,亚历克斯比蝙蝠侠更喜欢闪光,6,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),46,737,predicted_zh,伊森会为达米安买烤肉串,4,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),47,767,predicted_zh,"Barry、Jake、Dave和Kelly将参加妇女罢工,中午在校园周围聚会。",14,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),48,799,predicted_zh,Martha想从Ophelia的档案照片里买眼镜,10,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+BART + Helsinki (ST),49,800,predicted_zh,琳达想给她妈妈买花 但她不记得她喜欢哪个了,14,data/gold_results/bart_helsinki/bart_helsinki_gold_50_results.json
+Qwen 3.5: 27b (Dir),0,23,final_summary,安妮发现马克在年龄上欺骗了她，他自称三十岁，实则四十岁。尽管艾琳质疑此事的重要性，安妮仍坚持认为被欺骗是严重问题。,29,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),1,30,final_summary,玛丽因缺钱向卡特借钱，卡特表示自己在火车站，一小时后归还。,15,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),2,39,final_summary,蒂娜称赞阿联酋航空员工形象出众，并抱怨在机场延误一小时后终于赶上回程航班。阿拉随后告知自己正前往参加重要会议，蒂娜为其加油，两人约定保持联系。,35,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),3,65,final_summary,安娜和凯瑟琳约定明天一起探望奶奶，并互道晚安。,11,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),4,66,final_summary,乔伊斯分享了一个链接，迈克尔认为价格很便宜，埃德森随即决定立即预订机票。,17,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),5,67,final_summary,简因担心路况，提议将见面时间提前至 4 点半，史蒂文同意。两人最终确认在正门见面。,19,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),6,78,final_summary,菲奥娜想为克里斯准备蒂娜的塔塔，但馅料做成了炒蛋。蒂娜答应帮忙，并解释需持续搅拌才能避免失败。,24,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),7,86,final_summary,奥拉夫、娜塔莉和佐伊决定新年夜去苏荷区参加蒂凡尼早餐派对，并需尽快购票。,17,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),8,120,final_summary,约翰提议周三看电影，琼因忙碌拒绝，但周四有空。两人最终约定周四晚上八点观影，由约翰负责查询场次并发送详情。,25,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),9,137,final_summary,佩顿催促卡梅伦带回电子游戏，卡梅伦因需在外地多待一周无法回家。佩顿建议通过快递寄送，卡梅伦未直接回应，佩顿要求其尽快完成任务并回家。,29,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),10,139,final_summary,保罗回家后发现错过了理疗，决定重新预约。艾玛表示将深夜到家，保罗提议为她准备食物，艾玛欣然接受。,23,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),11,192,final_summary,哈里斯告知莱娜，其好友青木昨日去世，死因尚不明。哈里斯称数月未与身在密歇根的青木见面，随后因母亲呼唤而结束对话。,28,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),12,210,final_summary,雅兹和玛丽今晚将一同前往瘦身俱乐部，尽管她们都因近期饮食放纵而忐忑，但决定面对前烹饪老师的责备，并约定六点见面。,29,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),13,211,final_summary,艾莉询问大家是否在大学，卡米尔表示生病。艾莉随后向阿莉雅确认上课地点，阿莉雅告知在二楼342教室。,24,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),14,212,final_summary,内森分享了一段视频，亚伦对此大笑不止，并调侃视频中的猫表情滑稽，两人还互相发送表情包进行幽默互动。,25,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),15,215,final_summary,众人讨论在 Netflix 观看的剧集，包括《广告狂人》、《王冠》、《纸牌屋》等，并互相推荐了《老友记》、《绝望主妇》等不同类型的节目。,26,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),16,244,final_summary,琼斯与安吉丽娜久别重逢，双方确认下午在镇上见面，琼斯稍后将致电确认具体地点。,17,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),17,285,final_summary,凯西展示了自己耗时四小时完成的精美美甲，阿梅莉亚和克里斯滕纷纷赞叹并请求她帮忙，但凯西因过程太痛苦而婉拒了。,30,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),18,319,final_summary,苏要求史蒂夫收到信息后立即回电，称此事重要，史蒂夫随即表示正在回拨。,16,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),19,346,final_summary,蒂米和杰玛讨论邀请对象，杰玛承认想参加洛娜和米歇尔的婚礼，但不确定能否改变他们的主意。,23,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),20,355,final_summary,安祝贺苏和朱莉表现出色，提议当晚庆祝，两人欣然同意。,11,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),21,367,final_summary,史蒂夫告知母亲洗碗机已安装完毕，运行安静且容量为十二人份。母亲对此表示欣慰，两人确认了使用频率并互致感谢。,27,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),22,393,final_summary,玛莉卡询问拉娜今天是否前来，拉娜确认会到，玛莉卡对此表示高兴。,13,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),23,417,final_summary,米拉达因工作繁忙请求取消与斯蒂芬妮的明日会议。斯蒂芬妮调侃其过度劳累，米拉达则戏称年轻医生虽濒临死亡却能因此获得永生。,33,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),24,432,final_summary,哈维尔询问英语纹身店，朱迪推荐华沙墨水。得知价格一千后，哈维尔决定回哥伦比亚纹身。,18,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),25,433,final_summary,山姆将于8月15日下午两点抵达杰西卡和迈克尔经营的酒店，双方对此次重逢及住宿安排均表示期待与满意。,28,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),26,442,final_summary,特伦斯误以为丹尼偷了他的钱并加以指责，后发现自己只是将钱放错地方而道歉。丹尼对此感到愤怒，认为被冤枉为小偷非常不公平。,32,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),27,499,final_summary,纳塔莎将去RER接刚抵达的查尔斯。查尔斯预计下午5:30到达，并会在韦西内站给纳塔莎打电话。,21,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),28,528,final_summary,梅格询问安是否还在学校，安表示因有额外的数学课，直到晚上七点才能回家。,18,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),29,532,final_summary,皮特询问珍妮想要什么口味的酸奶，珍妮表示只要梨味，若没有则不要买。皮特答应去查看。,21,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),30,536,final_summary,克莉丝蒂和凯蒂在派对后都感到疲惫，但她们一致认为派对非常精彩且玩得开心。,20,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),31,537,final_summary,山姆和卡拉约定明天下午两点在米恩伍德的一家蛋糕店见面。,15,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),32,544,final_summary,Joana 提议与 Sandy 玩 Dixit 或卡卡颂游戏，Sandy 表示同意，Joana 将把这两款游戏带给 Sandy。,20,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),33,548,final_summary,史蒂夫和罗布都购买了梦剧院的新专辑，并约定稍后交流各自的听后感。,17,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),34,551,final_summary,彼得请求乔伊发送美容店链接，乔伊随即提供并欢迎提问，彼得表示将查看。,16,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),35,590,final_summary,伊森告知诺亚、利奥和阿奇，索尔斯特法尔乐队将于11月21日演出。利奥确认参加，阿奇表示不去，诺亚因工作不确定能否出席。,30,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),36,598,final_summary,布拉德利分享了一只猫闯入古迪逊公园球场的视频，朱莉娅称赞其可爱，布拉德利还附上了解说，称这是埃弗顿球迷本赛季的最佳娱乐。,30,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),37,605,final_summary,芭芭拉已到家，邀请肖恩和扎克前来。肖恩确认可以带狗并决定留宿，扎克正在路上。,18,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),38,616,final_summary,杰克今年首次抽到TOTW，计划试用后出售以购买更合适的球员。汤姆今年运气不佳未抽到好球员，但杰克认为他技术很好无需额外帮助。,32,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),39,621,final_summary,菲尔收到迪安娜的卡片后，两人确认一副太阳镜不属于迪安娜、凯瑟琳或阿德里安，最终决定由他们共同保管。,24,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),40,635,final_summary,梅尔与格洛里亚通话，两人决定本周六在梅尔家举办烧烤聚会，并讨论了梅尔扩建露台的计划。她们还庆幸塔德的姐姐已搬去苏格兰，不再打扰她们的生活。,35,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),41,649,final_summary,卡兰的三星 S8 因过热出现黑屏，他计划前往商店保修，并确认已备份文件不会丢失。,19,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),42,676,final_summary,安娜因夜间突发腹痛向母亲乔安娜求助。两人推测可能是早餐中的牛奶或香蕉变质所致，但安娜予以否认。乔安娜决定为安娜准备薄荷热茶以缓解症状，并约定若无效则就医。,42,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),43,678,final_summary,凯特在楼下接待室旁的小房间，发现一位女士正在制作一个带有巨大阴茎、睾丸和巧克力头发的蛋糕，并邀请山姆和杰夫前往观看。,29,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),44,690,final_summary,米娅、珍妮弗、卡琳和彼得讨论特朗普的民粹策略及其对世界的破坏，认为他虽愚蠢但自信且危险，并决心全力赢得下次选举以推翻他。,32,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),45,711,final_summary,佩德罗询问亚历克斯更喜欢蝙蝠侠还是超人，亚历克斯表示两者都不选，他更推崇闪电侠。亚历克斯解释了闪电侠因超光速而能探索多元宇宙的潜力，佩德罗最终认同了这一观点。,36,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),46,737,final_summary,达米安因饥饿请求伊森在市中心买烤肉，伊森虽抱怨其懒惰，最终仍答应帮忙，达米安承诺会改过。,21,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),47,767,final_summary,巴里提议参加妇女罢工游行，杰克和戴夫均表示愿意参加，并约定中午在校园集合。,19,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),48,799,final_summary,玛莎询问奥菲莉亚个人资料中隐形眼镜的品牌，奥菲莉亚推荐了价格实惠且发货迅速的疯狂隐形眼镜，玛莎表示感谢。,23,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (Dir),49,800,final_summary,琳达想给妈妈买花但记不清喜好，父亲迈克尔建议她发送照片。在排除康乃馨后，迈克尔推荐了百合花，琳达最终决定购买。,26,notebooks/agents/results/full/direct/qwen/direct_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),0,23,final_summary,安妮透露，马克向她谎报了年龄，声称自己 30 岁，而他的护照显示他实际上已经 40 岁。,22,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),1,30,final_summary,玛丽向卡特要钱，卡特同意一小时后在火车站与她见面。,14,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),2,39,final_summary,蒂娜和艾拉讨论了酋长国员工令人印象深刻的外表，随后蒂娜分享了她因航班延误而感到的沮丧以及那位话多的飞行员。艾拉接着提到要前往参加一场重要会议，蒂娜便祝她好运。,44,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),3,65,final_summary,安娜和凯瑟琳计划明天去拜访她们的祖母，并约定早上互相打电话。,15,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),4,66,final_summary,乔伊斯分享了一个廉价机票的链接，促使埃德森立即预订了一张。,15,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),5,67,final_summary,简和史蒂文约定下午 4 点 30 分在主入口见面，尽管史蒂文对新道路充满信心，简仍对行程时间表示担忧。,23,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),6,78,final_summary,菲奥娜请求蒂娜帮忙为克里斯准备挞，她承认自己已经买好了挞皮，但之前制作馅料时失败了。蒂娜同意协助，并解释说馅料需要持续搅拌，以免变成炒鸡蛋。,36,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),7,86,final_summary,奥拉夫、娜塔莉和佐伊在拒绝了歌剧选项后，决定参加在苏豪区一家俱乐部举办的优雅新年前夜派对。他们同意立即购买门票以确保席位。,31,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),8,120,final_summary,约翰和琼因琼周三无法出席，将电影计划从周三改至周四晚上 8 点。约翰将查找放映详情并发送给琼。,25,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),9,137,final_summary,佩顿敦促卡梅伦通过快递交付一款电子游戏，因为卡梅伦将离开城镇一周。卡梅伦拒绝了这个建议，促使佩顿坚持必须立即完成这项工作。,27,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),10,139,final_summary,保罗提到在忙碌的一天后回家，期间他错过了物理治疗预约，而艾玛则告知他她将晚归，并感谢他主动提出为她准备食物。,31,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),11,192,final_summary,哈里斯告诉莱娜，他的朋友青木已于昨日去世，目前死因尚不清楚。两人简要讨论了青木在密歇根州的生活，随后哈里斯结束对话去接听母亲的电话。,34,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),12,210,final_summary,雅兹和玛丽计划今晚参加她们前烹饪老师的减肥俱乐部，尽管她们最近有些放纵。雅兹将于下午 6 点左右接玛丽去参加活动。,29,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),13,211,final_summary,卡米尔生病了，而艾莉和阿里亚确认她们的课程在二楼的 342 教室进行。,17,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),14,212,final_summary,内森和亚伦分享了一段关于猫的幽默视频，开玩笑说猫的表情看起来像是在经历精神时刻，又像是在排便。他们一边大笑一边交换动图，并指出这段视频最初是由丹发送的。,42,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),15,215,final_summary,该小组讨论了他们目前正在观看或已看完的各种电视节目，范围从《广告狂人》和《王冠》等剧情片到《老友记》等情景喜剧。一些成员推荐了特定的剧集，而另一些成员则对不同流派和演员的质量表达了强烈的看法。,50,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),16,244,final_summary,琼斯和安吉丽娜寒暄后约定下午在镇上见面，琼斯计划随后致电确认具体地点。,17,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),17,285,final_summary,凯西分享了一张自己做的指甲照片，令阿米莉亚和克里斯汀印象深刻。尽管她们请求凯西也为她们做指甲，但凯西拒绝了，因为整个过程耗时近四个小时且难度太大。,41,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),18,319,final_summary,苏要求史蒂夫立即就一件重要事项给她打电话，史蒂夫同意照办。,14,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),19,346,final_summary,蒂米和杰玛讨论了活动的潜在宾客，杰玛开玩笑地承认她希望能参加洛娜和米歇尔的婚礼。蒂米对此取笑她，杰玛则承认自己不确定能否说服这对夫妇邀请她。,38,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),20,355,final_summary,安祝贺苏和朱莉取得成功，并提议今晚庆祝，两位女士都热情地接受了。,17,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),21,367,final_summary,史蒂夫的新洗碗机已经安装完毕，他对机器运行时的静音效果和外观感到满意。他的母亲很高兴他对这台电器感到满意，两人简要讨论了它的容量和使用频率。,39,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),22,393,final_summary,拉拉向玛莉卡确认她今天会来。,7,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),23,417,final_summary,米兰达因工作请求取消明天的会议，斯蒂芬妮借此开玩笑说年轻医生要忍受极端的工作时长。米兰达俏皮地为这一职业辩护，声称这种濒临死亡的经历能赋予永生，斯蒂芬妮则带着笑意接受了这一说法。,49,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),24,432,final_summary,朱迪向哈维尔推荐华沙纹身店，但得知价格为 1000 后，他决定在哥伦比亚纹身。,17,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),25,433,final_summary,山姆确认他将于 8 月 15 日下午 2 点左右抵达酒店，他和杰西卡都对即将重逢感到兴奋。,24,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),26,442,final_summary,特伦斯错误地指控丹尼尔偷了他的钱，后来才发现是自己放错了地方。尽管特伦斯道了歉，丹尼尔仍对这项指控感到不快。,30,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),27,499,final_summary,娜塔莎将在查尔斯下午 5 点 30 分左右抵达韦西内 RER 站时去接他。,18,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),28,528,final_summary,安正在参加额外的数学课程，将于晚上 7 点到家。,12,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),29,532,final_summary,皮特问詹是否想要梨味酸奶，她确认自己只想要那种特定口味，否则就什么都不要。,19,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),30,536,final_summary,克里斯蒂和凯蒂在派对后都感到疲惫，但一致认为派对非常棒且充满乐趣。,17,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),31,537,final_summary,山姆和卡拉约定明天下午两点在米恩伍德的咖啡馆见面，享用一些蛋糕。,17,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),32,544,final_summary,乔安娜建议与桑迪一起玩《只言片语》或《卡卡颂》，桑迪同意了，因此乔安娜将把游戏带到她那里。,23,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),33,548,final_summary,史蒂夫和罗布都购买了梦剧院乐队的新专辑，并计划在听完后分享他们的看法。,20,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),34,551,final_summary,乔伊向彼得发送了她美容店的链接，彼得同意进行评论。,12,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),35,590,final_summary,伊森、利奥和诺亚讨论了参加 11 月 21 日索尔斯塔法乐队演唱会的事宜，而阿奇则表示不感兴趣。诺亚非常渴望前往，但因可能存在的工作冲突而仍不确定。,37,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),36,598,final_summary,布拉德利、吉尔和朱莉亚因一段猫咪闯入古迪逊球场的视频而忍俊不禁，布拉德利开玩笑说，这是埃弗顿球迷整个赛季最精彩的娱乐。,26,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),37,605,final_summary,芭芭拉邀请肖恩和扎克到她的家中，并确认肖恩可以带上他的狗并留宿过夜。,20,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),38,616,final_summary,杰克庆祝抽到了他今年的首张周最佳阵容球员卡，并计划在几场比赛测试后将其出售。汤姆对自己今年抽卡运气不佳感到沮丧，但杰克安慰他，凭借他的技术，特殊卡片并非必需。,43,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),39,621,final_summary,菲尔和迪安娜在迪安娜的车里发现了一副太阳镜，这副眼镜既不属于他们自己，也不属于他们的朋友。由于没有其他任何人驾驶过这辆车，他们决定保留并妥善保管这副眼镜。,44,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),40,635,final_summary,梅尔和格洛里亚在孩子们离家后互道近况，并商定本周六在梅尔家举办烧烤聚会。她们还讨论了梅尔扩建露台的计划，并对塔德那位难相处的妹妹已搬走感到宽慰。,39,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),41,649,final_summary,卡兰的三星 S8 因过热而显示黑屏，这是他计划利用保修在门店解决的 recurring 问题。他向韦德保证，由于他定期备份文件，其数据安全无虞。,32,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),42,676,final_summary,安娜告诉母亲乔安娜她持续胃痛，两人讨论了可能的原因，并决定如果情况没有好转就去看医生。随后，乔安娜提出给安娜端来热薄荷茶以缓解疼痛。,36,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),43,678,final_summary,凯特告知萨姆和杰夫，厨房里有一位女士正在烘烤一个装饰着巨大杏仁糖阴茎和巧克力头发的蛋糕。萨姆对此感到好笑，并表示想看看这个不寻常的蛋糕。,37,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),44,690,final_summary,该群体讨论了一位政治领导人危险的民粹主义策略及其对环境造成的破坏，并辩论其行为是源于衰老还是蓄意的邪恶。他们得出结论，尽管此人无知，但其顽固坚持使其构成威胁，因此他们决心尽一切努力赢得下一次选举。,50,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),45,711,final_summary,亚历克斯说服佩德罗，闪电侠凭借超人的速度和进入多元宇宙的能力，比蝙蝠侠或超人更强大。,20,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),46,737,final_summary,达米安因经历糟糕的一天而饥肠辘辘，便请求伊桑为他买一份烤肉串。伊桑勉强答应，但批评达米安是个寄生虫，达米安则承诺会改过自新。,27,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),47,767,final_summary,巴里、杰克和戴夫计划一同参加女性罢工活动，戴夫将带上凯莉，他们约定中午在校园集合。,20,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),48,799,final_summary,玛莎询问奥菲莉亚关于她个人资料照片中隐形眼镜的事宜，奥菲莉亚推荐了“疯狂隐形眼镜”，因为其价格合理且发货迅速。,24,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (ST),49,800,final_summary,琳达在市场向父亲求助，希望他帮忙为母亲挑选鲜花。在查看照片后，迈克尔建议她购买母亲最爱的小苍兰。,25,notebooks/agents/results/full/summarize_then_translate/qwen/st_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),0,23,final_summary,安妮发现马克在年龄上对她撒谎，他自称三十岁，但护照显示实际为四十岁。尽管艾琳质疑此事的重要性，安妮仍坚持认为被欺骗很严重。,32,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),1,30,final_summary,玛丽因手头紧向卡特借几盒，卡特答应一小时后在火车站交付，玛丽表示感谢。,17,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),2,39,final_summary,蒂娜称赞阿联酋航空机组形象，但抱怨机场滞留及航班延误。阿拉表示同情，随后告知要去开会，两人约定保持联系。,23,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),3,65,final_summary,安娜提议明天探望奶奶，凯瑟琳欣然同意，并约定醒来后联系，随后两人互道晚安。,16,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),4,66,final_summary,乔伊斯分享了一个链接，迈克尔感叹价格太便宜，埃德森则决定立即订票。,15,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),5,67,final_summary,简提议将见面时间改为 4 点半，史蒂文同意。两人确认将在主入口见面。,17,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),6,78,final_summary,菲奥娜邀请蒂娜帮忙为克里斯做挞。菲奥娜已买好挞皮，但馅料做成了柠檬炒蛋。蒂娜安慰她，并指出加鸡蛋时需不停搅拌才能避免失败。,31,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),7,86,final_summary,三人讨论除夕安排，娜塔莉提议高雅活动，奥拉夫建议派对。最终他们选定苏荷区一家俱乐部，并决定立即购票。,21,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),8,120,final_summary,约翰邀请琼周三看电影被拒，因琼太忙。两人最终约定周四晚八点观看《一个明星的诞生》，约翰将查询上映信息并发给琼。,28,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),9,137,final_summary,佩顿催促卡梅伦带游戏回家，卡梅伦因在外地需停留一周无法带回。佩顿建议快递，卡梅伦抱怨其刻薄，佩顿要求其尽快处理事务并回家。,27,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),10,139,final_summary,保罗忙完回家，因错过理疗将改约。艾玛深夜才归，保罗主动提出为她备餐，艾玛欣然接受。,21,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),11,192,final_summary,哈里斯告知莱娜，其好友青木昨日去世，死因尚不明。两人谈及青木住在密歇根州，哈里斯已数月未见。随后哈里斯因母亲呼唤而告别。,27,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),12,210,final_summary,雅兹和玛丽虽因近期饮食放纵而不愿去减肥俱乐部，但决定硬着头皮参加。两人约定六点在玛丽家见面，由雅兹接她一同前往。,26,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),13,211,final_summary,艾莉询问大家是否在大学，阿莉亚确认，卡米尔表示生病。艾莉随后向阿莉亚确认上课地点，得知在二楼 342 教室。,23,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),14,212,final_summary,内森分享了一段搞笑视频，亚伦大笑并调侃视频人物表情像自家猫拉屎。两人互相发送表情包，戏称这是“精神时刻”和“寻找耶稣”，全程充满欢乐。,32,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),15,215,final_summary,众人讨论奈飞剧集，提及《广告狂人》《王冠》等，对《纸牌屋》新季评价不一，并分享了对《老友记》《绝望主妇》等剧的喜爱。,26,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),16,244,final_summary,琼斯与安吉丽娜寒暄后，约定下午在城里见面，琼斯稍后将致电确认具体地点。,17,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),17,285,final_summary,凯西展示自制美甲，获阿米莉亚和克里斯滕称赞。因耗时近四小时，凯西婉拒了两人请求其帮忙做美甲的提议。,26,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),18,319,final_summary,苏收到重要信息，要求史蒂夫立即回电，史蒂夫答应马上拨打。,12,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),19,346,final_summary,蒂米与杰玛讨论婚礼邀请名单，杰玛想邀请洛娜和米歇尔参加招待会，蒂米调侃她仍期待收到请柬，杰玛承认难以改变对方主意。,27,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),20,355,final_summary,安祝贺苏和朱莉表现出色，提议当晚庆祝，两人均欣然同意。,12,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),21,367,final_summary,史蒂夫告知妈妈洗碗机已送达并安装完毕，他称赞其美观安静。妈妈关心容量，史蒂夫表示虽不确定是否十二人份，但隔日使用已足够，两人互致满意与爱意。,36,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),22,393,final_summary,玛丽卡询问拉拉今天是否前来，拉拉确认会来，玛丽卡对此表示高兴。,16,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),23,417,final_summary,米兰达因工作需取消明日会议，斯蒂芬妮质疑其过度劳累。米兰达辩称年轻医生皆如此，虽接近死亡却能幸存成就不朽，斯蒂芬妮对此表示无奈。,32,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),24,432,final_summary,哈维尔询问附近是否有英语纹身店，朱迪推荐了华沙墨水店并展示其女友的纹身。得知价格为一千后，哈维尔嫌贵，决定回哥伦比亚再纹。,31,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),25,433,final_summary,山姆称赞酒店并表示期待下月入住。迈克尔确认他们将于 8 月 15 日下午两点抵达，双方对再次相聚感到高兴。,26,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),26,442,final_summary,特伦斯误以为丹尼尔偷了他的钱并加以指责，随后发现钱是自己放错了地方。特伦斯道歉后，丹尼尔表示对此事感到愤怒。,28,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),27,499,final_summary,娜塔莎将去 RER 接刚落地的查尔斯。查尔斯预计下午 5 点 30 分到达，并会在抵达韦西内站时致电娜塔莎。,24,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),28,528,final_summary,安因有额外数学课仍在学校，预计七点到家，梅格询问何时能见到她。,15,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),29,532,final_summary,皮特询问珍想要什么口味的酸奶，珍表示只要梨味，若无货则不买其他口味。皮特答应去查看。,23,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),30,536,final_summary,克里斯蒂和凯蒂在派对后都感到疲惫，但一致认为派对很棒，两人玩得很开心。,19,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),31,537,final_summary,山姆邀请明天休息的卡拉下午见面，两人约定两点在米恩伍德咖啡馆碰面，卡拉还推荐了那里的蛋糕。,24,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),32,544,final_summary,乔安娜提议玩迪克西特或卡卡颂，桑迪欣然同意，乔安娜将把这两款游戏带给桑迪。,20,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),33,548,final_summary,史蒂夫刚买了梦剧院新专辑，罗布桌上也有这张准备首听，两人约定稍后交流听后感。,18,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),34,551,final_summary,彼得向乔伊索要美容店链接，乔伊提供了网址并表示如有问题可随时提问，彼得确认收到并准备查看。,24,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),35,590,final_summary,伊森提议 11 月 21 日观看索尔斯塔菲尔演出，利奥极力邀请，阿奇拒绝。诺亚因工作不确定能否参加，但表示会确认，不想错过。,29,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),36,598,final_summary,布拉德利分享了一只猫闯入古迪逊公园球场的视频，朱莉娅和吉尔觉得非常可爱，布拉德利称这是埃弗顿球迷本赛季最棒的娱乐。,28,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),37,605,final_summary,芭芭拉告知已到家，肖恩询问能否带狗并获准，随后提出留宿过夜，芭芭拉欣然同意。,16,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),38,616,final_summary,杰克抽到今年首张 TOTW 卡，因阵容不合计划试用后出售。汤姆抽卡运气不佳，杰克安慰他游戏水平很好，两人轻松调侃。,27,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),39,621,final_summary,菲尔感谢迪安娜的卡片，并确认太阳镜非凯瑟琳或迪安娜所有。两人推测可能是阿德里安的，决定代为保管。,23,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),40,635,final_summary,梅尔与格洛丽亚通话，两人聊起孩子离家后的生活，并约定本周末在梅尔家举办烧烤。她们还讨论了梅尔扩建露台的设计，并共同表达了对塔德妹妹搬走的庆幸。,39,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),41,649,final_summary,卡兰的三星 S8 出现黑屏且曾过热，韦德提醒电池危险。卡兰因手机在保修期内，计划送店检查，并确认已备份数据不会丢失。,28,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),42,676,final_summary,安娜因腹痛向母亲求助，两人排查饮食原因未果。母亲建议观察或就医，安娜决定为其冲泡薄荷茶缓解，预计十分钟后送达。,28,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),43,678,final_summary,凯特告知山姆和杰夫，接待处旁小房间内有一位女士正在制作一个带有巨大阴茎、睾丸和巧克力头发的定制蛋糕，山姆对此很感兴趣。,27,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),44,690,final_summary,众人认为特朗普并非老糊涂，而是利用民粹策略破坏世界秩序。尽管他愚蠢且固执，但大家决心不惜一切代价赢得下次选举以改变现状。,26,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),45,711,final_summary,佩德罗询问亚历克斯更喜欢蝙蝠侠还是超人，亚历克斯表示更偏爱闪电侠。他解释闪电侠速度极快，甚至能打开多元宇宙，佩德罗最终认可了他的观点。,30,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),46,737,final_summary,达米安因疲惫请求在市中心的朋友伊森帮忙买烤肉串。伊森虽不满其依赖行为，最终仍答应帮忙，达米安承诺会改正。,25,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),47,767,final_summary,巴里提议参加女性罢工游行，杰克和戴夫均表示参加并邀请同伴，众人约定中午在校园里碰头。,22,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),48,799,final_summary,玛莎询问奥菲莉亚个人资料中佩戴的美瞳品牌，奥菲莉亚推荐了“疯狂美瞳”，并称赞其价格合理、发货迅速，玛莎表示感谢。,24,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (TS),49,800,final_summary,琳达在花卉市场想给妈妈买花，因记不清喜好向父亲求助。经父亲建议并查看图片，最终决定购买妈妈喜爱的小苍兰。,26,notebooks/agents/results/full/translate_then_summarize/qwen/ts_qwen_50samples.jsonl
+Qwen 3.5: 27b (Sem),0,23,final_summary,安妮揭露马克谎报年龄，他自称三十岁实则四十岁。尽管艾琳质疑此事的重要性，安妮仍坚持认为这种欺骗是严重的背叛。,25,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),1,30,final_summary,玛丽向卡特借钱，卡特同意一小时后借给她。,11,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),2,39,final_summary,蒂娜因航班延误将乘晚班机回家，阿拉正前往重要会议，并答应告知蒂娜会议结果。,19,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),3,65,final_summary,安娜提议明天去探望祖母，凯瑟琳同意并承诺早上醒来后给安娜打电话。,16,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),4,66,final_summary,乔伊斯分享了一个低价优惠链接，埃德森随即决定立即预订门票。,14,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),5,67,final_summary,简提议将会议时间改为四点三十分，史蒂文同意该时间，并确认在主入口见面。,18,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),6,78,final_summary,蒂娜答应帮菲奥娜为克里斯准备挞，并建议她在加蛋时持续搅拌，以免做成炒蛋。,17,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),7,86,final_summary,娜塔莉提议看歌剧被奥拉弗尔拒绝，最终三人决定去苏豪区的俱乐部参加新年派对，奥拉弗尔承诺立即购票。,23,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),8,120,final_summary,琼因周三忙碌拒绝约翰的邀请，双方改约至周四晚八点，约翰承诺发送影院详情。,17,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),9,137,final_summary,卡梅伦因时间不足无法回家，佩顿坚持要求其通过快递寄送电子游戏并立即回家。,16,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),10,139,final_summary,保罗将重新预约理疗，并同意为午夜后回家的埃玛准备食物。,15,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),11,192,final_summary,哈里斯告知莱娜其朋友青木去世的消息，随后因母亲呼唤而结束对话。,16,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),12,210,final_summary,雅兹提议六点接玛丽去减肥俱乐部，玛丽同意该计划。,12,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),13,211,final_summary,卡米拉因病告知无法出席，阿莉雅确认课程地点为二楼342室。,15,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),14,212,final_summary,内森向亚伦分享了一段由丹转发的搞笑视频，亚伦对此大笑并开玩笑回应。,16,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),15,215,final_summary,弗雷迪向凯利推荐《古战场传奇》或《都铎王朝》，凯利拒绝了鲍勃推荐的《格林》或《萨布丽娜》，迈克则建议格雷格观看《白宫风云》。,26,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),16,244,final_summary,琼斯提议下午在镇上见面，安吉丽娜同意，琼斯承诺随后致电确认具体地点。,15,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),17,285,final_summary,凯西确认自己涂指甲耗时四小时。阿米莉亚和克里斯汀请求凯西帮她们涂指甲，但凯西因过程太耗时而拒绝了。,28,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),18,319,final_summary,苏要求史蒂夫收到消息后立即致电，史蒂夫随即同意并拨通了电话。,15,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),19,346,final_summary,杰玛承认她想参加洛娜和米歇尔的婚礼，但不确定能否说服她们邀请自己。,18,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),20,355,final_summary,安提议今晚举行庆祝活动，苏和朱莉均表示同意参加。,11,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),21,367,final_summary,史蒂夫告知母亲洗碗机已安装完毕，确认其为十二人份型号，并计划每隔一天使用一次。,19,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),22,393,final_summary,玛丽卡询问劳拉今天是否出席，劳拉确认会来。,11,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),23,417,final_summary,米兰达因工作请求取消明日会议，斯特凡妮质疑其过度工作，未确认取消。,16,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),24,432,final_summary,朱迪推荐华沙纹身店并告知价格为1000，哈维尔因价格过高决定改在哥伦比亚纹身。,19,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),25,433,final_summary,迈克尔确认酒店预订已安排，并与萨姆最终确定抵达时间为8月15日下午2点。,21,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),26,442,final_summary,特伦斯指控丹尼尔偷钱，丹尼尔予以否认。特伦斯随后找到钱并撤回指控，但丹尼尔对此感到愤怒。,19,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),27,499,final_summary,娜塔莎将去韦西内站接查尔斯，查尔斯承诺到达时给她打电话。,14,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),28,528,final_summary,安因有额外的数学课而无法立即见面，但她承诺晚上七点会在家里。,17,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),29,532,final_summary,珍妮要求皮特仅在有梨味酸奶时购买，拒绝其他口味。皮特最终同意，若无梨味则不买任何酸奶。,20,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),30,536,final_summary,克里斯蒂询问凯蒂派对后的状况，凯蒂表示很累，但两人一致认为派对非常愉快。,17,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),31,537,final_summary,山姆提议明天下午见面，卡拉同意并确认在米恩伍德的咖啡馆两点碰头，山姆随后确认了时间。,22,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),32,544,final_summary,乔安娜提议玩迪克斯特或卡卡颂，桑迪表示同意，乔安娜承诺将游戏带到桑迪处。,18,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),33,548,final_summary,史蒂夫购买了新的梦剧院乐队专辑，罗伯也已备好该专辑，两人约定稍后分享听后感。,20,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),34,551,final_summary,彼得向乔伊索要美容店链接，乔伊成功提供，彼得同意查看。,12,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),35,590,final_summary,伊桑询问索尔斯塔菲尔演唱会出席情况，利奥确认参加，诺亚因工作不确定但承诺稍后通知。,20,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),36,598,final_summary,布拉德利告知大家古迪逊球场出现猫咪，吉尔分享了视频，布拉德利随后分享了现场解说音频。,18,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),37,605,final_summary,芭芭拉邀请肖恩来家里，允许他带狗，肖恩同意留宿。,11,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),38,616,final_summary,杰克获得了一名周最佳球员，他计划试用一两场比赛后将其出售，以便购买更适合自己阵容的球员。,24,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),39,621,final_summary,迪安娜将太阳镜送给菲尔，菲尔同意收下并负责保管。,12,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),40,635,final_summary,梅尔和格洛里亚商定本周六在梅尔家举办烧烤，梅尔负责准备食物，格洛里亚负责饮料和甜点。,19,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),41,649,final_summary,卡兰的三星S8因过热黑屏，韦德警告电池危险后，卡兰决定去商店保修，并确认数据已备份。,22,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),42,676,final_summary,安娜胃痛，提议若未缓解则看医生。乔安娜为安娜泡薄荷茶，安娜告知自己在房间。,21,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),43,678,final_summary,凯特描述了一个带有露骨图案的蛋糕，并指出它在楼梯下的小房间里制作，山姆决定前去观看。,23,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),44,690,final_summary,卡琳和彼得认定该人物是危险的战略威胁，米娅承诺将不惜一切代价赢得下次选举。,19,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),45,711,final_summary,亚历克斯拒绝蝙蝠侠和超人，偏爱闪电侠，并解释其速度赋予跨宇宙力量。佩德罗最终认可了亚历克斯的观点。,22,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),46,737,final_summary,达米安请求伊森买烤肉串，伊森虽抱怨但同意，达米安承诺改变。,12,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),47,767,final_summary,巴里邀请杰克和戴夫参加女性罢工游行，两人均同意，并约定中午在校园集合。,18,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),48,799,final_summary,玛莎向奥菲莉亚询问美瞳品牌，奥菲莉亚推荐了Crazy Lenses，玛莎决定去查看。,17,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Qwen 3.5: 27b (Sem),49,800,final_summary,琳达向父亲迈克尔请教为母亲选花的事宜。迈克尔推荐了香雪兰，并指示琳达购买照片中的那束。,23,notebooks/agents/results/full/semantic/qwen/semantic_qwen27b_50samples.jsonl
+Gemma 3: 27b (Dir),0,23,final_summary,安妮发现男子马克撒谎，称自己30岁，实际年龄为40岁。她对此感到难过。,18,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),1,30,final_summary,玛丽向卡特借钱，卡特表示可以借，但需要一个小时，因为他在火车站。,16,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),2,39,final_summary,蒂娜在机场延误后将乘坐晚班飞机回家，并与一位健谈的飞行员聊天。阿拉正在前往重要会议途中，并希望蒂娜为她祈祷好运。,30,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),3,65,final_summary,安娜想和凯瑟琳明天一起探望奶奶，凯瑟琳同意并表示会叫安娜，两人互相道晚安。,19,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),4,66,final_summary,乔伊斯分享了一张便宜的机票链接，迈克尔认为价格很划算，埃德森立即表示要预订。,19,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),5,67,final_summary,简恩和史蒂文商定将见面时间提前至下午四点半，在主入口见面。他们预计路程需要三小时，但史蒂文认为新路更快。,28,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),6,78,final_summary,菲奥娜想为克里斯做提塔，向蒂娜求助。蒂娜同意帮忙，并提醒制作提塔时加蛋后要不停搅拌，否则会变成炒蛋。,25,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),7,86,final_summary,奥拉夫、娜塔莉和佐伊计划在新年之夜去索霍参加“蒂凡尼的早餐”主题派对，并尽快购买门票。,21,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),8,120,final_summary,约翰想和琼周三看《一个明星的诞生》，但琼太忙。他们最终决定周四晚上八点观看，约翰会发送影院信息。,22,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),9,137,final_summary,佩顿要求卡梅隆带回游戏，但卡梅隆表示因工作需要出差一周。佩顿建议快递，卡梅隆表示不满，并承诺尽快完成工作回家。,25,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),10,139,final_summary,保罗回家后发现忘记了物理治疗，并会重新预约。艾玛将深夜回家，保罗提议为她准备食物，艾玛欣然接受。,23,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),11,192,final_summary,哈里斯的友人青木昨日去世，死因尚不清楚。哈里斯心情不好，需要去应付母亲的呼叫。,19,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),12,210,final_summary,雅兹和玛丽都想去减肥俱乐部，虽然她们最近放纵了饮食。她们决定克服羞怯，参加今晚六点左右的聚会，雅兹将接玛丽。,27,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),13,211,final_summary,艾莉询问阿利亚是否在大学，得知卡米尔生病。课程地点已更改至二楼342教室。,17,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),14,212,final_summary,娜森和亚伦观看了一段视频，亚伦觉得视频中的女子表情像他猫咪上厕所时的样子，两人都觉得非常搞笑。丹将视频分享给娜森。,32,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),15,215,final_summary,弗雷迪看完《广告狂人》，凯莉看完《王冠》。大家推荐了《异乡人》、《都铎王朝》、《僵尸肖恩》、《格林童话》、《萨布丽娜》、《纸牌屋》、《西方律政》、《博迪卫士》、《美少女谎言》、《绯闻女孩》、《绝望主妇》和《老友记》等剧。,35,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),16,244,final_summary,琼斯和安吉丽娜相遇，两人决定今天下午在镇上见面，琼斯会电话确认具体地点。,16,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),17,285,final_summary,凯西（Casey）自制美甲，耗时四小时。阿米莉亚（Amelia）和克里斯汀（Kristen）想让凯西也为她们做，但凯西表示太辛苦，拒绝了。,28,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),18,319,final_summary,苏伊让史蒂夫收到消息后给她打电话，因为这很重要。史蒂夫表示好的，正在打电话。,18,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),19,346,final_summary,蒂米和杰玛讨论邀请参加婚礼的人选，杰玛承认想参加洛娜和米歇尔的婚礼宴会，但不知道是否能如愿。,25,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),20,355,final_summary,安（Ann）祝贺苏（Sue）和朱莉（Julie）表现出色。大家同意今晚庆祝。,13,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),21,367,final_summary,史蒂夫的洗碗机已安装完毕，效果很好，运行安静。妈妈很高兴史蒂夫对新洗碗机感到满意。,20,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),22,393,final_summary,玛丽卡询问拉拉今天是否会来，拉拉确认会来。,12,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),23,417,final_summary,米兰达因工作原因想取消与斯蒂芬妮的明日会议，斯蒂芬妮对此感到不满。米兰达解释说这是年轻医生的常态。,26,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),24,432,final_summary,华沙纹身店有英文服务，女友在那里做了纹身，费用为1000。 贾维尔决定回哥伦比亚做纹身。,21,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),25,433,final_summary,萨姆赞扬了杰西卡和迈克尔的酒店。他确认了八月十五号下午两点入住，并表达了期待再次见面的喜悦。,24,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),26,442,final_summary,特伦斯误以为丹尼尔拿了他的钱，后发现钱放在别处，为此向丹尼尔道歉。丹尼尔表示非常生气。,21,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),27,499,final_summary,娜塔莎同意在RER火车站接查尔斯。查尔斯刚落地，预计下午五点半到达，并会在韦西内站打电话给娜塔莎。,22,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),28,528,final_summary,梅格询问安的放学时间，安表示有额外的数学课，将于晚上七点到家。,17,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),29,532,final_summary,皮特询问珍想要什么口味的酸奶，珍想要梨子口味，如果没有则无需购买。皮特将查看是否有梨子口味，如果没有则不购买任何酸奶。,31,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),30,536,final_summary,克里斯蒂和凯蒂都觉得派对结束后很疲惫，但他们都玩得很开心。,17,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),31,537,final_summary,萨姆询问卡拉明天是否有空，卡拉表示明天休息。两人约定明天下午两点在米恩伍德的咖啡馆见面。,22,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),32,544,final_summary,乔安娜提议和桑迪玩游戏，包括“迪克西特”或“卡卡颂”，桑迪同意，乔安娜将带游戏去找她。,22,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),33,548,final_summary,史蒂夫和罗布都购买了梦剧场的新专辑，并计划稍后交流听后感。,14,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),34,551,final_summary,彼得要求乔伊发送她的美容店链接，乔伊提供了链接并欢迎彼得提问。,16,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),35,590,final_summary,伊森询问谁去看索尔斯塔菲尔乐队的演出，定于11月21日。里奥和伊森想去，诺亚可能因工作无法参加，阿奇则认为有更好的演唱会。诺亚表示会考虑。,37,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),36,598,final_summary,一只小黑猫闯入古迪逊公园球场，引发现场球迷和观众的欢笑，成为埃弗顿本赛季最佳娱乐瞬间。,19,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),37,605,final_summary,芭芭拉欢迎肖恩带狗过来，肖恩决定留宿一晚。扎克也正在赶来。,14,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),38,616,final_summary,杰克抽到了本周最佳球员，这是他今年的第一次。他打算出售这张卡，虽然会先试用一两场，因为这张卡不适合他的阵容。汤姆今年运气不好，还没有抽到厉害的球员。,39,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),39,621,final_summary,菲尔收到了迪娜的卡片，康斯坦丁很高兴。太阳镜不属于凯瑟琳或迪娜，大家决定保管起来。阿德里安如果想要，迪娜表示没问题。,25,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),40,635,final_summary,梅尔和格洛丽亚决定在梅尔家举办烧烤派对，时间定在本周六。她们还聊了梅尔的儿媳，都觉得她搬到苏格兰是件好事。,29,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),41,649,final_summary,卡兰的三星 S8 出现黑屏问题，怀疑是过热导致。他将前往商店维修，设备还在保修期内，并且他有备份文件。,25,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),42,676,final_summary,安娜（Anna）感到严重的胃痛，可能与食物有关。 乔安娜（Joanna）建议如果情况没有好转，就去看医生。安娜将为乔安娜准备薄荷茶。,30,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),43,678,final_summary,凯特和萨姆在接待室附近的小房间里，发现一个蛋糕上有一个巨大的男性器官装饰，由杏仁糖制作，令他们都忍不住发笑。,29,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),44,690,final_summary,他们认为特朗普并非仅仅是老年痴呆，而是利用民粹主义策略制造恐慌，并自诩为救世主。他不仅在破坏政治，还在危害地球，但其自信和固执也构成威胁。他们希望通过下次选举来改变现状。,40,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),45,711,final_summary,佩德罗和亚历克斯讨论超级英雄，亚历克斯认为闪电侠比蝙蝠侠和超人更强大，因为他的超人速度可以让他探索多元宇宙。佩德罗最终表示理解他的观点。,33,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),46,737,final_summary,达米安请求伊森购买烤肉，因为他非常饥饿。伊森虽然抱怨达米安依赖性强，但最终同意了，达米安承诺会改变。,23,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),47,767,final_summary,贝里计划参加妇女罢工游行，杰克和戴夫也同意参加，凯莉将与戴夫一同前往。他们将在中午在校园附近集合。,26,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),48,799,final_summary,玛莎询问奥菲利亚照片中的美瞳来源，奥菲利亚告知为“疯狂美瞳”，价格合理且发货速度快。玛莎表示感谢并计划购买。,25,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (Dir),49,800,final_summary,琳达想为母亲购买鲜花，询问父亲意见。父亲建议她选择郁金香、玫瑰或扶桑花，最终推荐琳达购买照片中的扶桑花。,27,notebooks/agents/results/full/direct/gemma/direct_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),0,23,final_summary,安妮发现马克对自己的年龄说了谎，他告诉她自己30岁，但他的护照显示他实际年龄是40岁，这让她感到难过。艾琳承认安妮对这次欺骗感到失望。,40,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),1,30,final_summary,玛丽向卡特请求了一些钱，卡特说他可以在一个小时后借给她，因为他现在在火车站。,22,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),2,39,final_summary,蒂娜在机场延误，并且在回家的航班上遇到了一位健谈的飞行员。艾拉将要参加一个重要的会议，并请蒂娜为她祝好运。蒂娜同意听她讲述会议的情况。,38,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),3,65,final_summary,安娜和凯瑟琳计划明天去看望她们的奶奶，凯瑟琳会在她醒来后给安娜打电话。然后她们互相道了晚安。,25,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),4,66,final_summary,乔伊斯分享了一个廉价机票的链接，促使迈克尔承认价格，而埃德森立即预订了一张机票。,20,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),5,67,final_summary,简和史蒂文计划见面，简希望因为路途遥远而将见面时间提前到下午4点30分，而不是5点，史蒂文同意了；他们将在主入口见面。,32,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),6,78,final_summary,菲奥娜想为克里斯做晚餐，想做蒂娜的馅饼，于是向蒂娜寻求帮助，并承认她买好了派皮，之前因为过度搅拌鸡蛋而导致馅料失败。蒂娜同意帮忙，并解释了避免鸡蛋凝固的关键在于鸡蛋加入后要持续搅拌。,48,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),7,86,final_summary,该团队计划前往苏荷区的一家俱乐部参加一场高档的新年晚会，可能是在“蒂芙尼的早餐”俱乐部，他们需要尽快购买门票。奥拉夫考虑过观看歌剧，但最终放弃了。,36,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),8,120,final_summary,约翰和琼同意在周四晚上8点左右观看电影《一个明星的诞生》，此前琼表示周三她很忙。约翰会把电影详情和地点发给琼。,32,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),9,137,final_summary,卡梅隆无法给佩顿送游戏机，因为他需要出城另待一周，这促使佩顿建议通过快递寄送。佩顿随后要求卡梅隆尽快回家完成任务。,28,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),10,139,final_summary,保罗忙碌了一天后回到家，意识到他错过了物理治疗预约，但他会重新安排。艾玛会晚点回家，保罗提出为她准备食物，她接受了。,31,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),11,192,final_summary,哈里斯告知莉娜，他的朋友青木昨天去世了，他对此感到难过。他几个月前见过青木一次，因为她住在密歇根州，而且他的母亲打电话了，所以他不得不结束对话。,38,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),12,210,final_summary,雅兹和玛丽都承认自己暴饮暴食，但同意今晚参加她们的减肥俱乐部会议，预计会受到她们以前的烹饪老师的训斥。雅兹将在下午6点左右接玛丽。,34,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),13,211,final_summary,卡米尔生病了，埃莉和阿利亚在大学，她们的课程将在二楼342教室举行。,17,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),14,212,final_summary,内森和亚伦发现了一个关于一位女士做出奇怪表情的搞笑视频，亚伦将其比作他的猫，并开玩笑说这可能是一个精神或悲剧时刻。他们都笑了，并分享了几个GIF动图来表达对该视频的反应。,50,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),15,215,final_summary,几个人讨论了他们在观看的奈飞剧集，包括《广告狂人》、《王冠》、《异星出lander》、《僵尸肖恩》、《纸牌屋》等，推荐涵盖了政治剧到《老友记》、《美少女谎言》等轻松剧集。有些人对某些剧集的质量存在分歧，而另一些人则分享了他们对《绝望主妇》等“罪恶快感”的喜爱。,57,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),16,244,final_summary,琼斯和安吉丽娜重逢并同意当天下午在镇上见面，琼斯承诺确认具体地点。,16,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),17,285,final_summary,凯西自己做了美甲，阿米莉亚和克里斯汀非常喜欢，并要求她复制，但凯西拒绝了，因为这花费了她四个小时，而且太困难了。,31,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),18,319,final_summary,苏请史蒂夫收到消息后给她打电话，因为这很重要，史蒂夫确认他正在打电话。,17,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),19,346,final_summary,杰玛正在邀请蒂米和他的潜在约会对象，以及洛娜和米歇尔参加聚会，她承认她希望被邀请参加洛娜和米歇尔的婚礼招待会。蒂米调侃杰玛想参加他们的婚礼，她承认她不确定是否能说服她们邀请她。,47,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),20,355,final_summary,安妮祝贺苏和朱莉工作完成得很好，她们都同意那天晚上庆祝。,16,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),21,367,final_summary,史蒂夫告知他的母亲洗碗机已经安装完毕，并且运行良好，他指出洗碗机运行安静，而且可能是12套餐具的容量。他的母亲表达了她很高兴他对此感到满意。,37,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),22,393,final_summary,拉拉向玛丽卡确认她今天会来。,9,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),23,417,final_summary,米兰达因工作原因请求取消他们的会议，解释说年轻医生长时间工作是很常见的现象，对此斯蒂芬妮开玩笑地表示担心职业倦怠。米兰达随后以一种夸张的方式回应说医生们接近死亡却能变得不朽。,45,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),24,432,final_summary,哈维尔向朱迪询问会说英语的纹身店，朱迪推荐了华沙印克，她的女朋友在那里花了一千元做了纹身。哈维尔觉得太贵了，决定改在哥伦比亚做纹身。,36,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),25,433,final_summary,萨姆赞美了杰西卡和迈克尔的酒店，并确认他将于8月15日下午2点左右到达，表达了再次见到他们的喜悦。杰西卡和迈克尔感谢了萨姆的赞美，并确认他们会为他安排一间好房间。,46,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),26,442,final_summary,特伦斯指责丹尼尔偷了他的钱，但后来在找到钱后道歉。丹尼尔表达了他对这虚假指控的愤怒。,24,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),27,499,final_summary,娜塔莎提出要从火车站接查尔斯，他大约在下午5点30分到达，并在韦西内站时给她打电话。,24,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),28,528,final_summary,安妮在学校上额外的数学课，晚上7点会回家，梅格那时可以和她见面。,17,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),29,532,final_summary,皮特将去查看商店是否有梨味酸奶给珍，如果没有，他就不要购买任何酸奶，因为珍不喜欢其他口味。,23,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),30,536,final_summary,克里斯蒂和凯蒂在参加了一个她们都很喜欢的精彩派对后，都感到疲惫。,18,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),31,537,final_summary,萨姆和卡拉约定明天下午两点在米恩伍德的一家咖啡馆见面，因为那天是卡拉的休息日。他们都表达了对这次见面的兴奋之情。,31,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),32,544,final_summary,约阿娜和桑迪决定玩《迪克西特》或《卡卡颂》，约阿娜会把游戏带给桑迪。,18,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),33,548,final_summary,史蒂夫和罗伯最近都获得了梦剧场的新专辑，并计划稍后分享他们对它的看法。他们将在两人都听过专辑后讨论它。,30,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),34,551,final_summary,乔伊将她的美容店链接发送给彼得，并邀请他提出任何问题。彼得确认已收到链接，并表示他会查看。,23,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),35,590,final_summary,伊森、里奥和诺亚正在讨论索尔斯塔菲尔乐队11月21日的演唱会，里奥和伊森鼓励诺亚参加，尽管可能与他的工作时间冲突，而阿奇则表示不感兴趣。诺亚会查看他的工作安排，并告知他们是否能去。,48,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),36,598,final_summary,在一场比赛中，一只猫跑进了古迪逊公园球场，引得包括布拉德利、吉尔和茱莉亚在内的球迷们感到有趣。布拉德利开玩笑说，这是埃弗顿球迷本赛季见过的最好的娱乐节目，他们分享了一段关于该事件的视频和评论。,48,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),37,605,final_summary,肖恩将带着他的狗去芭芭拉家，并且计划过夜。扎克也在路上。,17,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),38,616,final_summary,杰克获得了一张本周最佳球员卡，并计划出售因为它不适合他的球队，而汤姆今年尽管游戏技术精湛，但一直没有抽到好球员。,31,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),39,621,final_summary,菲尔和迪安娜正在试图弄清楚在迪安娜的车里发现的太阳镜属于谁，但他们俩都不认识这副太阳镜，艾德里安也不想要，所以他们决定留下这副太阳镜。,39,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),40,635,final_summary,梅尔和格洛丽亚同意本周六在梅尔家举行烧烤，她们都表示对塔德的姐姐搬到苏格兰感到欣慰。梅尔承认她对对方的离开感到轻松，并且自从孩子们离开家后，她一直享受着平静和安宁。,43,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),41,649,final_summary,卡兰的三星S8屏幕变黑并过热，之前也出现过类似问题，但他将前往商店进行保修维修，因为他会定期备份文件。韦德警告他电池存在危险。,32,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),42,676,final_summary,安娜感到胃痛，她不确定是什么原因引起的，但她的妈妈建议可能是她吃的东西。如果情况没有好转，她们同意去看医生，安娜正在为她的妈妈泡薄荷茶。,40,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),43,678,final_summary,凯特和萨姆在接待区楼下发现一个蛋糕正在被一位女士装饰，蛋糕上有一个用杏仁糖制作的大型男性生殖器；萨姆也想看看。这个蛋糕是有人专门定制了这些细节的。,41,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),44,690,final_summary,该群体讨论了一位政客——很可能是 特朗普 —并一致认为他并非仅仅是老年痴呆，而是故意利用恐惧来获取权力，并且可能邪恶。他们对他的破坏性行为，尤其对地球和全球秩序的破坏表示担忧，同时承认他自信、坚持和无知的危险结合，并强调赢得下一次选举的重要性。,62,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),45,711,final_summary,艾力克斯更喜欢闪电侠，而不是蝙蝠侠和超人，他认为闪电侠拥有超人的速度以及穿梭多元宇宙的能力，这使他更强大。佩德罗最初质疑艾力克斯的偏好，但最终承认了他的观点。,41,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),46,737,final_summary,达米安请求身处市中心的伊森帮他买烤肉串，因为他非常饥饿并且今天过得很糟糕。伊森勉强同意，但表达了他对达米安依赖他的不满，对此达米安承诺会改变。,36,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),47,767,final_summary,巴里、杰克和戴夫计划参加妇女罢工活动，并将于中午在校园附近集合。凯莉将与戴夫一同前往。,23,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),48,799,final_summary,玛莎询问奥菲莉亚个人资料照片中佩戴的隐形眼镜，奥菲莉亚推荐了“疯狂眼镜”品牌，因为它价格合理且发货速度快。玛莎感谢奥菲莉亚并表示她会去了解一下。,35,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (ST),49,800,final_summary,琳达想为她的妈妈买花，并向她的爸爸迈克尔寻求建议。在琳达发送了可选花卉的照片后，迈克尔建议郁金香、玫瑰，尤其是香雪球。,33,notebooks/agents/results/full/summarize_then_translate/gemma/st_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),0,23,final_summary,安妮发现男友马克谎报年龄，实际四十岁，而他说自己三十岁，令她感到被欺骗。,17,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),1,30,final_summary,玛丽向卡特借钱，卡特答应在火车站给玛丽一小时后。,13,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),2,39,final_summary,蒂娜抱怨阿联酋工作人员外表光鲜，但机场服务糟糕，延误了她的航班。阿拉要去开会，希望蒂娜为他祈祷。,24,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),3,65,final_summary,安娜和凯瑟琳约定明天一起拜访奶奶，凯瑟琳醒来后会联系安娜。,14,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),4,66,final_summary,乔伊斯分享了便宜的机票链接，迈克尔觉得很划算，埃德森表示要立即预订。,17,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),5,67,final_summary,两人约定4点30在主入口见面。 史蒂文认为路况好，能比预计时间更快到达。,19,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),6,78,final_summary,菲奥娜想向蒂娜求助，一起为克里斯做馅饼，但她买的是现成派皮，且第一次尝试做馅料失败了。蒂娜表示可以帮忙。,28,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),7,86,final_summary,新年夜，三人决定去Soho参加《蒂凡尼的早餐》主题派对，并需要尽快购票。,16,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),8,120,final_summary,琼周三没空，但周四晚上八点左右可以和约翰一起看《一个明星的诞生》。约翰会发电影细节给琼。,22,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),9,137,final_summary,佩顿催促卡梅隆尽快回家并把游戏带回来，卡梅隆表示可能要再过一周才能回家，且不愿快递游戏。,23,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),10,139,final_summary,保罗回家后发现忘了物理治疗，并表示会重新预约。艾玛深夜回家，保罗主动提出为她准备食物。,23,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),11,192,final_summary,哈里斯的朋友青木去世了，他感到难过。他几个月前见过青木，青木住在密歇根州。哈里斯需要回家。,23,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),12,210,final_summary,雅兹和玛丽今晚将一起去减肥俱乐部，她们最近饮食放纵，预计会被老师训斥。 雅兹提议6点左右去接玛丽。,25,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),13,211,final_summary,卡米尔生病了，艾莉询问阿利亚上课地点，阿利亚回复在二楼342教室。,14,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),14,212,final_summary,亚伦看到一个搞笑视频，并认为视频中的发型像猫咪拉屎后的样子，内森则认为那是一个精神觉醒或悲剧。,26,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),15,215,final_summary,大家讨论了在Netflix上观看的电视剧，包括《广告狂人》、《王冠》、《异星出没》等，并分享了各自的喜好和推荐。,24,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),16,244,final_summary,琼斯和安吉丽娜相遇，并计划今天下午在镇上见面，琼斯会打电话确认地点。,15,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),17,285,final_summary,凯西自己做了漂亮的指甲，花费了四个小时。艾米莉亚和克里斯汀想让凯西也为她们做，但凯西表示太累了。,28,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),18,319,final_summary,苏收到重要短信，让史蒂夫打电话。,7,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),19,346,final_summary,杰玛想邀请提米和他的约会对象参加派对，也在考虑邀请洛娜和米歇尔，并可能想参加他们的婚礼。,24,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),20,355,final_summary,安娜祝贺苏和朱莉表现出色，并提议今晚小庆祝，两人都同意。,14,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),21,367,final_summary,洗碗机已安装完毕，运行安静，为12人份。史蒂夫和妈妈都对新洗碗机很满意。,18,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),22,393,final_summary,拉拉今天会来。,4,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),23,417,final_summary,米兰达因工作繁忙请求取消明天会议，并表示年轻医生常超负荷工作，以此来证明自己的“不朽”。斯蒂芬妮对此表示质疑。,26,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),24,432,final_summary,哈维尔想找英语纹身店，朱迪推荐了华沙墨水。哈维尔看到照片后觉得不错，但得知价格后决定回哥伦比亚做纹身。,26,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),25,433,final_summary,萨姆一行人将于8月15日下午两点抵达酒店，希望得到最好的房间安排。杰西卡和迈克尔表示欢迎。,24,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),26,442,final_summary,特伦斯误以为丹尼尔拿了他的钱，后发现钱自己放错了地方，并向丹尼尔道歉。丹尼尔表示生气。,22,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),27,499,final_summary,娜塔莎将接查尔斯于RER韦西内站，查尔斯预计下午5点30分到达并会打电话告知。,18,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),28,528,final_summary,安有额外的数学课，晚上七点到家，梅格想见他。,10,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),29,532,final_summary,珍想买梨子口味的酸奶，如果没有则不买任何酸奶。,13,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),30,536,final_summary,派对结束后，克里斯蒂和凯蒂都感到很累，但认为派对非常棒，玩得很开心。,17,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),31,537,final_summary,萨姆和卡拉约定明天下午两点在米恩伍德的咖啡馆见面。,14,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),32,544,final_summary,乔安娜提议和桑迪玩妙语说书或卡卡颂，桑迪同意了，并表示很高兴。,17,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),33,548,final_summary,史蒂夫和罗伯都买了新梦剧场专辑，并计划分享听后感受。,14,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),34,551,final_summary,乔伊向彼得发送了美容店的链接，并表示如有问题随时提问。,14,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),35,590,final_summary,伊桑、里奥想看索尔斯塔菲尔乐队11月21日的演出，诺亚不确定能否参加，阿奇则表示不感兴趣。,23,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),36,598,final_summary,一只猫闯入古迪逊公园球场，引得众人称赞这是一团可爱的黑色毛球，并被球迷戏称为本赛季最好的娱乐节目。,24,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),37,605,final_summary,肖恩将带狗去芭芭拉家过夜，扎克也正在赶来。,10,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),38,616,final_summary,杰克抽到一周最佳球员，计划卖掉后购买更适合阵容的球员。汤姆则抱怨自己抽卡运气不好。,21,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),39,621,final_summary,菲尔和迪娜讨论了一副太阳镜的归属，最终确定太阳镜不属于他们任何人，但可以暂时保管。,20,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),40,635,final_summary,梅尔和格洛丽亚计划在梅尔家举办烧烤，并讨论了梅尔对塔德妹妹搬走的轻松感。他们都很期待这次聚会。,22,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),41,649,final_summary,卡兰的三星S8黑屏，怀疑是过热重启问题。手机还在保修期内，他会去商店维修，且已备份文件。,22,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),42,676,final_summary,安娜肚子疼了一晚，可能与食物有关。乔安娜建议观察，如果情况未改善则去看医生，并让安娜泡薄荷茶。,26,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),43,678,final_summary,凯特告诉山姆和杰夫，有个女人正在做个有巨大阴茎装饰的蛋糕，蛋糕上有睾丸和巧克力头发。山姆想去看看。,26,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),44,690,final_summary,卡琳认为某人利用民粹主义策略操纵人心，并可能对世界造成破坏。众人认为此人并非仅仅是老年痴呆，而是危险且邪恶的，并希望在下次选举中改变现状。,33,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),45,711,final_summary,亚历克斯更喜欢闪电侠，认为他速度极快且拥有强大的能力，能打开多元宇宙。佩德罗表示理解。,20,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),46,737,final_summary,达米安向伊森求烤肉串，并解释自己今天过得很糟糕，伊森虽然答应但希望他不要依赖他人。,19,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),47,767,final_summary,巴里、杰克和戴夫计划一起参加妇女罢工游行，中午在校园附近集合。,15,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),48,799,final_summary,玛莎询问奥菲莉亚美瞳品牌，奥菲莉亚告知为“疯狂美瞳”，并称其价格合理且发货快。,18,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (TS),49,800,final_summary,琳达想给妈妈买花，在花卉市场发照片给爸爸寻求建议，最终决定购买香雪球。,18,notebooks/agents/results/full/translate_then_summarize/gemma/ts_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),0,23,final_summary,安妮发现马克谎称自己三十岁，实际四十岁，她认为这是个严重的问题。,16,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),1,30,final_summary,玛丽向卡特借钱，卡特答应在一小时内借给她。,12,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),2,39,final_summary,蒂娜的航班延误。阿拉承诺向蒂娜汇报会议结果。,11,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),3,65,final_summary,安娜和凯瑟琳计划明天拜访奶奶，凯瑟琳承诺明天早上给安娜打电话。,14,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),4,66,final_summary,乔伊斯分享链接，迈克尔觉得便宜，埃德森立即预订机票。,11,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),5,67,final_summary,根据地图，旅程较长。简恩建议将会议时间改为下午四点半，并得到史蒂文的同意。,18,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),6,78,final_summary,蒂娜同意帮助菲奥娜制作馅饼，并指导她混合鸡蛋的方法。,13,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),7,86,final_summary,奥拉夫和娜塔莉最初想看歌剧，后决定去索霍参加‘蒂凡尼早餐’派对，并计划尽快购票。,19,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),8,120,final_summary,约翰和琼原计划周三看电影，后改至周四晚上八点。约翰将发送电影详情给琼。,18,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),9,137,final_summary,卡梅隆拒绝立即回家，并表示将在外地停留一周。佩顿建议卡梅隆通过快递寄送游戏。,18,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),10,139,final_summary,保罗忘记了理疗，并提议为艾玛准备食物。艾玛欣然接受，保罗将在她午夜回家后准备食物。,21,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),11,192,final_summary,哈里斯告诉莱娜青木去世的消息，随后因母亲来电而结束了对话。,15,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),12,210,final_summary,玛丽和雅兹都将参加减肥俱乐部，雅兹将接送玛丽前往。,12,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),13,211,final_summary,卡米尔生病，无法参加课程。阿莉亚告知大家课程已搬到二楼342教室。,15,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),14,212,final_summary,亚伦看到一个视频，觉得像他猫便便时的表情，并分享了多个表情包。内森觉得视频中的人像是在经历精神时刻。,30,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),15,215,final_summary,大家在讨论各自正在观看的Netflix剧集，包括《广告狂人》、《王冠》、《权力的游戏》等。,17,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),16,244,final_summary,琼斯和安吉丽娜同意当天见面，琼斯将致电确认具体地点。,12,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),17,285,final_summary,阿米莉亚和克里斯汀请求凯西为她们做美甲，但凯西因耗时太长而拒绝了。,19,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),18,319,final_summary,苏伊要求史蒂夫收到信息后立即给她打电话，史蒂夫同意了。,13,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),19,346,final_summary,格玛承认她想参加洛娜和米歇尔的婚礼招待会。,11,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),20,355,final_summary,安娜、苏和朱莉今晚将举行庆祝活动。,9,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),21,367,final_summary,史蒂夫告知母亲洗碗机已安装完毕，并且他对新洗碗机很满意。,14,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),22,393,final_summary,玛丽卡问拉拉今天是否来，拉拉回答肯定。,9,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),23,417,final_summary,米兰达因工作请求取消会议，斯蒂芬妮质疑她工作过多，米兰达解释这是年轻医生的常态。,19,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),24,432,final_summary,哈维尔询问纹身店，朱迪推荐华沙墨水。因价格，哈维尔决定在哥伦比亚纹身。,15,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),25,433,final_summary,萨姆和同伴将于八月十五日下午两点抵达迈克尔和杰西卡的酒店。,15,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),26,442,final_summary,特伦斯误以为丹尼尔偷钱，后发现钱已放好并道歉。丹尼尔对之前的指控表示愤怒。,17,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),27,499,final_summary,娜塔莎将接查尔斯，查尔斯承诺到达韦西内站后会打电话告知娜塔莎。,12,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),28,528,final_summary,梅格问安娜几点可以见面，安娜说晚上七点到家。,11,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),29,532,final_summary,珍要求彼得购买梨味酸奶，如果没有则不买。她只接受梨味，拒绝其他口味。,18,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),30,536,final_summary,克里斯蒂和凯蒂都觉得派对很棒，但都很累。,11,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),31,537,final_summary,萨姆和卡拉约定在米恩伍德的咖啡馆下午两点见面。,13,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),32,544,final_summary,乔安娜将把游戏带到桑迪那里一起玩。,10,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),33,548,final_summary,史蒂夫和罗布都获得了新的梦剧场专辑，并将稍后分享他们的看法。,17,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),34,551,final_summary,乔伊向彼得分享了她的美容店链接，彼得将查看该链接。,13,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),35,590,final_summary,伊森询问谁将参加索尔斯塔菲尔演唱会。诺亚因工作原因不确定，但莱奥极力劝说。诺亚表示会确认后告知是否参加。,27,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),36,598,final_summary,布拉德利看到一只猫闯入古迪逊公园球场，吉尔和茱莉亚觉得很可爱。球迷认为这是本赛季最好的娱乐。,21,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),37,605,final_summary,肖恩获准带狗去芭芭拉家过夜。扎克也正在赶来。,10,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),38,616,final_summary,杰克获得了团队每周最佳球员，计划将其出售，并用所得资金购买更适合自己队伍的球员。,21,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),39,621,final_summary,德娜建议菲尔保留太阳镜，菲尔决定留下，因为无人认领。,10,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),40,635,final_summary,梅尔和格洛丽亚决定在本周六在梅尔家举办烧烤，梅尔准备食物，格洛丽亚负责饮品和甜点。,19,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),41,649,final_summary,卡兰的三星S8手机屏幕变黑，他计划送修，并确认已备份数据。,15,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),42,676,final_summary,安娜（Anna）感到胃痛，她和乔安娜（Joanna）决定如果疼痛持续，就去看医生。安娜将为乔安娜泡茶。,23,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),43,678,final_summary,凯特告知萨姆和杰夫厨房楼梯下正在制作的蛋糕上装饰着不寻常的图案，萨姆表示想看这个蛋糕。,25,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),44,690,final_summary,卡琳认为对方正在破坏地球。米娅承诺竭尽全力赢得下次选举，卡琳表示赞同。,15,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),45,711,final_summary,亚历克斯向佩德罗表达了对闪电侠的喜爱，并以其速度为例说服佩德罗认可闪电侠的力量。,20,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),46,737,final_summary,达米安请求伊森购买烤肉卷，并承诺改正自身行为。伊森虽然不情愿，但最终同意了达米安的要求。,22,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),47,767,final_summary,巴里、杰克、戴夫和凯莉将一同参加妇女罢工，并约定中午在校园附近集合。,17,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),48,799,final_summary,玛莎询问奥菲莉亚镜片来源，奥菲莉亚告知为“疯狂镜片”。玛莎感谢并表示将去查看。,19,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Gemma 3: 27b (Sem),49,800,final_summary,迈克尔告知琳达，妈妈最喜欢洋桔梗，并让她购买洋桔梗作为礼物。,16,notebooks/agents/results/full/semantic/gemma/semantic_gemma27b_50samples.jsonl
+Aya-Expanse: 32b (Dir),0,23,final_summary,安妮发现马克对她说谎，实际年龄比他声称的要大。艾琳认为这可能不重要，但安妮感到被欺骗。,25,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),1,30,final_summary,玛丽向卡特借钱，卡特同意一小时后在火车站见面。,12,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),2,39,final_summary,蒂娜向阿拉讲述了阿联酋航空工作人员的专业形象，如同电影明星。她还抱怨了在机场的糟糕经历，包括延误和话唠飞行员。阿拉正在前往重要会议的路上，蒂娜祝她好运并要求汇报结果。,43,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),3,65,final_summary,安娜问凯瑟琳是否在睡觉，凯瑟琳回答还没有。安娜提议明天去看奶奶，凯瑟琳同意并说会起床后给安娜打电话。两人互道晚安。,29,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),4,66,final_summary,乔伊斯分享了一个便宜的机票链接。迈克尔表示惊讶，埃德森立即预订了机票。,17,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),5,67,final_summary,简（Jane）和史蒂文（Steven）讨论行程时间。简担心路程至少3小时，但史蒂文坚持可以2小时内到达，因为道路是新的。最终，他们同意在下午4点半见面，简会在主入口等待。,40,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),6,78,final_summary,菲奥娜想为克里斯准备晚餐，想做蒂娜的馅饼。蒂娜同意帮助她，并解释了制作馅饼的技巧。菲奥娜坦白买了现成的派皮，并分享了之前尝试做馅饼的失败经历。,40,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),7,86,final_summary,奧拉弗、娜塔莉和佐伊討論新年夜的活動。娜塔莉最初建議看歌劇，但奧拉弗不感興趣。最終，他們決定參加在蘇豪區的一家時尚俱樂部舉辦的派對，並需盡快購買門票。,37,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),8,120,final_summary,约翰邀请乔安周三看电影《一个明星的诞生》，但乔安因忙碌无法前往。她表示周四有空，两人最终约定周四晚上八点看电影，约翰将查看电影放映地点并发送详情给乔安。,38,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),9,137,final_summary,佩顿要求卡梅伦给她带一个视频游戏，但卡梅伦因工作忙无法及时回家。佩顿建议通过快递送游戏，卡梅伦拒绝了。最终，卡梅伦承诺尽快回家。,30,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),10,139,final_summary,保罗刚回家，感觉一整天很忙。他忘记了理疗时间，决定重新预约。艾玛晚上会很晚回家，保罗主动提出为她准备食物。,28,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),11,192,final_summary,哈里斯和莱娜谈论了哈里斯的朋友青木的死讯。哈里斯最近心情不好，因为他得知青木昨天去世了。他们讨论了青木的死因，但还不确定。莱娜安慰哈里斯，并提到他们最近没有见过面，因为青木住在密歇根州。,45,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),12,210,final_summary,亚兹和玛丽讨论今晚是否去减肥俱乐部。尽管两人都缺乏动力，但决定去面对他们的旧烹饪老师的批评。亚兹将去接玛丽，大约六点见面。,32,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),13,211,final_summary,"艾利：你在大学里吗？
+阿丽亚：是的。
+卡米尔：我生病了。
+艾利：那可不好。
+艾利：阿丽亚，我们的课在哪里上？
+阿丽亚：二楼342室。",32,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),14,212,final_summary,纳森向亚伦发送了一个视频。亚伦觉得非常好笑，并发送了多个表情和GIF图片。纳森回应说女孩正在经历一个“灵性时刻”，并提到这个视频是丹发送的。他们都认为这很滑稽。,41,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),15,215,final_summary,弗雷迪问凯利在看什么Netflix，自己刚看完《广告狂人》。凯利刚看完《王冠》，期待新剧集。弗雷迪推荐《异乡人》和《都铎王朝》。吉姆在看《我活着》，鲍勃推荐《格林》或《萨布里娜》。格雷格在看《纸牌屋》，认为新季乏味，建议看《白宫群英》。玛丽承认喜欢《挺身而战》和《绯闻女孩》，南希也喜欢《绝望主妇》。艾伦在追《老友记》，南希表示自己也喜欢。,71,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),16,244,final_summary,琼斯与安吉丽娜久别重逢，两人约定当天下午在镇上见面。琼斯将电话确认会面地点。,17,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),17,285,final_summary,凯西展示了她自己花了近四个小时完成的指甲油设计。阿梅丽亚和克里斯汀很喜欢，希望凯西也能为她们做，但凯西表示太耗时，无法为她们服务。,37,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),18,319,final_summary,苏珊要求史蒂夫收到信息后立即致电，并强调此事重要。史蒂夫回应正在拨打电话。,17,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),19,346,final_summary,蒂米问盖玛想邀请谁。盖玛提议邀请蒂米和他的约会对象。蒂米表示不确定约会对象是否会来，但自己会出席。盖玛还想邀请洛娜和米歇尔，并承认是想去她们的婚礼接待会。蒂米调侃盖玛在求婚方面没有进展。盖玛坚持要去婚礼接待会，但承认说服她们很困难。,64,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),20,355,final_summary,安：祝贺你们！你们俩都做得很棒！苏：谢谢，安。朱莉：我很高兴结束了！你真可爱，女孩！安：今晚我们小庆祝一下吧！苏：好啊。朱莉：我也行！太好了！,37,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),21,367,final_summary,史蒂夫向妈妈报告洗碗机已送达并安装完成，妈妈表示高兴。史蒂夫称赞安装质量好且安静，确认是12人份的机器。妈妈建议不必每天使用，史蒂夫同意每隔一天用一次。对话结束时，两人都表达了满意和感激之情。,47,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),22,393,final_summary,玛丽卡问拉拉今天是否来，拉拉回答“是的”，玛丽卡很高兴。,14,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),23,417,final_summary,米兰达向斯蒂芬妮请求取消明天的会议，因为她需要工作。斯蒂芬妮表达了惊讶和担忧，认为年轻医生工作过度。米兰达幽默地回应，称这使他们接近死亡但幸存下来，从而变得不朽。最终，斯蒂芬妮似乎接受了解释。,47,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),24,432,final_summary,哈维尔询问了说英语的纹身店，朱迪推荐了华沙纹身（Warsaw Ink）。哈维尔对女友的纹身图样很满意，但得知价格为1000后决定回哥伦比亚纹身。,33,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),25,433,final_summary,山姆称赞杰西卡和迈克尔拥有的酒店很棒。他们计划下个月入住，希望经理能为他们安排最佳房间。山姆确认会在8月15日下午2点到达酒店，杰西卡表达了重逢的喜悦。,39,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),26,442,final_summary,特伦斯指责丹尼尔偷了他的钱，但后来发现是自己记错了位置。丹尼尔感到生气，认为特伦斯冤枉他。,23,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),27,499,final_summary,纳塔莎（Natacha）提议在RER车站接查尔斯（Charles），查尔斯表示刚落地，预计下午5点30分到达，并会电话联系纳塔莎。纳塔莎请他到达维西内特（Vesinet）车站时打电话给她，查尔斯答谢并道别。,40,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),28,528,final_summary,梅格问安是否还在学校。安回复有额外的数学课。梅格询问见面时间，安回答七点回家。,20,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),29,532,final_summary,皮特问詹喜欢什么口味的酸奶。詹说如果有梨味就买，没有就不买了。皮特表示会看看，如果没有梨味就不买其他口味的。最终决定如果没有梨味就不买。,38,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),30,536,final_summary,克里斯蒂和凯蒂在派对后都感到很疲惫。他们一致认为派对很成功，玩得很开心。,19,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),31,537,final_summary,山姆问卡拉明天是否上班，卡拉回答她放假。山姆说下午有空，提议见面，卡拉同意。他们计划在午后两点于米恩伍德的一家咖啡馆见面，那里有好吃的蛋糕。山姆期待这次聚会，卡拉说明天见。,44,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),32,544,final_summary,乔安娜邀请桑迪一起玩游戏，建议玩《迪克西特》或《卡卡颂》。桑迪同意了，乔安娜将把游戏带到她那里。,24,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),33,548,final_summary,史蒂夫五分钟前购买了新的梦想剧院专辑，希望质量好。罗布已经准备好首次聆听。两人将分享听后感。,23,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),34,551,final_summary,彼得询问了乔伊的美容店链接，乔伊提供了网址并希望他喜欢。彼得表示会看看。,19,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),35,590,final_summary,伊森、诺亚、莱奥和阿奇讨论参加索斯法尔（Solstafir）演唱会。诺亚可能因工作加班而无法出席，但会尽量安排。最终，大家都期待诺亚能加入，一起欣赏演出。,32,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),36,598,final_summary,布拉德利发现一只猫闯入古迪逊公园球场，朱莉娅称它为“可爱的黑色毛球”。吉尔分享了视频，三人均感到有趣。布拉德利认为这是埃弗顿球迷本赛季最精彩的娱乐。,35,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),37,605,final_summary,芭芭拉已经到家了，邀请肖恩和扎克过来。肖恩询问能否带狗一起来，得到同意。还提到可以留宿一夜，肖恩表示很棒，之前有考虑过。,29,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),38,616,final_summary,杰克从每周最佳（TOTW）中抽中了他的第一个球员。他打算在几场比赛中试用这个球员，然后出售，因为不适合他的球队。汤姆祝贺了他，并开玩笑说自己今年抽签运气不好，没有抽到优秀球员。杰克认为汤姆已经很擅长游戏了，不需要帮助。,57,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),39,621,final_summary,菲尔向迪娜表达了感激之情，因为康斯坦丁收到了她的贺卡。他们讨论了一副太阳镜的归属，最终决定由菲尔保管，如果艾德里安要，可以给他。,32,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),40,635,final_summary,梅尔和格洛丽亚聊天。梅尔提到孩子们离开家后生活安静了许多，有时甚至忘记了思念他们。格洛丽亚安慰她，说她是一个很棒的妈妈。她们计划在周末在梅尔家举行烧烤聚会，梅尔负责食物，格洛丽亚准备饮料和甜点。她们还提到塔德的妹妹搬到了苏格兰，都对此感到高兴。,60,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),41,649,final_summary,卡兰的三星S8出了问题，屏幕变黑。他怀疑是手机过热导致的，之前也发生过类似情况。瓦德建议他小心电池，并去商店检查，因为还在保修期内。卡兰表示会备份文件，不会丢失数据。,43,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),42,676,final_summary,安娜向乔安娜抱怨她从晚上开始出现严重的胃痛，且疼痛持续不断。两人猜测可能是食物引起，但无法确定具体原因。经过一番讨论，安娜决定给乔安娜泡一杯热茶并加入新鲜薄荷叶，希望能够缓解症状。如果疼痛不减，他们考虑去看医生。,54,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),43,678,final_summary,山姆和凯特在讨论楼下的一个女人正在制作一个有巨大阴茎的蛋糕，用杏仁糖或类似材料制成。杰夫加入对话，他们发现这个蛋糕是有人订制的，带有球状物和巧克力头发。他们决定去看看这个蛋糕。,46,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),44,690,final_summary,米娅、詹妮弗和卡琳讨论了特朗普的言论和行为。卡琳认为他不仅仅是痴呆，而是利用民粹主义策略来恐吓人们，并自命为救世主。彼得同意这一观点，认为他并非像表面看起来那么愚蠢。米娅则认为他是纯粹的邪恶。詹妮弗指出他的自信、固执和无知也非常危险。卡琳相信他们有机会改变现状，或许特朗普的统治很快就会结束。米娅强调他们应该尽力赢得下一次选举。,81,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),45,711,final_summary,佩德罗和亚历克斯讨论超级英雄。亚历克斯认为闪电侠更强大，因为他的超速能力可以让他探索多元宇宙。佩德罗表示理解。,25,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),46,737,final_summary,达米安问伊森是否在市中心，伊森回答在。达米安要求伊森为他买一个烤肉串，因为他很饿。伊森反问为什么达米安不为他们俩做饭，达米安解释自己度过了一个艰难的日子。最终，伊森同意了，但抱怨达米安像寄生虫一样。达米安承诺会改变。,49,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),47,767,final_summary,巴里邀请大家参加妇女罢工游行，杰克和戴夫表示感兴趣并会与朋友们一起参加。他们计划在午时校园附近集合。,25,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),48,799,final_summary,玛莎向奥菲利亚询问了她个人主页上照片中佩戴的隐形眼镜品牌。奥菲利亚推荐了Crazy Lenses，并称赞其价格合理、配送迅速。玛莎表示感谢，将考虑购买。,32,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Dir),49,800,final_summary,琳达想给妈妈买花，但记不清妈妈喜欢什么花。她向父亲迈克尔求助，迈克尔建议买郁金香或玫瑰。琳达发了照片过去，迈克尔认为风信子很适合，最终琳达决定购买风信子。,36,notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),0,23,final_summary,安妮发现她以为三十岁的马克实际上已经四十岁了，这让她很不高兴。艾琳试图淡化年龄差异的重要性。,24,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),1,30,final_summary,玛丽向卡特要钱，卡特同意一小时后在火车站见面。,12,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),2,39,final_summary,蒂娜（Tina）在表达对航班延误和健谈飞行员的沮丧的同时，也赞扬了阿联酋航空（Emirates）员工的外表。阿拉（Ala）表示同情，并提到即将召开的重要会议，请蒂娜随时向她通报情况。,39,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),3,65,final_summary,安娜和凯瑟琳计划明天去看望她们的祖母，因为安娜想念她。凯瑟琳会在醒来时给安娜打电话。,21,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),4,66,final_summary,乔伊斯分享了一个便宜门票的链接；迈克尔表达了惊讶，而埃德森立即预订了一个。,19,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),5,67,final_summary,简（Jane）和史蒂文（Steven）因可能路程时间较长，同意将见面时间从五点改为四点半。史蒂文向简保证道路是新的，他们应该能准时到达。他们计划在正门见面。,36,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),6,78,final_summary,菲奥娜（Fiona）请蒂娜（Tina）帮忙准备一个馅饼给克里斯（Chris）。蒂娜同意帮忙，但指出菲奥娜不要将馅料搅拌过度，否则会变成炒鸡蛋。,27,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),7,86,final_summary,奥拉弗、娜塔莉和佐伊正在计划一个跨年派对。他们在考虑了歌剧和主题派对之后，决定在苏荷区举办一个高档的俱乐部活动。他们需要尽快购买门票。,34,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),8,120,final_summary,约翰和琼计划在周四晚上八点观看《一个明星的诞生》，因为琼表示那天她有空。约翰会给琼发送电影地点的详细信息。,28,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),9,137,final_summary,佩顿要求卡梅伦带一个电子游戏，但卡梅伦要再出差一周。佩顿建议使用快递，但卡梅伦拒绝了。,18,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),10,139,final_summary,保罗忘记了生理治疗的预约，将重新安排。艾玛会晚回家，保罗主动提出为她准备食物。,19,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),11,192,final_summary,哈里斯告知莱娜他的朋友青木最近去世了，并表达了他的悲伤。莱娜表示慰问，并询问了他们最后一次互动的情况。,27,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),12,210,final_summary,亚兹和玛丽计划参加他们的减肥俱乐部会议，尽管他们吃了不健康的食物。他们预计会受到他们前烹饪老师的训斥，而她经营着这个俱乐部。亚兹将会在晚上六点接玛丽。,41,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),13,211,final_summary,艾莉和阿里耶在大学里，而卡米尔生病了。它们的课在二楼342室。,17,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),14,212,final_summary,纳森与亚伦分享了一个视频，视频中一名女子正在经历强烈的宗教体验。亚伦觉得好笑，并将之与他的猫在排便时的表情相比较。他们都认为这既有趣又悲剧。,42,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),15,215,final_summary,小组讨论他们最喜欢的Netflix节目。推荐包括《异乡人》、《都铎王朝》、《格林童话》、 《萨布里娜》、《白宫群英》和《守护者》。有些人也承认喜欢轻松的节目，如《挺身而进》、《绯闻女孩》和《绝望主妇》。,36,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),16,244,final_summary,琼斯（Jones）和安吉丽娜（Angelina）同意当天下午在镇上见面。琼斯会给安吉丽娜打电话确认具体地点。,19,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),17,285,final_summary,凯西展示了她自己完成的新的指甲艺术，但花了近四个小时。阿米莉亚和克里斯汀赞美了指甲，并让凯西给她们做，但凯西因为耗时太长而拒绝了。,38,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),18,319,final_summary,苏（Sū）催促史蒂夫（Shǐdìfū）立即回电，因为她有重要事情需要讨论。史蒂夫表示同意并拨通了电话。,26,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),19,346,final_summary,杰玛想邀请蒂米、他的约会对象罗娜和米歇尔参加一个活动，但她不确定他们是否会接受邀请，尤其是因为她也想参加他们的婚礼。蒂米调侃她关于这些邀请。,37,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),20,355,final_summary,安恩祝贺苏和朱莉取得的成功，并建议庆祝一下，苏和朱莉热情同意。,17,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),21,367,final_summary,史蒂夫告知他妈妈，新的洗碗机已经安装好并正常运行。他提到这是一个可容纳12个餐具的型号，但他通常不需要用到所有空间。他妈妈很高兴他满意这个洗碗机。,40,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),22,393,final_summary,玛丽卡问拉拉今天是否来，拉拉确认她会来。,11,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),23,417,final_summary,米兰达因工作承诺要求取消明天的会议，表达了年轻医生的压力。斯蒂芬妮幽默地调侃了米兰达的繁忙日程。,25,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),24,432,final_summary,哈维埃尔正在寻找一家会说英语的纹身店。朱迪推荐华沙墨水，她的女朋友在那里纹了个花了1000美元的纹身。哈维埃尔决定在哥伦比亚纹身。,37,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),25,433,final_summary,山姆、杰西卡和迈克尔期待着下个月入住朋友的酒店，他们将于8月15日下午2点抵达。他们对住宿和再次见到彼此表示兴奋。,31,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),26,442,final_summary,特伦斯指责丹尼尔偷了他的钱，但后来发现自己把钱弄丢了。丹尼尔对这种指控感到难过。,22,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),27,499,final_summary,纳塔莎（Natacha）主动提出去RER车站接查尔斯（Charles）。查尔斯将于下午5点半左右到达，并在抵达维西奈（Vesinet）车站时给纳塔莎打电话。,29,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),28,528,final_summary,安有额外的数学课，会在七点回家，所以梅格可以在那时见她。,15,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),29,532,final_summary,彼得为詹购买酸奶。如果有梨味，她想要；否则，她不要任何口味。彼得会寻找梨味酸奶，如果没有就不会选其他口味。,26,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),30,536,final_summary,克里斯蒂和凯蒂都享受了派对，但现在很累。,10,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),31,537,final_summary,山姆和卡拉计划明天下午两点在米恩伍德见面，因为卡拉那天休假。他们将去一家以美味蛋糕闻名的咖啡馆。,26,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),32,544,final_summary,乔安娜和桑迪计划玩棋盘游戏，具体是《迪克西特》或《卡卡颂》，乔安娜将把游戏带到桑迪家。,22,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),33,548,final_summary,史蒂夫最近购买了新的梦剧院专辑，并计划与罗布分享他对专辑的看法。罗布已经拥有这张专辑，并且正在准备聆听它。,29,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),34,551,final_summary,乔伊给彼得发送了她美容店的链接，他打算进行评价。,12,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),35,590,final_summary,这个小组讨论是否参加11月21日的Solstafir音乐会。诺亚因为工作原因不确定能否出席，但会尽力抽空，因为他非常想看这个乐队的表演。阿奇认为还有更好的音乐会。,37,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),36,598,final_summary,这个小组讨论了一只猫在埃弗顿比赛期间入侵球场的事件，他们觉得很有趣，并分享了视频和评论。布拉德利开玩笑说，这是埃弗顿球迷本赛季享受的最佳娱乐。,34,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),37,605,final_summary,芭芭拉邀请肖恩和扎克来家里；肖恩问能不能带他的狗一起过夜，芭芭拉同意了。,19,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),38,616,final_summary,杰克今年第一次抽到了一张“本周最佳阵容”（TOTW）卡，并计划出售它，因为它不适合他的球队。汤姆祝贺了他，但抱怨自己抽卡运气不佳。,31,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),39,621,final_summary,菲尔（Fēi ěr）感谢迪安娜（Dī ān nà）送的卡片和太阳镜，但凯特琳（Kǎi tè lín）和迪安娜都不认识这副太阳镜是谁的。他们同意保留太阳镜，猜测它可能属于埃德里安（Ài dé lín）。,60,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),40,635,final_summary,梅尔和格洛丽亚计划在周六于梅尔的家里举行一场烧烤派对。他们讨论了孩子们搬出去后他们现在平静的生活，梅尔表达了他对塔德妹妹已经搬走的如释重负之情。,37,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),41,649,final_summary,卡兰的三星S8由于过热而出现故障，导致屏幕变黑。卡兰打算将其送到商店进行保修维修，并向韦德保证他们的数据已备份。,30,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),42,676,final_summary,安娜向母亲抱怨夜间开始的持续胃痛。她们讨论了可能的原因，包括变质的食物，但没有找到明确的原因。如果疼痛不减轻，安娜建议去看医生，母亲同意了。,37,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),43,678,final_summary,凯特和杰夫在接待处附近的一个小房间里。凯特看到一个女人正在用大块的杏仁糖做一个蛋糕，蛋糕上有一根巨大的“香蕉”，这让她笑了起来。山姆想看看这个蛋糕。,39,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),44,690,final_summary,小组讨论特朗普的行为，一致认为他的手段具有操纵性和危险性，可能是由对权力的渴望而非痴呆所驱动。他们表达了对变化的希望，并决心努力赢得下一次选举。,39,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),45,711,final_summary,艾力克斯更喜欢闪电侠而非蝙蝠侠或超人，因为他拥有超人的速度，这使他能够进入多元宇宙并变得极其强大。佩德罗承认艾力克斯关于闪电侠能力的说法是有效的。,38,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),46,737,final_summary,达米安（Damian）向在市中心的伊森（Ethan）要一个烤肉串，因为他饿了，而且今天过得很糟糕。伊森同意了，但对达米安总是依赖他表示不满。达米安承诺会改变自己的行为。,38,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),47,767,final_summary,巴里、杰克和戴夫计划在中午在校园里见面，一起参加妇女罢工游行。杰克和戴夫会带上朋友。,21,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),48,799,final_summary,玛尔塔询问了奥菲利亚在个人主页图片中佩戴的隐形眼镜，奥菲利亚透露这些镜头来自“疯狂镜头”品牌，价格实惠，送货迅速。玛尔塔表示感谢，并打算了解该品牌。,33,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (ST),49,800,final_summary,琳达想给她妈妈买花，但记不住她妈妈的喜好。她的爸爸，迈克尔，在看了花市的照片后，建议买郁金香、玫瑰和风信子，并劝阻购买康乃馨。琳达最终决定买风信子。,38,notebooks/agents/results/full/summarize_then_translate/aya/st_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),0,23,final_summary,安妮发现马克撒谎了，他实际比他说的年龄大10岁。,15,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),1,30,final_summary,玛丽向卡特借钱，卡特答应了，一小时后会在火车站见面。,13,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),2,39,final_summary,蒂娜向阿拉诉说在机场的不愉快经历，包括空乘人员的外表和等待时间。阿拉安慰她，并提及自己正前往重要会议。两人约定保持联系。,30,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),3,65,final_summary,安娜和凯瑟琳讨论明天去看外婆，凯瑟琳同意了，并约定起床后打电话给安娜。她们互道晚安。,22,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),4,66,final_summary,乔伊斯分享了一个便宜的票务链接，迈克尔和埃德森表示感兴趣，埃德森立即订票。,18,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),5,67,final_summary,简和史蒂文讨论了前往目的地的时间和路线。简担心需要3小时，但史蒂文坚持2小时足够，并保证会准时到达。他们最终约定4点半见面，在正门等待。,34,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),6,78,final_summary,菲奥娜想做塔特馅饼给克里斯，向蒂娜求助。蒂娜同意帮忙，并解释了制作过程，提到加入鸡蛋需不断搅拌以免成炒蛋。,27,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),7,86,final_summary,奥拉弗询问春节安排，娜塔莉提议高雅活动，如歌剧。后经讨论，三人决定参加蒂芙尼早餐派对，并计划尽快购买门票，地点在苏荷区。,28,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),8,120,final_summary,约翰邀请乔安周三看电影《一个明星的诞生》，但乔安因忙无法前往。两人商定周四晚上八点左右一起看，约翰会告知具体地点。,28,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),9,137,final_summary,佩顿让卡梅伦带电子游戏，但卡梅伦因出差无暇。佩顿建议快递，卡梅伦表示工作繁忙。佩顿催促他尽快回家。,20,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),10,139,final_summary,保罗刚到家，觉得今天很忙，把理疗的事忘了。他想再约新时间，并提议为半夜才到家的艾玛准备食物，艾玛表示同意。,32,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),11,192,final_summary,哈里斯告诉莱娜他的朋友青木昨天去世了，原因不明。哈里斯感到难过，莱娜安慰他，并提到他们几个月前在密歇根州见面。哈里斯需离开，莱娜告别并表达关心。,35,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),12,210,final_summary,雅兹和玛丽讨论今晚是否去减肥俱乐部。两人都承认最近放纵自己，决定去参加，尽管有些不情愿。雅兹会六点左右接玛丽，感觉像回到了学校时代。,32,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),13,211,final_summary,艾莉询问阿丽亚是否在大学，并表达了对卡米尔生病的关心。她还问了当前的上课地点，阿丽亚回答是在二楼342室。,31,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),14,212,final_summary,奈森向艾伦展示了一个视频，艾伦觉得非常好笑，并用一系列GIF表达了自己的反应。他们讨论了视频中女子的表情和行为，认为很滑稽，同时提到猫咪拉屎时的表情相似。奈森透露该视频是丹发送的，并将其描述为一种精神旅程和悲剧。,57,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),15,215,final_summary,群友们在讨论他们在Netflix上观看的节目。弗雷迪刚看完《广告狂人》，凯利看完《王冠》，并期待新剧集。吉姆看《我，僵尸》，鲍勃推荐《格林》和《萨布里娜》，但凯利觉得太可怕。格雷格看《纸牌屋》，迈克建议看《白宫群英》。玛丽喜欢《挺身而进》和《绯闻女孩》，南希也喜欢并推荐《绝望主妇》。艾伦正在看《老友记》。,66,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),16,244,final_summary,琼斯与安吉丽娜久别重逢，约定下午在镇上见面，琼斯将电话确认地点。,14,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),17,285,final_summary,凯西展示了她自己花费四个小时完成的美丽指甲。阿米莉亚和克里斯汀很喜欢，希望凯西也能为她们做，但凯西觉得时间太长，无法满足她们的请求。,37,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),18,319,final_summary,苏提醒史蒂夫收到东西后立即打电话，并强调此事重要性。史蒂夫回应正在拨打电话。,17,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),19,346,final_summary,蒂米和杰玛讨论参加婚礼邀请。杰玛想邀请蒂米、他的约会对象、洛娜和米歇尔。蒂米质疑杰玛是否想收到婚礼邀请，杰玛承认想去参加婚宴，但担心改变不了她们的想法。,38,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),20,355,final_summary,安祝贺苏和朱莉，称赞他们表现出色。朱莉高兴一切结束，并赞扬安可爱。大家决定今晚小聚庆祝。,21,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),21,367,final_summary,史蒂夫向妈妈展示了新安装的洗碗机，并分享了其安静和高效的特点。妈妈很开心，认为这是一次好的购买。他们讨论了使用频率，史蒂夫表示每隔一天用一次。,38,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),22,393,final_summary,玛丽卡问拉拉今天是否会来，拉拉回答会来，玛丽卡很高兴。,15,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),23,417,final_summary,米兰达想取消明天的会议，因为她需要工作。斯蒂芬妮表达了对年轻医生过度工作的担忧，但米兰达认为这是他们的选择，并用“接近死亡而幸存”来解释他们的奉献精神。,38,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),24,432,final_summary,哈维尔询问附近有无英语流利的纹身店员工，朱迪推荐华沙墨水，并分享了女友的纹身照片。哈维尔对设计和价格感到惊讶，最终决定在哥伦比亚纹身。,33,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),25,433,final_summary,山姆赞扬了酒店，并询问下个月的房间安排。迈克尔确认了8月15日的入住，山姆表示下午2点抵达。杰西卡期待再次见面。,29,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),26,442,final_summary,特伦斯指责丹尼尔偷了他的钱，但后来发现是自己记错了位置。丹尼尔感到生气和委屈。,21,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),27,499,final_summary,娜塔莎将去RER接查尔斯，他预计下午5点半到达，并在到达韦西内特车站时联系她。,21,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),28,528,final_summary,梅格问安是否还在学校，安说有额外数学课，七点钟到家。,12,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),29,532,final_summary,皮特询问珍想要哪种口味的酸奶，珍指定梨味，但表示如果没有也可以不买。皮特提议找其他口味，但珍坚持如果没有梨味就不买。最终，皮特同意了。,36,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),30,536,final_summary,克里斯蒂和凯蒂在聚会后感到很累，但她们都认为聚会很棒，玩得很开心。,17,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),31,537,final_summary,山姆和卡拉约定明天下午在米恩木德的咖啡馆见面，品尝那里的美味蛋糕。具体时间定在下午2点。,24,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),32,544,final_summary,乔安娜邀请桑迪玩游戏，建议玩《迪西特》或《卡卡松》。桑迪同意，乔安娜将带来游戏。,19,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),33,548,final_summary,史蒂夫刚买了梦想剧院的新专辑，期待中。罗布已有专辑，两人将分享听后感。,16,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),34,551,final_summary,彼得向乔伊索要了她的美容店链接，乔伊提供了网址并表示可随时询问问题。,19,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),35,590,final_summary,伊森邀请大家11月21日去看索拉斯特法的演唱会，诺亚可能因加班无法参加，里奥强烈要求他出席。阿奇不感兴趣，建议其他演唱会。诺亚表示遗憾，会再做决定。,33,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),36,598,final_summary,布拉德利、吉尔和朱莉娅讨论了一只入侵古迪逊球场的猫，他们认为这是埃弗顿球迷本赛季最精彩的娱乐。,23,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),37,605,final_summary,芭芭拉邀请肖恩和扎克到家里，肖恩可以带狗来，并决定留宿。,14,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),38,616,final_summary,杰克抽到了今年的第一个TOTW，打算卖掉因为不适合他的阵容。汤姆祝贺了他，并提到自己今年运气不好，没有抽到优秀球员。杰克认为汤姆游戏技巧很好，不需要帮助。,39,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),39,621,final_summary,菲尔和迪娜讨论了一副太阳镜的所有权。迪娜在收音机上发现它，可能属于阿德里安。最终，他们决定保管这副太阳镜，如果阿德里安需要可以给他。,31,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),40,635,final_summary,梅尔和格洛丽亚聊天，讨论各自近况。孩子们离开家后，梅尔享受宁静的生活，格洛丽亚安慰她别内疚。她们计划周末在梅尔家烧烤，并谈到塔德的妹妹搬走后，期待一场愉快的聚会。,39,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),41,649,final_summary,卡兰的三星S8出现黑屏问题，可能因过热导致。他计划去商店维修，因仍在保修期内。韦德提醒要注意电池安全，并询问数据备份情况，卡兰表示已定期备份。,36,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),42,676,final_summary,安娜告诉乔安娜她从晚上开始肚子疼，可能与早餐有关。乔安娜猜测可能是食物变质，建议观察一下。安娜希望自己能好转，否则将去看医生。乔安娜同意并让安娜泡热茶缓解症状。,43,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),43,678,final_summary,山姆和凯特在讨论楼下的一个聚会。凯特注意到一个做蛋糕的女人，蛋糕上有一个巨大的阴茎。山姆表示好奇并想去看看。他们还在小房间里等待，杰夫提供了更具体的位置。,44,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),44,690,final_summary,对话中，大家讨论了特朗普的行为和动机。卡琳认为他不仅仅是糊涂，而是利用民粹主义策略来恐吓人们，并自视为救世主。彼得和米娅同意他的行为更邪恶，且在破坏地球和世界秩序。詹妮弗指出他的危险在于自信和无知。他们一致认为需要努力改变现状，包括赢得下一届选举，并希望特朗普很快下台。,67,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),45,711,final_summary,佩德罗和亚历克斯讨论超级英雄。亚历克斯认为闪灵比蝙蝠侠和超人更强，因为他几乎能做任何事，包括拥有超人类的速度，可以进入多元宇宙。佩德罗表示理解但不同意。,37,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),46,737,final_summary,达米安向伊森求助，请求他帮忙买烤肉串，因为他很饿。伊森同意了，但希望达米安不要总是依赖他人。达米安承诺会改变。,26,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),47,767,final_summary,巴里发起妇女罢工游行邀请，杰克、戴夫及凯利响应，午间在校园周边集合。,16,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),48,799,final_summary,玛莎向奥菲莉亚询问了她头像中隐形眼镜的品牌，奥菲莉亚推荐了疯狂隐形眼镜（Crazy Lenses），并称赞其价格合理、发货迅速。玛莎表示感谢并将考虑购买。,32,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (TS),49,800,final_summary,琳达想给妈妈买花，向父亲迈克尔求助。迈克尔建议她发照片选择，最终确定了郁金香、玫瑰和自由花。,23,notebooks/agents/results/full/translate_then_summarize/aya/ts_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),0,23,final_summary,安妮发现马克隐瞒了真实年龄，并告知了艾琳和简。艾琳对这个谎言的严重性提出质疑。,21,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),1,30,final_summary,玛丽请求卡特借钱，卡特同意一小时后借给她一些钱。,13,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),2,39,final_summary,蒂娜赞扬阿联酋航空工作人员的外表，但抱怨在机场被耽误，错过了航班。阿拉同情她，并提到自己要去开会。蒂娜要求告知会议结果。,30,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),3,65,final_summary,安娜和凯瑟琳计划次日拜访祖母，凯瑟琳醒后会给安娜打电话。,13,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),4,66,final_summary,乔伊斯分享了廉价机票的链接，迈克尔表示惊讶，艾德森立即预订了机票。,15,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),5,67,final_summary,简和史蒂文最终决定提前至下午4点30分在入口处见面，以避免长途旅行的压力。简最初分享了至少3小时的行程估计，但史蒂文自信可更快到达。在简表达担忧后，史蒂文解释道路为新建，并同意提前见面。,49,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),6,78,final_summary,菲奥娜请求蒂娜帮助制作馅饼，蒂娜同意并提供制作建议，以避免做成炒鸡蛋。,16,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),7,86,final_summary,纳塔莉、奥拉夫尔和佐伊讨论新年夜的活动。他们最终决定参加佐伊建议的索霍区“早餐在蒂芙尼”主题派对。,26,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),8,120,final_summary,约翰和乔安计划周四晚8点一起看电影《一个明星的诞生》，约翰将发送放映细节。,20,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),9,137,final_summary,佩顿要求卡梅伦带回视频游戏，但卡梅伦因出差无法立即回家。佩顿建议快递游戏，并催促卡梅伦尽快返家。,21,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),10,139,final_summary,保罗回家后发现忘记了理疗预约，决定重新安排。他提议为深夜回家的艾玛准备食物，得到对方同意。,22,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),11,192,final_summary,哈里斯向莱娜透露了朋友青木的死讯，莱娜给予安慰并认同生命的不可预测性。哈里斯最终结束了对话，称母亲在叫他。,27,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),12,210,final_summary,玛丽和亚兹决定一起去减肥俱乐部，亚兹将在一天六点左右接送玛丽。,15,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),13,211,final_summary,尽管卡米尔生病缺席，艾利莎告诉埃莉她们的课在大学二楼342室。,16,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),14,212,final_summary,艾伦和纳森分享了一个有趣的视频，引发了幽默对话。艾伦惊讶于人物表情，将其与猫咪比较。纳森开玩笑称其为灵性时刻，并解释不认识视频中的人，是丹发送的。,40,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),15,215,final_summary,凯莉告诉弗雷迪她刚看完《王冠》，弗雷迪告知新剧集即将播出，并推荐了《异乡人》和《都铎王朝》作为替代节目。,25,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),16,244,final_summary,琼斯和安吉丽娜计划在镇上的下午见面，具体地点由琼斯电话确认。,15,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),17,285,final_summary,凯西分享了她的指甲艺术照片，并确认是自己亲手完成的。艾米莉亚和克里斯汀赞赏之余，请求她也为她们做指甲。然而，凯西拒绝了，表示做指甲花了四个小时，太费时间了。,43,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),18,319,final_summary,苏要求史蒂夫收到信息后立即联系她，并强调此事重要。史蒂夫确认会马上打电话给苏。,20,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),19,346,final_summary,杰玛邀请蒂米和他的约会对象参加活动，蒂米不确定是否带约会对象但会出席。杰玛提议邀请洛娜和米歇尔，被蒂米调侃。最终，杰玛承认想参加两人婚礼接待。,35,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),20,355,final_summary,安恩赞扬苏和朱莉完成任务的表现，两人表示感谢并同意当晚一起庆祝。,16,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),21,367,final_summary,史蒂夫告知母亲洗碗机已送达并成功安装。母亲询问容量，并对外观和噪音表示满意。,18,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),22,393,final_summary,玛丽卡问劳拉今天是否来，劳拉确认会出席，玛丽卡很高兴。,14,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),23,417,final_summary,米兰达因工作原因请求取消与斯蒂芬妮的明天会议，斯蒂芬妮询问了取消的原因并表达了担忧。,23,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),24,432,final_summary,贾维尔向朱迪询问了英语纹身店，她推荐了华沙墨水店。但当得知纹身价格后，贾维尔决定在哥伦比亚纹身。,27,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),25,433,final_summary,萨姆确认他们将于8月15日下午2点入住迈克尔和杰西卡的酒店。,18,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),26,442,final_summary,特伦斯向丹尼尔道歉，承认自己错误地指责他拿了自己的钱，但丹尼尔依然感到愤怒。,20,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),27,499,final_summary,纳塔莎将前往维西内特车站接查尔斯，大约在下午5点30分，在他到达并打电话给她之后。,23,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),28,528,final_summary,安告知梅她晚上七点到家，可见面。,9,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),29,532,final_summary,Jen坚持要梨味酸奶，Pete同意如果没有梨味就不买任何酸奶。,14,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),30,536,final_summary,克里斯蒂和凯蒂都觉得派对后很累，但一致认为派对很有趣。,15,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),31,537,final_summary,萨姆和卡拉约定明天下午两点在米德伍德的一家咖啡馆见面。,14,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),32,544,final_summary,乔安娜将带来《迪西特》和《卡卡颂》与桑迪一起玩。,13,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),33,548,final_summary,史蒂夫和罗布计划稍后互相分享他们对新梦剧院专辑的意见。,15,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),34,551,final_summary,乔伊（Joy）应彼得（Peter）请求，提供了她美发店的链接。,12,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),35,590,final_summary,诺亚将决定是否能因潜在的工作承诺而参加11月21日的索斯塔菲尔音乐会，并告知小组。,24,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),36,598,final_summary,布拉德利分享了一段猫入侵古迪逊球场的视频，吉尔和朱莉娅表示喜爱。布拉德利打趣道这是埃弗顿球迷本赛季最娱乐的时刻。,28,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),37,605,final_summary,肖恩和扎克将到芭芭拉家，肖恩会带狗来并留宿一夜。,14,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),38,616,final_summary,杰克首次抽中今年TOTW卡，但计划在试用一两场比赛后出售，因为不适合他的队伍。汤姆祝贺他，并指出他有足够的硬币购买更合适的球员。汤姆抱怨自己今年的抽签运气不佳，没有获得优秀球员。,48,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),39,621,final_summary,菲尔向德娜感谢礼物，并询问太阳镜归属。德娜否认所有权，建议他保留。最终，菲尔同意照看无人认领的太阳镜。,21,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),40,635,final_summary,Mell和Gloria聊天，讨论了孩子们搬出去后的生活变化。Mell坦言有时会忘记想念他们，但享受现在的平静。Gloria安慰她，并邀请她家里开烧烤派对。Mell欣然接受，建议在周末举行。Gloria确认日期为本周六。,46,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),41,649,final_summary,卡兰决定将三星S8送去商店维修，以解决黑屏和过热问题。韦德担心数据丢失，但卡兰确认他们已经备份了所有文件。,26,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),42,676,final_summary,安娜向乔安娜抱怨夜间开始的严重胃痛，经过一番询问后，两人同意如果胃痛持续，将去看医生。安娜主动提出为乔安娜泡热茶。,29,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),43,678,final_summary,萨姆询问凯特位置，凯特在楼下，邀请他下来。提到一蛋糕上有巨大阴茎，引得两人笑场。萨姆想看这蛋糕。,24,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),44,690,final_summary,讨论认为特朗普策略危险，非纯愚蠢。卡琳、皮特认同其有意识破坏地球秩序。众人称将努力改变现状，尤其针对下次选举。,24,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),45,711,final_summary,Pedro询问Alex对蝙蝠侠和超人的偏好，但Alex更喜欢闪电侠，并解释其能力。Pedro承认了Alex的观点。,24,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),46,737,final_summary,达米安要求伊森买烤肉卷，伊森同意但抱怨达米安依赖他。达米安承诺改变。,15,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),47,767,final_summary,巴里、杰克和戴夫同意在正午左右在校园附近见面，一起参加妇女罢工游行。,17,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),48,799,final_summary,玛尔塔向奥菲利亚询问了她个人资料照片中镜头的来源。奥菲利亚推荐了Crazy Lenses，玛尔塔决定查看该网站的类似镜片。,29,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Aya-Expanse: 32b (Sem),49,800,final_summary,迈克尔在查看了琳达从花市发送的照片后，建议她为母亲购买风信子。,18,notebooks/agents/results/full/semantic/aya/semantic_aya32b_50samples.jsonl
+Golden Length,0,23,summary_zh,马克向安妮隐瞒了自己的年龄。他40岁了。,12,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,1,30,summary_zh,玛丽的钱用完了，卡特打算一小时后借给她一点。,14,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,2,39,summary_zh,蒂娜将乘晚间航班回家。阿拉正在去开会的路上。她会让蒂娜知道事情的进展。,20,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,3,65,summary_zh,安娜明天想去看望奶奶。凯瑟琳会和她一起去。她起床后会给安娜打电话。,18,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,4,66,summary_zh,埃德森正在订票。,4,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,5,67,summary_zh,简想4点半就走，而不是等到5点，因为谷歌地图提示300公里的车程至少需要3小时，她不想迟到。她会在正门处等史蒂文。,32,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,6,78,summary_zh,菲奥娜想为克里斯准备晚餐。她想起了蒂娜做的馅饼。蒂娜会帮她做的。,19,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,7,86,summary_zh,娜塔莉、奥拉维尔和佐伊正在做新年前夜的计划。娜塔莉想要有格调的。但奥拉维尔不喜欢歌剧。他们想去苏豪区蒂芙尼的聚会上吃早餐。,32,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,8,120,summary_zh,琼和约翰星期四晚上8点左右去看《一个明星的诞生》。,14,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,9,137,summary_zh,佩顿希望卡梅隆能带游戏机过来，但是卡梅隆可能还要再缺席一周。,13,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,10,139,summary_zh,保罗忘记去做理疗了，得重新预约。艾玛午夜后回家，所以保罗会给她准备一些吃的。,22,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,11,192,summary_zh,哈里斯的朋友青木住在密歇根州，昨天去世了。哈里斯有几个月没见她了。,17,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,12,210,summary_zh,亚兹和玛丽今晚6点左右见面，一起去减肥俱乐部。他们估计吃得太多会被骂。,18,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,13,211,summary_zh,艾莉的班级在二楼342教室。,7,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,14,212,summary_zh,内森和亚伦正在讨论内森发来的视频。,9,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,15,215,summary_zh,弗雷迪、凯利、吉姆、格雷格、鲍勃、迈克、玛丽、艾伦和南希正在netflix上观看不同的节目。,17,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,16,244,summary_zh,琼斯和安吉丽娜下午会在城里见面。,8,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,17,285,summary_zh,凯西买了新指甲油，自己做了指甲。她花了近4个小时，所以她不会帮朋友做指甲，因为耗时太长了。,27,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,18,319,summary_zh,史蒂夫正按照苏的要求给她打电话。,9,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,19,346,summary_zh,杰玛将邀请蒂米和他的约会对象，以及罗娜和米歇尔参加她的婚礼。,17,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,20,355,summary_zh,安、苏和朱莉做得很好，今晚他们会举行一个小小的庆祝活动。,16,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,21,367,summary_zh,史蒂夫很高兴他装了一台新的洗碗机。,9,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,22,393,summary_zh,玛丽卡今天会来。,5,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,23,417,summary_zh,米兰达不能去见斯蒂芬妮，因为她要工作。,10,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,24,432,summary_zh,哈维尔最初很想在warsaw ink纹身，但价格太高了。他决定去哥伦比亚做纹身。,18,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,25,433,summary_zh,山姆很喜欢杰西卡和迈克尔的酒店。他会在8月15日下午2点左右去那里。,20,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,26,442,summary_zh,特伦斯指控丹尼尔偷了他的钱。后来他找到了钱，就向丹尼尔道歉。但是丹尼尔还在生气。,22,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,27,499,summary_zh,查尔斯刚刚落地，他会在下午五点半到达rer，娜塔夏会在那里接他。,16,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,28,528,summary_zh,安还在学校，她7点会回家，这样她就可以和麦格见面了。,16,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,29,532,summary_zh,如果商店里有梨味酸奶， 皮特会给珍买的。,9,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,30,536,summary_zh,克里斯蒂和凯蒂在聚会后累了。他们都玩得很开心。,13,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,31,537,summary_zh,卡拉明天有一天假。她将在下午两点在meanwood的一个咖啡馆和山姆见面。,18,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,32,544,summary_zh,琼娜将为桑迪带来一些像迪克西特和卡尔卡松这样的游戏。,15,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,33,548,summary_zh,史蒂夫和罗伯将在听完后谈论新的梦剧场专辑。,12,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,34,551,summary_zh,乔伊把她美容店的链接发给了彼得。,9,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,35,590,summary_zh,伊森和里奥要在21点11分去见索斯塔弗。诺亚也想去，但他可能得工作到很晚。,24,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,36,598,summary_zh,在埃弗顿的足球比赛中，一只可爱的小黑猫钻进了球场。,12,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,37,605,summary_zh,芭芭拉、肖恩和扎克今晚在芭芭拉家见面。肖恩会把狗带来的，肖恩和扎克会在这里过夜。,22,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,38,616,summary_zh,杰克今年拿到了第一个totw ，汤姆的团队并不出色。,12,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,39,621,summary_zh,菲尔收到了迪安娜的一张卡片，康斯坦丁很开心。菲尔有副墨镜。蒂娜在后面收音机上面找到的。迪安娜和菲尔也不知道他们属于谁。菲尔会留着这副墨镜的。,38,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,40,635,summary_zh,格洛丽亚和梅尔计划星期六在梅尔家吃烧烤。他们很高兴，因为泰德的姐姐搬到了苏格兰。梅尔需要格洛丽亚对花园设计的建议。,29,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,41,649,summary_zh,卡伦的三星s8过热了，所以他要去店里修理。,12,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,42,676,summary_zh,安娜夜里胃疼得厉害，但她不知道其中的原因。她的妈妈乔安娜会用新鲜的薄荷叶为她做热茶。,26,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,43,678,summary_zh,凯特和杰夫在楼下接待处旁边的一个房间里。有位女士正在做杏仁蛋糕。,17,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,44,690,summary_zh,米亚、珍妮弗、卡琳和彼得不喜欢特朗普。,8,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,45,711,summary_zh,阿莱克斯更喜欢闪电侠，因为他的速度。,8,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,46,737,summary_zh,伊森会请达米安吃烤肉串，达米安今天过得很糟糕。,10,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,47,767,summary_zh,巴里、戴夫、凯利和杰克将于12点在校园附近集合，参加妇女罢工。,16,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,48,799,summary_zh,玛莎喜欢奥菲莉娅的眼镜，想买类似的，奥菲莉娅是从crazy lens上买的。,18,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
+Golden Length,49,800,summary_zh,琳达想给她妈妈买花，问迈克尔她喜欢哪种花。迈克尔建议琳达买小苍兰。,17,data/gold_results/gold_set_50_zh_XSAMSum_bart.json
