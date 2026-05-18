@@ -887,5 +887,1249 @@
       }
     ],
     "final_outcome": "Gemma plans to invite Timmy, possibly his date, Lona, and Michelle, partly because she wants to be invited to their wedding receptions."
+  },
+  {
+    "test_index": 355,
+    "participants": ["Ann", "Sue", "Julie"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Ann",
+        "speech_act": "congratulation",
+        "intended_meaning": "Ann congratulates Sue and Julie for doing well.",
+        "actor": "Sue and Julie",
+        "action": "did great",
+        "object": null,
+        "recipient": null,
+        "evidence": ["Congratulations!!", "You did great, both of you!"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Ann",
+        "speech_act": "suggestion",
+        "intended_meaning": "Ann suggests having a small celebration tonight.",
+        "actor": "Ann, Sue and Julie",
+        "action": "celebrate",
+        "object": "their achievement",
+        "recipient": null,
+        "evidence": ["Let's have a little celebration tonight!"]
+      },
+      {
+        "event_id": 3,
+        "speaker": "Julie",
+        "speech_act": "commitment",
+        "intended_meaning": "Julie agrees to attend the celebration.",
+        "actor": "Ann, Sue and Julie",
+        "action": "attend",
+        "object": "celebration tonight",
+        "recipient": null,
+        "evidence": ["I'm in", "me too!!!"]
+      }
+    ],
+    "final_outcome": "Ann, Sue and Julie will have a small celebration tonight."
+  },
+  {
+    "test_index": 367,
+    "participants": ["Steve", "Mum"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Steve",
+        "speech_act": "update",
+        "intended_meaning": "Steve tells his mum that the dishwasher has arrived and been installed.",
+        "actor": "Steve",
+        "action": "report installation",
+        "object": "dishwasher",
+        "recipient": "Mum",
+        "evidence": ["the dishwasher has turned up", "yes they did a good job"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Steve",
+        "speech_act": "evaluation",
+        "intended_meaning": "Steve says the dishwasher looks nice and is quiet.",
+        "actor": "Steve",
+        "action": "is pleased with",
+        "object": "dishwasher",
+        "recipient": null,
+        "evidence": ["its nice and quiet", "I am thanks mum"]
+      }
+    ],
+    "final_outcome": "Steve is pleased with his newly installed dishwasher."
+  },
+  {
+    "test_index": 393,
+    "participants": ["Marika", "Lara"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Marika",
+        "speech_act": "question",
+        "intended_meaning": "Marika asks whether Lara is coming today.",
+        "actor": "Lara",
+        "action": "come",
+        "object": null,
+        "recipient": null,
+        "evidence": ["Are you coming today?"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Lara",
+        "speech_act": "confirmation",
+        "intended_meaning": "Lara confirms that she is coming today.",
+        "actor": "Lara",
+        "action": "come",
+        "object": null,
+        "recipient": null,
+        "evidence": ["Yes!"]
+      }
+    ],
+    "final_outcome": "Lara is coming today."
+  },
+  {
+    "test_index": 417,
+    "participants": ["Miranda", "Stephanie"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Miranda",
+        "speech_act": "request",
+        "intended_meaning": "Miranda asks Stephanie to cancel tomorrow's meeting.",
+        "actor": "Miranda and Stephanie",
+        "action": "cancel",
+        "object": "tomorrow's meeting",
+        "recipient": null,
+        "evidence": ["could we cancel tomorrow's meeting?"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Miranda",
+        "speech_act": "explanation",
+        "intended_meaning": "Miranda explains that she has to work.",
+        "actor": "Miranda",
+        "action": "work",
+        "object": null,
+        "recipient": null,
+        "evidence": ["I have to work"]
+      }
+    ],
+    "final_outcome": "Miranda cannot attend tomorrow's meeting with Stephanie because she has to work."
+  },
+  {
+    "test_index": 432,
+    "participants": ["Javier", "Judie"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Javier",
+        "speech_act": "information request",
+        "intended_meaning": "Javier asks Judie for tattoo parlors with English-speaking employees.",
+        "actor": "Judie",
+        "action": "recommend",
+        "object": "tattoo parlor",
+        "recipient": "Javier",
+        "evidence": ["do you know any tattoo parlors over here with English speaking employees?"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Judie",
+        "speech_act": "recommendation",
+        "intended_meaning": "Judie recommends Warsaw Ink.",
+        "actor": "Judie",
+        "action": "recommend",
+        "object": "Warsaw Ink",
+        "recipient": null,
+        "evidence": ["there's Warsaw ink"]
+      },
+      {
+        "event_id": 3,
+        "speaker": "Javier",
+        "speech_act": "decision",
+        "intended_meaning": "Javier decides not to get a tattoo at Warsaw Ink because it is too expensive.",
+        "actor": "Javier",
+        "action": "get tattoo",
+        "object": "tattoo in Colombia",
+        "recipient": null,
+        "evidence": ["it was a 1000", "let me just get a tatttoo back in colombia"]
+      }
+    ],
+    "final_outcome": "Javier decides to get a tattoo in Colombia instead of Warsaw Ink because Warsaw Ink is too expensive."
+  },
+  {
+    "test_index": 433,
+    "participants": ["Sam", "Jessica", "Michael"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Sam",
+        "speech_act": "compliment",
+        "intended_meaning": "Sam compliments Jessica and Michael's hotel.",
+        "actor": "Jessica and Michael",
+        "action": "own",
+        "object": "nice hotel",
+        "recipient": null,
+        "evidence": ["You own a really nice hotel"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Sam",
+        "speech_act": "confirmation",
+        "intended_meaning": "Sam confirms that he will arrive at the hotel on August 15 around 2 p.m.",
+        "actor": "Sam",
+        "action": "arrive",
+        "object": "hotel",
+        "recipient": null,
+        "evidence": ["on the 15th of August", "around 2 p.m."]
+      }
+    ],
+    "final_outcome": "Sam will visit Jessica and Michael's hotel on August 15 around 2 p.m."
+  },
+  {
+    "test_index": 442,
+    "participants": ["Terence", "Daniel"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Terence",
+        "speech_act": "accusation",
+        "intended_meaning": "Terence accuses Daniel of taking his money.",
+        "actor": "Terence",
+        "action": "accuse of stealing",
+        "object": "Daniel",
+        "recipient": null,
+        "evidence": ["You took my money, didn't you?"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Daniel",
+        "speech_act": "denial",
+        "intended_meaning": "Daniel denies taking the money and is offended by the accusation.",
+        "actor": "Daniel",
+        "action": "deny stealing",
+        "object": "money",
+        "recipient": "Terence",
+        "evidence": ["Why would I", "I'm not a thief"]
+      },
+      {
+        "event_id": 3,
+        "speaker": "Terence",
+        "speech_act": "apology",
+        "intended_meaning": "Terence apologizes after finding the money elsewhere.",
+        "actor": "Terence",
+        "action": "found",
+        "object": "money",
+        "recipient": null,
+        "evidence": ["I'm sorry", "I've just found it"]
+      },
+      {
+        "event_id": 4,
+        "speaker": "Daniel",
+        "speech_act": "express emotion",
+        "intended_meaning": "Daniel is upset.",
+        "actor": "Daniel",
+        "action": "upset",
+        "object": null,
+        "recipient": null,
+        "evidence": ["Yeah, oh-fucking-course I am"]
+      }
+    ],
+    "final_outcome": "Terence wrongly accused Daniel of stealing his money, later found it, and apologized, but Daniel remained upset."
+  },
+  {
+    "test_index": 499,
+    "participants": ["Natacha", "Charles"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Natacha",
+        "speech_act": "offer",
+        "intended_meaning": "Natacha offers to pick Charles up at the RER.",
+        "actor": "Natacha",
+        "action": "pick up",
+        "object": "Charles",
+        "recipient": null,
+        "evidence": ["i can come and pick you up at the RER"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Charles",
+        "speech_act": "update",
+        "intended_meaning": "Charles says he has landed and expects to arrive around 5:30 p.m.",
+        "actor": "Charles",
+        "action": "arrive",
+        "object": "RER",
+        "recipient": null,
+        "evidence": ["I just landed", "i'll arrive about 5:30pm"]
+      },
+      {
+        "event_id": 3,
+        "speaker": "Natacha",
+        "speech_act": "instruction",
+        "intended_meaning": "Natacha asks Charles to call her when he reaches Vesinet station.",
+        "actor": "Charles",
+        "action": "call",
+        "object": null,
+        "recipient": "Natacha",
+        "evidence": ["call me when you'll be at the station Vesinet"]
+      }
+    ],
+    "final_outcome": "Natacha will pick Charles up at the RER around 5:30 p.m.; Charles will call when he reaches Vesinet station."
+  },
+  {
+    "test_index": 528,
+    "participants": ["Meg", "Ann"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Ann",
+        "speech_act": "explanation",
+        "intended_meaning": "Ann explains that she is still at school because she has extra math classes.",
+        "actor": "Ann",
+        "action": "attend",
+        "object": "extra math classes",
+        "recipient": null,
+        "evidence": ["i have extra math classes"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Ann",
+        "speech_act": "availability update",
+        "intended_meaning": "Ann tells Meg that she will be home at 7.",
+        "actor": "Ann",
+        "action": "be home",
+        "object": "7",
+        "recipient": null,
+        "evidence": ["i will be home at 7"]
+      }
+    ],
+    "final_outcome": "Ann is still at school for extra math classes and will be home at 7, so Meg can meet her then."
+  },
+  {
+    "test_index": 532,
+    "participants": ["Pete", "Jen"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Pete",
+        "speech_act": "information request",
+        "intended_meaning": "Pete asks Jen which yogurt flavor she wanted.",
+        "actor": "Pete",
+        "action": "request",
+        "object": "yogurt flavor",
+        "recipient": "Jen",
+        "evidence": ["What flavour yogurt did you want again?"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Jen",
+        "speech_act": "preference",
+        "intended_meaning": "Jen wants pear yogurt only if it is available.",
+        "actor": "Jen",
+        "action": "want",
+        "object": "pear yogurt",
+        "recipient": null,
+        "evidence": ["Pear but only if they've got it"]
+      },
+      {
+        "event_id": 3,
+        "speaker": "Jen",
+        "speech_act": "condition",
+        "intended_meaning": "Jen tells Pete not to buy any yogurt if pear is unavailable.",
+        "actor": "Pete",
+        "action": "not buy",
+        "object": "yogurt",
+        "recipient": "Jen",
+        "evidence": ["If they don't have pear just don't get anything at all"]
+      }
+    ],
+    "final_outcome": "Pete will buy pear yogurt for Jen if available; otherwise he will not buy yogurt."
+  },
+  {
+    "test_index": 536,
+    "participants": ["Christie", "Katie"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Christie",
+        "speech_act": "question",
+        "intended_meaning": "Christie asks Katie how she feels after the party.",
+        "actor": "Katie",
+        "action": "feel",
+        "object": "after the party",
+        "recipient": null,
+        "evidence": ["how are you after the party?"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Katie",
+        "speech_act": "update",
+        "intended_meaning": "Katie says she is really tired.",
+        "actor": "Katie",
+        "action": "feel tired",
+        "object": null,
+        "recipient": null,
+        "evidence": ["really tired"]
+      },
+      {
+        "event_id": 3,
+        "speaker": "Christie",
+        "speech_act": "evaluation",
+        "intended_meaning": "Christie says the party was great.",
+        "actor": "Christie and Katie",
+        "action": "had fun",
+        "object": "party",
+        "recipient": null,
+        "evidence": ["the party was great", "we had fun"]
+      }
+    ],
+    "final_outcome": "Christie and Katie are tired after the party, but they both had fun."
+  },
+  {
+    "test_index": 537,
+    "participants": ["Sam", "Carla"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Sam",
+        "speech_act": "invitation",
+        "intended_meaning": "Sam asks Carla if she wants to meet tomorrow afternoon.",
+        "actor": "Sam and Carla",
+        "action": "meet up",
+        "object": "tomorrow afternoon",
+        "recipient": null,
+        "evidence": ["I'm free in the afternoon", "do you fancy meeting up?"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Carla",
+        "speech_act": "acceptance",
+        "intended_meaning": "Carla agrees to meet Sam.",
+        "actor": "Carla",
+        "action": "agree to meet",
+        "object": null,
+        "recipient": "Sam",
+        "evidence": ["Yeah, sure"]
+      },
+      {
+        "event_id": 3,
+        "speaker": "Carla",
+        "speech_act": "proposal",
+        "intended_meaning": "Carla suggests meeting at a cafe in Meanwood at 2.",
+        "actor": "Sam and Carla",
+        "action": "meet",
+        "object": "cafe in Meanwood at 2",
+        "recipient": null,
+        "evidence": ["there's that cafe there", "Meet you at 2?"]
+      }
+    ],
+    "final_outcome": "Carla will meet Sam at a cafe in Meanwood at 2 p.m. tomorrow."
+  },
+  {
+    "test_index": 544,
+    "participants": ["Joana", "Sandy"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Joana",
+        "speech_act": "invitation",
+        "intended_meaning": "Joana asks Sandy if she wants to play games.",
+        "actor": "Joana and Sandy",
+        "action": "play",
+        "object": "games",
+        "recipient": null,
+        "evidence": ["wana play some games?"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Joana",
+        "speech_act": "suggestion",
+        "intended_meaning": "Joana suggests Dixit or Carcassonne.",
+        "actor": "Joana and Sandy",
+        "action": "play",
+        "object": "Dixit or Carcassonne",
+        "recipient": null,
+        "evidence": ["maybe dixit?", "or carcassonne?"]
+      },
+      {
+        "event_id": 3,
+        "speaker": "Joana",
+        "speech_act": "commitment",
+        "intended_meaning": "Joana says she will bring the games to Sandy.",
+        "actor": "Joana",
+        "action": "bring",
+        "object": "games",
+        "recipient": "Sandy",
+        "evidence": ["I'll bring them 2 u"]
+      }
+    ],
+    "final_outcome": "Joana will bring Sandy games such as Dixit and Carcassonne."
+  },
+  {
+    "test_index": 548,
+    "participants": ["Steve", "Rob"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Steve",
+        "speech_act": "update",
+        "intended_meaning": "Steve says he just bought the new Dream Theater album.",
+        "actor": "Steve",
+        "action": "bought",
+        "object": "new Dream Theater album",
+        "recipient": null,
+        "evidence": ["Bought the new Dream Theater album 5 minutes ago"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Rob",
+        "speech_act": "update",
+        "intended_meaning": "Rob says he also has the album ready to listen to.",
+        "actor": "Rob",
+        "action": "listen to",
+        "object": "new Dream Theater album",
+        "recipient": null,
+        "evidence": ["I have it here on my desk, ready for the first listening"]
+      },
+      {
+        "event_id": 3,
+        "speaker": "Steve",
+        "speech_act": "commitment",
+        "intended_meaning": "Steve says he will later tell Rob what he thinks of the album.",
+        "actor": "Steve",
+        "action": "share opinion",
+        "object": "album",
+        "recipient": "Rob",
+        "evidence": ["I'll tell you later what I think about it"]
+      }
+    ],
+    "final_outcome": "Steve and Rob will discuss the new Dream Theater album after listening to it."
+  },
+  {
+    "test_index": 551,
+    "participants": ["Peter", "Joy"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Peter",
+        "speech_act": "request",
+        "intended_meaning": "Peter asks Joy to send him the link to her beauty shop.",
+        "actor": "Joy",
+        "action": "send",
+        "object": "beauty shop link",
+        "recipient": "Peter",
+        "evidence": ["Can you send me the link of your beauty shop?"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Joy",
+        "speech_act": "compliance",
+        "intended_meaning": "Joy sends Peter the link to her beauty shop.",
+        "actor": "Joy",
+        "action": "send",
+        "object": "beauty shop link",
+        "recipient": "Peter",
+        "evidence": ["It is https:// *********"]
+      }
+    ],
+    "final_outcome": "Joy sent Peter the link to her beauty shop."
+  },
+  {
+    "test_index": 590,
+    "participants": ["Ethan", "Noah", "Archie", "Leo"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Ethan",
+        "speech_act": "information request",
+        "intended_meaning": "Ethan asks who is going to see Sólstafir.",
+        "actor": "group",
+        "action": "go see",
+        "object": "Sólstafir",
+        "recipient": null,
+        "evidence": ["who's going to see solstafir?"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Leo",
+        "speech_act": "commitment",
+        "intended_meaning": "Leo says he is going to the concert.",
+        "actor": "Leo",
+        "action": "go to",
+        "object": "Sólstafir concert",
+        "recipient": null,
+        "evidence": ["i'm going ofc!"]
+      },
+      {
+        "event_id": 3,
+        "speaker": "Ethan",
+        "speech_act": "information",
+        "intended_meaning": "Ethan says the concert is on 21.11.",
+        "actor": "Sólstafir",
+        "action": "play",
+        "object": "concert on 21.11",
+        "recipient": null,
+        "evidence": ["21.11"]
+      },
+      {
+        "event_id": 4,
+        "speaker": "Noah",
+        "speech_act": "uncertainty",
+        "intended_meaning": "Noah wants to go but may have to stay late at work.",
+        "actor": "Noah",
+        "action": "may stay late",
+        "object": "work",
+        "recipient": null,
+        "evidence": ["i'll have to see", "might have to stay late at work"]
+      }
+    ],
+    "final_outcome": "Ethan and Leo are going to see Sólstafir on 21.11; Noah wants to go but may have to work late."
+  },
+  {
+    "test_index": 598,
+    "participants": ["Bradley", "Jill", "Julia"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Bradley",
+        "speech_act": "information sharing",
+        "intended_meaning": "Bradley shares that a cat invaded the pitch at Goodison.",
+        "actor": "cat",
+        "action": "invaded",
+        "object": "pitch at Goodison",
+        "recipient": null,
+        "evidence": ["a cat invaded the pitch at Goodison"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Jill",
+        "speech_act": "information sharing",
+        "intended_meaning": "Jill shares a video of the cat.",
+        "actor": "Jill",
+        "action": "share",
+        "object": "video",
+        "recipient": "group",
+        "evidence": ["here's the video"]
+      },
+      {
+        "event_id": 3,
+        "speaker": "Julia",
+        "speech_act": "evaluation",
+        "intended_meaning": "Julia thinks the cat is sweet.",
+        "actor": "Julia",
+        "action": "describe",
+        "object": "cat",
+        "recipient": null,
+        "evidence": ["what a sweet little black ball of fur"]
+      }
+    ],
+    "final_outcome": "A sweet little black cat got onto the pitch during an Everton football match."
+  },
+  {
+    "test_index": 605,
+    "participants": ["Barbara", "Sean", "Zac"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Barbara",
+        "speech_act": "invitation",
+        "intended_meaning": "Barbara tells Sean and Zac they can come over because she is home.",
+        "actor": "Sean and Zac",
+        "action": "come over",
+        "object": "Barbara's place",
+        "recipient": null,
+        "evidence": ["I'm home already, you can come over"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Sean",
+        "speech_act": "permission request",
+        "intended_meaning": "Sean asks whether he may bring the dog.",
+        "actor": "Sean",
+        "action": "bring",
+        "object": "dog",
+        "recipient": "Barbara",
+        "evidence": ["May I bring the dog?"]
+      },
+      {
+        "event_id": 3,
+        "speaker": "Barbara",
+        "speech_act": "permission",
+        "intended_meaning": "Barbara allows Sean to bring the dog.",
+        "actor": "Sean",
+        "action": "bring",
+        "object": "dog",
+        "recipient": "Barbara",
+        "evidence": ["sure you can, Sean"]
+      },
+      {
+        "event_id": 4,
+        "speaker": "Barbara",
+        "speech_act": "offer",
+        "intended_meaning": "Barbara asks whether Sean wants to stay overnight.",
+        "actor": "Sean",
+        "action": "stay overnight",
+        "object": "Barbara's place",
+        "recipient": null,
+        "evidence": ["do you want to stay overnight?"]
+      }
+    ],
+    "final_outcome": "Sean and Zac are going to Barbara's place; Sean will bring the dog and may stay overnight."
+  },
+  {
+    "test_index": 616,
+    "participants": ["Jake", "Tom"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Jake",
+        "speech_act": "announcement",
+        "intended_meaning": "Jake says he pulled his first TOTW player this year.",
+        "actor": "Jake",
+        "action": "pulled",
+        "object": "TOTW player",
+        "recipient": null,
+        "evidence": ["I just pulled a TOTW", "my first this year"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Jake",
+        "speech_act": "decision",
+        "intended_meaning": "Jake plans to sell the player after trying him in a few matches.",
+        "actor": "Jake",
+        "action": "sell",
+        "object": "TOTW player",
+        "recipient": null,
+        "evidence": ["yeah", "I'll try him in one or two matches", "he's not a good fit for my squads"]
+      },
+      {
+        "event_id": 3,
+        "speaker": "Tom",
+        "speech_act": "complaint",
+        "intended_meaning": "Tom complains that he has had bad pull luck this year.",
+        "actor": "Tom",
+        "action": "lack",
+        "object": "great players",
+        "recipient": null,
+        "evidence": ["my pull luck sucks this year", "not a single great player"]
+      }
+    ],
+    "final_outcome": "Jake got his first TOTW player this year and plans to sell him; Tom has had bad pull luck."
+  },
+  {
+    "test_index": 621,
+    "participants": ["Phil", "Deana"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Phil",
+        "speech_act": "gratitude",
+        "intended_meaning": "Phil thanks Deana for the card and says Constantine was happy.",
+        "actor": "Deana",
+        "action": "sent",
+        "object": "card",
+        "recipient": "Phil and Constantine",
+        "evidence": ["Many thanks for this nice card", "Constantine was very happy"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Phil",
+        "speech_act": "information request",
+        "intended_meaning": "Phil asks whether the sunglasses also belong to Deana.",
+        "actor": "Deana",
+        "action": "own",
+        "object": "sunglasses",
+        "recipient": null,
+        "evidence": ["Are these sunglasses also from you?"]
+      },
+      {
+        "event_id": 3,
+        "speaker": "Deana",
+        "speech_act": "denial",
+        "intended_meaning": "Deana says the sunglasses are not hers and thought they belonged to Cathreen.",
+        "actor": "Deana",
+        "action": "does not own",
+        "object": "sunglasses",
+        "recipient": null,
+        "evidence": ["I thought they belonged your Cathreen", "Mine either"]
+      },
+      {
+        "event_id": 4,
+        "speaker": "Phil",
+        "speech_act": "decision",
+        "intended_meaning": "Phil says they will look after the sunglasses because no one knows who owns them.",
+        "actor": "Phil",
+        "action": "keep",
+        "object": "sunglasses",
+        "recipient": null,
+        "evidence": ["they don't belong to any of us", "we can look after these sunglasses"]
+      }
+    ],
+    "final_outcome": "Phil received Deana's card, and Phil will keep the unidentified sunglasses Deana found in the car."
+  },
+  {
+    "test_index": 635,
+    "participants": ["Mell", "Gloria", "Tad", "Mark"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Gloria",
+        "speech_act": "suggestion",
+        "intended_meaning": "Gloria suggests having a barbecue because the weather is good.",
+        "actor": "Mell and Gloria",
+        "action": "have",
+        "object": "barbecue",
+        "recipient": null,
+        "evidence": ["perfect for a BBQ", "What do you think?"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Mell",
+        "speech_act": "acceptance",
+        "intended_meaning": "Mell agrees to host the barbecue at her place.",
+        "actor": "Mell",
+        "action": "host",
+        "object": "barbecue",
+        "recipient": "Gloria",
+        "evidence": ["I'm all for it", "At my place? I'd love it"]
+      },
+      {
+        "event_id": 3,
+        "speaker": "Mell",
+        "speech_act": "request",
+        "intended_meaning": "Mell wants Gloria's opinion on her terrace and garden design ideas.",
+        "actor": "Gloria",
+        "action": "give opinion",
+        "object": "garden design drawings",
+        "recipient": "Mell",
+        "evidence": ["I must show you my drawings", "hear your opinion"]
+      },
+      {
+        "event_id": 4,
+        "speaker": "Mell",
+        "speech_act": "proposal",
+        "intended_meaning": "Mell proposes doing the food while Gloria brings drinks.",
+        "actor": "Mell and Gloria",
+        "action": "prepare",
+        "object": "food, drinks and dessert",
+        "recipient": null,
+        "evidence": ["Shall I do the food and you the drinks?", "I'll get us some dessert"]
+      },
+      {
+        "event_id": 5,
+        "speaker": "Mell",
+        "speech_act": "relief",
+        "intended_meaning": "Mell is relieved that Tad's sister moved to Scotland.",
+        "actor": "Tad's sister",
+        "action": "moved",
+        "object": "Scotland",
+        "recipient": null,
+        "evidence": ["she moved up to Scotland", "I don't have to put up with her"]
+      }
+    ],
+    "final_outcome": "Mell and Gloria will have a barbecue at Mell's place on Saturday; Mell wants Gloria's garden design advice and is relieved Tad's sister moved to Scotland."
+  },
+  {
+    "test_index": 649,
+    "participants": ["Callan", "Wade"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Callan",
+        "speech_act": "problem report",
+        "intended_meaning": "Callan reports that something is wrong with his Samsung S8 because it only shows a black screen.",
+        "actor": "Samsung S8",
+        "action": "shows",
+        "object": "black screen",
+        "recipient": null,
+        "evidence": ["Something's wrong with my Samsung S8", "All I get is a black screen"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Callan",
+        "speech_act": "explanation",
+        "intended_meaning": "Callan thinks the phone overheated and needs time to restart.",
+        "actor": "Samsung S8",
+        "action": "overheats",
+        "object": null,
+        "recipient": null,
+        "evidence": ["It overheats", "takes a while for it to restart again"]
+      },
+      {
+        "event_id": 3,
+        "speaker": "Callan",
+        "speech_act": "decision",
+        "intended_meaning": "Callan will take the phone to the store because it is still under warranty.",
+        "actor": "Callan",
+        "action": "take",
+        "object": "phone to store",
+        "recipient": null,
+        "evidence": ["I'm going to the store", "It's still under warranty"]
+      }
+    ],
+    "final_outcome": "Callan's Samsung S8 overheated and has a black screen, so he will take it to the store under warranty."
+  },
+  {
+    "test_index": 676,
+    "participants": ["Anna", "Joanna"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Anna",
+        "speech_act": "problem report",
+        "intended_meaning": "Anna tells Joanna that she has had a bad stomachache since night.",
+        "actor": "Anna",
+        "action": "has",
+        "object": "awful stomachache",
+        "recipient": null,
+        "evidence": ["I have a awful stomachache", "At night, and it won’t stop"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Joanna",
+        "speech_act": "hypothesis",
+        "intended_meaning": "Joanna considers possible causes of Anna's stomachache.",
+        "actor": "Joanna",
+        "action": "consider",
+        "object": "cause of stomachache",
+        "recipient": null,
+        "evidence": ["Is it something you ate?", "Maybe the milk was bad"]
+      },
+      {
+        "event_id": 3,
+        "speaker": "Anna",
+        "speech_act": "suggestion",
+        "intended_meaning": "Anna suggests seeing a doctor if the stomachache does not improve.",
+        "actor": "Anna",
+        "action": "see",
+        "object": "doctor",
+        "recipient": null,
+        "evidence": ["If not, maybe we should go and see a doctor"]
+      },
+      {
+        "event_id": 4,
+        "speaker": "Anna",
+        "speech_act": "offer",
+        "intended_meaning": "Anna offers to make Joanna hot tea with fresh mint leaves.",
+        "actor": "Anna",
+        "action": "drink",
+        "object": "hot tea with fresh mint leaves",
+        "recipient": null,
+        "evidence": ["I’ll get you a hot tea with some fresh mint leaves"]
+      }
+    ],
+    "final_outcome": "Anna has a bad stomachache and does not know the cause; she may see a doctor if it continues and will take a hot mint tea."
+  },
+  {
+    "test_index": 678,
+    "participants": ["Sam", "Kate", "Jeff"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Kate",
+        "speech_act": "location update",
+        "intended_meaning": "Kate tells Sam that she is downstairs.",
+        "actor": "Kate",
+        "action": "be located",
+        "object": "downstairs",
+        "recipient": null,
+        "evidence": ["downstairs"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Jeff",
+        "speech_act": "location update",
+        "intended_meaning": "Jeff says they are in the little room next to the reception.",
+        "actor": "Kate and Jeff",
+        "action": "be located",
+        "object": "little room next to the reception",
+        "recipient": null,
+        "evidence": ["We're in the little room next to the reception"]
+      },
+      {
+        "event_id": 3,
+        "speaker": "Kate",
+        "speech_act": "information sharing",
+        "intended_meaning": "Kate tells Sam about a woman making an explicit marzipan cake.",
+        "actor": "woman",
+        "action": "make",
+        "object": "cake with explicit decoration",
+        "recipient": null,
+        "evidence": ["there was a huge penis on it", "made of marzipan"]
+      }
+    ],
+    "final_outcome": "Kate and Jeff are downstairs near the reception, where Kate saw a woman making an explicit marzipan cake."
+  },
+  {
+    "test_index": 690,
+    "participants": ["Mia", "Jennifer", "Karine", "Peter"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Mia",
+        "speech_act": "complaint",
+        "intended_meaning": "Mia complains about Trump repeatedly talking about the wall.",
+        "actor": "Trump",
+        "action": "keeps talking about",
+        "object": "the wall",
+        "recipient": null,
+        "evidence": ["he keeps talking about the stupid wall"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Karine",
+        "speech_act": "political criticism",
+        "intended_meaning": "Karine argues that Trump's strategy is populist and based on scaring people with a minority.",
+        "actor": "Trump",
+        "action": "uses",
+        "object": "populist strategy",
+        "recipient": null,
+        "evidence": ["populist strategy to scare people with a minority"]
+      },
+      {
+        "event_id": 3,
+        "speaker": "Peter",
+        "speech_act": "agreement",
+        "intended_meaning": "Peter agrees with Karine that Trump is more dangerous than merely senile or stupid.",
+        "actor": "Peter",
+        "action": "agree",
+        "object": "Karine's criticism",
+        "recipient": null,
+        "evidence": ["Karine is right"]
+      },
+      {
+        "event_id": 4,
+        "speaker": "Mia",
+        "speech_act": "call to action",
+        "intended_meaning": "Mia says they should do anything to win the next elections.",
+        "actor": "Mia, Jennifer, Karine and Peter",
+        "action": "try to win",
+        "object": "next elections",
+        "recipient": null,
+        "evidence": ["we should do anything to win the next elections"]
+      }
+    ],
+    "final_outcome": "Mia, Jennifer, Karine and Peter strongly criticize Trump and want to oppose him in the next elections."
+  },
+  {
+    "test_index": 711,
+    "participants": ["Pedro", "Alex"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Pedro",
+        "speech_act": "preference question",
+        "intended_meaning": "Pedro asks Alex to choose between Batman and Superman.",
+        "actor": "Alex",
+        "action": "choose",
+        "object": "Batman or Superman",
+        "recipient": null,
+        "evidence": ["batman or superman??"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Alex",
+        "speech_act": "preference",
+        "intended_meaning": "Alex says he prefers the Flash instead.",
+        "actor": "Alex",
+        "action": "prefer",
+        "object": "the Flash",
+        "recipient": null,
+        "evidence": ["neither", "i honestly like the flash"]
+      },
+      {
+        "event_id": 3,
+        "speaker": "Alex",
+        "speech_act": "justification",
+        "intended_meaning": "Alex argues that the Flash is powerful because his speed opens up the multiverse.",
+        "actor": "Flash",
+        "action": "access",
+        "object": "multiverse",
+        "recipient": null,
+        "evidence": ["that speed opens up the whole multiverse for him"]
+      }
+    ],
+    "final_outcome": "Alex prefers the Flash over Batman and Superman because of the Flash's speed and power."
+  },
+  {
+    "test_index": 737,
+    "participants": ["Damian", "Ethan"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Damian",
+        "speech_act": "request",
+        "intended_meaning": "Damian asks Ethan to buy him a kebab because he is starving.",
+        "actor": "Ethan",
+        "action": "buy",
+        "object": "kebab",
+        "recipient": "Damian",
+        "evidence": ["can you buy me a kebab?", "i'm starving"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Ethan",
+        "speech_act": "complaint",
+        "intended_meaning": "Ethan complains that Damian depends on him instead of cooking.",
+        "actor": "Damian",
+        "action": "not cook",
+        "object": "food",
+        "recipient": null,
+        "evidence": ["why won't you cook something for both of us", "such a parasite"]
+      },
+      {
+        "event_id": 3,
+        "speaker": "Ethan",
+        "speech_act": "acceptance",
+        "intended_meaning": "Ethan agrees to buy Damian a kebab.",
+        "actor": "Ethan",
+        "action": "buy",
+        "object": "kebab",
+        "recipient": "Damian",
+        "evidence": ["ok ok"]
+      }
+    ],
+    "final_outcome": "Ethan will buy Damian a kebab because Damian is starving after a rough day."
+  },
+  {
+    "test_index": 767,
+    "participants": ["Barry", "Jake", "Dave"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Barry",
+        "speech_act": "invitation",
+        "intended_meaning": "Barry asks whether anyone wants to join the Women's strike march.",
+        "actor": "group",
+        "action": "join",
+        "object": "Women's strike march",
+        "recipient": null,
+        "evidence": ["I'm gonna go march in Women's strike, anyone interested?"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Jake",
+        "speech_act": "acceptance",
+        "intended_meaning": "Jake is going and invites Barry to join his friends.",
+        "actor": "Barry",
+        "action": "join",
+        "object": "Jake and friends",
+        "recipient": null,
+        "evidence": ["I am", "wanna join?"]
+      },
+      {
+        "event_id": 3,
+        "speaker": "Dave",
+        "speech_act": "acceptance",
+        "intended_meaning": "Dave will also join and Kelly is coming with him.",
+        "actor": "Dave and Kelly",
+        "action": "come",
+        "object": "Women's strike march",
+        "recipient": null,
+        "evidence": ["I am down too", "Kelly is coming with me"]
+      },
+      {
+        "event_id": 4,
+        "speaker": "Barry",
+        "speech_act": "plan",
+        "intended_meaning": "Barry proposes meeting around campus at noon.",
+        "actor": "Barry, Jake, Dave and Kelly",
+        "action": "meet",
+        "object": "around campus at noon",
+        "recipient": null,
+        "evidence": ["meet around the campus at noon"]
+      }
+    ],
+    "final_outcome": "Barry, Jake, Dave and Kelly will meet around campus at noon to join the Women's strike."
+  },
+  {
+    "test_index": 799,
+    "participants": ["Martha", "Ophelia"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Martha",
+        "speech_act": "request",
+        "intended_meaning": "Martha asks Ophelia where she got the lenses in her profile picture.",
+        "actor": "Ophelia",
+        "action": "provide information about",
+        "object": "lenses",
+        "recipient": "Martha",
+        "evidence": ["do you mind if I ask you about the lenses from your profile picture?"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Martha",
+        "speech_act": "preference",
+        "intended_meaning": "Martha likes the lenses and wants to buy similar ones.",
+        "actor": "Martha",
+        "action": "buy",
+        "object": "similar lenses",
+        "recipient": null,
+        "evidence": ["they are awesome", "I would like to buy the similar ones"]
+      },
+      {
+        "event_id": 3,
+        "speaker": "Ophelia",
+        "speech_act": "answer",
+        "intended_meaning": "Ophelia tells Martha the lenses are from Crazy Lenses.",
+        "actor": "Ophelia",
+        "action": "got",
+        "object": "lenses from Crazy Lenses",
+        "recipient": null,
+        "evidence": ["it's from Crazy Lenses"]
+      }
+    ],
+    "final_outcome": "Martha likes Ophelia's lenses and plans to check Crazy Lenses for similar ones."
+  },
+  {
+    "test_index": 800,
+    "participants": ["Linda", "Michael"],
+    "semantic_grounding": [
+      {
+        "event_id": 1,
+        "speaker": "Linda",
+        "speech_act": "request",
+        "intended_meaning": "Linda asks Michael which flowers her mother likes.",
+        "actor": "Linda",
+        "action": "asks",
+        "object": "flower choice",
+        "recipient": "Michael",
+        "evidence": ["I want to buy flowers for mum", "I don't remember which one she likes"]
+      },
+      {
+        "event_id": 2,
+        "speaker": "Michael",
+        "speech_act": "suggestion",
+        "intended_meaning": "Michael suggests tulips and roses as nice options.",
+        "actor": "Michael",
+        "action": "suggest",
+        "object": "tulips and roses",
+        "recipient": null,
+        "evidence": ["Tulips are nice, roses too"]
+      },
+      {
+        "event_id": 3,
+        "speaker": "Michael",
+        "speech_act": "rejection",
+        "intended_meaning": "Michael rejects carnations as boring.",
+        "actor": "Michael",
+        "action": "not choose",
+        "object": "carnations",
+        "recipient": null,
+        "evidence": ["No, carnations are boring"]
+      },
+      {
+        "event_id": 4,
+        "speaker": "Michael",
+        "speech_act": "recommendation",
+        "intended_meaning": "Michael recommends freesias because Linda's mother likes them a lot.",
+        "actor": "Linda",
+        "action": "buy",
+        "object": "freesias",
+        "recipient": "Linda's mother",
+        "evidence": ["What about freesias?", "She likes them a lot", "Take those!"]
+      }
+    ],
+    "final_outcome": "Linda wants to buy flowers for her mother, and Michael recommends buying freesias."
   }
 ]
