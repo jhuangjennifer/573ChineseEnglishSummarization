@@ -326,7 +326,7 @@ python scripts/evaluate/evaluate_rouge_bertscore.py \
 pip uninstall -y torchvision torchaudio # Needed to resolve dependency issues with OmniScore
 
 python scripts/evaluate/evaluate_omniscore.py \
-  --results_path <PATH TO BASELINE JSON RESULT (i.e. mbart_gold_50_results.json)> \
+  --results_path <PATH TO BASELINE JSON RESULT (i.e. data/gold_results/mbart/data/gold_results/mbart/mbart_gold_50_results.json)> \
   --reference_type baseline
 ```
 
@@ -343,7 +343,7 @@ python scripts/evaluate/evaluate_rouge_bertscore.py \
 pip uninstall -y torchvision torchaudio # Needed to resolve dependency issues with OmniScore
 
 python scripts/evaluate/evaluate_omniscore.py \
-  --results_path <PATH TO AGENTIC JSON RESULT (i.e. direct_aya32b_50samples.jsonl)> \
+  --results_path <PATH TO AGENTIC JSON RESULT (i.e. notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.jsonl)> \
   --reference_type agentic
 ```
 
@@ -372,8 +372,7 @@ To reproduce the project from scratch:
 6. Rename the files as train.json, val.json, and test.json if necessary.
 7. Train BART and/or mBART, or load the Hugging Face checkpoints.
 8. Run the inference pipeline.
-9. Generate English and Chinese prediction files.
-10. Evaluate English predictions against summary.
-11. Evaluate Chinese predictions against summary_zh.
-12. Save evaluation results under outputs/.
+9. Generate Chinese prediction files.
+10. Evaluate baseline Chinese predictions.
+11. Evaluate agentic Chinese predictions.
 ```
