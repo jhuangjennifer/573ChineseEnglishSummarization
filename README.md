@@ -299,13 +299,6 @@ outputs/bart_local_predictions_zh.txt
 
 ## 7. Evaluate the Outputs
 
-The system is evaluated at two stages:
-
-| Stage | Prediction File | Reference Field | Purpose |
-|---|---|---|---|
-| English intermediate summary | `*_predictions_en.txt` | `summary` | Evaluate summarization quality before translation |
-| Chinese final summary | `*_predictions_zh.txt` | `summary_zh` | Evaluate final cross-lingual summarization quality |
-
 The main evaluation metrics are:
 
 | Metric | Purpose |
@@ -319,63 +312,29 @@ For Chinese ROUGE evaluation, Chinese text should be segmented before score calc
 
 ---
 
-### 7.1 Evaluate BART English Predictions
+### 7.1 Evaluate Baseline Chinese Predictions
 
 ```bash
-python scripts/evaluate_outputs.py \
-  --pred_path outputs/bart_predictions_en.txt \
-  --ref_path data/raw/test.json \
-  --ref_field summary \
-  --lang en \
-  --output_path outputs/bart_eval_en.json
+python scripts/evaluate_rouge_bertscore.py \
+  --results_path <PATH TO BASELINE CSV RESULT (i.e. data/gold_results/mbart/mbart_gold_50_results.csv)> \
+  --reference_col summary_zh \
+  --prediction_col predicted_zh
 ```
 
----
-
-### 7.2 Evaluate BART Chinese Predictions
+### 7.2 Evaluate Agentic Chinese Predictions
 
 ```bash
-python scripts/evaluate_outputs.py \
-  --pred_path outputs/bart_predictions_zh.txt \
-  --ref_path data/raw/test.json \
-  --ref_field summary_zh \
-  --lang zh \
-  --output_path outputs/bart_eval_zh.json
-```
-
----
-
-### 7.3 Evaluate mBART English Predictions
-
-```bash
-python scripts/evaluate_outputs.py \
-  --pred_path outputs/mbart_predictions_en.txt \
-  --ref_path data/raw/test.json \
-  --ref_field summary \
-  --lang en \
-  --output_path outputs/mbart_eval_en.json
-```
-
----
-
-### 7.4 Evaluate mBART Chinese Predictions
-
-```bash
-python scripts/evaluate_outputs.py \
-  --pred_path outputs/mbart_predictions_zh.txt \
-  --ref_path data/raw/test.json \
-  --ref_field summary_zh \
-  --lang zh \
-  --output_path outputs/mbart_eval_zh.json
+python scripts/evaluate_rouge_bertscore.py \
+  --results_path <PATH TO AGENTIC CSV RESULT (i.e. notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.csv)> \
+  --reference_col reference_chinese_summary \
+  --prediction_col final_summary
 ```
 
 Expected evaluation outputs:
 
 ```text
-outputs/bart_eval_en.json
-outputs/bart_eval_zh.json
-outputs/mbart_eval_en.json
-outputs/mbart_eval_zh.json
+corpus_pair_scores_zh_XSAMSum.csv
+corpus_scores_zh_XSAMSum.csv
 ```
 
 ---
