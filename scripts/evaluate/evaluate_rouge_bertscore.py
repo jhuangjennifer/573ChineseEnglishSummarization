@@ -10,6 +10,7 @@ import pandas as pd
 from datasets import load_dataset
 from rouge_score import rouge_scorer
 from bert_score import BERTScorer
+from pathlib import Path
 
 pd.set_option('display.max_colwidth', 120)
 
@@ -180,6 +181,9 @@ worst_zh = pair_results_df_zh.nsmallest(TOP_N_WORST, "rougeL")
 print(f"── Top {TOP_N_WORST} worst Chinese examples by ROUGE-L of {DATASET_NAME} ──")
 worst_zh
 
-corpus_df_zh.to_csv(f"corpus_scores_zh_{DATASET_NAME}.csv", index=False, encoding="utf-8-sig")
-pair_results_df_zh.to_csv(f"corpus_pair_scores_zh_{DATASET_NAME}.csv", index=True, encoding="utf-8-sig")
+OUT_DIR = Path("./rouge_bertscore_results")
+OUT_DIR.mkdir(parents=True, exist_ok=True)
+
+corpus_df_zh.to_csv(OUT_DIR / f"rouge_bertscore_corpus_scores_zh_{DATASET_NAME}.csv", index=False, encoding="utf-8-sig")
+pair_results_df_zh.to_csv(OUT_DIR / f"rouge_bertscore_corpus_pair_scores_zh_{DATASET_NAME}.csv", index=True, encoding="utf-8-sig")
 print("Saved Chinese scores to CSV.")
