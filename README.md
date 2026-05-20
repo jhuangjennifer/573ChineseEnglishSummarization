@@ -307,6 +307,7 @@ The main evaluation metrics are:
 | ROUGE-2 | Bigram overlap |
 | ROUGE-L | Longest common subsequence overlap |
 | BERTScore F1 | Semantic similarity |
+| OmniScore | Informativeness, clarity, plausibility, faithfulness |
 
 For Chinese ROUGE evaluation, Chinese text should be segmented before score calculation. This project uses `jieba` for Chinese segmentation.
 
@@ -315,26 +316,45 @@ For Chinese ROUGE evaluation, Chinese text should be segmented before score calc
 ### 7.1 Evaluate Baseline Chinese Predictions
 
 ```bash
-python scripts/evaluate_rouge_bertscore.py \
+python scripts/evaluate/evaluate_rouge_bertscore.py \
   --results_path <PATH TO BASELINE CSV RESULT (i.e. data/gold_results/mbart/mbart_gold_50_results.csv)> \
   --reference_col summary_zh \
   --prediction_col predicted_zh
 ```
 
+```bash
+pip uninstall -y torchvision torchaudio # Needed to resolve dependency issues with OmniScore
+
+python scripts/evaluate/evaluate_omniscore.py \
+  --results_path <PATH TO BASELINE JSON RESULT (i.e. mbart_gold_50_results.json)> \
+  --reference_type baseline
+```
+
 ### 7.2 Evaluate Agentic Chinese Predictions
 
 ```bash
-python scripts/evaluate_rouge_bertscore.py \
+python scripts/evaluate/evaluate_rouge_bertscore.py \
   --results_path <PATH TO AGENTIC CSV RESULT (i.e. notebooks/agents/results/full/direct/aya/direct_aya32b_50samples.csv)> \
   --reference_col reference_chinese_summary \
   --prediction_col final_summary
 ```
 
+```bash
+pip uninstall -y torchvision torchaudio # Needed to resolve dependency issues with OmniScore
+
+python scripts/evaluate/evaluate_omniscore.py \
+  --results_path <PATH TO AGENTIC JSON RESULT (i.e. direct_aya32b_50samples.jsonl)> \
+  --reference_type agentic
+```
+
 Expected evaluation outputs:
 
 ```text
-corpus_pair_scores_zh_XSAMSum.csv
-corpus_scores_zh_XSAMSum.csv
+rouge_bertscore_results/rouge_bertscore_corpus_pair_scores_zh_XSAMSum.csv
+rouge_bertscore_results/rouge_bertscore_corpus_scores_zh_XSAMSum.csv
+omniscore_results/omniscore_per_example.csv
+omniscore_results/omniscore_summary.csv
+omniscore_results/omniscore_run_meta.json
 ```
 
 ---
