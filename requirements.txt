@@ -13,9 +13,11 @@ sentencepiece
 protobuf
 sacrebleu
 
-# Evaluation metrics
+# Evaluation
 rouge-score
 bert-score
+git+https://github.com/csebuetnlp/xl-sum.git#subdirectory=multilingual_rouge_scoring
+nltk
 
 # Data processing
 pandas
