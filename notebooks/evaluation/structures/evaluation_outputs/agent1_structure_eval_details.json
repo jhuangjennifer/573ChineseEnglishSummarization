@@ -1,0 +1,369 @@
+[
+  {
+    "test_index": 23,
+    "schema_valid": true,
+    "schema_issues": [],
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 3,
+    "n_gold_meanings": 1,
+    "meaning_bertscore_precision": 0.6496970057487488,
+    "meaning_bertscore_recall": 0.8956152200698853,
+    "meaning_bertscore_f1": 0.7530886212644298,
+    "tuple_precision": 0.3333333333333333,
+    "tuple_recall": 1.0,
+    "tuple_f1": 0.5,
+    "tuple_avg_similarity": 1.0,
+    "n_pred_tuples": 3,
+    "n_gold_tuples": 1,
+    "speech_strict_f1": 0.0,
+    "speech_relaxed_f1": 0.5,
+    "n_pred_speech_acts": 3,
+    "n_gold_speech_acts": 1,
+    "final_outcome_nli_similarity": 0.4969112472899724,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Anne reveals that Mark lied about his age.",
+        "gold_item": "Anne confirms that Mark lied to her about his age.",
+        "similarity": 0.8956152200698853
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 0,
+        "pred_item": "Irene questions the significance of the lie.",
+        "gold_item": "Anne confirms that Mark lied to her about his age.",
+        "similarity": 0.5616857409477234
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 0,
+        "pred_item": "Anne insists that the lie is a critical issue.",
+        "gold_item": "Anne confirms that Mark lied to her about his age.",
+        "similarity": 0.4917900562286377
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Anne confirms that Mark lied to her about his age.",
+        "pred_item": "Anne reveals that Mark lied about his age.",
+        "similarity": 0.8956152200698853
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "mark",
+          "lied about age",
+          "age",
+          "anne"
+        ],
+        "gold_item": [
+          "mark",
+          "lied about age",
+          "age",
+          "anne"
+        ],
+        "similarity": 1.0,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "speech_matches_relaxed": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "statement",
+        "gold_item": "disclosure",
+        "similarity": 1.0,
+        "pred_category": "assertive",
+        "gold_category": "assertive"
+      }
+    ],
+    "pred_final_outcome": "Anne confirms that Mark lied about being 30 when he is actually 40, and she considers this deception significant despite Irene's skepticism.",
+    "gold_final_outcome": "Mark lied to Anne about his age and is actually 40."
+  },
+  {
+    "test_index": 30,
+    "schema_valid": true,
+    "schema_issues": [],
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 2,
+    "n_gold_meanings": 2,
+    "meaning_bertscore_precision": 0.7803625762462616,
+    "meaning_bertscore_recall": 0.7803625762462616,
+    "meaning_bertscore_f1": 0.7803625762462616,
+    "tuple_precision": 1.0,
+    "tuple_recall": 1.0,
+    "tuple_f1": 1.0,
+    "tuple_avg_similarity": 1.0,
+    "n_pred_tuples": 2,
+    "n_gold_tuples": 2,
+    "speech_strict_f1": 1.0,
+    "speech_relaxed_f1": 1.0,
+    "n_pred_speech_acts": 2,
+    "n_gold_speech_acts": 2,
+    "final_outcome_nli_similarity": 0.9932147264480591,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Mary asks Carter to lend her money.",
+        "gold_item": "Mary asks Carter to lend her some money.",
+        "similarity": 0.9461866021156311
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Carter agrees to lend the money but needs an hour to arrive.",
+        "gold_item": "Carter agrees to lend Mary money in about an hour.",
+        "similarity": 0.6145385503768921
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Mary asks Carter to lend her some money.",
+        "pred_item": "Mary asks Carter to lend her money.",
+        "similarity": 0.9461866021156311
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Carter agrees to lend Mary money in about an hour.",
+        "pred_item": "Carter agrees to lend the money but needs an hour to arrive.",
+        "similarity": 0.6145385503768921
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "carter",
+          "lend money",
+          "money",
+          "mary"
+        ],
+        "gold_item": [
+          "carter",
+          "lend money",
+          "money",
+          "mary"
+        ],
+        "similarity": 1.0,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": [
+          "carter",
+          "lend money",
+          "money",
+          "mary"
+        ],
+        "gold_item": [
+          "carter",
+          "lend money",
+          "money",
+          "mary"
+        ],
+        "similarity": 1.0,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "speech_matches_relaxed": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "request",
+        "gold_item": "request",
+        "similarity": 1.0,
+        "pred_category": "directive",
+        "gold_category": "directive"
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "commitment",
+        "gold_item": "commitment",
+        "similarity": 1.0,
+        "pred_category": "commissive",
+        "gold_category": "commissive"
+      }
+    ],
+    "pred_final_outcome": "Carter agreed to lend Mary money after an hour.",
+    "gold_final_outcome": "Carter will lend Mary some money in an hour."
+  },
+  {
+    "test_index": 39,
+    "schema_valid": true,
+    "schema_issues": [],
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 3,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.5981338222821554,
+    "meaning_bertscore_recall": 0.5981338222821554,
+    "meaning_bertscore_f1": 0.5981338222821554,
+    "tuple_precision": 1.0,
+    "tuple_recall": 1.0,
+    "tuple_f1": 1.0,
+    "tuple_avg_similarity": 0.7499475168685118,
+    "n_pred_tuples": 3,
+    "n_gold_tuples": 3,
+    "speech_strict_f1": 0.0,
+    "speech_relaxed_f1": 0.0,
+    "n_pred_speech_acts": 3,
+    "n_gold_speech_acts": 3,
+    "final_outcome_nli_similarity": 0.4983331160765374,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Tina reports being delayed at the airport and catching a late flight home.",
+        "gold_item": "Tina says her flight was delayed and she will take the evening flight home.",
+        "similarity": 0.6695777773857117
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Ala states they are currently traveling to an important meeting.",
+        "gold_item": "Ala says she is on her way to an important meeting.",
+        "similarity": 0.7129905819892883
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": "Tina asks Ala to provide an update on the meeting's result.",
+        "gold_item": "Ala agrees to stay in touch about how the meeting goes.",
+        "similarity": 0.41183310747146606
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Tina says her flight was delayed and she will take the evening flight home.",
+        "pred_item": "Tina reports being delayed at the airport and catching a late flight home.",
+        "similarity": 0.6695777773857117
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Ala says she is on her way to an important meeting.",
+        "pred_item": "Ala states they are currently traveling to an important meeting.",
+        "similarity": 0.7129905819892883
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 2,
+        "gold_item": "Ala agrees to stay in touch about how the meeting goes.",
+        "pred_item": "Tina asks Ala to provide an update on the meeting's result.",
+        "similarity": 0.41183310747146606
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "tina",
+          "catching evening flight",
+          "flight",
+          null
+        ],
+        "gold_item": [
+          "tina",
+          "catch evening flight",
+          "evening flight back home",
+          null
+        ],
+        "similarity": 0.6765669286251068,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.6358391642570496,
+          "object": 0.020116105675697327,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": [
+          "ala",
+          "going to meeting",
+          "meeting",
+          null
+        ],
+        "gold_item": [
+          "ala",
+          "go to meeting",
+          "meeting",
+          null
+        ],
+        "similarity": 0.8967303216457367,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.7049437761306763,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": [
+          "ala",
+          "informing about outcome",
+          "meeting result",
+          "tina"
+        ],
+        "gold_item": [
+          "ala",
+          "update Tina",
+          "meeting outcome",
+          "tina"
+        ],
+        "similarity": 0.676545300334692,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.13054950535297394,
+          "object": 0.9042648673057556,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "speech_matches_relaxed": [],
+    "pred_final_outcome": "Tina is returning home on a delayed evening flight while Ala heads to a meeting and agrees to update Tina on the outcome.",
+    "gold_final_outcome": "Tina will take the evening flight home, and Ala will update her after the meeting."
+  }
+]
