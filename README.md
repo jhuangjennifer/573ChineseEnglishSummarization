@@ -13,14 +13,6 @@ The task requires the system to handle two challenges:
 - **Dialogue summarization**: identifying important information across speaker turns and conversational context.
 - **Cross-lingual generation**: producing the final summary in Chinese while the source dialogue is in English.
 
-Our current implementation uses a **pipeline approach**:
-
-```text
-English dialogue → English summary → Chinese summary
-```
-
-This design separates summarization from translation, making the system easier to debug and allowing us to evaluate each component separately.
-
 ---
 
 ## Task
@@ -31,7 +23,7 @@ The main task is:
 English dialogue → Chinese summary
 ```
 
-Our pipeline performs this task in two stages:
+Our summarize-then-translate pipelines perform this task in two stages:
 
 1. **Summarization**
    - English dialogue → English summary
@@ -39,7 +31,17 @@ Our pipeline performs this task in two stages:
 2. **Translation**
    - English summary → Chinese summary
 
-The intermediate English summary allows us to analyze whether errors come from the summarization stage or the translation stage.
+Our translate-then-summarize pipelines perform this task in two stages:
+
+1. **Translation**
+   - English dialogue → Chinese dialogue
+
+2. **Summarization**
+   - Chinese dialogue → Chinese summary
+
+Our direct pipelines perform this task in one stage:
+
+1. English dialogue → Chinese summary
 
 ---
 
@@ -147,14 +149,15 @@ No heavy preprocessing is required for the current pipeline. We preserve the dia
 
 ---
 
-## 4. Models
+## 4. Baseline Models
 
-The project uses two fine-tuned summarization models and one pretrained translation model.
+The project uses two fine-tuned baseline summarization models and one pretrained translation model.
 
 | Component | Model |
 |---|---|
 | BART summarizer | `yunu919/bart-large-dialogue-summarization` |
-| mBART summarizer | `yunu919/mbart-large-dialogue-summarization` |
+| mBART English summarizer | `yunu919/mbart-large-dialogue-summarization` |
+| mBART English-to-Chinese summarizer | `jjnhuang/mbart-large-50-en-dialogue-to-zh-summary` |
 | English-to-Chinese translator | `Helsinki-NLP/opus-mt-en-zh` |
 
 The summarization models can either be loaded directly from Hugging Face or trained locally using the scripts in this repository.
@@ -164,12 +167,13 @@ Hugging Face model links:
 ```text
 https://huggingface.co/yunu919/bart-large-dialogue-summarization
 https://huggingface.co/yunu919/mbart-large-dialogue-summarization
+https://huggingface.co/jjnhuang/mbart-large-50-en-dialogue-to-zh-summary
 https://huggingface.co/Helsinki-NLP/opus-mt-en-zh
 ```
 
 ---
 
-## 5. Train the Summarization Models
+## 5. Train the Baseline Summarization Models
 
 The summarization models are trained for:
 
@@ -180,7 +184,7 @@ English dialogue → English summary
 ### 5.1 Train BART
 
 ```bash
-python scripts/train_bart.py \
+python scripts/baseline/train_bart.py \
   --train_path data/raw/train.json \
   --val_path data/raw/val.json \
   --test_path data/raw/test.json \
@@ -196,7 +200,7 @@ outputs/bart_model/
 ### 5.2 Train mBART
 
 ```bash
-python scripts/train_mbart.py \
+python scripts/baseline/train_mbart.py \
   --train_path data/raw/train.json \
   --val_path data/raw/val.json \
   --test_path data/raw/test.json \
@@ -220,9 +224,9 @@ This ensures that mBART generates intermediate English summaries instead of drif
 
 ---
 
-## 6. Run the Inference Pipeline
+## 6. Run the Baseline Inference Pipelines
 
-The full inference pipeline performs:
+The full baseline inference pipeline performs:
 
 ```text
 English dialogue → English summary → Chinese summary
@@ -237,7 +241,7 @@ It first generates intermediate English summaries using a fine-tuned summarizati
 Using the Hugging Face BART checkpoint:
 
 ```bash
-python scripts/run_inference_pipeline.py \
+python scripts/baseline/run_inference_pipeline.py \
   --summary_model yunu919/bart-large-dialogue-summarization \
   --model_tag bart \
   --input_path data/raw/test.json \
@@ -258,7 +262,7 @@ outputs/bart_predictions_zh.txt
 Using the Hugging Face mBART checkpoint:
 
 ```bash
-python scripts/run_inference_pipeline.py \
+python scripts/baseline/run_inference_pipeline.py \
   --summary_model yunu919/mbart-large-dialogue-summarization \
   --model_tag mbart \
   --input_path data/raw/test.json \
@@ -281,7 +285,7 @@ If the model was trained locally, use the local model directory instead of the H
 Example:
 
 ```bash
-python scripts/run_inference_pipeline.py \
+python scripts/baseline/run_inference_pipeline.py \
   --summary_model outputs/bart_model \
   --model_tag bart_local \
   --input_path data/raw/test.json \
@@ -297,7 +301,35 @@ outputs/bart_local_predictions_zh.txt
 
 ---
 
-## 7. Evaluate the Outputs
+## 7. Agentic Models
+
+The project uses three agentic models.
+
+| Model |
+|---|
+| `aya-expanse:32b` |
+| `gemma3:27b` |
+| `qwen3.5:27b` |
+
+The agentic models can be downloaded directly from Ollama.
+
+Ollama model links:
+```text
+https://ollama.com/library/aya-expanse:32b
+https://ollama.com/library/gemma3:27b
+https://ollama.com/library/qwen3.5:27b 
+```
+
+---
+
+## 8. Run the Agentic Inference Pipelines
+
+To run the agentic inference pipelines, find the appropriate notebook corresponding to the agentic configuration you would like to run under `notebooks/agents/pipeline`, and run the notebook locally. Ollama must first be set up locally following the instructions in each notebook under step 0. 
+
+
+---
+
+## 9. Evaluate the Outputs
 
 The main evaluation metrics are:
 
@@ -313,7 +345,7 @@ For Chinese ROUGE evaluation, Chinese text should be segmented before score calc
 
 ---
 
-### 7.1 Evaluate Baseline Chinese Predictions
+### 9.1 Evaluate Baseline Chinese Predictions
 
 ```bash
 python scripts/evaluate/evaluate_rouge_bertscore.py \
@@ -330,7 +362,7 @@ python scripts/evaluate/evaluate_omniscore.py \
   --reference_type baseline
 ```
 
-### 7.2 Evaluate Agentic Chinese Predictions
+### 9.2 Evaluate Agentic Chinese Predictions
 
 ```bash
 python scripts/evaluate/evaluate_rouge_bertscore.py \
@@ -359,7 +391,7 @@ omniscore_results/omniscore_run_meta.json
 
 ---
 
-## 8. Full Reproducible Workflow
+## 10. Full Reproducible Workflow
 
 To reproduce the project from scratch:
 
@@ -371,8 +403,8 @@ To reproduce the project from scratch:
 5. Place the XSAMSum train, validation, and test files under data/raw/.
 6. Rename the files as train.json, val.json, and test.json if necessary.
 7. Train BART and/or mBART, or load the Hugging Face checkpoints.
-8. Run the inference pipeline.
-9. Generate Chinese prediction files.
+8. Run the baseline inference pipelines to generate Chinese prediction files.
+9. Run the agentic inference pipelines to generate Chinese prediction files.
 10. Evaluate baseline Chinese predictions.
 11. Evaluate agentic Chinese predictions.
 ```
