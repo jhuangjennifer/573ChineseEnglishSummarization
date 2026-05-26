@@ -1,0 +1,958 @@
+﻿id,test_index,dialogue,final_summary,reference_english_summary,reference_chinese_summary,agent1_semantic_representation_json,agent2_summary_generation_json,agent3_revision_json,agent3_final_chinese_summary,pipeline,agent1_model,agent2_model,agent3_model,num_model_calls
+gold_00001,23,"Anne: You were right, he was lying to me :/
+Irene: Oh no, what happened?
+Jane: who? that Mark guy?
+Anne: yeah, he told me he's 30, today I saw his passport - he's 40
+Irene: You sure it's so important?
+Anne: he lied to me Irene",Anne 确认 Mark 谎报年龄，他实际是 40 岁而非 30 岁。,Mark lied to Anne about his age. Mark is 40.,马克向安妮隐瞒了自己的年龄。他40岁了。,"{
+  ""participants"": [
+    {
+      ""name"": ""Anne"",
+      ""role_or_relation"": ""victim of deception""
+    },
+    {
+      ""name"": ""Irene"",
+      ""role_or_relation"": ""friend""
+    },
+    {
+      ""name"": ""Jane"",
+      ""role_or_relation"": ""friend""
+    }
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speech_act"": ""information_update"",
+      ""grounding_act"": ""answer"",
+      ""common_ground_status"": ""established"",
+      ""salience"": ""core"",
+      ""include_in_summary"": true,
+      ""meaning"": ""Anne confirms Mark lied about his age, revealing he is 40 not 30."",
+      ""actor"": ""Mark"",
+      ""action"": ""lied about age"",
+      ""object"": ""age discrepancy (30 vs 40)"",
+      ""recipient"": ""Anne"",
+      ""time_or_condition"": ""today"",
+      ""polarity"": ""affirmed"",
+      ""modality"": ""actual"",
+      ""discourse_role"": ""final_outcome"",
+      ""summary_role"": ""Reveals the specific deception and factual correction."",
+      ""evidence"": [
+        ""he told me he's 30, today I saw his passport - he's 40"",
+        ""he lied to me Irene""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speech_act"": ""attitude"",
+      ""grounding_act"": ""follow_up"",
+      ""common_ground_status"": ""unresolved"",
+      ""salience"": ""supporting"",
+      ""include_in_summary"": false,
+      ""meaning"": ""Irene questions the significance of the age discrepancy."",
+      ""actor"": ""Irene"",
+      ""action"": ""questioned importance"",
+      ""object"": ""age lie"",
+      ""recipient"": ""Anne"",
+      ""time_or_condition"": null,
+      ""polarity"": ""uncertain"",
+      ""modality"": ""possible"",
+      ""discourse_role"": ""contrast"",
+      ""summary_role"": ""Highlights the conflict over the lie's severity."",
+      ""evidence"": [
+        ""You sure it's so important?""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Anne confirms that Mark lied about being 30 when he is actually 40.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 1,
+      ""selection_reason"": ""core final outcome""
+    }
+  ],
+  ""summary_zh"": ""Anne 确认 Mark 谎报年龄，他实际是 40 岁而非 30 岁。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""Anne 确认 Mark 谎报年龄，他实际是 40 岁而非 30 岁。""
+}",Anne 确认 Mark 谎报年龄，他实际是 40 岁而非 30 岁。,semantic_agent,qwen3.5:27b,qwen3.5:27b,qwen3.5:27b,3
+gold_00002,30,"Mary: hey, im kinda broke, lend me a few box
+Carter: okay, give me an hour, im at the train station
+Mary: cool, thanks",玛丽向卡特借钱，卡特同意一小时后借给她。,Mary ran out of money. Carter is going to lend her some in an hour.,玛丽的钱用完了，卡特打算一小时后借给她一点。,"{
+  ""participants"": [
+    {
+      ""name"": ""Mary"",
+      ""role_or_relation"": ""borrower""
+    },
+    {
+      ""name"": ""Carter"",
+      ""role_or_relation"": ""lender""
+    }
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speech_act"": ""request"",
+      ""grounding_act"": ""none"",
+      ""common_ground_status"": ""established"",
+      ""salience"": ""core"",
+      ""include_in_summary"": true,
+      ""meaning"": ""Mary requests money from Carter due to financial need."",
+      ""actor"": ""Mary"",
+      ""action"": ""request money"",
+      ""object"": ""a few bucks"",
+      ""recipient"": ""Carter"",
+      ""time_or_condition"": null,
+      ""polarity"": ""affirmed"",
+      ""modality"": ""requested"",
+      ""discourse_role"": ""main"",
+      ""summary_role"": ""Initiates the transaction request."",
+      ""evidence"": [
+        ""lend me a few box""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speech_act"": ""commitment"",
+      ""grounding_act"": ""confirmation"",
+      ""common_ground_status"": ""established"",
+      ""salience"": ""core"",
+      ""include_in_summary"": true,
+      ""meaning"": ""Carter agrees to lend money but requires one hour due to location."",
+      ""actor"": ""Carter"",
+      ""action"": ""commit to lending"",
+      ""object"": ""money"",
+      ""recipient"": ""Mary"",
+      ""time_or_condition"": ""in an hour"",
+      ""polarity"": ""affirmed"",
+      ""modality"": ""planned"",
+      ""discourse_role"": ""final_outcome"",
+      ""summary_role"": ""Resolves the request with a time delay."",
+      ""evidence"": [
+        ""okay, give me an hour"",
+        ""im at the train station""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Carter agrees to lend Mary money in one hour.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 1,
+      ""selection_reason"": ""core final outcome""
+    },
+    {
+      ""event_id"": 2,
+      ""selection_reason"": ""core final outcome""
+    }
+  ],
+  ""summary_zh"": ""玛丽向卡特借钱，卡特同意一小时后借给她。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""玛丽向卡特借钱，卡特同意一小时后借给她。""
+}",玛丽向卡特借钱，卡特同意一小时后借给她。,semantic_agent,qwen3.5:27b,qwen3.5:27b,qwen3.5:27b,3
+gold_00003,39,"Tina: I'll tell you something, this Emirate staff looks amazing, as movie stars
+Ala: Oh yes, I know, that's for purpose 
+Ala: It's how it's suppose to be
+Ala: They pay a lot of attention to the image
+Tina: Looks nice, pleasure to observe
+Tina: And I sucked at the airport, they've kept us one hour in the plane and finally I'll catch the evening flight back home
+Tina: Could You imagine?
+Tina: And you know, this way we had such a talkative pilot :-)
+Ala: Oh, poor you
+Ala: Pfff
+Ala: And I'm on my way to a meeting
+Tina: THE meeting?
+Ala: Yes, keep your finger crossed
+Tina: Sure, let me know how did it go
+Ala: Ok darling, in touch",Tina 在机场延误一小时后赶上晚间航班回家，Ala 正前往参加一场重要会议，并答应会后告知 Tina 会议结果。,Tina will catch the evening flight back home. Ala is on her way to the meeting. She will let Tina know how it went.,蒂娜将乘晚间航班回家。阿拉正在去开会的路上。她会让蒂娜知道事情的进展。,"{
+  ""participants"": [
+    {
+      ""name"": ""Tina"",
+      ""role_or_relation"": ""friend""
+    },
+    {
+      ""name"": ""Ala"",
+      ""role_or_relation"": ""friend""
+    }
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speech_act"": ""information_update"",
+      ""grounding_act"": ""none"",
+      ""common_ground_status"": ""established"",
+      ""salience"": ""background"",
+      ""include_in_summary"": false,
+      ""meaning"": ""Tina and Ala agree that Emirate staff maintain a high-quality image."",
+      ""actor"": ""Tina and Ala"",
+      ""action"": ""agree on staff image"",
+      ""object"": ""Emirate staff appearance"",
+      ""recipient"": null,
+      ""time_or_condition"": null,
+      ""polarity"": ""affirmed"",
+      ""modality"": ""actual"",
+      ""discourse_role"": ""background"",
+      ""summary_role"": ""Context for conversation start"",
+      ""evidence"": [
+        ""this Emirate staff looks amazing"",
+        ""They pay a lot of attention to the image""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speech_act"": ""problem"",
+      ""grounding_act"": ""none"",
+      ""common_ground_status"": ""established"",
+      ""salience"": ""supporting"",
+      ""include_in_summary"": false,
+      ""meaning"": ""Tina reports being delayed at the airport for an hour before catching her evening flight."",
+      ""actor"": ""Tina"",
+      ""action"": ""experience delay"",
+      ""object"": ""airport flight"",
+      ""recipient"": null,
+      ""time_or_condition"": ""one hour in the plane"",
+      ""polarity"": ""affirmed"",
+      ""modality"": ""actual"",
+      ""discourse_role"": ""cause"",
+      ""summary_role"": ""Explains Tina's current travel status"",
+      ""evidence"": [
+        ""kept us one hour in the plane"",
+        ""finally I'll catch the evening flight""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speech_act"": ""plan_change"",
+      ""grounding_act"": ""confirmation"",
+      ""common_ground_status"": ""established"",
+      ""salience"": ""core"",
+      ""include_in_summary"": true,
+      ""meaning"": ""Ala confirms she is currently traveling to an important meeting."",
+      ""actor"": ""Ala"",
+      ""action"": ""travel to meeting"",
+      ""object"": ""THE meeting"",
+      ""recipient"": null,
+      ""time_or_condition"": ""on my way"",
+      ""polarity"": ""affirmed"",
+      ""modality"": ""planned"",
+      ""discourse_role"": ""main"",
+      ""summary_role"": ""Ala's immediate priority and destination"",
+      ""evidence"": [
+        ""I'm on my way to a meeting"",
+        ""Yes, keep your finger crossed""
+      ]
+    },
+    {
+      ""event_id"": 4,
+      ""speech_act"": ""request"",
+      ""grounding_act"": ""none"",
+      ""common_ground_status"": ""established"",
+      ""salience"": ""core"",
+      ""include_in_summary"": true,
+      ""meaning"": ""Tina requests an update on the outcome of Ala's meeting."",
+      ""actor"": ""Tina"",
+      ""action"": ""request update"",
+      ""object"": ""meeting outcome"",
+      ""recipient"": ""Ala"",
+      ""time_or_condition"": null,
+      ""polarity"": ""affirmed"",
+      ""modality"": ""requested"",
+      ""discourse_role"": ""final_outcome"",
+      ""summary_role"": ""Establishes expectation for future contact"",
+      ""evidence"": [
+        ""let me know how did it go"",
+        ""Ok darling, in touch""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Tina reports a flight delay while Ala heads to an important meeting and agrees to update Tina on the result.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 3,
+      ""selection_reason"": ""core final outcome""
+    },
+    {
+      ""event_id"": 4,
+      ""selection_reason"": ""core final outcome""
+    }
+  ],
+  ""summary_zh"": ""Ala 正前往参加一场重要会议，并答应会后告知 Tina 会议结果。""
+}","{
+  ""needs_revision"": true,
+  ""issues_identified"": [
+    ""missing_key_event""
+  ],
+  ""events_dropped"": [
+    ""Tina's flight delay and evening flight home""
+  ],
+  ""revision_reason"": ""Missing Tina's flight delay and travel status."",
+  ""summary_zh_final"": ""Tina 在机场延误一小时后赶上晚间航班回家，Ala 正前往参加一场重要会议，并答应会后告知 Tina 会议结果。""
+}",Tina 在机场延误一小时后赶上晚间航班回家，Ala 正前往参加一场重要会议，并答应会后告知 Tina 会议结果。,semantic_agent,qwen3.5:27b,qwen3.5:27b,qwen3.5:27b,3
+gold_00004,65,"Ana: You sleeping?
+Catherine: Not yet.
+Ana: Wanna go visit grandma tomorrow? I miss her.
+Catherine: Yeah that would be nice :) I'll call you when I wake up
+Ana: Oki :) sleep well, good night.
+Catherine:  Good night, u too.",安娜提议明天去探望奶奶，凯瑟琳同意了这一计划。,Ana wants to visit grandma tomorrow. Catherine will go with her. She will call Anna when she wakes up.,安娜明天想去看望奶奶。凯瑟琳会和她一起去。她起床后会给安娜打电话。,"{
+  ""participants"": [
+    {
+      ""name"": ""Ana"",
+      ""role_or_relation"": ""friend""
+    },
+    {
+      ""name"": ""Catherine"",
+      ""role_or_relation"": ""friend""
+    }
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speech_act"": ""request"",
+      ""grounding_act"": ""none"",
+      ""common_ground_status"": ""established"",
+      ""salience"": ""core"",
+      ""include_in_summary"": true,
+      ""meaning"": ""Ana proposes visiting grandma tomorrow, and Catherine agrees to the plan."",
+      ""actor"": ""Ana"",
+      ""action"": ""propose visiting"",
+      ""object"": ""grandma"",
+      ""recipient"": ""Catherine"",
+      ""time_or_condition"": ""tomorrow"",
+      ""polarity"": ""affirmed"",
+      ""modality"": ""planned"",
+      ""discourse_role"": ""final_outcome"",
+      ""summary_role"": ""Establishes the agreed plan to visit grandma tomorrow."",
+      ""evidence"": [
+        ""Wanna go visit grandma tomorrow?"",
+        ""Yeah that would be nice""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speech_act"": ""commitment"",
+      ""grounding_act"": ""confirmation"",
+      ""common_ground_status"": ""established"",
+      ""salience"": ""supporting"",
+      ""include_in_summary"": false,
+      ""meaning"": ""Catherine commits to contacting Ana upon waking to coordinate."",
+      ""actor"": ""Catherine"",
+      ""action"": ""call"",
+      ""object"": ""Ana"",
+      ""recipient"": ""Ana"",
+      ""time_or_condition"": ""when I wake up"",
+      ""polarity"": ""affirmed"",
+      ""modality"": ""planned"",
+      ""discourse_role"": ""condition"",
+      ""summary_role"": ""Details the coordination method for the visit."",
+      ""evidence"": [
+        ""I'll call you when I wake up""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Ana and Catherine agreed to visit grandma tomorrow, with Catherine promising to call Ana after waking up.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 1,
+      ""selection_reason"": ""core final outcome""
+    }
+  ],
+  ""summary_zh"": ""安娜提议明天去探望奶奶，凯瑟琳同意了这一计划。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""安娜提议明天去探望奶奶，凯瑟琳同意了这一计划。""
+}",安娜提议明天去探望奶奶，凯瑟琳同意了这一计划。,semantic_agent,qwen3.5:27b,qwen3.5:27b,qwen3.5:27b,3
+gold_00005,66,"Joyce: Check this out!
+Joyce: <link>
+Michael: That's cheap!
+Edson: No way! I'm booking my ticket now!! ",Joyce 分享了一个优惠链接后，Edson 决定立即预订机票。,Edson is booking his ticket now.,埃德森正在订票。,"{
+  ""participants"": [
+    {
+      ""name"": ""Joyce"",
+      ""role_or_relation"": null
+    },
+    {
+      ""name"": ""Michael"",
+      ""role_or_relation"": null
+    },
+    {
+      ""name"": ""Edson"",
+      ""role_or_relation"": null
+    }
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speech_act"": ""information_update"",
+      ""grounding_act"": ""none"",
+      ""common_ground_status"": ""established"",
+      ""salience"": ""supporting"",
+      ""include_in_summary"": false,
+      ""meaning"": ""Joyce shares a link to a cheap offer."",
+      ""actor"": ""Joyce"",
+      ""action"": ""shares link"",
+      ""object"": ""cheap offer"",
+      ""recipient"": ""Michael, Edson"",
+      ""time_or_condition"": null,
+      ""polarity"": ""affirmed"",
+      ""modality"": ""actual"",
+      ""discourse_role"": ""cause"",
+      ""summary_role"": ""Triggers the group's reaction to the price."",
+      ""evidence"": [
+        ""Check this out!"",
+        ""<link>""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speech_act"": ""commitment"",
+      ""grounding_act"": ""none"",
+      ""common_ground_status"": ""established"",
+      ""salience"": ""core"",
+      ""include_in_summary"": true,
+      ""meaning"": ""Edson commits to booking a ticket immediately due to the low price."",
+      ""actor"": ""Edson"",
+      ""action"": ""booking ticket"",
+      ""object"": ""ticket"",
+      ""recipient"": null,
+      ""time_or_condition"": ""now"",
+      ""polarity"": ""affirmed"",
+      ""modality"": ""planned"",
+      ""discourse_role"": ""final_outcome"",
+      ""summary_role"": ""Edson decides to purchase immediately."",
+      ""evidence"": [
+        ""I'm booking my ticket now!!""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Edson decides to book a ticket immediately after Joyce shares a link to a cheap offer.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 2,
+      ""selection_reason"": ""core final outcome""
+    }
+  ],
+  ""summary_zh"": ""Joyce 分享了一个优惠链接后，Edson 决定立即预订机票。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""Joyce 分享了一个优惠链接后，Edson 决定立即预订机票。""
+}",Joyce 分享了一个优惠链接后，Edson 决定立即预订机票。,semantic_agent,qwen3.5:27b,qwen3.5:27b,qwen3.5:27b,3
+gold_00006,67,"Jane: google maps says it is at least 3h <file_other>
+Steven: I used to make it in 2, trust me :D
+Jane: but it's almost 300km..
+Steven: the road is new , we will make it ^^
+Jane: I don't want  to stress out , let's meet at 4:30 instead of 5, ok?
+Steven: ok, if u reaaly want, we can meet at 4:30
+Jane: thx! 
+Jane: I will wait at the main entrance or where?
+Steven: main entrance is good for me;-) 
+Steven: cu",Jane 提议将会议时间从 5 点改为 4:30 以避免压力，Steven 同意了该时间，并确认在主入口见面。,Jane wants to leave at 4.30 instead of 5 because Google Maps suggests the 300 km drive should take them at least 3 hours and she doesn't want to be late. She will wait for Steven at the main entrance.,简想4点半就走，而不是等到5点，因为谷歌地图提示300公里的车程至少需要3小时，她不想迟到。她会在正门处等史蒂文。,"{
+  ""participants"": [
+    {
+      ""name"": ""Jane"",
+      ""role_or_relation"": ""traveler""
+    },
+    {
+      ""name"": ""Steven"",
+      ""role_or_relation"": ""traveler""
+    }
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speech_act"": ""request"",
+      ""grounding_act"": ""none"",
+      ""common_ground_status"": ""established"",
+      ""salience"": ""core"",
+      ""include_in_summary"": true,
+      ""meaning"": ""Jane requests changing the meeting time to 4:30 to avoid stress."",
+      ""actor"": ""Jane"",
+      ""action"": ""propose meeting time change"",
+      ""object"": ""4:30"",
+      ""recipient"": ""Steven"",
+      ""time_or_condition"": ""instead of 5"",
+      ""polarity"": ""affirmed"",
+      ""modality"": ""requested"",
+      ""discourse_role"": ""main"",
+      ""summary_role"": ""Initiates the schedule adjustment due to travel concerns."",
+      ""evidence"": [
+        ""let's meet at 4:30 instead of 5, ok?"",
+        ""I don't want to stress out""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speech_act"": ""agreement"",
+      ""grounding_act"": ""confirmation"",
+      ""common_ground_status"": ""established"",
+      ""salience"": ""core"",
+      ""include_in_summary"": true,
+      ""meaning"": ""Steven agrees to the new meeting time of 4:30."",
+      ""actor"": ""Steven"",
+      ""action"": ""accept proposal"",
+      ""object"": ""meeting at 4:30"",
+      ""recipient"": ""Jane"",
+      ""time_or_condition"": ""if u really want"",
+      ""polarity"": ""affirmed"",
+      ""modality"": ""actual"",
+      ""discourse_role"": ""final_outcome"",
+      ""summary_role"": ""Confirms the new time, resolving the scheduling conflict."",
+      ""evidence"": [
+        ""ok, if u reaaly want, we can meet at 4:30""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speech_act"": ""agreement"",
+      ""grounding_act"": ""confirmation"",
+      ""common_ground_status"": ""established"",
+      ""salience"": ""supporting"",
+      ""include_in_summary"": true,
+      ""meaning"": ""Steven confirms the main entrance as the meeting location."",
+      ""actor"": ""Steven"",
+      ""action"": ""confirm location"",
+      ""object"": ""main entrance"",
+      ""recipient"": ""Jane"",
+      ""time_or_condition"": null,
+      ""polarity"": ""affirmed"",
+      ""modality"": ""actual"",
+      ""discourse_role"": ""final_outcome"",
+      ""summary_role"": ""Finalizes the specific meeting spot."",
+      ""evidence"": [
+        ""main entrance is good for me;-)""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Jane and Steven agreed to meet at the main entrance at 4:30 instead of 5.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 1,
+      ""selection_reason"": ""core final outcome""
+    },
+    {
+      ""event_id"": 2,
+      ""selection_reason"": ""core final outcome""
+    },
+    {
+      ""event_id"": 3,
+      ""selection_reason"": ""core final outcome""
+    }
+  ],
+  ""summary_zh"": ""Jane 提议将会议时间从 5 点改为 4:30 以避免压力，Steven 同意了该时间，并确认在主入口见面。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""Jane 提议将会议时间从 5 点改为 4:30 以避免压力，Steven 同意了该时间，并确认在主入口见面。""
+}",Jane 提议将会议时间从 5 点改为 4:30 以避免压力，Steven 同意了该时间，并确认在主入口见面。,semantic_agent,qwen3.5:27b,qwen3.5:27b,qwen3.5:27b,3
+gold_00007,78,"Fiona: Are you free?
+Tina: Yes, what's up?
+Fiona: I'm trying to prepare a nice dinner for Chris and I thought that maybe I could prepare this tart of yours :)
+Tina: I'm flattered!
+Fiona: Well, it IS delicious :) Could help me do it?
+Tina: Sure! It's not difficult. Do you have anything ready?
+Fiona: I must admit I bought the crust...
+Tina: Oh, ok :P Pity, but well, it's too late now.
+Fiona: I tried making the filling once, but I finished with lemony scrambled eggs...
+Tina: It happens, don't worry. The thing is that once you start adding eggs you can't stop mixing it, otherwise you'll end up with scrambled eggs.",Fiona 请求 Tina 帮忙为 Chris 的晚餐准备挞，Tina 同意协助并建议加入鸡蛋时需持续搅拌。,Fiona wants to prepare dinner for Chris. She is thinking of Tina's tart. She will help her make it.,菲奥娜想为克里斯准备晚餐。她想起了蒂娜做的馅饼。蒂娜会帮她做的。,"{
+  ""participants"": [
+    {
+      ""name"": ""Fiona"",
+      ""role_or_relation"": ""requester""
+    },
+    {
+      ""name"": ""Tina"",
+      ""role_or_relation"": ""helper""
+    },
+    {
+      ""name"": ""Chris"",
+      ""role_or_relation"": ""guest""
+    }
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speech_act"": ""request"",
+      ""grounding_act"": ""none"",
+      ""common_ground_status"": ""established"",
+      ""salience"": ""core"",
+      ""include_in_summary"": true,
+      ""meaning"": ""Fiona asks Tina to help prepare a tart for Chris's dinner."",
+      ""actor"": ""Fiona"",
+      ""action"": ""ask for help"",
+      ""object"": ""preparing a tart"",
+      ""recipient"": ""Tina"",
+      ""time_or_condition"": ""for dinner"",
+      ""polarity"": ""affirmed"",
+      ""modality"": ""requested"",
+      ""discourse_role"": ""main"",
+      ""summary_role"": ""Initiates the collaborative cooking plan."",
+      ""evidence"": [
+        ""Could help me do it?"",
+        ""Sure!""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speech_act"": ""commitment"",
+      ""grounding_act"": ""confirmation"",
+      ""common_ground_status"": ""established"",
+      ""salience"": ""core"",
+      ""include_in_summary"": true,
+      ""meaning"": ""Tina agrees to help and explains the mixing technique to avoid scrambled eggs."",
+      ""actor"": ""Tina"",
+      ""action"": ""agree to help"",
+      ""object"": ""cooking the tart"",
+      ""recipient"": ""Fiona"",
+      ""time_or_condition"": ""once adding eggs"",
+      ""polarity"": ""affirmed"",
+      ""modality"": ""planned"",
+      ""discourse_role"": ""final_outcome"",
+      ""summary_role"": ""Confirms assistance and provides critical cooking advice."",
+      ""evidence"": [
+        ""Sure! It's not difficult."",
+        ""once you start adding eggs you can't stop mixing it""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Tina agrees to help Fiona prepare a tart for Chris and advises on proper egg mixing.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 1,
+      ""selection_reason"": ""core final outcome""
+    },
+    {
+      ""event_id"": 2,
+      ""selection_reason"": ""core final outcome""
+    }
+  ],
+  ""summary_zh"": ""Fiona 请求 Tina 帮忙为 Chris 的晚餐准备挞，Tina 同意协助并建议加入鸡蛋时需持续搅拌。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""Fiona 请求 Tina 帮忙为 Chris 的晚餐准备挞，Tina 同意协助并建议加入鸡蛋时需持续搅拌。""
+}",Fiona 请求 Tina 帮忙为 Chris 的晚餐准备挞，Tina 同意协助并建议加入鸡蛋时需持续搅拌。,semantic_agent,qwen3.5:27b,qwen3.5:27b,qwen3.5:27b,3
+gold_00008,86,"Olafur: are we doing anything for New Year's Eve?
+Nathalie: I was thinking about something classy, like opera or sth like that
+Zoe: how much does it cost?
+Olafur: opera is not for me
+Nathalie: so what do you propose?
+Nathalie: it's 100$ 
+Olafur: I was thinking about partying somewhere
+Nathalie: partying sounds fun, as long as it will be classy
+Zoe: <file_link>
+Zoe: Breakfast at Tiffany's party sounds classy
+Olafur: <file_link> 
+Olafur: is it classy enough?
+Nathalie: :O
+Nathalie: this club is AMAZING
+Zoe: whoa
+Nathalie: we'll going to Soho then
+Olafur: we just need to hurry up and buy some tickets soon
+Zoe: sure",该小组决定在除夕夜参加Soho俱乐部的一场高雅派对，并同意立即购买门票。,"Nathalie, Olafur and Zoe are planning the New Year's Eve. Nathalie wants something classy. Olafur doesn't like opera. They want to go to the Breakfast at Tiffany's party in Soho.",娜塔莉、奥拉维尔和佐伊正在做新年前夜的计划。娜塔莉想要有格调的。但奥拉维尔不喜欢歌剧。他们想去苏豪区蒂芙尼的聚会上吃早餐。,"{
+  ""participants"": [
+    {
+      ""name"": ""Olafur"",
+      ""role_or_relation"": ""participant""
+    },
+    {
+      ""name"": ""Nathalie"",
+      ""role_or_relation"": ""participant""
+    },
+    {
+      ""name"": ""Zoe"",
+      ""role_or_relation"": ""participant""
+    }
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speech_act"": ""preference"",
+      ""grounding_act"": ""none"",
+      ""common_ground_status"": ""established"",
+      ""salience"": ""supporting"",
+      ""include_in_summary"": false,
+      ""meaning"": ""Nathalie proposes a classy event like opera, but Olafur rejects it."",
+      ""actor"": ""Nathalie"",
+      ""action"": ""propose"",
+      ""object"": ""opera"",
+      ""recipient"": ""group"",
+      ""time_or_condition"": ""New Year's Eve"",
+      ""polarity"": ""negated"",
+      ""modality"": ""planned"",
+      ""discourse_role"": ""contrast"",
+      ""summary_role"": ""Initial proposal rejected due to preference mismatch"",
+      ""evidence"": [
+        ""opera is not for me"",
+        ""I was thinking about something classy""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speech_act"": ""decision"",
+      ""grounding_act"": ""confirmation"",
+      ""common_ground_status"": ""established"",
+      ""salience"": ""core"",
+      ""include_in_summary"": true,
+      ""meaning"": ""The group decides to attend a classy party at a Soho club."",
+      ""actor"": ""group"",
+      ""action"": ""decide to attend"",
+      ""object"": ""Soho club party"",
+      ""recipient"": null,
+      ""time_or_condition"": ""New Year's Eve"",
+      ""polarity"": ""affirmed"",
+      ""modality"": ""planned"",
+      ""discourse_role"": ""final_outcome"",
+      ""summary_role"": ""Final agreement on a specific venue and event type"",
+      ""evidence"": [
+        ""we'll going to Soho then"",
+        ""this club is AMAZING""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speech_act"": ""commitment"",
+      ""grounding_act"": ""confirmation"",
+      ""common_ground_status"": ""established"",
+      ""salience"": ""supporting"",
+      ""include_in_summary"": false,
+      ""meaning"": ""Olafur commits to buying tickets soon, confirmed by Zoe."",
+      ""actor"": ""Olafur"",
+      ""action"": ""buy tickets"",
+      ""object"": ""tickets"",
+      ""recipient"": null,
+      ""time_or_condition"": ""soon"",
+      ""polarity"": ""affirmed"",
+      ""modality"": ""intended"",
+      ""discourse_role"": ""main"",
+      ""summary_role"": ""Action step required to finalize the plan"",
+      ""evidence"": [
+        ""we just need to hurry up and buy some tickets soon"",
+        ""sure""
+      ]
+    }
+  ],
+  ""final_outcome"": ""The group decided to attend a classy party at a Soho club for New Year's Eve and agreed to buy tickets immediately.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 2,
+      ""selection_reason"": ""core final outcome""
+    }
+  ],
+  ""summary_zh"": ""该小组决定在除夕夜参加Soho俱乐部的一场高雅派对，并同意立即购买门票。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""该小组决定在除夕夜参加Soho俱乐部的一场高雅派对，并同意立即购买门票。""
+}",该小组决定在除夕夜参加Soho俱乐部的一场高雅派对，并同意立即购买门票。,semantic_agent,qwen3.5:27b,qwen3.5:27b,qwen3.5:27b,3
+gold_00009,120,"John: wanna go see ""A Star is Born"" on Wed?
+Joan: sorry can't
+Joan: super busy 
+Joan: don't have time for anything :( 
+John: that's a shame
+Joan: I'm free on Thursday
+John: I could do Thursday
+Joan: ok! so around 8pm?
+John: sure sounds great
+John: I'll see where it's palying and send you the details
+Joan: ok great!",John 和 Joan 将看电影的计划改到了周四晚上 8 点，观看《一个明星的诞生》，John 会发送具体信息。,"Joan and John are going to watch ""A Star is Born"" on Thursday around 8 p.m.",琼和约翰星期四晚上8点左右去看《一个明星的诞生》。,"{
+  ""participants"": [
+    {
+      ""name"": ""John"",
+      ""role_or_relation"": null
+    },
+    {
+      ""name"": ""Joan"",
+      ""role_or_relation"": null
+    }
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speech_act"": ""refusal"",
+      ""grounding_act"": ""answer"",
+      ""common_ground_status"": ""established"",
+      ""salience"": ""supporting"",
+      ""include_in_summary"": false,
+      ""meaning"": ""Joan declines the Wednesday movie invitation due to being busy."",
+      ""actor"": ""Joan"",
+      ""action"": ""refuse invitation"",
+      ""object"": ""Wednesday movie"",
+      ""recipient"": ""John"",
+      ""time_or_condition"": ""Wednesday"",
+      ""polarity"": ""negated"",
+      ""modality"": ""actual"",
+      ""discourse_role"": ""cause"",
+      ""summary_role"": ""Explains why the original plan failed."",
+      ""evidence"": [
+        ""sorry can't"",
+        ""super busy""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speech_act"": ""plan_change"",
+      ""grounding_act"": ""confirmation"",
+      ""common_ground_status"": ""established"",
+      ""salience"": ""core"",
+      ""include_in_summary"": true,
+      ""meaning"": ""John and Joan agree to see the movie on Thursday at 8pm."",
+      ""actor"": ""John and Joan"",
+      ""action"": ""schedule movie"",
+      ""object"": ""A Star is Born"",
+      ""recipient"": null,
+      ""time_or_condition"": ""Thursday around 8pm"",
+      ""polarity"": ""affirmed"",
+      ""modality"": ""planned"",
+      ""discourse_role"": ""final_outcome"",
+      ""summary_role"": ""Establishes the new agreed time and activity."",
+      ""evidence"": [
+        ""I'm free on Thursday"",
+        ""sure sounds great""
+      ]
+    },
+    {
+      ""event_id"": 3,
+      ""speech_act"": ""commitment"",
+      ""grounding_act"": ""none"",
+      ""common_ground_status"": ""established"",
+      ""salience"": ""supporting"",
+      ""include_in_summary"": false,
+      ""meaning"": ""John commits to finding the venue and sending details."",
+      ""actor"": ""John"",
+      ""action"": ""send details"",
+      ""object"": ""movie location"",
+      ""recipient"": ""Joan"",
+      ""time_or_condition"": null,
+      ""polarity"": ""affirmed"",
+      ""modality"": ""intended"",
+      ""discourse_role"": ""main"",
+      ""summary_role"": ""Confirms next steps for the plan."",
+      ""evidence"": [
+        ""I'll see where it's palying and send you the details""
+      ]
+    }
+  ],
+  ""final_outcome"": ""John and Joan rescheduled their movie date to Thursday at 8pm, with John to provide venue details.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 2,
+      ""selection_reason"": ""core final outcome""
+    }
+  ],
+  ""summary_zh"": ""John 和 Joan 将看电影的计划改到了周四晚上 8 点，观看《一个明星的诞生》。""
+}","{
+  ""needs_revision"": true,
+  ""issues_identified"": [
+    ""missing_key_event""
+  ],
+  ""events_dropped"": [
+    3
+  ],
+  ""revision_reason"": ""Missing John's commitment to send venue details."",
+  ""summary_zh_final"": ""John 和 Joan 将看电影的计划改到了周四晚上 8 点，观看《一个明星的诞生》，John 会发送具体信息。""
+}",John 和 Joan 将看电影的计划改到了周四晚上 8 点，观看《一个明星的诞生》，John 会发送具体信息。,semantic_agent,qwen3.5:27b,qwen3.5:27b,qwen3.5:27b,3
+gold_00010,137,"Peyton: I have been asking you to bring that video game for me
+Cameron: Honey, I am not having enough time to come home
+Peyton: When would you come home?
+Cameron: I will have to stay out of town for another week i guess
+Peyton: Cant you just deliver that game through the courier? :P
+Cameron: Dont be mean :/
+Peyton: Get the job done and come to home then. ASAP :P",由于凯梅伦（Cameron）无法在一周内回家，佩顿（Peyton）请求他尽快通过快递将电子游戏送达。,Peyton is expecting Cameron to bring the video game. Cameron will probably be out for another week.,佩顿希望卡梅隆能带游戏机过来，但是卡梅隆可能还要再缺席一周。,"{
+  ""participants"": [
+    {
+      ""name"": ""Peyton"",
+      ""role_or_relation"": ""requester""
+    },
+    {
+      ""name"": ""Cameron"",
+      ""role_or_relation"": ""requested actor""
+    }
+  ],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speech_act"": ""request"",
+      ""grounding_act"": ""none"",
+      ""common_ground_status"": ""established"",
+      ""salience"": ""core"",
+      ""include_in_summary"": true,
+      ""meaning"": ""Peyton requests Cameron to deliver a video game via courier due to Cameron's inability to return home."",
+      ""actor"": ""Cameron"",
+      ""action"": ""deliver video game"",
+      ""object"": ""video game"",
+      ""recipient"": ""Peyton"",
+      ""time_or_condition"": ""ASAP"",
+      ""polarity"": ""affirmed"",
+      ""modality"": ""requested"",
+      ""discourse_role"": ""final_outcome"",
+      ""summary_role"": ""Peyton proposes courier delivery as solution to Cameron's absence."",
+      ""evidence"": [
+        ""Cant you just deliver that game through the courier?"",
+        ""Get the job done and come to home then. ASAP""
+      ]
+    },
+    {
+      ""event_id"": 2,
+      ""speech_act"": ""problem"",
+      ""grounding_act"": ""none"",
+      ""common_ground_status"": ""established"",
+      ""salience"": ""supporting"",
+      ""include_in_summary"": false,
+      ""meaning"": ""Cameron states inability to return home for another week due to being out of town."",
+      ""actor"": ""Cameron"",
+      ""action"": ""stay out of town"",
+      ""object"": null,
+      ""recipient"": null,
+      ""time_or_condition"": ""for another week"",
+      ""polarity"": ""affirmed"",
+      ""modality"": ""planned"",
+      ""discourse_role"": ""cause"",
+      ""summary_role"": ""Explains why Cameron cannot bring the game personally."",
+      ""evidence"": [
+        ""I am not having enough time to come home"",
+        ""I will have to stay out of town for another week""
+      ]
+    }
+  ],
+  ""final_outcome"": ""Peyton requests Cameron to courier the video game immediately since Cameron cannot return home for another week.""
+}","{
+  ""selected_events"": [
+    {
+      ""event_id"": 1,
+      ""selection_reason"": ""core final outcome""
+    }
+  ],
+  ""summary_zh"": ""由于凯梅伦（Cameron）无法在一周内回家，佩顿（Peyton）请求他尽快通过快递将电子游戏送达。""
+}","{
+  ""needs_revision"": false,
+  ""issues_identified"": [],
+  ""events_dropped"": [],
+  ""revision_reason"": """",
+  ""summary_zh_final"": ""由于凯梅伦（Cameron）无法在一周内回家，佩顿（Peyton）请求他尽快通过快递将电子游戏送达。""
+}",由于凯梅伦（Cameron）无法在一周内回家，佩顿（Peyton）请求他尽快通过快递将电子游戏送达。,semantic_agent,qwen3.5:27b,qwen3.5:27b,qwen3.5:27b,3
