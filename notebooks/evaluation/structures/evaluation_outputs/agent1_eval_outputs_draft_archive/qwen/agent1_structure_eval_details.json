@@ -1,0 +1,5530 @@
+[
+  {
+    "test_index": 23,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 3,
+    "n_gold_meanings": 1,
+    "meaning_bertscore_precision": 0.6496970057487488,
+    "meaning_bertscore_recall": 0.8956152200698853,
+    "meaning_bertscore_f1": 0.7530886212644298,
+    "tuple_precision": 0.3333333333333333,
+    "tuple_recall": 1.0,
+    "tuple_f1": 0.5,
+    "tuple_avg_similarity": 1.0,
+    "n_pred_tuples": 3,
+    "n_gold_tuples": 1,
+    "final_outcome_nli_similarity": 0.4969112472899724,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Anne reveals that Mark lied about his age.",
+        "gold_item": "Anne confirms that Mark lied to her about his age.",
+        "similarity": 0.8956152200698853
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 0,
+        "pred_item": "Irene questions the significance of the lie.",
+        "gold_item": "Anne confirms that Mark lied to her about his age.",
+        "similarity": 0.5616857409477234
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 0,
+        "pred_item": "Anne insists that the lie is a critical issue.",
+        "gold_item": "Anne confirms that Mark lied to her about his age.",
+        "similarity": 0.4917900562286377
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Anne confirms that Mark lied to her about his age.",
+        "pred_item": "Anne reveals that Mark lied about his age.",
+        "similarity": 0.8956152200698853
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "mark",
+          "lied about age",
+          "age",
+          "anne"
+        ],
+        "gold_item": [
+          "mark",
+          "lied about age",
+          "age",
+          "anne"
+        ],
+        "similarity": 1.0,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Anne confirms that Mark lied about being 30 when he is actually 40, and she considers this deception significant despite Irene's skepticism.",
+    "gold_final_outcome": "Mark lied to Anne about his age and is actually 40."
+  },
+  {
+    "test_index": 30,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 2,
+    "n_gold_meanings": 2,
+    "meaning_bertscore_precision": 0.7803625762462616,
+    "meaning_bertscore_recall": 0.7803625762462616,
+    "meaning_bertscore_f1": 0.7803625762462616,
+    "tuple_precision": 1.0,
+    "tuple_recall": 1.0,
+    "tuple_f1": 1.0,
+    "tuple_avg_similarity": 1.0,
+    "n_pred_tuples": 2,
+    "n_gold_tuples": 2,
+    "final_outcome_nli_similarity": 0.9932147264480591,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Mary asks Carter to lend her money.",
+        "gold_item": "Mary asks Carter to lend her some money.",
+        "similarity": 0.9461866021156311
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Carter agrees to lend the money but needs an hour to arrive.",
+        "gold_item": "Carter agrees to lend Mary money in about an hour.",
+        "similarity": 0.6145385503768921
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Mary asks Carter to lend her some money.",
+        "pred_item": "Mary asks Carter to lend her money.",
+        "similarity": 0.9461866021156311
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Carter agrees to lend Mary money in about an hour.",
+        "pred_item": "Carter agrees to lend the money but needs an hour to arrive.",
+        "similarity": 0.6145385503768921
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "carter",
+          "lend money",
+          "money",
+          "mary"
+        ],
+        "gold_item": [
+          "carter",
+          "lend money",
+          "money",
+          "mary"
+        ],
+        "similarity": 1.0,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": [
+          "carter",
+          "lend money",
+          "money",
+          "mary"
+        ],
+        "gold_item": [
+          "carter",
+          "lend money",
+          "money",
+          "mary"
+        ],
+        "similarity": 1.0,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Carter agreed to lend Mary money after an hour.",
+    "gold_final_outcome": "Carter will lend Mary some money in an hour."
+  },
+  {
+    "test_index": 39,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 3,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.5981338222821554,
+    "meaning_bertscore_recall": 0.5981338222821554,
+    "meaning_bertscore_f1": 0.5981338222821554,
+    "tuple_precision": 1.0,
+    "tuple_recall": 1.0,
+    "tuple_f1": 1.0,
+    "tuple_avg_similarity": 0.7499475168685118,
+    "n_pred_tuples": 3,
+    "n_gold_tuples": 3,
+    "final_outcome_nli_similarity": 0.4983331160765374,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Tina reports being delayed at the airport and catching a late flight home.",
+        "gold_item": "Tina says her flight was delayed and she will take the evening flight home.",
+        "similarity": 0.6695777773857117
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Ala states they are currently traveling to an important meeting.",
+        "gold_item": "Ala says she is on her way to an important meeting.",
+        "similarity": 0.7129905819892883
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": "Tina asks Ala to provide an update on the meeting's result.",
+        "gold_item": "Ala agrees to stay in touch about how the meeting goes.",
+        "similarity": 0.41183310747146606
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Tina says her flight was delayed and she will take the evening flight home.",
+        "pred_item": "Tina reports being delayed at the airport and catching a late flight home.",
+        "similarity": 0.6695777773857117
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Ala says she is on her way to an important meeting.",
+        "pred_item": "Ala states they are currently traveling to an important meeting.",
+        "similarity": 0.7129905819892883
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 2,
+        "gold_item": "Ala agrees to stay in touch about how the meeting goes.",
+        "pred_item": "Tina asks Ala to provide an update on the meeting's result.",
+        "similarity": 0.41183310747146606
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "tina",
+          "catching evening flight",
+          "flight",
+          null
+        ],
+        "gold_item": [
+          "tina",
+          "catch evening flight",
+          "evening flight back home",
+          null
+        ],
+        "similarity": 0.6765669286251068,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.6358391642570496,
+          "object": 0.020116105675697327,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": [
+          "ala",
+          "going to meeting",
+          "meeting",
+          null
+        ],
+        "gold_item": [
+          "ala",
+          "go to meeting",
+          "meeting",
+          null
+        ],
+        "similarity": 0.8967303216457367,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.7049437761306763,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": [
+          "ala",
+          "informing about outcome",
+          "meeting result",
+          "tina"
+        ],
+        "gold_item": [
+          "ala",
+          "update Tina",
+          "meeting outcome",
+          "tina"
+        ],
+        "similarity": 0.676545300334692,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.13054950535297394,
+          "object": 0.9042648673057556,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Tina is returning home on a delayed evening flight while Ala heads to a meeting and agrees to update Tina on the outcome.",
+    "gold_final_outcome": "Tina will take the evening flight home, and Ala will update her after the meeting."
+  },
+  {
+    "test_index": 65,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 2,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.6299157440662384,
+    "meaning_bertscore_recall": 0.6026080250740051,
+    "meaning_bertscore_f1": 0.6159593705191843,
+    "tuple_precision": 1.0,
+    "tuple_recall": 0.6666666666666666,
+    "tuple_f1": 0.8,
+    "tuple_avg_similarity": 0.8509475357830525,
+    "n_pred_tuples": 2,
+    "n_gold_tuples": 3,
+    "final_outcome_nli_similarity": 0.9948447346687317,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Ana suggests visiting their grandmother tomorrow.",
+        "gold_item": "Ana suggests that she and Catherine visit grandma tomorrow.",
+        "similarity": 0.6983693242073059
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 2,
+        "pred_item": "Catherine agrees to the plan and commits to contacting Ana the next morning.",
+        "gold_item": "Catherine says she will call Ana after waking up.",
+        "similarity": 0.5614621639251709
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Ana suggests that she and Catherine visit grandma tomorrow.",
+        "pred_item": "Ana suggests visiting their grandmother tomorrow.",
+        "similarity": 0.6983693242073059
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Catherine agrees to visit grandma with Ana.",
+        "pred_item": "Catherine agrees to the plan and commits to contacting Ana the next morning.",
+        "similarity": 0.5479925870895386
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 1,
+        "gold_item": "Catherine says she will call Ana after waking up.",
+        "pred_item": "Catherine agrees to the plan and commits to contacting Ana the next morning.",
+        "similarity": 0.5614621639251709
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "ana and catherine",
+          "visit",
+          "grandma",
+          "grandma"
+        ],
+        "gold_item": [
+          "ana and catherine",
+          "visit grandma",
+          "grandma",
+          null
+        ],
+        "similarity": 0.7018950715661049,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.4339859187602997,
+          "object": 1.0,
+          "recipient": 0.0
+        }
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 2,
+        "pred_item": [
+          "catherine",
+          "call",
+          null,
+          "ana"
+        ],
+        "gold_item": [
+          "catherine",
+          "call",
+          null,
+          "ana"
+        ],
+        "similarity": 1.0,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Ana and Catherine agreed to visit their grandmother tomorrow, with Catherine planning to call Ana upon waking up.",
+    "gold_final_outcome": "Ana and Catherine will visit grandma tomorrow, and Catherine will call Ana after waking up."
+  },
+  {
+    "test_index": 66,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 3,
+    "n_gold_meanings": 2,
+    "meaning_bertscore_precision": 0.6197254359722137,
+    "meaning_bertscore_recall": 0.7159754931926727,
+    "meaning_bertscore_f1": 0.6643825948996941,
+    "tuple_precision": 0.6666666666666666,
+    "tuple_recall": 1.0,
+    "tuple_f1": 0.8,
+    "tuple_avg_similarity": 0.7287687932606787,
+    "n_pred_tuples": 3,
+    "n_gold_tuples": 2,
+    "final_outcome_nli_similarity": 0.49675504956394434,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Joyce shares a link to a low-cost offer.",
+        "gold_item": "Joyce shares a link about a cheap ticket or deal.",
+        "similarity": 0.665920078754425
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 0,
+        "pred_item": "Michael acknowledges the low price of the offer.",
+        "gold_item": "Joyce shares a link about a cheap ticket or deal.",
+        "similarity": 0.4272253215312958
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 1,
+        "pred_item": "Edson decides to purchase a ticket immediately based on the offer.",
+        "gold_item": "Edson decides to book a ticket immediately.",
+        "similarity": 0.7660309076309204
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Joyce shares a link about a cheap ticket or deal.",
+        "pred_item": "Joyce shares a link to a low-cost offer.",
+        "similarity": 0.665920078754425
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 2,
+        "gold_item": "Edson decides to book a ticket immediately.",
+        "pred_item": "Edson decides to purchase a ticket immediately based on the offer.",
+        "similarity": 0.7660309076309204
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "joyce",
+          "shares",
+          "link",
+          "michael and edson"
+        ],
+        "gold_item": [
+          "joyce",
+          "share link",
+          "link",
+          "michael and edson"
+        ],
+        "similarity": 0.6590068484656513,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.02573385275900364,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 1,
+        "pred_item": [
+          "edson",
+          "booking",
+          "ticket",
+          null
+        ],
+        "gold_item": [
+          "edson",
+          "book ticket",
+          "ticket",
+          null
+        ],
+        "similarity": 0.7985307380557061,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.4243735373020172,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Edson commits to booking a ticket after Joyce shares a link to a cheap offer.",
+    "gold_final_outcome": "After Joyce shares a cheap deal, Edson decides to book his ticket immediately."
+  },
+  {
+    "test_index": 67,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 4,
+    "n_gold_meanings": 4,
+    "meaning_bertscore_precision": 0.5456898808479309,
+    "meaning_bertscore_recall": 0.5088873133063316,
+    "meaning_bertscore_f1": 0.5266464302518093,
+    "tuple_precision": 0.25,
+    "tuple_recall": 0.25,
+    "tuple_f1": 0.25,
+    "tuple_avg_similarity": 0.6178224891424179,
+    "n_pred_tuples": 4,
+    "n_gold_tuples": 4,
+    "final_outcome_nli_similarity": 0.49856117972376524,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 1,
+        "pred_item": "Jane suggests changing the meeting time to 4:30 to avoid stress due to travel distance.",
+        "gold_item": "Jane asks Steven to meet earlier at 4:30 instead of 5.",
+        "similarity": 0.47080305218696594
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 3,
+        "pred_item": "Steven agrees to the proposed time change.",
+        "gold_item": "Steven agrees that the main entrance is a good meeting place.",
+        "similarity": 0.48906397819519043
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": "Jane asks for confirmation of the meeting location.",
+        "gold_item": "Steven agrees to meet Jane at 4:30.",
+        "similarity": 0.49182817339897156
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 3,
+        "pred_item": "Steven confirms the main entrance as the meeting point.",
+        "gold_item": "Steven agrees that the main entrance is a good meeting place.",
+        "similarity": 0.7310643196105957
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 2,
+        "gold_item": "Jane thinks the trip may take at least 3 hours and does not want to be late.",
+        "pred_item": "Jane asks for confirmation of the meeting location.",
+        "similarity": 0.34185370802879333
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 0,
+        "gold_item": "Jane asks Steven to meet earlier at 4:30 instead of 5.",
+        "pred_item": "Jane suggests changing the meeting time to 4:30 to avoid stress due to travel distance.",
+        "similarity": 0.47080305218696594
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 2,
+        "gold_item": "Steven agrees to meet Jane at 4:30.",
+        "pred_item": "Jane asks for confirmation of the meeting location.",
+        "similarity": 0.49182817339897156
+      },
+      {
+        "gold_index": 3,
+        "pred_index": 3,
+        "gold_item": "Steven agrees that the main entrance is a good meeting place.",
+        "pred_item": "Steven confirms the main entrance as the meeting point.",
+        "similarity": 0.7310643196105957
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 2,
+        "gold_index": 3,
+        "pred_item": [
+          "jane",
+          "ask for meeting location",
+          "meeting spot",
+          "steven"
+        ],
+        "gold_item": [
+          "jane",
+          "wait",
+          "main entrance",
+          "steven"
+        ],
+        "similarity": 0.6178224891424179,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.2640168070793152,
+          "object": 0.37708303332328796,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Jane and Steven agreed to meet at 4:30 at the main entrance.",
+    "gold_final_outcome": "Jane and Steven will meet at 4:30 at the main entrance because Jane worries the trip may take at least 3 hours."
+  },
+  {
+    "test_index": 78,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 4,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.6616121232509613,
+    "meaning_bertscore_recall": 0.8149477243423462,
+    "meaning_bertscore_f1": 0.7303182395478307,
+    "tuple_precision": 0.5,
+    "tuple_recall": 0.6666666666666666,
+    "tuple_f1": 0.5714285714285715,
+    "tuple_avg_similarity": 0.7893916979432105,
+    "n_pred_tuples": 4,
+    "n_gold_tuples": 3,
+    "final_outcome_nli_similarity": 0.014490727480733767,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 1,
+        "pred_item": "Fiona asks Tina to assist her in preparing a tart for Chris.",
+        "gold_item": "Fiona asks Tina to help her make the tart.",
+        "similarity": 0.8033519983291626
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 2,
+        "pred_item": "Tina agrees to help Fiona make the tart.",
+        "gold_item": "Tina agrees to help Fiona make the tart.",
+        "similarity": 1.0
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 1,
+        "pred_item": "Fiona reports that she has already purchased the crust.",
+        "gold_item": "Fiona asks Tina to help her make the tart.",
+        "similarity": 0.4244300425052643
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 2,
+        "pred_item": "Tina explains the technique to avoid making scrambled eggs when adding eggs to the filling.",
+        "gold_item": "Tina agrees to help Fiona make the tart.",
+        "similarity": 0.41866645216941833
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Fiona wants to prepare a nice dinner for Chris using Tina's tart recipe.",
+        "pred_item": "Fiona asks Tina to assist her in preparing a tart for Chris.",
+        "similarity": 0.641491174697876
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 0,
+        "gold_item": "Fiona asks Tina to help her make the tart.",
+        "pred_item": "Fiona asks Tina to assist her in preparing a tart for Chris.",
+        "similarity": 0.8033519983291626
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 1,
+        "gold_item": "Tina agrees to help Fiona make the tart.",
+        "pred_item": "Tina agrees to help Fiona make the tart.",
+        "similarity": 1.0
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 1,
+        "pred_item": [
+          "tina",
+          "help prepare",
+          "tart",
+          "fiona"
+        ],
+        "gold_item": [
+          "tina",
+          "help make",
+          "tart",
+          "fiona"
+        ],
+        "similarity": 0.8512592583894729,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.5750264525413513,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 2,
+        "pred_item": [
+          "tina",
+          "agree to help",
+          "tart preparation",
+          "fiona"
+        ],
+        "gold_item": [
+          "tina",
+          "help",
+          "tart preparation",
+          "fiona"
+        ],
+        "similarity": 0.7275241374969482,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.2214975357055664,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Tina agrees to help Fiona prepare a tart for Chris and provides advice on mixing the filling to avoid making scrambled eggs.",
+    "gold_final_outcome": "Tina will help Fiona make her tart for Fiona's dinner with Chris."
+  },
+  {
+    "test_index": 86,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 6,
+    "n_gold_meanings": 6,
+    "meaning_bertscore_precision": 0.695179800192515,
+    "meaning_bertscore_recall": 0.6839644312858582,
+    "meaning_bertscore_f1": 0.6895265133660478,
+    "tuple_precision": 0.0,
+    "tuple_recall": 0.0,
+    "tuple_f1": 0.0,
+    "tuple_avg_similarity": 0.0,
+    "n_pred_tuples": 6,
+    "n_gold_tuples": 6,
+    "final_outcome_nli_similarity": 0.02840499486774206,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Nathalie suggests attending an opera for New Year's Eve.",
+        "gold_item": "Nathalie wants a classy New Year's Eve plan.",
+        "similarity": 0.6683526635169983
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 2,
+        "pred_item": "Olafur rejects the opera idea and suggests partying instead.",
+        "gold_item": "Olafur suggests partying instead.",
+        "similarity": 0.7311473488807678
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 3,
+        "pred_item": "Zoe suggests a specific party at Breakfast at Tiffany's.",
+        "gold_item": "Zoe suggests the Breakfast at Tiffany's party as a classy option.",
+        "similarity": 0.7442083358764648
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 2,
+        "pred_item": "Olafur proposes an alternative club in Soho.",
+        "gold_item": "Olafur suggests partying instead.",
+        "similarity": 0.5953311324119568
+      },
+      {
+        "pred_index": 4,
+        "gold_index": 4,
+        "pred_item": "Nathalie confirms the group will go to the Soho club.",
+        "gold_item": "Nathalie decides they will go to Soho.",
+        "similarity": 0.6994771957397461
+      },
+      {
+        "pred_index": 5,
+        "gold_index": 5,
+        "pred_item": "Olafur commits to buying tickets immediately.",
+        "gold_item": "Olafur says they need to buy tickets soon.",
+        "similarity": 0.7325621247291565
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Nathalie wants a classy New Year's Eve plan.",
+        "pred_item": "Nathalie suggests attending an opera for New Year's Eve.",
+        "similarity": 0.6683526635169983
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Olafur rejects opera as the New Year's Eve plan.",
+        "pred_item": "Olafur rejects the opera idea and suggests partying instead.",
+        "similarity": 0.5280389189720154
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 1,
+        "gold_item": "Olafur suggests partying instead.",
+        "pred_item": "Olafur rejects the opera idea and suggests partying instead.",
+        "similarity": 0.7311473488807678
+      },
+      {
+        "gold_index": 3,
+        "pred_index": 2,
+        "gold_item": "Zoe suggests the Breakfast at Tiffany's party as a classy option.",
+        "pred_item": "Zoe suggests a specific party at Breakfast at Tiffany's.",
+        "similarity": 0.7442083358764648
+      },
+      {
+        "gold_index": 4,
+        "pred_index": 4,
+        "gold_item": "Nathalie decides they will go to Soho.",
+        "pred_item": "Nathalie confirms the group will go to the Soho club.",
+        "similarity": 0.6994771957397461
+      },
+      {
+        "gold_index": 5,
+        "pred_index": 5,
+        "gold_item": "Olafur says they need to buy tickets soon.",
+        "pred_item": "Olafur commits to buying tickets immediately.",
+        "similarity": 0.7325621247291565
+      }
+    ],
+    "tuple_matches": [],
+    "pred_final_outcome": "The group decided to attend a party at a club in Soho for New Year's Eve, with Olafur committing to purchase tickets immediately.",
+    "gold_final_outcome": "Nathalie, Olafur, and Zoe plan to go to a classy New Year's Eve party in Soho and need to buy tickets soon."
+  },
+  {
+    "test_index": 120,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 6,
+    "n_gold_meanings": 5,
+    "meaning_bertscore_precision": 0.619621197382609,
+    "meaning_bertscore_recall": 0.6366139948368073,
+    "meaning_bertscore_f1": 0.6280026673260267,
+    "tuple_precision": 0.5,
+    "tuple_recall": 0.6,
+    "tuple_f1": 0.5454545454545454,
+    "tuple_avg_similarity": 0.7340939338008563,
+    "n_pred_tuples": 6,
+    "n_gold_tuples": 5,
+    "final_outcome_nli_similarity": 0.0009915546397678554,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "John invites Joan to see a movie on Wednesday.",
+        "gold_item": "John invites Joan to watch A Star is Born on Wednesday.",
+        "similarity": 0.6342343688011169
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Joan declines the Wednesday invitation due to being busy.",
+        "gold_item": "Joan cannot go on Wednesday because she is busy.",
+        "similarity": 0.6478961110115051
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 1,
+        "pred_item": "Joan suggests Thursday as an alternative time.",
+        "gold_item": "Joan cannot go on Wednesday because she is busy.",
+        "similarity": 0.44012951850891113
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 3,
+        "pred_item": "John agrees to meet on Thursday.",
+        "gold_item": "John agrees to meet on Thursday 8pm.",
+        "similarity": 0.8187248110771179
+      },
+      {
+        "pred_index": 4,
+        "gold_index": 3,
+        "pred_item": "Joan confirms the specific time of 8pm.",
+        "gold_item": "John agrees to meet on Thursday 8pm.",
+        "similarity": 0.5705193877220154
+      },
+      {
+        "pred_index": 5,
+        "gold_index": 4,
+        "pred_item": "John commits to finding the venue and sending details.",
+        "gold_item": "John will send Joan the location details.",
+        "similarity": 0.6062229871749878
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "John invites Joan to watch A Star is Born on Wednesday.",
+        "pred_item": "John invites Joan to see a movie on Wednesday.",
+        "similarity": 0.6342343688011169
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Joan cannot go on Wednesday because she is busy.",
+        "pred_item": "Joan declines the Wednesday invitation due to being busy.",
+        "similarity": 0.6478961110115051
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 4,
+        "gold_item": "Joan proposes Thursday around 8 p.m. instead.",
+        "pred_item": "Joan confirms the specific time of 8pm.",
+        "similarity": 0.47599169611930847
+      },
+      {
+        "gold_index": 3,
+        "pred_index": 3,
+        "gold_item": "John agrees to meet on Thursday 8pm.",
+        "pred_item": "John agrees to meet on Thursday.",
+        "similarity": 0.8187248110771179
+      },
+      {
+        "gold_index": 4,
+        "pred_index": 5,
+        "gold_item": "John will send Joan the location details.",
+        "pred_item": "John commits to finding the venue and sending details.",
+        "similarity": 0.6062229871749878
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": [
+          "joan",
+          "refuse",
+          "Wednesday plan",
+          "john"
+        ],
+        "gold_item": [
+          "joan",
+          "cannot go",
+          "Wednesday movie plan",
+          "john"
+        ],
+        "similarity": 0.7046829476952553,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.290326327085495,
+          "object": 0.7653436660766602,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 3,
+        "pred_item": [
+          "john",
+          "accept",
+          "Thursday plan",
+          "joan"
+        ],
+        "gold_item": [
+          "john",
+          "accepts",
+          "Thursday plan",
+          null
+        ],
+        "similarity": 0.7369434893131256,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.5341242551803589,
+          "object": 1.0,
+          "recipient": 0.0
+        }
+      },
+      {
+        "pred_index": 5,
+        "gold_index": 4,
+        "pred_item": [
+          "john",
+          "send details",
+          "movie playing info",
+          "joan"
+        ],
+        "gold_item": [
+          "john",
+          "send",
+          "location details",
+          "joan"
+        ],
+        "similarity": 0.7606553643941879,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.6248921751976013,
+          "object": 0.45971551537513733,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "John and Joan rescheduled their movie date from Wednesday to Thursday at 8pm, with John agreeing to send the venue details.",
+    "gold_final_outcome": "John and Joan will watch A Star is Born on Thursday around 8 p.m., and John will send the details."
+  },
+  {
+    "test_index": 137,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 4,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.6227062121033669,
+    "meaning_bertscore_recall": 0.6733207106590271,
+    "meaning_bertscore_f1": 0.6470251225515604,
+    "tuple_precision": 0.75,
+    "tuple_recall": 1.0,
+    "tuple_f1": 0.8571428571428571,
+    "tuple_avg_similarity": 0.8472429220875104,
+    "n_pred_tuples": 4,
+    "n_gold_tuples": 3,
+    "final_outcome_nli_similarity": 0.4985117298201658,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Peyton requests Cameron to bring a video game.",
+        "gold_item": "Peyton wants Cameron to bring a video game.",
+        "similarity": 0.832360029220581
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Cameron explains inability to return home due to lack of time.",
+        "gold_item": "Cameron explains that he cannot come home soon.",
+        "similarity": 0.5064731240272522
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": "Peyton suggests using a courier to deliver the game instead.",
+        "gold_item": "Peyton suggests that Cameron send the game by courier.",
+        "similarity": 0.681128978729248
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 0,
+        "pred_item": "Peyton insists Cameron complete the task and return home immediately.",
+        "gold_item": "Peyton wants Cameron to bring a video game.",
+        "similarity": 0.4708627164363861
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Peyton wants Cameron to bring a video game.",
+        "pred_item": "Peyton requests Cameron to bring a video game.",
+        "similarity": 0.832360029220581
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Cameron explains that he cannot come home soon.",
+        "pred_item": "Cameron explains inability to return home due to lack of time.",
+        "similarity": 0.5064731240272522
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 2,
+        "gold_item": "Peyton suggests that Cameron send the game by courier.",
+        "pred_item": "Peyton suggests using a courier to deliver the game instead.",
+        "similarity": 0.681128978729248
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "cameron",
+          "bring",
+          "video game",
+          "peyton"
+        ],
+        "gold_item": [
+          "cameron",
+          "bring",
+          "video game",
+          "peyton"
+        ],
+        "similarity": 1.0,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": [
+          "cameron",
+          "stay out of town",
+          null,
+          null
+        ],
+        "gold_item": [
+          "cameron",
+          "stay out of town",
+          "another week",
+          null
+        ],
+        "similarity": 0.7999999999999999,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 0.0,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": [
+          "cameron",
+          "deliver via courier",
+          "video game",
+          "peyton"
+        ],
+        "gold_item": [
+          "cameron",
+          "deliver",
+          "video game",
+          "peyton"
+        ],
+        "similarity": 0.7417287662625313,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.26208218932151794,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Peyton insists that Cameron deliver the video game via courier and return home immediately despite Cameron's plan to stay out of town for another week.",
+    "gold_final_outcome": "Peyton wants Cameron to bring the video game, but Cameron will probably stay out of town for another week."
+  },
+  {
+    "test_index": 139,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 4,
+    "n_gold_meanings": 5,
+    "meaning_bertscore_precision": 0.7428923547267914,
+    "meaning_bertscore_recall": 0.6644440114498138,
+    "meaning_bertscore_f1": 0.701481732602545,
+    "tuple_precision": 1.0,
+    "tuple_recall": 0.8,
+    "tuple_f1": 0.888888888888889,
+    "tuple_avg_similarity": 0.9040552228689194,
+    "n_pred_tuples": 4,
+    "n_gold_tuples": 5,
+    "final_outcome_nli_similarity": 0.9950904250144958,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Paul acknowledges missing his appointment and commits to rescheduling.",
+        "gold_item": "Paul says he forgot his physiotherapy appointment.",
+        "similarity": 0.4684714674949646
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 4,
+        "pred_item": "Emma informs Paul of her late return time.",
+        "gold_item": "Emma accepts Paul's offer to prepare food.",
+        "similarity": 0.5030979514122009
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 3,
+        "pred_item": "Paul offers to prepare food for Emma.",
+        "gold_item": "Paul offers to prepare food for Emma.",
+        "similarity": 1.0
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 4,
+        "pred_item": "Emma accepts Paul's offer to prepare food.",
+        "gold_item": "Emma accepts Paul's offer to prepare food.",
+        "similarity": 1.0
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Paul says he forgot his physiotherapy appointment.",
+        "pred_item": "Paul acknowledges missing his appointment and commits to rescheduling.",
+        "similarity": 0.4684714674949646
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 0,
+        "gold_item": "Paul will schedule a new physiotherapy appointment.",
+        "pred_item": "Paul acknowledges missing his appointment and commits to rescheduling.",
+        "similarity": 0.4301961362361908
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 2,
+        "gold_item": "Emma says she will come home after midnight.",
+        "pred_item": "Paul offers to prepare food for Emma.",
+        "similarity": 0.4235524535179138
+      },
+      {
+        "gold_index": 3,
+        "pred_index": 2,
+        "gold_item": "Paul offers to prepare food for Emma.",
+        "pred_item": "Paul offers to prepare food for Emma.",
+        "similarity": 1.0
+      },
+      {
+        "gold_index": 4,
+        "pred_index": 3,
+        "gold_item": "Emma accepts Paul's offer to prepare food.",
+        "pred_item": "Emma accepts Paul's offer to prepare food.",
+        "similarity": 1.0
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 1,
+        "pred_item": [
+          "paul",
+          "schedule",
+          "new physiotherapy appointment",
+          null
+        ],
+        "gold_item": [
+          "paul",
+          "schedule",
+          "new appointment",
+          null
+        ],
+        "similarity": 0.9180323839187622,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 0.590161919593811,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 2,
+        "pred_item": [
+          "emma",
+          "return home",
+          null,
+          null
+        ],
+        "gold_item": [
+          "emma",
+          "come home",
+          "after midnight",
+          null
+        ],
+        "similarity": 0.6981885075569152,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.7091100215911865,
+          "object": 0.0,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 3,
+        "pred_item": [
+          "paul",
+          "prepare",
+          "food",
+          "emma"
+        ],
+        "gold_item": [
+          "paul",
+          "prepare",
+          "food",
+          "emma"
+        ],
+        "similarity": 1.0,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 4,
+        "pred_item": [
+          "paul",
+          "prepare",
+          "food",
+          "emma"
+        ],
+        "gold_item": [
+          "paul",
+          "prepare",
+          "food",
+          "emma"
+        ],
+        "similarity": 1.0,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Paul will reschedule his physiotherapy appointment and prepare food for Emma, who will return home after midnight.",
+    "gold_final_outcome": "Paul will reschedule his physiotherapy appointment and prepare food for Emma, who will be home after midnight."
+  },
+  {
+    "test_index": 192,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 4,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.5123147517442703,
+    "meaning_bertscore_recall": 0.5700942973295847,
+    "meaning_bertscore_f1": 0.5396623737710494,
+    "tuple_precision": 0.25,
+    "tuple_recall": 0.3333333333333333,
+    "tuple_f1": 0.28571428571428575,
+    "tuple_avg_similarity": 0.6339307948946953,
+    "n_pred_tuples": 4,
+    "n_gold_tuples": 3,
+    "final_outcome_nli_similarity": 0.00016468796820845455,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Harris reveals the death of his friend Aoki.",
+        "gold_item": "Harris tells Lena that his friend Aoki died yesterday.",
+        "similarity": 0.6676371693611145
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Harris expresses uncertainty about the cause of death.",
+        "gold_item": "Harris does not know what happened to Aoki.",
+        "similarity": 0.5262243747711182
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 1,
+        "pred_item": "Harris clarifies he has not seen Aoki recently due to distance.",
+        "gold_item": "Harris does not know what happened to Aoki.",
+        "similarity": 0.5064003467559814
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 0,
+        "pred_item": "Harris ends the conversation because his mother is calling.",
+        "gold_item": "Harris tells Lena that his friend Aoki died yesterday.",
+        "similarity": 0.3489971160888672
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Harris tells Lena that his friend Aoki died yesterday.",
+        "pred_item": "Harris reveals the death of his friend Aoki.",
+        "similarity": 0.6676371693611145
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 0,
+        "gold_item": "Harris does not know what happened to Aoki.",
+        "pred_item": "Harris reveals the death of his friend Aoki.",
+        "similarity": 0.5867100954055786
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 2,
+        "gold_item": "Harris says he has not seen Aoki for a few months and that she lived in Michigan.",
+        "pred_item": "Harris clarifies he has not seen Aoki recently due to distance.",
+        "similarity": 0.45593562722206116
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": [
+          "harris",
+          "speculates",
+          "cause of death",
+          "lena"
+        ],
+        "gold_item": [
+          "harris",
+          "does not know",
+          "cause of death",
+          null
+        ],
+        "similarity": 0.6339307948946953,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.2398022711277008,
+          "object": 1.0,
+          "recipient": 0.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Harris informs Lena about his friend Aoki's death and ends the conversation to attend to his mother.",
+    "gold_final_outcome": "Harris's friend Aoki died yesterday, and Harris had not seen her for a few months because she lived in Michigan."
+  },
+  {
+    "test_index": 210,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 2,
+    "n_gold_meanings": 4,
+    "meaning_bertscore_precision": 0.5229850113391876,
+    "meaning_bertscore_recall": 0.44848470389842987,
+    "meaning_bertscore_f1": 0.4828782087075198,
+    "tuple_precision": 0.5,
+    "tuple_recall": 0.25,
+    "tuple_f1": 0.3333333333333333,
+    "tuple_avg_similarity": 1.0,
+    "n_pred_tuples": 2,
+    "n_gold_tuples": 4,
+    "final_outcome_nli_similarity": 0.0027372817930881865,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Yaz proposes picking up Mary to go to the slimming club.",
+        "gold_item": "Yaz asks whether Mary is going to slimming club tonight.",
+        "similarity": 0.5296613574028015
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 3,
+        "pred_item": "Mary agrees to the plan to meet at 6.",
+        "gold_item": "Yaz will pick Mary up around 6.",
+        "similarity": 0.5163086652755737
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Yaz asks whether Mary is going to slimming club tonight.",
+        "pred_item": "Yaz proposes picking up Mary to go to the slimming club.",
+        "similarity": 0.5296613574028015
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Mary does not want to go but thinks she should.",
+        "pred_item": "Mary agrees to the plan to meet at 6.",
+        "similarity": 0.39774760603904724
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 1,
+        "gold_item": "Mary expects they will be told off for eating too much.",
+        "pred_item": "Mary agrees to the plan to meet at 6.",
+        "similarity": 0.350221186876297
+      },
+      {
+        "gold_index": 3,
+        "pred_index": 1,
+        "gold_item": "Yaz will pick Mary up around 6.",
+        "pred_item": "Mary agrees to the plan to meet at 6.",
+        "similarity": 0.5163086652755737
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 3,
+        "pred_item": [
+          "yaz",
+          "pick up",
+          null,
+          "mary"
+        ],
+        "gold_item": [
+          "yaz",
+          "pick up",
+          null,
+          "mary"
+        ],
+        "similarity": 1.0,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Yaz and Mary agreed to meet at 6:00 PM so Yaz can pick Mary up for the slimming club.",
+    "gold_final_outcome": "Yaz and Mary will go to slimming club together around 6 and expect to be told off for eating too much."
+  },
+  {
+    "test_index": 211,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 3,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.5389660100142161,
+    "meaning_bertscore_recall": 0.5412629743417104,
+    "meaning_bertscore_f1": 0.5401120500822604,
+    "tuple_precision": 0.3333333333333333,
+    "tuple_recall": 0.3333333333333333,
+    "tuple_f1": 0.3333333333333333,
+    "tuple_avg_similarity": 0.7615322113037108,
+    "n_pred_tuples": 3,
+    "n_gold_tuples": 3,
+    "final_outcome_nli_similarity": 0.0025807794445427135,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Camille informs the group that she is ill and likely unable to attend.",
+        "gold_item": "Camille says she is sick.",
+        "similarity": 0.5054743885993958
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Ellie asks Aaliyah for the current location of their classes.",
+        "gold_item": "Ellie asks where their classes are being held.",
+        "similarity": 0.6322556138038635
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": "Aaliyah specifies the room and floor for the classes.",
+        "gold_item": "Aaliyah tells Ellie the class is in room 342 on the second floor.",
+        "similarity": 0.47916802763938904
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Camille says she is sick.",
+        "pred_item": "Camille informs the group that she is ill and likely unable to attend.",
+        "similarity": 0.5054743885993958
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Ellie asks where their classes are being held.",
+        "pred_item": "Ellie asks Aaliyah for the current location of their classes.",
+        "similarity": 0.6322556138038635
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 1,
+        "gold_item": "Aaliyah tells Ellie the class is in room 342 on the second floor.",
+        "pred_item": "Ellie asks Aaliyah for the current location of their classes.",
+        "similarity": 0.48605892062187195
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "camille",
+          "reports illness",
+          null,
+          "ellie"
+        ],
+        "gold_item": [
+          "camille",
+          "is sick",
+          null,
+          null
+        ],
+        "similarity": 0.7615322113037108,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.6043777465820312,
+          "object": 1.0,
+          "recipient": 0.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Camille reports being sick, and Aaliyah confirms the class location is room 342 on the second floor.",
+    "gold_final_outcome": "Ellie's class is in room 342 on the second floor, and Camille is sick."
+  },
+  {
+    "test_index": 212,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 3,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.5900713702042898,
+    "meaning_bertscore_recall": 0.596235454082489,
+    "meaning_bertscore_f1": 0.5931373977661306,
+    "tuple_precision": 0.6666666666666666,
+    "tuple_recall": 0.6666666666666666,
+    "tuple_f1": 0.6666666666666666,
+    "tuple_avg_similarity": 0.9022573329508304,
+    "n_pred_tuples": 3,
+    "n_gold_tuples": 3,
+    "final_outcome_nli_similarity": 0.49953544774325565,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Nathan shares a video file with Aaron.",
+        "gold_item": "Nathan sends Aaron a video.",
+        "similarity": 0.7171924710273743
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 0,
+        "pred_item": "Aaron reacts with laughter and jokes about the video content.",
+        "gold_item": "Nathan sends Aaron a video.",
+        "similarity": 0.4787629544734955
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 0,
+        "pred_item": "Nathan reveals that Dan was the original sender of the video.",
+        "gold_item": "Nathan sends Aaron a video.",
+        "similarity": 0.5742586851119995
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Nathan sends Aaron a video.",
+        "pred_item": "Nathan shares a video file with Aaron.",
+        "similarity": 0.7171924710273743
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 2,
+        "gold_item": "Aaron asks whether Nathan knows the woman in the video.",
+        "pred_item": "Nathan reveals that Dan was the original sender of the video.",
+        "similarity": 0.5115572214126587
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 2,
+        "gold_item": "Nathan says he does not know her and that Dan sent him the video.",
+        "pred_item": "Nathan reveals that Dan was the original sender of the video.",
+        "similarity": 0.5599566698074341
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "nathan",
+          "sends",
+          "video",
+          "aaron"
+        ],
+        "gold_item": [
+          "nathan",
+          "send",
+          "video",
+          "aaron"
+        ],
+        "similarity": 0.8045146659016609,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.4414704740047455,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": [
+          "dan",
+          "sent",
+          "video",
+          "nathan"
+        ],
+        "gold_item": [
+          "dan",
+          "sent",
+          "video",
+          "nathan"
+        ],
+        "similarity": 1.0,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Nathan and Aaron shared a humorous video originally sent by Dan, resulting in mutual laughter and jokes.",
+    "gold_final_outcome": "Nathan and Aaron discuss a video Nathan received from Dan."
+  },
+  {
+    "test_index": 215,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 5,
+    "n_gold_meanings": 6,
+    "meaning_bertscore_precision": 0.37463300824165346,
+    "meaning_bertscore_recall": 0.36063869794209796,
+    "meaning_bertscore_f1": 0.3675026773426165,
+    "tuple_precision": 0.6,
+    "tuple_recall": 0.5,
+    "tuple_f1": 0.5454545454545454,
+    "tuple_avg_similarity": 0.7425159315268198,
+    "n_pred_tuples": 5,
+    "n_gold_tuples": 6,
+    "final_outcome_nli_similarity": 0.002165478188544512,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Freddie suggests specific shows for Kelly to watch while waiting for new episodes.",
+        "gold_item": "Freddie starts a discussion about what everyone is watching on Netflix.",
+        "similarity": 0.414579302072525
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 2,
+        "pred_item": "Bob suggests Grimm or Sabrina as viewing options.",
+        "gold_item": "Freddie recommends Outlander or The Tudors to Kelly.",
+        "similarity": 0.3789569139480591
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 0,
+        "pred_item": "Kelly rejects the suggested shows, describing them negatively.",
+        "gold_item": "Freddie starts a discussion about what everyone is watching on Netflix.",
+        "similarity": 0.3138130009174347
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 2,
+        "pred_item": "Mike suggests The West Wing to Greg as an alternative political drama.",
+        "gold_item": "Freddie recommends Outlander or The Tudors to Kelly.",
+        "similarity": 0.3584325611591339
+      },
+      {
+        "pred_index": 4,
+        "gold_index": 4,
+        "pred_item": "Greg mentions Bodyguard as a potentially good show to watch.",
+        "gold_item": "Greg says he is watching House of Cards but finds the new series boring.",
+        "similarity": 0.4073832631111145
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Freddie starts a discussion about what everyone is watching on Netflix.",
+        "pred_item": "Freddie suggests specific shows for Kelly to watch while waiting for new episodes.",
+        "similarity": 0.414579302072525
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 4,
+        "gold_item": "Kelly says she has finished watching The Crown.",
+        "pred_item": "Greg mentions Bodyguard as a potentially good show to watch.",
+        "similarity": 0.39874282479286194
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 1,
+        "gold_item": "Freddie recommends Outlander or The Tudors to Kelly.",
+        "pred_item": "Bob suggests Grimm or Sabrina as viewing options.",
+        "similarity": 0.3789569139480591
+      },
+      {
+        "gold_index": 3,
+        "pred_index": 4,
+        "gold_item": "Jim says he is watching I, Zombie.",
+        "pred_item": "Greg mentions Bodyguard as a potentially good show to watch.",
+        "similarity": 0.2866986393928528
+      },
+      {
+        "gold_index": 4,
+        "pred_index": 4,
+        "gold_item": "Greg says he is watching House of Cards but finds the new series boring.",
+        "pred_item": "Greg mentions Bodyguard as a potentially good show to watch.",
+        "similarity": 0.4073832631111145
+      },
+      {
+        "gold_index": 5,
+        "pred_index": 4,
+        "gold_item": "Alan says he is catching up with Friends.",
+        "pred_item": "Greg mentions Bodyguard as a potentially good show to watch.",
+        "similarity": 0.27747124433517456
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 2,
+        "pred_item": [
+          "kelly",
+          "watch",
+          "Outlander or The Tudors",
+          "kelly"
+        ],
+        "gold_item": [
+          "kelly",
+          "try",
+          "Outlander or The Tudors",
+          null
+        ],
+        "similarity": 0.7166569143533706,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.4761626124382019,
+          "object": 1.0,
+          "recipient": 0.0
+        }
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 3,
+        "pred_item": [
+          "jim",
+          "watch",
+          "Grimm or Sabrina",
+          "jim"
+        ],
+        "gold_item": [
+          "jim",
+          "watch",
+          "I, Zombie",
+          null
+        ],
+        "similarity": 0.7441507548093795,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 0.2207537740468979,
+          "recipient": 0.0
+        }
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 4,
+        "pred_item": [
+          "greg",
+          "watch",
+          "The West Wing",
+          "greg"
+        ],
+        "gold_item": [
+          "greg",
+          "watch",
+          "House of Cards",
+          null
+        ],
+        "similarity": 0.7667401254177093,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 0.33370062708854675,
+          "recipient": 0.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Participants exchanged various TV show recommendations and personal viewing preferences without reaching a consensus on a single show to watch together.",
+    "gold_final_outcome": "The group discusses the different Netflix shows they are watching and recommends shows to each other."
+  },
+  {
+    "test_index": 244,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 3,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.7007750471433004,
+    "meaning_bertscore_recall": 0.7007750471433004,
+    "meaning_bertscore_f1": 0.7007750471433004,
+    "tuple_precision": 0.6666666666666666,
+    "tuple_recall": 0.6666666666666666,
+    "tuple_f1": 0.6666666666666666,
+    "tuple_avg_similarity": 0.7769596807658672,
+    "n_pred_tuples": 3,
+    "n_gold_tuples": 3,
+    "final_outcome_nli_similarity": 0.506392914801836,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Jones proposes meeting later in the afternoon in town.",
+        "gold_item": "Jones asks Angelina to meet later in town.",
+        "similarity": 0.5216668248176575
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Angelina agrees to the proposed meeting.",
+        "gold_item": "Angelina agrees to meet Jones.",
+        "similarity": 0.7288934588432312
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": "Jones commits to calling Angelina to confirm the specific meeting location.",
+        "gold_item": "Jones will call Angelina to confirm the meeting place.",
+        "similarity": 0.8517648577690125
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Jones asks Angelina to meet later in town.",
+        "pred_item": "Jones proposes meeting later in the afternoon in town.",
+        "similarity": 0.5216668248176575
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Angelina agrees to meet Jones.",
+        "pred_item": "Angelina agrees to the proposed meeting.",
+        "similarity": 0.7288934588432312
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 2,
+        "gold_item": "Jones will call Angelina to confirm the meeting place.",
+        "pred_item": "Jones commits to calling Angelina to confirm the specific meeting location.",
+        "similarity": 0.8517648577690125
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": [
+          "angelina",
+          "accept meeting",
+          "meeting",
+          "jones"
+        ],
+        "gold_item": [
+          "angelina",
+          "agree to meet",
+          null,
+          "jones"
+        ],
+        "similarity": 0.6097114637494087,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.4563184678554535,
+          "object": 0.0,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": [
+          "jones",
+          "call to confirm location",
+          "meeting location",
+          "angelina"
+        ],
+        "gold_item": [
+          "jones",
+          "call to confirm",
+          "meeting location",
+          "angelina"
+        ],
+        "similarity": 0.9442078977823257,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.8405939936637878,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Jones and Angelina agreed to meet later in the afternoon, with Jones to call and confirm the specific location.",
+    "gold_final_outcome": "Jones and Angelina will meet in town later in the afternoon, and Jones will call to confirm the location."
+  },
+  {
+    "test_index": 285,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 4,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.5634822696447372,
+    "meaning_bertscore_recall": 0.6074505845705668,
+    "meaning_bertscore_f1": 0.5846409260080555,
+    "tuple_precision": 0.5,
+    "tuple_recall": 0.6666666666666666,
+    "tuple_f1": 0.5714285714285715,
+    "tuple_avg_similarity": 0.6703175451606512,
+    "n_pred_tuples": 4,
+    "n_gold_tuples": 3,
+    "final_outcome_nli_similarity": 0.4987610939424485,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Casey confirms she painted her own nails and describes the process as time-consuming.",
+        "gold_item": "Casey says she did her nails herself with new nail polish and it took nearly 4 hours.",
+        "similarity": 0.5669273734092712
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Amelia asks Casey to paint her and Kristen's nails.",
+        "gold_item": "Amelia asks Casey to do nails for Amelia and Kristen too.",
+        "similarity": 0.7474778890609741
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 1,
+        "pred_item": "Kristen reinforces the request for Casey to paint her nails.",
+        "gold_item": "Amelia asks Casey to do nails for Amelia and Kristen too.",
+        "similarity": 0.4606132507324219
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 2,
+        "pred_item": "Casey declines the request because the process was too difficult and time-consuming.",
+        "gold_item": "Casey refuses because doing the nails took too long.",
+        "similarity": 0.47891056537628174
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Casey says she did her nails herself with new nail polish and it took nearly 4 hours.",
+        "pred_item": "Casey confirms she painted her own nails and describes the process as time-consuming.",
+        "similarity": 0.5669273734092712
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Amelia asks Casey to do nails for Amelia and Kristen too.",
+        "pred_item": "Amelia asks Casey to paint her and Kristen's nails.",
+        "similarity": 0.7474778890609741
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 0,
+        "gold_item": "Casey refuses because doing the nails took too long.",
+        "pred_item": "Casey confirms she painted her own nails and describes the process as time-consuming.",
+        "similarity": 0.5079464912414551
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "casey",
+          "painted nails",
+          "nails",
+          null
+        ],
+        "gold_item": [
+          "casey",
+          "did",
+          "her nails",
+          null
+        ],
+        "similarity": 0.6567797504365445,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.193219855427742,
+          "object": 0.6957640051841736,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": [
+          "casey",
+          "paint nails",
+          "nails",
+          "amelia and kristen"
+        ],
+        "gold_item": [
+          "casey",
+          "do nails",
+          "Amelia and Kristen's nails",
+          "amelia and kristen"
+        ],
+        "similarity": 0.683855339884758,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.48660844564437866,
+          "object": 0.3177119195461273,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Casey refuses to paint Amelia and Kristen's nails due to the excessive time and effort required.",
+    "gold_final_outcome": "Casey did her own nails with new polish, but she will not do Amelia and Kristen's nails because it takes too long."
+  },
+  {
+    "test_index": 319,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 2,
+    "n_gold_meanings": 2,
+    "meaning_bertscore_precision": 0.5236125886440277,
+    "meaning_bertscore_recall": 0.5236125886440277,
+    "meaning_bertscore_f1": 0.5236125886440277,
+    "tuple_precision": 1.0,
+    "tuple_recall": 1.0,
+    "tuple_f1": 1.0,
+    "tuple_avg_similarity": 1.0,
+    "n_pred_tuples": 2,
+    "n_gold_tuples": 2,
+    "final_outcome_nli_similarity": 0.02361969066259917,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Sue instructs Steve to call her immediately upon receiving the message.",
+        "gold_item": "Sue asks Steve to call her because it is important.",
+        "similarity": 0.5733005404472351
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Steve confirms he is executing the requested action.",
+        "gold_item": "Steve says he is calling Sue now.",
+        "similarity": 0.4739246368408203
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Sue asks Steve to call her because it is important.",
+        "pred_item": "Sue instructs Steve to call her immediately upon receiving the message.",
+        "similarity": 0.5733005404472351
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Steve says he is calling Sue now.",
+        "pred_item": "Steve confirms he is executing the requested action.",
+        "similarity": 0.4739246368408203
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "steve",
+          "call",
+          null,
+          "sue"
+        ],
+        "gold_item": [
+          "steve",
+          "call",
+          null,
+          "sue"
+        ],
+        "similarity": 1.0,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": [
+          "steve",
+          "call",
+          null,
+          "sue"
+        ],
+        "gold_item": [
+          "steve",
+          "call",
+          null,
+          "sue"
+        ],
+        "similarity": 1.0,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Steve agrees to Sue's request and initiates a call to her.",
+    "gold_final_outcome": "Steve is calling Sue because she asked him to call about something important."
+  },
+  {
+    "test_index": 346,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 5,
+    "n_gold_meanings": 4,
+    "meaning_bertscore_precision": 0.680023467540741,
+    "meaning_bertscore_recall": 0.7297995835542679,
+    "meaning_bertscore_f1": 0.7040328118240099,
+    "tuple_precision": 0.6,
+    "tuple_recall": 0.75,
+    "tuple_f1": 0.6666666666666665,
+    "tuple_avg_similarity": 0.6827287698785464,
+    "n_pred_tuples": 5,
+    "n_gold_tuples": 4,
+    "final_outcome_nli_similarity": 0.0011179696302860975,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 2,
+        "pred_item": "Gemma proposes inviting Lona and Michelle to the event.",
+        "gold_item": "Gemma is thinking of inviting Lona and Michelle.",
+        "similarity": 0.7952730655670166
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 3,
+        "pred_item": "Timmy questions Gemma's assumption that Lona and Michelle would invite them to their weddings.",
+        "gold_item": "Gemma admits that she wants to attend Lona and Michelle's wedding receptions.",
+        "similarity": 0.5662298798561096
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 3,
+        "pred_item": "Gemma admits she wants to attend Lona and Michelle's wedding receptions.",
+        "gold_item": "Gemma admits that she wants to attend Lona and Michelle's wedding receptions.",
+        "similarity": 0.9652093052864075
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 2,
+        "pred_item": "Timmy asks if Gemma believes she can convince Lona and Michelle to invite them.",
+        "gold_item": "Gemma is thinking of inviting Lona and Michelle.",
+        "similarity": 0.583717405796051
+      },
+      {
+        "pred_index": 4,
+        "gold_index": 2,
+        "pred_item": "Gemma expresses uncertainty about her ability to secure invitations.",
+        "gold_item": "Gemma is thinking of inviting Lona and Michelle.",
+        "similarity": 0.4896876811981201
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 3,
+        "gold_item": "Timmy asks Gemma who she wants to invite.",
+        "pred_item": "Timmy asks if Gemma believes she can convince Lona and Michelle to invite them.",
+        "similarity": 0.5692653059959412
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 0,
+        "gold_item": "Gemma plans to invite Timmy and possibly his date.",
+        "pred_item": "Gemma proposes inviting Lona and Michelle to the event.",
+        "similarity": 0.5894506573677063
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 0,
+        "gold_item": "Gemma is thinking of inviting Lona and Michelle.",
+        "pred_item": "Gemma proposes inviting Lona and Michelle to the event.",
+        "similarity": 0.7952730655670166
+      },
+      {
+        "gold_index": 3,
+        "pred_index": 2,
+        "gold_item": "Gemma admits that she wants to attend Lona and Michelle's wedding receptions.",
+        "pred_item": "Gemma admits she wants to attend Lona and Michelle's wedding receptions.",
+        "similarity": 0.9652093052864075
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 1,
+        "gold_index": 0,
+        "pred_item": [
+          "gemma",
+          "admit",
+          "desire to attend weddings",
+          null
+        ],
+        "gold_item": [
+          "gemma",
+          "invite",
+          "guests",
+          null
+        ],
+        "similarity": 0.631011788547039,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.40310683846473694,
+          "object": 0.19962197542190552,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 3,
+        "pred_item": [
+          "gemma",
+          "want to attend",
+          "wedding receptions",
+          null
+        ],
+        "gold_item": [
+          "gemma",
+          "attend",
+          "their wedding receptions",
+          null
+        ],
+        "similarity": 0.7651315167546272,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.494253009557724,
+          "object": 0.7107148170471191,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 2,
+        "pred_item": [
+          "gemma",
+          "change minds",
+          "Lona and Michelle",
+          null
+        ],
+        "gold_item": [
+          "gemma",
+          "invite",
+          "Lona and Michelle",
+          "lona and michelle"
+        ],
+        "similarity": 0.6520430043339729,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.2915514409542084,
+          "object": 1.0,
+          "recipient": 0.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Gemma admits she wants to attend Lona and Michelle's weddings but remains unsure if she can convince them to invite her.",
+    "gold_final_outcome": "Gemma plans to invite Timmy, possibly his date, Lona, and Michelle, partly because she wants to be invited to their wedding receptions."
+  },
+  {
+    "test_index": 355,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 3,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.918939212958018,
+    "meaning_bertscore_recall": 0.7614797155062357,
+    "meaning_bertscore_f1": 0.8328322879465602,
+    "tuple_precision": 0.0,
+    "tuple_recall": 0.0,
+    "tuple_f1": 0.0,
+    "tuple_avg_similarity": 0.0,
+    "n_pred_tuples": 3,
+    "n_gold_tuples": 3,
+    "final_outcome_nli_similarity": 0.5011447356082499,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 1,
+        "pred_item": "Ann suggests holding a celebration tonight.",
+        "gold_item": "Ann suggests having a small celebration tonight.",
+        "similarity": 0.871760904788971
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 2,
+        "pred_item": "Sue agrees to attend the celebration.",
+        "gold_item": "Julie agrees to attend the celebration.",
+        "similarity": 0.885056734085083
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": "Julie agrees to attend the celebration.",
+        "gold_item": "Julie agrees to attend the celebration.",
+        "similarity": 1.0
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 1,
+        "gold_item": "Ann congratulates Sue and Julie for doing well.",
+        "pred_item": "Sue agrees to attend the celebration.",
+        "similarity": 0.41267824172973633
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 0,
+        "gold_item": "Ann suggests having a small celebration tonight.",
+        "pred_item": "Ann suggests holding a celebration tonight.",
+        "similarity": 0.871760904788971
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 2,
+        "gold_item": "Julie agrees to attend the celebration.",
+        "pred_item": "Julie agrees to attend the celebration.",
+        "similarity": 1.0
+      }
+    ],
+    "tuple_matches": [],
+    "pred_final_outcome": "Ann, Sue, and Julie have agreed to celebrate together tonight.",
+    "gold_final_outcome": "Ann, Sue and Julie will have a small celebration tonight."
+  },
+  {
+    "test_index": 367,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 3,
+    "n_gold_meanings": 2,
+    "meaning_bertscore_precision": 0.6332649489243826,
+    "meaning_bertscore_recall": 0.7097963690757751,
+    "meaning_bertscore_f1": 0.6693501709643165,
+    "tuple_precision": 0.6666666666666666,
+    "tuple_recall": 1.0,
+    "tuple_f1": 0.8,
+    "tuple_avg_similarity": 0.8023914892226458,
+    "n_pred_tuples": 3,
+    "n_gold_tuples": 2,
+    "final_outcome_nli_similarity": 0.01938090760813793,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Steve informs his mother that the dishwasher has been delivered and installed.",
+        "gold_item": "Steve tells his mum that the dishwasher has arrived and been installed.",
+        "similarity": 0.8989073634147644
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 0,
+        "pred_item": "Mum asks about the capacity of the new dishwasher.",
+        "gold_item": "Steve tells his mum that the dishwasher has arrived and been installed.",
+        "similarity": 0.5332728028297424
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 1,
+        "pred_item": "Steve confirms the dishwasher is likely a 12-place setting model and states his usage frequency.",
+        "gold_item": "Steve says the dishwasher looks nice and is quiet.",
+        "similarity": 0.46761468052864075
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Steve tells his mum that the dishwasher has arrived and been installed.",
+        "pred_item": "Steve informs his mother that the dishwasher has been delivered and installed.",
+        "similarity": 0.8989073634147644
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 0,
+        "gold_item": "Steve says the dishwasher looks nice and is quiet.",
+        "pred_item": "Steve informs his mother that the dishwasher has been delivered and installed.",
+        "similarity": 0.5206853747367859
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "steve",
+          "report installation",
+          "dishwasher",
+          "mum"
+        ],
+        "gold_item": [
+          "steve",
+          "report installation",
+          "dishwasher",
+          "mum"
+        ],
+        "similarity": 1.0,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 1,
+        "pred_item": [
+          "steve",
+          "confirm capacity and usage",
+          "dishwasher",
+          "mum"
+        ],
+        "gold_item": [
+          "steve",
+          "is pleased with",
+          "dishwasher",
+          null
+        ],
+        "similarity": 0.6047829784452915,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.15652279555797577,
+          "object": 1.0,
+          "recipient": 0.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Steve confirms the successful installation of a likely 12-place setting dishwasher and plans to use it every other day.",
+    "gold_final_outcome": "Steve is pleased with his newly installed dishwasher."
+  },
+  {
+    "test_index": 393,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 2,
+    "n_gold_meanings": 2,
+    "meaning_bertscore_precision": 0.7464286684989929,
+    "meaning_bertscore_recall": 0.7464286684989929,
+    "meaning_bertscore_f1": 0.7464286684989929,
+    "tuple_precision": 1.0,
+    "tuple_recall": 1.0,
+    "tuple_f1": 1.0,
+    "tuple_avg_similarity": 0.6659576233476401,
+    "n_pred_tuples": 2,
+    "n_gold_tuples": 2,
+    "final_outcome_nli_similarity": 0.9915617108345032,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Marika asks if Lara will attend today.",
+        "gold_item": "Marika asks whether Lara is coming today.",
+        "similarity": 0.8159348368644714
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Lara confirms her attendance for today.",
+        "gold_item": "Lara confirms that she is coming today.",
+        "similarity": 0.6769225001335144
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Marika asks whether Lara is coming today.",
+        "pred_item": "Marika asks if Lara will attend today.",
+        "similarity": 0.8159348368644714
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Lara confirms that she is coming today.",
+        "pred_item": "Lara confirms her attendance for today.",
+        "similarity": 0.6769225001335144
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "lara",
+          "attend",
+          null,
+          null
+        ],
+        "gold_item": [
+          "lara",
+          "come",
+          null,
+          null
+        ],
+        "similarity": 0.6659576233476401,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.04559320956468582,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": [
+          "lara",
+          "attend",
+          null,
+          null
+        ],
+        "gold_item": [
+          "lara",
+          "come",
+          null,
+          null
+        ],
+        "similarity": 0.6659576233476401,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.04559320956468582,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Lara confirmed she will come today.",
+    "gold_final_outcome": "Lara is coming today."
+  },
+  {
+    "test_index": 417,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 2,
+    "n_gold_meanings": 2,
+    "meaning_bertscore_precision": 0.4995979368686676,
+    "meaning_bertscore_recall": 0.5655133128166199,
+    "meaning_bertscore_f1": 0.5305160084233994,
+    "tuple_precision": 0.5,
+    "tuple_recall": 0.5,
+    "tuple_f1": 0.5,
+    "tuple_avg_similarity": 0.65,
+    "n_pred_tuples": 2,
+    "n_gold_tuples": 2,
+    "final_outcome_nli_similarity": 0.49984706239774823,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Miranda asks to cancel the scheduled meeting due to work obligations.",
+        "gold_item": "Miranda asks Stephanie to cancel tomorrow's meeting.",
+        "similarity": 0.6052497029304504
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 0,
+        "pred_item": "Stephanie accepts the cancellation request after sarcastic banter.",
+        "gold_item": "Miranda asks Stephanie to cancel tomorrow's meeting.",
+        "similarity": 0.39394617080688477
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Miranda asks Stephanie to cancel tomorrow's meeting.",
+        "pred_item": "Miranda asks to cancel the scheduled meeting due to work obligations.",
+        "similarity": 0.6052497029304504
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 0,
+        "gold_item": "Miranda explains that she has to work.",
+        "pred_item": "Miranda asks to cancel the scheduled meeting due to work obligations.",
+        "similarity": 0.5257769227027893
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "stephanie",
+          "cancel",
+          "tomorrow's meeting",
+          null
+        ],
+        "gold_item": [
+          "miranda and stephanie",
+          "cancel",
+          "tomorrow's meeting",
+          null
+        ],
+        "similarity": 0.65,
+        "slot_scores": {
+          "actor": 0.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Miranda and Stephanie agreed to cancel tomorrow's meeting due to Miranda's work commitments.",
+    "gold_final_outcome": "Miranda cannot attend tomorrow's meeting with Stephanie because she has to work."
+  },
+  {
+    "test_index": 432,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 4,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.5598588287830353,
+    "meaning_bertscore_recall": 0.6031103332837423,
+    "meaning_bertscore_f1": 0.5806803066370452,
+    "tuple_precision": 0.75,
+    "tuple_recall": 1.0,
+    "tuple_f1": 0.8571428571428571,
+    "tuple_avg_similarity": 0.7887326618035635,
+    "n_pred_tuples": 4,
+    "n_gold_tuples": 3,
+    "final_outcome_nli_similarity": 0.13458141824230552,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Javier asks for a recommendation for an English-speaking tattoo parlor.",
+        "gold_item": "Javier asks Judie for tattoo parlors with English-speaking employees.",
+        "similarity": 0.6056755781173706
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Judie suggests 'Warsaw Ink' as a potential option.",
+        "gold_item": "Judie recommends Warsaw Ink.",
+        "similarity": 0.5433365106582642
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": "Judie states the cost of a tattoo at the recommended parlor is 1000.",
+        "gold_item": "Javier decides not to get a tattoo at Warsaw Ink because it is too expensive.",
+        "similarity": 0.4301043152809143
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 2,
+        "pred_item": "Javier decides to get a tattoo in Colombia instead due to the high cost.",
+        "gold_item": "Javier decides not to get a tattoo at Warsaw Ink because it is too expensive.",
+        "similarity": 0.660318911075592
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Javier asks Judie for tattoo parlors with English-speaking employees.",
+        "pred_item": "Javier asks for a recommendation for an English-speaking tattoo parlor.",
+        "similarity": 0.6056755781173706
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Judie recommends Warsaw Ink.",
+        "pred_item": "Judie suggests 'Warsaw Ink' as a potential option.",
+        "similarity": 0.5433365106582642
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 3,
+        "gold_item": "Javier decides not to get a tattoo at Warsaw Ink because it is too expensive.",
+        "pred_item": "Javier decides to get a tattoo in Colombia instead due to the high cost.",
+        "similarity": 0.660318911075592
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "judie",
+          "recommend",
+          "tattoo parlor",
+          "javier"
+        ],
+        "gold_item": [
+          "judie",
+          "recommend",
+          "tattoo parlor",
+          "javier"
+        ],
+        "similarity": 1.0,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": [
+          "judie",
+          "suggest",
+          "Warsaw Ink",
+          "javier"
+        ],
+        "gold_item": [
+          "judie",
+          "recommend",
+          "Warsaw Ink",
+          null
+        ],
+        "similarity": 0.6710968554019928,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.34599101543426514,
+          "object": 1.0,
+          "recipient": 0.0
+        }
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 2,
+        "pred_item": [
+          "javier",
+          "change plan",
+          "get tattoo in Colombia",
+          null
+        ],
+        "gold_item": [
+          "javier",
+          "get tattoo",
+          "tattoo in Colombia",
+          null
+        ],
+        "similarity": 0.6951011300086976,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.28664708137512207,
+          "object": 0.7238732576370239,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Javier decides to get a tattoo in Colombia instead of the recommended local parlor due to the high price.",
+    "gold_final_outcome": "Javier decides to get a tattoo in Colombia instead of Warsaw Ink because Warsaw Ink is too expensive."
+  },
+  {
+    "test_index": 433,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 3,
+    "n_gold_meanings": 2,
+    "meaning_bertscore_precision": 0.3926001489162445,
+    "meaning_bertscore_recall": 0.4004734754562378,
+    "meaning_bertscore_f1": 0.39649773052414805,
+    "tuple_precision": 0.3333333333333333,
+    "tuple_recall": 0.5,
+    "tuple_f1": 0.4,
+    "tuple_avg_similarity": 1.0,
+    "n_pred_tuples": 3,
+    "n_gold_tuples": 2,
+    "final_outcome_nli_similarity": 0.009373465552926064,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Sam asks about the status of the hotel room reservation for next month.",
+        "gold_item": "Sam compliments Jessica and Michael's hotel.",
+        "similarity": 0.379010945558548
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Michael confirms the booking is handled and verifies the arrival date.",
+        "gold_item": "Sam confirms that he will arrive at the hotel on August 15 around 2 p.m.",
+        "similarity": 0.37685349583625793
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 1,
+        "pred_item": "Sam confirms the arrival date and specific time.",
+        "gold_item": "Sam confirms that he will arrive at the hotel on August 15 around 2 p.m.",
+        "similarity": 0.4219360053539276
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Sam compliments Jessica and Michael's hotel.",
+        "pred_item": "Sam asks about the status of the hotel room reservation for next month.",
+        "similarity": 0.379010945558548
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 2,
+        "gold_item": "Sam confirms that he will arrive at the hotel on August 15 around 2 p.m.",
+        "pred_item": "Sam confirms the arrival date and specific time.",
+        "similarity": 0.4219360053539276
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 2,
+        "gold_index": 1,
+        "pred_item": [
+          "sam",
+          "arrive",
+          "hotel",
+          null
+        ],
+        "gold_item": [
+          "sam",
+          "arrive",
+          "hotel",
+          null
+        ],
+        "similarity": 1.0,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Sam and Michael confirmed the hotel room arrangement and finalized the arrival date for August 15th at 2 p.m.",
+    "gold_final_outcome": "Sam will visit Jessica and Michael's hotel on August 15 around 2 p.m."
+  },
+  {
+    "test_index": 442,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 4,
+    "n_gold_meanings": 4,
+    "meaning_bertscore_precision": 0.7089628428220749,
+    "meaning_bertscore_recall": 0.7042936980724335,
+    "meaning_bertscore_f1": 0.7066205574411359,
+    "tuple_precision": 0.5,
+    "tuple_recall": 0.5,
+    "tuple_f1": 0.5,
+    "tuple_avg_similarity": 0.6650868281722069,
+    "n_pred_tuples": 4,
+    "n_gold_tuples": 4,
+    "final_outcome_nli_similarity": 0.9946432113647461,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Terence accuses Daniel of stealing his money.",
+        "gold_item": "Terence accuses Daniel of taking his money.",
+        "similarity": 0.9509433507919312
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Daniel denies the accusation and expresses offense.",
+        "gold_item": "Daniel denies taking the money and is offended by the accusation.",
+        "similarity": 0.6543469429016113
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": "Terence apologizes and reveals he found the money himself.",
+        "gold_item": "Terence apologizes after finding the money elsewhere.",
+        "similarity": 0.6333942413330078
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 1,
+        "pred_item": "Daniel confirms he is upset by the false accusation.",
+        "gold_item": "Daniel denies taking the money and is offended by the accusation.",
+        "similarity": 0.5971668362617493
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Terence accuses Daniel of taking his money.",
+        "pred_item": "Terence accuses Daniel of stealing his money.",
+        "similarity": 0.9509433507919312
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Daniel denies taking the money and is offended by the accusation.",
+        "pred_item": "Daniel denies the accusation and expresses offense.",
+        "similarity": 0.6543469429016113
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 2,
+        "gold_item": "Terence apologizes after finding the money elsewhere.",
+        "pred_item": "Terence apologizes and reveals he found the money himself.",
+        "similarity": 0.6333942413330078
+      },
+      {
+        "gold_index": 3,
+        "pred_index": 3,
+        "gold_item": "Daniel is upset.",
+        "pred_item": "Daniel confirms he is upset by the false accusation.",
+        "similarity": 0.5784902572631836
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "terence",
+          "accuses",
+          "Daniel",
+          "daniel"
+        ],
+        "gold_item": [
+          "terence",
+          "accuse of stealing",
+          "Daniel",
+          null
+        ],
+        "similarity": 0.7034270450472832,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.4383629858493805,
+          "object": 1.0,
+          "recipient": 0.0
+        }
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": [
+          "daniel",
+          "denies",
+          "theft",
+          "terence"
+        ],
+        "gold_item": [
+          "daniel",
+          "deny stealing",
+          "money",
+          "terence"
+        ],
+        "similarity": 0.6267466112971306,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.3613256514072418,
+          "object": 0.25141316652297974,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Terence retracts his accusation of theft after finding his own money, leaving Daniel upset over the false claim.",
+    "gold_final_outcome": "Terence wrongly accused Daniel of stealing his money, later found it, and apologized, but Daniel remained upset."
+  },
+  {
+    "test_index": 499,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 4,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.6215858832001686,
+    "meaning_bertscore_recall": 0.6288071076075236,
+    "meaning_bertscore_f1": 0.6251756435267464,
+    "tuple_precision": 0.75,
+    "tuple_recall": 1.0,
+    "tuple_f1": 0.8571428571428571,
+    "tuple_avg_similarity": 0.8333333333333334,
+    "n_pred_tuples": 4,
+    "n_gold_tuples": 3,
+    "final_outcome_nli_similarity": 0.9956076741218567,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Natacha offers to pick up Charles at the train station.",
+        "gold_item": "Natacha offers to pick Charles up at the RER.",
+        "similarity": 0.7652186155319214
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 2,
+        "pred_item": "Charles informs Natacha of his arrival time.",
+        "gold_item": "Natacha asks Charles to call her when he reaches Vesinet station.",
+        "similarity": 0.4495907127857208
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": "Charles commits to calling Natacha upon arrival.",
+        "gold_item": "Natacha asks Charles to call her when he reaches Vesinet station.",
+        "similarity": 0.4547634720802307
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 2,
+        "pred_item": "Natacha instructs Charles to call her specifically when he reaches the Vesinet station.",
+        "gold_item": "Natacha asks Charles to call her when he reaches Vesinet station.",
+        "similarity": 0.8167707324028015
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Natacha offers to pick Charles up at the RER.",
+        "pred_item": "Natacha offers to pick up Charles at the train station.",
+        "similarity": 0.7652186155319214
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Charles says he has landed and expects to arrive around 5:30 p.m.",
+        "pred_item": "Charles informs Natacha of his arrival time.",
+        "similarity": 0.3044319748878479
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 3,
+        "gold_item": "Natacha asks Charles to call her when he reaches Vesinet station.",
+        "pred_item": "Natacha instructs Charles to call her specifically when he reaches the Vesinet station.",
+        "similarity": 0.8167707324028015
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "natacha",
+          "pick up",
+          null,
+          "charles"
+        ],
+        "gold_item": [
+          "natacha",
+          "pick up",
+          "Charles",
+          null
+        ],
+        "similarity": 0.7,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 0.0,
+          "recipient": 0.0
+        }
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": [
+          "charles",
+          "arrive",
+          null,
+          null
+        ],
+        "gold_item": [
+          "charles",
+          "arrive",
+          "RER",
+          null
+        ],
+        "similarity": 0.7999999999999999,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 0.0,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": [
+          "charles",
+          "call",
+          null,
+          "natacha"
+        ],
+        "gold_item": [
+          "charles",
+          "call",
+          null,
+          "natacha"
+        ],
+        "similarity": 1.0,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Natacha agreed to pick up Charles at the Vesinet station around 5:30 PM, with Charles committing to call her upon arrival.",
+    "gold_final_outcome": "Natacha will pick Charles up at the RER around 5:30 p.m.; Charles will call when he reaches Vesinet station."
+  },
+  {
+    "test_index": 528,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 4,
+    "n_gold_meanings": 2,
+    "meaning_bertscore_precision": 0.4758883938193321,
+    "meaning_bertscore_recall": 0.5661338120698929,
+    "meaning_bertscore_f1": 0.5171032037322975,
+    "tuple_precision": 0.5,
+    "tuple_recall": 1.0,
+    "tuple_f1": 0.6666666666666666,
+    "tuple_avg_similarity": 0.8999999999999999,
+    "n_pred_tuples": 4,
+    "n_gold_tuples": 2,
+    "final_outcome_nli_similarity": 0.48772642569383606,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Meg asks about Ann's current availability.",
+        "gold_item": "Ann explains that she is still at school because she has extra math classes.",
+        "similarity": 0.3639782667160034
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 0,
+        "pred_item": "Ann explains she is occupied with extra math classes.",
+        "gold_item": "Ann explains that she is still at school because she has extra math classes.",
+        "similarity": 0.6911079287528992
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 1,
+        "pred_item": "Meg requests a time to meet Ann.",
+        "gold_item": "Ann tells Meg that she will be home at 7.",
+        "similarity": 0.4073076844215393
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 1,
+        "pred_item": "Ann commits to being available at home at 7 PM.",
+        "gold_item": "Ann tells Meg that she will be home at 7.",
+        "similarity": 0.4411596953868866
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 1,
+        "gold_item": "Ann explains that she is still at school because she has extra math classes.",
+        "pred_item": "Ann explains she is occupied with extra math classes.",
+        "similarity": 0.6911079287528992
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 3,
+        "gold_item": "Ann tells Meg that she will be home at 7.",
+        "pred_item": "Ann commits to being available at home at 7 PM.",
+        "similarity": 0.4411596953868866
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 1,
+        "gold_index": 0,
+        "pred_item": [
+          "ann",
+          "attend",
+          "extra math classes",
+          null
+        ],
+        "gold_item": [
+          "ann",
+          "attend",
+          "extra math classes",
+          null
+        ],
+        "similarity": 1.0,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 1,
+        "pred_item": [
+          "ann",
+          "be home",
+          null,
+          null
+        ],
+        "gold_item": [
+          "ann",
+          "be home",
+          "7",
+          null
+        ],
+        "similarity": 0.7999999999999999,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 0.0,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Ann confirms she will be available to meet at home at 7 PM.",
+    "gold_final_outcome": "Ann is still at school for extra math classes and will be home at 7, so Meg can meet her then."
+  },
+  {
+    "test_index": 532,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 4,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.5695409402251244,
+    "meaning_bertscore_recall": 0.5860081215699514,
+    "meaning_bertscore_f1": 0.5776571979038949,
+    "tuple_precision": 0.5,
+    "tuple_recall": 0.6666666666666666,
+    "tuple_f1": 0.5714285714285715,
+    "tuple_avg_similarity": 0.7321865946054459,
+    "n_pred_tuples": 4,
+    "n_gold_tuples": 3,
+    "final_outcome_nli_similarity": 0.9977741539478302,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 1,
+        "pred_item": "Jen requests pear yogurt but sets a condition that it is only needed if available.",
+        "gold_item": "Jen wants pear yogurt only if it is available.",
+        "similarity": 0.6602394580841064
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 2,
+        "pred_item": "Pete asks if he can substitute a different flavor if pear is unavailable.",
+        "gold_item": "Jen tells Pete not to buy any yogurt if pear is unavailable.",
+        "similarity": 0.5201393961906433
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": "Jen refuses any alternative flavor and instructs Pete to buy nothing if pear is out of stock.",
+        "gold_item": "Jen tells Pete not to buy any yogurt if pear is unavailable.",
+        "similarity": 0.5998611450195312
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 0,
+        "pred_item": "Pete agrees to Jen's strict condition regarding the yogurt purchase.",
+        "gold_item": "Pete asks Jen which yogurt flavor she wanted.",
+        "similarity": 0.49792376160621643
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 3,
+        "gold_item": "Pete asks Jen which yogurt flavor she wanted.",
+        "pred_item": "Pete agrees to Jen's strict condition regarding the yogurt purchase.",
+        "similarity": 0.49792376160621643
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 0,
+        "gold_item": "Jen wants pear yogurt only if it is available.",
+        "pred_item": "Jen requests pear yogurt but sets a condition that it is only needed if available.",
+        "similarity": 0.6602394580841064
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 2,
+        "gold_item": "Jen tells Pete not to buy any yogurt if pear is unavailable.",
+        "pred_item": "Jen refuses any alternative flavor and instructs Pete to buy nothing if pear is out of stock.",
+        "similarity": 0.5998611450195312
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 1,
+        "gold_index": 0,
+        "pred_item": [
+          "pete",
+          "buy",
+          "different flavor yogurt",
+          "jen"
+        ],
+        "gold_item": [
+          "pete",
+          "request",
+          "yogurt flavor",
+          "jen"
+        ],
+        "similarity": 0.6701549664139748,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.3135354220867157,
+          "object": 0.5520878434181213,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": [
+          "pete",
+          "buy nothing",
+          "yogurt",
+          "jen"
+        ],
+        "gold_item": [
+          "pete",
+          "not buy",
+          "yogurt",
+          "jen"
+        ],
+        "similarity": 0.794218222796917,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.41205206513404846,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Pete agreed to buy pear yogurt for Jen only if it is available, otherwise he will not purchase any yogurt.",
+    "gold_final_outcome": "Pete will buy pear yogurt for Jen if available; otherwise he will not buy yogurt."
+  },
+  {
+    "test_index": 536,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 4,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.6717895418405533,
+    "meaning_bertscore_recall": 0.6930440862973531,
+    "meaning_bertscore_f1": 0.6822513156335569,
+    "tuple_precision": 0.25,
+    "tuple_recall": 0.3333333333333333,
+    "tuple_f1": 0.28571428571428575,
+    "tuple_avg_similarity": 0.8715713798999786,
+    "n_pred_tuples": 4,
+    "n_gold_tuples": 3,
+    "final_outcome_nli_similarity": 0.9942557513713837,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Christie asks about Katie's condition following the party.",
+        "gold_item": "Christie asks Katie how she feels after the party.",
+        "similarity": 0.7776718139648438
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Katie reports feeling tired after the party.",
+        "gold_item": "Katie says she is really tired.",
+        "similarity": 0.6703035235404968
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": "Christie expresses that the party was enjoyable.",
+        "gold_item": "Christie says the party was great.",
+        "similarity": 0.6311569213867188
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 1,
+        "pred_item": "Katie agrees that they had fun at the party.",
+        "gold_item": "Katie says she is really tired.",
+        "similarity": 0.6080259084701538
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Christie asks Katie how she feels after the party.",
+        "pred_item": "Christie asks about Katie's condition following the party.",
+        "similarity": 0.7776718139648438
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Katie says she is really tired.",
+        "pred_item": "Katie reports feeling tired after the party.",
+        "similarity": 0.6703035235404968
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 2,
+        "gold_item": "Christie says the party was great.",
+        "pred_item": "Christie expresses that the party was enjoyable.",
+        "similarity": 0.6311569213867188
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 1,
+        "gold_index": 0,
+        "pred_item": [
+          "katie",
+          "feel",
+          "tired",
+          null
+        ],
+        "gold_item": [
+          "katie",
+          "feel",
+          "after the party",
+          null
+        ],
+        "similarity": 0.8715713798999786,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 0.3578568994998932,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Both Christie and Katie agree that the party was enjoyable despite feeling tired.",
+    "gold_final_outcome": "Christie and Katie are tired after the party, but they both had fun."
+  },
+  {
+    "test_index": 537,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 5,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.5494873285293579,
+    "meaning_bertscore_recall": 0.5649607380231222,
+    "meaning_bertscore_f1": 0.5571166140036209,
+    "tuple_precision": 0.0,
+    "tuple_recall": 0.0,
+    "tuple_f1": 0.0,
+    "tuple_avg_similarity": 0.0,
+    "n_pred_tuples": 5,
+    "n_gold_tuples": 3,
+    "final_outcome_nli_similarity": 0.99532750248909,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Sam proposes meeting up tomorrow afternoon.",
+        "gold_item": "Sam asks Carla if she wants to meet tomorrow afternoon.",
+        "similarity": 0.5070629119873047
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Carla agrees to the meeting proposal.",
+        "gold_item": "Carla agrees to meet Sam.",
+        "similarity": 0.6823068261146545
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": "Sam suggests Meanwood as the location.",
+        "gold_item": "Carla suggests meeting at a cafe in Meanwood at 2.",
+        "similarity": 0.5055124759674072
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 1,
+        "pred_item": "Carla confirms the location and proposes a specific time.",
+        "gold_item": "Carla agrees to meet Sam.",
+        "similarity": 0.5534676909446716
+      },
+      {
+        "pred_index": 4,
+        "gold_index": 1,
+        "pred_item": "Sam confirms the time and expresses anticipation.",
+        "gold_item": "Carla agrees to meet Sam.",
+        "similarity": 0.49908673763275146
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Sam asks Carla if she wants to meet tomorrow afternoon.",
+        "pred_item": "Sam proposes meeting up tomorrow afternoon.",
+        "similarity": 0.5070629119873047
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Carla agrees to meet Sam.",
+        "pred_item": "Carla agrees to the meeting proposal.",
+        "similarity": 0.6823068261146545
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 2,
+        "gold_item": "Carla suggests meeting at a cafe in Meanwood at 2.",
+        "pred_item": "Sam suggests Meanwood as the location.",
+        "similarity": 0.5055124759674072
+      }
+    ],
+    "tuple_matches": [],
+    "pred_final_outcome": "Sam and Carla agreed to meet at a cafe in Meanwood tomorrow at 2 PM.",
+    "gold_final_outcome": "Carla will meet Sam at a cafe in Meanwood at 2 p.m. tomorrow."
+  },
+  {
+    "test_index": 544,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 3,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.5935618976751963,
+    "meaning_bertscore_recall": 0.5935618976751963,
+    "meaning_bertscore_f1": 0.5935618976751963,
+    "tuple_precision": 0.0,
+    "tuple_recall": 0.0,
+    "tuple_f1": 0.0,
+    "tuple_avg_similarity": 0.0,
+    "n_pred_tuples": 3,
+    "n_gold_tuples": 3,
+    "final_outcome_nli_similarity": 0.9809368550777435,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 1,
+        "pred_item": "Joana suggests playing board games, specifically Dixit or Carcassonne.",
+        "gold_item": "Joana suggests Dixit or Carcassonne.",
+        "similarity": 0.6603990793228149
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 0,
+        "pred_item": "Sandy agrees to the proposal to play the suggested games.",
+        "gold_item": "Joana asks Sandy if she wants to play games.",
+        "similarity": 0.4815243184566498
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": "Joana commits to bringing the games to Sandy's location.",
+        "gold_item": "Joana says she will bring the games to Sandy.",
+        "similarity": 0.6387622952461243
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 1,
+        "gold_item": "Joana asks Sandy if she wants to play games.",
+        "pred_item": "Sandy agrees to the proposal to play the suggested games.",
+        "similarity": 0.4815243184566498
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 0,
+        "gold_item": "Joana suggests Dixit or Carcassonne.",
+        "pred_item": "Joana suggests playing board games, specifically Dixit or Carcassonne.",
+        "similarity": 0.6603990793228149
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 2,
+        "gold_item": "Joana says she will bring the games to Sandy.",
+        "pred_item": "Joana commits to bringing the games to Sandy's location.",
+        "similarity": 0.6387622952461243
+      }
+    ],
+    "tuple_matches": [],
+    "pred_final_outcome": "Joana and Sandy agreed to play Dixit or Carcassonne, with Joana bringing the games to Sandy.",
+    "gold_final_outcome": "Joana will bring Sandy games such as Dixit and Carcassonne."
+  },
+  {
+    "test_index": 548,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 3,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.6787622372309366,
+    "meaning_bertscore_recall": 0.6787622372309366,
+    "meaning_bertscore_f1": 0.6787622372309366,
+    "tuple_precision": 0.3333333333333333,
+    "tuple_recall": 0.3333333333333333,
+    "tuple_f1": 0.3333333333333333,
+    "tuple_avg_similarity": 1.0,
+    "n_pred_tuples": 3,
+    "n_gold_tuples": 3,
+    "final_outcome_nli_similarity": 0.48833100125193596,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Steve informs Rob that he has purchased the new Dream Theater album.",
+        "gold_item": "Steve says he just bought the new Dream Theater album.",
+        "similarity": 0.7223179340362549
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Rob confirms he already possesses the album and is prepared to listen to it.",
+        "gold_item": "Rob says he also has the album ready to listen to.",
+        "similarity": 0.6544868350028992
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": "Steve commits to sharing his opinion on the album with Rob at a later time.",
+        "gold_item": "Steve says he will later tell Rob what he thinks of the album.",
+        "similarity": 0.659481942653656
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Steve says he just bought the new Dream Theater album.",
+        "pred_item": "Steve informs Rob that he has purchased the new Dream Theater album.",
+        "similarity": 0.7223179340362549
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Rob says he also has the album ready to listen to.",
+        "pred_item": "Rob confirms he already possesses the album and is prepared to listen to it.",
+        "similarity": 0.6544868350028992
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 2,
+        "gold_item": "Steve says he will later tell Rob what he thinks of the album.",
+        "pred_item": "Steve commits to sharing his opinion on the album with Rob at a later time.",
+        "similarity": 0.659481942653656
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "steve",
+          "bought",
+          "new Dream Theater album",
+          null
+        ],
+        "gold_item": [
+          "steve",
+          "bought",
+          "new Dream Theater album",
+          null
+        ],
+        "similarity": 1.0,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Steve and Rob both acquired the new Dream Theater album and agreed to share their thoughts later.",
+    "gold_final_outcome": "Steve and Rob will discuss the new Dream Theater album after listening to it."
+  },
+  {
+    "test_index": 551,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 2,
+    "n_gold_meanings": 2,
+    "meaning_bertscore_precision": 0.6051465570926666,
+    "meaning_bertscore_recall": 0.7062227427959442,
+    "meaning_bertscore_f1": 0.6517893340644876,
+    "tuple_precision": 1.0,
+    "tuple_recall": 1.0,
+    "tuple_f1": 1.0,
+    "tuple_avg_similarity": 0.7923083826899529,
+    "n_pred_tuples": 2,
+    "n_gold_tuples": 2,
+    "final_outcome_nli_similarity": 0.04231173494190443,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Peter asks Joy to provide the URL for her beauty shop.",
+        "gold_item": "Peter asks Joy to send him the link to her beauty shop.",
+        "similarity": 0.7297696471214294
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Joy provides the requested link to Peter.",
+        "gold_item": "Joy sends Peter the link to her beauty shop.",
+        "similarity": 0.4805234670639038
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Peter asks Joy to send him the link to her beauty shop.",
+        "pred_item": "Peter asks Joy to provide the URL for her beauty shop.",
+        "similarity": 0.7297696471214294
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 0,
+        "gold_item": "Joy sends Peter the link to her beauty shop.",
+        "pred_item": "Peter asks Joy to provide the URL for her beauty shop.",
+        "similarity": 0.682675838470459
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "joy",
+          "send link",
+          "beauty shop link",
+          "peter"
+        ],
+        "gold_item": [
+          "joy",
+          "send",
+          "beauty shop link",
+          "peter"
+        ],
+        "similarity": 0.8606114625930786,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.6017470359802246,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": [
+          "joy",
+          "share link",
+          "beauty shop link",
+          "peter"
+        ],
+        "gold_item": [
+          "joy",
+          "send",
+          "beauty shop link",
+          "peter"
+        ],
+        "similarity": 0.7240053027868271,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.2114437222480774,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Joy successfully provided the beauty shop link to Peter, who agreed to review it.",
+    "gold_final_outcome": "Joy sent Peter the link to her beauty shop."
+  },
+  {
+    "test_index": 590,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 5,
+    "n_gold_meanings": 4,
+    "meaning_bertscore_precision": 0.5937431752681732,
+    "meaning_bertscore_recall": 0.6302061378955841,
+    "meaning_bertscore_f1": 0.6114315182226066,
+    "tuple_precision": 0.2,
+    "tuple_recall": 0.25,
+    "tuple_f1": 0.22222222222222224,
+    "tuple_avg_similarity": 0.675405153632164,
+    "n_pred_tuples": 5,
+    "n_gold_tuples": 4,
+    "final_outcome_nli_similarity": 0.014222476427676156,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Ethan asks who is attending the Solstafir concert.",
+        "gold_item": "Ethan asks who is going to see Sólstafir.",
+        "similarity": 0.6646193861961365
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Leo confirms his attendance at the concert.",
+        "gold_item": "Leo says he is going to the concert.",
+        "similarity": 0.7638067007064819
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 1,
+        "pred_item": "Ethan provides the date of the concert.",
+        "gold_item": "Leo says he is going to the concert.",
+        "similarity": 0.5775183439254761
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 3,
+        "pred_item": "Noah expresses uncertainty about attending due to potential work conflicts.",
+        "gold_item": "Noah wants to go but may have to stay late at work.",
+        "similarity": 0.5235495567321777
+      },
+      {
+        "pred_index": 4,
+        "gold_index": 1,
+        "pred_item": "Noah commits to informing the group of his final decision later.",
+        "gold_item": "Leo says he is going to the concert.",
+        "similarity": 0.43922188878059387
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Ethan asks who is going to see Sólstafir.",
+        "pred_item": "Ethan asks who is attending the Solstafir concert.",
+        "similarity": 0.6646193861961365
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Leo says he is going to the concert.",
+        "pred_item": "Leo confirms his attendance at the concert.",
+        "similarity": 0.7638067007064819
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 2,
+        "gold_item": "Ethan says the concert is on 21.11.",
+        "pred_item": "Ethan provides the date of the concert.",
+        "similarity": 0.5688489079475403
+      },
+      {
+        "gold_index": 3,
+        "pred_index": 3,
+        "gold_item": "Noah wants to go but may have to stay late at work.",
+        "pred_item": "Noah expresses uncertainty about attending due to potential work conflicts.",
+        "similarity": 0.5235495567321777
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": [
+          "leo",
+          "attend",
+          "Solstafir concert",
+          null
+        ],
+        "gold_item": [
+          "leo",
+          "go to",
+          "Sólstafir concert",
+          null
+        ],
+        "similarity": 0.675405153632164,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.30123692750930786,
+          "object": 0.5998611450195312,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Leo confirmed attendance for the Solstafir concert on November 21st, while Noah remains undecided due to work and promised to update the group later.",
+    "gold_final_outcome": "Ethan and Leo are going to see Sólstafir on 21.11; Noah wants to go but may have to work late."
+  },
+  {
+    "test_index": 598,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 3,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.6762897372245789,
+    "meaning_bertscore_recall": 0.6316264073053995,
+    "meaning_bertscore_f1": 0.6531954801646424,
+    "tuple_precision": 0.0,
+    "tuple_recall": 0.0,
+    "tuple_f1": 0.0,
+    "tuple_avg_similarity": 0.0,
+    "n_pred_tuples": 3,
+    "n_gold_tuples": 3,
+    "final_outcome_nli_similarity": 0.0007865008083172143,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Bradley informs the group about a cat appearing on the football pitch at Goodison.",
+        "gold_item": "Bradley shares that a cat invaded the pitch at Goodison.",
+        "similarity": 0.6920254826545715
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Jill provides a video of the cat incident to the group.",
+        "gold_item": "Jill shares a video of the cat.",
+        "similarity": 0.7569655776023865
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 1,
+        "pred_item": "Bradley shares the commentary audio related to the cat incident.",
+        "gold_item": "Jill shares a video of the cat.",
+        "similarity": 0.5798781514167786
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Bradley shares that a cat invaded the pitch at Goodison.",
+        "pred_item": "Bradley informs the group about a cat appearing on the football pitch at Goodison.",
+        "similarity": 0.6920254826545715
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Jill shares a video of the cat.",
+        "pred_item": "Jill provides a video of the cat incident to the group.",
+        "similarity": 0.7569655776023865
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 1,
+        "gold_item": "Julia thinks the cat is sweet.",
+        "pred_item": "Jill provides a video of the cat incident to the group.",
+        "similarity": 0.4458881616592407
+      }
+    ],
+    "tuple_matches": [],
+    "pred_final_outcome": "The group shared and enjoyed media content regarding a cat invading the football pitch at Goodison.",
+    "gold_final_outcome": "A sweet little black cat got onto the pitch during an Everton football match."
+  },
+  {
+    "test_index": 605,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 5,
+    "n_gold_meanings": 4,
+    "meaning_bertscore_precision": 0.7401531934738159,
+    "meaning_bertscore_recall": 0.7572367489337921,
+    "meaning_bertscore_f1": 0.7485975190108619,
+    "tuple_precision": 0.6,
+    "tuple_recall": 0.75,
+    "tuple_f1": 0.6666666666666665,
+    "tuple_avg_similarity": 0.6485119879245758,
+    "n_pred_tuples": 5,
+    "n_gold_tuples": 4,
+    "final_outcome_nli_similarity": 0.5012082317844033,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Barbara invites Sean to come over now that she is home.",
+        "gold_item": "Barbara tells Sean and Zac they can come over because she is home.",
+        "similarity": 0.6731574535369873
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Sean asks for permission to bring his dog.",
+        "gold_item": "Sean asks whether he may bring the dog.",
+        "similarity": 0.7223981022834778
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": "Barbara grants Sean permission to bring the dog.",
+        "gold_item": "Barbara allows Sean to bring the dog.",
+        "similarity": 0.886896014213562
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 3,
+        "pred_item": "Barbara proposes that Sean stay overnight.",
+        "gold_item": "Barbara asks whether Sean wants to stay overnight.",
+        "similarity": 0.7464954257011414
+      },
+      {
+        "pred_index": 4,
+        "gold_index": 3,
+        "pred_item": "Sean accepts the proposal to stay overnight.",
+        "gold_item": "Barbara asks whether Sean wants to stay overnight.",
+        "similarity": 0.6718189716339111
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Barbara tells Sean and Zac they can come over because she is home.",
+        "pred_item": "Barbara invites Sean to come over now that she is home.",
+        "similarity": 0.6731574535369873
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Sean asks whether he may bring the dog.",
+        "pred_item": "Sean asks for permission to bring his dog.",
+        "similarity": 0.7223981022834778
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 2,
+        "gold_item": "Barbara allows Sean to bring the dog.",
+        "pred_item": "Barbara grants Sean permission to bring the dog.",
+        "similarity": 0.886896014213562
+      },
+      {
+        "gold_index": 3,
+        "pred_index": 3,
+        "gold_item": "Barbara asks whether Sean wants to stay overnight.",
+        "pred_item": "Barbara proposes that Sean stay overnight.",
+        "similarity": 0.7464954257011414
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": [
+          "sean",
+          "bring the dog",
+          "the dog",
+          "barbara"
+        ],
+        "gold_item": [
+          "sean",
+          "bring",
+          "dog",
+          "barbara"
+        ],
+        "similarity": 0.6227679818868637,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.18952614068984985,
+          "object": 0.5321691632270813,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": [
+          "sean",
+          "bring the dog",
+          "the dog",
+          "barbara"
+        ],
+        "gold_item": [
+          "sean",
+          "bring",
+          "dog",
+          "barbara"
+        ],
+        "similarity": 0.6227679818868637,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.18952614068984985,
+          "object": 0.5321691632270813,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 3,
+        "pred_item": [
+          "sean",
+          "stay overnight",
+          null,
+          "barbara"
+        ],
+        "gold_item": [
+          "sean",
+          "stay overnight",
+          "Barbara's place",
+          null
+        ],
+        "similarity": 0.7,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 0.0,
+          "recipient": 0.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Sean is invited to Barbara's house, allowed to bring his dog, and agrees to stay overnight.",
+    "gold_final_outcome": "Sean and Zac are going to Barbara's place; Sean will bring the dog and may stay overnight."
+  },
+  {
+    "test_index": 616,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 3,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.5407593746980032,
+    "meaning_bertscore_recall": 0.46386200189590454,
+    "meaning_bertscore_f1": 0.49936768604673637,
+    "tuple_precision": 0.6666666666666666,
+    "tuple_recall": 0.6666666666666666,
+    "tuple_f1": 0.6666666666666666,
+    "tuple_avg_similarity": 1.0,
+    "n_pred_tuples": 3,
+    "n_gold_tuples": 3,
+    "final_outcome_nli_similarity": 0.00019440820324234664,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Jake reveals he obtained a Team of the Week player.",
+        "gold_item": "Jake says he pulled his first TOTW player this year.",
+        "similarity": 0.4808049499988556
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Jake intends to test the player briefly before selling.",
+        "gold_item": "Jake plans to sell the player after trying him in a few matches.",
+        "similarity": 0.6281289458274841
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 1,
+        "pred_item": "Jake decides to sell the player because he does not fit his team.",
+        "gold_item": "Jake plans to sell the player after trying him in a few matches.",
+        "similarity": 0.5133442282676697
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Jake says he pulled his first TOTW player this year.",
+        "pred_item": "Jake reveals he obtained a Team of the Week player.",
+        "similarity": 0.4808049499988556
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Jake plans to sell the player after trying him in a few matches.",
+        "pred_item": "Jake intends to test the player briefly before selling.",
+        "similarity": 0.6281289458274841
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 0,
+        "gold_item": "Tom complains that he has had bad pull luck this year.",
+        "pred_item": "Jake reveals he obtained a Team of the Week player.",
+        "similarity": 0.2826521098613739
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "jake",
+          "pulled",
+          "TOTW player",
+          null
+        ],
+        "gold_item": [
+          "jake",
+          "pulled",
+          "TOTW player",
+          null
+        ],
+        "similarity": 1.0,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 1,
+        "pred_item": [
+          "jake",
+          "sell",
+          "TOTW player",
+          null
+        ],
+        "gold_item": [
+          "jake",
+          "sell",
+          "TOTW player",
+          null
+        ],
+        "similarity": 1.0,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Jake plans to test his new TOTW player in a couple of matches before selling him to buy a better fit for his squad.",
+    "gold_final_outcome": "Jake got his first TOTW player this year and plans to sell him; Tom has had bad pull luck."
+  },
+  {
+    "test_index": 621,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 2,
+    "n_gold_meanings": 4,
+    "meaning_bertscore_precision": 0.4688030779361725,
+    "meaning_bertscore_recall": 0.409335196018219,
+    "meaning_bertscore_f1": 0.43705554237330574,
+    "tuple_precision": 0.5,
+    "tuple_recall": 0.25,
+    "tuple_f1": 0.3333333333333333,
+    "tuple_avg_similarity": 0.8999999999999999,
+    "n_pred_tuples": 2,
+    "n_gold_tuples": 4,
+    "final_outcome_nli_similarity": 0.49254330596886575,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 2,
+        "pred_item": "Deana offers the sunglasses to Phil since she has too many and they don't belong to her or Cathreen.",
+        "gold_item": "Deana says the sunglasses are not hers and thought they belonged to Cathreen.",
+        "similarity": 0.4682041108608246
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 3,
+        "pred_item": "Phil accepts the sunglasses and commits to looking after them.",
+        "gold_item": "Phil says they will look after the sunglasses because no one knows who owns them.",
+        "similarity": 0.4694020450115204
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 1,
+        "gold_item": "Phil thanks Deana for the card and says Constantine was happy.",
+        "pred_item": "Phil accepts the sunglasses and commits to looking after them.",
+        "similarity": 0.28006449341773987
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 0,
+        "gold_item": "Phil asks whether the sunglasses also belong to Deana.",
+        "pred_item": "Deana offers the sunglasses to Phil since she has too many and they don't belong to her or Cathreen.",
+        "similarity": 0.41967013478279114
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 0,
+        "gold_item": "Deana says the sunglasses are not hers and thought they belonged to Cathreen.",
+        "pred_item": "Deana offers the sunglasses to Phil since she has too many and they don't belong to her or Cathreen.",
+        "similarity": 0.4682041108608246
+      },
+      {
+        "gold_index": 3,
+        "pred_index": 1,
+        "gold_item": "Phil says they will look after the sunglasses because no one knows who owns them.",
+        "pred_item": "Phil accepts the sunglasses and commits to looking after them.",
+        "similarity": 0.4694020450115204
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 3,
+        "pred_item": [
+          "phil",
+          "keep",
+          "sunglasses",
+          "phil"
+        ],
+        "gold_item": [
+          "phil",
+          "keep",
+          "sunglasses",
+          null
+        ],
+        "similarity": 0.8999999999999999,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 0.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Phil agrees to keep and look after the sunglasses that Deana offered.",
+    "gold_final_outcome": "Phil received Deana's card, and Phil will keep the unidentified sunglasses Deana found in the car."
+  },
+  {
+    "test_index": 635,
+    "participant_precision": 1.0,
+    "participant_recall": 0.5,
+    "participant_f1": 0.6666666666666666,
+    "participant_exact_match": false,
+    "n_pred_meanings": 5,
+    "n_gold_meanings": 5,
+    "meaning_bertscore_precision": 0.599974000453949,
+    "meaning_bertscore_recall": 0.5425351738929749,
+    "meaning_bertscore_f1": 0.5698107393380222,
+    "tuple_precision": 0.4,
+    "tuple_recall": 0.4,
+    "tuple_f1": 0.4000000000000001,
+    "tuple_avg_similarity": 0.7450631842017174,
+    "n_pred_tuples": 5,
+    "n_gold_tuples": 5,
+    "final_outcome_nli_similarity": 0.0005322872311808169,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Gloria suggests organizing a barbecue due to the good weather.",
+        "gold_item": "Gloria suggests having a barbecue because the weather is good.",
+        "similarity": 0.8370376229286194
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Mell agrees to the barbecue and proposes hosting it at her place.",
+        "gold_item": "Mell agrees to host the barbecue at her place.",
+        "similarity": 0.833334743976593
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 0,
+        "pred_item": "Gloria checks her calendar and confirms this Saturday as the date.",
+        "gold_item": "Gloria suggests having a barbecue because the weather is good.",
+        "similarity": 0.42107853293418884
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 3,
+        "pred_item": "Mell agrees to the date and proposes a division of labor for food and drinks.",
+        "gold_item": "Mell proposes doing the food while Gloria brings drinks.",
+        "similarity": 0.4630052149295807
+      },
+      {
+        "pred_index": 4,
+        "gold_index": 3,
+        "pred_item": "Gloria agrees to bring drinks and adds that she will also bring dessert.",
+        "gold_item": "Mell proposes doing the food while Gloria brings drinks.",
+        "similarity": 0.44541388750076294
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Gloria suggests having a barbecue because the weather is good.",
+        "pred_item": "Gloria suggests organizing a barbecue due to the good weather.",
+        "similarity": 0.8370376229286194
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Mell agrees to host the barbecue at her place.",
+        "pred_item": "Mell agrees to the barbecue and proposes hosting it at her place.",
+        "similarity": 0.833334743976593
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 0,
+        "gold_item": "Mell wants Gloria's opinion on her terrace and garden design ideas.",
+        "pred_item": "Gloria suggests organizing a barbecue due to the good weather.",
+        "similarity": 0.2864779233932495
+      },
+      {
+        "gold_index": 3,
+        "pred_index": 3,
+        "gold_item": "Mell proposes doing the food while Gloria brings drinks.",
+        "pred_item": "Mell agrees to the date and proposes a division of labor for food and drinks.",
+        "similarity": 0.4630052149295807
+      },
+      {
+        "gold_index": 4,
+        "pred_index": 1,
+        "gold_item": "Mell is relieved that Tad's sister moved to Scotland.",
+        "pred_item": "Mell agrees to the barbecue and proposes hosting it at her place.",
+        "similarity": 0.29282036423683167
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "mell and gloria",
+          "organize a barbecue",
+          "barbecue",
+          null
+        ],
+        "gold_item": [
+          "mell and gloria",
+          "have",
+          "barbecue",
+          null
+        ],
+        "similarity": 0.6786212533712387,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.0817750096321106,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": [
+          "mell",
+          "host the event",
+          "barbecue",
+          "gloria"
+        ],
+        "gold_item": [
+          "mell",
+          "host",
+          "barbecue",
+          "gloria"
+        ],
+        "similarity": 0.811505115032196,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.4614431858062744,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Mell and Gloria have agreed to host a barbecue at Mell's place this Saturday, with Mell providing food and Gloria providing drinks and dessert.",
+    "gold_final_outcome": "Mell and Gloria will have a barbecue at Mell's place on Saturday; Mell wants Gloria's garden design advice and is relieved Tad's sister moved to Scotland."
+  },
+  {
+    "test_index": 649,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 4,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.5442782863974571,
+    "meaning_bertscore_recall": 0.6282700598239899,
+    "meaning_bertscore_f1": 0.5832659312646334,
+    "tuple_precision": 0.0,
+    "tuple_recall": 0.0,
+    "tuple_f1": 0.0,
+    "tuple_avg_similarity": 0.0,
+    "n_pred_tuples": 4,
+    "n_gold_tuples": 3,
+    "final_outcome_nli_similarity": 0.0006485933045041747,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Callan reports that his Samsung S8 has a black screen due to overheating.",
+        "gold_item": "Callan reports that something is wrong with his Samsung S8 because it only shows a black screen.",
+        "similarity": 0.7028205394744873
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 2,
+        "pred_item": "Wade warns Callan about the potential danger of the battery.",
+        "gold_item": "Callan will take the phone to the store because it is still under warranty.",
+        "similarity": 0.35827574133872986
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": "Callan decides to take the phone to the store for warranty service.",
+        "gold_item": "Callan will take the phone to the store because it is still under warranty.",
+        "similarity": 0.705136239528656
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 2,
+        "pred_item": "Callan confirms that his data is safe because he backs up his files.",
+        "gold_item": "Callan will take the phone to the store because it is still under warranty.",
+        "similarity": 0.4108806252479553
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Callan reports that something is wrong with his Samsung S8 because it only shows a black screen.",
+        "pred_item": "Callan reports that his Samsung S8 has a black screen due to overheating.",
+        "similarity": 0.7028205394744873
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 2,
+        "gold_item": "Callan thinks the phone overheated and needs time to restart.",
+        "pred_item": "Callan decides to take the phone to the store for warranty service.",
+        "similarity": 0.4768534004688263
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 2,
+        "gold_item": "Callan will take the phone to the store because it is still under warranty.",
+        "pred_item": "Callan decides to take the phone to the store for warranty service.",
+        "similarity": 0.705136239528656
+      }
+    ],
+    "tuple_matches": [],
+    "pred_final_outcome": "Callan plans to take his overheating Samsung S8 to the store for warranty repair, having confirmed his data is backed up.",
+    "gold_final_outcome": "Callan's Samsung S8 overheated and has a black screen, so he will take it to the store under warranty."
+  },
+  {
+    "test_index": 676,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 5,
+    "n_gold_meanings": 4,
+    "meaning_bertscore_precision": 0.6303238928318023,
+    "meaning_bertscore_recall": 0.7087697386741638,
+    "meaning_bertscore_f1": 0.6672490859359116,
+    "tuple_precision": 0.2,
+    "tuple_recall": 0.25,
+    "tuple_f1": 0.22222222222222224,
+    "tuple_avg_similarity": 0.6229386255145073,
+    "n_pred_tuples": 5,
+    "n_gold_tuples": 4,
+    "final_outcome_nli_similarity": 0.19659639988094568,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 1,
+        "pred_item": "Anna reports suffering from a persistent stomachache.",
+        "gold_item": "Joanna considers possible causes of Anna's stomachache.",
+        "similarity": 0.6076172590255737
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 2,
+        "pred_item": "Anna suggests seeing a doctor if the pain persists.",
+        "gold_item": "Anna suggests seeing a doctor if the stomachache does not improve.",
+        "similarity": 0.8035494089126587
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": "Joanna agrees to the plan of seeing a doctor if necessary.",
+        "gold_item": "Anna suggests seeing a doctor if the stomachache does not improve.",
+        "similarity": 0.47542664408683777
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 3,
+        "pred_item": "Anna offers to make hot tea with mint for Joanna.",
+        "gold_item": "Anna offers to make Joanna hot tea with fresh mint leaves.",
+        "similarity": 0.8383679986000061
+      },
+      {
+        "pred_index": 4,
+        "gold_index": 1,
+        "pred_item": "Joanna accepts the offer and states her location.",
+        "gold_item": "Joanna considers possible causes of Anna's stomachache.",
+        "similarity": 0.42665815353393555
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Anna tells Joanna that she has had a bad stomachache since night.",
+        "pred_item": "Anna reports suffering from a persistent stomachache.",
+        "similarity": 0.5855442881584167
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 0,
+        "gold_item": "Joanna considers possible causes of Anna's stomachache.",
+        "pred_item": "Anna reports suffering from a persistent stomachache.",
+        "similarity": 0.6076172590255737
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 1,
+        "gold_item": "Anna suggests seeing a doctor if the stomachache does not improve.",
+        "pred_item": "Anna suggests seeing a doctor if the pain persists.",
+        "similarity": 0.8035494089126587
+      },
+      {
+        "gold_index": 3,
+        "pred_index": 3,
+        "gold_item": "Anna offers to make Joanna hot tea with fresh mint leaves.",
+        "pred_item": "Anna offers to make hot tea with mint for Joanna.",
+        "similarity": 0.8383679986000061
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 3,
+        "gold_index": 3,
+        "pred_item": [
+          "anna",
+          "prepares",
+          "hot tea with mint",
+          "joanna"
+        ],
+        "gold_item": [
+          "anna",
+          "drink",
+          "hot tea with fresh mint leaves",
+          null
+        ],
+        "similarity": 0.6229386255145073,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.30658236145973206,
+          "object": 0.8281739950180054,
+          "recipient": 0.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Anna agreed to bring Joanna hot tea with mint to her room while they plan to see a doctor if the stomachache does not improve.",
+    "gold_final_outcome": "Anna has a bad stomachache and does not know the cause; she may see a doctor if it continues and will take a hot mint tea."
+  },
+  {
+    "test_index": 678,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 4,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.45095109939575195,
+    "meaning_bertscore_recall": 0.445899357398351,
+    "meaning_bertscore_f1": 0.44841100077581597,
+    "tuple_precision": 0.0,
+    "tuple_recall": 0.0,
+    "tuple_f1": 0.0,
+    "tuple_avg_similarity": 0.0,
+    "n_pred_tuples": 4,
+    "n_gold_tuples": 3,
+    "final_outcome_nli_similarity": 0.0017165369645226747,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 1,
+        "pred_item": "Jeff informs the group of their current location.",
+        "gold_item": "Jeff says they are in the little room next to the reception.",
+        "similarity": 0.44624239206314087
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 2,
+        "pred_item": "Kate describes a cake with an explicit design she observed.",
+        "gold_item": "Kate tells Sam about a woman making an explicit marzipan cake.",
+        "similarity": 0.5016319751739502
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": "Kate specifies where the woman making the cake is working.",
+        "gold_item": "Kate tells Sam about a woman making an explicit marzipan cake.",
+        "similarity": 0.42838016152381897
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 2,
+        "pred_item": "Sam expresses a strong desire to see the cake.",
+        "gold_item": "Kate tells Sam about a woman making an explicit marzipan cake.",
+        "similarity": 0.4275498688220978
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Kate tells Sam that she is downstairs.",
+        "pred_item": "Jeff informs the group of their current location.",
+        "similarity": 0.38982370495796204
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 0,
+        "gold_item": "Jeff says they are in the little room next to the reception.",
+        "pred_item": "Jeff informs the group of their current location.",
+        "similarity": 0.44624239206314087
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 1,
+        "gold_item": "Kate tells Sam about a woman making an explicit marzipan cake.",
+        "pred_item": "Kate describes a cake with an explicit design she observed.",
+        "similarity": 0.5016319751739502
+      }
+    ],
+    "tuple_matches": [],
+    "pred_final_outcome": "Sam decides to go see the explicit cake being made in the small room under the stairs after Kate describes it.",
+    "gold_final_outcome": "Kate and Jeff are downstairs near the reception, where Kate saw a woman making an explicit marzipan cake."
+  },
+  {
+    "test_index": 690,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 6,
+    "n_gold_meanings": 4,
+    "meaning_bertscore_precision": 0.42574386795361835,
+    "meaning_bertscore_recall": 0.4762466847896576,
+    "meaning_bertscore_f1": 0.44958143977400544,
+    "tuple_precision": 0.0,
+    "tuple_recall": 0.0,
+    "tuple_f1": 0.0,
+    "tuple_avg_similarity": 0.0,
+    "n_pred_tuples": 6,
+    "n_gold_tuples": 4,
+    "final_outcome_nli_similarity": 0.0005942747302469797,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 1,
+        "pred_item": "Karine argues the subject's behavior is a calculated populist strategy rather than senility.",
+        "gold_item": "Karine argues that Trump's strategy is populist and based on scaring people with a minority.",
+        "similarity": 0.381818950176239
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 2,
+        "pred_item": "Peter agrees that the subject is strategically dangerous rather than merely senile.",
+        "gold_item": "Peter agrees with Karine that Trump is more dangerous than merely senile or stupid.",
+        "similarity": 0.5700497031211853
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 1,
+        "pred_item": "Karine claims the subject is actively destroying the Earth and shaking world order.",
+        "gold_item": "Karine argues that Trump's strategy is populist and based on scaring people with a minority.",
+        "similarity": 0.3318779468536377
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 0,
+        "pred_item": "Jennifer identifies the subject's self-confidence, persistence, and ignorance as dangerous traits.",
+        "gold_item": "Mia complains about Trump repeatedly talking about the wall.",
+        "similarity": 0.2891068458557129
+      },
+      {
+        "pred_index": 4,
+        "gold_index": 3,
+        "pred_item": "Karine suggests there is a chance to change the situation and hopes the subject will be removed soon.",
+        "gold_item": "Mia says they should do anything to win the next elections.",
+        "similarity": 0.3712403178215027
+      },
+      {
+        "pred_index": 5,
+        "gold_index": 3,
+        "pred_item": "Mia commits to taking any necessary action to win the next elections, which Karine fully supports.",
+        "gold_item": "Mia says they should do anything to win the next elections.",
+        "similarity": 0.6103694438934326
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 5,
+        "gold_item": "Mia complains about Trump repeatedly talking about the wall.",
+        "pred_item": "Mia commits to taking any necessary action to win the next elections, which Karine fully supports.",
+        "similarity": 0.34274864196777344
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 0,
+        "gold_item": "Karine argues that Trump's strategy is populist and based on scaring people with a minority.",
+        "pred_item": "Karine argues the subject's behavior is a calculated populist strategy rather than senility.",
+        "similarity": 0.381818950176239
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 1,
+        "gold_item": "Peter agrees with Karine that Trump is more dangerous than merely senile or stupid.",
+        "pred_item": "Peter agrees that the subject is strategically dangerous rather than merely senile.",
+        "similarity": 0.5700497031211853
+      },
+      {
+        "gold_index": 3,
+        "pred_index": 5,
+        "gold_item": "Mia says they should do anything to win the next elections.",
+        "pred_item": "Mia commits to taking any necessary action to win the next elections, which Karine fully supports.",
+        "similarity": 0.6103694438934326
+      }
+    ],
+    "tuple_matches": [],
+    "pred_final_outcome": "The group agrees that the subject is a dangerous strategic threat and commits to doing everything necessary to win the next elections.",
+    "gold_final_outcome": "Mia, Jennifer, Karine and Peter strongly criticize Trump and want to oppose him in the next elections."
+  },
+  {
+    "test_index": 711,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 3,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.5774570306142172,
+    "meaning_bertscore_recall": 0.5729333758354187,
+    "meaning_bertscore_f1": 0.5751863090909469,
+    "tuple_precision": 0.0,
+    "tuple_recall": 0.0,
+    "tuple_f1": 0.0,
+    "tuple_avg_similarity": 0.0,
+    "n_pred_tuples": 3,
+    "n_gold_tuples": 3,
+    "final_outcome_nli_similarity": 0.00019952411093981937,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 1,
+        "pred_item": "Alex rejects both Batman and Superman, stating a preference for The Flash.",
+        "gold_item": "Alex says he prefers the Flash instead.",
+        "similarity": 0.5618242025375366
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 2,
+        "pred_item": "Alex argues that The Flash's superhuman speed grants him multiversal access and immense power.",
+        "gold_item": "Alex argues that the Flash is powerful because his speed opens up the multiverse.",
+        "similarity": 0.6275628209114075
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": "Pedro acknowledges the validity of Alex's argument regarding The Flash's power.",
+        "gold_item": "Alex argues that the Flash is powerful because his speed opens up the multiverse.",
+        "similarity": 0.5429840683937073
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Pedro asks Alex to choose between Batman and Superman.",
+        "pred_item": "Alex rejects both Batman and Superman, stating a preference for The Flash.",
+        "similarity": 0.529413104057312
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 0,
+        "gold_item": "Alex says he prefers the Flash instead.",
+        "pred_item": "Alex rejects both Batman and Superman, stating a preference for The Flash.",
+        "similarity": 0.5618242025375366
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 1,
+        "gold_item": "Alex argues that the Flash is powerful because his speed opens up the multiverse.",
+        "pred_item": "Alex argues that The Flash's superhuman speed grants him multiversal access and immense power.",
+        "similarity": 0.6275628209114075
+      }
+    ],
+    "tuple_matches": [],
+    "pred_final_outcome": "Pedro acknowledges Alex's argument that The Flash is powerful due to his multiversal speed capabilities.",
+    "gold_final_outcome": "Alex prefers the Flash over Batman and Superman because of the Flash's speed and power."
+  },
+  {
+    "test_index": 737,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 2,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.5567833334207535,
+    "meaning_bertscore_recall": 0.5487409432729086,
+    "meaning_bertscore_f1": 0.5527328852401133,
+    "tuple_precision": 1.0,
+    "tuple_recall": 0.6666666666666666,
+    "tuple_f1": 0.8,
+    "tuple_avg_similarity": 0.8200698863714934,
+    "n_pred_tuples": 2,
+    "n_gold_tuples": 3,
+    "final_outcome_nli_similarity": 1.8684633687371388e-05,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Damian asks Ethan to purchase food for him.",
+        "gold_item": "Damian asks Ethan to buy him a kebab because he is starving.",
+        "similarity": 0.6709985733032227
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 2,
+        "pred_item": "Ethan declines the request and criticizes Damian's behavior.",
+        "gold_item": "Ethan agrees to buy Damian a kebab.",
+        "similarity": 0.4425680935382843
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Damian asks Ethan to buy him a kebab because he is starving.",
+        "pred_item": "Damian asks Ethan to purchase food for him.",
+        "similarity": 0.6709985733032227
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Ethan complains that Damian depends on him instead of cooking.",
+        "pred_item": "Ethan declines the request and criticizes Damian's behavior.",
+        "similarity": 0.4338831305503845
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 0,
+        "gold_item": "Ethan agrees to buy Damian a kebab.",
+        "pred_item": "Damian asks Ethan to purchase food for him.",
+        "similarity": 0.5413411259651184
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "ethan",
+          "buy",
+          "kebab",
+          "damian"
+        ],
+        "gold_item": [
+          "ethan",
+          "buy",
+          "kebab",
+          "damian"
+        ],
+        "similarity": 1.0,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 2,
+        "pred_item": [
+          "ethan",
+          "refuse",
+          "request to buy kebab",
+          "damian"
+        ],
+        "gold_item": [
+          "ethan",
+          "buy",
+          "kebab",
+          "damian"
+        ],
+        "similarity": 0.6401397727429867,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.23792274296283722,
+          "object": 0.5343340635299683,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Ethan refuses Damian's request to buy a kebab and criticizes his dependency.",
+    "gold_final_outcome": "Ethan will buy Damian a kebab because Damian is starving after a rough day."
+  },
+  {
+    "test_index": 767,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 4,
+    "n_gold_meanings": 4,
+    "meaning_bertscore_precision": 0.5574387907981873,
+    "meaning_bertscore_recall": 0.5593812689185143,
+    "meaning_bertscore_f1": 0.5584083405883492,
+    "tuple_precision": 0.0,
+    "tuple_recall": 0.0,
+    "tuple_f1": 0.0,
+    "tuple_avg_similarity": 0.0,
+    "n_pred_tuples": 4,
+    "n_gold_tuples": 4,
+    "final_outcome_nli_similarity": 0.17254443501587957,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Barry invites others to join him in the Women's strike march.",
+        "gold_item": "Barry asks whether anyone wants to join the Women's strike march.",
+        "similarity": 0.6896063089370728
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 1,
+        "pred_item": "Jake accepts the invitation and confirms he has already made plans with friends.",
+        "gold_item": "Jake is going and invites Barry to join his friends.",
+        "similarity": 0.45143139362335205
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 2,
+        "pred_item": "Dave accepts the invitation and notes that Kelly is accompanying him.",
+        "gold_item": "Dave will also join and Kelly is coming with him.",
+        "similarity": 0.5618598461151123
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 3,
+        "pred_item": "Barry proposes a specific meeting time and location for the group.",
+        "gold_item": "Barry proposes meeting around campus at noon.",
+        "similarity": 0.5268576145172119
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Barry asks whether anyone wants to join the Women's strike march.",
+        "pred_item": "Barry invites others to join him in the Women's strike march.",
+        "similarity": 0.6896063089370728
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 2,
+        "gold_item": "Jake is going and invites Barry to join his friends.",
+        "pred_item": "Dave accepts the invitation and notes that Kelly is accompanying him.",
+        "similarity": 0.45920130610466003
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 2,
+        "gold_item": "Dave will also join and Kelly is coming with him.",
+        "pred_item": "Dave accepts the invitation and notes that Kelly is accompanying him.",
+        "similarity": 0.5618598461151123
+      },
+      {
+        "gold_index": 3,
+        "pred_index": 3,
+        "gold_item": "Barry proposes meeting around campus at noon.",
+        "pred_item": "Barry proposes a specific meeting time and location for the group.",
+        "similarity": 0.5268576145172119
+      }
+    ],
+    "tuple_matches": [],
+    "pred_final_outcome": "Barry, Jake, and Dave agreed to meet at the campus at noon to march in the Women's strike.",
+    "gold_final_outcome": "Barry, Jake, Dave and Kelly will meet around campus at noon to join the Women's strike."
+  },
+  {
+    "test_index": 799,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 3,
+    "n_gold_meanings": 3,
+    "meaning_bertscore_precision": 0.49812519550323486,
+    "meaning_bertscore_recall": 0.5290346344312032,
+    "meaning_bertscore_f1": 0.5131148493625298,
+    "tuple_precision": 0.6666666666666666,
+    "tuple_recall": 0.6666666666666666,
+    "tuple_f1": 0.6666666666666666,
+    "tuple_avg_similarity": 0.7341539092361926,
+    "n_pred_tuples": 3,
+    "n_gold_tuples": 3,
+    "final_outcome_nli_similarity": 0.056407774332910776,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Martha asks Ophelia for the source of the contact lenses in her profile picture to purchase similar ones.",
+        "gold_item": "Martha asks Ophelia where she got the lenses in her profile picture.",
+        "similarity": 0.6175856590270996
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 2,
+        "pred_item": "Ophelia identifies the brand as Crazy Lenses and mentions their pricing and shipping.",
+        "gold_item": "Ophelia tells Martha the lenses are from Crazy Lenses.",
+        "similarity": 0.506439208984375
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 1,
+        "pred_item": "Martha commits to checking out the recommended brand.",
+        "gold_item": "Martha likes the lenses and wants to buy similar ones.",
+        "similarity": 0.37035071849823
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Martha asks Ophelia where she got the lenses in her profile picture.",
+        "pred_item": "Martha asks Ophelia for the source of the contact lenses in her profile picture to purchase similar ones.",
+        "similarity": 0.6175856590270996
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 0,
+        "gold_item": "Martha likes the lenses and wants to buy similar ones.",
+        "pred_item": "Martha asks Ophelia for the source of the contact lenses in her profile picture to purchase similar ones.",
+        "similarity": 0.463079035282135
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 1,
+        "gold_item": "Ophelia tells Martha the lenses are from Crazy Lenses.",
+        "pred_item": "Ophelia identifies the brand as Crazy Lenses and mentions their pricing and shipping.",
+        "similarity": 0.506439208984375
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "ophelia",
+          "provide information",
+          "lens brand",
+          "martha"
+        ],
+        "gold_item": [
+          "ophelia",
+          "provide information about",
+          "lenses",
+          "martha"
+        ],
+        "similarity": 0.8233269065618515,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.7454832196235657,
+          "object": 0.5620388984680176,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 1,
+        "pred_item": [
+          "martha",
+          "check",
+          "Crazy Lenses",
+          null
+        ],
+        "gold_item": [
+          "martha",
+          "buy",
+          "similar lenses",
+          null
+        ],
+        "similarity": 0.6449809119105339,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.41258957982063293,
+          "object": 0.2528727948665619,
+          "recipient": 1.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Martha obtained the brand name Crazy Lenses from Ophelia and plans to check them out for purchase.",
+    "gold_final_outcome": "Martha likes Ophelia's lenses and plans to check Crazy Lenses for similar ones."
+  },
+  {
+    "test_index": 800,
+    "participant_precision": 1.0,
+    "participant_recall": 1.0,
+    "participant_f1": 1.0,
+    "participant_exact_match": true,
+    "n_pred_meanings": 4,
+    "n_gold_meanings": 4,
+    "meaning_bertscore_precision": 0.46861501783132553,
+    "meaning_bertscore_recall": 0.4196725934743881,
+    "meaning_bertscore_f1": 0.44279550310340804,
+    "tuple_precision": 0.5,
+    "tuple_recall": 0.5,
+    "tuple_f1": 0.5,
+    "tuple_avg_similarity": 0.7615493409335613,
+    "n_pred_tuples": 4,
+    "n_gold_tuples": 4,
+    "final_outcome_nli_similarity": 0.9819220006465912,
+    "meaning_bertscore_pred_best_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": "Linda asks her father for help choosing flowers for her mother because she is unsure of her mother's preference.",
+        "gold_item": "Linda asks Michael which flowers her mother likes.",
+        "similarity": 0.5364632606506348
+      },
+      {
+        "pred_index": 1,
+        "gold_index": 0,
+        "pred_item": "Michael asks Linda to send photos of the available flowers so he can make a specific recommendation.",
+        "gold_item": "Linda asks Michael which flowers her mother likes.",
+        "similarity": 0.396252304315567
+      },
+      {
+        "pred_index": 2,
+        "gold_index": 3,
+        "pred_item": "Michael suggests freesias as a specific option that the mother likes.",
+        "gold_item": "Michael recommends freesias because Linda's mother likes them a lot.",
+        "similarity": 0.5068657994270325
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 3,
+        "pred_item": "Michael instructs Linda to purchase the freesias shown in the second photo.",
+        "gold_item": "Michael recommends freesias because Linda's mother likes them a lot.",
+        "similarity": 0.43487870693206787
+      }
+    ],
+    "meaning_bertscore_gold_best_matches": [
+      {
+        "gold_index": 0,
+        "pred_index": 0,
+        "gold_item": "Linda asks Michael which flowers her mother likes.",
+        "pred_item": "Linda asks her father for help choosing flowers for her mother because she is unsure of her mother's preference.",
+        "similarity": 0.5364632606506348
+      },
+      {
+        "gold_index": 1,
+        "pred_index": 1,
+        "gold_item": "Michael suggests tulips and roses as nice options.",
+        "pred_item": "Michael asks Linda to send photos of the available flowers so he can make a specific recommendation.",
+        "similarity": 0.3502296507358551
+      },
+      {
+        "gold_index": 2,
+        "pred_index": 1,
+        "gold_item": "Michael rejects carnations as boring.",
+        "pred_item": "Michael asks Linda to send photos of the available flowers so he can make a specific recommendation.",
+        "similarity": 0.28513166308403015
+      },
+      {
+        "gold_index": 3,
+        "pred_index": 2,
+        "gold_item": "Michael recommends freesias because Linda's mother likes them a lot.",
+        "pred_item": "Michael suggests freesias as a specific option that the mother likes.",
+        "similarity": 0.5068657994270325
+      }
+    ],
+    "tuple_matches": [
+      {
+        "pred_index": 0,
+        "gold_index": 0,
+        "pred_item": [
+          "linda",
+          "asks for flower recommendation",
+          "flowers",
+          "michael"
+        ],
+        "gold_item": [
+          "linda",
+          "asks",
+          "flower choice",
+          "michael"
+        ],
+        "similarity": 0.6230986818671227,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 0.263784795999527,
+          "object": 0.40387001633644104,
+          "recipient": 1.0
+        }
+      },
+      {
+        "pred_index": 3,
+        "gold_index": 3,
+        "pred_item": [
+          "linda",
+          "buy",
+          "freesias",
+          "null"
+        ],
+        "gold_item": [
+          "linda",
+          "buy",
+          "freesias",
+          "linda's mother"
+        ],
+        "similarity": 0.8999999999999999,
+        "slot_scores": {
+          "actor": 1.0,
+          "action": 1.0,
+          "object": 1.0,
+          "recipient": 0.0
+        }
+      }
+    ],
+    "pred_final_outcome": "Linda decides to buy freesias for her mother based on her father's recommendation.",
+    "gold_final_outcome": "Linda wants to buy flowers for her mother, and Michael recommends buying freesias."
+  }
+]

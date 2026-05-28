@@ -1,0 +1,2 @@
+participant_f1,meaning_bertscore_precision,meaning_bertscore_recall,meaning_bertscore_f1,tuple_precision,tuple_recall,tuple_f1,tuple_avg_similarity,final_outcome_nli_similarity,schema_valid_rate,missing_prediction_rate
+0.9933333333333334,0.5945450823704401,0.6097114778558413,0.6005565755328949,0.4786666666666667,0.5276666666666666,0.4906277056277057,0.6400354551825052,0.3721224774863367,,0.0
