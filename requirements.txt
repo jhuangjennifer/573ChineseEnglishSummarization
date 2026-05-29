@@ -23,6 +23,8 @@ nltk
 pandas
 numpy
 scikit-learn
+scipy
+jieba
 
 # Utilities
 tqdm
