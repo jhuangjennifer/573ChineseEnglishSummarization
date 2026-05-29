@@ -593,7 +593,7 @@ To reproduce the project from scratch:
 6. Rename the files as train.json, val.json, and test.json if necessary.
 7. Run dataset profiling to verify the data files.
 8. Train BART and/or mBART, or load the Hugging Face checkpoints directly.
-9. Run baseline inference on the test set or sampled gold set.
+9. Run baseline inference on the test set or sampled gold set
 10. Build baseline evaluation CSV/JSON files from the prediction text files.
 11. Install Ollama and pull the agentic models if reproducing agentic systems.
 12. Run the relevant agentic notebooks and verify their CSV/JSONL outputs.
