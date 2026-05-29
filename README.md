@@ -84,14 +84,14 @@ are run from the repository root.
 Create and activate a virtual environment:
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
+python -m venv .venv/XLS_replication
+source .venv/XLS_replication/bin/activate
 ```
 
 For Windows:
 
 ```bash
-.venv\Scripts\activate
+.venv\XLS_replication\Scripts\activate
 ```
 
 Install dependencies:
