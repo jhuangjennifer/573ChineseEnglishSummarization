@@ -2,7 +2,6 @@ import json
 from pathlib import Path
 
 import pandas as pd
-from datasets import Dataset, DatasetDict
 
 
 def load_json_file(file_path: str) -> pd.DataFrame:
@@ -54,8 +53,10 @@ def create_dataset_dict(
     train_df: pd.DataFrame,
     val_df: pd.DataFrame,
     test_df: pd.DataFrame,
-) -> DatasetDict:
+) -> "DatasetDict":
     """Convert pandas DataFrames into a Hugging Face DatasetDict."""
+    from datasets import Dataset, DatasetDict
+
     return DatasetDict(
         {
             "train": Dataset.from_pandas(train_df, preserve_index=False),
