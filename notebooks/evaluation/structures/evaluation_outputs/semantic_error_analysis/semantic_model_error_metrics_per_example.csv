@@ -1,0 +1,1537 @@
+model,test_index,id,parse_error,dialogue,reference_english_summary,reference_chinese_summary,model_summary_zh,informativeness,clarity,plausibility,faithfulness,participant_precision,participant_recall,participant_f1,missing_participants,extra_participants,ref_event_count,model_event_count,event_count_diff,event_coverage,extra_event_rate,omitted_ref_event_count,extra_model_event_count,weak_match_count,speech_act_category_accuracy,intended_meaning_similarity,action_similarity,evidence_similarity,final_outcome_similarity,selected_event_count,invalid_selected_event_count,raw_output_excerpt,speaker_slot_accuracy,speaker_missing_count,speaker_mismatch_count,actor_slot_accuracy,actor_missing_count,actor_mismatch_count,action_slot_accuracy,action_missing_count,action_mismatch_count,object_slot_accuracy,object_missing_count,object_mismatch_count,recipient_slot_accuracy,recipient_missing_count,recipient_mismatch_count,speaker_null_rate,speech_act_null_rate,intended_meaning_null_rate,actor_null_rate,action_null_rate,object_null_rate,recipient_null_rate,evidence_null_rate
+aya32b,23,gold_00001,False,"Anne: You were right, he was lying to me :/
+Irene: Oh no, what happened?
+Jane: who? that Mark guy?
+Anne: yeah, he told me he's 30, today I saw his passport - he's 40
+Irene: You sure it's so important?
+Anne: he lied to me Irene",Mark lied to Anne about his age. Mark is 40.,马克向安妮隐瞒了自己的年龄。他40岁了。,安妮发现马克撒了关于年龄的谎，并和艾琳及简讨论了此事。艾琳对谎言的重要性表示怀疑。,2.8547821044921875,3.359606981277466,3.525178909301758,2.705961227416992,1.0,1.0,1.0,,,1,5.0,4.0,1.0,0.8,0,4.0,0.0,0.0,0.6603603603603604,0.11052631578947367,0.2733333333333333,0.5058313632781718,2.0,0.0,,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.6,0.0
+aya32b,30,gold_00002,False,"Mary: hey, im kinda broke, lend me a few box
+Carter: okay, give me an hour, im at the train station
+Mary: cool, thanks",Mary ran out of money. Carter is going to lend her some in an hour.,玛丽的钱用完了，卡特打算一小时后借给她一点。,玛丽请求卡特借钱，卡特同意在一小时后借给她几盒钱。,2.515699863433838,4.594635009765625,4.465599060058594,3.338059425354004,1.0,1.0,1.0,,,2,3.0,1.0,1.0,0.3333333333333333,0,1.0,0.0,0.5,0.6856397361020982,0.3416666666666667,0.9347222222222222,0.7560307017543859,1.0,0.0,,1.0,0.0,0.0,0.5,0.0,1.0,0.5,0.0,1.0,0.0,0.0,2.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.3333333333333333,0.0
+aya32b,39,gold_00003,False,"Tina: I'll tell you something, this Emirate staff looks amazing, as movie stars
+Ala: Oh yes, I know, that's for purpose 
+Ala: It's how it's suppose to be
+Ala: They pay a lot of attention to the image
+Tina: Looks nice, pleasure to observe
+Tina: And I sucked at the airport, they've kept us one hour in the plane and finally I'll catch the evening flight back home
+Tina: Could You imagine?
+Tina: And you know, this way we had such a talkative pilot :-)
+Ala: Oh, poor you
+Ala: Pfff
+Ala: And I'm on my way to a meeting
+Tina: THE meeting?
+Ala: Yes, keep your finger crossed
+Tina: Sure, let me know how did it go
+Ala: Ok darling, in touch",Tina will catch the evening flight back home. Ala is on her way to the meeting. She will let Tina know how it went.,蒂娜将乘晚间航班回家。阿拉正在去开会的路上。她会让蒂娜知道事情的进展。,蒂娜抱怨旅行遭遇，阿拉同情并提及即将举行的会议，蒂娜要求告知会议结果。,3.549797534942627,3.640035390853882,3.7603402137756348,3.018245220184326,1.0,1.0,1.0,,,3,6.0,3.0,0.6666666666666666,0.6666666666666666,1,4.0,1.0,0.5,0.4047086720867209,0.3961248428990365,0.3882159142726858,0.29596774193548386,3.0,0.0,,0.5,0.0,1.0,1.0,0.0,0.0,0.5,0.0,1.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.5,0.5,0.5,0.6666666666666666,0.0
+aya32b,65,gold_00004,False,"Ana: You sleeping?
+Catherine: Not yet.
+Ana: Wanna go visit grandma tomorrow? I miss her.
+Catherine: Yeah that would be nice :) I'll call you when I wake up
+Ana: Oki :) sleep well, good night.
+Catherine:  Good night, u too.",Ana wants to visit grandma tomorrow. Catherine will go with her. She will call Anna when she wakes up.,安娜明天想去看望奶奶。凯瑟琳会和她一起去。她起床后会给安娜打电话。,安娜和凯瑟琳计划次日拜访祖母，凯瑟琳醒后会给安娜打电话。,1.565260648727417,4.667233943939209,4.555788516998291,3.5922272205352783,1.0,1.0,1.0,,,3,4.0,1.0,0.6666666666666666,0.5,1,2.0,0.0,0.5,0.24521765823371328,0.8138888888888889,0.7549143944197844,0.4951470588235294,1.0,0.0,,1.0,0.0,0.0,0.5,1.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.75,0.5,0.5,0.5,0.0
+aya32b,66,gold_00005,False,"Joyce: Check this out!
+Joyce: <link>
+Michael: That's cheap!
+Edson: No way! I'm booking my ticket now!! ",Edson is booking his ticket now.,埃德森正在订票。,乔伊斯分享了廉价机票的链接，迈克尔表达了惊讶，艾德森决定立即预订机票。,2.1359148025512695,4.876489162445068,4.861401557922363,4.232075214385986,1.0,1.0,1.0,,,2,3.0,1.0,1.0,0.3333333333333333,0,1.0,0.0,1.0,0.6445301291248207,0.3961220043572985,0.923252688172043,0.49599623174752716,1.0,0.0,,1.0,0.0,0.0,0.5,1.0,0.0,0.5,0.0,1.0,0.5,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.6666666666666666,0.3333333333333333,0.6666666666666666,0.6666666666666666,0.0
+aya32b,67,gold_00006,False,"Jane: google maps says it is at least 3h <file_other>
+Steven: I used to make it in 2, trust me :D
+Jane: but it's almost 300km..
+Steven: the road is new , we will make it ^^
+Jane: I don't want  to stress out , let's meet at 4:30 instead of 5, ok?
+Steven: ok, if u reaaly want, we can meet at 4:30
+Jane: thx! 
+Jane: I will wait at the main entrance or where?
+Steven: main entrance is good for me;-) 
+Steven: cu",Jane wants to leave at 4.30 instead of 5 because Google Maps suggests the 300 km drive should take them at least 3 hours and she doesn't want to be late. She will wait for Steven at the main entrance.,简想4点半就走，而不是等到5点，因为谷歌地图提示300公里的车程至少需要3小时，她不想迟到。她会在正门处等史蒂文。,简和史蒂文最终决定提前到下午4点30分在入口处见面，以避免长途旅行带来的压力。简最初分享了至少3小时的旅行时间估计，但史蒂文保证他可以更快地完成旅程。在简表达了对长途旅行的担忧后，史蒂文解释说道路是新的，他们应该能准时到达。简于是提议提前见面，得到了史蒂文的同意。,3.384333610534668,3.481323480606079,3.8475375175476074,3.4039525985717773,1.0,1.0,1.0,,,4,6.0,2.0,0.75,0.5,1,3.0,0.0,0.3333333333333333,0.5972174047521861,0.08671023965141611,0.8134160353582841,0.5606884057971016,1.0,0.0,,1.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,3.0,0.0,0.0,3.0,,0.0,0.0,0.0,0.0,0.0,0.6666666666666666,0.0,0.0,0.0,0.0
+aya32b,78,gold_00007,False,"Fiona: Are you free?
+Tina: Yes, what's up?
+Fiona: I'm trying to prepare a nice dinner for Chris and I thought that maybe I could prepare this tart of yours :)
+Tina: I'm flattered!
+Fiona: Well, it IS delicious :) Could help me do it?
+Tina: Sure! It's not difficult. Do you have anything ready?
+Fiona: I must admit I bought the crust...
+Tina: Oh, ok :P Pity, but well, it's too late now.
+Fiona: I tried making the filling once, but I finished with lemony scrambled eggs...
+Tina: It happens, don't worry. The thing is that once you start adding eggs you can't stop mixing it, otherwise you'll end up with scrambled eggs.",Fiona wants to prepare dinner for Chris. She is thinking of Tina's tart. She will help her make it.,菲奥娜想为克里斯准备晚餐。她想起了蒂娜做的馅饼。蒂娜会帮她做的。,菲奥娜请求蒂娜帮助制作馅饼，蒂娜同意并提供了避免炒鸡蛋的技巧，指导馅料制作。,2.9305167198181152,4.173512935638428,4.320976257324219,3.9554033279418945,1.0,1.0,1.0,,,3,6.0,3.0,0.6666666666666666,0.6666666666666666,1,4.0,0.0,1.0,0.7551891762452108,0.6958333333333333,1.0,0.28283891547049445,2.0,0.0,,1.0,0.0,0.0,0.5,1.0,0.0,0.5,0.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.5,0.3333333333333333,0.3333333333333333,0.16666666666666666,0.0
+aya32b,86,gold_00008,False,"Olafur: are we doing anything for New Year's Eve?
+Nathalie: I was thinking about something classy, like opera or sth like that
+Zoe: how much does it cost?
+Olafur: opera is not for me
+Nathalie: so what do you propose?
+Nathalie: it's 100$ 
+Olafur: I was thinking about partying somewhere
+Nathalie: partying sounds fun, as long as it will be classy
+Zoe: <file_link>
+Zoe: Breakfast at Tiffany's party sounds classy
+Olafur: <file_link> 
+Olafur: is it classy enough?
+Nathalie: :O
+Nathalie: this club is AMAZING
+Zoe: whoa
+Nathalie: we'll going to Soho then
+Olafur: we just need to hurry up and buy some tickets soon
+Zoe: sure","Nathalie, Olafur and Zoe are planning the New Year's Eve. Nathalie wants something classy. Olafur doesn't like opera. They want to go to the Breakfast at Tiffany's party in Soho.",娜塔莉、奥拉维尔和佐伊正在做新年前夜的计划。娜塔莉想要有格调的。但奥拉维尔不喜欢歌剧。他们想去苏豪区蒂芙尼的聚会上吃早餐。,纳塔莉、奥拉夫尔和佐伊讨论新年夜的活动计划。经过商议，他们决定参加在索霍区举办的早餐在蒂芙尼主题派对。,3.446047306060791,3.6683483123779297,3.822298288345337,3.137519121170044,1.0,1.0,1.0,,,6,6.0,0.0,0.6666666666666666,0.3333333333333333,2,2.0,1.0,0.25,0.4080289474534914,0.07083333333333333,0.7776315789473685,0.3897463866921189,1.0,0.0,,0.75,0.0,1.0,0.25,2.0,1.0,0.0,1.0,3.0,0.75,1.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.6666666666666666,0.3333333333333333,0.3333333333333333,1.0,0.0
+aya32b,120,gold_00009,False,"John: wanna go see ""A Star is Born"" on Wed?
+Joan: sorry can't
+Joan: super busy 
+Joan: don't have time for anything :( 
+John: that's a shame
+Joan: I'm free on Thursday
+John: I could do Thursday
+Joan: ok! so around 8pm?
+John: sure sounds great
+John: I'll see where it's palying and send you the details
+Joan: ok great!","Joan and John are going to watch ""A Star is Born"" on Thursday around 8 p.m.",琼和约翰星期四晚上8点左右去看《一个明星的诞生》。,约翰和乔安同意一起在周四晚8点观看《一个明星的诞生》，约翰承诺发送电影放映细节。,2.201724052429199,3.096780300140381,3.1064984798431396,2.1465811729431152,1.0,1.0,1.0,,,5,6.0,1.0,1.0,0.16666666666666666,0,1.0,1.0,1.0,0.206778242141044,0.14030701754385963,0.8855454545454545,0.639116887741476,3.0,0.0,,1.0,0.0,0.0,0.6,0.0,2.0,0.0,0.0,5.0,0.4,0.0,3.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aya32b,137,gold_00010,False,"Peyton: I have been asking you to bring that video game for me
+Cameron: Honey, I am not having enough time to come home
+Peyton: When would you come home?
+Cameron: I will have to stay out of town for another week i guess
+Peyton: Cant you just deliver that game through the courier? :P
+Cameron: Dont be mean :/
+Peyton: Get the job done and come to home then. ASAP :P",Peyton is expecting Cameron to bring the video game. Cameron will probably be out for another week.,佩顿希望卡梅隆能带游戏机过来，但是卡梅隆可能还要再缺席一周。,佩顿要求卡梅伦带一个视频游戏。卡梅伦拒绝，解释说没有足够的时间。佩顿询问何时能回家，卡梅伦回答将出差另一周。佩顿建议通过快递送游戏，并坚持卡梅伦立即回家。,3.2962162494659424,4.036873817443848,4.174149036407471,3.9066426753997803,1.0,1.0,1.0,,,3,6.0,3.0,1.0,0.5,0,3.0,0.0,0.6666666666666666,0.40224747474747474,0.4961111111111111,0.6872548826309518,0.4589330024813896,1.0,0.0,,1.0,0.0,0.0,0.6666666666666666,1.0,0.0,0.3333333333333333,1.0,1.0,0.6666666666666666,0.0,1.0,0.5,1.0,0.0,0.0,0.0,0.0,0.3333333333333333,0.3333333333333333,0.5,0.16666666666666666,0.0
+aya32b,139,gold_00011,False,"Paul: I just came back home
+Paul: What a busy day
+Paul: I forgot about my physiotherapy 
+Emma: Oh no
+Paul: It's ok, I'll schedule a new appointment
+Emma: I'll be home after midnight
+Paul: Do you want me to prepare some food for you?
+Emma: That would be lovely","Paul forgot about his physiotherapy and he will schedule a new appointment. Emma will be home after midnight, so Paul will prepare some food for her.",保罗忘记去做理疗了，得重新预约。艾玛午夜后回家，所以保罗会给她准备一些吃的。,保罗将重新安排理疗预约并为一整天忙碌后回家后的艾玛准备食物。,2.769352674484253,3.8689990043640137,4.034572601318359,3.1795783042907715,1.0,1.0,1.0,,,5,7.0,2.0,0.8,0.42857142857142855,1,3.0,0.0,0.75,0.8165555781969673,0.11805555555555555,0.961825117370892,0.8912337662337663,3.0,0.0,,0.75,0.0,1.0,0.5,2.0,0.0,0.0,2.0,2.0,0.75,1.0,0.0,0.5,0.0,1.0,0.0,0.0,0.0,0.5714285714285714,0.5714285714285714,0.5714285714285714,0.5714285714285714,0.0
+aya32b,192,gold_00012,False,"Harris: How are U?
+Lena: Fine, U?
+Harris: Been better.
+Lena: ?
+Harris: My friend Aoki died yesterday.
+Lena: O No!
+Harris: Yeah.
+Lena: What happened?
+Harris: Not sure yet. Thinking the worst...
+Lena: O how awful!
+Harris: Yes.
+Lena: You just never know.
+Harris: True.
+Lena: Had you seen her lately?
+Harris: Not for a few months. She lives in Michigan.
+Lena: Oh, that's far.
+Harris: Not too far but far enough.
+Lena: Right.
+Harris: Got to go, mom's calling.
+Lena: K bi. Feel better!
+Harris: K will do","Harris' friend, Aoki, who lives in Michigan, died yesterday. Harris hasn't seen her for a few months.",哈里斯的朋友青木住在密歇根州，昨天去世了。哈里斯有几个月没见她了。,哈里斯向莱娜透露了朋友青木的死讯，莱娜给予安慰并认同生命的不可预测性。哈里斯最终结束了对话，称母亲在叫他。,3.0468196868896484,3.142747163772583,3.4967968463897705,2.9787518978118896,1.0,1.0,1.0,,,3,6.0,3.0,0.6666666666666666,0.6666666666666666,1,4.0,1.0,0.5,0.2937451437451437,0.056089743589743585,0.803062267099411,0.30014184397163124,3.0,0.0,,1.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,2.0,0.0,0.0,1.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aya32b,210,gold_00013,False,"Yaz: Going to slimming club tonight?
+Mary: Well, I don't want to, but I really should. I've been so bad, though!
+Yaz: Me too, choccies, wine, cake, you name it!
+Mary: Well, we should bite the bullet. She'll tell us off, I expect. Feels like being back at school!
+Yaz: Well, she IS our old cookery teacher! See you at 6ish, pick you up!?
+Mary: Yep! See you then!",Yaz and Mary are meeting tonight around 6 and going for the slimming club together. They expect to be scolded for eating too much. ,亚兹和玛丽今晚6点左右见面，一起去减肥俱乐部。他们估计吃得太多会被骂。,玛丽和亚兹决定一起去减肥俱乐部，亚兹将在一天六点左右接送玛丽。,2.2700979709625244,3.0326249599456787,3.015166997909546,2.2516608238220215,1.0,1.0,1.0,,,4,6.0,2.0,0.75,0.5,1,3.0,0.0,0.0,0.34031483015741504,0.2529213796955732,0.7851129855253567,0.47963241243786847,2.0,0.0,,1.0,0.0,0.0,0.6666666666666666,1.0,0.0,0.0,1.0,2.0,0.5,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.5,0.5,0.5,0.3333333333333333,0.0
+aya32b,211,gold_00014,False,"Ellie: hey, are you at the university?
+Aaliyah: yep
+Camille: I'm sick :/
+Ellie: shiet....that's bad
+Ellie: Aali, where are we having our classes now?
+Aaliyah: 342 on the second floor",Ellie's class is in 342 on the second floor.,艾莉的班级在二楼342教室。,尽管卡米尔因生病缺席，艾利莎仍向埃莉告知了她们的课程在大学二楼342室进行。,4.4570112228393555,3.3222622871398926,3.5979576110839844,3.7706398963928223,1.0,1.0,1.0,,,3,6.0,3.0,1.0,0.5,0,3.0,1.0,0.6666666666666666,0.5057995255271561,0.2236431623931624,0.9581601439496176,0.42742424242424243,1.0,0.0,,1.0,0.0,0.0,0.0,2.0,0.0,0.3333333333333333,0.0,2.0,0.0,0.0,2.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.16666666666666666,0.0
+aya32b,212,gold_00015,False,"Nathan: <file_video>
+Aaron: OMG!!! 
+Aaron: 😂😂😂😂
+Aaron: looool
+Aaron: do you know her mate? 🤣🤣
+Aaron: my cat's face looks like that when he's taking a dump..🤣🤣🤣
+Aaron: <file_gif>
+Aaron: the angels must be weeping 🤭🤭🤭 
+Aaron: <file_gif>
+Aaron: <file_gif>
+Nathan: Hahahaha
+Nathan: She's having a spiritual moment 😉
+Nathan: No clue mate, Dan sent it over
+Nathan: A tragedy to say the least 😂😂
+Aaron: <file_gif>
+Aaron: looking for Jesus
+Nathan: 😂😂😂
+Aaron: hilarious..hahahaha",Nathan and Aaron are discussing a video which Nathan sent. ,内森和亚伦正在讨论内森发来的视频。,艾伦和纳森分享了一个有趣的视频，引发了一段幽默的对话。艾伦对视频中的人物表情感到惊讶，并将其与自己猫咪的表情进行了比较。纳森则开玩笑说那是灵性时刻，并解释他不认识视频中的人，是丹发给他的。,2.321944236755371,4.001518726348877,4.052177906036377,3.0324363708496094,1.0,1.0,1.0,,,3,5.0,2.0,0.6666666666666666,0.6,1,3.0,0.0,0.5,0.5361996936952267,0.06666666666666665,0.9970338983050848,0.22723270440251572,2.0,0.0,,1.0,0.0,0.0,0.0,2.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.6,0.2,0.4,0.0
+aya32b,215,gold_00016,False,"Freddie: What are you watching on Netflix? I've just finished Mad Men.
+Kelly: I've just finished The Crown. 
+Freddie: There should be new episodes coming soon.
+Kelly: OMG! i can't wait! :)
+Freddie: Try Outlander or The Tudors in the meantime.
+Jim: i'm watching I, Zombie.
+Bob: try Grimm or Sabrina. They're both great!
+Kelly: they are all horrible and disgusting! 
+Bob: i think they are funny. They're just TV shows don't take them too seriously. x 
+Greg: I'm watching House of Cards though must admit the new series is boring.
+Mike: i agree. not the same without Kevin Spacey! You should try The West Wing if you enjoy political dramas.
+Greg: Netflix original Bodyguard is supposed to be good from what I've heard.
+Mary: I'm a bit ashamed to confess i enjoy stuff like Pretty Little Liars or Gossip Girl ;)
+Nancy: don't be ashamed i enjoy them too! and my favourite one is Desperate Housewives!!!
+Mary: I know! I watched it twice!
+Alan: I'm catching up with Friends.
+Nancy: OMG! i used to love Friends!","Freddie, Kelly, Jim, Greg, Bob, Mike, Mary, Alan and Nancy are watching different shows on Netflix.",弗雷迪、凯利、吉姆、格雷格、鲍勃、迈克、玛丽、艾伦和南希正在netflix上观看不同的节目。,凯莉向弗雷迪分享了她看完《王冠》的消息，弗雷迪告知她将有新剧集播出，并推荐了《异乡人》和《都铎王朝》作为等待期间的替代节目。,1.7562514543533325,3.6447031497955322,3.9723715782165527,2.4641432762145996,1.0,1.0,1.0,,,6,6.0,0.0,0.6666666666666666,0.3333333333333333,2,2.0,0.0,0.25,0.49867250227269855,0.015909090909090907,0.7320171320319578,0.600641966250917,3.0,0.0,,0.75,0.0,1.0,0.25,3.0,0.0,0.0,3.0,1.0,0.5,1.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.6666666666666666,0.6666666666666666,0.16666666666666666,0.3333333333333333,0.0
+aya32b,244,gold_00017,False,"Jones: Hey.
+Angelina: Hey.
+Angelina: Long time. How are you doing?
+Jones: I'm fine
+Jones: You?
+Angelina: I'm cool too.
+Jones: You think we can meet today later in the afternoon in town?
+Angelina: Definitely.
+Jones: Okay. I will call you to confirm where we will meet.
+Angelina: Cool",Jones and Angelina will meet in town in the afternoon.,琼斯和安吉丽娜下午会在城里见面。,琼斯和安吉丽娜计划在镇上的下午见面，具体地点由琼斯电话确认。,3.1346423625946045,4.607458114624023,4.547673225402832,3.9685122966766357,1.0,1.0,1.0,,,3,6.0,3.0,0.6666666666666666,0.6666666666666666,1,4.0,1.0,0.5,0.2710583413693346,0.19727272727272727,0.7547820512820512,0.7511204481792717,2.0,0.0,,1.0,0.0,0.0,0.5,0.0,1.0,0.0,0.0,2.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.6666666666666666,0.6666666666666666,0.6666666666666666,0.0,0.0
+aya32b,285,gold_00018,False,"Casey: <file_photo>
+Amelia: these are so nice!!! did you do them yourself?
+Kristen: wooow amazing
+Amelia: i want my nails done like that too!
+Casey: yeah i did it myself :D got a new nail polish but damn it took me nearly 4 hours lol
+Amelia: can you do it for us too?
+Kristen: pretty please!
+Casey: sorry you guys... it was a nightmare :( seriously 4 hours for nails is too much","Casey got a new nail polish and did her nails herself. It took her nearly 4 hours, so she won't do her friends' nails, as it takes too long.",凯西买了新指甲油，自己做了指甲。她花了近4个小时，所以她不会帮朋友做指甲，因为耗时太长了。,凯西分享了她的指甲艺术照片，并确认是自己亲手完成的。艾米莉亚和克里斯汀赞赏之余，请求她也为她们做指甲。然而，凯西拒绝了，表示做指甲花了四个小时，时间太长了。,2.8517465591430664,3.2676937580108643,3.5600664615631104,2.8918070793151855,1.0,1.0,1.0,,,3,6.0,3.0,1.0,0.5,0,3.0,0.0,0.6666666666666666,0.42652335082578546,0.04757834757834758,0.675334512231064,0.37794117647058817,1.0,0.0,,1.0,0.0,0.0,0.0,3.0,0.0,0.0,0.0,3.0,0.3333333333333333,0.0,2.0,0.0,0.0,2.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0
+aya32b,319,gold_00019,False,"Sue: Call me when you get this.
+Sue: it's important
+Steve: OK, I'm calling",Steve is calling Sue at her request.,史蒂夫正按照苏的要求给她打电话。,苏要求史蒂夫立即联系她，并强调此事的重要性。史蒂夫确认会立即给苏打电话。,2.230769634246826,4.381259918212891,4.520390510559082,4.0002593994140625,1.0,1.0,1.0,,,2,3.0,1.0,1.0,0.3333333333333333,0,1.0,0.0,0.5,0.5219346298257437,1.0,0.9111471861471861,0.3641151255358236,1.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aya32b,346,gold_00020,False,"Timmy: Who do u wanna invite?
+Gemma: Well, there's u and ur date :)
+Timmy: Not sure about the date, but I'll be there :) who else?
+Gemma: I was thinking about Lona and Michelle.
+Timmy: Still thinking ur getting invites to their weddings?
+Gemma: It's not like that.
+Timmy: Sure it is ;) just don't wanna admit it ;)
+Gemma: Fine! I want to come to their wedding receptions!
+Timmy: There we go :) was it so hard?
+Gemma: Yes.
+Timmy: And u think u can change their minds?
+Gemma: Dunno.","Gemma will invite Timmy and his Date, as well as Lona and Michelle to her wedding.",杰玛将邀请蒂米和他的约会对象，以及罗娜和米歇尔参加她的婚礼。,杰玛邀请蒂米和他的约会对象参加活动，蒂米表示不确定是否会带约会对象，但会出席。杰玛建议邀请洛娜和米歇尔，蒂米调侃杰玛想参加他们的婚礼。最终，杰玛承认她想参加洛娜和米歇尔的婚礼接待。,2.8861029148101807,3.050036668777466,3.2648468017578125,2.6731719970703125,1.0,1.0,1.0,,,4,5.0,1.0,0.75,0.4,1,2.0,0.0,0.3333333333333333,0.6989094237955827,0.20777777777777776,0.9364801864801864,0.4960127591706539,1.0,0.0,,1.0,0.0,0.0,0.6666666666666666,0.0,1.0,0.0,0.0,3.0,0.6666666666666666,0.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aya32b,355,gold_00021,False,"Ann: Congratulations!!
+Ann: You did great, both of you!
+Sue: Thanks, Ann
+Julie: I'm glad it's over!
+Julie: That's co cute of you, girl!
+Ann: Let's have a little celebration tonight! 
+Sue: I'm in
+Julie: me too!!! aww","Ann, Sue and Julie did a great job and they will have a little celebration tonight.",安、苏和朱莉做得很好，今晚他们会举行一个小小的庆祝活动。,安恩赞扬苏和朱莉完成任务的表现。两人表示感谢并同意安恩的建议，当晚一起庆祝。,4.048980712890625,4.552006721496582,4.695465564727783,4.515618324279785,1.0,1.0,1.0,,,3,6.0,3.0,1.0,0.5,0,3.0,0.0,0.6666666666666666,0.4922717094924876,0.09732620320855616,0.9629629629629629,0.35353172007848266,2.0,0.0,,0.6666666666666666,0.0,1.0,0.0,2.0,1.0,0.0,1.0,2.0,0.0,1.0,1.0,,0.0,0.0,0.0,0.0,0.0,0.8333333333333334,0.6666666666666666,0.8333333333333334,0.16666666666666666,0.0
+aya32b,367,gold_00022,False,"Steve: hiya the dishwasher has turned up
+Mum: good did they install it for you
+Steve: yes they did a good job
+Steve: <file_photo>
+Mum: looks really nice
+Steve: yes it does its nice and quiet
+Mum: is it a 12 place setting one?
+Steve: I think so, not that I ever have 12 for dinner lol
+Mum: not but you dont have to put it on every day
+Steve: no every other
+Mum: yes I'm glad you are pleased with it xx
+Steve: I am thanks mum xxx",Steve is happy that he got a new dishwasher installed.,史蒂夫很高兴他装了一台新的洗碗机。,史蒂夫告知母亲洗碗机已送达并成功安装。母亲询问安装情况并表达了对洗碗机外观和噪音水平的满意。,3.1403656005859375,3.8241798877716064,3.9490952491760254,3.546196222305298,1.0,1.0,1.0,,,2,6.0,4.0,1.0,0.6666666666666666,0,4.0,0.0,1.0,0.5750090909090909,0.0875,0.5277443009724214,0.3362768031189084,3.0,0.0,,0.5,0.0,1.0,0.5,1.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.8333333333333334,0.8333333333333334,0.6666666666666666,0.0,0.0
+aya32b,393,gold_00023,False,"Marika: Are you coming today?
+Lara: Yes!
+Marika: Great!",Marika is coming today.,玛丽卡今天会来。,玛丽卡问劳拉今天是否来，劳拉确认她会出席，玛丽卡表示高兴。,1.5120290517807007,1.9393360614776611,1.976668119430542,1.5076731443405151,1.0,1.0,1.0,,,2,3.0,1.0,1.0,0.3333333333333333,0,1.0,0.0,0.5,0.22866646250170136,0.105,1.0,0.4363636363636364,1.0,0.0,,1.0,0.0,0.0,0.5,1.0,0.0,0.0,1.0,1.0,,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.6666666666666666,0.6666666666666666,0.6666666666666666,0.3333333333333333,0.0
+aya32b,417,gold_00024,False,"Miranda: Hi S, could we cancel tomorrow's meeting?
+Stephanie: again? what happened?
+Miranda: I have to work :(
+Stephanie: you work 20 hours a day!
+Miranda: that's what young doctors do
+Stephanie: they kill themselves working
+Miranda: no they come close to death but survive and it makes them immortal
+Stephanie: as long as you have an explanation :D",Miranda can't make her meeting with Stephanie as she has to work. ,米兰达不能去见斯蒂芬妮，因为她要工作。,米兰达因工作原因请求取消与斯蒂芬妮的明天会议，斯蒂芬妮询问了取消的原因。,2.44630765914917,3.548105239868164,3.729231357574463,2.7836761474609375,1.0,1.0,1.0,,,2,3.0,1.0,1.0,0.3333333333333333,0,1.0,0.0,1.0,0.41766666666666663,0.5,0.9830645161290322,0.6209848484848485,1.0,0.0,,1.0,0.0,0.0,0.0,1.0,1.0,0.5,1.0,0.0,1.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.6666666666666666,0.6666666666666666,0.6666666666666666,0.0,0.0
+aya32b,432,gold_00025,False,"Javier: Hey do you know any tattoo parlors over here with English speaking employees?
+Judie: Oh there's Warsaw ink
+Javier: the name sounds neat... have you had a tattoo done there?
+Judie: nope but my gf has
+Javier: got a pic?
+Judie: <file_photo>
+Javier: wow that looks amazing
+Javier: how much did she pay?
+Judie: it was a 1000
+Javier: fuck
+Javier: let me just get a tatttoo back in colombia then, thx",Javier was initially eager to have a tatoo done at Warsaw Ink but the price turned out to be too high. Javier decided to have a tatoo done in Colombia.,哈维尔最初很想在warsaw ink纹身，但价格太高了。他决定去哥伦比亚做纹身。,贾维耶向朱迪询问了说英语的纹身店，朱迪推荐了华沙墨水店。经过进一步了解后，贾维耶决定在哥伦比亚纹身，因为成本更低。,2.4493072032928467,2.7430012226104736,2.925011157989502,2.359424114227295,1.0,1.0,1.0,,,3,6.0,3.0,1.0,0.5,0,3.0,0.0,0.6666666666666666,0.47437098320516907,0.15976470588235292,0.8682028897028897,0.6057571964956195,1.0,0.0,,1.0,0.0,0.0,0.0,3.0,0.0,0.0,0.0,3.0,0.3333333333333333,2.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.8333333333333334,0.16666666666666666,0.0
+aya32b,433,gold_00026,False,"Sam: You own a really nice hotel, guys 😊
+Jessica: Thanks Sam 😊
+Michael: Thanks, mate 
+Sam: How is our hotel room set for next month? Hope that the manager will arrange the very best for us 😉
+Michael: you’re damn right, Sam
+Michael: are you coming on the 15th of August?
+Sam: Yep! We’ll be at the hotel around 2 p.m.
+Jessica: I’m soooo happy to see you again!
+Sam: Me, too 😊",Sam appreciates the hotel owned by Jessica and Michael. Sam is going there on the 15th August at around 2pm.,山姆很喜欢杰西卡和迈克尔的酒店。他会在8月15日下午2点左右去那里。,萨姆确认他们将于8月15日下午2点入住迈克尔和杰西卡的酒店。,2.309436321258545,3.9077930450439453,3.8048791885375977,2.3979921340942383,1.0,1.0,1.0,,,2,5.0,3.0,1.0,0.6,0,3.0,0.0,1.0,0.31989690959942674,0.125,0.708252688172043,0.5424021099614527,1.0,0.0,,1.0,0.0,0.0,0.5,1.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.8,0.4,0.0,0.2,0.0
+aya32b,442,gold_00027,False,"Terence: What the hell, Danny. You took my money, didn't you? :/
+Daniel: What, your money?? Why would I
+Terence: Don't play dumb
+Daniel: Are you calling me a liar, Terry??
+Terence: I'm not stupid, Danny
+Daniel: And I'm not a thief?? That's not cool, man :/
+Terence: ... Oh shit, I'm sorry, I've just found it. Forgot I'd placed it elsewhere last month
+Daniel: Good for you then
+Terence: Are you upset
+Daniel: What do you think?? Yeah, oh-fucking-course I am",Terence accused Daniel of taking his money. Terence finds the money later and apologizes to Daniel. Daniel is still upset.,特伦斯指控丹尼尔偷了他的钱。后来他找到了钱，就向丹尼尔道歉。但是丹尼尔还在生气。,特伦斯向丹尼尔道歉，承认自己错误地指责他拿了自己的钱，但丹尼尔依然感到愤怒。,3.5692451000213623,4.053324222564697,4.202385902404785,4.040304183959961,1.0,1.0,1.0,,,4,6.0,2.0,1.0,0.3333333333333333,0,2.0,0.0,1.0,0.6481699929971989,0.28697115384615385,0.5799825913659736,0.571093627065303,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.25,0.0,3.0,0.3333333333333333,0.0,2.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.3333333333333333,0.0,0.0
+aya32b,499,gold_00028,False,"Natacha: hi, i can come and pick you up at the RER.
+Charles: so  nice. I just landed. I think i'll arrive about 5:30pm. I'll give you a call
+Natacha: ok ,call  me when  you'll be at the station Vesinet. 
+Charles: thanks . see you",Charles has just landed and he will be at RER about 5.30 PM. Natacha will pick him up from there.,查尔斯刚刚落地，他会在下午五点半到达rer，娜塔夏会在那里接他。,纳塔莎将前往维西内特车站接查尔斯，大约在下午5点30分，在他到达并打电话给她之后。,3.0542781352996826,3.474571466445923,3.6871156692504883,2.85766339302063,1.0,1.0,1.0,,,3,4.0,1.0,1.0,0.25,0,1.0,0.0,0.3333333333333333,0.6974821329495328,1.0,0.8980880471220245,0.5882004830917875,1.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.5,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.25,0.25,0.5,0.0,0.0
+aya32b,528,gold_00029,False,"Meg: still at school?
+Ann: i have extra math classes
+Meg: so when can i meet you?
+Ann: i will be home at 7",Ann is still at school. She will be home at 7 so she can meet Meg then.,安还在学校，她7点会回家，这样她就可以和麦格见面了。,安告知梅她将于晚上七点到家，可以见面。,2.1438441276550293,2.823220729827881,2.785618305206299,2.1121602058410645,1.0,1.0,1.0,,,2,4.0,2.0,1.0,0.5,0,2.0,0.0,0.0,0.35138852749852156,0.30661764705882355,1.0,0.4277777777777777,1.0,0.0,,1.0,0.0,0.0,0.0,2.0,0.0,0.5,1.0,0.0,0.0,2.0,0.0,,0.0,0.0,0.0,0.0,0.0,1.0,0.75,1.0,0.0,0.0
+aya32b,532,gold_00030,False,"Pete: What flavour yogurt did you want again? My brain is like a sieve today.
+Jen: Pear but only if they've got it. Otherwise don't worry about it.
+Pete: I'll have a look around. If they don't have pear can I get a different flavour?
+Jen: I don't like any other flavour. If they don't have pear just don't get anything at all then.
+Pete: OK.",Pete will get a pear yogurt for Jen if they have it.,如果商店里有梨味酸奶， 皮特会给珍买的。,Jen坚持要梨味酸奶，Pete同意如果没有梨味就不买任何酸奶。,2.313866138458252,2.3843958377838135,2.5446481704711914,2.3116273880004883,1.0,1.0,1.0,,,3,5.0,2.0,1.0,0.4,0,2.0,2.0,1.0,0.35755837370463733,0.13333333333333333,0.8197919929725117,0.46746162280701753,2.0,0.0,,1.0,0.0,0.0,0.0,3.0,0.0,0.0,2.0,1.0,0.6666666666666666,0.0,1.0,0.5,0.0,1.0,0.0,0.0,0.0,1.0,0.8,0.2,0.0,0.0
+aya32b,536,gold_00031,False,"Christie: how are you after the party?
+Katie: really tired... and you?
+Christie: same
+Christie: the party was great!
+Katie: Yeah, we had fun! :)",Christie and Katie are tired after the party. They both had fun.,克里斯蒂和凯蒂在聚会后累了。他们都玩得很开心。,克里斯蒂向凯蒂询问派对后的情况，凯蒂回应感到疲惫，并提到派对很开心。克里斯蒂表示同意，也对派对表示满意。最后，两人都认同派对愉快，但同时感到疲劳。,1.9348783493041992,2.6214094161987305,2.5546088218688965,1.9609835147857666,1.0,1.0,1.0,,,3,5.0,2.0,0.6666666666666666,0.6,1,3.0,0.0,0.5,0.42153740699268494,0.0,0.8693636363636363,0.6866228070175439,1.0,0.0,,1.0,0.0,0.0,0.0,2.0,0.0,0.0,2.0,0.0,0.5,1.0,0.0,,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.8,0.8,0.0
+aya32b,537,gold_00032,False,"Sam: Are you working tomorrow?
+Carla: No, it's my day off
+Sam: I'm free in the afternoon, do you fancy meeting up?
+Carla: Yeah, sure
+Sam: Ok, great! Shall we go to Meanwood?
+Carla: Ok, there's that cafe there that does the yummy cakes. Meet you at 2?
+Sam: Yes - looking forward to it!
+Carla: See you tom! xx",Carla has a day off tomorrow. She will meet Sam in Meanwood in a cafe at 2 pm.,卡拉明天有一天假。她将在下午两点在meanwood的一个咖啡馆和山姆见面。,萨姆和卡拉约定明天下午两点在米德伍德的一家咖啡馆见面。,2.8780746459960938,4.558271884918213,4.213295936584473,2.8197553157806396,1.0,1.0,1.0,,,3,6.0,3.0,1.0,0.5,0,3.0,0.0,0.6666666666666666,0.3060771508185301,0.1515151515151515,0.9059533523445803,0.7698476343223737,1.0,0.0,,1.0,0.0,0.0,0.0,3.0,0.0,0.0,1.0,2.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.5,0.5,0.0,0.0
+aya32b,544,gold_00033,False,"Joana: wana play some games?
+Sandy: what games?
+Joana: maybe dixit?
+Joana: or carcassonne?
+Sandy: why not?
+Joana: ok, I'll bring them 2 u
+Sandy: great :)",Joana will bring Sandy some games like dixit and carcassonne.,琼娜将为桑迪带来一些像迪克西特和卡尔卡松这样的游戏。,乔安娜将带来《迪西特》和《卡卡颂》与桑迪一起玩。,1.657564401626587,3.8307249546051025,2.9942331314086914,1.775615930557251,1.0,1.0,1.0,,,3,5.0,2.0,1.0,0.4,0,2.0,0.0,1.0,0.24274113147352586,0.11630546955624355,0.9691919191919193,0.6883333333333332,1.0,0.0,,1.0,0.0,0.0,0.3333333333333333,1.0,1.0,0.0,1.0,2.0,0.0,1.0,2.0,1.0,0.0,0.0,0.0,0.0,0.0,0.4,0.4,0.4,0.4,0.0
+aya32b,548,gold_00034,False,"Steve: Bought the new Dream Theater album 5 minutes ago. I hope it's good.
+Rob: I have it here on my desk, ready for the first listening.
+Steve: Ok, I'll tell you later what I think about it.
+Rob: Same here. See you later!","Steve and Rob will talk about new Dream Theater album, after they finish listening.",史蒂夫和罗伯将在听完后谈论新的梦剧场专辑。,史蒂夫和罗布计划稍后互相分享他们对新梦剧院专辑的意见。,1.3815255165100098,4.767919540405273,4.744083404541016,2.055602550506592,1.0,1.0,1.0,,,3,4.0,1.0,1.0,0.25,0,1.0,0.0,1.0,0.5896703536796416,0.3470588235294118,0.9796563128666836,0.5446682279469165,2.0,0.0,,1.0,0.0,0.0,0.6666666666666666,1.0,0.0,0.3333333333333333,1.0,1.0,0.6666666666666666,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.25,0.25,0.0,0.5,0.0
+aya32b,551,gold_00035,False,"Peter: Can you send me the link of your beauty shop?
+Joy: Definitely
+Joy: It is https:// *********
+Joy: Hope you will like it and feel free to ask any questions.
+Peter: Okay. Let me look at it.",Joy sent Peter the link to her beauty shop.,乔伊把她美容店的链接发给了彼得。,乔伊（Joy）应彼得（Peter）请求，提供了她美发店的链接。,1.9083694219589233,3.1078121662139893,3.3064160346984863,2.5146753787994385,1.0,1.0,1.0,,,2,3.0,1.0,1.0,0.3333333333333333,0,1.0,0.0,1.0,0.7573137254901962,0.5583333333333333,0.9962765957446809,0.8421052631578947,1.0,0.0,,1.0,0.0,0.0,0.0,2.0,0.0,0.5,0.0,1.0,0.5,0.0,1.0,0.5,0.0,1.0,0.0,0.0,0.0,1.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.0
+aya32b,590,gold_00036,False,"Ethan: who's going to see solstafir?
+Noah: solstafir! when?
+Noah: i had no idea they were playing
+Archie: I'm not :D.
+Leo: i'm going ofc!
+Ethan: 21.11
+Noah: that's a wednesday... ehh...
+Noah: i'll have to see, might have to stay late at work...
+Leo: nooo you have to come
+Ethan: yeah you have to!
+Archie: There are better concerts :P.
+Noah: i know, i would really like to see them, but yeah
+Leo: archie... :P
+Ethan: don't mind him :P
+Noah: i'll see and let you know, it would really suck to miss them
+Leo: yup!
+Ethan: yup! x2","Ethan and Leo are going to see Sólstafir on 21.11. Noah would like to go too, but he might have to stay late at work.",伊森和里奥要在21点11分去见索斯塔弗。诺亚也想去，但他可能得工作到很晚。,诺亚将决定是否能因潜在的工作承诺而参加11月21日的索斯塔菲尔音乐会，并告知小组。,3.5105068683624268,3.451453447341919,3.7921977043151855,3.236896514892578,1.0,1.0,1.0,,,4,6.0,2.0,0.75,0.5,1,3.0,2.0,0.3333333333333333,0.25212558105667165,0.05072712418300653,0.8354471651280161,0.28646601146601147,1.0,0.0,,1.0,0.0,0.0,0.6666666666666666,1.0,0.0,0.0,0.0,3.0,0.3333333333333333,0.0,2.0,,0.0,0.0,0.0,0.0,0.0,0.3333333333333333,0.0,0.0,0.0,0.0
+aya32b,598,gold_00037,False,"Bradley: haha look a cat invaded the pitch at Goodison <file_other>
+Jill: hahahaha
+Julia: what a sweet little black ball of fur
+Jill: here's the video :D <file_other>
+Julia: haha
+Bradley: and the commentary :D
+Bradley: that's the best entertainment Everton fans have had all season :D",A sweet little black cat got into the pitch during the Everton's football match.,在埃弗顿的足球比赛中，一只可爱的小黑猫钻进了球场。,布拉德利分享了一段关于猫入侵古迪逊球场的视频，并评论道这是埃弗顿球迷本赛季最娱乐的时刻。吉尔和朱莉娅对视频中的猫表示了喜爱和赞美。,3.7468478679656982,4.019715309143066,4.151932716369629,3.2001428604125977,1.0,1.0,1.0,,,3,5.0,2.0,1.0,0.4,0,2.0,0.0,0.3333333333333333,0.3642773210479633,0.10277777777777776,0.8118876941457587,0.2922081921773945,2.0,0.0,,1.0,0.0,0.0,0.0,3.0,0.0,0.0,1.0,2.0,0.3333333333333333,0.0,2.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.6,0.2,0.6,0.0
+aya32b,605,gold_00038,False,"Barbara: I'm home already, you can come over
+Sean: May I bring the dog?
+Zac: I'm on my way
+Barbara: sure you can, Sean
+Barbara: do you want to stay overnight?
+Sean: great!
+Sean: I thought about it
+Barbara: nice!","Barbara, Sean and Zac are meeting at Barbara's place tonight. Sean will bring the dog. Sean and Zac will stay overnight.",芭芭拉、肖恩和扎克今晚在芭芭拉家见面。肖恩会把狗带来的，肖恩和扎克会在这里过夜。,肖恩和扎克将到芭芭拉家，肖恩会带狗来，并留宿一夜。,2.4899439811706543,4.226299285888672,4.187629699707031,2.9856154918670654,1.0,1.0,1.0,,,4,6.0,2.0,1.0,0.3333333333333333,0,2.0,0.0,1.0,0.49232873323557613,0.4205066170388751,0.9592857142857143,0.6708624708624709,3.0,0.0,,1.0,0.0,0.0,0.0,4.0,0.0,0.5,0.0,2.0,1.0,0.0,0.0,0.5,0.0,1.0,0.0,0.0,0.0,0.6666666666666666,0.0,0.16666666666666666,0.0,0.0
+aya32b,616,gold_00039,False,"Jake: dude, I just pulled a TOTW
+Jake: my first this year!
+Tom: grats!
+Tom: gonna sell it?
+Jake: yeah
+Jake: I'll try him in one or two matches
+Jake: he's not a good fit for my squads
+Tom: you'll have plenty of coins to buy someone that fits
+Jake: that's the plan
+Jake: I got lucky with this one
+Tom: my pull luck sucks this year
+Tom: not a single great player 
+Jake: you're good at the game
+Jake: you don't need help :P
+Tom: I like shiny things :P",Jake has got his first TOTW this year. Tom doesn't have a great team. ,杰克今年拿到了第一个totw ，汤姆的团队并不出色。,杰克首次抽到今年TOTW卡，但在尝试一两场比赛后，因不适合队伍而打算出售。汤姆肯定他有足够的硬币购买更合适的球员，并祝贺杰克的好运。汤姆抱怨自己今年抽签运气不佳，没有抽到优秀球员。,3.3721261024475098,3.4991812705993652,3.8314201831817627,3.207660675048828,1.0,1.0,1.0,,,3,6.0,3.0,1.0,0.5,0,3.0,0.0,0.6666666666666666,0.5620514714162627,0.09333333333333332,0.882905982905983,0.29928912856967765,1.0,0.0,,1.0,0.0,0.0,0.6666666666666666,1.0,0.0,0.0,1.0,2.0,0.3333333333333333,2.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.6666666666666666,0.6666666666666666,0.8333333333333334,0.6666666666666666,0.0
+aya32b,621,gold_00040,False,"Phil: Good evening Deana! Many thanks for this nice card from you. Constantine was very happy!
+Phil: Are these sunglasses also from you?
+Deana: I thought they belonged your Cathreen!
+Phil: Nope. She says they aren't hers.
+Deana: Mine either. Look, maybe you feel like keeping them?
+Deana: I seem to have so many sunglasses...
+Deana: 8‑D
+Phil: Where did you find them, possible that they belong to Adrian?
+Deana: In this empty place above the radio. In the very back.
+Deana: If Adrian wants it, no pro!
+Deana: :)
+Phil: :))
+Deana: Exactly!
+Phil: Ok, they don't belong to any of us, and nobody else drove your car. But we can look after these sunglasses.
+Deana: Glad to hear it!","Phil received a card from Deana. Constantine was happy. Phil has sunglasses, that Deana found in the back above the radio. Deana and Phil don't know who they belong too. Phil will keep the sunglasses.",菲尔收到了迪安娜的一张卡片，康斯坦丁很开心。菲尔有副墨镜。蒂娜在后面收音机上面找到的。迪安娜和菲尔也不知道他们属于谁。菲尔会留着这副墨镜的。,菲尔向德娜表达了对礼物的感谢。随后，他询问太阳镜的所有权，但德娜否认所有权并建议他保留太阳镜。最终，菲尔同意照看这些太阳镜，因为没有人认领。,2.335239887237549,2.8938779830932617,3.0626041889190674,2.434872627258301,1.0,1.0,1.0,,,4,6.0,2.0,1.0,0.3333333333333333,0,2.0,2.0,0.5,0.3247297282874524,0.020588235294117647,0.6964862303191024,0.3759757618962752,1.0,0.0,,1.0,0.0,0.0,0.25,3.0,0.0,0.0,3.0,1.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.6666666666666666,0.5,0.0,0.6666666666666666,0.0
+aya32b,635,gold_00041,True,"Mell: Hi there! How are you doing?
+Gloria: Hi Mell! We are fine, just the daily grind ;) And yourselves?
+Mell: Not much happening either. An odd phone call with the kids. Or Tad's sister:(( Not much otherwise.
+Gloria: Yeah... Life has become so quite since the kids are out of the house. We had more to get used to it. But it must hard for you. Especially you I mean.
+Mell: I don't know. Sometimes I even forget that I should be missing them. In a way I do like this peace and quiet now.
+Gloria: Small wonder. You had a hell of a time with them just before they went to college. I'd say you need to recover now.
+Mell: I guess you're right. But maybe I should feel guilty or something?
+Gloria: Don't be silly! You are a fantastic mom.
+Mell: Thanks Gloria.
+Gloria: Anyway I'm happy to hear from you again. We should really have a nice do again.
+Mell: YES! Splendid!
+Gloria: The weather is just brilliant, perfect for a BBQ. What do you think?
+Mell: I'm all for it. At my place? I'd love it.
+Gloria: Can't be better. I love your garden.
+Mell: We're thinking about extending the terrace. I must show you my drawings, just a few ideas. It would be great to hear your opinion.
+Gloria: I'd love to. But you know how little I know about garden design, or however you call it.
+Mell: We'll have a look at them. Now the BBQ. At the weekend I suppose?
+Gloria: Let me check the calendar. Here's our family planner. A horrible name, isn't it? So this weekend suits us fine. At the next one, on Saturday, Mark has penciled something in but I can't read it. So what about this Saturday?
+Mell: Perfect. At least we know the weather holds. Shall I do the food and you the drinks?
+Gloria: And I'll get us some dessert as well. 
+Mell: Very good indeed. It's always so easy going with you.
+Gloria: Ta! You were thinking about Tad's sister?
+Mell: I'm afraid so. I'm so happy she moved up to Scotland and I don't have to put up with her trying to run my household. Tad feels relieved too.
+Gloria: Good riddance! I could really never warm up to her.
+Mell: Nobody can! Anyway she's gone and we're going to have a fantastic barbecue. Without her.
+Gloria: Yes, we are. Oh I'm so happy you've phoned!
+Mell: Looking forward to our BBQ on Saturday!
+Gloria: So long!","Gloria and Mell plan to have a barbeque at Mell's place on Saturday. They are happy, because Tad's sister moved to Scotland. Mell needs Gloria's advice on garden design.",格洛丽亚和梅尔计划星期六在梅尔家吃烧烤。他们很高兴，因为泰德的姐姐搬到了苏格兰。梅尔需要格洛丽亚对花园设计的建议。,Mell和Gloria聊天，讨论了孩子们搬出去后的生活变化。Mell坦白自己有时会忘记想念孩子们，但喜欢现在的平静。Gloria安慰她，并邀请她家里开烧烤派对。Mell欣然接受，并建议在周末举行。Gloria确认日期为下周六。,1.2075058221817017,4.118173599243164,4.430563926696777,2.622905731201172,,,,,,5,,,0.0,,5,,,,,,,,,,"{
+  ""participants"": [""Mell"", ""Gloria""],
+  ""semantic_grounding"": [
+    {
+      ""event_id"": 1,
+      ""speaker"": ""Mell"",
+      ""speech_act"": ""greeting"",
+      ""intended_meaning"": ""Initiating a friendly conversation"",
+      ""actor"": null,
+      ""action"": null,
+      ""object"": null,
+      ""recipient"": ""Gloria"",
+      ""evidence"": [""Hi there! How are you doing?""]
+    },
+    {
+      ""event_id"": 2,
+      ""speaker"": ""Gloria"",
+      ""speech_act"": ""response"",
+      ""intended_meaning"": ""Reciprocating the gre",,,,,,,,,,,,,,,,,,,,,,,
+aya32b,649,gold_00042,False,"Callan: Something's wrong with my Samsung S8.
+Wade: What, exactly?
+Callan: All I get is a black screen.
+Wade: Did you drop it or something?
+Callan: I think I know, this has happened before.
+Wade:  It did? What happened before?
+Callan: It overheats and then it takes a while for it to restart again..
+Wade: That sucks.. Be carefull with the battery, it can be dangerous.
+Callan: It sure can, but I'm going to the store and let them see it. It's still under warranty.
+Wade: Will you lose all your stuff?
+Callan: No, I always back up my files.","Callan's Samsung S8 overheats, so he's going to the store to get it repaired.",卡伦的三星s8过热了，所以他要去店里修理。,卡兰决定将三星S8送去商店维修，以解决黑屏和过热问题。韦德担心数据丢失，但卡兰确认他们已经备份了所有文件。,3.523707389831543,3.8370041847229004,3.9104251861572266,3.2828803062438965,1.0,1.0,1.0,,,3,6.0,3.0,1.0,0.5,0,3.0,1.0,0.3333333333333333,0.4020878938640133,0.07313408686406397,0.7110949625810236,0.37513213981244675,2.0,0.0,,1.0,0.0,0.0,0.0,3.0,0.0,0.0,0.0,3.0,0.0,0.0,2.0,,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.16666666666666666,0.0
+aya32b,676,gold_00043,False,"Anna: Mum, I have a awful stomachache.
+Joanna: Oh, dear, when did you get it?
+Anna: At night, and it won’t stop:-(
+Joanna: Is it something you ate?
+Anna: Maybe. I'm not sure.
+Joanna: What did you have for breakfast?
+Anna: The usual, cereal with milk and a banana.
+Joanna: Maybe the milk was bad.
+Anna: It didn't smell bad.
+Joanna: Maybe the banana was bad.
+Anna: No, the banana was delicious.
+Joanna: Maybe you just need to go to the bathroom.
+Anna: No, that's not the problem.
+Joanna: Maybe it will go away in a little while.
+Anna: I wish it would :-(
+Anna: Hopefully. If not, maybe we should go and see a doctor.
+Joanna: Yeah, I think so...
+Anna: I’ll get you a hot tea with some fresh mint leaves. Hope it will help. 
+Joanna: Please do, I’m in my room...
+Anna: Will be in ten minutes:-)",Anna got an awful stomachache at night but she doesn't know its cause. Her mom Joanna will make her hot tea with some fresh mint leaves.,安娜夜里胃疼得厉害，但她不知道其中的原因。她的妈妈乔安娜会用新鲜的薄荷叶为她做热茶。,安娜向乔安娜抱怨夜间开始的严重胃痛，经过一番询问和推断后，两人同意如果胃痛持续，将去看医生。安娜还主动提出为乔安娜泡一杯热茶。,3.1241037845611572,3.6986167430877686,3.88985276222229,3.0565128326416016,1.0,1.0,1.0,,,4,8.0,4.0,1.0,0.5,0,4.0,0.0,0.5,0.5642221378588725,0.0889119142351901,0.7718696512587062,0.39980237154150194,3.0,0.0,,1.0,0.0,0.0,0.75,1.0,0.0,0.0,0.0,4.0,0.75,1.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.5,0.0,0.125,0.0,0.0
+aya32b,678,gold_00044,False,"Sam: Where are you?
+Kate: downstairs
+Sam: already?
+Kate: sure, come down
+Jeff: We're in the little room next to the reception
+Kate: have you noticed the woman making a cake?
+Sam: yes
+Kate: did you see the cake?
+Sam: I didn't pay attention, why?
+Kate: there was a huge penis on it
+Kate: made of marzipan or sth
+Sam: hahah, really?
+Kate: when I noticed it, I started laughing
+Kate: so she laughed too
+Sam: nice
+Kate: I asked her what's she doing
+Kate: Somebody ordered a cake with a huge penis with balls and chocolate hair
+Sam: hahah, I must see it!
+Kate: she is working in the small room under the stairs
+Sam: right, there is a kitchen",Kate and Jeff are downstairs in a room next to the reception. Some lady is making a marzipan cake. ,凯特和杰夫在楼下接待处旁边的一个房间里。有位女士正在做杏仁蛋糕。,萨姆询问凯特的位置，凯特邀请他下来并分享了一个带有巨大阴茎的蛋糕的观察结果。萨姆对这个蛋糕表现出浓厚的兴趣，渴望一睹其风采。,4.659025192260742,3.8158786296844482,3.9672372341156006,3.977994918823242,1.0,1.0,1.0,,,3,6.0,3.0,0.6666666666666666,0.6666666666666666,1,4.0,1.0,0.0,0.27855736642743223,0.0,0.9578256794751641,0.2821719457013575,1.0,0.0,,1.0,0.0,0.0,0.0,2.0,0.0,0.0,2.0,0.0,0.0,1.0,1.0,,0.0,0.0,0.0,0.0,0.0,0.6666666666666666,0.6666666666666666,0.5,0.3333333333333333,0.0
+aya32b,690,gold_00045,False,"Mia: God, he keeps talking about the stupid wall
+Jennifer: I think he's just senile
+Karine: unfortunately it's much more
+Karine: this populist strategy to scare people with a minority
+Karine: and then present himself as the only savior
+Peter: Karine is right, I think he's not as senile and stupid as we would like to believe
+Mia: so it's even worse - he's pure evil
+Peter: possibly yes
+Karine: I really think so, because it's not only about politics anymore
+Karine: he is destroying the Earth
+Karine: trying to shake the world's order
+Jennifer: but he's also quite stupid
+Jennifer: and the dangerous thing is his self confidence
+Jennifer: he's persistence 
+Jennifer: and ignorance
+Karine: but we have a chance to change it
+Karine: maybe Trump will be over soon?
+Mia: we will see
+Mia: but we should do anything to win the next elections
+Karine: everything!","Mia, Jennifer, Karine and Peter do not like Trump.",米亚、珍妮弗、卡琳和彼得不喜欢特朗普。,小组一致认为特朗普的行为是故意且危险的，他们承诺尽一切可能带来改变，具体目标是赢得下一次选举。,3.1236536502838135,2.9680166244506836,3.5426137447357178,3.0065646171569824,1.0,1.0,1.0,,,4,5.0,1.0,0.5,0.6,2,3.0,1.0,0.5,0.19451856882125232,0.27507309941520464,0.8649014778325124,0.32122065727699534,1.0,0.0,,1.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,2.0,0.5,0.0,1.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aya32b,711,gold_00046,False,"Pedro: batman or superman??
+Alex: honestly..  neither
+Pedro: WHAT??
+Alex: i honestly like the flash
+Pedro: whats so good about the flash :P
+Alex: duuude, he can do almost anything
+Pedro: not anything
+Alex: yea im sure batman can run as fast -_-
+Pedro: superhuman speed? thats your pitch?
+Alex: that speed opens up the whole multiverse for him.. you seriously dont get how powerful he can be
+Pedro: yeah i get your point",Alex prefers the Flash to Barman and Superman thanks to his speed.,阿莱克斯更喜欢闪电侠，因为他的速度。,Pedro询问Alex对蝙蝠侠和超人的偏好，但Alex表示更喜欢闪电侠，并解释了闪电侠的能力。Pedro最终承认了Alex的观点。,1.5425199270248413,1.6207969188690186,1.6227492094039917,1.449099063873291,1.0,1.0,1.0,,,3,5.0,2.0,0.6666666666666666,0.6,1,3.0,0.0,1.0,0.5205414500114558,0.0,0.95,0.3925871288954453,3.0,0.0,,1.0,0.0,0.0,0.0,2.0,0.0,0.0,2.0,0.0,0.5,1.0,0.0,,0.0,0.0,0.0,0.0,0.0,1.0,0.8,0.6,0.2,0.0
+aya32b,737,gold_00047,False,"Damian: are you downtown?
+Ethan: yes
+Ethan: why?
+Damian: can you buy me a kebab?
+Damian: i'm starving
+Ethan: why won't you cook something for both of us, huh?
+Damian: man, give me a break, i had a rough day
+Ethan: ok ok
+Ethan: but i really wish you weren't such a parasite
+Damian: i'll change, scout's honour",Ethan will buy Damian a kebab. Damian had a bad day.,伊森会请达米安吃烤肉串，达米安今天过得很糟糕。,伊森（Ethan）同意为达米安买一个烤肉卷，但表达了希望达米安减少对他的依赖。达米安承诺改变行为。,2.361412525177002,4.938771724700928,4.933316707611084,4.826318740844727,1.0,1.0,1.0,,,3,3.0,0.0,0.6666666666666666,0.3333333333333333,1,1.0,0.0,1.0,0.442898508774751,0.5,0.8126787732041969,0.36908212560386466,1.0,0.0,,1.0,0.0,0.0,0.5,1.0,0.0,0.5,1.0,0.0,0.5,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.0
+aya32b,767,gold_00048,False,"Barry: I'm gonna go march in Women's strike, anyone interested?
+Jake: I am, already made plans with some friends, wanna join?
+Dave: I am down too, Kelly is coming with me
+Barry: Let's just meet around the campus at noon","Barry, Dave, Kelly, and Jake will meet around the campus at 12 to join Women's strike.",巴里、戴夫、凯利和杰克将于12点在校园附近集合，参加妇女罢工。,巴里邀请大家参加妇女罢工游行，杰克建议加入他的朋友们，戴夫则表示会带凯利一起参加。最终，三人决定在正午左右于校园附近见面，共同参与游行。,2.643111228942871,3.864675998687744,3.8464365005493164,2.791623115539551,1.0,1.0,1.0,,,4,4.0,0.0,1.0,0.0,0,0.0,1.0,0.75,0.35053009877586705,0.1163937165775401,0.8443564721663313,0.7554887218045114,1.0,0.0,,1.0,0.0,0.0,0.0,0.0,4.0,0.0,0.0,4.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.0,0.0
+aya32b,799,gold_00049,False,"Martha: Hey, can I ask you a question?
+Ophelia: Do we know each other?
+Martha: We don't, but do you mind if I ask you about the lenses from your profile picture? they are awesome and I would like to buy the similar ones
+Ophelia: it's from Crazy Lenses. They have quite reasonable prices and very fast shipping.
+Martha: Thanks!!! I'll check them :)
+Ophelia: No problem :)",Martha likes Ophelia's lenses and wants to buy similar ones. Ophelia got them from Crazy Lenses.,玛莎喜欢奥菲莉娅的眼镜，想买类似的，奥菲莉娅是从crazy lens上买的。,玛尔塔向奥菲利亚（Ophelia）询问了她个人资料照片中镜头的来源。奥菲利亚提供了信息，并推荐了Crazy Lenses。玛尔塔表示感谢，并决定查看Crazy Lenses的类似镜片。,2.491813898086548,4.595570087432861,4.437690734863281,3.9283125400543213,1.0,1.0,1.0,,,3,3.0,0.0,0.6666666666666666,0.3333333333333333,1,1.0,1.0,0.5,0.30987955852401833,0.0,0.6799135117874271,0.0,1.0,0.0,,1.0,0.0,0.0,0.0,2.0,0.0,0.0,2.0,0.0,0.5,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,1.0,0.3333333333333333,0.0,0.0
+aya32b,800,gold_00050,False,"Linda: Hi Dad, I want to buy flowers for mum! But I don't remember which one she likes :(
+Michael: Well, she likes all the flowers I believe
+Linda: That doesn't help! I'm on a flower market right now!
+Michael: Send me some pics then
+Linda: <file_photo> 
+Michael: Tulips are nice, roses too
+Linda:  What about carnations?
+Michael: No, carnations are boring :D
+Linda: Thanks Dad, srsly…
+Michael:  What about freesias? She likes them a lot, are there any there?
+Linda: <file_photo> 
+Michael: Take those!",Linda wants to buy flowers for her mother and asks Michael which flowers does she like. Michael suggests Linda to buy freesias.,琳达想给她妈妈买花，问迈克尔她喜欢哪种花。迈克尔建议琳达买小苍兰。,迈克尔在查看了琳达从花市发送的照片后，建议她为母亲购买风信子。,2.046128273010254,3.856283187866211,4.124007225036621,2.950176954269409,1.0,1.0,1.0,,,4,5.0,1.0,0.5,0.6,2,3.0,1.0,1.0,0.3150393006436306,0.039999999999999994,0.7889847905166859,0.4503556658395369,1.0,0.0,,1.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,2.0,0.5,0.0,1.0,0.5,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+qwen27b,23,gold_00001,False,"Anne: You were right, he was lying to me :/
+Irene: Oh no, what happened?
+Jane: who? that Mark guy?
+Anne: yeah, he told me he's 30, today I saw his passport - he's 40
+Irene: You sure it's so important?
+Anne: he lied to me Irene",Mark lied to Anne about his age. Mark is 40.,马克向安妮隐瞒了自己的年龄。他40岁了。,安妮揭露马克谎报年龄，他自称三十岁实则四十岁。尽管艾琳质疑此事的重要性，安妮仍坚持认为这种欺骗是严重的背叛。,3.0174927711486816,3.252300262451172,3.430586576461792,2.690091371536255,1.0,1.0,1.0,,,1,3.0,2.0,1.0,0.6666666666666666,0,2.0,0.0,1.0,0.7870772946859903,1.0,0.7064473684210526,0.4434237664604157,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.6666666666666666,0.0,0.0,0.0,0.0
+qwen27b,30,gold_00002,False,"Mary: hey, im kinda broke, lend me a few box
+Carter: okay, give me an hour, im at the train station
+Mary: cool, thanks",Mary ran out of money. Carter is going to lend her some in an hour.,玛丽的钱用完了，卡特打算一小时后借给她一点。,玛丽向卡特借钱，卡特同意一小时后借给她。,2.321634292602539,4.831454753875732,4.765977382659912,3.8427906036376953,1.0,1.0,1.0,,,2,2.0,0.0,1.0,0.0,0,0.0,0.0,1.0,0.803939393939394,1.0,1.0,0.6871794871794872,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+qwen27b,39,gold_00003,False,"Tina: I'll tell you something, this Emirate staff looks amazing, as movie stars
+Ala: Oh yes, I know, that's for purpose 
+Ala: It's how it's suppose to be
+Ala: They pay a lot of attention to the image
+Tina: Looks nice, pleasure to observe
+Tina: And I sucked at the airport, they've kept us one hour in the plane and finally I'll catch the evening flight back home
+Tina: Could You imagine?
+Tina: And you know, this way we had such a talkative pilot :-)
+Ala: Oh, poor you
+Ala: Pfff
+Ala: And I'm on my way to a meeting
+Tina: THE meeting?
+Ala: Yes, keep your finger crossed
+Tina: Sure, let me know how did it go
+Ala: Ok darling, in touch",Tina will catch the evening flight back home. Ala is on her way to the meeting. She will let Tina know how it went.,蒂娜将乘晚间航班回家。阿拉正在去开会的路上。她会让蒂娜知道事情的进展。,蒂娜因航班延误将乘晚班机回家，阿拉正前往重要会议，并答应告知蒂娜会议结果。,2.389779567718506,3.8191938400268555,4.057384490966797,2.793093204498291,1.0,1.0,1.0,,,3,3.0,0.0,1.0,0.0,0,0.0,1.0,0.6666666666666666,0.4603110069639027,0.5226019571153776,0.55960779853129,0.49754990925589837,3.0,0.0,,0.6666666666666666,0.0,1.0,1.0,0.0,0.0,0.6666666666666666,0.0,1.0,0.6666666666666666,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.6666666666666666,0.0
+qwen27b,65,gold_00004,False,"Ana: You sleeping?
+Catherine: Not yet.
+Ana: Wanna go visit grandma tomorrow? I miss her.
+Catherine: Yeah that would be nice :) I'll call you when I wake up
+Ana: Oki :) sleep well, good night.
+Catherine:  Good night, u too.",Ana wants to visit grandma tomorrow. Catherine will go with her. She will call Anna when she wakes up.,安娜明天想去看望奶奶。凯瑟琳会和她一起去。她起床后会给安娜打电话。,安娜提议明天去探望祖母，凯瑟琳同意并承诺早上醒来后给安娜打电话。,2.221470832824707,4.886456489562988,4.8165740966796875,4.199462890625,1.0,1.0,1.0,,,3,2.0,-1.0,0.6666666666666666,0.0,1,0.0,0.0,0.5,0.39211683501683503,0.8138888888888889,0.8619736842105263,0.6512923351158645,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.0,0.0
+qwen27b,66,gold_00005,False,"Joyce: Check this out!
+Joyce: <link>
+Michael: That's cheap!
+Edson: No way! I'm booking my ticket now!! ",Edson is booking his ticket now.,埃德森正在订票。,乔伊斯分享了一个低价优惠链接，埃德森随即决定立即预订门票。,2.5691418647766113,4.918310165405273,4.887665271759033,3.9312446117401123,1.0,1.0,1.0,,,2,3.0,1.0,1.0,0.3333333333333333,0,1.0,0.0,0.0,0.6309261841336667,0.2065972222222222,1.0,0.5023963133640553,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,2.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.6666666666666666,0.0
+qwen27b,67,gold_00006,False,"Jane: google maps says it is at least 3h <file_other>
+Steven: I used to make it in 2, trust me :D
+Jane: but it's almost 300km..
+Steven: the road is new , we will make it ^^
+Jane: I don't want  to stress out , let's meet at 4:30 instead of 5, ok?
+Steven: ok, if u reaaly want, we can meet at 4:30
+Jane: thx! 
+Jane: I will wait at the main entrance or where?
+Steven: main entrance is good for me;-) 
+Steven: cu",Jane wants to leave at 4.30 instead of 5 because Google Maps suggests the 300 km drive should take them at least 3 hours and she doesn't want to be late. She will wait for Steven at the main entrance.,简想4点半就走，而不是等到5点，因为谷歌地图提示300公里的车程至少需要3小时，她不想迟到。她会在正门处等史蒂文。,简提议将会议时间改为四点三十分，史蒂文同意该时间，并确认在主入口见面。,3.383573532104492,3.600184202194214,3.7895724773406982,3.2281742095947266,1.0,1.0,1.0,,,4,4.0,0.0,0.75,0.25,1,1.0,0.0,0.6666666666666666,0.4667132280778649,0.08456790123456788,0.866112962935406,0.6059941520467836,2.0,0.0,,1.0,0.0,0.0,0.0,0.0,3.0,0.0,0.0,3.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+qwen27b,78,gold_00007,False,"Fiona: Are you free?
+Tina: Yes, what's up?
+Fiona: I'm trying to prepare a nice dinner for Chris and I thought that maybe I could prepare this tart of yours :)
+Tina: I'm flattered!
+Fiona: Well, it IS delicious :) Could help me do it?
+Tina: Sure! It's not difficult. Do you have anything ready?
+Fiona: I must admit I bought the crust...
+Tina: Oh, ok :P Pity, but well, it's too late now.
+Fiona: I tried making the filling once, but I finished with lemony scrambled eggs...
+Tina: It happens, don't worry. The thing is that once you start adding eggs you can't stop mixing it, otherwise you'll end up with scrambled eggs.",Fiona wants to prepare dinner for Chris. She is thinking of Tina's tart. She will help her make it.,菲奥娜想为克里斯准备晚餐。她想起了蒂娜做的馅饼。蒂娜会帮她做的。,蒂娜答应帮菲奥娜为克里斯准备挞，并建议她在加蛋时持续搅拌，以免做成炒蛋。,3.233175039291382,3.444706439971924,3.824160575866699,3.4270541667938232,1.0,1.0,1.0,,,3,4.0,1.0,0.6666666666666666,0.5,1,2.0,0.0,0.5,0.7955182072829132,0.5240196078431373,1.0,0.3627450980392156,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.5,0.0,1.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.0
+qwen27b,86,gold_00008,False,"Olafur: are we doing anything for New Year's Eve?
+Nathalie: I was thinking about something classy, like opera or sth like that
+Zoe: how much does it cost?
+Olafur: opera is not for me
+Nathalie: so what do you propose?
+Nathalie: it's 100$ 
+Olafur: I was thinking about partying somewhere
+Nathalie: partying sounds fun, as long as it will be classy
+Zoe: <file_link>
+Zoe: Breakfast at Tiffany's party sounds classy
+Olafur: <file_link> 
+Olafur: is it classy enough?
+Nathalie: :O
+Nathalie: this club is AMAZING
+Zoe: whoa
+Nathalie: we'll going to Soho then
+Olafur: we just need to hurry up and buy some tickets soon
+Zoe: sure","Nathalie, Olafur and Zoe are planning the New Year's Eve. Nathalie wants something classy. Olafur doesn't like opera. They want to go to the Breakfast at Tiffany's party in Soho.",娜塔莉、奥拉维尔和佐伊正在做新年前夜的计划。娜塔莉想要有格调的。但奥拉维尔不喜欢歌剧。他们想去苏豪区蒂芙尼的聚会上吃早餐。,娜塔莉提议看歌剧被奥拉弗尔拒绝，最终三人决定去苏豪区的俱乐部参加新年派对，奥拉弗尔承诺立即购票。,3.509760856628418,3.475405693054199,3.755420446395874,3.1925623416900635,1.0,1.0,1.0,,,6,6.0,0.0,0.8333333333333334,0.16666666666666666,1,1.0,1.0,0.6,0.5924048218681162,0.31318748770411176,0.664233500978842,0.46904896421845577,2.0,0.0,,1.0,0.0,0.0,0.0,3.0,2.0,0.4,0.0,3.0,0.6,0.0,2.0,,0.0,0.0,0.0,0.0,0.0,0.6666666666666666,0.0,0.0,1.0,0.0
+qwen27b,120,gold_00009,False,"John: wanna go see ""A Star is Born"" on Wed?
+Joan: sorry can't
+Joan: super busy 
+Joan: don't have time for anything :( 
+John: that's a shame
+Joan: I'm free on Thursday
+John: I could do Thursday
+Joan: ok! so around 8pm?
+John: sure sounds great
+John: I'll see where it's palying and send you the details
+Joan: ok great!","Joan and John are going to watch ""A Star is Born"" on Thursday around 8 p.m.",琼和约翰星期四晚上8点左右去看《一个明星的诞生》。,琼因周三忙碌拒绝约翰的邀请，双方改约至周四晚八点，约翰承诺发送影院详情。,2.062098264694214,3.3198916912078857,3.1493165493011475,2.1392078399658203,1.0,1.0,1.0,,,5,6.0,1.0,1.0,0.16666666666666666,0,1.0,0.0,1.0,0.5644339990976949,0.19900932400932403,0.8998916083916084,0.44399913811678515,3.0,0.0,,1.0,0.0,0.0,0.6,0.0,2.0,0.2,0.0,4.0,0.6,0.0,2.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+qwen27b,137,gold_00010,False,"Peyton: I have been asking you to bring that video game for me
+Cameron: Honey, I am not having enough time to come home
+Peyton: When would you come home?
+Cameron: I will have to stay out of town for another week i guess
+Peyton: Cant you just deliver that game through the courier? :P
+Cameron: Dont be mean :/
+Peyton: Get the job done and come to home then. ASAP :P",Peyton is expecting Cameron to bring the video game. Cameron will probably be out for another week.,佩顿希望卡梅隆能带游戏机过来，但是卡梅隆可能还要再缺席一周。,卡梅伦因时间不足无法回家，佩顿坚持要求其通过快递寄送电子游戏并立即回家。,3.466611862182617,3.7032968997955322,3.9407382011413574,3.5496973991394043,1.0,1.0,1.0,,,3,4.0,1.0,1.0,0.25,0,1.0,0.0,1.0,0.6190002379630483,0.8378205128205128,0.7747864265703321,0.6128846834099753,3.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.6666666666666666,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.25,0.0
+qwen27b,139,gold_00011,False,"Paul: I just came back home
+Paul: What a busy day
+Paul: I forgot about my physiotherapy 
+Emma: Oh no
+Paul: It's ok, I'll schedule a new appointment
+Emma: I'll be home after midnight
+Paul: Do you want me to prepare some food for you?
+Emma: That would be lovely","Paul forgot about his physiotherapy and he will schedule a new appointment. Emma will be home after midnight, so Paul will prepare some food for her.",保罗忘记去做理疗了，得重新预约。艾玛午夜后回家，所以保罗会给她准备一些吃的。,保罗将重新预约理疗，并同意为午夜后回家的埃玛准备食物。,2.4035940170288086,4.356328010559082,4.438422203063965,3.17055082321167,1.0,1.0,1.0,,,5,4.0,-1.0,0.8,0.0,1,0.0,0.0,0.75,0.6345801100326735,0.88375,0.9160460992907802,0.9523897058823529,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.75,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.25,0.5,0.0
+qwen27b,192,gold_00012,False,"Harris: How are U?
+Lena: Fine, U?
+Harris: Been better.
+Lena: ?
+Harris: My friend Aoki died yesterday.
+Lena: O No!
+Harris: Yeah.
+Lena: What happened?
+Harris: Not sure yet. Thinking the worst...
+Lena: O how awful!
+Harris: Yes.
+Lena: You just never know.
+Harris: True.
+Lena: Had you seen her lately?
+Harris: Not for a few months. She lives in Michigan.
+Lena: Oh, that's far.
+Harris: Not too far but far enough.
+Lena: Right.
+Harris: Got to go, mom's calling.
+Lena: K bi. Feel better!
+Harris: K will do","Harris' friend, Aoki, who lives in Michigan, died yesterday. Harris hasn't seen her for a few months.",哈里斯的朋友青木住在密歇根州，昨天去世了。哈里斯有几个月没见她了。,哈里斯告知莱娜其朋友青木去世的消息，随后因母亲呼唤而结束对话。,2.2449448108673096,3.052372455596924,3.052326202392578,2.296957492828369,1.0,1.0,1.0,,,3,4.0,1.0,1.0,0.25,0,1.0,0.0,1.0,0.4110165171452315,0.1109781141817755,0.8659949997717004,0.23417899031106576,2.0,0.0,,1.0,0.0,0.0,0.6666666666666666,0.0,1.0,0.0,0.0,3.0,0.5,0.0,1.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+qwen27b,210,gold_00013,False,"Yaz: Going to slimming club tonight?
+Mary: Well, I don't want to, but I really should. I've been so bad, though!
+Yaz: Me too, choccies, wine, cake, you name it!
+Mary: Well, we should bite the bullet. She'll tell us off, I expect. Feels like being back at school!
+Yaz: Well, she IS our old cookery teacher! See you at 6ish, pick you up!?
+Mary: Yep! See you then!",Yaz and Mary are meeting tonight around 6 and going for the slimming club together. They expect to be scolded for eating too much. ,亚兹和玛丽今晚6点左右见面，一起去减肥俱乐部。他们估计吃得太多会被骂。,雅兹提议六点接玛丽去减肥俱乐部，玛丽同意该计划。,1.6205394268035889,3.258867025375366,3.185974597930908,2.093691349029541,1.0,1.0,1.0,,,4,2.0,-2.0,0.25,0.5,3,1.0,0.0,0.0,0.35344827586206895,1.0,0.9940677966101695,0.3734446328420503,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0
+qwen27b,211,gold_00014,False,"Ellie: hey, are you at the university?
+Aaliyah: yep
+Camille: I'm sick :/
+Ellie: shiet....that's bad
+Ellie: Aali, where are we having our classes now?
+Aaliyah: 342 on the second floor",Ellie's class is in 342 on the second floor.,艾莉的班级在二楼342教室。,卡米拉因病告知无法出席，阿莉雅确认课程地点为二楼342室。,4.036886215209961,3.33441424369812,3.6374056339263916,3.634270429611206,1.0,1.0,1.0,,,3,3.0,0.0,1.0,0.0,0,0.0,0.0,0.6666666666666666,0.43343790336803917,0.2804848484848485,0.9581601439496176,0.6383491461100569,2.0,0.0,,1.0,0.0,0.0,0.5,0.0,1.0,0.3333333333333333,0.0,2.0,0.5,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.3333333333333333,0.0,0.0
+qwen27b,212,gold_00015,False,"Nathan: <file_video>
+Aaron: OMG!!! 
+Aaron: 😂😂😂😂
+Aaron: looool
+Aaron: do you know her mate? 🤣🤣
+Aaron: my cat's face looks like that when he's taking a dump..🤣🤣🤣
+Aaron: <file_gif>
+Aaron: the angels must be weeping 🤭🤭🤭 
+Aaron: <file_gif>
+Aaron: <file_gif>
+Nathan: Hahahaha
+Nathan: She's having a spiritual moment 😉
+Nathan: No clue mate, Dan sent it over
+Nathan: A tragedy to say the least 😂😂
+Aaron: <file_gif>
+Aaron: looking for Jesus
+Nathan: 😂😂😂
+Aaron: hilarious..hahahaha",Nathan and Aaron are discussing a video which Nathan sent. ,内森和亚伦正在讨论内森发来的视频。,内森向亚伦分享了一段由丹转发的搞笑视频，亚伦对此大笑并开玩笑回应。,2.281040906906128,3.866062641143799,3.9850668907165527,2.980069637298584,1.0,1.0,1.0,,,3,3.0,0.0,0.6666666666666666,0.3333333333333333,1,1.0,0.0,0.5,0.5406410256410257,0.6555555555555556,0.8608080808080808,0.4444444444444444,3.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.5,0.0,1.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+qwen27b,215,gold_00016,False,"Freddie: What are you watching on Netflix? I've just finished Mad Men.
+Kelly: I've just finished The Crown. 
+Freddie: There should be new episodes coming soon.
+Kelly: OMG! i can't wait! :)
+Freddie: Try Outlander or The Tudors in the meantime.
+Jim: i'm watching I, Zombie.
+Bob: try Grimm or Sabrina. They're both great!
+Kelly: they are all horrible and disgusting! 
+Bob: i think they are funny. They're just TV shows don't take them too seriously. x 
+Greg: I'm watching House of Cards though must admit the new series is boring.
+Mike: i agree. not the same without Kevin Spacey! You should try The West Wing if you enjoy political dramas.
+Greg: Netflix original Bodyguard is supposed to be good from what I've heard.
+Mary: I'm a bit ashamed to confess i enjoy stuff like Pretty Little Liars or Gossip Girl ;)
+Nancy: don't be ashamed i enjoy them too! and my favourite one is Desperate Housewives!!!
+Mary: I know! I watched it twice!
+Alan: I'm catching up with Friends.
+Nancy: OMG! i used to love Friends!","Freddie, Kelly, Jim, Greg, Bob, Mike, Mary, Alan and Nancy are watching different shows on Netflix.",弗雷迪、凯利、吉姆、格雷格、鲍勃、迈克、玛丽、艾伦和南希正在netflix上观看不同的节目。,弗雷迪向凯利推荐《古战场传奇》或《都铎王朝》，凯利拒绝了鲍勃推荐的《格林》或《萨布丽娜》，迈克则建议格雷格观看《白宫风云》。,1.792508602142334,3.8741133213043213,4.1819915771484375,2.630533456802368,1.0,1.0,1.0,,,6,5.0,-1.0,0.16666666666666666,0.8,5,4.0,0.0,1.0,0.3006396588486141,0.0875,0.7661971830985915,0.19477619912402522,3.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+qwen27b,244,gold_00017,False,"Jones: Hey.
+Angelina: Hey.
+Angelina: Long time. How are you doing?
+Jones: I'm fine
+Jones: You?
+Angelina: I'm cool too.
+Jones: You think we can meet today later in the afternoon in town?
+Angelina: Definitely.
+Jones: Okay. I will call you to confirm where we will meet.
+Angelina: Cool",Jones and Angelina will meet in town in the afternoon.,琼斯和安吉丽娜下午会在城里见面。,琼斯提议下午在镇上见面，安吉丽娜同意，琼斯承诺随后致电确认具体地点。,3.217785358428955,4.023388862609863,4.161617755889893,3.799837827682495,1.0,1.0,1.0,,,3,3.0,0.0,1.0,0.0,0,0.0,0.0,0.6666666666666666,0.5883531968107891,0.39371648494455513,0.9288290598290598,0.7853801169590644,3.0,0.0,,1.0,0.0,0.0,0.6666666666666666,0.0,1.0,0.3333333333333333,0.0,2.0,0.5,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+qwen27b,285,gold_00018,False,"Casey: <file_photo>
+Amelia: these are so nice!!! did you do them yourself?
+Kristen: wooow amazing
+Amelia: i want my nails done like that too!
+Casey: yeah i did it myself :D got a new nail polish but damn it took me nearly 4 hours lol
+Amelia: can you do it for us too?
+Kristen: pretty please!
+Casey: sorry you guys... it was a nightmare :( seriously 4 hours for nails is too much","Casey got a new nail polish and did her nails herself. It took her nearly 4 hours, so she won't do her friends' nails, as it takes too long.",凯西买了新指甲油，自己做了指甲。她花了近4个小时，所以她不会帮朋友做指甲，因为耗时太长了。,凯西确认自己涂指甲耗时四小时。阿米莉亚和克里斯汀请求凯西帮她们涂指甲，但凯西因过程太耗时而拒绝了。,3.090622901916504,3.0526347160339355,3.4087584018707275,2.9817872047424316,1.0,1.0,1.0,,,3,4.0,1.0,1.0,0.25,0,1.0,0.0,0.6666666666666666,0.4754886307732607,0.22285087719298247,0.8657890961262553,0.32438596491228067,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.3333333333333333,0.0,2.0,0.6666666666666666,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.25,0.0
+qwen27b,319,gold_00019,False,"Sue: Call me when you get this.
+Sue: it's important
+Steve: OK, I'm calling",Steve is calling Sue at her request.,史蒂夫正按照苏的要求给她打电话。,苏要求史蒂夫收到消息后立即致电，史蒂夫随即同意并拨通了电话。,2.2504444122314453,4.680522918701172,4.686573505401611,4.209774971008301,1.0,1.0,1.0,,,2,2.0,0.0,1.0,0.0,0,0.0,0.0,1.0,0.4753887128621941,1.0,0.9111471861471861,0.3336111111111111,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0
+qwen27b,346,gold_00020,False,"Timmy: Who do u wanna invite?
+Gemma: Well, there's u and ur date :)
+Timmy: Not sure about the date, but I'll be there :) who else?
+Gemma: I was thinking about Lona and Michelle.
+Timmy: Still thinking ur getting invites to their weddings?
+Gemma: It's not like that.
+Timmy: Sure it is ;) just don't wanna admit it ;)
+Gemma: Fine! I want to come to their wedding receptions!
+Timmy: There we go :) was it so hard?
+Gemma: Yes.
+Timmy: And u think u can change their minds?
+Gemma: Dunno.","Gemma will invite Timmy and his Date, as well as Lona and Michelle to her wedding.",杰玛将邀请蒂米和他的约会对象，以及罗娜和米歇尔参加她的婚礼。,杰玛承认她想参加洛娜和米歇尔的婚礼，但不确定能否说服她们邀请自己。,2.3239312171936035,2.5899300575256348,2.7558813095092773,2.3128814697265625,1.0,1.0,1.0,,,4,5.0,1.0,0.75,0.4,1,2.0,1.0,0.6666666666666666,0.7129744346834416,0.5375925925925925,0.7202682163300308,0.3763702690378477,2.0,0.0,,1.0,0.0,0.0,0.6666666666666666,0.0,1.0,0.6666666666666666,0.0,1.0,0.6666666666666666,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+qwen27b,355,gold_00021,False,"Ann: Congratulations!!
+Ann: You did great, both of you!
+Sue: Thanks, Ann
+Julie: I'm glad it's over!
+Julie: That's co cute of you, girl!
+Ann: Let's have a little celebration tonight! 
+Sue: I'm in
+Julie: me too!!! aww","Ann, Sue and Julie did a great job and they will have a little celebration tonight.",安、苏和朱莉做得很好，今晚他们会举行一个小小的庆祝活动。,安提议今晚举行庆祝活动，苏和朱莉均表示同意参加。,1.9689217805862427,4.896969795227051,4.895956039428711,4.743666172027588,1.0,1.0,1.0,,,3,3.0,0.0,0.6666666666666666,0.3333333333333333,1,1.0,0.0,0.5,0.9038461538461539,0.6037037037037036,0.8426666666666667,0.6547058823529411,2.0,0.0,,1.0,0.0,0.0,0.0,0.0,2.0,0.5,0.0,1.0,0.5,0.0,1.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+qwen27b,367,gold_00022,False,"Steve: hiya the dishwasher has turned up
+Mum: good did they install it for you
+Steve: yes they did a good job
+Steve: <file_photo>
+Mum: looks really nice
+Steve: yes it does its nice and quiet
+Mum: is it a 12 place setting one?
+Steve: I think so, not that I ever have 12 for dinner lol
+Mum: not but you dont have to put it on every day
+Steve: no every other
+Mum: yes I'm glad you are pleased with it xx
+Steve: I am thanks mum xxx",Steve is happy that he got a new dishwasher installed.,史蒂夫很高兴他装了一台新的洗碗机。,史蒂夫告知母亲洗碗机已安装完毕，确认其为十二人份型号，并计划每隔一天使用一次。,3.459632396697998,3.282501459121704,3.5674126148223877,3.127635955810547,1.0,1.0,1.0,,,2,3.0,1.0,1.0,0.3333333333333333,0,1.0,1.0,0.5,0.6035330284085685,0.551219512195122,0.5938861985472155,0.2393687707641196,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.5,0.0,1.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+qwen27b,393,gold_00023,False,"Marika: Are you coming today?
+Lara: Yes!
+Marika: Great!",Marika is coming today.,玛丽卡今天会来。,玛丽卡询问劳拉今天是否出席，劳拉确认会来。,1.3536109924316406,2.1123158931732178,1.9274115562438965,1.3944357633590698,1.0,1.0,1.0,,,2,2.0,0.0,1.0,0.0,0,0.0,0.0,1.0,0.5809187647795242,0.06999999999999999,1.0,0.485,1.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,2.0,,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0
+qwen27b,417,gold_00024,False,"Miranda: Hi S, could we cancel tomorrow's meeting?
+Stephanie: again? what happened?
+Miranda: I have to work :(
+Stephanie: you work 20 hours a day!
+Miranda: that's what young doctors do
+Stephanie: they kill themselves working
+Miranda: no they come close to death but survive and it makes them immortal
+Stephanie: as long as you have an explanation :D",Miranda can't make her meeting with Stephanie as she has to work. ,米兰达不能去见斯蒂芬妮，因为她要工作。,米兰达因工作原因请求取消明天的会议，斯特凡妮接受了该请求，两人最终达成一致取消会议。,2.1186392307281494,2.9076082706451416,3.1620516777038574,2.3194408416748047,1.0,1.0,1.0,,,2,2.0,0.0,0.5,0.5,1,1.0,0.0,1.0,0.5578053259871443,1.0,1.0,0.4829302325581396,2.0,0.0,,1.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,1.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.0
+qwen27b,432,gold_00025,False,"Javier: Hey do you know any tattoo parlors over here with English speaking employees?
+Judie: Oh there's Warsaw ink
+Javier: the name sounds neat... have you had a tattoo done there?
+Judie: nope but my gf has
+Javier: got a pic?
+Judie: <file_photo>
+Javier: wow that looks amazing
+Javier: how much did she pay?
+Judie: it was a 1000
+Javier: fuck
+Javier: let me just get a tatttoo back in colombia then, thx",Javier was initially eager to have a tatoo done at Warsaw Ink but the price turned out to be too high. Javier decided to have a tatoo done in Colombia.,哈维尔最初很想在warsaw ink纹身，但价格太高了。他决定去哥伦比亚做纹身。,朱迪推荐华沙纹身店并告知价格为1000，哈维尔因价格过高决定改在哥伦比亚纹身。,2.40614652633667,2.5354034900665283,2.733344316482544,2.365407943725586,1.0,1.0,1.0,,,3,4.0,1.0,1.0,0.25,0,1.0,0.0,1.0,0.44674267476975177,0.3923611111111111,0.8682028897028897,0.5790212542639727,3.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.3333333333333333,0.0,2.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.25,0.0
+qwen27b,433,gold_00026,False,"Sam: You own a really nice hotel, guys 😊
+Jessica: Thanks Sam 😊
+Michael: Thanks, mate 
+Sam: How is our hotel room set for next month? Hope that the manager will arrange the very best for us 😉
+Michael: you’re damn right, Sam
+Michael: are you coming on the 15th of August?
+Sam: Yep! We’ll be at the hotel around 2 p.m.
+Jessica: I’m soooo happy to see you again!
+Sam: Me, too 😊",Sam appreciates the hotel owned by Jessica and Michael. Sam is going there on the 15th August at around 2pm.,山姆很喜欢杰西卡和迈克尔的酒店。他会在8月15日下午2点左右去那里。,迈克尔确认酒店预订已安排，并与萨姆最终确定抵达时间为8月15日下午2点。,3.41050124168396,3.7571053504943848,3.809126853942871,3.0979743003845215,1.0,1.0,1.0,,,2,3.0,1.0,0.5,0.6666666666666666,1,2.0,0.0,0.0,0.3375,1.0,0.5287719298245614,0.436748182419035,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.3333333333333333,0.0
+qwen27b,442,gold_00027,False,"Terence: What the hell, Danny. You took my money, didn't you? :/
+Daniel: What, your money?? Why would I
+Terence: Don't play dumb
+Daniel: Are you calling me a liar, Terry??
+Terence: I'm not stupid, Danny
+Daniel: And I'm not a thief?? That's not cool, man :/
+Terence: ... Oh shit, I'm sorry, I've just found it. Forgot I'd placed it elsewhere last month
+Daniel: Good for you then
+Terence: Are you upset
+Daniel: What do you think?? Yeah, oh-fucking-course I am",Terence accused Daniel of taking his money. Terence finds the money later and apologizes to Daniel. Daniel is still upset.,特伦斯指控丹尼尔偷了他的钱。后来他找到了钱，就向丹尼尔道歉。但是丹尼尔还在生气。,特伦斯指控丹尼尔偷钱，丹尼尔予以否认。特伦斯随后找到钱并撤回指控，但丹尼尔对此感到愤怒。,4.325227737426758,3.701474666595459,3.9087975025177,4.254673957824707,1.0,1.0,1.0,,,4,4.0,0.0,1.0,0.0,0,0.0,0.0,0.75,0.6219991764109412,0.11388697705802969,0.8827325426439232,0.39785714285714285,3.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,4.0,0.3333333333333333,0.0,2.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+qwen27b,499,gold_00028,False,"Natacha: hi, i can come and pick you up at the RER.
+Charles: so  nice. I just landed. I think i'll arrive about 5:30pm. I'll give you a call
+Natacha: ok ,call  me when  you'll be at the station Vesinet. 
+Charles: thanks . see you",Charles has just landed and he will be at RER about 5.30 PM. Natacha will pick him up from there.,查尔斯刚刚落地，他会在下午五点半到达rer，娜塔夏会在那里接他。,娜塔莎同意下午五点半在韦西内站接查尔斯，查尔斯承诺到达时给她打电话。,2.2401604652404785,3.8113515377044678,3.791762351989746,2.816643238067627,1.0,1.0,1.0,,,3,4.0,1.0,1.0,0.25,0,1.0,0.0,1.0,0.6207852774137178,1.0,0.9366666666666666,0.5299797775530839,3.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,2.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.25,0.0
+qwen27b,528,gold_00029,False,"Meg: still at school?
+Ann: i have extra math classes
+Meg: so when can i meet you?
+Ann: i will be home at 7",Ann is still at school. She will be home at 7 so she can meet Meg then.,安还在学校，她7点会回家，这样她就可以和麦格见面了。,安因有额外的数学课而无法立即见面，但她承诺晚上七点会在家里。,2.520378589630127,3.029374122619629,3.103022813796997,2.3649818897247314,1.0,1.0,1.0,,,2,4.0,2.0,1.0,0.5,0,2.0,0.0,0.5,0.5292795753286148,1.0,1.0,0.4477124183006536,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.5,1.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.25,0.0,0.5,0.5,0.0
+qwen27b,532,gold_00030,False,"Pete: What flavour yogurt did you want again? My brain is like a sieve today.
+Jen: Pear but only if they've got it. Otherwise don't worry about it.
+Pete: I'll have a look around. If they don't have pear can I get a different flavour?
+Jen: I don't like any other flavour. If they don't have pear just don't get anything at all then.
+Pete: OK.",Pete will get a pear yogurt for Jen if they have it.,如果商店里有梨味酸奶， 皮特会给珍买的。,珍妮要求皮特仅在有梨味酸奶时购买，拒绝其他口味。皮特最终同意，若无梨味则不买任何酸奶。,2.434943675994873,3.310608386993408,3.12270188331604,2.3705456256866455,1.0,1.0,1.0,,,3,4.0,1.0,1.0,0.25,0,1.0,1.0,0.6666666666666666,0.5023928830696835,0.17055555555555554,0.5406402605949728,0.7636058059587472,3.0,0.0,,1.0,0.0,0.0,0.6666666666666666,0.0,1.0,0.0,0.0,3.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.25,0.0,0.0
+qwen27b,536,gold_00031,False,"Christie: how are you after the party?
+Katie: really tired... and you?
+Christie: same
+Christie: the party was great!
+Katie: Yeah, we had fun! :)",Christie and Katie are tired after the party. They both had fun.,克里斯蒂和凯蒂在聚会后累了。他们都玩得很开心。,克里斯蒂询问凯蒂派对后的状况，凯蒂表示很累，但两人一致认为派对非常愉快。,2.2377066612243652,2.4814929962158203,2.5976486206054688,2.1861701011657715,1.0,1.0,1.0,,,3,4.0,1.0,1.0,0.25,0,1.0,0.0,0.6666666666666666,0.5086662947021626,0.2422222222222222,0.8999461279461279,0.5567114093959731,2.0,0.0,,1.0,0.0,0.0,0.3333333333333333,1.0,1.0,0.3333333333333333,0.0,2.0,0.5,0.0,1.0,,0.0,0.0,0.0,0.0,0.0,0.25,0.0,0.0,0.75,0.0
+qwen27b,537,gold_00032,False,"Sam: Are you working tomorrow?
+Carla: No, it's my day off
+Sam: I'm free in the afternoon, do you fancy meeting up?
+Carla: Yeah, sure
+Sam: Ok, great! Shall we go to Meanwood?
+Carla: Ok, there's that cafe there that does the yummy cakes. Meet you at 2?
+Sam: Yes - looking forward to it!
+Carla: See you tom! xx",Carla has a day off tomorrow. She will meet Sam in Meanwood in a cafe at 2 pm.,卡拉明天有一天假。她将在下午两点在meanwood的一个咖啡馆和山姆见面。,山姆提议明天下午见面，卡拉同意并确认在米恩伍德的咖啡馆两点碰头，山姆随后确认了时间。,2.745206356048584,4.119992733001709,3.8510656356811523,2.7944021224975586,1.0,1.0,1.0,,,3,5.0,2.0,1.0,0.4,0,2.0,1.0,0.6666666666666666,0.45061097953107615,0.09340776182881445,0.9059533523445803,0.7264367816091953,3.0,0.0,,1.0,0.0,0.0,0.3333333333333333,0.0,2.0,0.0,0.0,3.0,0.5,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+qwen27b,544,gold_00033,False,"Joana: wana play some games?
+Sandy: what games?
+Joana: maybe dixit?
+Joana: or carcassonne?
+Sandy: why not?
+Joana: ok, I'll bring them 2 u
+Sandy: great :)",Joana will bring Sandy some games like dixit and carcassonne.,琼娜将为桑迪带来一些像迪克西特和卡尔卡松这样的游戏。,乔安娜提议玩迪克斯特或卡卡颂，桑迪表示同意，乔安娜承诺将游戏带到桑迪处。,2.349867582321167,4.886710166931152,4.845852851867676,4.450534820556641,1.0,1.0,1.0,,,3,3.0,0.0,1.0,0.0,0,0.0,1.0,0.6666666666666666,0.5601454156386462,0.2922222222222222,0.6760884709160572,0.466887417218543,3.0,0.0,,0.6666666666666666,0.0,1.0,0.3333333333333333,0.0,2.0,0.3333333333333333,0.0,2.0,0.6666666666666666,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+qwen27b,548,gold_00034,False,"Steve: Bought the new Dream Theater album 5 minutes ago. I hope it's good.
+Rob: I have it here on my desk, ready for the first listening.
+Steve: Ok, I'll tell you later what I think about it.
+Rob: Same here. See you later!","Steve and Rob will talk about new Dream Theater album, after they finish listening.",史蒂夫和罗伯将在听完后谈论新的梦剧场专辑。,史蒂夫购买了新的梦剧院乐队专辑，罗伯也已备好该专辑，两人约定稍后分享听后感。,2.7646842002868652,3.4191179275512695,3.6873931884765625,2.7496089935302734,1.0,1.0,1.0,,,3,3.0,0.0,1.0,0.0,0,0.0,0.0,1.0,0.544299853006207,0.36650326797385624,0.9963591799915656,0.5986837226548016,3.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.3333333333333333,0.0,2.0,0.3333333333333333,0.0,2.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.6666666666666666,0.0
+qwen27b,551,gold_00035,False,"Peter: Can you send me the link of your beauty shop?
+Joy: Definitely
+Joy: It is https:// *********
+Joy: Hope you will like it and feel free to ask any questions.
+Peter: Okay. Let me look at it.",Joy sent Peter the link to her beauty shop.,乔伊把她美容店的链接发给了彼得。,彼得向乔伊索要美容店链接，乔伊成功提供，彼得同意查看。,1.9717202186584473,4.908546447753906,4.857072353363037,4.628561019897461,1.0,1.0,1.0,,,2,2.0,0.0,1.0,0.0,0,0.0,0.0,1.0,0.6569669484267581,0.3993589743589744,1.0,0.5424263674614306,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.5,0.0,1.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+qwen27b,590,gold_00036,False,"Ethan: who's going to see solstafir?
+Noah: solstafir! when?
+Noah: i had no idea they were playing
+Archie: I'm not :D.
+Leo: i'm going ofc!
+Ethan: 21.11
+Noah: that's a wednesday... ehh...
+Noah: i'll have to see, might have to stay late at work...
+Leo: nooo you have to come
+Ethan: yeah you have to!
+Archie: There are better concerts :P.
+Noah: i know, i would really like to see them, but yeah
+Leo: archie... :P
+Ethan: don't mind him :P
+Noah: i'll see and let you know, it would really suck to miss them
+Leo: yup!
+Ethan: yup! x2","Ethan and Leo are going to see Sólstafir on 21.11. Noah would like to go too, but he might have to stay late at work.",伊森和里奥要在21点11分去见索斯塔弗。诺亚也想去，但他可能得工作到很晚。,伊桑询问索尔斯塔菲尔演唱会出席情况，利奥确认参加，诺亚因工作不确定但承诺稍后通知。,3.2725789546966553,3.4074058532714844,3.7422235012054443,3.129702568054199,1.0,1.0,1.0,,,4,5.0,1.0,1.0,0.2,0,1.0,0.0,1.0,0.463708262086892,0.06400850611376926,0.9964999999999999,0.35050098407586333,3.0,0.0,,1.0,0.0,0.0,0.5,2.0,0.0,0.0,0.0,4.0,0.5,0.0,2.0,,0.0,0.0,0.0,0.0,0.0,0.4,0.0,0.0,0.4,0.0
+qwen27b,598,gold_00037,False,"Bradley: haha look a cat invaded the pitch at Goodison <file_other>
+Jill: hahahaha
+Julia: what a sweet little black ball of fur
+Jill: here's the video :D <file_other>
+Julia: haha
+Bradley: and the commentary :D
+Bradley: that's the best entertainment Everton fans have had all season :D",A sweet little black cat got into the pitch during the Everton's football match.,在埃弗顿的足球比赛中，一只可爱的小黑猫钻进了球场。,布拉德利告知大家古迪逊球场出现猫咪，吉尔分享了视频，布拉德利随后分享了现场解说音频。,2.2471580505371094,4.034698009490967,4.2318034172058105,3.0970935821533203,1.0,1.0,1.0,,,3,3.0,0.0,0.6666666666666666,0.3333333333333333,1,1.0,0.0,0.0,0.6394063869228176,0.14494117647058824,0.8760714285714286,0.34393939393939393,3.0,0.0,,1.0,0.0,0.0,0.5,0.0,1.0,0.0,0.0,2.0,0.5,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+qwen27b,605,gold_00038,False,"Barbara: I'm home already, you can come over
+Sean: May I bring the dog?
+Zac: I'm on my way
+Barbara: sure you can, Sean
+Barbara: do you want to stay overnight?
+Sean: great!
+Sean: I thought about it
+Barbara: nice!","Barbara, Sean and Zac are meeting at Barbara's place tonight. Sean will bring the dog. Sean and Zac will stay overnight.",芭芭拉、肖恩和扎克今晚在芭芭拉家见面。肖恩会把狗带来的，肖恩和扎克会在这里过夜。,芭芭拉邀请肖恩来家里，允许他带狗，肖恩同意留宿。,2.5371530055999756,4.1708245277404785,4.199893951416016,3.6188623905181885,1.0,1.0,1.0,,,4,5.0,1.0,1.0,0.2,0,1.0,0.0,0.75,0.649876821188677,0.7597222222222222,1.0,0.55106311736146,3.0,0.0,,1.0,0.0,0.0,0.75,0.0,1.0,1.0,0.0,0.0,0.5,2.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.6,0.0,0.0
+qwen27b,616,gold_00039,False,"Jake: dude, I just pulled a TOTW
+Jake: my first this year!
+Tom: grats!
+Tom: gonna sell it?
+Jake: yeah
+Jake: I'll try him in one or two matches
+Jake: he's not a good fit for my squads
+Tom: you'll have plenty of coins to buy someone that fits
+Jake: that's the plan
+Jake: I got lucky with this one
+Tom: my pull luck sucks this year
+Tom: not a single great player 
+Jake: you're good at the game
+Jake: you don't need help :P
+Tom: I like shiny things :P",Jake has got his first TOTW this year. Tom doesn't have a great team. ,杰克今年拿到了第一个totw ，汤姆的团队并不出色。,杰克获得了一名周最佳球员，他计划试用一两场比赛后将其出售，以便购买更适合自己阵容的球员。,2.685147285461426,3.631230592727661,3.9169375896453857,2.885557174682617,1.0,1.0,1.0,,,3,3.0,0.0,0.6666666666666666,0.3333333333333333,1,1.0,0.0,0.5,0.4015470380561757,0.5,0.6435739276300024,0.3823596142938174,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.5,0.0,1.0,1.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+qwen27b,621,gold_00040,False,"Phil: Good evening Deana! Many thanks for this nice card from you. Constantine was very happy!
+Phil: Are these sunglasses also from you?
+Deana: I thought they belonged your Cathreen!
+Phil: Nope. She says they aren't hers.
+Deana: Mine either. Look, maybe you feel like keeping them?
+Deana: I seem to have so many sunglasses...
+Deana: 8‑D
+Phil: Where did you find them, possible that they belong to Adrian?
+Deana: In this empty place above the radio. In the very back.
+Deana: If Adrian wants it, no pro!
+Deana: :)
+Phil: :))
+Deana: Exactly!
+Phil: Ok, they don't belong to any of us, and nobody else drove your car. But we can look after these sunglasses.
+Deana: Glad to hear it!","Phil received a card from Deana. Constantine was happy. Phil has sunglasses, that Deana found in the back above the radio. Deana and Phil don't know who they belong too. Phil will keep the sunglasses.",菲尔收到了迪安娜的一张卡片，康斯坦丁很开心。菲尔有副墨镜。蒂娜在后面收音机上面找到的。迪安娜和菲尔也不知道他们属于谁。菲尔会留着这副墨镜的。,迪安娜将太阳镜送给菲尔，菲尔同意收下并负责保管。,1.9431887865066528,3.4233598709106445,3.434021472930908,2.3789329528808594,1.0,1.0,1.0,,,4,2.0,-2.0,0.25,0.5,3,1.0,1.0,0.0,0.4362237762237762,0.09999999999999999,0.761593707250342,0.4462360992301112,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.0
+qwen27b,635,gold_00041,False,"Mell: Hi there! How are you doing?
+Gloria: Hi Mell! We are fine, just the daily grind ;) And yourselves?
+Mell: Not much happening either. An odd phone call with the kids. Or Tad's sister:(( Not much otherwise.
+Gloria: Yeah... Life has become so quite since the kids are out of the house. We had more to get used to it. But it must hard for you. Especially you I mean.
+Mell: I don't know. Sometimes I even forget that I should be missing them. In a way I do like this peace and quiet now.
+Gloria: Small wonder. You had a hell of a time with them just before they went to college. I'd say you need to recover now.
+Mell: I guess you're right. But maybe I should feel guilty or something?
+Gloria: Don't be silly! You are a fantastic mom.
+Mell: Thanks Gloria.
+Gloria: Anyway I'm happy to hear from you again. We should really have a nice do again.
+Mell: YES! Splendid!
+Gloria: The weather is just brilliant, perfect for a BBQ. What do you think?
+Mell: I'm all for it. At my place? I'd love it.
+Gloria: Can't be better. I love your garden.
+Mell: We're thinking about extending the terrace. I must show you my drawings, just a few ideas. It would be great to hear your opinion.
+Gloria: I'd love to. But you know how little I know about garden design, or however you call it.
+Mell: We'll have a look at them. Now the BBQ. At the weekend I suppose?
+Gloria: Let me check the calendar. Here's our family planner. A horrible name, isn't it? So this weekend suits us fine. At the next one, on Saturday, Mark has penciled something in but I can't read it. So what about this Saturday?
+Mell: Perfect. At least we know the weather holds. Shall I do the food and you the drinks?
+Gloria: And I'll get us some dessert as well. 
+Mell: Very good indeed. It's always so easy going with you.
+Gloria: Ta! You were thinking about Tad's sister?
+Mell: I'm afraid so. I'm so happy she moved up to Scotland and I don't have to put up with her trying to run my household. Tad feels relieved too.
+Gloria: Good riddance! I could really never warm up to her.
+Mell: Nobody can! Anyway she's gone and we're going to have a fantastic barbecue. Without her.
+Gloria: Yes, we are. Oh I'm so happy you've phoned!
+Mell: Looking forward to our BBQ on Saturday!
+Gloria: So long!","Gloria and Mell plan to have a barbeque at Mell's place on Saturday. They are happy, because Tad's sister moved to Scotland. Mell needs Gloria's advice on garden design.",格洛丽亚和梅尔计划星期六在梅尔家吃烧烤。他们很高兴，因为泰德的姐姐搬到了苏格兰。梅尔需要格洛丽亚对花园设计的建议。,梅尔和格洛里亚商定本周六在梅尔家举办烧烤，梅尔负责准备食物，格洛里亚负责饮料和甜点。,1.2075058221817017,4.118173599243164,4.430563926696777,2.622905731201172,1.0,0.5,0.6666666666666666,"mark, tad",,5,5.0,0.0,0.6,0.4,2,2.0,0.0,0.6666666666666666,0.6394182583019595,0.4108843969827951,0.8185898239187713,0.5454074074074073,3.0,0.0,,1.0,0.0,0.0,0.6666666666666666,0.0,1.0,0.3333333333333333,0.0,2.0,0.6666666666666666,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.6,0.0
+qwen27b,649,gold_00042,False,"Callan: Something's wrong with my Samsung S8.
+Wade: What, exactly?
+Callan: All I get is a black screen.
+Wade: Did you drop it or something?
+Callan: I think I know, this has happened before.
+Wade:  It did? What happened before?
+Callan: It overheats and then it takes a while for it to restart again..
+Wade: That sucks.. Be carefull with the battery, it can be dangerous.
+Callan: It sure can, but I'm going to the store and let them see it. It's still under warranty.
+Wade: Will you lose all your stuff?
+Callan: No, I always back up my files.","Callan's Samsung S8 overheats, so he's going to the store to get it repaired.",卡伦的三星s8过热了，所以他要去店里修理。,卡兰的三星S8因过热黑屏，韦德警告电池危险后，卡兰决定去商店保修，并确认数据已备份。,3.8913943767547607,3.8074100017547607,3.9763598442077637,3.6430935859680176,1.0,1.0,1.0,,,3,4.0,1.0,0.6666666666666666,0.5,1,2.0,0.0,0.5,0.623073172764397,0.06305147058823529,0.7282591689813503,0.3624775784753363,2.0,0.0,,1.0,0.0,0.0,0.5,0.0,1.0,0.0,0.0,2.0,0.5,0.0,1.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.0
+qwen27b,676,gold_00043,False,"Anna: Mum, I have a awful stomachache.
+Joanna: Oh, dear, when did you get it?
+Anna: At night, and it won’t stop:-(
+Joanna: Is it something you ate?
+Anna: Maybe. I'm not sure.
+Joanna: What did you have for breakfast?
+Anna: The usual, cereal with milk and a banana.
+Joanna: Maybe the milk was bad.
+Anna: It didn't smell bad.
+Joanna: Maybe the banana was bad.
+Anna: No, the banana was delicious.
+Joanna: Maybe you just need to go to the bathroom.
+Anna: No, that's not the problem.
+Joanna: Maybe it will go away in a little while.
+Anna: I wish it would :-(
+Anna: Hopefully. If not, maybe we should go and see a doctor.
+Joanna: Yeah, I think so...
+Anna: I’ll get you a hot tea with some fresh mint leaves. Hope it will help. 
+Joanna: Please do, I’m in my room...
+Anna: Will be in ten minutes:-)",Anna got an awful stomachache at night but she doesn't know its cause. Her mom Joanna will make her hot tea with some fresh mint leaves.,安娜夜里胃疼得厉害，但她不知道其中的原因。她的妈妈乔安娜会用新鲜的薄荷叶为她做热茶。,安娜提出为乔安娜泡薄荷茶，乔安娜接受并告知自己在房间。两人还约定若胃痛未缓解则去看医生。,2.678659439086914,3.8624167442321777,4.091814041137695,3.385361909866333,1.0,1.0,1.0,,,4,5.0,1.0,0.75,0.4,1,2.0,0.0,0.6666666666666666,0.6242308293577188,0.08370629370629372,0.8245124604274986,0.447011385199241,3.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,3.0,1.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+qwen27b,678,gold_00044,False,"Sam: Where are you?
+Kate: downstairs
+Sam: already?
+Kate: sure, come down
+Jeff: We're in the little room next to the reception
+Kate: have you noticed the woman making a cake?
+Sam: yes
+Kate: did you see the cake?
+Sam: I didn't pay attention, why?
+Kate: there was a huge penis on it
+Kate: made of marzipan or sth
+Sam: hahah, really?
+Kate: when I noticed it, I started laughing
+Kate: so she laughed too
+Sam: nice
+Kate: I asked her what's she doing
+Kate: Somebody ordered a cake with a huge penis with balls and chocolate hair
+Sam: hahah, I must see it!
+Kate: she is working in the small room under the stairs
+Sam: right, there is a kitchen",Kate and Jeff are downstairs in a room next to the reception. Some lady is making a marzipan cake. ,凯特和杰夫在楼下接待处旁边的一个房间里。有位女士正在做杏仁蛋糕。,凯特描述了一个带有露骨图案的蛋糕，并指出它在楼梯下的小房间里制作，山姆决定前去观看。,4.414841651916504,3.8052878379821777,4.016475677490234,3.866853952407837,1.0,1.0,1.0,,,3,4.0,1.0,1.0,0.25,0,1.0,2.0,1.0,0.3683260322224778,0.13960389036251106,0.5248866809533087,0.21798449612403098,3.0,0.0,,1.0,0.0,0.0,0.3333333333333333,0.0,2.0,0.0,0.0,3.0,0.3333333333333333,0.0,2.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.25,0.0
+qwen27b,690,gold_00045,False,"Mia: God, he keeps talking about the stupid wall
+Jennifer: I think he's just senile
+Karine: unfortunately it's much more
+Karine: this populist strategy to scare people with a minority
+Karine: and then present himself as the only savior
+Peter: Karine is right, I think he's not as senile and stupid as we would like to believe
+Mia: so it's even worse - he's pure evil
+Peter: possibly yes
+Karine: I really think so, because it's not only about politics anymore
+Karine: he is destroying the Earth
+Karine: trying to shake the world's order
+Jennifer: but he's also quite stupid
+Jennifer: and the dangerous thing is his self confidence
+Jennifer: he's persistence 
+Jennifer: and ignorance
+Karine: but we have a chance to change it
+Karine: maybe Trump will be over soon?
+Mia: we will see
+Mia: but we should do anything to win the next elections
+Karine: everything!","Mia, Jennifer, Karine and Peter do not like Trump.",米亚、珍妮弗、卡琳和彼得不喜欢特朗普。,卡琳和彼得认定该人物是危险的战略威胁，米娅承诺将不惜一切代价赢得下次选举。,2.4095311164855957,3.136507034301758,3.6130528450012207,2.659821033477783,1.0,1.0,1.0,,,4,6.0,2.0,0.75,0.5,1,3.0,2.0,0.6666666666666666,0.516882883655346,0.07056309703368527,0.7247295564918019,0.3149717514124294,2.0,0.0,,1.0,0.0,0.0,0.3333333333333333,0.0,2.0,0.0,0.0,3.0,0.3333333333333333,0.0,2.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+qwen27b,711,gold_00046,False,"Pedro: batman or superman??
+Alex: honestly..  neither
+Pedro: WHAT??
+Alex: i honestly like the flash
+Pedro: whats so good about the flash :P
+Alex: duuude, he can do almost anything
+Pedro: not anything
+Alex: yea im sure batman can run as fast -_-
+Pedro: superhuman speed? thats your pitch?
+Alex: that speed opens up the whole multiverse for him.. you seriously dont get how powerful he can be
+Pedro: yeah i get your point",Alex prefers the Flash to Barman and Superman thanks to his speed.,阿莱克斯更喜欢闪电侠，因为他的速度。,亚历克斯拒绝蝙蝠侠和超人，偏爱闪电侠，并解释其速度赋予跨宇宙力量。佩德罗最终认可了亚历克斯的观点。,1.9593780040740967,2.0791494846343994,2.199369192123413,1.965777039527893,1.0,1.0,1.0,,,3,3.0,0.0,0.6666666666666666,0.3333333333333333,1,1.0,1.0,0.5,0.4143313261028678,0.10043478260869565,0.7833333333333332,0.2582722513089005,3.0,0.0,,1.0,0.0,0.0,0.5,0.0,1.0,0.0,0.0,2.0,0.5,0.0,1.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.3333333333333333,0.0
+qwen27b,737,gold_00047,False,"Damian: are you downtown?
+Ethan: yes
+Ethan: why?
+Damian: can you buy me a kebab?
+Damian: i'm starving
+Ethan: why won't you cook something for both of us, huh?
+Damian: man, give me a break, i had a rough day
+Ethan: ok ok
+Ethan: but i really wish you weren't such a parasite
+Damian: i'll change, scout's honour",Ethan will buy Damian a kebab. Damian had a bad day.,伊森会请达米安吃烤肉串，达米安今天过得很糟糕。,达米安请求伊森为他买烤肉串，伊森拒绝并批评达米安像个寄生虫。,2.2939095497131348,4.892057418823242,4.877366065979004,4.763265609741211,1.0,1.0,1.0,,,3,2.0,-1.0,0.3333333333333333,0.5,2,1.0,0.0,1.0,0.508495145631068,1.0,0.8300242130750606,0.3529801324503311,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+qwen27b,767,gold_00048,False,"Barry: I'm gonna go march in Women's strike, anyone interested?
+Jake: I am, already made plans with some friends, wanna join?
+Dave: I am down too, Kelly is coming with me
+Barry: Let's just meet around the campus at noon","Barry, Dave, Kelly, and Jake will meet around the campus at 12 to join Women's strike.",巴里、戴夫、凯利和杰克将于12点在校园附近集合，参加妇女罢工。,巴里邀请杰克和戴夫参加女性罢工游行，两人均同意，并约定中午在校园集合。,2.5489277839660645,3.719621419906616,3.854034185409546,2.8795957565307617,1.0,1.0,1.0,,,4,4.0,0.0,1.0,0.0,0,0.0,1.0,0.75,0.47854296888932113,0.39282407407407405,0.7873500659127177,0.731704885343968,3.0,0.0,,1.0,0.0,0.0,0.0,0.0,4.0,0.25,0.0,3.0,0.0,3.0,1.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.75,0.75,0.0
+qwen27b,799,gold_00049,False,"Martha: Hey, can I ask you a question?
+Ophelia: Do we know each other?
+Martha: We don't, but do you mind if I ask you about the lenses from your profile picture? they are awesome and I would like to buy the similar ones
+Ophelia: it's from Crazy Lenses. They have quite reasonable prices and very fast shipping.
+Martha: Thanks!!! I'll check them :)
+Ophelia: No problem :)",Martha likes Ophelia's lenses and wants to buy similar ones. Ophelia got them from Crazy Lenses.,玛莎喜欢奥菲莉娅的眼镜，想买类似的，奥菲莉娅是从crazy lens上买的。,玛莎向奥菲莉亚询问美瞳品牌，奥菲莉亚推荐了疯狂美瞳，玛莎决定去查看。,2.46224308013916,4.303536415100098,4.273667335510254,3.8674566745758057,1.0,1.0,1.0,,,3,3.0,0.0,1.0,0.0,0,0.0,2.0,0.3333333333333333,0.4555493567536883,0.29353535353535354,0.41270356065557046,0.5325423728813559,3.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.3333333333333333,0.0,2.0,0.6666666666666666,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.3333333333333333,0.0
+qwen27b,800,gold_00050,False,"Linda: Hi Dad, I want to buy flowers for mum! But I don't remember which one she likes :(
+Michael: Well, she likes all the flowers I believe
+Linda: That doesn't help! I'm on a flower market right now!
+Michael: Send me some pics then
+Linda: <file_photo> 
+Michael: Tulips are nice, roses too
+Linda:  What about carnations?
+Michael: No, carnations are boring :D
+Linda: Thanks Dad, srsly…
+Michael:  What about freesias? She likes them a lot, are there any there?
+Linda: <file_photo> 
+Michael: Take those!",Linda wants to buy flowers for her mother and asks Michael which flowers does she like. Michael suggests Linda to buy freesias.,琳达想给她妈妈买花，问迈克尔她喜欢哪种花。迈克尔建议琳达买小苍兰。,琳达向父亲迈克尔请教为母亲选花的事宜。迈克尔推荐了香雪兰，并指示琳达购买照片中的那束。,3.2866907119750977,3.6651458740234375,3.86952805519104,3.2069311141967773,1.0,1.0,1.0,,,4,4.0,0.0,0.5,0.5,2,2.0,0.0,1.0,0.4543113325351768,0.18867647058823528,0.9239547054913813,0.5762195121951219,2.0,0.0,,1.0,0.0,0.0,0.5,0.0,1.0,0.0,0.0,2.0,0.5,0.0,1.0,0.5,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+gemma27b,23,gold_00001,False,"Anne: You were right, he was lying to me :/
+Irene: Oh no, what happened?
+Jane: who? that Mark guy?
+Anne: yeah, he told me he's 30, today I saw his passport - he's 40
+Irene: You sure it's so important?
+Anne: he lied to me Irene",Mark lied to Anne about his age. Mark is 40.,马克向安妮隐瞒了自己的年龄。他40岁了。,安妮发现马克谎称自己三十岁，实际四十岁，她认为这是个严重的问题。,2.9890902042388916,2.9287495613098145,3.2101619243621826,2.7073044776916504,1.0,1.0,1.0,,,1,2.0,1.0,1.0,0.5,0,1.0,0.0,1.0,0.7162947937795807,0.4805555555555555,0.6666279069767442,0.4893939393939394,1.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.5,0.0,0.5,0.5,0.0
+gemma27b,30,gold_00002,False,"Mary: hey, im kinda broke, lend me a few box
+Carter: okay, give me an hour, im at the train station
+Mary: cool, thanks",Mary ran out of money. Carter is going to lend her some in an hour.,玛丽的钱用完了，卡特打算一小时后借给她一点。,玛丽向卡特借钱，卡特答应在一小时内借给她。,2.4133458137512207,4.204233169555664,4.054256439208984,2.9938459396362305,1.0,1.0,1.0,,,2,2.0,0.0,1.0,0.0,0,0.0,0.0,1.0,0.766647963191561,0.6333333333333333,0.869,0.7014184397163121,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+gemma27b,39,gold_00003,False,"Tina: I'll tell you something, this Emirate staff looks amazing, as movie stars
+Ala: Oh yes, I know, that's for purpose 
+Ala: It's how it's suppose to be
+Ala: They pay a lot of attention to the image
+Tina: Looks nice, pleasure to observe
+Tina: And I sucked at the airport, they've kept us one hour in the plane and finally I'll catch the evening flight back home
+Tina: Could You imagine?
+Tina: And you know, this way we had such a talkative pilot :-)
+Ala: Oh, poor you
+Ala: Pfff
+Ala: And I'm on my way to a meeting
+Tina: THE meeting?
+Ala: Yes, keep your finger crossed
+Tina: Sure, let me know how did it go
+Ala: Ok darling, in touch",Tina will catch the evening flight back home. Ala is on her way to the meeting. She will let Tina know how it went.,蒂娜将乘晚间航班回家。阿拉正在去开会的路上。她会让蒂娜知道事情的进展。,蒂娜的航班延误。阿拉承诺向蒂娜汇报会议结果。,1.5385692119598389,4.193300724029541,4.523560047149658,2.9145429134368896,1.0,1.0,1.0,,,3,2.0,-1.0,0.3333333333333333,0.5,2,1.0,0.0,1.0,0.39617224880382773,0.6803921568627451,0.5194444444444445,0.5073333333333333,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+gemma27b,65,gold_00004,False,"Ana: You sleeping?
+Catherine: Not yet.
+Ana: Wanna go visit grandma tomorrow? I miss her.
+Catherine: Yeah that would be nice :) I'll call you when I wake up
+Ana: Oki :) sleep well, good night.
+Catherine:  Good night, u too.",Ana wants to visit grandma tomorrow. Catherine will go with her. She will call Anna when she wakes up.,安娜明天想去看望奶奶。凯瑟琳会和她一起去。她起床后会给安娜打电话。,安娜和凯瑟琳计划明天拜访奶奶，凯瑟琳承诺明天早上给安娜打电话。,2.0956528186798096,4.941651344299316,4.912939071655273,4.659601211547852,1.0,1.0,1.0,,,3,3.0,0.0,1.0,0.0,0,0.0,0.0,1.0,0.4633030424645492,0.5571759259259259,0.924436090225564,0.5634273772204806,2.0,0.0,,1.0,0.0,0.0,0.6666666666666666,1.0,0.0,0.6666666666666666,0.0,1.0,0.5,1.0,0.0,0.5,1.0,0.0,0.0,0.0,0.0,0.3333333333333333,0.0,0.6666666666666666,0.3333333333333333,0.0
+gemma27b,66,gold_00005,True,"Joyce: Check this out!
+Joyce: <link>
+Michael: That's cheap!
+Edson: No way! I'm booking my ticket now!! ",Edson is booking his ticket now.,埃德森正在订票。,,2.008584499359131,4.942647933959961,4.936405181884766,4.731358051300049,,,,,,2,,,0.0,,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+gemma27b,67,gold_00006,False,"Jane: google maps says it is at least 3h <file_other>
+Steven: I used to make it in 2, trust me :D
+Jane: but it's almost 300km..
+Steven: the road is new , we will make it ^^
+Jane: I don't want  to stress out , let's meet at 4:30 instead of 5, ok?
+Steven: ok, if u reaaly want, we can meet at 4:30
+Jane: thx! 
+Jane: I will wait at the main entrance or where?
+Steven: main entrance is good for me;-) 
+Steven: cu",Jane wants to leave at 4.30 instead of 5 because Google Maps suggests the 300 km drive should take them at least 3 hours and she doesn't want to be late. She will wait for Steven at the main entrance.,简想4点半就走，而不是等到5点，因为谷歌地图提示300公里的车程至少需要3小时，她不想迟到。她会在正门处等史蒂文。,根据地图，旅程较长。简恩建议将会议时间改为下午四点半，并得到史蒂文的同意。,2.7763335704803467,3.4527623653411865,3.745739459991455,3.022376537322998,1.0,1.0,1.0,,,4,2.0,-2.0,0.5,0.0,2,0.0,2.0,0.0,0.22307150017213095,0.12062566277836691,0.7511640934046441,0.6059941520467836,2.0,0.0,,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,2.0,0.0,2.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.5,0.0,1.0,0.5,0.0
+gemma27b,78,gold_00007,False,"Fiona: Are you free?
+Tina: Yes, what's up?
+Fiona: I'm trying to prepare a nice dinner for Chris and I thought that maybe I could prepare this tart of yours :)
+Tina: I'm flattered!
+Fiona: Well, it IS delicious :) Could help me do it?
+Tina: Sure! It's not difficult. Do you have anything ready?
+Fiona: I must admit I bought the crust...
+Tina: Oh, ok :P Pity, but well, it's too late now.
+Fiona: I tried making the filling once, but I finished with lemony scrambled eggs...
+Tina: It happens, don't worry. The thing is that once you start adding eggs you can't stop mixing it, otherwise you'll end up with scrambled eggs.",Fiona wants to prepare dinner for Chris. She is thinking of Tina's tart. She will help her make it.,菲奥娜想为克里斯准备晚餐。她想起了蒂娜做的馅饼。蒂娜会帮她做的。,蒂娜同意帮助菲奥娜制作馅饼，并指导她混合鸡蛋的方法。,2.769299268722534,3.9187421798706055,4.149563789367676,3.7999794483184814,1.0,1.0,1.0,,,3,4.0,1.0,0.6666666666666666,0.5,1,2.0,0.0,1.0,0.9553523035230351,0.8243589743589743,0.6883333333333334,0.3768652037617555,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+gemma27b,86,gold_00008,False,"Olafur: are we doing anything for New Year's Eve?
+Nathalie: I was thinking about something classy, like opera or sth like that
+Zoe: how much does it cost?
+Olafur: opera is not for me
+Nathalie: so what do you propose?
+Nathalie: it's 100$ 
+Olafur: I was thinking about partying somewhere
+Nathalie: partying sounds fun, as long as it will be classy
+Zoe: <file_link>
+Zoe: Breakfast at Tiffany's party sounds classy
+Olafur: <file_link> 
+Olafur: is it classy enough?
+Nathalie: :O
+Nathalie: this club is AMAZING
+Zoe: whoa
+Nathalie: we'll going to Soho then
+Olafur: we just need to hurry up and buy some tickets soon
+Zoe: sure","Nathalie, Olafur and Zoe are planning the New Year's Eve. Nathalie wants something classy. Olafur doesn't like opera. They want to go to the Breakfast at Tiffany's party in Soho.",娜塔莉、奥拉维尔和佐伊正在做新年前夜的计划。娜塔莉想要有格调的。但奥拉维尔不喜欢歌剧。他们想去苏豪区蒂芙尼的聚会上吃早餐。,奥拉夫和娜塔莉最初想看歌剧，后决定去索霍参加‘蒂凡尼早餐’派对，并计划尽快购票。,3.4350929260253906,3.51419997215271,3.781386375427246,3.1860358715057373,1.0,1.0,1.0,,,6,6.0,0.0,1.0,0.0,0,0.0,1.0,0.3333333333333333,0.5498061612665118,0.5291666666666667,0.8126680952926227,0.5584423235536704,3.0,0.0,,1.0,0.0,0.0,0.0,5.0,1.0,0.5,0.0,3.0,0.6666666666666666,1.0,1.0,,0.0,0.0,0.0,0.0,0.0,0.8333333333333334,0.0,0.16666666666666666,1.0,0.0
+gemma27b,120,gold_00009,False,"John: wanna go see ""A Star is Born"" on Wed?
+Joan: sorry can't
+Joan: super busy 
+Joan: don't have time for anything :( 
+John: that's a shame
+Joan: I'm free on Thursday
+John: I could do Thursday
+Joan: ok! so around 8pm?
+John: sure sounds great
+John: I'll see where it's palying and send you the details
+Joan: ok great!","Joan and John are going to watch ""A Star is Born"" on Thursday around 8 p.m.",琼和约翰星期四晚上8点左右去看《一个明星的诞生》。,约翰和琼原计划周三看电影，后改至周四晚上八点。约翰将发送电影详情给琼。,2.5249791145324707,3.633427619934082,3.3816871643066406,2.3723666667938232,1.0,1.0,1.0,,,5,6.0,1.0,1.0,0.16666666666666666,0,1.0,0.0,1.0,0.442977940831809,0.28211538461538466,0.8204179241810821,0.7751084900411706,3.0,0.0,,1.0,0.0,0.0,0.6,0.0,2.0,0.2,0.0,4.0,0.8,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+gemma27b,137,gold_00010,False,"Peyton: I have been asking you to bring that video game for me
+Cameron: Honey, I am not having enough time to come home
+Peyton: When would you come home?
+Cameron: I will have to stay out of town for another week i guess
+Peyton: Cant you just deliver that game through the courier? :P
+Cameron: Dont be mean :/
+Peyton: Get the job done and come to home then. ASAP :P",Peyton is expecting Cameron to bring the video game. Cameron will probably be out for another week.,佩顿希望卡梅隆能带游戏机过来，但是卡梅隆可能还要再缺席一周。,卡梅隆拒绝立即回家，并表示将在外地停留一周。佩顿建议卡梅隆通过快递寄送游戏。,3.0178985595703125,3.9831480979919434,4.145877361297607,3.6843249797821045,1.0,1.0,1.0,,,3,5.0,2.0,1.0,0.4,0,2.0,0.0,1.0,0.6613184487998599,0.7999999999999999,0.6872548826309518,0.7097739130434783,3.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.6666666666666666,0.0,1.0,0.6666666666666666,1.0,0.0,0.5,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.6,0.8,0.0
+gemma27b,139,gold_00011,False,"Paul: I just came back home
+Paul: What a busy day
+Paul: I forgot about my physiotherapy 
+Emma: Oh no
+Paul: It's ok, I'll schedule a new appointment
+Emma: I'll be home after midnight
+Paul: Do you want me to prepare some food for you?
+Emma: That would be lovely","Paul forgot about his physiotherapy and he will schedule a new appointment. Emma will be home after midnight, so Paul will prepare some food for her.",保罗忘记去做理疗了，得重新预约。艾玛午夜后回家，所以保罗会给她准备一些吃的。,保罗忘记了理疗，并提议为艾玛准备食物。艾玛欣然接受，保罗将在她午夜回家后准备食物。,2.9524097442626953,3.9647679328918457,4.086043357849121,3.467205047607422,1.0,1.0,1.0,,,5,3.0,-2.0,0.6,0.0,2,0.0,0.0,1.0,0.8571618142206378,0.3644736842105263,1.0,0.6302639183201696,2.0,0.0,,1.0,0.0,0.0,0.6666666666666666,0.0,1.0,0.3333333333333333,0.0,2.0,0.6666666666666666,1.0,0.0,0.5,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.3333333333333333,0.3333333333333333,0.0
+gemma27b,192,gold_00012,False,"Harris: How are U?
+Lena: Fine, U?
+Harris: Been better.
+Lena: ?
+Harris: My friend Aoki died yesterday.
+Lena: O No!
+Harris: Yeah.
+Lena: What happened?
+Harris: Not sure yet. Thinking the worst...
+Lena: O how awful!
+Harris: Yes.
+Lena: You just never know.
+Harris: True.
+Lena: Had you seen her lately?
+Harris: Not for a few months. She lives in Michigan.
+Lena: Oh, that's far.
+Harris: Not too far but far enough.
+Lena: Right.
+Harris: Got to go, mom's calling.
+Lena: K bi. Feel better!
+Harris: K will do","Harris' friend, Aoki, who lives in Michigan, died yesterday. Harris hasn't seen her for a few months.",哈里斯的朋友青木住在密歇根州，昨天去世了。哈里斯有几个月没见她了。,哈里斯告诉莱娜青木去世的消息，随后因母亲来电而结束了对话。,2.4596331119537354,2.7730746269226074,3.0167758464813232,2.465914011001587,1.0,1.0,1.0,,,3,4.0,1.0,0.6666666666666666,0.5,1,2.0,0.0,0.5,0.3364074500768049,0.18181818181818182,0.803062267099411,0.3246312684365782,2.0,0.0,,1.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,2.0,0.0,1.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.75,0.0,0.75,1.0,0.0
+gemma27b,210,gold_00013,False,"Yaz: Going to slimming club tonight?
+Mary: Well, I don't want to, but I really should. I've been so bad, though!
+Yaz: Me too, choccies, wine, cake, you name it!
+Mary: Well, we should bite the bullet. She'll tell us off, I expect. Feels like being back at school!
+Yaz: Well, she IS our old cookery teacher! See you at 6ish, pick you up!?
+Mary: Yep! See you then!",Yaz and Mary are meeting tonight around 6 and going for the slimming club together. They expect to be scolded for eating too much. ,亚兹和玛丽今晚6点左右见面，一起去减肥俱乐部。他们估计吃得太多会被骂。,玛丽和雅兹都将参加减肥俱乐部，雅兹将接送玛丽前往。,1.7065808773040771,3.3114190101623535,3.16097354888916,2.0591320991516113,1.0,1.0,1.0,,,4,3.0,-1.0,0.5,0.3333333333333333,2,1.0,0.0,0.0,0.26723082600105674,0.5318181818181819,0.9624099221323372,0.39085714285714285,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.5,0.0,1.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.3333333333333333,0.0
+gemma27b,211,gold_00014,False,"Ellie: hey, are you at the university?
+Aaliyah: yep
+Camille: I'm sick :/
+Ellie: shiet....that's bad
+Ellie: Aali, where are we having our classes now?
+Aaliyah: 342 on the second floor",Ellie's class is in 342 on the second floor.,艾莉的班级在二楼342教室。,卡米尔生病，无法参加课程。阿莉亚告知大家课程已搬到二楼342教室。,3.333327054977417,3.152549982070923,3.4660122394561768,3.2209115028381348,1.0,1.0,1.0,,,3,3.0,0.0,1.0,0.0,0,0.0,0.0,1.0,0.43993721646218065,0.7161111111111111,0.9581601439496176,0.4747098515519568,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,2.0,1.0,0.0,0.0,0.0,0.0,0.0,0.3333333333333333,0.0,0.3333333333333333,0.3333333333333333,0.0
+gemma27b,212,gold_00015,True,"Nathan: <file_video>
+Aaron: OMG!!! 
+Aaron: 😂😂😂😂
+Aaron: looool
+Aaron: do you know her mate? 🤣🤣
+Aaron: my cat's face looks like that when he's taking a dump..🤣🤣🤣
+Aaron: <file_gif>
+Aaron: the angels must be weeping 🤭🤭🤭 
+Aaron: <file_gif>
+Aaron: <file_gif>
+Nathan: Hahahaha
+Nathan: She's having a spiritual moment 😉
+Nathan: No clue mate, Dan sent it over
+Nathan: A tragedy to say the least 😂😂
+Aaron: <file_gif>
+Aaron: looking for Jesus
+Nathan: 😂😂😂
+Aaron: hilarious..hahahaha",Nathan and Aaron are discussing a video which Nathan sent. ,内森和亚伦正在讨论内森发来的视频。,,1.912581443786621,3.836336851119995,3.9860167503356934,2.803007125854492,,,,,,3,,,0.0,,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+gemma27b,215,gold_00016,True,"Freddie: What are you watching on Netflix? I've just finished Mad Men.
+Kelly: I've just finished The Crown. 
+Freddie: There should be new episodes coming soon.
+Kelly: OMG! i can't wait! :)
+Freddie: Try Outlander or The Tudors in the meantime.
+Jim: i'm watching I, Zombie.
+Bob: try Grimm or Sabrina. They're both great!
+Kelly: they are all horrible and disgusting! 
+Bob: i think they are funny. They're just TV shows don't take them too seriously. x 
+Greg: I'm watching House of Cards though must admit the new series is boring.
+Mike: i agree. not the same without Kevin Spacey! You should try The West Wing if you enjoy political dramas.
+Greg: Netflix original Bodyguard is supposed to be good from what I've heard.
+Mary: I'm a bit ashamed to confess i enjoy stuff like Pretty Little Liars or Gossip Girl ;)
+Nancy: don't be ashamed i enjoy them too! and my favourite one is Desperate Housewives!!!
+Mary: I know! I watched it twice!
+Alan: I'm catching up with Friends.
+Nancy: OMG! i used to love Friends!","Freddie, Kelly, Jim, Greg, Bob, Mike, Mary, Alan and Nancy are watching different shows on Netflix.",弗雷迪、凯利、吉姆、格雷格、鲍勃、迈克、玛丽、艾伦和南希正在netflix上观看不同的节目。,,1.7030062675476074,3.6770758628845215,3.9327356815338135,2.3803317546844482,,,,,,6,,,0.0,,6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+gemma27b,244,gold_00017,False,"Jones: Hey.
+Angelina: Hey.
+Angelina: Long time. How are you doing?
+Jones: I'm fine
+Jones: You?
+Angelina: I'm cool too.
+Jones: You think we can meet today later in the afternoon in town?
+Angelina: Definitely.
+Jones: Okay. I will call you to confirm where we will meet.
+Angelina: Cool",Jones and Angelina will meet in town in the afternoon.,琼斯和安吉丽娜下午会在城里见面。,琼斯和安吉丽娜同意当天见面，琼斯将致电确认具体地点。,2.854933261871338,4.207263946533203,4.311842918395996,3.961243152618408,1.0,1.0,1.0,,,3,3.0,0.0,1.0,0.0,0,0.0,0.0,1.0,0.6807571235606279,0.37972709551656925,0.9288290598290598,0.7543690675600223,2.0,0.0,,1.0,0.0,0.0,0.3333333333333333,1.0,1.0,0.3333333333333333,0.0,2.0,0.0,2.0,0.0,0.5,1.0,0.0,0.0,0.0,0.0,0.3333333333333333,0.0,1.0,0.3333333333333333,0.0
+gemma27b,285,gold_00018,False,"Casey: <file_photo>
+Amelia: these are so nice!!! did you do them yourself?
+Kristen: wooow amazing
+Amelia: i want my nails done like that too!
+Casey: yeah i did it myself :D got a new nail polish but damn it took me nearly 4 hours lol
+Amelia: can you do it for us too?
+Kristen: pretty please!
+Casey: sorry you guys... it was a nightmare :( seriously 4 hours for nails is too much","Casey got a new nail polish and did her nails herself. It took her nearly 4 hours, so she won't do her friends' nails, as it takes too long.",凯西买了新指甲油，自己做了指甲。她花了近4个小时，所以她不会帮朋友做指甲，因为耗时太长了。,劳拉和克里斯汀请求凯西为她们做美甲，但凯西因耗时太长而拒绝了。,2.560288429260254,2.9831275939941406,3.2502002716064453,2.5777406692504883,1.0,1.0,1.0,,,3,3.0,0.0,0.6666666666666666,0.3333333333333333,1,1.0,0.0,1.0,0.4221753274110453,0.5175,0.8852032520325204,0.6204999999999999,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.5,0.0,1.0,0.0,1.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.3333333333333333,0.0,0.0
+gemma27b,319,gold_00019,False,"Sue: Call me when you get this.
+Sue: it's important
+Steve: OK, I'm calling",Steve is calling Sue at her request.,史蒂夫正按照苏的要求给她打电话。,苏伊要求史蒂夫收到信息后立即给她打电话，史蒂夫同意了。,2.055854082107544,4.877193450927734,4.878108978271484,4.560675621032715,1.0,1.0,1.0,,,2,2.0,0.0,1.0,0.0,0,0.0,0.0,0.5,0.393338948787062,1.0,0.9978395061728396,0.43947368421052635,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+gemma27b,346,gold_00020,False,"Timmy: Who do u wanna invite?
+Gemma: Well, there's u and ur date :)
+Timmy: Not sure about the date, but I'll be there :) who else?
+Gemma: I was thinking about Lona and Michelle.
+Timmy: Still thinking ur getting invites to their weddings?
+Gemma: It's not like that.
+Timmy: Sure it is ;) just don't wanna admit it ;)
+Gemma: Fine! I want to come to their wedding receptions!
+Timmy: There we go :) was it so hard?
+Gemma: Yes.
+Timmy: And u think u can change their minds?
+Gemma: Dunno.","Gemma will invite Timmy and his Date, as well as Lona and Michelle to her wedding.",杰玛将邀请蒂米和他的约会对象，以及罗娜和米歇尔参加她的婚礼。,格玛承认她想参加洛娜和米歇尔的婚礼招待会。,2.495156764984131,2.783808469772339,2.9012651443481445,2.424281120300293,1.0,1.0,1.0,,,4,3.0,-1.0,0.75,0.0,1,0.0,0.0,0.3333333333333333,0.7888146189240559,0.08256410256410256,0.9364801864801864,0.4609311740890688,1.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,3.0,0.0,0.0,3.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.3333333333333333,0.0
+gemma27b,355,gold_00021,False,"Ann: Congratulations!!
+Ann: You did great, both of you!
+Sue: Thanks, Ann
+Julie: I'm glad it's over!
+Julie: That's co cute of you, girl!
+Ann: Let's have a little celebration tonight! 
+Sue: I'm in
+Julie: me too!!! aww","Ann, Sue and Julie did a great job and they will have a little celebration tonight.",安、苏和朱莉做得很好，今晚他们会举行一个小小的庆祝活动。,安娜、苏和朱莉今晚将举行庆祝活动。,1.9200971126556396,4.930874824523926,4.93071985244751,4.704113960266113,1.0,1.0,1.0,,,3,3.0,0.0,0.6666666666666666,0.3333333333333333,1,1.0,0.0,0.5,0.7805653907496013,0.08020833333333333,0.8426666666666667,0.9433124094640271,2.0,0.0,,1.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,2.0,0.5,0.0,1.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+gemma27b,367,gold_00022,False,"Steve: hiya the dishwasher has turned up
+Mum: good did they install it for you
+Steve: yes they did a good job
+Steve: <file_photo>
+Mum: looks really nice
+Steve: yes it does its nice and quiet
+Mum: is it a 12 place setting one?
+Steve: I think so, not that I ever have 12 for dinner lol
+Mum: not but you dont have to put it on every day
+Steve: no every other
+Mum: yes I'm glad you are pleased with it xx
+Steve: I am thanks mum xxx",Steve is happy that he got a new dishwasher installed.,史蒂夫很高兴他装了一台新的洗碗机。,史蒂夫告知母亲洗碗机已安装完毕，并且他对新洗碗机很满意。,2.903048515319824,3.058044672012329,3.383859634399414,2.934680461883545,1.0,1.0,1.0,,,2,4.0,2.0,1.0,0.5,0,2.0,0.0,0.5,0.6231677148191453,0.3362307692307692,0.8016515660911354,0.5886111111111112,2.0,0.0,,1.0,0.0,0.0,0.5,0.0,1.0,0.0,0.0,2.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.25,0.0,0.0,0.5,0.0
+gemma27b,393,gold_00023,True,"Marika: Are you coming today?
+Lara: Yes!
+Marika: Great!",Marika is coming today.,玛丽卡今天会来。,,1.2434173822402954,1.3071534633636475,1.287126064300537,1.266065239906311,,,,,,2,,,0.0,,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+gemma27b,417,gold_00024,False,"Miranda: Hi S, could we cancel tomorrow's meeting?
+Stephanie: again? what happened?
+Miranda: I have to work :(
+Stephanie: you work 20 hours a day!
+Miranda: that's what young doctors do
+Stephanie: they kill themselves working
+Miranda: no they come close to death but survive and it makes them immortal
+Stephanie: as long as you have an explanation :D",Miranda can't make her meeting with Stephanie as she has to work. ,米兰达不能去见斯蒂芬妮，因为她要工作。,米兰达因工作原因向斯蒂芬妮请求取消会议，斯蒂芬妮同意了。 ,2.5814778804779053,2.892993450164795,3.216723680496216,2.627694606781006,1.0,1.0,1.0,,,2,2.0,0.0,1.0,0.0,0,0.0,0.0,1.0,0.7819068255687973,1.0,0.9150820599886813,0.3730107526881721,2.0,0.0,,1.0,0.0,0.0,0.5,0.0,1.0,1.0,0.0,0.0,1.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.5,0.0
+gemma27b,432,gold_00025,False,"Javier: Hey do you know any tattoo parlors over here with English speaking employees?
+Judie: Oh there's Warsaw ink
+Javier: the name sounds neat... have you had a tattoo done there?
+Judie: nope but my gf has
+Javier: got a pic?
+Judie: <file_photo>
+Javier: wow that looks amazing
+Javier: how much did she pay?
+Judie: it was a 1000
+Javier: fuck
+Javier: let me just get a tatttoo back in colombia then, thx",Javier was initially eager to have a tatoo done at Warsaw Ink but the price turned out to be too high. Javier decided to have a tatoo done in Colombia.,哈维尔最初很想在warsaw ink纹身，但价格太高了。他决定去哥伦比亚做纹身。,哈维尔询问纹身店推荐，劳拉推荐华沙墨水。但哈维尔最终决定在哥伦比亚纹身，因为价格更优惠。,2.1154818534851074,2.422661304473877,2.621013641357422,2.2047977447509766,1.0,1.0,1.0,,,3,4.0,1.0,1.0,0.25,0,1.0,0.0,1.0,0.7239168838279944,0.3759166666666667,0.8682028897028897,0.6810038610038611,2.0,0.0,,1.0,0.0,0.0,0.3333333333333333,2.0,0.0,0.3333333333333333,0.0,2.0,0.3333333333333333,2.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.75,0.0,0.5,0.25,0.0
+gemma27b,433,gold_00026,False,"Sam: You own a really nice hotel, guys 😊
+Jessica: Thanks Sam 😊
+Michael: Thanks, mate 
+Sam: How is our hotel room set for next month? Hope that the manager will arrange the very best for us 😉
+Michael: you’re damn right, Sam
+Michael: are you coming on the 15th of August?
+Sam: Yep! We’ll be at the hotel around 2 p.m.
+Jessica: I’m soooo happy to see you again!
+Sam: Me, too 😊",Sam appreciates the hotel owned by Jessica and Michael. Sam is going there on the 15th August at around 2pm.,山姆很喜欢杰西卡和迈克尔的酒店。他会在8月15日下午2点左右去那里。,萨姆和同伴将于八月十五日下午两点抵达迈克尔和杰西卡的酒店。,2.7370946407318115,3.9528121948242188,3.7972536087036133,2.621565818786621,1.0,1.0,1.0,,,2,4.0,2.0,0.5,0.75,1,3.0,0.0,0.0,0.28173322005097706,1.0,0.5116666666666667,0.6353409090909092,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.5,0.0,0.75,0.0,0.0
+gemma27b,442,gold_00027,False,"Terence: What the hell, Danny. You took my money, didn't you? :/
+Daniel: What, your money?? Why would I
+Terence: Don't play dumb
+Daniel: Are you calling me a liar, Terry??
+Terence: I'm not stupid, Danny
+Daniel: And I'm not a thief?? That's not cool, man :/
+Terence: ... Oh shit, I'm sorry, I've just found it. Forgot I'd placed it elsewhere last month
+Daniel: Good for you then
+Terence: Are you upset
+Daniel: What do you think?? Yeah, oh-fucking-course I am",Terence accused Daniel of taking his money. Terence finds the money later and apologizes to Daniel. Daniel is still upset.,特伦斯指控丹尼尔偷了他的钱。后来他找到了钱，就向丹尼尔道歉。但是丹尼尔还在生气。,保罗误以为丹尼尔偷钱，后发现钱已放好并道歉。丹尼尔对之前的指控表示愤怒。,4.704135417938232,3.814544200897217,3.922376871109009,4.2807159423828125,1.0,1.0,1.0,,,4,4.0,0.0,0.75,0.25,1,1.0,0.0,1.0,0.4913821306642842,0.33317793317793315,0.6770662151871855,0.42194674012855826,3.0,0.0,,1.0,0.0,0.0,0.6666666666666666,0.0,1.0,0.3333333333333333,0.0,2.0,0.5,0.0,1.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.5,0.0
+gemma27b,499,gold_00028,False,"Natacha: hi, i can come and pick you up at the RER.
+Charles: so  nice. I just landed. I think i'll arrive about 5:30pm. I'll give you a call
+Natacha: ok ,call  me when  you'll be at the station Vesinet. 
+Charles: thanks . see you",Charles has just landed and he will be at RER about 5.30 PM. Natacha will pick him up from there.,查尔斯刚刚落地，他会在下午五点半到达rer，娜塔夏会在那里接他。,娜塔莎将接查尔斯，查尔斯承诺到达韦西内站后会打电话告知娜塔莎。,2.2410953044891357,3.3474082946777344,3.6163198947906494,2.6406219005584717,1.0,1.0,1.0,,,3,4.0,1.0,1.0,0.25,0,1.0,0.0,0.6666666666666666,0.5963497268221731,1.0,0.90005987810794,0.5665048543689319,3.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.5,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+gemma27b,528,gold_00029,False,"Meg: still at school?
+Ann: i have extra math classes
+Meg: so when can i meet you?
+Ann: i will be home at 7",Ann is still at school. She will be home at 7 so she can meet Meg then.,安还在学校，她7点会回家，这样她就可以和麦格见面了。,安娜承诺晚上七点到家。梅格将会在七点与安娜见面。,2.7022838592529297,3.6198618412017822,3.523331880569458,2.6687064170837402,1.0,1.0,1.0,,,2,2.0,0.0,0.5,0.5,1,1.0,0.0,0.0,0.43751987281399046,0.5583333333333333,1.0,0.42402932392071674,1.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0
+gemma27b,532,gold_00030,False,"Pete: What flavour yogurt did you want again? My brain is like a sieve today.
+Jen: Pear but only if they've got it. Otherwise don't worry about it.
+Pete: I'll have a look around. If they don't have pear can I get a different flavour?
+Jen: I don't like any other flavour. If they don't have pear just don't get anything at all then.
+Pete: OK.",Pete will get a pear yogurt for Jen if they have it.,如果商店里有梨味酸奶， 皮特会给珍买的。,珍要求彼得购买梨味酸奶，如果没有则不买。她只接受梨味，拒绝其他口味。,2.2316226959228516,2.6305482387542725,2.6980843544006348,2.2245655059814453,1.0,1.0,1.0,,,3,2.0,-1.0,0.6666666666666666,0.0,1,0.0,0.0,0.5,0.44541555038856934,0.05874125874125874,0.7296879894587673,0.5930864197530864,2.0,0.0,,1.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,2.0,0.5,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.5,0.0,0.0,0.0,0.0
+gemma27b,536,gold_00031,True,"Christie: how are you after the party?
+Katie: really tired... and you?
+Christie: same
+Christie: the party was great!
+Katie: Yeah, we had fun! :)",Christie and Katie are tired after the party. They both had fun.,克里斯蒂和凯蒂在聚会后累了。他们都玩得很开心。,,2.0492401123046875,2.8316686153411865,2.797896385192871,2.0922374725341797,,,,,,3,,,0.0,,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+gemma27b,537,gold_00032,False,"Sam: Are you working tomorrow?
+Carla: No, it's my day off
+Sam: I'm free in the afternoon, do you fancy meeting up?
+Carla: Yeah, sure
+Sam: Ok, great! Shall we go to Meanwood?
+Carla: Ok, there's that cafe there that does the yummy cakes. Meet you at 2?
+Sam: Yes - looking forward to it!
+Carla: See you tom! xx",Carla has a day off tomorrow. She will meet Sam in Meanwood in a cafe at 2 pm.,卡拉明天有一天假。她将在下午两点在meanwood的一个咖啡馆和山姆见面。,萨姆和卡拉约定在米恩伍德的咖啡馆下午两点见面。,2.7777175903320312,4.465083599090576,4.0421552658081055,2.731388807296753,1.0,1.0,1.0,,,3,5.0,2.0,1.0,0.4,0,2.0,1.0,0.3333333333333333,0.4190067821638453,0.0734574898785425,0.8461942071387211,0.6244145199063232,2.0,0.0,,1.0,0.0,0.0,0.0,3.0,0.0,0.0,0.0,3.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.4,0.0,0.0
+gemma27b,544,gold_00033,False,"Joana: wana play some games?
+Sandy: what games?
+Joana: maybe dixit?
+Joana: or carcassonne?
+Sandy: why not?
+Joana: ok, I'll bring them 2 u
+Sandy: great :)",Joana will bring Sandy some games like dixit and carcassonne.,琼娜将为桑迪带来一些像迪克西特和卡尔卡松这样的游戏。,乔安娜将把游戏带到桑迪那里一起玩。,2.282972812652588,4.947539806365967,4.925302028656006,4.675626754760742,1.0,1.0,1.0,,,3,3.0,0.0,0.6666666666666666,0.3333333333333333,1,1.0,0.0,1.0,0.5602838577291381,0.6427083333333333,1.0,0.546911866759195,1.0,0.0,,1.0,0.0,0.0,0.5,1.0,0.0,1.0,0.0,0.0,0.5,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.6666666666666666,0.0,0.6666666666666666,0.3333333333333333,0.0
+gemma27b,548,gold_00034,False,"Steve: Bought the new Dream Theater album 5 minutes ago. I hope it's good.
+Rob: I have it here on my desk, ready for the first listening.
+Steve: Ok, I'll tell you later what I think about it.
+Rob: Same here. See you later!","Steve and Rob will talk about new Dream Theater album, after they finish listening.",史蒂夫和罗伯将在听完后谈论新的梦剧场专辑。,史蒂夫和罗布都获得了新的梦剧场专辑，并将稍后分享他们的看法。,1.880632758140564,4.736468315124512,4.785377502441406,2.387770175933838,1.0,1.0,1.0,,,3,0.0,-3.0,0.0,0.0,3,0.0,0.0,,,,,0.5971005917159764,1.0,1.0,,,0.0,0.0,,0.0,0.0,,0.0,0.0,,0.0,0.0,,0.0,0.0,,,,,,,,
+gemma27b,551,gold_00035,False,"Peter: Can you send me the link of your beauty shop?
+Joy: Definitely
+Joy: It is https:// *********
+Joy: Hope you will like it and feel free to ask any questions.
+Peter: Okay. Let me look at it.",Joy sent Peter the link to her beauty shop.,乔伊把她美容店的链接发给了彼得。,乔伊向彼得分享了她的美容店链接，彼得将查看该链接。,1.8747828006744385,4.769766807556152,4.567572593688965,4.251852512359619,1.0,1.0,1.0,,,2,2.0,0.0,1.0,0.0,0,0.0,0.0,0.5,0.7573137254901962,0.5777777777777777,1.0,0.6689880723355136,1.0,0.0,,1.0,0.0,0.0,0.5,1.0,0.0,0.5,0.0,1.0,0.0,0.0,2.0,1.0,0.0,0.0,0.0,0.0,0.0,0.5,0.0,0.0,0.0,0.0
+gemma27b,590,gold_00036,False,"Ethan: who's going to see solstafir?
+Noah: solstafir! when?
+Noah: i had no idea they were playing
+Archie: I'm not :D.
+Leo: i'm going ofc!
+Ethan: 21.11
+Noah: that's a wednesday... ehh...
+Noah: i'll have to see, might have to stay late at work...
+Leo: nooo you have to come
+Ethan: yeah you have to!
+Archie: There are better concerts :P.
+Noah: i know, i would really like to see them, but yeah
+Leo: archie... :P
+Ethan: don't mind him :P
+Noah: i'll see and let you know, it would really suck to miss them
+Leo: yup!
+Ethan: yup! x2","Ethan and Leo are going to see Sólstafir on 21.11. Noah would like to go too, but he might have to stay late at work.",伊森和里奥要在21点11分去见索斯塔弗。诺亚也想去，但他可能得工作到很晚。,伊森询问谁将参加索尔斯塔菲尔演唱会。诺亚因工作原因不确定，但莱奥极力劝说。诺亚表示会确认后告知是否参加。,3.4187827110290527,3.3651576042175293,3.784510612487793,3.245248794555664,1.0,1.0,1.0,,,4,4.0,0.0,0.75,0.25,1,1.0,1.0,0.3333333333333333,0.423965368827744,0.07108721624850656,0.6686666666666667,0.23928772048084485,3.0,0.0,,1.0,0.0,0.0,0.6666666666666666,1.0,0.0,0.0,0.0,3.0,0.0,2.0,1.0,,0.0,0.0,0.0,0.0,0.0,0.25,0.0,0.5,0.5,0.0
+gemma27b,598,gold_00037,True,"Bradley: haha look a cat invaded the pitch at Goodison <file_other>
+Jill: hahahaha
+Julia: what a sweet little black ball of fur
+Jill: here's the video :D <file_other>
+Julia: haha
+Bradley: and the commentary :D
+Bradley: that's the best entertainment Everton fans have had all season :D",A sweet little black cat got into the pitch during the Everton's football match.,在埃弗顿的足球比赛中，一只可爱的小黑猫钻进了球场。,,3.4924936294555664,3.8376986980438232,3.900336503982544,3.0716304779052734,,,,,,3,,,0.0,,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+gemma27b,605,gold_00038,False,"Barbara: I'm home already, you can come over
+Sean: May I bring the dog?
+Zac: I'm on my way
+Barbara: sure you can, Sean
+Barbara: do you want to stay overnight?
+Sean: great!
+Sean: I thought about it
+Barbara: nice!","Barbara, Sean and Zac are meeting at Barbara's place tonight. Sean will bring the dog. Sean and Zac will stay overnight.",芭芭拉、肖恩和扎克今晚在芭芭拉家见面。肖恩会把狗带来的，肖恩和扎克会在这里过夜。,保罗获得了芭芭拉的许可带狗去她家过夜。,3.025177478790283,4.837596893310547,4.759857654571533,4.070183753967285,1.0,1.0,1.0,,,4,4.0,0.0,0.75,0.25,1,1.0,0.0,1.0,0.6478554845058113,0.5296296296296297,1.0,0.6393749999999999,2.0,0.0,,1.0,0.0,0.0,0.3333333333333333,2.0,0.0,0.6666666666666666,0.0,1.0,0.3333333333333333,2.0,0.0,0.5,0.0,1.0,0.0,0.0,0.0,0.5,0.0,0.75,0.0,0.0
+gemma27b,616,gold_00039,False,"Jake: dude, I just pulled a TOTW
+Jake: my first this year!
+Tom: grats!
+Tom: gonna sell it?
+Jake: yeah
+Jake: I'll try him in one or two matches
+Jake: he's not a good fit for my squads
+Tom: you'll have plenty of coins to buy someone that fits
+Jake: that's the plan
+Jake: I got lucky with this one
+Tom: my pull luck sucks this year
+Tom: not a single great player 
+Jake: you're good at the game
+Jake: you don't need help :P
+Tom: I like shiny things :P",Jake has got his first TOTW this year. Tom doesn't have a great team. ,杰克今年拿到了第一个totw ，汤姆的团队并不出色。,杰克获得了团队每周最佳球员，计划将其出售，并用所得资金购买更适合自己队伍的球员。,2.4019031524658203,3.6628663539886475,3.9764835834503174,2.8864407539367676,1.0,1.0,1.0,,,3,5.0,2.0,0.6666666666666666,0.6,1,3.0,0.0,0.0,0.5099196198606015,0.55,0.6207257658856364,0.33392554991539763,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.5,0.0,1.0,1.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.6,0.0,0.0,0.6,0.0
+gemma27b,621,gold_00040,False,"Phil: Good evening Deana! Many thanks for this nice card from you. Constantine was very happy!
+Phil: Are these sunglasses also from you?
+Deana: I thought they belonged your Cathreen!
+Phil: Nope. She says they aren't hers.
+Deana: Mine either. Look, maybe you feel like keeping them?
+Deana: I seem to have so many sunglasses...
+Deana: 8‑D
+Phil: Where did you find them, possible that they belong to Adrian?
+Deana: In this empty place above the radio. In the very back.
+Deana: If Adrian wants it, no pro!
+Deana: :)
+Phil: :))
+Deana: Exactly!
+Phil: Ok, they don't belong to any of us, and nobody else drove your car. But we can look after these sunglasses.
+Deana: Glad to hear it!","Phil received a card from Deana. Constantine was happy. Phil has sunglasses, that Deana found in the back above the radio. Deana and Phil don't know who they belong too. Phil will keep the sunglasses.",菲尔收到了迪安娜的一张卡片，康斯坦丁很开心。菲尔有副墨镜。蒂娜在后面收音机上面找到的。迪安娜和菲尔也不知道他们属于谁。菲尔会留着这副墨镜的。,德娜建议菲尔保留太阳镜，菲尔决定留下，因为无人认领。,1.998321533203125,2.4129934310913086,2.6022372245788574,2.2172603607177734,1.0,1.0,1.0,,,4,3.0,-1.0,0.5,0.3333333333333333,2,1.0,0.0,1.0,0.47913626472094223,0.55,0.880796853625171,0.4238853503184713,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.5,0.0,1.0,1.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+gemma27b,635,gold_00041,False,"Mell: Hi there! How are you doing?
+Gloria: Hi Mell! We are fine, just the daily grind ;) And yourselves?
+Mell: Not much happening either. An odd phone call with the kids. Or Tad's sister:(( Not much otherwise.
+Gloria: Yeah... Life has become so quite since the kids are out of the house. We had more to get used to it. But it must hard for you. Especially you I mean.
+Mell: I don't know. Sometimes I even forget that I should be missing them. In a way I do like this peace and quiet now.
+Gloria: Small wonder. You had a hell of a time with them just before they went to college. I'd say you need to recover now.
+Mell: I guess you're right. But maybe I should feel guilty or something?
+Gloria: Don't be silly! You are a fantastic mom.
+Mell: Thanks Gloria.
+Gloria: Anyway I'm happy to hear from you again. We should really have a nice do again.
+Mell: YES! Splendid!
+Gloria: The weather is just brilliant, perfect for a BBQ. What do you think?
+Mell: I'm all for it. At my place? I'd love it.
+Gloria: Can't be better. I love your garden.
+Mell: We're thinking about extending the terrace. I must show you my drawings, just a few ideas. It would be great to hear your opinion.
+Gloria: I'd love to. But you know how little I know about garden design, or however you call it.
+Mell: We'll have a look at them. Now the BBQ. At the weekend I suppose?
+Gloria: Let me check the calendar. Here's our family planner. A horrible name, isn't it? So this weekend suits us fine. At the next one, on Saturday, Mark has penciled something in but I can't read it. So what about this Saturday?
+Mell: Perfect. At least we know the weather holds. Shall I do the food and you the drinks?
+Gloria: And I'll get us some dessert as well. 
+Mell: Very good indeed. It's always so easy going with you.
+Gloria: Ta! You were thinking about Tad's sister?
+Mell: I'm afraid so. I'm so happy she moved up to Scotland and I don't have to put up with her trying to run my household. Tad feels relieved too.
+Gloria: Good riddance! I could really never warm up to her.
+Mell: Nobody can! Anyway she's gone and we're going to have a fantastic barbecue. Without her.
+Gloria: Yes, we are. Oh I'm so happy you've phoned!
+Mell: Looking forward to our BBQ on Saturday!
+Gloria: So long!","Gloria and Mell plan to have a barbeque at Mell's place on Saturday. They are happy, because Tad's sister moved to Scotland. Mell needs Gloria's advice on garden design.",格洛丽亚和梅尔计划星期六在梅尔家吃烧烤。他们很高兴，因为泰德的姐姐搬到了苏格兰。梅尔需要格洛丽亚对花园设计的建议。,梅尔和格洛丽亚决定在本周六在梅尔家举办烧烤，梅尔准备食物，格洛丽亚负责饮品和甜点。,1.2075058221817017,4.118173599243164,4.430563926696777,2.622905731201172,1.0,0.5,0.6666666666666666,"mark, tad",,5,5.0,0.0,0.6,0.4,2,2.0,1.0,0.6666666666666666,0.19991784438171498,0.04065656565656565,0.570785115140248,0.47324929971988794,3.0,0.0,,0.6666666666666666,0.0,1.0,0.3333333333333333,0.0,2.0,0.0,0.0,3.0,0.3333333333333333,0.0,2.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+gemma27b,649,gold_00042,False,"Callan: Something's wrong with my Samsung S8.
+Wade: What, exactly?
+Callan: All I get is a black screen.
+Wade: Did you drop it or something?
+Callan: I think I know, this has happened before.
+Wade:  It did? What happened before?
+Callan: It overheats and then it takes a while for it to restart again..
+Wade: That sucks.. Be carefull with the battery, it can be dangerous.
+Callan: It sure can, but I'm going to the store and let them see it. It's still under warranty.
+Wade: Will you lose all your stuff?
+Callan: No, I always back up my files.","Callan's Samsung S8 overheats, so he's going to the store to get it repaired.",卡伦的三星s8过热了，所以他要去店里修理。,保罗的三星S8手机出现故障，他计划送修，并确认已备份数据，无需担心。,2.687469720840454,3.3927643299102783,3.526780843734741,2.6834936141967773,1.0,1.0,1.0,,,3,4.0,1.0,1.0,0.25,0,1.0,0.0,0.6666666666666666,0.4715131481878108,0.2876225490196079,0.886763911555053,0.40348484848484845,3.0,0.0,,1.0,0.0,0.0,0.3333333333333333,2.0,0.0,0.0,0.0,3.0,0.0,0.0,2.0,,0.0,0.0,0.0,0.0,0.0,0.5,0.0,0.0,0.75,0.0
+gemma27b,676,gold_00043,False,"Anna: Mum, I have a awful stomachache.
+Joanna: Oh, dear, when did you get it?
+Anna: At night, and it won’t stop:-(
+Joanna: Is it something you ate?
+Anna: Maybe. I'm not sure.
+Joanna: What did you have for breakfast?
+Anna: The usual, cereal with milk and a banana.
+Joanna: Maybe the milk was bad.
+Anna: It didn't smell bad.
+Joanna: Maybe the banana was bad.
+Anna: No, the banana was delicious.
+Joanna: Maybe you just need to go to the bathroom.
+Anna: No, that's not the problem.
+Joanna: Maybe it will go away in a little while.
+Anna: I wish it would :-(
+Anna: Hopefully. If not, maybe we should go and see a doctor.
+Joanna: Yeah, I think so...
+Anna: I’ll get you a hot tea with some fresh mint leaves. Hope it will help. 
+Joanna: Please do, I’m in my room...
+Anna: Will be in ten minutes:-)",Anna got an awful stomachache at night but she doesn't know its cause. Her mom Joanna will make her hot tea with some fresh mint leaves.,安娜夜里胃疼得厉害，但她不知道其中的原因。她的妈妈乔安娜会用新鲜的薄荷叶为她做热茶。,安娜（Anna）感到胃痛，她和乔安娜（Joanna）决定如果疼痛持续，就去看医生。安娜将为乔安娜泡茶。,3.0719308853149414,3.573244571685791,3.8883111476898193,3.256896495819092,1.0,1.0,1.0,,,4,6.0,2.0,1.0,0.3333333333333333,0,2.0,0.0,0.5,0.5610931690282384,0.07777777777777777,0.8368968650559383,0.3389498432601881,3.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,4.0,0.25,0.0,3.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+gemma27b,678,gold_00044,False,"Sam: Where are you?
+Kate: downstairs
+Sam: already?
+Kate: sure, come down
+Jeff: We're in the little room next to the reception
+Kate: have you noticed the woman making a cake?
+Sam: yes
+Kate: did you see the cake?
+Sam: I didn't pay attention, why?
+Kate: there was a huge penis on it
+Kate: made of marzipan or sth
+Sam: hahah, really?
+Kate: when I noticed it, I started laughing
+Kate: so she laughed too
+Sam: nice
+Kate: I asked her what's she doing
+Kate: Somebody ordered a cake with a huge penis with balls and chocolate hair
+Sam: hahah, I must see it!
+Kate: she is working in the small room under the stairs
+Sam: right, there is a kitchen",Kate and Jeff are downstairs in a room next to the reception. Some lady is making a marzipan cake. ,凯特和杰夫在楼下接待处旁边的一个房间里。有位女士正在做杏仁蛋糕。,凯特告知萨姆和杰夫厨房楼梯下正在制作的蛋糕上装饰着不寻常的图案，萨姆表示想看这个蛋糕。,4.541630268096924,3.6286559104919434,3.870562791824341,3.903578519821167,1.0,1.0,1.0,,,3,2.0,-1.0,0.3333333333333333,0.5,2,1.0,1.0,1.0,0.5031929347826087,0.26249999999999996,0.49160919540229886,0.1632085020242915,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+gemma27b,690,gold_00045,False,"Mia: God, he keeps talking about the stupid wall
+Jennifer: I think he's just senile
+Karine: unfortunately it's much more
+Karine: this populist strategy to scare people with a minority
+Karine: and then present himself as the only savior
+Peter: Karine is right, I think he's not as senile and stupid as we would like to believe
+Mia: so it's even worse - he's pure evil
+Peter: possibly yes
+Karine: I really think so, because it's not only about politics anymore
+Karine: he is destroying the Earth
+Karine: trying to shake the world's order
+Jennifer: but he's also quite stupid
+Jennifer: and the dangerous thing is his self confidence
+Jennifer: he's persistence 
+Jennifer: and ignorance
+Karine: but we have a chance to change it
+Karine: maybe Trump will be over soon?
+Mia: we will see
+Mia: but we should do anything to win the next elections
+Karine: everything!","Mia, Jennifer, Karine and Peter do not like Trump.",米亚、珍妮弗、卡琳和彼得不喜欢特朗普。,卡琳认为对方正在破坏地球。米娅承诺竭尽全力赢得下次选举，卡琳表示赞同。,2.9866700172424316,2.905350685119629,3.4048590660095215,2.9425272941589355,1.0,1.0,1.0,,,4,6.0,2.0,0.75,0.5,1,3.0,0.0,0.6666666666666666,0.35663834207368644,0.4296296296296296,0.7331751988997085,0.30541642399534075,2.0,0.0,,1.0,0.0,0.0,0.0,0.0,3.0,0.3333333333333333,0.0,2.0,0.6666666666666666,0.0,1.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+gemma27b,711,gold_00046,False,"Pedro: batman or superman??
+Alex: honestly..  neither
+Pedro: WHAT??
+Alex: i honestly like the flash
+Pedro: whats so good about the flash :P
+Alex: duuude, he can do almost anything
+Pedro: not anything
+Alex: yea im sure batman can run as fast -_-
+Pedro: superhuman speed? thats your pitch?
+Alex: that speed opens up the whole multiverse for him.. you seriously dont get how powerful he can be
+Pedro: yeah i get your point",Alex prefers the Flash to Barman and Superman thanks to his speed.,阿莱克斯更喜欢闪电侠，因为他的速度。,亚历克斯向佩德罗表达了对闪电侠的喜爱，并以其速度为例说服佩德罗认可闪电侠的力量。,2.0773215293884277,2.4481828212738037,2.540738821029663,2.106009006500244,1.0,1.0,1.0,,,3,2.0,-1.0,0.6666666666666666,0.0,1,0.0,0.0,1.0,0.35652515723270434,0.57,0.9463166144200627,0.46063013698630134,2.0,0.0,,1.0,0.0,0.0,0.5,0.0,1.0,0.5,0.0,1.0,0.5,0.0,1.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+gemma27b,737,gold_00047,False,"Damian: are you downtown?
+Ethan: yes
+Ethan: why?
+Damian: can you buy me a kebab?
+Damian: i'm starving
+Ethan: why won't you cook something for both of us, huh?
+Damian: man, give me a break, i had a rough day
+Ethan: ok ok
+Ethan: but i really wish you weren't such a parasite
+Damian: i'll change, scout's honour",Ethan will buy Damian a kebab. Damian had a bad day.,伊森会请达米安吃烤肉串，达米安今天过得很糟糕。,达米安请求伊森购买烤肉卷，并承诺改正自身行为。伊森虽然不情愿，但最终同意了达米安的要求。,2.443490505218506,4.919060707092285,4.906689643859863,4.724404335021973,1.0,1.0,1.0,,,3,4.0,1.0,0.6666666666666666,0.5,1,2.0,0.0,0.5,0.6224525230602278,0.8333333333333333,0.914983164983165,0.18851014299966745,2.0,0.0,,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+gemma27b,767,gold_00048,False,"Barry: I'm gonna go march in Women's strike, anyone interested?
+Jake: I am, already made plans with some friends, wanna join?
+Dave: I am down too, Kelly is coming with me
+Barry: Let's just meet around the campus at noon","Barry, Dave, Kelly, and Jake will meet around the campus at 12 to join Women's strike.",巴里、戴夫、凯利和杰克将于12点在校园附近集合，参加妇女罢工。,保罗、杰克、戴夫和凯莉将一同参加妇女罢工，并约定中午在校园附近集合。,2.6531357765197754,3.883308172225952,3.8636529445648193,2.825134038925171,0.75,1.0,0.8571428571428571,,kelly,4,4.0,0.0,1.0,0.0,0,0.0,0.0,0.75,0.4586137066268583,0.3025,0.8443564721663313,0.9099399717514124,2.0,0.0,,1.0,0.0,0.0,0.0,0.0,4.0,0.25,0.0,3.0,0.5,1.0,1.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.25,0.0,0.0
+gemma27b,799,gold_00049,False,"Martha: Hey, can I ask you a question?
+Ophelia: Do we know each other?
+Martha: We don't, but do you mind if I ask you about the lenses from your profile picture? they are awesome and I would like to buy the similar ones
+Ophelia: it's from Crazy Lenses. They have quite reasonable prices and very fast shipping.
+Martha: Thanks!!! I'll check them :)
+Ophelia: No problem :)",Martha likes Ophelia's lenses and wants to buy similar ones. Ophelia got them from Crazy Lenses.,玛莎喜欢奥菲莉娅的眼镜，想买类似的，奥菲莉娅是从crazy lens上买的。,玛莎询问奥菲莉亚镜片来源，奥菲莉亚告知为“疯狂镜片”。玛莎感谢并表示将去查看。“,2.5293936729431152,4.657219886779785,4.617467880249023,4.253881454467773,1.0,1.0,1.0,,,3,3.0,0.0,1.0,0.0,0,0.0,1.0,0.3333333333333333,0.4824129132586774,0.03425925925925925,0.6365326137847761,0.5172765579951208,2.0,0.0,,1.0,0.0,0.0,0.6666666666666666,0.0,1.0,0.0,0.0,3.0,0.3333333333333333,0.0,2.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.3333333333333333,0.0
+gemma27b,800,gold_00050,False,"Linda: Hi Dad, I want to buy flowers for mum! But I don't remember which one she likes :(
+Michael: Well, she likes all the flowers I believe
+Linda: That doesn't help! I'm on a flower market right now!
+Michael: Send me some pics then
+Linda: <file_photo> 
+Michael: Tulips are nice, roses too
+Linda:  What about carnations?
+Michael: No, carnations are boring :D
+Linda: Thanks Dad, srsly…
+Michael:  What about freesias? She likes them a lot, are there any there?
+Linda: <file_photo> 
+Michael: Take those!",Linda wants to buy flowers for her mother and asks Michael which flowers does she like. Michael suggests Linda to buy freesias.,琳达想给她妈妈买花，问迈克尔她喜欢哪种花。迈克尔建议琳达买小苍兰。,迈克尔告知琳达，妈妈最喜欢洋桔梗，并让她购买洋桔梗作为礼物。,2.4863014221191406,3.2204411029815674,3.525222063064575,2.781010627746582,1.0,1.0,1.0,,,4,4.0,0.0,0.75,0.25,1,1.0,1.0,0.6666666666666666,0.407402198916014,0.08263888888888887,0.6170728840125391,0.5688709677419355,2.0,0.0,,1.0,0.0,0.0,0.3333333333333333,0.0,2.0,0.0,0.0,3.0,0.6666666666666666,0.0,1.0,0.5,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
