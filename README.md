@@ -467,6 +467,11 @@ notebook for the model and pipeline you want to reproduce. The notebooks read
 the gold-set records and write CSV/JSONL results under
 `notebooks/agents/results/full/`.
 
+For the Gemma agentic pipelines, use the enclosing pipeline folder and expected
+output paths to identify the workflow. Two Gemma notebooks keep their original
+experimental filenames, but the table below lists them under the pipeline they
+reproduce.
+
 Direct English dialogue → Chinese summary:
 
 | Model | Notebook | Expected CSV | Expected JSONL |
@@ -515,6 +520,17 @@ The main evaluation metrics are:
 | OmniScore | Informativeness, clarity, plausibility, faithfulness |
 
 For Chinese ROUGE evaluation, Chinese text should be segmented before score calculation. This project uses `jieba` for Chinese segmentation.
+
+The ROUGE scorer must be configured with the full language name `chinese`, not
+the ISO code `zh`. Passing `zh` can skip the intended Chinese word segmentation
+and inflate ROUGE scores. In `scripts/evaluate/evaluate_rouge_bertscore.py`, the
+Chinese configuration should therefore end with `chinese`:
+
+```python
+LANG_CONFIG = {
+    "zh": ("hfl/chinese-bert-wwm-ext", 8, False, "chinese"),
+}
+```
 
 ---
 
