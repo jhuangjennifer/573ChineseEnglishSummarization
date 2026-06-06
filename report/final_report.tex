@@ -1,0 +1,754 @@
+\documentclass[11pt]{article}
+
+% Change "review" to "final" to generate the final (sometimes called camera-ready) version.
+% Change to "preprint" to generate a non-anonymous version with page numbers.
+\usepackage[final]{acl}
+
+% Standard package includes
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[table]{xcolor}
+
+% For proper rendering and hyphenation of words containing Latin characters (including in bib files)
+\usepackage[T1]{fontenc}
+% For Vietnamese characters
+% \usepackage[T5]{fontenc}
+% See https://www.latex-project.org/help/documentation/encguide.pdf for other character sets
+
+% This assumes your files are encoded as UTF8
+\usepackage[utf8]{inputenc}
+
+% This is not strictly necessary, and may be commented out,
+% but it will improve the layout of the manuscript,
+% and will typically save some space.
+\usepackage{microtype}
+
+% This is also not strictly necessary, and may be commented out.
+% However, it will improve the aesthetics of text in
+% the typewriter font.
+\usepackage{inconsolata}
+
+%Including images in your LaTeX document requires adding
+%additional package(s)
+\usepackage{graphicx}
+\usepackage{float}
+
+% Prevent ACL two-column layout from stretching vertical spaces
+% when one column/page has less content than the other.
+\raggedbottom
+
+% If the title and author information does not fit in the area allocated, uncomment the following
+%
+%\setlength\titlebox{<dim>}
+%
+% and set <dim> to something 5cm or larger.
+
+\title{Team XLS Report 4 - Final: Diagnosing Performance and Bottlenecks in Agentic Pipelines for English-to-Chinese Dialogue Summarization}
+
+\author{
+Jennifer Huang, Yunwoo Lee, Ziwa Li, Smith Rothchild \\
+Department of Linguistics, University of Washington, Seattle, WA, USA \\
+\texttt{jjnhuang@uw.edu, yunu919@uw.edu, lizhihua@uw.edu, srothc@uw.edu}
+}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Our work investigates English-to-Chinese dialogue summarization on XSAMSum by comparing fine-tuned baselines (mBART and BART+Helsinki) with zero-shot agentic pipelines built on three mid-sized open-weight LLMs (Qwen 3.5, Gemma 3, and Aya-Expanse) across four configurations: Direct, Translate-then-Summarize, Summarize-then-Translate, and a Semantic pipeline with explicit intermediate meaning representations. Experiments on a 50-sample subset show that the fine-tuned baselines achieve the strongest ROUGE and BERTScore performance, while source-grounded OmniScore reveals smaller performance gaps and indicates stronger informativeness for agentic systems. Multi-agent decomposition does not consistently improve performance, and the Semantic pipeline suffers from information bottlenecks and error propagation despite providing greater interpretability. Field-level error analysis of the Semantic pipeline's intermediate representations reveals three extraction profiles: high event coverage but over-segmentation (Aya), accurate event extraction with unstable schemas and low coverage (Gemma), and balanced extraction (Qwen). Overall, our analysis highlights the trade-off between performance and interpretability in agentic cross-lingual dialogue summarization.
+\end{abstract}
+
+\section{Introduction}
+
+Cross-lingual dialogue summarization is the task of generating a concise summary in a different language from the source dialogue. It combines two difficult problems: dialogue summarization and cross-lingual generation. A model must understand conversational structure, discourse flow, implicit context, and complex co-reference while producing an accurate summary in the target language.
+
+This project focuses on English-to-Chinese dialogue summarization using the Chinese portion of XSAMSum. Given a multi-turn English dialogue, the goal is to generate a concise Chinese summary capturing its key information. The task is practically motivated by multilingual communication, but is also technically demanding, since information can be lost during summarization, distorted during translation, and difficult to evaluate fairly across languages.
+
+We investigate whether zero-shot agentic pipelines built with local open-weight language models can provide a competitive alternative to fine-tuned baselines. In particular, we ask whether decomposing the task into multiple stages, such as translation, summarization, semantic analysis, and verification, improves summary quality or instead introduces new bottlenecks through error propagation. We also examine whether an explicit semantic intermediate representation can improve interpretability, even when it does not directly improve end-task performance.
+
+Our main contributions are threefold. First, we implement two fine-tuned baselines for English-to-Chinese dialogue summarization: a summarize-then-translate pipeline using BART and OPUS-MT, and a direct end-to-end model using mBART. Second, we compare these baselines with zero-shot agentic pipelines using local open-weight LLMs across Direct, Translate-then-Summarize, Summarize-then-Translate, and Semantic configurations. Third, we evaluate the generated Chinese summaries using ROUGE, BERTScore, and OmniScore, and conduct a field-level analysis of the Semantic pipeline's intermediate representations to diagnose model-specific bottlenecks. We release the code for all model pipelines and evaluation scripts in our GitHub repository.\footnote{\url{https://github.com/jhuangjennifer/573ChineseEnglishSummarization}}
+
+
+\section{Related Work}
+
+\paragraph{Dialogue and cross-lingual summarization.}
+The SAMSum corpus introduced a widely used benchmark for abstractive dialogue summarization over messenger-style conversations \citep{gliwa-etal-2019-samsum}. \citet{wang-etal-2022-clidsum} extended this setting to cross-lingual dialogue summarization with the ClidSum benchmark, releasing XSAMSum and XMediaSum40k and defining the ROUGE/BERTScore evaluation protocol adopted in this work. We focus on the English-to-Chinese portion of XSAMSum.
+
+Cross-lingual summarization systems are commonly organized either as end-to-end models that directly generate target-language summaries or as pipeline methods that separate translation and monolingual summarization \citep{wang-etal-2022-survey-cls}. Prior work has explored direct neural cross-lingual summarization \citep{zhu-etal-2019-ncls,zhu-etal-2020-attend}, Translate-then-Summarize methods \citep{ouyang-etal-2019-robust}, and Summarize-then-Translate methods \citep{wan-etal-2010-cross,parnell-etal-2024-sumtra}. In our fine-tuned baselines, BART \citep{lewis2020bart}, mBART \citep{liu2020multilingual,tang-etal-2021-multilingual}, and OPUS-MT \citep{tiedemann2020opusmt} provide the basis for comparing modular and end-to-end cross-lingual summarization.
+
+\paragraph{Zero-shot and agentic cross-lingual summarization.}
+Recent work has begun to evaluate large language models for zero-shot cross-lingual summarization. \citet{wang-etal-2023-zero-shot-cls} compare Direct, Translate-then-Summarize, and Summarize-then-Translate prompting strategies, using 50 test documents per dataset. We follow this subset-based evaluation setup in the agentic phase of our experiments, but focus on local open-weight instruction-tuned models: Qwen3.5 \citep{qwen-team-2026-qwen35omni}, Gemma 3 \citep{gemma-team-2025-gemma3}, and Aya-Expanse \citep{dang-etal-2024-aya-expanse}. Our zero-shot prompting setup is motivated by prior work showing that instruction-tuned language models can generalize to unseen tasks from natural-language instructions \citep{wei-etal-2022-finetuned,chung-etal-2024-scaling}. We also implement each pipeline as a sequence of agent calls, following decomposed prompting, where complex tasks are divided into modular prompt-based subtasks \citep{khot-etal-2023-decomposed}.
+
+\paragraph{Structured representations for dialogue summarization.}
+Our Semantic pipeline is related to prior work on structure-aware and content-planning approaches to summarization. Most directly, \citet{chen-yang-2021-structure} model conversation structure using discourse relation graphs and action graphs based on "WHO-DOING-WHAT" triples, showing that explicit discourse and action structure can support conversation summarization. In our semantic schema, the actor, action, and object fields correspond to the action triples used in their framework and are grounded in Semantic Role Labeling \citep{gildea-jurafsky-2002-automatic}. We additionally include a recipient field to explicitly represent “WHO-DID-WHAT-TO-WHOM” relations. The speech\_act field is motivated by speech-act theory \citep{Austin1962} and its use as dialogue-act tagging in NLP \citep{stolcke-etal-2000-dialogue}, while intended\_meaning provides a normalized interpretation of the speaker’s communicative intent. Unlike \citet{chen-yang-2021-structure}’s graph-based design, our schema is a lightweight, event-indexed structure that is easier for an LLM agent to generate and consume.
+
+\citet{wang-etal-2022-guiding} guide abstractive dialogue summarization through intermediate predicate-argument content plans before generating final summaries. Inspired by this line of work, our Semantic pipeline uses a task-specific JSON representation with participants, speech acts, semantic roles, evidence, and final outcomes before target-language summary generation. The verification stage is also related to iterative refinement methods, where language models revise an initial output using feedback at inference time \citep{madaan-etal-2023-self-refine}.
+
+\paragraph{Evaluation.}
+Multilingual ROUGE \citep{hasan-etal-2021-xl} and BERTScore \citep{zhang2020bertscore} reward similarity to a single reference summary. However, abstractive summarization models are known to generate hallucinated or factually inconsistent content \citep{maynez-etal-2020-faithfulness}, and dialogue summaries can contain fine-grained factual errors involving entities, predicates, and circumstances \citep{zhu-etal-2023-diasumfact}. We therefore complement reference-based metrics with OmniScore \citep{alam-omniscore}, which evaluates informativeness, clarity, plausibility, and faithfulness in both reference-based and source-grounded modes.
+
+\section{Data}
+\label{sec:data}
+We conduct our experiments on XSAMSum, a cross-lingual dialogue summarization dataset released as part of the ClidSum benchmark \citep{wang-etal-2022-clidsum}. XSAMSum extends the English-only SAMSum corpus \citep{gliwa-etal-2019-samsum} into a multilingual setting. The English dialogues are messenger-style conversations created by linguists fluent in English, each annotated with a single abstractive summary. These summaries are written in the third person, mention the interlocutors by name, and aim to capture the most important content of the dialogue concisely. Professional translators then translate each English summary into Chinese (Zh) and German (De), so that every dialogue is paired with high-quality summaries in all three languages. In this work, we focus on the Chinese portion of the dataset and adopt a two-stage experimental design: a baseline phase using the full dataset and an agentic phase using a randomly sampled subset of 50 dialogues.
+
+
+
+
+\subsection{XSAMSum Dataset}
+
+Table~\ref{tab:xsamsum-dialogue} and Table~\ref{tab:xsamsum-summary} summarizes the basic statistics of XSAMSum. Dialogues average roughly 11 turns and 94 words in length. Reference summaries are typically short - around 20 words in English and 35 characters in Chinese.
+
+\begin{table}[H]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\rowcolors{2}{white}{gray!15}
+\begin{tabular}{lcccc}
+\hline
+\textbf{Split} & \textbf{Dial.} & \textbf{Turns} & \textbf{Speakers} & \textbf{Words} \\ 
+\hline
+Train & 14{,}732 & 11.2 & 2.4 & 93.79 \\
+Dev. & 818 & 10.8 & 2.4 & 91.64 \\
+Test & 819 & 11.2 & 2.4 & 95.51 \\
+
+\hline
+\end{tabular}
+\caption{Dialogue statistics of XSAMSum. \textit{Dial.} indicates the number of dialogue documents for each subset. \textit{Turns} and \textit{Speakers} represent the average
+number of utterances and speakers in dialogues\cite{wang-etal-2022-clidsum}.}
+\label{tab:xsamsum-dialogue}
+\end{table}
+
+\begin{table}[H]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\rowcolors{2}{white}{gray!15}
+\begin{tabular}{lcccc}
+\hline
+\textbf{Split} & \textbf{En-Words} & \textbf{Comp-ratio} & \textbf{Zh-Char} & \textbf{Zh-Words} \\ 
+\hline
+Train & 20.32 & 4.84 & 35.98 & 21.95 \\
+Dev. & 20.28 & 4.80 & 36.06 & 21.95 \\
+Test & 20.02 & 5.05 & 35.07 & 21.41 \\
+
+\hline
+\end{tabular}
+\caption{Summary length statistics of XSAMSum. \textit{Comp-ratio} represents the average token compression ratio for the English summary.}
+\label{tab:xsamsum-summary}
+\end{table}
+
+\subsection{Testing Subset}
+
+The selected XSAMSum subset for testing is slightly shorter on average than the full test set, mainly because it lacks the longest test-set dialogues. However, compression ratios, cross-lingual length ratios, and speaker-count distributions are all statistically indistinguishable between the subset and the full split (Table~\ref{tab:subset-comparison}). Summarization behavior observed on this testing subset should therefore generalize to the full test split.
+
+
+\begin{table}[ht]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\rowcolors{2}{white}{gray!15}
+\begin{tabular}{lcc}
+\hline
+\textbf{Metric} & \textbf{Agentic subset} & \textbf{Test set}  \\
+\hline
+Dialogue length (mean)        & 76.6  & 95.5       \\
+Dialogue length (median)      & 68.5  & 74.0       \\
+Dialogue length (max)         & 424   & 516        \\
+English Summary length (word)        & 17.34   & 20.02        \\
+Chinese Summary length (char)        & 26.14   & 35.07        \\
+Compression ratio$^{\dagger}$        & 0.293 & 0.290     \\
+Cross-lingual length ratio$^{\ddagger}$ & 1.54  & 1.57   \\
+Speaker count (mean)                 & 2.44  & 2.36    \\
+\hline
+\end{tabular}
+
+\vspace{2pt}
+\footnotesize
+\raggedright
+\caption{Distributional comparison of the agentic subset against the full test split.
+}
+$^{\dagger}$ English summary words / dialogue words. \\
+$^{\ddagger}$ Chinese summary characters / English summary words.
+\label{tab:subset-comparison}
+\end{table}
+
+
+\subsection{Preprocessing}
+We apply minimal preprocessing in order to remain comparable to prior work on ClidSum. Dialogues are formatted as a single sequence with each turn prefixed by the speaker name and a colon, and turns separated by newline characters, following \citet{wang-etal-2022-clidsum}. We do not perform additional normalization of emojis, URLs, or non-ASCII characters, since these are part of the conversational signal that the model is expected to handle. For Chinese references, segmentation is performed only at evaluation time to compute word-level ROUGE and BERTScore.
+
+\section{Model}
+
+Our modeling setup consists of two main parts. First, we implement two
+fine-tuned baselines for English-to-Chinese dialogue summarization: a
+summarize-then-translate BART+Helsinki pipeline and an end-to-end mBART model.
+Second, we extend the comparison to prompt-based agentic pipelines using local
+open-weight language models at approximately the 30B-parameter scale.
+
+\subsection{Two-Stage Data Strategy}
+
+For the baseline systems, experiments are conducted on the complete XSAMSum dataset to establish a broad performance benchmark under standard cross-lingual dialogue summarization settings. We follow the original split of 14,732 / 818 dialogues for train / validation.
+
+The subsequent agentic stage adopts a different objective. Rather than optimizing end-to-end performance at scale, it focuses on comparing mid-sized local LLMs, evaluating multi-agent workflows, and analyzing intermediate structured representations. 
+
+For the testing the baseline and agentic systems, a subset of 50 dialogues is randomly sampled from the test set for detailed analysis. This sample size follows \citet{wang-etal-2023-zero-shot-cls}, who likewise randomly sample 50 documents from the test set of multiple cross-lingual summarization datasets - including XSAMSum - when evaluating LLMs.
+
+This subset-based setup enables controlled comparison across the baseline and agentic pipelines, as well as qualitative inspection of intermediate outputs. The reduced sample size also reflects practical computational constraints, as multi-stage agentic inference requires substantially more processing time than the baseline models.
+
+
+\subsection{Fine-Tuned Baselines}
+
+We implement two fine-tuned baselines for English-to-Chinese dialogue
+summarization. The first is BART+Helsinki, a summarize-then-translate pipeline
+based on \texttt{facebook/bart-large} \citep{lewis2020bart} and
+\texttt{Helsinki-NLP/opus-mt-en-zh} \citep{tiedemann2020opusmt}. The BART model
+is fine-tuned to generate an English summary from an English dialogue, and the
+generated summary is then translated into Chinese using the pretrained OPUS-MT
+English-to-Chinese translation model.
+
+The second baseline is mBART, an end-to-end cross-lingual summarization model
+based on \texttt{facebook/mbart-large-50-many-to-many-mmt}
+\citep{liu2020multilingual,tang-etal-2021-multilingual}. Unlike BART+Helsinki, mBART is fine-tuned to
+directly map an English dialogue to a Chinese summary, using English dialogues as
+inputs and Chinese XSAMSum summaries as targets. This setup allows us to compare
+a modular pipeline-based approach with a multilingual end-to-end approach.
+
+The fine-tuned checkpoints are available on Hugging Face:
+BART\footnote{\url{https://huggingface.co/yunu919/bart-large-dialogue-summarization}}
+and mBART\footnote{\url{https://huggingface.co/yunu919/mbart-large-50-en-dialogue-to-zh-summary}}.
+Both systems are trained with the same main hyperparameters: a maximum input
+length of 768 tokens, a maximum target length of 64 tokens, 5 epochs, a learning
+rate of $2\times10^{-5}$, a per-device batch size of 4, and gradient accumulation
+over 6 steps, resulting in an effective batch size of 24. We use beam search with
+5 beams during evaluation.
+
+Training is implemented with Hugging Face's \texttt{Seq2SeqTrainer} on Google
+Colab using an NVIDIA A100 40GB GPU. We use Adafactor, mixed precision, and
+gradient checkpointing for efficient training, and select checkpoints based on
+validation \texttt{ROUGE-Lsum}. For mBART, we set the source language to
+\texttt{en\_XX} and the target language to \texttt{zh\_CN}, enforcing the Chinese
+beginning-of-sentence token during generation.
+
+\subsection{Local Open-Weight Language Models}
+
+In addition to the fine-tuned BART+Helsinki and mBART systems, we evaluate
+zero-shot agentic cross-lingual summarization pipelines using local open-weight
+language models served through Ollama. We select three models at comparable
+parameter scales: \texttt{qwen3.5:27b}, \texttt{gemma3:27b}, and
+\texttt{aya-expanse:32b}. These models are not fine-tuned on XSAMSum and receive
+no task-specific demonstrations; instead, they are evaluated through controlled
+zero-shot prompt-based pipelines, following prior work showing that
+instruction-tuned language models can generalize to unseen tasks from
+natural-language instructions \citep{wei-etal-2022-finetuned,chung-etal-2024-scaling}.
+
+\begin{itemize}
+    \item \textbf{Qwen 3.5 27B.}
+    \texttt{qwen3.5:27b} is a Qwen-family instruction-following model. We include
+    it because recent Qwen3.5 models emphasize instruction following,
+    long-context processing, multilingual understanding, and strong text
+    generation \citep{qwen-team-2026-qwen35omni}, making it suitable for
+    zero-shot English-to-Chinese dialogue summarization.
+
+    \item \textbf{Gemma 3 27B.}
+    \texttt{gemma3:27b} is a 27B-parameter model from Google's Gemma 3 family,
+    which is introduced as a lightweight open model family with improved
+    multilinguality, long-context support, and instruction-tuned performance
+    \citep{gemma-team-2025-gemma3}. We include it to test whether a
+    general-purpose open model can handle the composite requirements of
+    cross-lingual dialogue summarization.
+
+    \item \textbf{Aya Expanse 32B.}
+    \texttt{aya-expanse:32b} is a 32B-parameter multilingual instruction-tuned
+    model from Cohere's Aya Expanse family. Aya Expanse is designed to improve
+    multilingual performance through data arbitrage, preference training, and
+    model merging across 23 supported languages
+    \citep{dang-etal-2024-aya-expanse}. We include it because our task requires
+    both cross-lingual transfer and fluent Chinese generation.
+\end{itemize}
+
+\subsection{Cross-Lingual Summarization Pipelines}
+Following \citet{wang-etal-2023-zero-shot-cls}, we compare several structural
+decompositions of English-to-Chinese dialogue summarization, including Direct,
+Translate-then-Summarize, and Summarize-then-Translate. These configurations
+also follow the broader cross-lingual summarization literature, where systems
+are commonly organized into end-to-end/direct models and pipeline methods that
+separate machine translation and monolingual summarization \citep{wang-etal-2022-survey-cls}.
+In particular, pipeline methods are often categorized as Translate-then-Summarize
+and Summarize-then-Translate depending on the order of translation and
+summarization \citep{wan-etal-2010-cross,ouyang-etal-2019-robust,parnell-etal-2024-sumtra}.
+
+Each pipeline is implemented as a sequence of agent calls rather than a single
+multi-step prompt, following the broader idea of decomposed prompting, where
+complex tasks are divided into modular prompt-based subtasks
+\citep{khot-etal-2023-decomposed}. This design makes intermediate outputs inspectable, allowing
+us to identify whether errors arise during translation, summarization, semantic
+abstraction, target-language generation, or verification.
+
+For each local model condition, all agents in a pipeline use the same underlying
+model. Thus, model capacity is fixed within each condition, and comparisons
+primarily reflect differences in task decomposition.
+
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.18}
+\begin{tabular}{
+>{\raggedright\arraybackslash}p{0.20\textwidth}
+c
+>{\raggedright\arraybackslash}p{0.36\textwidth}
+>{\raggedright\arraybackslash}p{0.30\textwidth}
+}
+\hline
+\textbf{Pipeline} & \textbf{Agents} & \textbf{Pipeline structure} & \textbf{Prompt combination} \\
+\hline
+Direct (Dir) & 1 &
+English dialogue $\rightarrow$ Chinese summary &
+Direct \\
+
+Translate-then-Summarize (TS) & 2 &
+English dialogue $\rightarrow$ Chinese dialogue $\rightarrow$ Chinese summary &
+En-to-Zh dialogue translation + Zh summarization \\
+
+Summarize-then-Translate (ST) & 2 &
+English dialogue $\rightarrow$ English summary $\rightarrow$ Chinese summary &
+En summarization + En-to-Zh summary translation \\
+
+Semantic (Sem) & 3 &
+English dialogue $\rightarrow$ semantic analysis $\rightarrow$ draft Chinese summary $\rightarrow$ revised Chinese summary &
+Semantic analysis + semantic-to-summary + verification \\
+\hline
+\end{tabular}
+\caption{Cross-lingual summarization pipeline configurations and prompt combinations used with local open-weight language models.}
+\label{tab:cls_pipeline_configs}
+\end{table*}
+
+\medskip
+\noindent\textbf{Direct (Dir).}
+The Direct pipeline consists of a single agent call. The model receives the
+English dialogue and directly outputs a Chinese summary. This configuration
+serves as the simplest cross-lingual summarization pipeline, where dialogue
+understanding, content selection, and target-language generation are handled in
+one stage. It is conceptually aligned with end-to-end neural cross-lingual
+summarization, which directly maps source-language inputs to target-language
+summaries to reduce error propagation from separately modeling translation and
+summarization \citep{zhu-etal-2019-ncls,zhu-etal-2020-attend}.
+
+\medskip
+\noindent\textbf{Translate-then-Summarize (TS).}
+The Translate-then-Summarize pipeline consists of two stages. The first stage
+produces a Chinese translation of the full English dialogue, and the second
+stage summarizes that translated dialogue into Chinese. This configuration
+follows a common cross-lingual summarization paradigm in which the source input
+is first translated into the target language and then summarized using
+target-language summarization methods \citep{wang-etal-2022-survey-cls,ouyang-etal-2019-robust}.
+It tests whether transforming the full dialogue into the target language before
+summarization improves downstream summary generation.
+
+\medskip
+\noindent\textbf{Summarize-then-Translate (ST).}
+The Summarize-then-Translate pipeline also consists of two stages. The first
+stage summarizes the English dialogue into an English summary, and the second
+stage translates that summary into Chinese. This configuration follows the
+alternative pipeline strategy in cross-lingual summarization, where
+source-language content selection is performed before target-language
+realization \citep{wan-etal-2010-cross,parnell-etal-2024-sumtra}. It separates
+source-language information selection from target-language generation and is
+structurally aligned with the fine-tuned BART+Helsinki baseline.
+
+\medskip
+\noindent\textbf{Semantic (Sem).}
+The Semantic pipeline consists of three stages. The first stage converts the
+dialogue into a structured semantic representation. The second stage generates a
+draft Chinese summary from that representation. The third stage verifies the
+draft against the original dialogue and produces the final Chinese summary. This
+configuration is motivated by structure-aware and content-planning approaches to
+dialogue summarization, where discourse/action structures or intermediate
+predicate-argument representations are used to guide summary generation
+\citep{chen-yang-2021-structure,wang-etal-2022-guiding}. The final verification
+stage is related to iterative refinement methods that revise an initial model
+output using feedback at inference time \citep{madaan-etal-2023-self-refine}.
+
+\subsection{Zero-Shot Cross-Lingual Summarization Prompts}
+
+The prompt templates are stored under
+\texttt{notebooks/agents/pipeline/prompts/}. Following the zero-shot setup of
+\citet{wang-etal-2023-zero-shot-cls}, the prompts include only task instructions,
+the input dialogue, and, when applicable, intermediate outputs. They do not
+include labeled examples, few-shot demonstrations, or task-specific fine-tuning
+data. This design follows prior work showing that large instruction-tuned
+language models can perform unseen tasks from natural-language instructions
+without task-specific fine-tuning \citep{brown-etal-2020-language,wei-etal-2022-finetuned}.
+
+Across all prompt templates, the model is instructed to produce concise Chinese
+summaries that preserve the main information and final outcome of the dialogue.
+The prompts also emphasize faithfulness, since abstractive summarization models
+are known to generate hallucinated or factually inconsistent content
+\citep{maynez-etal-2020-faithfulness}, and factual errors in dialogue
+summarization often involve incorrect entities, predicates, or circumstances
+\citep{zhu-etal-2023-diasumfact}. Therefore, the model is instructed to avoid
+unsupported information, unnecessary background details, sentence-by-sentence
+dialogue translation when summarization is required, and mentions of speakers
+who are not important to the final outcome.
+
+\medskip
+\noindent\textbf{Direct (Dir) Prompt.}
+The Direct prompt asks the model to read an English dialogue and produce a
+concise Chinese summary directly. It explicitly discourages producing an
+intermediate English summary or translating the full dialogue sentence by
+sentence. The prompt therefore focuses the model on joint content selection and
+Chinese summary generation.
+
+\medskip
+\noindent\textbf{En-to-Zh Dialogue Translation Prompt.}
+The translation prompt used in the TS setting asks the model to translate the
+English dialogue into Chinese while preserving the original speaker structure
+and dialogue content. This prompt is motivated by recent work showing that LLMs
+can be used for machine translation through natural-language translation
+prompts \citep{jiao-etal-2023-chatgpt-translator}. Its purpose is to produce a
+target-language version of the source dialogue that can still support later
+summarization.
+
+\medskip
+\noindent\textbf{Chinese Summarization Prompt.}
+The Chinese summarization prompt used after dialogue translation asks the model
+to generate a concise Chinese summary from the translated Chinese dialogue. It
+instructs the model to select only the main events and final outcome rather than
+compressing every utterance.
+
+\medskip
+\noindent\textbf{English Summarization Prompt.}
+The English summarization prompt used in the ST setting asks the model to
+summarize the English dialogue in English. It focuses on identifying the main
+information, speaker intentions, and final outcome while omitting irrelevant
+background exchanges.
+
+\medskip
+\noindent\textbf{Summary Translation Prompt.}
+The summary translation prompt asks the model to translate an English summary
+into Chinese. Following prompt-based LLM translation work
+\citep{jiao-etal-2023-chatgpt-translator}, it emphasizes preserving the meaning
+of the summary rather than adding new details or reinterpreting the dialogue.
+
+\medskip
+\noindent\textbf{Semantic Analysis Prompt.}
+The semantic analysis prompt asks the model to output a structured JSON
+representation of the dialogue. The requested fields include participants,
+relevant speech acts, actor-action-object-recipient relations, contextual
+evidence, and the final outcome. This design is motivated by structure-aware
+conversation summarization, where discourse relations and action triples such as
+``WHO-DOING-WHAT'' are used to better represent conversation content
+\citep{chen-yang-2021-structure}. The prompt is designed to make dialogue
+meaning explicit before summary generation.
+
+\medskip
+\noindent\textbf{Semantic-to-Summary Prompt.}
+The semantic-to-summary prompt asks the model to generate a concise Chinese
+summary using only the salient information from the semantic representation. It
+is related to content-planning approaches to dialogue summarization, where an
+intermediate predicate-argument representation is generated before the final
+summary \citep{wang-etal-2022-guiding}. The prompt encourages the model to
+prioritize events that affect the final outcome and to omit peripheral details.
+
+\medskip
+\noindent\textbf{Verification Prompt.}
+The verification prompt asks the model to compare a draft Chinese summary with
+the original dialogue. This stage is related to iterative refinement methods in
+which LLMs generate feedback on an initial output and revise it at inference
+time without additional supervised training \citep{madaan-etal-2023-self-refine}.
+It instructs the model to revise the draft only when it detects issues such as
+hallucinated information, missing final outcomes, incorrect actor-action
+relations, awkward Chinese, or untranslated names.
+
+
+\begin{table*}[ht]
+\centering
+\small
+\begin{tabular}{lcccccc}
+\hline
+\textbf{Model pipeline} & \textbf{Average length (token level)} & \textbf{Average difference from golden length} & \textbf{Median} & \textbf{Min} & \textbf{Max}\\ \hline
+
+\rowcolor{gray!15}mBART                             & 12.6  & -3.52            & 11   & 4  & 31 \\
+\rowcolor{gray!15}BART + Helsinki (ST)              & 11.8  & -4.32            & 12   & 4  & 26 \\ \hline
+Qwen 3.5: 27b (Dir)               & 23.76 & 7.64             & 23.5 & 11 & 42 \\
+Qwen 3.5: 27b (ST)                & 27.32 & 11.2            & 25   & 7  & 50 \\
+Qwen 3.5: 27b (TS)                & 24.2  & 8.08             & 25.5 & 12 & 39 \\
+Qwen 3.5: 27b (Sem)               & 17.78 & 1.66             & 18   & 11 & 28 \\ \hline
+Gemma 3: 27b (Dir)                & 23.64 & 7.52             & 23   & 12 & 40 \\
+Gemma 3: 27b (ST)                 & 32.5  & 16.38           & 32   & 9  & 62 \\
+Gemma 3 27b (TS)                  & 19.4  & 3.28             & 19.5 & 4  & 33 \\
+Gemma 3: 27b (Sem)                & 15.96 & \textbf{-0.16}   & 15   & 9  & 30 \\ \hline
+Aya-Expanse: 32b (Dir)            & 35.96 & 19.84           & 35.5 & 12 & 81 \\
+Aya-Expanse: 32b (ST)             & 28.86 & 12.74           & 29   & 10 & 60 \\
+Aya-Expanse: 32b (TS)             & 29.12 & 13              & 28.5 & 12 & 67 \\
+Aya-Expanse: 32b (Sem)            & 22.4  & 6.28             & 20.5 & 9  & 49 \\ \hline
+\rowcolor{yellow!15}Golden Length & 16.12 & 0               & 16   & 4  & 38 \\
+\hline
+\end{tabular}
+\caption{Generated summary length compared to reference summary length. Baseline pipeline results are highlighted in gray. The average difference closest to the golden length is indicated in bold.}
+\label{tab:generated_vs_reference_length}
+\end{table*}
+
+
+\begin{table*}[ht]
+\centering
+\small
+\begin{tabular}{lccccc}
+\hline
+\textbf{Model pipeline} & \textbf{ROUGE-1} & \textbf{ROUGE-2} & \textbf{ROUGE-L} & \textbf{BERTScore F1} & \textbf{Overall Average} \\ \hline
+\rowcolor{gray!15}mBART & 47.9 & 26.49 & 39.44 & \textbf{77.3} & \textbf{47.78}\\
+\rowcolor{gray!15}BART + Helsinki (ST) & \textbf{49.1} & \textbf{28.52} & \textbf{39.75} & 73.2 & 47.64 \\
+\hline
+Qwen 3.5: 27b (Dir)    & 39.06 & 19.34 & 30.34 & 72.52 & 40.32 \\
+Qwen 3.5: 27b (ST)     & 39.34 & 20.38 & 31.27 & 72.53 & 40.88 \\
+Qwen 3.5: 27b (TS)     & 35.35 & 17.95 & 27.93 & 71.16 & 38.10 \\
+Qwen 3.5: 27b (Sem)    & 38.84 & 19.75 & 31.2  & 72.31 & 40.52 \\
+\hline
+Gemma 3: 27b (Dir)     & 41.45 & 21.68 & 33.63 & 73.99 & 42.69 \\
+Gemma 3: 27b (ST)      & 42.2  & 23.44 & 33.6  & 74.53 & 43.44 \\
+Gemma 3 27b (TS)       & 44.68 & 24.62 & 35.96 & 74.7  & 44.99 \\
+Gemma 3: 27b (Sem)     & 41.26 & 20.92 & 32.61 & 73.47 & 42.07 \\
+\hline
+Aya-Expanse: 32b (Dir) & 37.74 & 19.34 & 30.57 & 72.65 & 40.08 \\
+Aya-Expanse: 32b (ST)  & 40.47 & 20.94 & 32.36 & 73.46 & 41.81 \\
+Aya-Expanse: 32b (TS)  & 40.6  & 20.56 & 31.3  & 73.16 & 41.41 \\
+Aya-Expanse: 32b (Sem) & 41.12 & 20.75 & 32.57 & 73.2 & 41.91 \\
+\hline
+\end{tabular}
+\caption{ROUGE and BERTScore summarization performance on the 50 selected XSAMSum test dialogues. Baseline pipeline results are highlighted in gray. The highest score of each metric is indicated in bold.}
+\label{tab:rouge_bertscore_results}
+\end{table*}
+
+\begin{table*}[ht]
+\centering
+\small
+\begin{tabular}{lccccc}
+\hline
+\textbf{Model pipeline} & \textbf{Informativeness} & \textbf{Clarity} & \textbf{Plausibility} & \textbf{Faithfulness} & \textbf{Overall Average}\\ \hline
+
+\rowcolor{gray!15}mBART                  & 3.16          & \textbf{4.34} & \textbf{4.29} & 3.01          & \textbf{3.70} \\
+\rowcolor{gray!15}BART + Helsinki (ST)   & 3.06          & 3.98          & 3.98          & 2.81          & 3.46          \\
+\hline
+Qwen 3.5: 27b (Dir)    & 3.11          & 3.94          & 3.98          & 2.86          & 3.47          \\
+Qwen 3.5: 27b (ST)     & 3.21          & 4.01          & 4.07          & 2.91          & 3.55          \\
+Qwen 3.5: 27b (TS)     & 3.14          & 3.92          & 3.97          & 2.90          & 3.48          \\
+Qwen 3.5: 27b (Sem)    & 2.93          & 3.94          & 3.94          & 2.77          & 3.40          \\
+\hline
+Gemma 3: 27b (Dir)     & 3.20          & 3.96          & 4.00          & 2.95          & 3.52          \\
+Gemma 3: 27b (ST)      & \textbf{3.32} & 3.98          & 4.05          & 3.08          & 3.61          \\
+Gemma 3 27b (TS)       & 3.15          & 4.05          & 4.07          & 2.88          & 3.54          \\
+Gemma 3: 27b (Sem)     & 2.93          & 3.97          & 3.96          & 2.73          & 3.40          \\
+\hline
+Aya-Expanse: 32b (Dir) & 3.30          & 4.03          & 4.06          & \textbf{3.13} & 3.63          \\
+Aya-Expanse: 32b (ST)  & 3.25          & 4.06          & 4.06          & 3.01          & 3.59          \\
+Aya-Expanse: 32b (TS)  & 3.22          & 3.98          & 4.03          & 3.02          & 3.56          \\
+Aya-Expanse: 32b (Sem) & 3.13          & 3.97          & 4.00          & 2.84          & 3.48 \\
+\hline
+\end{tabular}
+\caption{OmniScore reference-based summarization performance on the 50 selected XSAMSum test dialogues. Baseline pipeline results are highlighted in gray. The highest score of each metric is indicated in bold.}
+\label{tab:omniscore_reference_based}
+\end{table*}
+
+\begin{table*}[ht]
+\centering
+\small
+\begin{tabular}{lccccc}
+\hline
+\textbf{Model pipeline} & \textbf{Informativeness} & \textbf{Clarity} & \textbf{Plausibility} & \textbf{Faithfulness} & \textbf{Overall Average}\\ \hline
+
+\rowcolor{gray!15}mBART                  & 2.68          & \textbf{3.95} & \textbf{4.00} & \textbf{3.37} & \textbf{3.50} \\
+\rowcolor{gray!15}BART + Helsinki (ST)   & 2.85          & 3.61          & 3.77          & 3.30          & 3.38          \\
+\hline
+Qwen 3.5: 27b (Dir)    & 2.91          & 3.70          & 3.84          & 3.22          & 3.42          \\
+Qwen 3.5: 27b (ST)     & 2.97          & 3.66          & 3.78          & 3.12          & 3.38          \\
+Qwen 3.5: 27b (TS)     & 2.97          & 3.68          & 3.84          & 3.25          & 3.44          \\
+Qwen 3.5: 27b (Sem)    & 2.63          & 3.69          & 3.81          & 3.13          & 3.32          \\
+\hline
+Gemma 3: 27b (Dir)     & 2.87          & 3.70          & 3.83          & 3.21          & 3.41          \\
+Gemma 3: 27b (ST)      & 3.03          & 3.64          & 3.80          & 3.22          & 3.42          \\
+Gemma 3 27b (TS)       & 2.77          & 3.81          & 3.92          & 3.24          & 3.43          \\
+Gemma 3: 27b (Sem)     & 2.54          & 3.68          & 3.79          & 3.12          & 3.28          \\
+\hline
+Aya-Expanse: 32b (Dir) & \textbf{3.07} & 3.72          & 3.84          & 3.22          & 3.46          \\
+Aya-Expanse: 32b (ST)  & 2.96          & 3.69          & 3.80          & 3.18          & 3.41          \\
+Aya-Expanse: 32b (TS)  & 2.91          & 3.71          & 3.83          & 3.19          & 3.41          \\
+Aya-Expanse: 32b (Sem) & 2.69          & 3.67          & 3.77          & 3.02          & 3.29 \\
+\hline
+\end{tabular}
+\caption{OmniScore source-grounded summarization performance on the 50 selected XSAMSum test dialogues. Baseline pipeline results are highlighted in gray. The highest score of each metric is indicated in bold.}
+\label{tab:omniscore_source_grounded}
+\end{table*}
+
+\begin{figure*}[ht]
+  \centering
+  \includegraphics[width=1.5\columnwidth]{latex/agent1_schemafieldquality.png}
+  \caption{Semantic pipeline quality scores of each generated schema field.}
+  \label{fig:semanticevalresults}
+\end{figure*}
+
+\section{Evaluation}
+We evaluate each of our baseline and agentic pipelines on the 50 selected dialogues from the XSAMSum test set, where the dialogues were selected using the methodology described in Section \ref{sec:data}. In the same way as Deliverable 2, we use both lexical and semantic automatic metrics, following the protocol established in ClidSum \cite{wang-etal-2022-clidsum}. Final Chinese summaries are scored against the human-translated Chinese references provided with XSAMSum.
+
+For lexical overlap we report ROUGE-1, ROUGE-2, and ROUGE-L F1, computed with the multilingual ROUGE toolkit from \cite{hasan-etal-2021-xl}. This toolkit applies language-specific tokenization before n-gram counting, which is essential for Chinese: standard whitespace tokenization collapses to character-level matching and substantially inflates scores. We use jieba\footnote{\url{https://github.com/fxsjy/jieba}} word segmentation for Chinese, matching the ClidSum configuration.
+
+For semantic similarity we report BERTScore F1 \cite{zhang2020bertscore} using \texttt{hfl/chinese-bert-wwm-ext} \cite{cui-etal-2020-revisiting} for Chinese. We extract layer 8 representations following the configuration specified in the official ClidSum evaluation script\footnote{\url{https://github.com/krystalan/ClidSum}}; this is consistent with the optimal layer reported for the architecturally equivalent \texttt{bert-base-chinese} in \cite{zhang2020bertscore}. Chinese BERTScore is reported as raw F1, as no rescaling baseline is shipped for \texttt{chinese-bert-wwm-ext}.
+
+Furthermore, we evaluate each pipeline with OmniScore \cite{alam-omniscore} using 
+\texttt{QCRI/OmniScore-deberta-v3} \cite{qcri_omniscore_deberta_v3}. Beyond pure lexical and semantic distance between the predicted output and the reference output, OmniScore evaluates generated text along the dimensions of informativeness, clarity, plausibility, and faithfulness. We generate these four metrics in both the \texttt{source\_grounded} mode, where the reference output is not used and OmniScore instead simply evaluates if the predicted output is supported by the source text, and the \texttt{reference\_based} mode, where the reference output is used in scoring.
+
+Additionally, we analyze the length of the generated summaries by the baseline and agentic pipelines, comparing them to the length of the reference summaries. This gives us insight into the conciseness of the generated summaries and how they compare with the expectations.
+
+We perform qualitative analysis on two subsets of the pipeline results: the lowest scoring \texttt{source\_grounded} and \texttt{reference\_based} examples out of the highest-scoring baseline pipeline and out of the highest-scoring agentic pipeline according to OmniScore, and the lowest scoring examples out of the highest-scoring baseline pipeline and out of the highest-scoring agentic pipeline according to ROUGE and BERTScore. We choose to perform this analysis on only the highest-scoring baseline and agentic pipelines due to the large number of pipelines that we have, as we would like to focus on how to improve the results of the best performing pipelines.
+
+Specifically for the Semantic pipelines, we evaluate the output of the first stage, which generates the structured semantic representation of the dialogue, against a gold standard semantic reference file which has been derived from GPT-5.5 \cite{ChatGPT:5.5} and manually reviewed and corrected for quality. We extract the generated schema field values and compute JSON parse error rate, dialogue participant F1, dialogue event coverage and granularity, participant role accuracy, evidence similarity, final outcome similarity, and correlation with Omniscore scores. Using these metrics and the characteristics of each schema field, we compute a quality score from 0 to 1 for each field, where a higher score is correlated with higher quality. For example, the quality score of the participants field is the dialogue partcipant F1. This allows us to compare the schema fields generated among the different models being used and identify where gaps in performance and accuracy may be.
+
+\section{Results}
+We show the results from the summary length evaluation on each pipeline's outputs, as compared with the reference summary length, in Table \ref{tab:generated_vs_reference_length}.
+
+Table \ref{tab:rouge_bertscore_results} summarizes the performance of our baseline and agentic pipelines on the 50 selected XSAMSum test dialogues with respect to the ROUGE and BERTScore metrics.
+
+We report the OmniScore metrics on our pipeline results in Table \ref{tab:omniscore_reference_based} and Table \ref{tab:omniscore_source_grounded}, with Table \ref{tab:omniscore_reference_based} detailing the metrics based on the reference output and Table \ref{tab:omniscore_source_grounded} detailing the reference-free metrics.
+
+From the qualitative analysis, we see that there was significant overlap in the poor-performing examples across both the baseline and agentic pipelines. These surfaced catastrophic failure modes in the pipeline results such as hallucination, entity omission, and mistranslation. Conversely, the poor-performing examples also surfaced cases where the reference summaries themselves lacked accuracy or detail, particularly in entity omission.
+
+Finally, we report the quality scores on each schema field of the Semantic pipeline first stage output in Figure \ref{fig:semanticevalresults}.
+
+\section{Discussion}
+
+\subsection{The Baseline Advantage}
+ The baseline systems, particularly fine-tuned mBART and the BART + Helsinki summarize-then-translate (ST) pipeline, consistently achieve the strongest overall performance across ROUGE and BERTScore metrics. mBART obtains the highest overall automatic score (47.78), followed closely by BART + Helsinki (47.64), substantially outperforming all agentic configurations whose overall scores range between approximately 38-45. The gap is widest on the n-gram-overlap components: baseline ROUGE-2 sits near 26-29, against an agentic mean of roughly 20.8.
+
+ Several factors likely explain this gap. First, the baseline systems are trained using the full XSAMSum dataset, allowing them to learn dialogue patterns from 15{,}550 examples. In contrast, the instruction-tuned LLMs are used zero-shot. They produce fluent, often more elaborated Chinese that conveys the same meaning through different lexical choices. The baseline-vs-agentic gap is far narrower on BERTScore than ROUGE, precisely because embedding similarity is more tolerant of paraphrase than n-gram overlap.
+
+The qualitative analysis suggests that reference-based scores do not always reflect overall summary quality. In Sample 66 (Figure~\ref{fig:sample66}), Gemma (TS) preserved more context by mentioning all three speakers and reconstructing the interaction leading to Edson's decision. However, it also added the unsupported detail that the shared link concerned airline tickets. Despite receiving a ROUGE + BERTScore overall average of only 27.15, this example highlights both the limitations of reference-based evaluation and the tendency of generative models to add plausible but ungrounded information. In Sample 678, Gemma (TS) retained graphic details that were intentionally omitted from the reference summary. These cases show that part of the baseline advantage may come from matching the reference summary more closely.
+
+\begin{figure*}[t]
+\centering
+
+\fbox{
+\parbox{0.30\textwidth}{
+\textbf{Dialogue}
+
+\vspace{0.5em}
+
+Joyce: Check this out!
+
+Joyce: \textit{<link>}
+
+Michael: That's cheap!
+
+Edson: No way! I'm booking my ticket now!!
+}
+}
+\hfill
+\fbox{
+\parbox{0.25\textwidth}{
+\textbf{Reference Summary}
+
+\vspace{0.5em}
+
+Edson is booking his ticket now.
+}
+}
+\hfill
+\fbox{
+\parbox{0.35\textwidth}{
+\textbf{Gemma TS Prediction \\
+(Back Translated)}
+
+
+\vspace{0.5em}
+
+Joyce shared a link to cheap plane tickets. Michael thought it was a great deal, and Edson said he would book it immediately.
+}
+}
+
+\caption{Qualitative example from XSAMSum (Test Set - Sample 66). Gemma (TS) retained more dialogue context than the reference summary but also hallucinated the detail that the shared link concerned airline tickets.}
+\label{fig:sample66}
+\end{figure*}
+
+\subsection{Reference-Free Evaluation}
+
+OmniScore, evaluated in both reference-based and source-grounded modes, gives a different picture than ROUGE and BERTScores.
+
+In reference-based mode the baseline mBART still leads (3.7), but the best agentic configuration - Aya (Direct) at 3.63 - is now within 0.07 points, and several agentic configurations (Gemma ST 3.61, Aya ST 3.59) exceed the second baseline, BART+Helsinki (3.46). 
+
+The source-grounded mode evaluates each summary directly against the English source dialogue and therefore does not privilege any single reference. The gap of performance narrows. mBART scores 3.50, BART+Helsinki 3.38, and the best agentic system (Aya Direct) reaches 3.46 - ahead of one baseline and only marginally behind the other. The agentic systems have stronger performance in the Informativeness dimension overall. On the Faithfulness dimension, several agentic configurations (e.g. Qwen TS 3.25, Gemma Dir 3.21, Aya Dir 3.22) match BART+Helsinki (3.30) and approach mBART (3.37).
+
+The fine-tuned baselines outscore agentic workflows mainly because reference-based metrics reward systems that imitate the reference. Once evaluation is grounded in the source dialogue rather than a single (sometimes flawed) reference, the two approaches are close to even.
+
+\subsection{Single-Agent versus Multi-Agent Design}
+
+A central question of this study is whether decomposing cross-lingual dialogue summarization into multiple specialized agents provides advantages over single-agent generation. The results do not suggest a clear winner among Direct, ST, and TS pipelines.
+
+Under ROUGE/BERTScore, across nearly all models, introducing an intermediate summarization stage improves performance relative to direct generation. For example, Qwen shows improvements from Direct (40.32) to ST (40.88), while Aya increases from 40.08 to approximately 41.81-41.91 through ST and semantic workflows.
+
+Under OmniScore the orchestration question splits into two sub-questions: how the one- and two-agent designs (Direct, ST, TS) compare with one another, and what the three-agent Semantic pipeline adds.
+
+Among Direct, ST, and TS there is no consistent winner, and the two scoring modes disagree systematically. In reference-based mode, ST is the strongest of the three for both Qwen (3.55) and Gemma (3.61), and only Aya prefers Direct (3.63). In source-grounded mode this ordering flips: TS is best for Qwen (3.44) and Gemma (3.43), while Aya again prefers Direct (3.46). The single-agent Direct configuration is therefore the strongest setup for only one of the three models, and is contradicted by a multi-agent design for the other two in both modes. Additionally, the spreads are very small. The source-grounded overall scores for Direct, ST and TS fall within a 3.41-3.43 band for Gemma and a 3.38-3.44 band for Qwen. It's well within plausible metric noise. In terms of overall OmniScore, the choice between single- and two-agent orchestration makes little difference: the additional agent neither reliably improves nor degrades quality.
+
+The clear-cut finding lies with the third agent. The Semantic pipeline is the weakest configuration for every model in both modes - reference-based (Qwen 3.40, Gemma 3.40, Aya 3.48) and source-grounded (Qwen 3.32, Gemma 3.28, Aya 3.29). Unlike the Direct/ST/TS differences, this gap is consistent and sizeable, so the genuine OmniScore result is not “more agents is worse” in general but specifically that the semantic-decomposition stage degrades quality.
+
+
+
+
+\subsection{Weak Semantic Agentic Pipeline}
+
+One particularly notable finding is that the semantic workflow consistently produces the weakest results among the agentic variants.
+
+This outcome is initially surprising because the semantic pipeline represents the most sophisticated design. It explicitly extracts pragmatic and semantic structures, including participant information, speech acts, semantic roles, and contextual grounding before generating summaries.
+
+Several factors may explain the weaker performance.
+First, structured representations introduce an information bottleneck. Converting natural dialogue into a pre-defined schema inevitably compresses and abstracts conversational content. While this process may retain core events, subtle discourse information, interpersonal relations, pragmatic nuance, and contextual cues can be lost.
+
+Second, errors introduced in Agent 1 propagate throughout later stages. Misclassification of speech acts, incomplete semantic roles, or omitted contextual details become difficult to recover downstream. Because later agents rely entirely on upstream outputs, inaccuracies compound over time.
+
+Third, the structured schema itself may not align optimally with dialogue summarization task. Dialogue summaries frequently depend on implicit meaning, topic salience, and conversational dynamics that are difficult to fully encode through manually designed structures.
+
+Lower end-task performance does not necessarily imply the semantic workflow lacks value. The semantic pipeline introduces interpretability absent from end-to-end approaches. Intermediate representations make it possible to inspect where information is lost, analyze pragmatic understanding, and evaluate specific stages independently. This capability enables finer-grained error analysis that is difficult with traditional black-box summarization systems. Furthermore, looking at the summary length statistics, the Semantic agentic pipeline for each model type consistently produces summaries closest to the golden length on average when compared with the Direct, ST, and TS pipelines.
+
+\subsection{Event Extraction Performance Across Models}
+
+All three models achieve near-perfect participant identification (F1 $\geq$ 0.989) and similar evidence grounding (0.81-0.83), but differ in event segmentation, role filling, and schema reliability. These differences propagate to downstream summarization performance.
+
+Aya-32B has the highest event coverage (0.849) but through over-segmentation (+1.94 events per dialogue; extra events in 48/50 cases). Its main weakness is incomplete semantic grounding, with the highest null rates for actor (0.592), action (0.356), and object (0.332), and the lowest action similarity (0.234) and intended meaning similarity (0.453). As a result, Agent 2 receives many events but less complete semantic-role information to summarize.
+
+Gemma-27B shows the opposite profile. It has the smallest event count deviation (+0.18), lowest extra-event rate (0.249), highest final outcome similarity (0.523), and strong intended meaning and action similarity (0.529 and 0.450). However, 6/50 outputs are unparseable, producing six missing structures. It has the lowest informativeness OmniScore (2.54). Its lower event coverage (0.677) reflects both schema failures and a conservative extraction strategy.
+
+Qwen-27B is the most balanced and stable. High event coverage (0.821) with far fewer extra events than Aya (0.271 vs. 0.458). It records zero parse errors, the highest speech-act accuracy (0.682) and intended meaning similarity (0.543), and the lowest actor and object null rates (0.045, 0.154). It leads recipient accuracy by a large margin (0.86 vs. 0.65 vs. 0.50), indicating stronger recipient-role identification in group speech.
+
+Three event extraction strategies emerge. Aya prioritizes coverage at the cost of empty roles. Gemma favors conservative extraction, with higher accuracy on retained events at the cost of recall and schema reliability. Qwen is the most balanced. However, all three share a common bottleneck: the action slot. Action accuracies (0.18, 0.43, 0.42) remain low, with 1.5 mismatches per dialogue. This suggests a limitation of the current action representation rather than solely a model capability issue. A single action field forces each event into a single verb-like commitment. Future improvements may come more from richer event representations and schema-validity safeguards.
+
+\section{Conclusion and Next Steps}
+
+In this work, we evaluated English-to-Chinese dialogue summarization on a
+50-sample subset of XSAMSum. We compared two fine-tuned baselines,
+BART+Helsinki and mBART, with zero-shot local language model pipelines using Qwen 3.5 27B, Gemma 3 27B, and Aya Expanse 32B. For the local models, we tested Direct, Translate-then-Summarize, Summarize-then-Translate, and Semantic multi-agent pipelines.
+
+Our results show that the fine-tuned baselines remain the strongest overall. BART+Helsinki achieves the best ROUGE scores, while mBART achieves the best BERTScore F1 and the highest overall reference-based OmniScore. Among the local model pipelines, Gemma 3 27B with Translate-then-Summarize performs best on ROUGE, and Aya Expanse 32B is competitive under OmniScore. However, no zero-shot agentic pipeline consistently outperforms the fine-tuned baselines, suggesting that task-specific fine-tuning remains important for this task.
+
+The Semantic pipeline offers two advantages: it exposes intermediate representations for fine-grained analysis and produces summaries whose lengths most closely match the gold references. However, despite decomposing the task into semantic analysis, generation, and verification, it underperforms the simpler pipelines on both reference-based metrics and reference-free OmniScore. Our analysis suggests that the main limitation lies in the intermediate representation itself, which may create an information bottleneck for downstream generation.
+
+The three models exhibit different trade-offs. Aya-32B achieves high event coverage but over-segments dialogues and produces many incomplete semantic roles. Gemma-27B generates semantically accurate events but suffers from schema instability. Qwen-27B provides the best balance between coverage, semantic fidelity, and structural reliability. Across all models, action representation remains the weakest component, suggesting that the current schema oversimplifies complex dialogue acts.
+
+
+Future work will focus on improving the semantic representation rather than increasing agent complexity. Our analysis suggests that the main bottlenecks are event over-segmentation, schema instability, and the limited expressiveness of the current event schema.
+
+To address these issues, we will explore a revised semantic representation\footnote{The updated schema and prompts are available at \url{https://github.com/jhuangjennifer/573ChineseEnglishSummarization/blob/main/notebooks/agents/pipeline/prompts/semantic_agent2.md}} that incorporates pragmatic and discourse-level information, such as common-ground status, event salience, polarity, modality, and discourse roles. The revised schema also explicitly identifies summary-worthy events and final outcomes. We hypothesize that these additions will improve event selection, reduce noise, and provide stronger guidance for downstream summarization.
+
+We will evaluate the revised representation using both representation-level and summary-level metrics. More broadly, this work aims to better understand how structured semantic representations can support agentic cross-lingual dialogue summarization.
+
+
+\section{What We Learned \& How We Will Apply It}
+Through this project, we learned that using more models or designing a more complex multi-agent pipeline does not automatically lead to better summarization performance. What matters more is how effectively each stage preserves the information needed for the final task. Our Semantic pipeline was the most interpretable design, but it also showed that structured intermediate representations can create information bottlenecks when important dialogue context, pragmatic meaning, or event salience is compressed too aggressively. 
+
+We also learned that evaluation should not rely on a single metric: ROUGE and BERTScore highlight reference similarity, while source-grounded OmniScore and qualitative analysis reveal whether a summary is actually faithful to the source dialogue. 
+
+In our future work and careers, we will apply these lessons by designing NLP systems that balance performance, interpretability, and evaluation rigor. Rather than assuming that larger models or more complicated pipelines are always better, we will focus on building systems whose intermediate steps are purposeful, inspectable, and aligned with the final user-facing objective.
+
+
+
+\bibliography{custom}
+
+
+
+
+\end{document}
