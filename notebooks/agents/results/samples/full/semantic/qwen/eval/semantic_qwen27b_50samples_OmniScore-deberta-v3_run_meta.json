@@ -1,0 +1,26 @@
+{
+  "model": "QCRI/OmniScore-deberta-v3",
+  "model_tracked_name": "OmniScore-deberta-v3",
+  "max_seq_len": 512,
+  "score_names": [
+    "informativeness",
+    "clarity",
+    "plausibility",
+    "faithfulness",
+    "composite"
+  ],
+  "score_range": [
+    1.0,
+    5.0
+  ],
+  "device": "cpu",
+  "batch_size": 8,
+  "n_examples": 50,
+  "modes": [
+    "source_grounded",
+    "reference_based"
+  ],
+  "task_tag": "summarization",
+  "seed": 42,
+  "timestamp_utc": "2026-05-26T06:38:52.455097+00:00"
+}
